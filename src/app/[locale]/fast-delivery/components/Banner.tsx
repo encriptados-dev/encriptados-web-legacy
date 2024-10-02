@@ -16,7 +16,7 @@ const Banner = () => {
         <CircleTitle size="large" rounded="full" intent="ghost">
           {t("unnecessaryWaits")}
         </CircleTitle>
-        <h1 className=" sm:text-xl md:text-base lg:text-lg xl:text-4xl  font-bold text-[#333333]">
+        <h1 className="sm:text-xl md:text-base lg:text-lg xl:text-4xl  font-bold text-[#333333]">
           {t("fastDeliveryBannerTitle")}
         </h1>
         <p className="text-black  sm:text-xl md:text-base lg:text-lg xl:text-xl 2xl:text-2xl">
