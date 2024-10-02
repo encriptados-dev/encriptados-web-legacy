@@ -1,6 +1,26 @@
 {
   "DeliveryPage": {
-    "title": "Ingles",
-    "about": "Ingles"
+    "unnecessaryWaits": "Avoid unnecessary waits",
+    "fastDeliveryBannerTitle": "With Fast Delivery, receive your encrypted phone in the shortest time possible",
+    "fastDeliveryBannerSubtitle": "Find a nearby pickup point",
+    "fastDeliveryLocation": "View Delivery Locations",
+    "deliveryPointsTitle": "Find our fast delivery points",
+    "deliveryPointsDescription": "Use the interactive map to find our selected pickup points closest to your location",
+    "chatTelegram": "Chat on Telegram",
+    "howDoesFastDeliveryTitle": "How does Fast Delivery of Encrypted work?",
+    "howDoesFastDeliveryOptions": {
+      "deliveyPoint": {
+        "title": "Select a delivery point",
+        "description": "Check the nearest location where you would like to pick up your encrypted phone"
+      },
+      "contactUsOnTelegram": {
+        "title": "Contact us on Telegram",
+        "description": "Contact us through our Telegram channel and coordinate the purchase of your encrypted phone"
+      },
+      "pickUpYourPhone": {
+        "title": "Pick up your encrypted phone",
+        "description": "Once the delivery is coordinated, pick up your encrypted phone and enjoy secure communications"
+      }
+    }
   }
 }

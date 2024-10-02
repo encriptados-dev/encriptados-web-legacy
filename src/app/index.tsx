@@ -1,5 +1,7 @@
+import Button from "@/shared/components/Button";
+
 const Index = () => {
-  return <h1>Hello word</h1>;
+  return <></>;
 };
 
 export default Index;

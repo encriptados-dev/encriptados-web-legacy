@@ -1,9 +1,11 @@
-import { useTranslations } from "next-intl";
+import FastDeliveryPage from "./components/FastDeliveryPage";
 
 const Page = () => {
-  const t = useTranslations();
-
-  return <h1>{t("DeliveryPage.title")}</h1>;
+  return (
+    <>
+      <FastDeliveryPage />
+    </>
+  );
 };
 
 export default Page;

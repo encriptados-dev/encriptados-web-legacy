@@ -102,4 +102,3 @@ export type Locale = (typeof routing.locales)[number];
 
 export const { Link, getPathname, redirect, usePathname, useRouter } =
   createLocalizedPathnamesNavigation(routing);
-
