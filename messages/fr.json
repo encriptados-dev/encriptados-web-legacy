@@ -1,6 +1,26 @@
 {
   "DeliveryPage": {
-    "title": "Frances",
-    "about": "Frances"
+    "unnecessaryWaits": "Évitez les attentes inutiles",
+    "fastDeliveryBannerTitle": "Avec la Livraison Rapide, recevez votre téléphone crypté dans les plus brefs délais",
+    "fastDeliveryBannerSubtitle": "Trouvez un point de collecte près de chez vous",
+    "fastDeliveryLocation": "Voir les Lieux de livraison",
+    "deliveryPointsTitle": "Trouvez nos points de livraison rapide",
+    "deliveryPointsDescription": "Utilisez la carte interactive pour trouver nos points de collecte sélectionnés les plus proches de votre emplacement",
+    "chatTelegram": "Discuter sur Telegram",
+    "howDoesFastDeliveryTitle": "Comment fonctionne la Livraison Rapide des Cryptés ?",
+    "howDoesFastDeliveryOptions": {
+      "deliveyPoint": {
+        "title": "Sélectionnez un point de livraison",
+        "description": "Consultez le lieu le plus proche où vous souhaitez récupérer votre téléphone crypté"
+      },
+      "contactUsOnTelegram": {
+        "title": "Contactez-nous sur Telegram",
+        "description": "Contactez-nous via notre canal Telegram et coordonnez l'achat de votre téléphone crypt"
+      },
+      "pickUpYourPhone": {
+        "title": "Récupérez votre téléphone crypté",
+        "description": "Une fois la livraison coordonnée, récupérez votre téléphone crypté et profitez de communications sécurisées"
+      }
+    }
   }
 }

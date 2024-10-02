@@ -1,6 +1,26 @@
 {
   "DeliveryPage": {
-    "title": "Portugues",
-    "about": "Portugues"
+    "unnecessaryWaits": "Evite esperas desnecessárias",
+    "fastDeliveryBannerTitle": "Com a Entrega Rápida, receba seu celular criptografado no menor tempo possível",
+    "fastDeliveryBannerSubtitle": "Encontre um ponto de coleta próximo a você",
+    "fastDeliveryLocation": "Ver Locais de entrega",
+    "deliveryPointsTitle": "Encontre nossos pontos de entrega rápida",
+    "deliveryPointsDescription": "Use o mapa interativo e encontre nossos pontos de coleta selecionados mais próximos de sua localização",
+    "chatTelegram": "Conversar pelo Telegram",
+    "howDoesFastDeliveryTitle": "Como funciona a Entrega Rápida de Criptografados?",
+    "howDoesFastDeliveryOptions": {
+      "deliveyPoint": {
+        "title": "Selecione um ponto de entrega",
+        "description": "Consulte a localização mais próxima onde você gostaria de retirar seu celular criptografado"
+      },
+      "contactUsOnTelegram": {
+        "title": "Entre em contato conosco pelo Telegram",
+        "description": "Entre em contato conosco pelo nosso canal no Telegram e coordene a compra do seu celular criptografado"
+      },
+      "pickUpYourPhone": {
+        "title": "Retire seu celular criptografado",
+        "description": "Uma vez coordenada a entrega, retire seu celular criptografado e desfrute de comunicações seguras"
+      }
+    }
   }
 }

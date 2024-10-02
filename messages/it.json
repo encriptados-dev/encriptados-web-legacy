@@ -1,6 +1,26 @@
 {
   "DeliveryPage": {
-    "title": "Italiano",
-    "about": "Italiano"
+    "unnecessaryWaits": "Evita attese inutili",
+    "fastDeliveryBannerTitle": "Con la Consegna Veloce, ricevi il tuo cellulare criptato nel minor tempo possibile",
+    "fastDeliveryBannerSubtitle": "Trova un punto di raccolta vicino a te",
+    "fastDeliveryLocation": "Vedi Luoghi di consegna",
+    "deliveryPointsTitle": "Trova i nostri punti di consegna rapida",
+    "deliveryPointsDescription": "Usa la mappa interattiva per trovare i nostri punti di raccolta selezionati più vicini alla tua posizione",
+    "chatTelegram": "Chattare su Telegram",
+    "howDoesFastDeliveryTitle": "Come funziona la Consegna Veloce di Criptati?",
+    "howDoesFastDeliveryOptions": {
+      "deliveyPoint": {
+        "title": "Seleziona un punto di consegna",
+        "description": "Controlla la posizione più vicina dove desideri ritirare il tuo cellulare criptato"
+      },
+      "contactUsOnTelegram": {
+        "title": "Contattaci su Telegram",
+        "description": "Contattaci tramite il nostro canale Telegram e coordina l'acquisto del tuo cellulare criptato"
+      },
+      "pickUpYourPhone": {
+        "title": "Ritira il tuo cellulare criptato",
+        "description": "Una volta coordinata la consegna, ritira il tuo cellulare criptato e goditi comunicazioni sicure"
+      }
+    }
   }
 }

@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 const NosotrosPage = () => {
   return <div>Contenido de Nosotros</div>;

@@ -1,6 +1,26 @@
 {
   "DeliveryPage": {
-    "title": "Espanol",
-    "about": "Espanol"
+    "unnecessaryWaits": "Evita esperas innecesarias",
+    "fastDeliveryBannerTitle": "Con la Entrega Rápida, recibe tu celular encriptado en el menor tiempo posible",
+    "fastDeliveryBannerSubtitle": "Encuentra un punto de recogida cercano a ti",
+    "fastDeliveryLocation": "Ver Lugares de entrega",
+    "deliveryPointsTitle": "Encuentra nuestros puntos de entrega rápida",
+    "deliveryPointsDescription": "Usa el mapa interactivo y encuentra nuestros puntos seleccionados de recogida más cercanos a tu ubicación",
+    "chatTelegram": "Chatear por Telegram",
+    "howDoesFastDeliveryTitle": "¿Cómo funciona la Entrega Rápida de Encriptados?",
+    "howDoesFastDeliveryOptions": {
+      "deliveyPoint": {
+        "title": "Selecciona un punto de entrega",
+        "description": "Consulta la ubicación más cercana donde te gustaría recoger tu celular encriptado"
+      },
+      "contactUsOnTelegram": {
+        "title": "Contáctanos por Telegram",
+        "description": "Contáctanos por nuestro canal de Telegram y coordina la compra de tu celular encriptado"
+      },
+      "pickUpYourPhone": {
+        "title": "Recoge tu celular encriptado",
+        "description": "Una vez coordinada la entrega, recoge tu celular encriptado y disfruta de comunicaciones seguras"
+      }
+    }
   }
 }
