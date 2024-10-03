@@ -13,6 +13,8 @@ const config: Config = {
       backgroundImage: {
         "cyan-gradient":
           "linear-gradient(360deg, rgba(211,245,255,1) 0%, rgba(244,248,250,1) 29%)",
+        "cyan-black":
+          "linear-gradient(150deg, rgba(0,0,0,1) 12%, rgba(53,205,251,1) 100%)",
       },
     },
   },
