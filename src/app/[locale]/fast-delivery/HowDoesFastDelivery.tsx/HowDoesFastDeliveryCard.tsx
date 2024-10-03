@@ -18,12 +18,11 @@ const HowDoesFastDeliveryCard: React.FC<HowDoesFastDeliveryCard> = ({
     <div className="bg-white w-[313px] border-gray-200 shadow-md m-4 p-4 rounded-3xl">
       {imagePosition === "top" && (
         <div className=" h-[350px] relative rounded-3xl  overflow-hidden">
-          {" "}
           <Image
             quality={100}
-            title="Floripa+"
+            title="Image"
             src={image}
-            alt="Floripa Mais Logo"
+            alt="Image"
             loading="eager"
             layout="fill"
             objectFit="cover"
@@ -39,9 +38,9 @@ const HowDoesFastDeliveryCard: React.FC<HowDoesFastDeliveryCard> = ({
           <Image
             objectFit="cover"
             quality={100}
-            title="Floripa+"
+            title="Image"
             src={image}
-            alt="Floripa Mais Logo"
+            alt="Image"
             loading="eager"
             layout="fill"
           />
