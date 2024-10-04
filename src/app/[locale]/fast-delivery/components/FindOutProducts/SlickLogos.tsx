@@ -49,8 +49,8 @@ const SlickLogos = () => {
     slidesToShow: 7,
     slidesToScroll: 1,
     arrows: false,
-    autoplay: true, // Activar autoplay
-    autoplaySpeed: 3000, // Cambiar cada 2 segundos
+    autoplay: true,
+    autoplaySpeed: 3000,
     responsive: [
       {
         breakpoint: 768,
@@ -74,13 +74,8 @@ const SlickLogos = () => {
       <Slider {...settings}>
         {products.map((product) => (
           <div key={product.id} className="px-2 ">
-            <div className="flex justify-center bg-white rounded-lg cursor-pointer p-4">
-              <Image
-                width={150}
-                height={150}
-                alt={`Logo ${product.id}`}
-                src={product.imageUrl}
-              />
+            <div className="flex justify-center bg-white rounded-2xl cursor-pointer px-3 py-1">
+              <Image alt={`Logo ${product.id}`} src={product.imageUrl} />
             </div>
           </div>
         ))}

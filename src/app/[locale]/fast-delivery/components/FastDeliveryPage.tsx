@@ -9,6 +9,7 @@ import PhoneBanner from "./PhoneBanner";
 
 import FindOurPoints from "./FindOurPoints";
 import FindOurProducts from "./FindOutProducts/FindOurProducts";
+import QRBanner from "./QRBanner";
 
 const FastDeliveryPage = () => {
   const t = useTranslations("DeliveryPage");
@@ -42,7 +43,9 @@ const FastDeliveryPage = () => {
         <div className="px-2 2xl:px-[370px] xl:px-10 lg:px-0">
           <FindOurProducts />
         </div>
-        <h1>Another content</h1>
+        <div className="px-2 2xl:px-96 xl:px-10 lg:px-0 ">
+          <QRBanner />
+        </div>
       </div>
     </>
   );
