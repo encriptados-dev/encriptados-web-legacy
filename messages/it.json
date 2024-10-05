@@ -22,6 +22,27 @@
         "title": "Ritira il tuo cellulare criptato",
         "description": "Una volta coordinata la consegna, ritira il tuo cellulare criptato e goditi comunicazioni sicure"
       }
+    },
+    "renatiTitle": "Telefono Cellulare Crittografato Renati",
+    "buyNow": "Acquista Ora",
+    "encryptedPhone": "Telefono Crittografato",
+    "saveMoney": "Risparmia fino a",
+    "downloadApp": "Scarica l'app per iOS e Android e acquista subito la tua SIM",
+    "scanQR": "Oppure scansiona il codice QR con la tua fotocamera",
+    "titleFAQS": "Domande Frequenti",
+    "faqs": {
+      "immediateDelivery": {
+        "title": "Che cos'è la Consegna Veloce di Dispositivi Crittografati?",
+        "content": "La Consegna Veloce di Dispositivi Crittografati è un servizio specializzato che ti consente di godere della tua SIM o dispositivo crittografato in meno di 48 ore."
+      },
+      "whereDelivery": {
+        "title": "Quali prodotti posso acquistare con Consegna Veloce?",
+        "content": "Puoi ottenere qualsiasi marca di telefoni cellulari crittografati selezionata sul nostro sito web."
+      },
+      "costDelivery": {
+        "title": "Qual è il costo della Consegna Veloce di Dispositivi Crittografati?",
+        "content": " Il costo della Consegna Veloce di Dispositivi Crittografati varia in base alla tua località; devi solo scriverci su Telegram e ti aiuteremo con i prezzi e le pratiche affinché tu possa ricevere il tuo prodotto il prima possibile."
+      }
     }
   }
 }
