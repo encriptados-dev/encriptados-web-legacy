@@ -1,7 +1,11 @@
-import React from 'react';
+import EncriptedSim from "./components/EncriptedSim";
 
-const EncryptedSimPage = () => {
-  return <div>SIM Encriptada Content</div>;
+const Page = () => {
+  return (
+    <>
+      <EncriptedSim/>
+    </>
+  );
 };
 
-export default EncryptedSimPage;
+export default Page;

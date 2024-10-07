@@ -9,6 +9,7 @@ const buttonStyles = cva("px-4 py-2 font-bold flex items-center", {
       secondary: "bg-[#35CDFB] text-[#00516B]",
       solid: "text-white",
       ghost: "bg-transparent border border-black text-black", // Estilo ghost
+      black: "bg-black text-white text-sm py-3 w-full flex items-center justify-center ", // Agregado 'black' a las variantes
     },
     size: {
       small: "text-sm",
