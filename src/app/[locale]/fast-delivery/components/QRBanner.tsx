@@ -1,9 +1,10 @@
 import Image from "next/image";
 import React from "react";
 import QR from "../../../../../public/images/fastdeliverypage/QR.png";
-import AppleSvg from "@/svgs/AppleSvg";
-import PlayStoreSvg from "@/svgs/PlayStoreSvg";
+
 import { useTranslations } from "use-intl";
+import AppleSvg from "@/shared/svgs/AppleSvg";
+import PlayStoreSvg from "@/shared/svgs/PlayStoreSvg";
 
 const QRBanner = ({ title }: { title: string }) => {
   const t = useTranslations("DeliveryPage");

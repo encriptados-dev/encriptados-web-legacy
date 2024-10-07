@@ -80,7 +80,7 @@
 
       "callback": {
         "title": "Rappel",
-        "description": "Utilisez un opérateur intermédiaire pour lier l'appel et le rendre totalement introuvable"
+        "description": "Générez un numéro aléatoire pour chaque appel qui apparaîtra dans l'identifiant du destinataire"
       },
       "plans": {
         "title": "Plans sans date de clôture",

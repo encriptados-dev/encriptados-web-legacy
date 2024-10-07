@@ -80,7 +80,7 @@
 
       "callback": {
         "title": "Callback",
-        "description": "Use an intermediary operator to link the call and make it completely untraceable"
+        "description": "Generate a random number for each call that will appear in the recipient's identifier"
       },
       "plans": {
         "title": "Plans without a cut-off date",
