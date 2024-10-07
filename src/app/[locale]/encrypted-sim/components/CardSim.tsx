@@ -1,29 +1,27 @@
 import Image from "next/image";
-import EncryptedSimData from "../../../../../public/images/encrypted-sim/Encrypted_sim_card.png";
-import TravelSvg from "../../../../../public/images/encrypted-sim/icons/travel_explore.svg";
-import WifiSvg from "../../../../../public/images/encrypted-sim/icons/wifi_tethering.svg";
-import CheckSvg from "../../../../../public/images/encrypted-sim/icons/check.svg";
-import StarSvg from "../../../../../public/images/encrypted-sim/icons/star_half2.svg";
-import Bigtop from "../../../../../public/images/encrypted-sim/icons/bigtop.svg";
 import Button from "@/shared/components/Button";
-import LocalMallSvg from "../../../../../public/images/encrypted-sim/icons/local_mall.svg";
-const CardSim: React.FC = () => {
-  const features = [
-    "Datos añadidos al instante",
-    "Irrastreable y anónimo",
-    "Protegido contra IMSI CATCHER'S",
-    "Sin fechas de corte",
-  ];
+import TravelSvg from "/public/images/encrypted-sim/icons/travel_explore.svg";
+import WifiSvg from "/public/images/encrypted-sim/icons/wifi_tethering.svg";
+import CheckSvg from "/public/images/encrypted-sim/icons/check.svg";
+import StarSvg from "/public/images/encrypted-sim/icons/star_half2.svg";
+import LocalMallSvg from "/public/images/encrypted-sim/icons/local_mall.svg";
 
+interface CardSimProps {
+  productImage: string;
+  features: string[];
+  priceRange: string;
+  headerIcon: string;
+  headerTitle: string;
+}
+
+const CardSim: React.FC<CardSimProps> = ({ productImage, features, priceRange, headerIcon, headerTitle }) => {
   return (
     <div className="w-full max-w-sm mx-auto bg-white shadow-lg rounded-2xl overflow-hidden">
-      <div className="p-2 bg-[#5D5D5D]">
+      <div className="p-2 bg-[#5D5D5D] ">
         <Image
-          src={EncryptedSimData}
-          alt="Sim Card"
-          width={300}
-          height={200}
-          className="w-64 mx-auto"
+          src={productImage}
+          alt="Sim Card"          
+          className=" w-full h-48 object-contain"
         />
         <div className="p-2">
           <div className="flex justify-end gap-2  mb-1 text-sm text-gray-600">
@@ -42,8 +40,14 @@ const CardSim: React.FC = () => {
 
       <div className="p-6">
         <div className="text-black rounded-full text-xs font-semibold flex gap-1">
-          <Image src={Bigtop} alt="Icon" className="w-6 h-6" />
-          <h2 className="text-lg font-bold mb-2">Recarga de Datos</h2>
+          <Image
+            src={headerIcon}
+            alt="Icon"
+            width={24}  
+            height={24} 
+            className="w-6 h-6"
+          />
+          <h2 className="text-lg font-bold mb-2">{headerTitle}</h2>
         </div>
 
         <ul className="space-y-0">
@@ -55,19 +59,17 @@ const CardSim: React.FC = () => {
           ))}
         </ul>
         <hr className="my-4" />
-        <div className="p-0 ">
+        <div className="p-0">
           <div className="w-full">
             <div className="flex justify-between items-center mb-2">
-              <span className="text-lg font-bold">25 - 500 USD</span>
+              <span className="text-lg font-bold">{priceRange}</span>
               <div className="flex items-center bg-[#EDF4F6] px-2 rounded-full">
-                <Image
+              <Image
                   src={StarSvg}
                   alt="Icon"
                   className="w-6 h-6 fill-current text-yellow-400 font-bold"
                 />
-                <span className="ml-1 text-sm text-gray-600 font-semibold ">
-                  5/5
-                </span>
+                <span className="ml-1 text-sm text-gray-600 font-semibold">5/5</span>
               </div>
             </div>
             <Button

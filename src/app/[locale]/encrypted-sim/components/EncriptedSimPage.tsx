@@ -1,6 +1,5 @@
 import { useTranslations } from "next-intl";
-import CardDescription from "./CardDescription";
-import CardSim from "./CardSim";
+import SimProductsPage from "./SimProducts";
 import BannerConnect from "./BannerConnect";
 
 const EncriptedSim = () => {
@@ -8,9 +7,8 @@ const EncriptedSim = () => {
     return (
       <>
         <BannerConnect />
-        <div className="flex max-w-[1000px] mx-auto gap-4">
-            <CardDescription />
-            <CardSim />
+        <div className="max-w-[1000px] mx-auto ">
+            <SimProductsPage />            
         </div>
         </>
   );
