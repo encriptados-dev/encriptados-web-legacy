@@ -11,7 +11,7 @@ import CallbackSvg from "../svgs/CallbackSvg";
 import PlansSvg from "../svgs/PlansSvg";
 import NoGeolocalizationSvg from "../svgs/NoGeolocalizationSvg";
 import GlobalCoverage from "../svgs/GlobalCoverage";
-import MSIMask from "../svgs/MSIMask";
+import MSIMask from "../svgs/MSIMack";
 import RedProviderSvg from "../svgs/RedProviderSvg";
 import WithOutNumberSvg from "../svgs/WithOutNumberSvg";
 
