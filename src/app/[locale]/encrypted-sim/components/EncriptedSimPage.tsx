@@ -1,9 +1,7 @@
 import { useTranslations } from "next-intl";
-import CardDescription from "./CardDescription";
-import CardSim from "./CardSim";
+import SimProductsPage from "./SimProducts";
 import BannerConnect from "./BannerConnect";
 import EncryptedSimBanner from "./EncryptedSimBanner";
-import CardImprove from "./Card/FeatureCard";
 import ListOfFeatureCards from "./Card/ListOfFeatureCards";
 import AnonimateSvg from "../svgs/AnonimateSvg";
 import ImsiChangeSvg from "../svgs/ImsiChangeSvg";
@@ -19,23 +17,25 @@ import WithOutNumberSvg from "../svgs/WithOutNumberSvg";
 
 const EncriptedSim = () => {
   const t = useTranslations("EncryptedSimPage");
+
   return (
     <>
       <BannerConnect />
-      <div className="flex max-w-[1000px] mx-auto gap-4">
-        <CardDescription />
-        <CardSim />
-      </div>
 
-      <div className="mt-8">
-        <EncryptedSimBanner />
-      </div>
-
-      <div className="justify-center flex bg-cyan-gradient flex-col items-center ">
+      <div className="justify-center flex bg-cyan-gradient flex-col items-center">
         <h1 className="sm:text-xl md:text-base lg:text-lg xl:text-4xl font-bold text-center text-[#333333] mt-16 mb-16">
           {t("improveYourSecurity.titleImproveYourSecurity")}
         </h1>
-        <div className="w-8/12 justify-center items-center ">
+
+        <div className="max-w-[1000px] mx-auto mt-8">
+          <SimProductsPage />
+        </div>
+
+        <div className="mt-8">
+          <EncryptedSimBanner />
+        </div>
+
+        <div className="max-w-[1000px]  justify-center mt-16 items-center">
           <ListOfFeatureCards
             features={[
               {
@@ -48,7 +48,6 @@ const EncriptedSim = () => {
                 description: t("improveYourSecurity.anonymity.description"),
                 icon: <AnonimateSvg />,
               },
-
               {
                 title: t("improveYourSecurity.changeMSI.title"),
                 description: t("improveYourSecurity.changeMSI.description"),
@@ -71,7 +70,6 @@ const EncriptedSim = () => {
                 description: t("improveYourSecurity.callback.description"),
                 icon: <CallbackSvg />,
               },
-
               {
                 title: t("improveYourSecurity.plans.title"),
                 description: t("improveYourSecurity.plans.description"),
@@ -115,4 +113,5 @@ const EncriptedSim = () => {
     </>
   );
 };
+
 export default EncriptedSim;
