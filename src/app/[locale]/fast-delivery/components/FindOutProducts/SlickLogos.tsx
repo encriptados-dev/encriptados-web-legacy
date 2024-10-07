@@ -51,6 +51,7 @@ const SlickLogos = () => {
     arrows: false,
     autoplay: true,
     autoplaySpeed: 3000,
+    rtl: true,
     responsive: [
       {
         breakpoint: 768,
@@ -73,8 +74,8 @@ const SlickLogos = () => {
     <div className="container mx-auto">
       <Slider {...settings}>
         {products.map((product) => (
-          <div key={product.id} className="px-2 ">
-            <div className="flex justify-center bg-white rounded-2xl cursor-pointer px-3 py-1">
+          <div key={product.id} className="px-2 cursor-grab ">
+            <div className="flex justify-center bg-white rounded-2xl px-3 py-1">
               <Image alt={`Logo ${product.id}`} src={product.imageUrl} />
             </div>
           </div>

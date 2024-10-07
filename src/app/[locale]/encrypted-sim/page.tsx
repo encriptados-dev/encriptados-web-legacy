@@ -1,9 +1,9 @@
-import EncriptedSim from "./components/EncriptedSim";
+import EncriptedSimPage from "./components/EncriptedSimPage";
 
 const Page = () => {
   return (
     <>
-      <EncriptedSim/>
+      <EncriptedSimPage/>
     </>
   );
 };

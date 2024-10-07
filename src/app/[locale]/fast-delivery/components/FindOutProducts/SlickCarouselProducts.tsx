@@ -6,44 +6,48 @@ import Image from "next/image";
 import CellPhone1 from "../../../../../../public/images/fastdeliverypage/cell1.png";
 import CellPhone2 from "../../../../../../public/images/fastdeliverypage/cell2.png";
 import CellPhone3 from "../../../../../../public/images/fastdeliverypage/cell3.png";
-
-const products = [
-  {
-    id: 1,
-    title: "Secure MDM iPhone",
-    price: "723$",
-    discount: "100",
-    imageUrl: CellPhone1,
-  },
-  {
-    id: 2,
-    title: "Secure MDM Android",
-    price: "723$",
-    discount: "100",
-    imageUrl: CellPhone2,
-  },
-  {
-    id: 3,
-    title: "Crypcom",
-    price: "729$",
-    discount: "100",
-    imageUrl: CellPhone3,
-  },
-  {
-    id: 3,
-    title: "Renati",
-    price: "729$",
-    discount: "100",
-    imageUrl: CellPhone1,
-  },
-];
+import { useTranslations } from "next-intl";
 
 const SlickCarouselProducts = () => {
+  const products = [
+    {
+      id: 1,
+      title: "Secure MDM iPhone",
+      price: "723$",
+      discount: "100",
+      imageUrl: CellPhone1,
+    },
+    {
+      id: 2,
+      title: "Secure MDM Android",
+      price: "723$",
+      discount: "100",
+      imageUrl: CellPhone2,
+    },
+    {
+      id: 3,
+      title: "Crypcom",
+      price: "729$",
+      discount: "100",
+      imageUrl: CellPhone3,
+    },
+    {
+      id: 3,
+      title: "Renati",
+      price: "729$",
+      discount: "100",
+      imageUrl: CellPhone1,
+    },
+  ];
+
   const settings = {
     infinite: true,
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 1,
+    autoplaySpeed: 3000,
+    arrows: false,
+    autoplay: true,
     responsive: [
       {
         breakpoint: 768,
@@ -93,14 +97,16 @@ const SlickCarouselProducts = () => {
     </defs>
   </svg>;
 
+  const t = useTranslations("DeliveryPage");
+
   return (
     <div className="container mx-auto px-4">
       <Slider {...settings}>
         {products.map((product) => (
-          <div key={product.id} className="p-4">
+          <div key={product.id} className="p-4 cursor-grab">
             <div className="border rounded-2xl overflow-hidden  bg-white  shadow-lg h-[400px] ">
               <h1 className="text-center text-xs tracking-[0.2em] mt-7 text-[#102542]">
-                TELEFONO ENCRIPTADO
+                {t("encryptedPhone")}
               </h1>
 
               <h2 className="text-lg font-bold text-center text-[#102542]">
@@ -111,14 +117,14 @@ const SlickCarouselProducts = () => {
                 ${product.price} USD
               </p>
               <p className="text-[#35CDFB] text-center text-base line-through ">
-                Ahorra hasta ${product.discount} USD
+                {t("saveMoney")} ${product.discount} USD
               </p>
               <div className="flex justify-center">
                 <Button
                   rounded="full"
                   customStyles="bg-[#102542] text-[#333333] mt-2"
                 >
-                  Comprar ahora
+                  {t("buyNow")}
                 </Button>
               </div>
 
