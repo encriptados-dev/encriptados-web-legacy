@@ -80,7 +80,7 @@
 
       "callback": {
         "title": "Richiamata",
-        "description": "Utilizza un operatore intermedio per collegare la chiamata e renderla completamente irrintracciabile"
+        "description": "Genera un numero casuale per ogni chiamata che apparirà nell'identificatore del destinatario"
       },
       "plans": {
         "title": "Piani senza data di scadenza",

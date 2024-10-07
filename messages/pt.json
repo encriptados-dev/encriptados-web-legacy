@@ -80,7 +80,7 @@
 
       "callback": {
         "title": "Retorno de chamada",
-        "description": "Utilize um operador intermediário para vincular a chamada e torná-la totalmente irrecuperável"
+        "description": "Gere um número aleatório para cada chamada que aparecerá no identificador do receptor"
       },
       "plans": {
         "title": "Planos sem data de corte",

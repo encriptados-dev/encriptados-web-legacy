@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import MenAndWomenImage from "../../../../../public/images/encryptedsimpage/menandwomen.png";
+import MenAndWomenImage from "../../../../../public/images/encrypted-sim/Encrypted_MenWomen.png";
 
 const BannerConnect = () => {
   return (

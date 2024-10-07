@@ -81,7 +81,7 @@
 
       "callback": {
         "title": "Devolución de llamada",
-        "description": "Utiliza un operador intermediario para enlazar la llamada y hacerla totalmente irrastreable"
+        "description": "Genera un número aleatorio para cada llamada que aparecerá en el identificador del receptor"
       },
       "plans": {
         "title": "Planes sin fecha de corte",

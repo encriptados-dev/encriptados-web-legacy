@@ -3,7 +3,7 @@ import EncriptedSimPage from "./components/EncriptedSimPage";
 const Page = () => {
   return (
     <>
-      <EncriptedSimPage/>
+      <EncriptedSimPage />
     </>
   );
 };
