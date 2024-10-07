@@ -1,5 +1,30 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 @import "~slick-carousel/slick/slick.css";
 @import "~slick-carousel/slick/slick-theme.css";
+
+@layer utilities {
+  .bg-custom-gradient {
+    background: radial-gradient(circle at 10% 50%, rgba(28,210,165,0.4), transparent 30%),
+                radial-gradient(circle at 90% 50%, rgba(8,186,240,0.4), transparent 30%),
+                #fff;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .bg-custom-linear-2 {
+    @apply bg-[#fafafa] bg-gradient-to-r from-[#fafafa] to-[#c1f0ff] from-[80%] to-[100%] shadow-lg;
+  }
+
+  .bg-custom-linear {
+    @apply bg-[#fafafa] bg-gradient-to-r from-[#fafafa] to-[#c1f0ff] from-[80%] to-[100%] shadow-lg;
+  }
+  @screen sm {
+    .bg-custom-linear {
+      background: transparent !important ;
+    }
+  }
+}
+
