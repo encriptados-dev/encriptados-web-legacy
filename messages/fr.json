@@ -45,5 +45,7 @@
       }
     }
   },
-  "EncryptedSimPage": {}
+  "EncryptedSimPage": {
+    "connectAllWorld": ""
+  }
 }

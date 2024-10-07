@@ -45,5 +45,11 @@
       }
     }
   },
-  "EncryptedSimPage": {}
+  "EncryptedSimPage": {
+    "connectAllWorldTitle": "",
+    "totalSecurityTitle": "",
+    "addYourSimSubtitle": "",
+    "coverageTitle": "",
+    "coverageDescription": ""
+  }
 }
