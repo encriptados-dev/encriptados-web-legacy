@@ -9,7 +9,7 @@ import PayForUse from "./PayForUse";
 import WhyCallSim from "./WhyCallSim/WhyCallSim";
 import BannerCoverage from "./BannerCoverage";
 
-const EncriptedSim = () => {
+const EncryptedSim = () => {
   const t = useTranslations("EncryptedSimPage");
 
   return (
@@ -72,4 +72,4 @@ const EncriptedSim = () => {
   );
 };
 
-export default EncriptedSim;
+export default EncryptedSim;

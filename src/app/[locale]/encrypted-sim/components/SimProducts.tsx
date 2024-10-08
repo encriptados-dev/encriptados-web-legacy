@@ -34,7 +34,6 @@ const commonFeatures = [
     alt: "Icono de app",
     description: "App disponible iOS y Android",
   },
-  
 ];
 
 const cardData = [
@@ -57,7 +56,8 @@ const cardData = [
   // #2 Minutes
   {
     logoSrc: LogoSvg1,
-    title: "Compra MINUTOS para hacer llamadas anónimas e imposibles de rastrear",
+    title:
+      "Compra MINUTOS para hacer llamadas anónimas e imposibles de rastrear",
     description: "Disponible en más de 200 países",
     features: [
       {
@@ -101,7 +101,8 @@ const cardData = [
   // #3 IMSI
   {
     logoSrc: LogoSvg1,
-    title: "Compra cambios de IMSI el equivalente a reemplazar tu SIM por una nueva",
+    title:
+      "Compra cambios de IMSI el equivalente a reemplazar tu SIM por una nueva",
     description: "Disponible en más de 200 países",
     features: [
       {
@@ -220,28 +221,44 @@ const cardData = [
 ];
 
 const SimProductsPage: React.FC = () => {
-  return (
-    <div className="flex flex-col gap-5">
-      {cardData.map((card, index) => (
-        <div key={index} className="gap-5 flex">
-          <CardDescription
-            logoSrc={card.logoSrc}
-            title={card.title}
-            description={card.description}
-            features={card.features}
-          />
-          <CardSim
-            productImage={card.productImage}
-            features={card.featuresCardSim}
-            priceRange={card.priceRange}
-            headerIcon={card.headerIcon}
-            headerTitle={card.headerTitle}
-          />
-        </div>
-      ))}
-    </div>
-  );
-};
-
+    return (
+      <div className="flex flex-col gap-6">
+        {cardData.map((card, index) => (
+          <div
+            key={index}
+            className="
+              bg-custom-linear 
+              sm:!bg-transparent 
+              shadow-lg 
+              sm:shadow-none 
+              gap-6 
+              flex flex-col 
+              sm:flex-row 
+              m-2 
+              my-0 
+              rounded-3xl 
+              p-4 
+              py-10
+            "
+          >
+            <CardDescription
+              logoSrc={card.logoSrc}
+              title={card.title}
+              description={card.description}
+              features={card.features}
+            />
+            <CardSim
+              productImage={card.productImage}
+              features={card.featuresCardSim}
+              priceRange={card.priceRange}
+              headerIcon={card.headerIcon}
+              headerTitle={card.headerTitle}
+            />
+          </div>
+        ))}
+      </div>
+    );
+  };
+  
+  
 export default SimProductsPage;
-
