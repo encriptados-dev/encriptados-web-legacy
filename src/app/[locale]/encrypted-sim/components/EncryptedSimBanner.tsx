@@ -5,6 +5,7 @@ import { useTranslations } from "next-intl";
 
 const Women = "/images/encrypted-sim/Encrypted_Women.png";
 const Man = "/images/encrypted-sim/Encrypted_Man.png";
+const Sim = "/images/encrypted-sim/Encrypted_sim_card.png";
 
 const EncryptedSimBanner = () => {
   const t = useTranslations("EncryptedSimPage");
@@ -23,10 +24,19 @@ const EncryptedSimBanner = () => {
         />
       </div>
 
-      <div className="flex flex-col justify-center gap-y-4 text-center items-center w-full py-2">
+      <div className="flex flex-col justify-center gap-y-8 text-center items-center w-full py-2">
         <CircleTitle size="large" rounded="full" intent="secondary">
           {t("encryptedTitleButon")}
         </CircleTitle>
+        <Image
+          width={400}
+          height={400}
+          quality={100}
+          title="Image"
+          src={Sim}
+          alt="Image"
+          loading="eager"
+        />
         <h1 className="sm:text-xl md:text-base lg:text-lg xl:text-4xl font-bold text-[#333333]">
           {t("encryptedTitle")}
         </h1>

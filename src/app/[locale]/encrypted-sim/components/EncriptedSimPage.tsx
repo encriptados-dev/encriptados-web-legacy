@@ -1,114 +1,72 @@
 import { useTranslations } from "next-intl";
-import SimProductsPage from "./SimProducts";
+
 import BannerConnect from "./BannerConnect";
 import EncryptedSimBanner from "./EncryptedSimBanner";
-import ListOfFeatureCards from "./Card/ListOfFeatureCards";
-import AnonimateSvg from "../svgs/AnonimateSvg";
-import ImsiChangeSvg from "../svgs/ImsiChangeSvg";
-import SubstituteNumberSvg from "../svgs/SubstituteNumberSvg";
-import VoiceFilterSvg from "../svgs/VoiceFilterSvg";
-import CallbackSvg from "../svgs/CallbackSvg";
-import PlansSvg from "../svgs/PlansSvg";
-import NoGeolocalizationSvg from "../svgs/NoGeolocalizationSvg";
-import GlobalCoverage from "../svgs/GlobalCoverage";
-import MSIMask from "../svgs/MSIMack";
-import RedProviderSvg from "../svgs/RedProviderSvg";
-import WithOutNumberSvg from "../svgs/WithOutNumberSvg";
+import FeaturesList from "./FeaturesList";
+import OurObjetive from "./OurObjetive";
+import BannerSecure from "./BannerSecure";
+import PayForUse from "./PayForUse";
+import WhyCallSim from "./WhyCallSim/WhyCallSim";
+import BannerCoverage from "./BannerCoverage";
 
 const EncriptedSim = () => {
   const t = useTranslations("EncryptedSimPage");
 
   return (
     <>
-      <BannerConnect />
+      <div className="flex justify-center items-center mb-16 mt-16">
+        <BannerConnect />
+      </div>
 
       <div className="justify-center flex bg-cyan-gradient flex-col items-center">
-        <h1 className="sm:text-xl md:text-base lg:text-lg xl:text-4xl font-bold text-center text-[#333333] mt-16 mb-16">
-          {t("improveYourSecurity.titleImproveYourSecurity")}
-        </h1>
-
-        <div className="max-w-[1000px] mx-auto mt-8">
-          <SimProductsPage />
-        </div>
-
         <div className="mt-8">
           <EncryptedSimBanner />
         </div>
 
         <div className="max-w-[1000px]  justify-center mt-16 items-center">
-          <ListOfFeatureCards
-            features={[
-              {
-                title: t("improveYourSecurity.untraceable.title"),
-                description: t("improveYourSecurity.untraceable.description"),
-                icon: <AnonimateSvg />,
-              },
-              {
-                title: t("improveYourSecurity.anonymity.title"),
-                description: t("improveYourSecurity.anonymity.description"),
-                icon: <AnonimateSvg />,
-              },
-              {
-                title: t("improveYourSecurity.changeMSI.title"),
-                description: t("improveYourSecurity.changeMSI.description"),
-                icon: <ImsiChangeSvg />,
-              },
-              {
-                title: t("improveYourSecurity.subtituteNumber.title"),
-                description: t(
-                  "improveYourSecurity.subtituteNumber.description"
-                ),
-                icon: <SubstituteNumberSvg />,
-              },
-              {
-                title: t("improveYourSecurity.voiceFilter.title"),
-                description: t("improveYourSecurity.voiceFilter.description"),
-                icon: <VoiceFilterSvg />,
-              },
-              {
-                title: t("improveYourSecurity.callback.title"),
-                description: t("improveYourSecurity.callback.description"),
-                icon: <CallbackSvg />,
-              },
-              {
-                title: t("improveYourSecurity.plans.title"),
-                description: t("improveYourSecurity.plans.description"),
-                icon: <PlansSvg />,
-              },
-              {
-                title: t("improveYourSecurity.geolocalization.title"),
-                description: t(
-                  "improveYourSecurity.geolocalization.description"
-                ),
-                icon: <NoGeolocalizationSvg />,
-              },
-              {
-                title: t("improveYourSecurity.globalCoverage.title"),
-                description: t(
-                  "improveYourSecurity.globalCoverage.description"
-                ),
-                icon: <GlobalCoverage />,
-              },
-              {
-                title: t("improveYourSecurity.maskMSI.title"),
-                description: t("improveYourSecurity.maskMSI.description"),
-                icon: <MSIMask />,
-              },
-              {
-                title: t("improveYourSecurity.providerPrivateRed.title"),
-                description: t(
-                  "improveYourSecurity.providerPrivateRed.description"
-                ),
-                icon: <RedProviderSvg />,
-              },
-              {
-                title: t("improveYourSecurity.withOutNumber.title"),
-                description: t("improveYourSecurity.withOutNumber.description"),
-                icon: <WithOutNumberSvg />,
-              },
-            ]}
-          />
+          <h1 className="sm:text-xl md:text-base lg:text-lg xl:text-4xl font-bold text-center text-[#333333] mt-16 mb-16">
+            {t("improveYourSecurity.titleImproveYourSecurity")}
+          </h1>
+          <FeaturesList />
         </div>
+
+        <div className="max-w-[1000px]  justify-center mt-16 items-center ">
+          <OurObjetive />
+        </div>
+      </div>
+      <div className="flex justify-center">
+        <h1 className="sm:text-xl w-8/12 md:text-base lg:text-lg xl:text-4xl font-bold text-center text-[#333333] mt-16 mb-16">
+          {t("comunicationTitle")}
+        </h1>
+      </div>
+      <div className="flex justify-center items-center mt-16 mb-16">
+        <BannerSecure />
+      </div>
+      <div className="w-full flex justify-center">
+        <div className="items-center xl:w- lg:w-9/12 md:w-10/12 sm:w-11/12 w-full">
+          <div className="w-full">
+            <PayForUse />
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <h1 className="sm:text-xl md:text-base lg:text-lg xl:text-4xl font-bold text-center text-[#333333] mt-16 mb-16">
+          {t("whyCallWithEncryptedSIM.title")}
+        </h1>
+      </div>
+      <div className=" flex justify-center">
+        <div className="w-9/12 ">
+          <WhyCallSim />
+        </div>
+      </div>
+
+      <div className=" flex justify-center">
+        <div className="w-9/12 "></div>
+      </div>
+
+      <div className="mt-16">
+        <BannerCoverage />
       </div>
     </>
   );

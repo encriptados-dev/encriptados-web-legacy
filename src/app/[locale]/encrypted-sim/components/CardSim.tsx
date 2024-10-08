@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import Button from "@/shared/components/Button";
 import TravelSvg from "/public/images/encrypted-sim/icons/travel_explore.svg";
 import WifiSvg from "/public/images/encrypted-sim/icons/wifi_tethering.svg";
@@ -7,20 +7,26 @@ import StarSvg from "/public/images/encrypted-sim/icons/star_half2.svg";
 import LocalMallSvg from "/public/images/encrypted-sim/icons/local_mall.svg";
 
 interface CardSimProps {
-  productImage: string;
+  productImage: StaticImageData;
   features: string[];
   priceRange: string;
   headerIcon: string;
   headerTitle: string;
 }
 
-const CardSim: React.FC<CardSimProps> = ({ productImage, features, priceRange, headerIcon, headerTitle }) => {
+const CardSim: React.FC<CardSimProps> = ({
+  productImage,
+  features,
+  priceRange,
+  headerIcon,
+  headerTitle,
+}) => {
   return (
     <div className="w-full max-w-sm mx-auto bg-white shadow-lg rounded-2xl overflow-hidden">
       <div className="p-2 bg-[#5D5D5D] ">
         <Image
           src={productImage}
-          alt="Sim Card"          
+          alt="Sim Card"
           className=" w-full h-48 object-contain"
         />
         <div className="p-2">
@@ -43,8 +49,8 @@ const CardSim: React.FC<CardSimProps> = ({ productImage, features, priceRange, h
           <Image
             src={headerIcon}
             alt="Icon"
-            width={24}  
-            height={24} 
+            width={24}
+            height={24}
             className="w-6 h-6"
           />
           <h2 className="text-lg font-bold mb-2">{headerTitle}</h2>
@@ -64,18 +70,20 @@ const CardSim: React.FC<CardSimProps> = ({ productImage, features, priceRange, h
             <div className="flex justify-between items-center mb-2">
               <span className="text-lg font-bold">{priceRange}</span>
               <div className="flex items-center bg-[#EDF4F6] px-2 rounded-full">
-              <Image
+                <Image
                   src={StarSvg}
                   alt="Icon"
                   className="w-6 h-6 fill-current text-yellow-400 font-bold"
                 />
-                <span className="ml-1 text-sm text-gray-600 font-semibold">5/5</span>
+                <span className="ml-1 text-sm text-gray-600 font-semibold">
+                  5/5
+                </span>
               </div>
             </div>
             <Button
               size="medium"
               rounded="full"
-              intent="black"
+              intent="secondary"
               icon={
                 <Image
                   src={LocalMallSvg}

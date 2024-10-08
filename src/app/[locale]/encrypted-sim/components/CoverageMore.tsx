@@ -2,6 +2,7 @@ import { useTranslations } from "next-intl";
 
 const CoverageMore = () => {
   const t = useTranslations("EncryptedSimPage");
+
   return (
     <>
       <h1 className="text-center mt-12 text-2xl font-bold bg-gradient-to-r from-black to-[#31CADD] bg-clip-text text-transparent">
