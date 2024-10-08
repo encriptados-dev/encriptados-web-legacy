@@ -1,7 +1,11 @@
-import React from 'react';
+import SimSelection from "./components/SimSelection";
 
-const BneSimPage = () => {
-  return <div>Bne SIM Encriptados Content</div>;
+const Page = () => {
+  return (
+    <>
+      <SimSelection />
+    </>
+  );
 };
 
-export default BneSimPage;
+export default Page;

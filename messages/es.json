@@ -4,6 +4,7 @@
     "fastDeliveryBannerTitle": "Con la Entrega Rápida, recibe tu celular encriptado en el menor tiempo posible",
     "fastDeliveryBannerSubtitle": "Encuentra un punto de recogida cercano a ti",
     "fastDeliveryLocation": "Ver Lugares de entrega",
+    "encriptedProductsTitle": "Productos Encriptados",
     "deliveryPointsTitle": "Encuentra nuestros puntos de entrega rápida",
     "deliveryPointsDescription": "Usa el mapa interactivo y encuentra nuestros puntos seleccionados de recogida más cercanos a tu ubicación",
     "chatTelegram": "Chatear por Telegram",
@@ -21,6 +22,110 @@
         "title": "Recoge tu celular encriptado",
         "description": "Una vez coordinada la entrega, recoge tu celular encriptado y disfruta de comunicaciones seguras"
       }
+    },
+    "renatiTitle": " Celular Encriptado Renati",
+    "buyNow": "Comprar ahora",
+    "encryptedPhone": "Teléfono Encriptado",
+    "saveMoney": "Ahorra hasta",
+    "downloadApp": "Descarga la App para iOS & Android y compra ahora tu SIM",
+    "scanQR": "O escanea el código QR con tu cámara",
+    "titleFAQS": "Preguntas Frecuentes",
+    "faqs": {
+      "immediateDelivery": {
+        "title": "¿Qué es la Entrega Rápida de Encriptados?",
+        "content": "La Entrega Rápida de Encriptados es un servicio especializado que te permite disfrutar de tu SIM o equipo encriptado en menos de 48 horas."
+      },
+      "whereDelivery": {
+        "title": "¿Qué productos puedo comprar con Entrega Rápida?",
+        "content": "Puedes obtener cualquiera de las marcas de celulares encriptados seleccionadas en nuestra página web."
+      },
+      "costDelivery": {
+        "title": "¿Qué costo tiene la Entrega Rápida de Encriptados?",
+        "content": "El costo de la entrega rápida de Encriptados varía de acuerdo a tu localidad, solo debes escribirnos al Telegram y te ayudaremos con los valores y gestión para que tengas tu producto cuanto antes."
+      }
     }
+  },
+
+  "EncryptedSimPage": {
+    "connectAllWorldTitle": "Conéctate en todo el mundo",
+    "totalSecurityTitle": "con total seguridad en tus comunicaciones",
+    "addYourSimSubtitle": "Adquiere tu SIM/eSIM con datos móviles y disfruta de total anonimato en llamadas, filtros, cambios IMSI y más",
+    "coverageTitle": "Cobertura en más de 200 países",
+    "coverageDescription": "Consulta el costo del gigabyte según el país y el perfil recomendado, así optimizas el consumo de tus datos al mejor precio",
+    "encryptedTitleButon": "SIM Card Encriptada",
+    "encryptedTitle": "La SIM Encriptada te brinda la mayor seguridad y anonimato en cualquier parte del mundo",
+    "encryptedDescription": "Seguridad y privacidad en tus comunicaciones, realiza llamadas anónimas e irrastreables y protégete contra IMSI Catcher",
+
+    "improveYourSecurity": {
+      "titleImproveYourSecurity": "Mejora tu seguridad con estas características",
+      "untraceable": {
+        "title": "Irrastreable",
+        "description": "Comunícate desde cualquier lugar siendo totalmente anónimo e irrastreable"
+      },
+      "anonymity": {
+        "title": "Anonimato",
+        "description": "La información de facturación y envío no está ligada al chip, por lo que es totalmente anónimo"
+      },
+      "changeMSI": {
+        "title": "Cambio de IMSI",
+        "description": "El cambio de IMSI reemplaza la identidad de tu SIM por una nueva. Es el equivalente a cambiar la SIM por una nueva"
+      },
+      "subtituteNumber": {
+        "title": "Número sustituto",
+        "description": "Genera un número aleatorio para cada llamada que aparecerá en el identificador del receptor"
+      },
+      "voiceFilter": {
+        "title": "Filtros de voz",
+        "description": "Utiliza 7 filtros de voz diferentes para mayor anonimato en tus llamadas"
+      },
+
+      "callback": {
+        "title": "Devolución de llamada",
+        "description": "Genera un número aleatorio para cada llamada que aparecerá en el identificador del receptor"
+      },
+      "plans": {
+        "title": "Planes sin fecha de corte",
+        "description": "Sin contratos ni fechas de corte. Disfruta de la flexibilidad de planes sin fechas de vencimiento y con control total de tus datos"
+      },
+      "geolocalization": {
+        "title": "Geolocalización cifrada",
+        "description": "Protege tu ubicación en todo momento con cifrado avanzado que asegura que no podrás ser rastreado ni localizado"
+      },
+      "globalCoverage": {
+        "title": "Cobertura global",
+        "description": "Conéctate desde cualquier lugar del mundo con cobertura total y sin comprometer tu seguridad"
+      },
+      "maskMSI": {
+        "title": "Enmascara el IMSI",
+        "description": "Oculta tu IMSI para evitar interceptaciones o antenas falsas como IMSI Catcher"
+      },
+
+      "providerPrivateRed": {
+        "title": "Proveedor de red privado",
+        "description": "Somos una MVNO privada con total discreción en el uso de tus datos personales"
+      },
+      "withOutNumber": {
+        "title": "Sin número de teléfono",
+        "description": "Para mayor seguridad y anonimato, esta SIM no posee número telefónico"
+      }
+    },
+    "ourObjetiveTitle": "Nuestro objetivo es brindarte total protección",
+    "ourObjetiveDescription": "Tener la tarjeta SIM Internacional Encriptada es tener un proveedor de red privado que se encargará de brindarte seguridad y evitar que tu información sea manipulada, compartida o vendida",
+    "comunicationTitle": "Comunícate desde cualquier lugar del mundo con la tranquilidad de estar seguro y anónimo",
+    "secureAndEasyToUse": "¡Segura y fácil de usar!",
+    "secureAndEasyToUseDescription": "Se activa al instante en línea y te garantiza total privacidad y protección para tus datos. Puedes recargarla fácilmente desde el lugar en donde estés",
+    "payOnlyForWhatYouUseTitle": "Paga solo por lo que usas",
+    "payOnlyForWhatYouUseDescription": "Mientras estés usando la SIM Card Encriptada, tu saldo nunca se vence sin importar el tiempo que tardes en consumirlo",
+    "payOnlySecondCard": "Tu plan no tiene fecha de corte",
+    "whyCallWithEncryptedSIM": {
+      "title": "¿Por qué llamar con la SIM Encriptada?",
+      "card1": "No almacenamos historial de llamadas",
+      "card2": "Anonimato en las llamadas por medio de herramientas: Sustitución de ID, Callback y Filtro de voz",
+      "card3": "La SIM genera un número sustituto aleatorio en cada llamada para más anonimato"
+    },
+    "coverageMoreThan200CountriesTitle": "Cobertura en más de 200 países",
+    "coverageMoreThan200CountriesDescription": "Comunicación segura y sin fronteras",
+    "downloadAppTitle": "Descarga la App para iOS y Android",
+    "downloadAppDescription": "Descarga la App para iOS y Android"
   }
 }

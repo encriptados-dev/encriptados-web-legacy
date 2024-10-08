@@ -1,6 +1,5 @@
 import Button from "@/shared/components/Button";
 import { useTranslations } from "next-intl";
-import Text from "@/shared/components/Text";
 import CircleTitle from "@/shared/components/CircleTitle";
 import Image from "next/image";
 import Man from "../../../../../public/images/fastdeliverypage/man.png";
@@ -9,28 +8,26 @@ import Women from "../../../../../public/images/fastdeliverypage/women.png";
 const Banner = () => {
   const t = useTranslations("DeliveryPage");
   return (
-    <div className=" w-full h-[450px] bg-cyan-gradient flex justify-around px-7  items-end">
-      <div className="flex flex-col items-center justify-end h-full">
+    <div className="w-full bg-cyan-gradient flex flex-col md:flex-row justify-around items-center px-4 md:px-7">
+      <div className="flex flex-col items-center justify-center h-full mb-6 md:mb-0">
         <Image quality={100} width={365} height={365} alt="woman" src={Women} />
       </div>
-      <div className="flex flex-col justify-center gap-y-4 w-6/12 text-center items-center mb-24">
+      <div className="flex flex-col justify-center gap-y-4 text-center items-center w-full md:w-6/12 py-2 ">
         <CircleTitle size="large" rounded="full" intent="ghost">
           {t("unnecessaryWaits")}
         </CircleTitle>
-        <Text customClass="font-bold" color="#333333" size="4xl">
+        <h1 className="sm:text-xl md:text-base lg:text-lg xl:text-4xl  font-bold text-[#333333]">
           {t("fastDeliveryBannerTitle")}
-        </Text>
-        <Text color="black" size="2xl">
+        </h1>
+        <p className="text-black  sm:text-xl md:text-base lg:text-lg xl:text-xl 2xl:text-2xl">
           {t("fastDeliveryBannerSubtitle")}
-        </Text>
+        </p>
 
         <Button rounded="full" intent="secondary" size="large">
           {t("fastDeliveryLocation")}
         </Button>
       </div>
-      <div className="flex flex-col items-center justify-end h-full">
-        {" "}
-        {/* Alineación hacia abajo */}
+      <div className="flex flex-col items-center justify-center h-full mb-6 md:mb-0">
         <Image quality={100} width={365} height={365} alt="man" src={Man} />
       </div>
     </div>

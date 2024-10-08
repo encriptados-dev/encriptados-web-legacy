@@ -4,6 +4,7 @@
     "fastDeliveryBannerTitle": "Con la Consegna Veloce, ricevi il tuo cellulare criptato nel minor tempo possibile",
     "fastDeliveryBannerSubtitle": "Trova un punto di raccolta vicino a te",
     "fastDeliveryLocation": "Vedi Luoghi di consegna",
+    "encriptedProductsTitle": "Prodotti Crittografati",
     "deliveryPointsTitle": "Trova i nostri punti di consegna rapida",
     "deliveryPointsDescription": "Usa la mappa interattiva per trovare i nostri punti di raccolta selezionati più vicini alla tua posizione",
     "chatTelegram": "Chattare su Telegram",
@@ -21,6 +22,110 @@
         "title": "Ritira il tuo cellulare criptato",
         "description": "Una volta coordinata la consegna, ritira il tuo cellulare criptato e goditi comunicazioni sicure"
       }
+    },
+    "renatiTitle": "Telefono Cellulare Crittografato Renati",
+    "buyNow": "Acquista Ora",
+    "encryptedPhone": "Telefono Crittografato",
+    "saveMoney": "Risparmia fino a",
+    "downloadApp": "Scarica l'app per iOS e Android e acquista subito la tua SIM",
+    "scanQR": "Oppure scansiona il codice QR con la tua fotocamera",
+    "titleFAQS": "Domande Frequenti",
+    "faqs": {
+      "immediateDelivery": {
+        "title": "Che cos'è la Consegna Veloce di Dispositivi Crittografati?",
+        "content": "La Consegna Veloce di Dispositivi Crittografati è un servizio specializzato che ti consente di godere della tua SIM o dispositivo crittografato in meno di 48 ore."
+      },
+      "whereDelivery": {
+        "title": "Quali prodotti posso acquistare con Consegna Veloce?",
+        "content": "Puoi ottenere qualsiasi marca di telefoni cellulari crittografati selezionata sul nostro sito web."
+      },
+      "costDelivery": {
+        "title": "Qual è il costo della Consegna Veloce di Dispositivi Crittografati?",
+        "content": " Il costo della Consegna Veloce di Dispositivi Crittografati varia in base alla tua località; devi solo scriverci su Telegram e ti aiuteremo con i prezzi e le pratiche affinché tu possa ricevere il tuo prodotto il prima possibile."
+      }
     }
+  },
+  "EncryptedSimPage": {
+    "connectAllWorldTitle": "Connettiti in tutto il mondo",
+    "totalSecurityTitle": "con totale sicurezza nelle tue comunicazioni",
+    "addYourSimSubtitle": "Acquista la tua SIM/eSIM con dati mobili e goditi il totale anonimato nelle chiamate, filtri, cambi IMSI e altro",
+    "coverageTitle": "Copertura in più di 200 paesi",
+    "coverageDescription": "Consulta il costo del gigabyte in base al paese e al profilo consigliato, così ottimizzi il consumo dei tuoi dati al miglior prezzo",
+    "encryptedTitleButon": "SIM Card Criptata",
+    "encryptedTitle": "La SIM Criptata ti offre la massima sicurezza e anonimato ovunque nel mondo",
+    "encryptedDescription": "Sicurezza e privacy nelle tue comunicazioni, effettua chiamate anonime e irrintracciabili e proteggiti dagli IMSI Catcher",
+
+    "improveYourSecurity": {
+      "titleImproveYourSecurity": "Migliora la tua sicurezza con queste caratteristiche",
+      "untraceable": {
+        "title": "Irrintracciabile",
+        "description": "Comunica da qualsiasi luogo essendo completamente anonimo e irrintracciabile"
+      },
+      "anonymity": {
+        "title": "Anonimato",
+        "description": "Le informazioni di fatturazione e spedizione non sono collegate al chip, quindi sono completamente anonime"
+      },
+      "changeMSI": {
+        "title": "Cambio di IMSI",
+        "description": "Il cambio di IMSI sostituisce l'identità della tua SIM con una nuova. È l'equivalente di cambiare la SIM con una nuova"
+      },
+      "subtituteNumber": {
+        "title": "Numero sostitutivo",
+        "description": "Genera un numero casuale per ogni chiamata che apparirà sul identificativo del ricevente"
+      },
+      "voiceFilter": {
+        "title": "Filtri vocali",
+        "description": "Usa 7 filtri vocali diversi per una maggiore anonimato nelle tue chiamate"
+      },
+
+      "callback": {
+        "title": "Richiamata",
+        "description": "Genera un numero casuale per ogni chiamata che apparirà nell'identificatore del destinatario"
+      },
+      "plans": {
+        "title": "Piani senza data di scadenza",
+        "description": "Senza contratti né date di scadenza. Goditi la flessibilità dei piani senza scadenza e con il pieno controllo dei tuoi dati"
+      },
+      "geolocalization": {
+        "title": "Geolocalizzazione crittografata",
+        "description": "Proteggi la tua posizione in ogni momento con crittografia avanzata che garantisce che non potrai essere tracciato o localizzato"
+      },
+      "globalCoverage": {
+        "title": "Copertura globale",
+        "description": "Connettiti da qualsiasi luogo nel mondo con copertura totale e senza compromettere la tua sicurezza"
+      },
+      "maskMSI": {
+        "title": "Maschera l'IMSI",
+        "description": "Nascondi il tuo IMSI per evitare intercettazioni o antenne false come gli IMSI Catchers"
+      },
+
+      "providerPrivateRed": {
+        "title": "Fornitore di rete privata",
+        "description": "Siamo un MVNO privato con totale discrezione nell'uso dei tuoi dati personali"
+      },
+      "withOutNumber": {
+        "title": "Senza numero di telefono",
+        "description": "Per maggiore sicurezza e anonimato, questa SIM non ha un numero di telefono"
+      }
+    },
+    "ourObjetiveTitle": "Il nostro obiettivo è offrirti una protezione totale",
+    "ourObjetiveDescription": "Avere la SIM internazionale crittografata significa avere un fornitore di rete privata che si occuperà di garantirti sicurezza e di evitare che le tue informazioni vengano manipulate, condivise o vendute",
+    "comunicationTitle": "Comunica da qualsiasi luogo nel mondo con la tranquillità di essere al sicuro e anonimo",
+    "secureAndEasyToUse": "Sicura e facile da usare!",
+    "secureAndEasyToUseDescription": "Si attiva istantaneamente online e garantisce totale privacy e protezione per i tuoi dati. Puoi ricaricarla facilmente da qualsiasi luogo ti trovi",
+    "payOnlyForWhatYouUseTitle": "Paga solo per quello che usi",
+    "payOnlyForWhatYouUseDescription": "Finché utilizzi la SIM Card crittografata, il tuo saldo non scade mai, indipendentemente dal tempo che impieghi a consumarlo",
+    "payOnlySecondCard": "Il tuo piano non ha data di scadenza",
+    "whyCallWithEncryptedSIM": {
+      "title": "Perché chiamare con la SIM crittografata?",
+      "card1": "Non memorizziamo la cronologia delle chiamate",
+      "card2": "Anonimato nelle chiamate tramite strumenti: sostituzione dell'ID, Callback e filtro vocale",
+      "card3": "La SIM genera un numero sostitutivo casuale per ogni chiamata per maggiore anonimato"
+    },
+
+    "coverageMoreThan200CountriesTitle": "Copertura in oltre 200 paesi",
+    "coverageMoreThan200CountriesDescription": "Comunicazione sicura e senza confini",
+    "downloadAppTitle": "Scarica l'app per iOS e Android",
+    "downloadAppDescription": "Scarica l'app per iOS e Android"
   }
 }
