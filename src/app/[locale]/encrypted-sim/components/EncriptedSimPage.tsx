@@ -8,6 +8,8 @@ import BannerSecure from "./BannerSecure";
 import PayForUse from "./PayForUse";
 import WhyCallSim from "./WhyCallSim/WhyCallSim";
 import BannerCoverage from "./BannerCoverage";
+import SimProductsPage from "./SimProducts";
+
 
 const EncryptedSim = () => {
   const t = useTranslations("EncryptedSimPage");
@@ -17,6 +19,10 @@ const EncryptedSim = () => {
       <div className="flex justify-center items-center mb-16 mt-16">
         <BannerConnect />
       </div>
+
+      <div className="max-w-[1100px] mx-auto ">
+            <SimProductsPage />            
+        </div>
 
       <div className="justify-center flex bg-cyan-gradient flex-col items-center">
         <div className="mt-8">

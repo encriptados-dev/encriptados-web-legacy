@@ -83,7 +83,7 @@ const CardSim: React.FC<CardSimProps> = ({
             <Button
               size="medium"
               rounded="full"
-              intent="secondary"
+              intent="black"
               icon={
                 <Image
                   src={LocalMallSvg}

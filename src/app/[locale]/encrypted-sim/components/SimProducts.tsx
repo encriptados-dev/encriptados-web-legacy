@@ -239,6 +239,8 @@ const SimProductsPage: React.FC = () => {
               rounded-3xl 
               p-4 
               py-10
+              sm:py-0
+              ls:py-0
             "
           >
             <CardDescription
