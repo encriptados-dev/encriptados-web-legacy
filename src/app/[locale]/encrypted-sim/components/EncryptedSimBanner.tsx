@@ -10,7 +10,7 @@ const Sim = "/images/encrypted-sim/Encrypted_sim_card.png";
 const EncryptedSimBanner = () => {
   const t = useTranslations("EncryptedSimPage");
   return (
-    <div className="w-full bg-cyan-gradient flex flex-col md:flex-row justify-center items-center ">
+    <div className="w-full flex flex-col md:flex-row justify-center items-center ">
       <div className="h-[300px] w-[300px] md:h-[600px] md:w-[600px] relative  overflow-hidden flex justify-center items-center mb-4 md:mb-0">
         <Image
           className="-scale-x-100 translate-y-9"

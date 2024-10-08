@@ -28,7 +28,7 @@ const CardDescription: React.FC<CardDescriptionProps> = ({
           className="w-[14rem] justify-end flex"
         />
       </div>
-      <h2 className="lg:text-4xl md:text-2xl font-bold text-black mb-4">
+      <h2 className="lg:text-4xl md:text-2xl text-2xl font-bold text-black mb-4">
         {title}
       </h2>
       <p className="text-black mb-8 text-base">
@@ -44,7 +44,7 @@ const CardDescription: React.FC<CardDescriptionProps> = ({
                 className="w-9 h-9"
               />
             </div>
-            <span className="lg:text-sm md:text-[0.6rem] sm:text-[0.6rem] text-[0.5rem] flex items-center text-center text-sm leading-tight justify-center">
+            <span className="lg:text-[0.8rem] md:text-[0.6rem] sm:text-[0.6rem] text-[0.5rem] flex items-center text-center text-sm lg:leading-tight leading-tight justify-center">
               {feature.description}
             </span>
           </div>
