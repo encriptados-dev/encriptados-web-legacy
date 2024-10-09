@@ -7,9 +7,13 @@ import OurObjetive from "./OurObjetive";
 import BannerSecure from "./BannerSecure";
 import PayForUse from "./PayForUse";
 import WhyCallSim from "./WhyCallSim/WhyCallSim";
-import BannerCoverage from "./BannerCoverage";
+
 import SimProductsPage from "./SimProducts";
+<<<<<<< HEAD
 import CustomShapeDivider from "./CustomShapeDivider";
+=======
+import BannerCoverage from "@/shared/BannerCoverage";
+>>>>>>> 56dcb606b8201c078fc8b8569613270a4dd3cc97
 
 const EncryptedSim = () => {
   const t = useTranslations("EncryptedSimPage");
@@ -28,6 +32,13 @@ const EncryptedSim = () => {
         <div className="max-w-[1000px] mx-auto p-4 ">
           <SimProductsPage />
         </div>
+      <div className="flex justify-center items-center mb-16 mt-16">
+        <BannerConnect />
+      </div>
+
+      <div className="max-w-[1100px] mx-auto ">
+        <SimProductsPage />
+      </div>
 
         <div className="justify-center flex bg-cyan-gradient flex-col items-center mt-6">
           <div>

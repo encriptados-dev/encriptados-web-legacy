@@ -1,7 +1,8 @@
-import React from 'react';
+import React from "react";
+import MayaDataPage from "./components/MayaDataPage";
 
-const MayaDataPage = () => {
-  return <div>Contenido de Dónde Encontrar Encriptados</div>;
+const Page = () => {
+  return <MayaDataPage />;
 };
 
-export default MayaDataPage;
+export default Page;

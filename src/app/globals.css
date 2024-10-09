@@ -42,3 +42,27 @@
     }
   }
 }
+<<<<<<< HEAD
+=======
+
+.custom-shape-divider-bottom-1728419371 {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-bottom-1728419371 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 50px;
+}
+
+.custom-shape-divider-bottom-1728419371 .shape-fill {
+  fill: #f4f8fa;
+}
+>>>>>>> 56dcb606b8201c078fc8b8569613270a4dd3cc97
