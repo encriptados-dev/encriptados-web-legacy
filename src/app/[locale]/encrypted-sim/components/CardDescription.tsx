@@ -28,23 +28,23 @@ const CardDescription: React.FC<CardDescriptionProps> = ({
           className="w-[14rem] justify-end flex"
         />
       </div>
-      <h2 className="lg:text-4xl md:text-2xl font-bold text-black mb-4">
+      <h2 className="lg:text-4xl md:text-2xl text-2xl font-bold text-black mb-4">
         {title}
       </h2>
       <p className="text-black mb-8 text-base">
         {description}
       </p>
-      <div className=" lg:grid-cols-5 md:grid-cols-4 sm:grid-cols-3 grid grid-cols-4 gap-2 justify-center  ">
+      <div className=" lg:grid-cols-5 md:grid-cols-4 sm:grid-cols-3 grid grid-cols-3 gap-4 justify-center  ">
         {features.map((feature, index) => (
           <div key={index}>
             <div className="lg:h-[100px] md:h-[100px] sm:h-[100px] h-[80px] border flex justify-center items-center border-none rounded-2xl bg-[#E6F4F9] ">
               <Image
                 src={feature.icon}
                 alt={feature.alt}
-                className="w-8 h-8"
+                className="w-9 h-9"
               />
             </div>
-            <span className="lg:text-sm md:text-[0.6rem] sm:text-[0.6rem] text-[0.6rem] flex items-center text-center text-sm leading-tight justify-center">
+            <span className="lg:text-[0.8rem] md:text-[0.6rem] sm:text-[0.6rem] text-[0.5rem] flex items-center text-center text-sm lg:leading-tight leading-tight justify-center">
               {feature.description}
             </span>
           </div>

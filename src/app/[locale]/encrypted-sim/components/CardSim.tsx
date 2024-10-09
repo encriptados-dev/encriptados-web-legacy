@@ -5,6 +5,7 @@ import WifiSvg from "/public/images/encrypted-sim/icons/wifi_tethering.svg";
 import CheckSvg from "/public/images/encrypted-sim/icons/check.svg";
 import StarSvg from "/public/images/encrypted-sim/icons/star_half2.svg";
 import LocalMallSvg from "/public/images/encrypted-sim/icons/local_mall.svg";
+import { useTranslations } from "next-intl";
 
 interface CardSimProps {
   productImage: StaticImageData;
@@ -21,23 +22,24 @@ const CardSim: React.FC<CardSimProps> = ({
   headerIcon,
   headerTitle,
 }) => {
+  const t = useTranslations("EncryptedSimPage");  
   return (
     <div className="w-full max-w-sm mx-auto bg-white shadow-lg rounded-2xl overflow-hidden">
       <div className="p-2 bg-[#5D5D5D] ">
         <Image
           src={productImage}
-          alt="Sim Card"
-          className=" w-full h-48 object-contain"
+          alt={t("CardSim.simCard")}  
+          className="w-full h-48 object-contain"
         />
         <div className="p-2">
           <div className="flex justify-end gap-2  mb-1 text-sm text-gray-600">
             <div className="bg-[#FFFFFF] text-black px-2 py-1 rounded-full text-xs font-semibold flex gap-1">
               <Image src={TravelSvg} alt="Icon" className="w-4 h-4" />
-              <span>+200 países disponibles</span>
+              <span>{t("CardSim.availableCountries")}</span>  
             </div>
 
             <div className="bg-[#81E2FF] text-black px-2 py-1 rounded-full text-xs font-semibold flex gap-1">
-              <span>5G LTE</span>
+              <span>{t("CardSim.lteSpeed")}</span>  
               <Image src={WifiSvg} alt="Icon" className="w-4 h-4" />
             </div>
           </div>
@@ -45,7 +47,7 @@ const CardSim: React.FC<CardSimProps> = ({
       </div>
 
       <div className="p-6">
-        <div className="text-black rounded-full text-xs font-semibold flex gap-1">
+        <div className="text-black rounded-full text-xs font-semibold flex gap-2">
           <Image
             src={headerIcon}
             alt="Icon"
@@ -53,7 +55,7 @@ const CardSim: React.FC<CardSimProps> = ({
             height={24}
             className="w-6 h-6"
           />
-          <h2 className="text-lg font-bold mb-2">{headerTitle}</h2>
+          <h2 className="text-lg font-bold mb-2">{headerTitle}</h2> 
         </div>
 
         <ul className="space-y-0">
@@ -76,14 +78,14 @@ const CardSim: React.FC<CardSimProps> = ({
                   className="w-6 h-6 fill-current text-yellow-400 font-bold"
                 />
                 <span className="ml-1 text-sm text-gray-600 font-semibold">
-                  5/5
+                  {t("CardSim.rating")}  
                 </span>
               </div>
             </div>
             <Button
               size="medium"
               rounded="full"
-              intent="secondary"
+              intent="black"
               icon={
                 <Image
                   src={LocalMallSvg}
@@ -93,7 +95,7 @@ const CardSim: React.FC<CardSimProps> = ({
               }
               iconPosition="right"
             >
-              Comprar Ahora
+              {t("CardSim.buyNow")} 
             </Button>
           </div>
         </div>

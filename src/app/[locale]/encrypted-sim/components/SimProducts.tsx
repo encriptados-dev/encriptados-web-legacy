@@ -17,248 +17,247 @@ import IcomImsiSvg from "/public/images/encrypted-sim/icons/icon-imsi.svg";
 import IcomMinutesSvg from "/public/images/encrypted-sim/icons/icon-minutes.svg";
 import IconDataSvg from "/public/images/encrypted-sim/icons/icon-data.svg";
 import IcomSimSvg from "/public/images/encrypted-sim/icons/icon-sim.svg";
-// #1 data
-const commonFeatures = [
-  {
-    icon: CharacteristicDatasSvg,
-    alt: "Icono de datos móviles",
-    description: "Datos móviles",
-  },
-  {
-    icon: CharacteristicSpeedSvg,
-    alt: "Icono de velocidad",
-    description: "Velocidad de 4/5G LTE",
-  },
-  {
-    icon: CharacteristicAppSvg,
-    alt: "Icono de app",
-    description: "App disponible iOS y Android",
-  },
-];
-
-const cardData = [
-  {
-    logoSrc: LogoSvg1,
-    title: "Compra tu plan de DATOS móviles y comunícate con total privacidad",
-    description: "Disponible en más de 200 países",
-    features: commonFeatures,
-    productImage: EncryptedSimData,
-    featuresCardSim: [
-      "Datos añadidos al instante",
-      "Irrastreable y anónimo",
-      "Protegido contra IMSI CATCHER'S",
-      "Sin fechas de corte",
-    ],
-    priceRange: "25 - 500 USD",
-    headerIcon: IconDataSvg,
-    headerTitle: "Recarga de Datos",
-  },
-  // #2 Minutes
-  {
-    logoSrc: LogoSvg1,
-    title:
-      "Compra MINUTOS para hacer llamadas anónimas e imposibles de rastrear",
-    description: "Disponible en más de 200 países",
-    features: [
-      {
-        icon: CharacteristicAnonimitySvg,
-        alt: "Icono de anonimato",
-        description: "Privacidad y anonimato",
-      },
-      {
-        icon: CharacteristicReplaceSvg,
-        alt: "Icono de numero sustituto",
-        description: "Número sustituto",
-      },
-      {
-        icon: CharacteristicVoiceSvg,
-        alt: "Icono de voz",
-        description: "Callback",
-      },
-      {
-        icon: CharacteristicVoiceSvg,
-        alt: "Icono de voz",
-        description: "Filtros de voz",
-      },
-      {
-        icon: CharacteristicAppSvg,
-        alt: "Icono de app",
-        description: "App disponible iOS y Android",
-      },
-    ],
-    productImage: EncryptedSimMinutes,
-    featuresCardSim: [
-      "Saldo de llamadas añadido al instante",
-      "Llamadas anónimas e irrastreables",
-      "Filtros para alterar tono de voz",
-      "Número sustituto",
-      "Callback",
-    ],
-    priceRange: "110 - 360 USD",
-    headerIcon: IcomMinutesSvg,
-    headerTitle: "Recarga de minutos",
-  },
-  // #3 IMSI
-  {
-    logoSrc: LogoSvg1,
-    title:
-      "Compra cambios de IMSI el equivalente a reemplazar tu SIM por una nueva",
-    description: "Disponible en más de 200 países",
-    features: [
-      {
-        icon: CharacteristicAnonimitySvg,
-        alt: "Icono de anonimato",
-        description: "Anonimato",
-      },
-      {
-        icon: CharacteristicComunicationsSvg,
-        alt: "Icono de comunicaciones encriptadas",
-        description: "Comunicaciones encriptadas",
-      },
-      {
-        icon: CharacteristicReplaceSvg,
-        alt: "Icono de imsi",
-        description: "Reemplaza tu IMSI",
-      },
-      {
-        icon: CharacteristicAppSvg,
-        alt: "Icono de app",
-        description: "App disponible iOS y Android",
-      },
-    ],
-    productImage: EncryptedSimImsi,
-    featuresCardSim: [
-      "*Solo aplica en SIM CARD FÍSICA",
-      "Privacidad y Anonimato",
-      "Evita rastreos o intentos de localización",
-      "Elimina todo rastro",
-    ],
-    priceRange: "5 - 50 USD",
-    headerIcon: IcomImsiSvg,
-    headerTitle: "Recarga de cambio de IMSI",
-  },
-  // #4 eSIM
-  {
-    logoSrc: LogoSvg1,
-    title: "Conexión Global de Alta Velocidad",
-    description: "Accede a internet con velocidades LTE en todo el mundo.",
-    features: [
-      {
-        icon: CharacteristicAnonimitySvg,
-        alt: "Icono de datos",
-        description: "Anonimato",
-      },
-      {
-        icon: CharacteristicTopUpSvg,
-        alt: "Icono de velocidad",
-        description: "Recarga datos",
-      },
-      {
-        icon: CharacteristicComunicationsSvg,
-        alt: "Icono de aplicación",
-        description: "Recarga minutos",
-      },
-      {
-        icon: CharacteristicAppSvg,
-        alt: "Icono de aplicación",
-        description: "App disponible iOS y Android",
-      },
-    ],
-    productImage: EncriptedEsim,
-    featuresCardSim: [
-      "Recibela al instante",
-      "Privacidad y Anonimato",
-      "Comunicaciones encriptadas",
-      "eSIM irrastreable",
-    ],
-    priceRange: "10 USD",
-    headerIcon: IcomSimSvg,
-    headerTitle: "eSIM Virtual",
-  },
-  // #5 SIM CARD
-  {
-    logoSrc: LogoSvg1,
-    title: "Conexión Global de Alta Velocidad",
-    description: "Accede a internet con velocidades LTE en todo el mundo.",
-    features: [
-      {
-        icon: CharacteristicAnonimitySvg,
-        alt: "Icono de datos",
-        description: "Planes de datos ilimitados",
-      },
-      {
-        icon: CharacteristicTopUpSvg,
-        alt: "Icono de velocidad",
-        description: "Conexión 5G ultra rápida",
-      },
-      {
-        icon: CharacteristicComunicationsSvg,
-        alt: "Icono de aplicación",
-        description: "Aplicación fácil de usar",
-      },
-      {
-        icon: CharacteristicReplaceSvg,
-        alt: "Icono de aplicación",
-        description: "Aplicación fácil de usar",
-      },
-      {
-        icon: CharacteristicAppSvg,
-        alt: "Icono de aplicación",
-        description: "Aplicación fácil de usar",
-      },
-    ],
-    productImage: EncryptedSimImsi,
-    featuresCardSim: [
-      "Recibela en cualquier lugar del mundo",
-      "Privacidad y Anonimato",
-      "Comunicaciones encriptadas",
-      "SIM irrastreable con cambios de IMSI",
-    ],
-    priceRange: "10 USD",
-    headerIcon: IcomImsiSvg,
-    headerTitle: "SIM Física",
-  },
-];
+import { useTranslations } from "next-intl";
 
 const SimProductsPage: React.FC = () => {
+    const t = useTranslations("EncryptedSimPage");
+
+    const commonFeatures = [
+        {
+            icon: CharacteristicDatasSvg,
+            alt: t("commonFeatures.dataMobile"),
+            description: t("commonFeatures.dataMobile"),
+        },
+        {
+            icon: CharacteristicSpeedSvg,
+            alt: t("commonFeatures.speed"),
+            description: t("commonFeatures.speed"),
+        },
+        {
+            icon: CharacteristicAppSvg,
+            alt: t("commonFeatures.appAvailable"),
+            description: t("commonFeatures.appAvailable"),
+        },
+    ];
+
+    const cardData = [
+        {
+            logoSrc: LogoSvg1,
+            title: t("products.data.title"),
+            description: t("products.data.description"),
+            features: commonFeatures,
+            productImage: EncryptedSimData,
+            featuresCardSim: [
+                t("products.data.featuresCardSim.0"),
+                t("products.data.featuresCardSim.1"),
+                t("products.data.featuresCardSim.2"),
+                t("products.data.featuresCardSim.3"),
+            ],
+            priceRange: t("products.data.priceRange"),
+            headerIcon: IconDataSvg,
+            headerTitle: t("products.data.headerTitle"),
+        },
+        {
+            logoSrc: LogoSvg1,
+            title: t("products.minutes.title"),
+            description: t("products.minutes.description"),
+            features: [
+                {
+                    icon: CharacteristicAnonimitySvg,
+                    alt: t("commonFeatures.privacyAnonymity"),
+                    description: t("commonFeatures.privacyAnonymity"),
+                },
+                {
+                    icon: CharacteristicReplaceSvg,
+                    alt: t("commonFeatures.substituteNumber"),
+                    description: t("commonFeatures.substituteNumber"),
+                },
+                {
+                    icon: CharacteristicVoiceSvg,
+                    alt: t("commonFeatures.callback"),
+                    description: t("commonFeatures.callback"),
+                },
+                {
+                    icon: CharacteristicVoiceSvg,
+                    alt: t("commonFeatures.voiceFilters"),
+                    description: t("commonFeatures.voiceFilters"),
+                },
+                {
+                    icon: CharacteristicAppSvg,
+                    alt: t("commonFeatures.appAvailable"),
+                    description: t("commonFeatures.appAvailable"),
+                },
+            ],
+            productImage: EncryptedSimMinutes,
+            featuresCardSim: [
+                t("products.minutes.featuresCardSim.0"),
+                t("products.minutes.featuresCardSim.1"),
+                t("products.minutes.featuresCardSim.2"),
+                t("products.minutes.featuresCardSim.3"),
+                t("products.minutes.featuresCardSim.4"),
+            ],
+            priceRange: t("products.minutes.priceRange"),
+            headerIcon: IcomMinutesSvg,
+            headerTitle: t("products.minutes.headerTitle"),
+        },
+        {
+            logoSrc: LogoSvg1,
+            title: t("products.imsi.title"),
+            description: t("products.imsi.description"),
+            features: [
+                {
+                    icon: CharacteristicAnonimitySvg,
+                    alt: t("commonFeatures.privacyAnonymity"),
+                    description: t("commonFeatures.privacyAnonymity"),
+                },
+                {
+                    icon: CharacteristicComunicationsSvg,
+                    alt: t("commonFeatures.encryptedCommunications"),
+                    description: t("commonFeatures.encryptedCommunications"),
+                },
+                {
+                    icon: CharacteristicReplaceSvg,
+                    alt: t("commonFeatures.replaceIMSI"),
+                    description: t("commonFeatures.replaceIMSI"),
+                },
+                {
+                    icon: CharacteristicAppSvg,
+                    alt: t("commonFeatures.appAvailable"),
+                    description: t("commonFeatures.appAvailable"),
+                },
+            ],
+            productImage: EncryptedSimImsi,
+            featuresCardSim: [
+                t("products.imsi.featuresCardSim.0"),
+                t("products.imsi.featuresCardSim.1"),
+                t("products.imsi.featuresCardSim.2"),
+                t("products.imsi.featuresCardSim.3"),
+            ],
+            priceRange: t("products.imsi.priceRange"),
+            headerIcon: IcomImsiSvg,
+            headerTitle: t("products.imsi.headerTitle"),
+        },
+        {
+            logoSrc: LogoSvg1,
+            title: t("products.esim.title"),
+            description: t("products.esim.description"),
+            features: [
+                {
+                    icon: CharacteristicAnonimitySvg,
+                    alt: t("commonFeatures.privacyAnonymity"),
+                    description: t("commonFeatures.privacyAnonymity"),
+                },
+                {
+                    icon: CharacteristicTopUpSvg,
+                    alt: t("commonFeatures.unlimitedDataPlans"),
+                    description: t("commonFeatures.unlimitedDataPlans"),
+                },
+                {
+                    icon: CharacteristicComunicationsSvg,
+                    alt: t("commonFeatures.encryptedCommunications"),
+                    description: t("commonFeatures.encryptedCommunications"),
+                },
+                {
+                    icon: CharacteristicAppSvg,
+                    alt: t("commonFeatures.appAvailable"),
+                    description: t("commonFeatures.appAvailable"),
+                },
+            ],
+            productImage: EncriptedEsim,
+            featuresCardSim: [
+                t("products.esim.featuresCardSim.0"),
+                t("products.esim.featuresCardSim.1"),
+                t("products.esim.featuresCardSim.2"),
+                t("products.esim.featuresCardSim.3"),
+            ],
+            priceRange: t("products.esim.priceRange"),
+            headerIcon: IcomSimSvg,
+            headerTitle: t("products.esim.headerTitle"),
+        },
+        {
+            logoSrc: LogoSvg1,
+            title: t("products.sim.title"),
+            description: t("products.sim.description"),
+            features: [
+                {
+                    icon: CharacteristicAnonimitySvg,
+                    alt: t("commonFeatures.unlimitedDataPlans"),
+                    description: t("commonFeatures.unlimitedDataPlans"),
+                },
+                {
+                    icon: CharacteristicTopUpSvg,
+                    alt: t("commonFeatures.ultraFastConnection"),
+                    description: t("commonFeatures.ultraFastConnection"),
+                },
+                {
+                    icon: CharacteristicComunicationsSvg,
+                    alt: t("commonFeatures.easyToUseApp"),
+                    description: t("commonFeatures.easyToUseApp"),
+                },
+                {
+                    icon: CharacteristicReplaceSvg,
+                    alt: t("commonFeatures.easyToUseApp"),
+                    description: t("commonFeatures.easyToUseApp"),
+                },
+                {
+                    icon: CharacteristicAppSvg,
+                    alt: t("commonFeatures.easyToUseApp"),
+                    description: t("commonFeatures.easyToUseApp"),
+                },
+            ],
+            productImage: EncryptedSimImsi,
+            featuresCardSim: [
+                t("products.sim.featuresCardSim.0"),
+                t("products.sim.featuresCardSim.1"),
+                t("products.sim.featuresCardSim.2"),
+                t("products.sim.featuresCardSim.3"),
+            ],
+            priceRange: t("products.sim.priceRange"),
+            headerIcon: IcomImsiSvg,
+            headerTitle: t("products.sim.headerTitle"),
+        },
+    ];
+
     return (
-      <div className="flex flex-col gap-6">
-        {cardData.map((card, index) => (
-          <div
-            key={index}
-            className="
-              bg-custom-linear 
-              sm:!bg-transparent 
-              shadow-lg 
-              sm:shadow-none 
-              gap-6 
-              flex flex-col 
-              sm:flex-row 
-              m-2 
-              my-0 
-              rounded-3xl 
-              p-4 
-              py-10
-            "
-          >
-            <CardDescription
-              logoSrc={card.logoSrc}
-              title={card.title}
-              description={card.description}
-              features={card.features}
-            />
-            <CardSim
-              productImage={card.productImage}
-              features={card.featuresCardSim}
-              priceRange={card.priceRange}
-              headerIcon={card.headerIcon}
-              headerTitle={card.headerTitle}
-            />
-          </div>
-        ))}
-      </div>
+        <div className="flex flex-col gap-6">
+            {cardData.map((card, index) => (
+                <div
+                    key={index}
+                    className="
+                      bg-custom-linear 
+                      sm:!bg-transparent 
+                      shadow-lg 
+                      sm:shadow-none 
+                      gap-6 
+                      flex flex-col 
+                      sm:flex-row                       
+                      my-0 
+                      rounded-3xl 
+                      sm:p-0
+                      ls:p-0
+                      p-4
+                      py-10
+                      sm:py-0
+                      ls:py-0
+                    "
+                >
+                    <CardDescription
+                        logoSrc={card.logoSrc}
+                        title={card.title}
+                        description={card.description}
+                        features={card.features}
+                    />
+                    <CardSim
+                        productImage={card.productImage}
+                        features={card.featuresCardSim}
+                        priceRange={card.priceRange}
+                        headerIcon={card.headerIcon}
+                        headerTitle={card.headerTitle}
+                    />
+                </div>
+            ))}
+        </div>
     );
-  };
-  
-  
+};
+
 export default SimProductsPage;

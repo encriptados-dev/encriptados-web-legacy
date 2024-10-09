@@ -55,76 +55,169 @@
     "encryptedTitle": "O SIM Criptografado oferece a maior segurança e anonimato em qualquer lugar do mundo",
     "encryptedDescription": "Segurança e privacidade em suas comunicações, faça chamadas anônimas e ir rastreáveis e proteja-se contra IMSI Catchers",
 
-    "improveYourSecurity": {
-      "titleImproveYourSecurity": "Melhore sua segurança com esses recursos",
-      "untraceable": {
-        "title": "Irreconhecível",
-        "description": "Comunique-se de qualquer lugar sendo totalmente anônimo e irreconhecível"
-      },
-      "anonymity": {
-        "title": "Anonimato",
-        "description": "As informações de faturamento e envio não estão vinculadas ao chip, portanto, são totalmente anônimas"
-      },
-      "changeMSI": {
-        "title": "Mudança de IMSI",
-        "description": "A mudança de IMSI substitui a identidade do seu SIM por uma nova. É o equivalente a trocar o SIM por um novo"
-      },
-      "subtituteNumber": {
-        "title": "Número substituto",
-        "description": "Gere um número aleatório para cada chamada que aparecerá no identificador do receptor"
-      },
-      "voiceFilter": {
-        "title": "Filtros de voz",
-        "description": "Utilize 7 filtros de voz diferentes para maior anonimato em suas chamadas"
-      },
-
-      "callback": {
-        "title": "Retorno de chamada",
-        "description": "Gere um número aleatório para cada chamada que aparecerá no identificador do receptor"
-      },
-      "plans": {
-        "title": "Planos sem data de corte",
-        "description": "Sem contratos nem datas de corte. Aproveite a flexibilidade de planos sem datas de vencimento e com controle total sobre seus dados"
-      },
-      "geolocalization": {
-        "title": "Geolocalização criptografada",
-        "description": "Proteja sua localização em todos os momentos com criptografia avançada que garante que você não poderá ser rastreado ou localizado"
-      },
-      "globalCoverage": {
-        "title": "Cobertura global",
-        "description": " Conecte-se de qualquer lugar do mundo com cobertura total e sem comprometer sua segurança"
-      },
-      "maskMSI": {
-        "title": "Mascarar o IMSI",
-        "description": "Oculte seu IMSI para evitar interceptações ou antenas falsas, como os IMSI Catchers"
-      },
-
-      "providerPrivateRed": {
-        "title": "Provedor de rede privada",
-        "description": "Somos uma MVNO privada com total discrição no uso de seus dados pessoais"
-      },
-      "withOutNumber": {
-        "title": "Sem número de telefone",
-        "description": "Para maior segurança e anonimato, este SIM não possui número de telefone"
-      }
+    "CardSim": {
+      "headerTitle": "Recarga de Dados",
+      "availableCountries": "+200 países disponíveis",
+      "lteSpeed": "5G LTE",
+      "featuresList": [
+        "Dados adicionados instantaneamente",
+        "Irreconhecível e anônimo",
+        "Protegido contra IMSI CATCHERS",
+        "Sem datas de corte"
+      ],
+      "priceRange": "25 - 500 USD",
+      "rating": "5/5",
+      "buyNow": "Compre Agora"
     },
-    "ourObjetiveTitle": "Nosso objetivo é oferecer total proteção a você",
-    "ourObjetiveDescription": "Ter o cartão SIM Internacional Criptografado é ter um provedor de rede privada que se encarregará de garantir sua segurança e evitar que suas informações sejam manipuladas, compartilhadas ou vendidas",
-    "comunicationTitle": "Comunique-se de qualquer lugar do mundo com a tranquilidade de estar seguro e anônimo",
-    "secureAndEasyToUse": "Seguro e fácil de usar!",
-    "secureAndEasyToUseDescription": "Ela é ativada instantaneamente online e garante total privacidade e proteção para seus dados. Você pode recarregá-la facilmente de onde estiver",
-    "payOnlyForWhatYouUseTitle": "Pague apenas pelo que você usa",
-    "payOnlyForWhatYouUseDescription": "Enquanto você estiver usando o Cartão SIM Criptografado, seu saldo nunca expira, independentemente do tempo que você levar para consumi-lo",
-    "payOnlySecondCard": "Seu plano não tem data de corte",
-    "whyCallWithEncryptedSIM": {
-      "title": "Por que ligar com o SIM Criptografado?",
-      "card1": "Não armazenamos histórico de chamadas",
-      "card2": "Anonimato nas chamadas por meio de ferramentas: substituição de ID, Callback e Filtro de voz",
-      "card3": "O SIM gera um número substituto aleatório em cada chamada para mais anonimato"
+
+    "commonFeatures": {
+      "dataMobile": "Dados móveis",
+      "speed": "Velocidade 4/5G LTE",
+      "appAvailable": "Aplicativo disponível para iOS e Android",
+      "privacyAnonymity": "Privacidade e anonimato",
+      "substituteNumber": "Número substituto",
+      "callback": "Ligação de retorno",
+      "voiceFilters": "Filtros de voz",
+      "encryptedCommunications": "Comunicações criptografadas",
+      "replaceIMSI": "Substitua seu IMSI",
+      "globalHighSpeed": "Conexão global de alta velocidade",
+      "unlimitedDataPlans": "Planos de dados ilimitados",
+      "ultraFastConnection": "Conexão 5G ultra rápida",
+      "easyToUseApp": "Aplicativo fácil de usar"
     },
-    "coverageMoreThan200CountriesTitle": "Cobertura em mais de 200 países",
-    "coverageMoreThan200CountriesDescription": "Comunicação segura e sem fronteiras",
-    "downloadAppTitle": "Baixe o aplicativo para iOS e Android",
-    "downloadAppDescription": "Baixe o aplicativo para iOS e Android"
+    "products": {
+      "data": {
+        "title": "Compre seu plano de dados móveis e comunique-se com total privacidade",
+        "description": "Disponível em mais de 200 países",
+        "featuresCardSim": [
+          "Dados adicionados instantaneamente",
+          "Irreconhecível e anônimo",
+          "Protegido contra IMSI CATCHERS",
+          "Sem datas de corte"
+        ],
+        "priceRange": "25 - 500 USD",
+        "headerTitle": "Recarga de dados"
+      },
+      "minutes": {
+        "title": "Compre MINUTOS para chamadas anônimas e irreconhecíveis",
+        "description": "Disponível em mais de 200 países",
+        "featuresCardSim": [
+          "Saldo de chamadas adicionado instantaneamente",
+          "Chamadas anônimas e irreconhecíveis",
+          "Filtros para alterar o tom de voz",
+          "Número substituto",
+          "Ligação de retorno"
+        ],
+        "priceRange": "110 - 360 USD",
+        "headerTitle": "Recarga de minutos"
+      },
+      "imsi": {
+        "title": "Compre mudanças de IMSI equivalentes a substituir seu SIM por um novo",
+        "description": "Disponível em mais de 200 países",
+        "featuresCardSim": [
+          "*Somente aplicável ao SIM físico",
+          "Privacidade e anonimato",
+          "Evite rastreamento ou tentativas de localização",
+          "Elimine todos os rastros"
+        ],
+        "priceRange": "5 - 50 USD",
+        "headerTitle": "Recarga de mudança de IMSI"
+      },
+      "esim": {
+        "title": "Compre sua eSIM e melhore sua segurança instantaneamente",
+        "description": "Disponível em mais de 200 países",
+        "featuresCardSim": [
+          "Receba instantaneamente",
+          "Privacidade e anonimato",
+          "Comunicações criptografadas",
+          "eSIM irreconhecível"
+        ],
+        "priceRange": "10 USD",
+        "headerTitle": "eSIM Virtual"
+      },
+      "sim": {
+        "title": "Compre sua SIM e receba em qualquer parte do mundo",
+        "description": "Disponível em mais de 200 países",
+        "featuresCardSim": [
+          "Receba em qualquer lugar do mundo",
+          "Privacidade e anonimato",
+          "Comunicações criptografadas",
+          "SIM irreconhecível com mudanças de IMSI"
+        ],
+        "priceRange": "10 USD",
+        "headerTitle": "SIM Físico"
+      }},
+
+      "improveYourSecurity": {
+        "titleImproveYourSecurity": "Melhore sua segurança com esses recursos",
+        "untraceable": {
+          "title": "Irreconhecível",
+          "description": "Comunique-se de qualquer lugar sendo totalmente anônimo e irreconhecível"
+        },
+        "anonymity": {
+          "title": "Anonimato",
+          "description": "As informações de faturamento e envio não estão vinculadas ao chip, portanto, são totalmente anônimas"
+        },
+        "changeMSI": {
+          "title": "Mudança de IMSI",
+          "description": "A mudança de IMSI substitui a identidade do seu SIM por uma nova. É o equivalente a trocar o SIM por um novo"
+        },
+        "subtituteNumber": {
+          "title": "Número substituto",
+          "description": "Gere um número aleatório para cada chamada que aparecerá no identificador do receptor"
+        },
+        "voiceFilter": {
+          "title": "Filtros de voz",
+          "description": "Utilize 7 filtros de voz diferentes para maior anonimato em suas chamadas"
+        },
+
+        "callback": {
+          "title": "Retorno de chamada",
+          "description": "Gere um número aleatório para cada chamada que aparecerá no identificador do receptor"
+        },
+        "plans": {
+          "title": "Planos sem data de corte",
+          "description": "Sem contratos nem datas de corte. Aproveite a flexibilidade de planos sem datas de vencimento e com controle total sobre seus dados"
+        },
+        "geolocalization": {
+          "title": "Geolocalização criptografada",
+          "description": "Proteja sua localização em todos os momentos com criptografia avançada que garante que você não poderá ser rastreado ou localizado"
+        },
+        "globalCoverage": {
+          "title": "Cobertura global",
+          "description": " Conecte-se de qualquer lugar do mundo com cobertura total e sem comprometer sua segurança"
+        },
+        "maskMSI": {
+          "title": "Mascarar o IMSI",
+          "description": "Oculte seu IMSI para evitar interceptações ou antenas falsas, como os IMSI Catchers"
+        },
+
+        "providerPrivateRed": {
+          "title": "Provedor de rede privada",
+          "description": "Somos uma MVNO privada com total discrição no uso de seus dados pessoais"
+        },
+        "withOutNumber": {
+          "title": "Sem número de telefone",
+          "description": "Para maior segurança e anonimato, este SIM não possui número de telefone"
+        }
+      },
+      "ourObjetiveTitle": "Nosso objetivo é oferecer total proteção a você",
+      "ourObjetiveDescription": "Ter o cartão SIM Internacional Criptografado é ter um provedor de rede privada que se encarregará de garantir sua segurança e evitar que suas informações sejam manipuladas, compartilhadas ou vendidas",
+      "comunicationTitle": "Comunique-se de qualquer lugar do mundo com a tranquilidade de estar seguro e anônimo",
+      "secureAndEasyToUse": "Seguro e fácil de usar!",
+      "secureAndEasyToUseDescription": "Ela é ativada instantaneamente online e garante total privacidade e proteção para seus dados. Você pode recarregá-la facilmente de onde estiver",
+      "payOnlyForWhatYouUseTitle": "Pague apenas pelo que você usa",
+      "payOnlyForWhatYouUseDescription": "Enquanto você estiver usando o Cartão SIM Criptografado, seu saldo nunca expira, independentemente do tempo que você levar para consumi-lo",
+      "payOnlySecondCard": "Seu plano não tem data de corte",
+      "whyCallWithEncryptedSIM": {
+        "title": "Por que ligar com o SIM Criptografado?",
+        "card1": "Não armazenamos histórico de chamadas",
+        "card2": "Anonimato nas chamadas por meio de ferramentas: substituição de ID, Callback e Filtro de voz",
+        "card3": "O SIM gera um número substituto aleatório em cada chamada para mais anonimato"
+      },
+      "coverageMoreThan200CountriesTitle": "Cobertura em mais de 200 países",
+      "coverageMoreThan200CountriesDescription": "Comunicação segura e sem fronteiras",
+      "downloadAppTitle": "Baixe o aplicativo para iOS e Android",
+      "downloadAppDescription": "Baixe o aplicativo para iOS e Android"
+    }
   }
-}

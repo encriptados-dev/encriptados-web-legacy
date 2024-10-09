@@ -32,7 +32,7 @@ const buttonStyles = cva("px-4 py-2 font-bold flex items-center", {
 });
 
 type ButtonProps = {
-  intent?: "primary" | "secondary" | "solid" | "ghost";
+  intent?: "primary" | "secondary" | "solid" | "ghost" | "black" ;
   size?: "small" | "medium" | "large";
   rounded?: "none" | "sm" | "md" | "lg" | "full";
   customStyles?: string;

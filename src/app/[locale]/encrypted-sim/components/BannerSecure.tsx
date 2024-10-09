@@ -11,7 +11,7 @@ const BannerSecure = () => {
     <div className="flex flex-col md:flex-row">
       {" "}
       {/* Cambia aquí para ser responsive */}
-      <div className="w-full md:w-[650px] h-[500px] relative rounded-3xl overflow-hidden">
+      <div className="w-full md:w-[518px] h-[500px] relative rounded-3xl overflow-hidden">
         <Image
           quality={100}
           title="Image"
@@ -23,9 +23,9 @@ const BannerSecure = () => {
           objectFit="cover"
         />
       </div>
-      <div className="flex flex-col justify-center gap-y-3 p-10 items-center w-full md:w-[450px]">
-        <div className="bg-[#6ADBFF] w-full md:w-[450px] h-[150px] flex justify-center items-center rounded-2xl md:-translate-x-20">
-          <h1 className="text-lg font-bold">{t("secureAndEasyToUse")}</h1>
+      <div className="flex flex-col justify-center gap-y-3 p-5 items-center w-full md:w-[450px]">
+        <div className="bg-[#6ADBFF] w-full md:w-[450px] h-[160px] flex justify-center items-center rounded-2xl md:-translate-x-20">
+          <h2 className="text-3xl font-bold">{t("secureAndEasyToUse")}</h2>
         </div>
         <div className="bg-[#DDF7FF] w-full md:w-[450px] p-10 h-[150px] flex justify-center items-center rounded-2xl md:-translate-x-20">
           <h1 className="text-lg">{t("secureAndEasyToUseDescription")}</h1>
