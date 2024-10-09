@@ -1,6 +1,5 @@
 import { useTranslations } from "next-intl";
 import React from "react";
-
 import AnonimateSvg from "../svgs/AnonimateSvg";
 import ImsiChangeSvg from "../svgs/ImsiChangeSvg";
 import SubstituteNumberSvg from "../svgs/SubstituteNumberSvg";

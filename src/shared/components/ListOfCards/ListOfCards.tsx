@@ -23,7 +23,7 @@ const ListOfCards: React.FC<ListOfFeatureCardsProps> = ({
   const gridClasses = `grid grid-cols-1 sm:grid-cols-${Math.min(
     columns,
     2
-  )} md:grid-cols-${Math.min(columns, 3)} lg:grid-cols-${columns} gap-4`;
+  )} md:grid-cols-${Math.min(columns, 4)} lg:grid-cols-${columns} gap-4`;
 
   return (
     <div className={gridClasses}>
