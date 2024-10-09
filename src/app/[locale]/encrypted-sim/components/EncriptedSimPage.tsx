@@ -9,61 +9,75 @@ import PayForUse from "./PayForUse";
 import WhyCallSim from "./WhyCallSim/WhyCallSim";
 import BannerCoverage from "./BannerCoverage";
 import SimProductsPage from "./SimProducts";
+import CustomShapeDivider from "./CustomShapeDivider";
 
 const EncryptedSim = () => {
   const t = useTranslations("EncryptedSimPage");
 
   return (
     <>
-      <div className="flex justify-center items-center mb-16 mt-16">
-        <BannerConnect />
-      </div>
-      
-        <div className="max-w-[1100px] mx-auto ">
+      <div className="bg-[#f4f8fa]">
+        <div className="bg-black h-[300px]">
+          <CustomShapeDivider />
+        </div>
+
+        <div className="flex justify-center items-center max-w-[1000px] m-auto p-4 translate-y-[-250px] mb-[-250px] ">
+          <BannerConnect />
+        </div>
+
+        <div className="max-w-[1000px] mx-auto p-4 ">
           <SimProductsPage />
         </div>
-      
 
-      <div className="justify-center flex bg-cyan-gradient flex-col items-center">
-        <div className="mt-8">
-          <EncryptedSimBanner />
+        <div className="justify-center flex bg-cyan-gradient flex-col items-center mt-6">
+          <div>
+            <EncryptedSimBanner />
+          </div>
         </div>
 
-        <div className="max-w-[1000px]  justify-center mt-16 items-center">
-          <h1 className="sm:text-xl md:text-base lg:text-lg xl:text-4xl font-bold text-center text-[#333333] mt-16 mb-16">
-            {t("improveYourSecurity.titleImproveYourSecurity")}
-          </h1>
-          <FeaturesList />
+        <div>
+          <div className="max-w-[1000px] justify-center m-auto mt-16 items-center p-4">
+            <h2 className="sm:text-xl md:text-base lg:text-lg xl:text-4xl font-bold text-center text-[#333333] mt-16 mb-16">
+              {t("improveYourSecurity.titleImproveYourSecurity")}
+            </h2>
+            <FeaturesList />
+          </div>
         </div>
 
-        <div className="max-w-[1000px]  justify-center mt-16 items-center ">
-          <OurObjetive />
-        </div>
-      </div>
-      <div className="flex justify-center">
-        <h1 className="sm:text-xl w-8/12 md:text-base lg:text-lg xl:text-4xl font-bold text-center text-[#333333] mt-16 mb-16">
-          {t("comunicationTitle")}
-        </h1>
-      </div>
-      <div className="flex justify-center items-center mt-16 mb-16">
-        <BannerSecure />
-      </div>
-      <div className="w-full flex justify-center">
-        <div className="items-center xl:w- lg:w-9/12 md:w-10/12 sm:w-11/12 w-full">
-          <div className="w-full">
-            <PayForUse />
+        <div className="bg-[#f4f8fa] py-[8vh]">
+          <div className="max-w-[1000px] m-auto justify-center items-center p-4 ">
+            <OurObjetive />
           </div>
         </div>
       </div>
 
-      <div>
-        <h1 className="sm:text-xl md:text-base lg:text-lg xl:text-4xl font-bold text-center text-[#333333] mt-16 mb-16">
-          {t("whyCallWithEncryptedSIM.title")}
-        </h1>
+      <div className="bg-[#E7F4F8] py-[8vh]">
+        <div className="flex justify-center pt-[8vh] ">
+          <h2 className="sm:4xl w-8/12 md:text-2xl lg:text-3xl xl:text-4xl font-bold text-center text-[#333333] max-w-[1000px]">
+            {t("comunicationTitle")}
+          </h2>
+        </div>
+        <div className="flex justify-center items-center py-[8vh] bg-[#E7F4F8] m-auto max-w-[1000px] p-4">
+          <BannerSecure />
+        </div>
       </div>
-      <div className=" flex justify-center">
-        <div className="w-9/12 ">
-          <WhyCallSim />
+
+      <div className="items-center p-4 w-full py-[8vh]">
+        <div className="max-w-[1000px] w-full m-auto">
+          <PayForUse />
+        </div>
+      </div>
+
+      <div className="max-w-[1000px] m-auto p-4">
+        <div>
+          <h2 className=" lg:text-3xl xl:text-4xl font-bold text-center text-[#333333] mt-16 mb-16">
+            {t("whyCallWithEncryptedSIM.title")}
+          </h2>
+        </div>
+        <div className=" flex justify-center">
+          <div>
+            <WhyCallSim />
+          </div>
         </div>
       </div>
 

@@ -9,35 +9,33 @@ const Sim = "/images/encrypted-sim/Encrypted_sim_card.png";
 
 const EncryptedSimBanner = () => {
   const t = useTranslations("EncryptedSimPage");
+
   return (
-    <div className="w-full flex flex-col md:flex-row justify-center items-center ">
-      <div className="h-[300px] w-[300px] md:h-[600px] md:w-[600px] relative  overflow-hidden flex justify-center items-center mb-4 md:mb-0">
-        <Image
-          className="-scale-x-100 translate-y-9"
-          objectFit="cover"
-          quality={100}
-          title="Image"
+    <div className="flex flex-col md:flex-row w-full py-0 xl:py-0 bg-white">
+      {/* Imagen de la izquierda */}
+      <div className=" w-full md:w-1/5 relative overflow-hidden self-end mb-0 object-contain">
+      <Image
           src={Women}
-          alt="Image"
-          loading="eager"
-          layout="fill"
+          width={740}
+          height={740}
+          alt="imagen"
+          className="ls:w-full sm:w-1/3 md:w-full w-1/2 object-contain m-auto"
         />
       </div>
 
-      <div className="flex flex-col justify-center gap-y-8 text-center items-center w-full py-2">
+      {/* Contenido central */}
+      <div className="flex flex-col gap-y-4 text-center items-center justify-center md:w-3/5 py-[2vh] px-4">
         <CircleTitle size="large" rounded="full" intent="secondary">
           {t("encryptedTitleButon")}
         </CircleTitle>
         <Image
-          width={400}
-          height={400}
-          quality={100}
-          title="Image"
           src={Sim}
-          alt="Image"
-          loading="eager"
+          width={740}
+          height={740}
+          alt="imagen"
+          className="h-[35%] object-contain"
         />
-        <h1 className="sm:text-xl md:text-base lg:text-lg xl:text-4xl font-bold text-[#333333]">
+        <h1 className="sm:text-xl md:text-2xl lg:text-2xl xl:text-4xl font-bold text-[#333333]">
           {t("encryptedTitle")}
         </h1>
         <p className="text-black sm:text-xl md:text-base lg:text-lg xl:text-xl 2xl:text-2xl">
@@ -45,15 +43,14 @@ const EncryptedSimBanner = () => {
         </p>
       </div>
 
-      <div className="h-[300px] w-[300px] md:h-[600px] md:w-[600px]  relative  overflow-hidden flex justify-center items-center mt-4 md:mt-0">
-        <Image
-          objectFit="cover"
-          quality={100}
-          title="Image"
+      {/* Imagen de la derecha */}
+      <div className=" w-full md:w-1/5 relative overflow-hidden self-end mb-0 object-contain">
+      <Image
           src={Man}
-          alt="Image"
-          loading="eager"
-          layout="fill"
+          width={740}
+          height={740}
+          alt="imagen"
+          className="ls:w-full sm:w-1/3 md:w-full w-1/2 object-contain m-auto"
         />
       </div>
     </div>

@@ -7,8 +7,8 @@ const OurObjetive = () => {
 
   const t = useTranslations("EncryptedSimPage");
   return (
-    <div className="w-full px-4 sm:px-6 lg:px-8">
-      <div className="flex flex-col lg:flex-row justify-center gap-x-7 items-center">
+    <div className="w-full ">
+      <div className="flex flex-col lg:flex-row justify-between gap-x-5 items-center">
         <div className="w-full lg:w-5/12">
           <h1 className="text-3xl font-bold">{t("ourObjetiveTitle")}</h1>
           <p className="mt-5 text-base sm:text-lg lg:text-xl">
