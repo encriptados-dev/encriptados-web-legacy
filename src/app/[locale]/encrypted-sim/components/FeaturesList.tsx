@@ -1,6 +1,6 @@
 import { useTranslations } from "next-intl";
 import React from "react";
-import ListOfFeatureCards from "./Card/ListOfFeatureCards";
+
 import AnonimateSvg from "../svgs/AnonimateSvg";
 import ImsiChangeSvg from "../svgs/ImsiChangeSvg";
 import SubstituteNumberSvg from "../svgs/SubstituteNumberSvg";
@@ -12,12 +12,13 @@ import GlobalCoverage from "../svgs/GlobalCoverage";
 import MSIMask from "../svgs/MSIMack";
 import RedProviderSvg from "../svgs/RedProviderSvg";
 import WithOutNumberSvg from "../svgs/WithOutNumberSvg";
+import ListOfCards from "@/shared/components/ListOfCards/ListOfCards";
 
 const FeaturesList = () => {
   const t = useTranslations("EncryptedSimPage");
   return (
-    <ListOfFeatureCards
-      features={[
+    <ListOfCards
+      items={[
         {
           title: t("improveYourSecurity.untraceable.title"),
           description: t("improveYourSecurity.untraceable.description"),

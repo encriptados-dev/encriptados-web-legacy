@@ -1,3 +1,4 @@
+"use client";
 import Image from "next/image";
 import React from "react";
 import QR from "../../../../../public/images/fastdeliverypage/QR.png";
