@@ -146,80 +146,118 @@
         ],
         "priceRange": "10 USD",
         "headerTitle": "Physical SIM"
-      }},
+      }
+    },
 
-      "improveYourSecurity": {
-        "titleImproveYourSecurity": "Enhance your security with these features",
-        "untraceable": {
-          "title": "Untraceable",
-          "description": "Communicate from anywhere while being completely anonymous and untraceable"
-        },
-        "anonymity": {
-          "title": "Anonymity",
-          "description": "Billing and shipping information is not linked to the chip, so it is completely anonymous"
-        },
-        "changeMSI": {
-          "title": "IMSI Change",
-          "description": "The IMSI change replaces the identity of your SIM with a new one. It is equivalent to changing the SIM for a new one"
-        },
-        "subtituteNumber": {
-          "title": "Substitute Number",
-          "description": "Generate a random number for each call that will appear on the recipient's caller ID"
-        },
-        "voiceFilter": {
-          "title": "Voice filters",
-          "description": "Use 7 different voice filters for greater anonymity in your calls"
-        },
-
-        "callback": {
-          "title": "Callback",
-          "description": "Generate a random number for each call that will appear in the recipient's identifier"
-        },
-        "plans": {
-          "title": "Plans without a cut-off date",
-          "description": "No contracts or cut-off dates. Enjoy the flexibility of plans without expiration dates and complete control over your data"
-        },
-        "geolocalization": {
-          "title": "Encrypted geolocation",
-          "description": "Protect your location at all times with advanced encryption that ensures you cannot be tracked or located"
-        },
-        "globalCoverage": {
-          "title": "Global coverage",
-          "description": "Connect from anywhere in the world with total coverage and without compromising your security"
-        },
-        "maskMSI": {
-          "title": "Mask the IMSI",
-          "description": "Hide your IMSI to avoid interception or fake antennas like IMSI Catchers"
-        },
-
-        "providerPrivateRed": {
-          "title": "Private network provider",
-          "description": "We are a private MVNO with complete discretion in the use of your personal data"
-        },
-        "withOutNumber": {
-          "title": "Without a phone number",
-          "description": "For greater security and anonymity, this SIM does not have a phone number"
-        }
+    "improveYourSecurity": {
+      "titleImproveYourSecurity": "Enhance your security with these features",
+      "untraceable": {
+        "title": "Untraceable",
+        "description": "Communicate from anywhere while being completely anonymous and untraceable"
       },
-      "ourObjetiveTitle": "Our goal is to provide you with total protection",
-      "ourObjetiveDescription": " Having the International Encrypted SIM card means having a private network provider that will ensure your security while preventing your information from being manipulated, shared, or sold",
-      "comunicationTitle": "Communicate from anywhere in the world with the peace of mind of being safe and anonymous",
-      "secureAndEasyToUse": "Safe and easy to use!",
-      "secureAndEasyToUseDescription": "It activates instantly online and guarantees total privacy and protection for your data. You can easily recharge it from wherever you are",
-      "payOnlyForWhatYouUseTitle": "Pay only for what you use",
-      "payOnlyForWhatYouUseDescription": "As long as you are using the Encrypted SIM Card, your balance never expires, regardless of how long it takes you to use it",
-      "payOnlySecondCard": "Your plan has no cut-off date",
-      "whyCallWithEncryptedSIM": {
-        "title": "Why call with the Encrypted SIM?",
-        "card1": "We do not store call history",
-        "card2": "Anonymity in calls through tools: ID substitution, Callback, and Voice Filter",
-        "card3": "The SIM generates a random substitute number for each call for increased anonymity"
+      "anonymity": {
+        "title": "Anonymity",
+        "description": "Billing and shipping information is not linked to the chip, so it is completely anonymous"
+      },
+      "changeMSI": {
+        "title": "IMSI Change",
+        "description": "The IMSI change replaces the identity of your SIM with a new one. It is equivalent to changing the SIM for a new one"
+      },
+      "subtituteNumber": {
+        "title": "Substitute Number",
+        "description": "Generate a random number for each call that will appear on the recipient's caller ID"
+      },
+      "voiceFilter": {
+        "title": "Voice filters",
+        "description": "Use 7 different voice filters for greater anonymity in your calls"
       },
 
-      "coverageMoreThan200CountriesTitle": "Coverage in over 200 countries",
-      "coverageMoreThan200CountriesDescription": "Secure communication without borders",
-      "downloadAppTitle": "Download the app for iOS & Android",
-      "downloadAppDescription": "Download the app for iOS & Android"
+      "callback": {
+        "title": "Callback",
+        "description": "Generate a random number for each call that will appear in the recipient's identifier"
+      },
+      "plans": {
+        "title": "Plans without a cut-off date",
+        "description": "No contracts or cut-off dates. Enjoy the flexibility of plans without expiration dates and complete control over your data"
+      },
+      "geolocalization": {
+        "title": "Encrypted geolocation",
+        "description": "Protect your location at all times with advanced encryption that ensures you cannot be tracked or located"
+      },
+      "globalCoverage": {
+        "title": "Global coverage",
+        "description": "Connect from anywhere in the world with total coverage and without compromising your security"
+      },
+      "maskMSI": {
+        "title": "Mask the IMSI",
+        "description": "Hide your IMSI to avoid interception or fake antennas like IMSI Catchers"
+      },
+
+      "providerPrivateRed": {
+        "title": "Private network provider",
+        "description": "We are a private MVNO with complete discretion in the use of your personal data"
+      },
+      "withOutNumber": {
+        "title": "Without a phone number",
+        "description": "For greater security and anonymity, this SIM does not have a phone number"
+      }
+    },
+    "ourObjetiveTitle": "Our goal is to provide you with total protection",
+    "ourObjetiveDescription": " Having the International Encrypted SIM card means having a private network provider that will ensure your security while preventing your information from being manipulated, shared, or sold",
+    "comunicationTitle": "Communicate from anywhere in the world with the peace of mind of being safe and anonymous",
+    "secureAndEasyToUse": "Safe and easy to use!",
+    "secureAndEasyToUseDescription": "It activates instantly online and guarantees total privacy and protection for your data. You can easily recharge it from wherever you are",
+    "payOnlyForWhatYouUseTitle": "Pay only for what you use",
+    "payOnlyForWhatYouUseDescription": "As long as you are using the Encrypted SIM Card, your balance never expires, regardless of how long it takes you to use it",
+    "payOnlySecondCard": "Your plan has no cut-off date",
+    "whyCallWithEncryptedSIM": {
+      "title": "Why call with the Encrypted SIM?",
+      "card1": "We do not store call history",
+      "card2": "Anonymity in calls through tools: ID substitution, Callback, and Voice Filter",
+      "card3": "The SIM generates a random substitute number for each call for increased anonymity"
+    },
+
+    "coverageMoreThan200CountriesTitle": "Coverage in over 200 countries",
+    "coverageMoreThan200CountriesDescription": "Secure communication without borders",
+    "downloadAppTitle": "Download the app for iOS & Android",
+    "downloadAppDescription": "Download the app for iOS & Android"
+  },
+
+  "MayaData": {
+    "anonymSim": "Anonymous eSIM",
+    "monthPackage": "with monthly plans and unlimited data",
+    "viewAllSims": "View all SIMs",
+    "payMore": "Pay less, consume more",
+    "whereUseSim": "Where will you use your SIM?",
+    "connectInternet": "Connect to the Internet with your SIM in over 200 countries. Enjoy secure internet with complete privacy",
+    "allBenefits": {
+      "title": "All these benefits for you",
+      "connectionTitle": "5G LTE connections",
+      "connectionDescription": "Connect to high-speed mobile networks like 5G and LTE, ensuring a fast and efficient connection",
+      "avoidHighRoamingTitle": "Avoid high roaming costs",
+      "avoidHighRoamingDescription": "Avoid high spending on roaming services and keep track of your data",
+      "connectInstanlyTitle": "Connect instantly",
+      "connectInstanlyDescription": "Choose your region, select the plan that best fits your needs, and connect instantly",
+      "globalReachTitle": "Global Reach",
+      "globalReachDescription": "Communicate effortlessly and anonymously in over 200 countries with easy connectivity and affordability",
+      "totalAnonymityTitle": "Total anonymity",
+      "totalAnonymityDescription": "Communicate with total anonymity from 200 countries around the world",
+      "unlimitedDataTitle": "Unlimited data",
+      "unlimitedDataDescription": "Find unlimited plans so that gigabytes are not a problem. Stay connected"
+    },
+
+    "howItWorks": {
+      "title": "Here's how it works",
+      "chooseRegionTitle": "Choose the region where you want to use your",
+      "chooseRegionSpecialWord": "eSIM",
+      "chooseRegionDescription": "Choose one of our destinations or regions where you can use our eSIM",
+      "choosePlanTitle": "Select your",
+      "choosePlanSpecialWord": "data plan",
+      "choosePlanTitle2": "and make the purchase",
+      "choosePlanDescription": "Choose the plan that best fits your needs; we have plans for one month, three months, or six months",
+      "activateSimTitle": "Activate your eSIM and enjoy your",
+      "activateSimSpecialWord": "mobile data",
+      "activateSimDescription": "Activate your eSIM easily and quickly, and start enjoying global communications with anonymity"
     }
   }
-
+}

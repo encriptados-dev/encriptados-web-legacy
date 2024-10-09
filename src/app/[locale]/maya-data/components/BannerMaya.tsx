@@ -9,10 +9,13 @@ import ProcessSvg from "../svgs/ProcessSvg";
 import PhoneSvg from "../svgs/PhoneSvg";
 import CloudSvg from "../svgs/CloudSvg";
 import LineUp from "../svgs/LineUp";
+import { useTranslations } from "next-intl";
 
 const BannerMaya = () => {
   const MayaMan = "/images/maya-data/mayamen.png";
   const MayaWomen = "/images/maya-data/mayawomen.png";
+
+  const t = useTranslations("MayaData");
 
   return (
     <div className="bg-cyan-black-gradient">
@@ -45,10 +48,10 @@ const BannerMaya = () => {
         <div className="flex flex-col justify-center items-center">
           <h1 className="  text-white text-center w-11/12">
             <span className="text-[#35CDFB]  font-bold md:text-3xl xl:text-5xl  ">
-              eSIM anónima
+              {t("anonymSim")}
             </span>
             <span className="text-white font-bold md:text-3xl xl:text-5xl  ">
-              , con paquetes mensuales y datos ilimitados
+              , {t("monthPackage")}
             </span>
           </h1>
           <div className="mt-7">
@@ -60,11 +63,11 @@ const BannerMaya = () => {
               customStyles="border-cyan-500 text-cyan-500   "
               intent="ghost"
             >
-              Ver todas las SIMS
+              {t("viewAllSims")}
             </Button>
           </div>
           <h1 className=" text-center mt-4 md:text-3xl xl:text-5xl  text-[#35CDFB]">
-            Paga menos, consume más
+            {t("payMore")}
           </h1>
         </div>
 
