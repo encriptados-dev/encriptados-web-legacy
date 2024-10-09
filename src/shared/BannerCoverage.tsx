@@ -8,7 +8,7 @@ const BannerCoverage = () => {
   const t = useTranslations("EncryptedSimPage");
 
   return (
-    <div className="relative h-[400px] overflow-hidden">
+    <div className="relative h-[500px] overflow-hidden">
       <Image
         src={FloatSimCard}
         alt="image"
