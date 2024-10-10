@@ -9,6 +9,7 @@ import WhyCallSim from "./WhyCallSim/WhyCallSim";
 import SimProductsPage from "./SimProducts";
 import CustomShapeDivider from "./CustomShapeDivider";
 import BannerCoverage from "@/shared/BannerCoverage";
+import SearchPrices from "./SearchPrices";
 
 const EncryptedSim = () => {
   const t = useTranslations("EncryptedSimPage");
@@ -23,11 +24,22 @@ const EncryptedSim = () => {
         <div className="flex justify-center items-center max-w-[1100px] m-auto p-4 translate-y-[-250px] mb-[-250px] ">
           <BannerConnect />
         </div>
+        <div className="max-w-[1100px] mx-auto p-4 ">
+          <h2 className="text-3xl sm:text-4xl font-bold text-center text-[#333333] mt-16 mb-16">
+            Cobertura en más de 200 países
+          </h2>
+          <p className="text-lg">
+            Consulta el costo del gigabyte según el país y el perfil
+            recomendado, así optimizas el consumo de tus datos al mejor precio
+          </p>
+
+          <SearchPrices />
+        </div>
 
         <div className="max-w-[1100px] mx-auto p-4 ">
           <SimProductsPage />
-        </div>     
-     
+        </div>
+
         <div className="justify-center flex bg-cyan-gradient flex-col items-center mt-6">
           <div>
             <EncryptedSimBanner />
@@ -87,8 +99,6 @@ const EncryptedSim = () => {
       <div className="mt-16">
         <BannerCoverage />
       </div>
-
-      
     </>
   );
 };
