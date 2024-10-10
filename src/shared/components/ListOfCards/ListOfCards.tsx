@@ -11,14 +11,14 @@ interface ListOfFeatureCardsProps {
   items: CardType[];
   centered?: boolean;
   bgIconCard?: string;
-  columns?: number; // Nueva prop para el número de columnas
+  columns?: number;
 }
 
 const ListOfCards: React.FC<ListOfFeatureCardsProps> = ({
   items,
   centered,
   bgIconCard,
-  columns = 4, // Valor por defecto de 4 columnas
+  columns = 4,
 }) => {
   const gridClasses = `grid grid-cols-1 sm:grid-cols-${Math.min(
     columns,

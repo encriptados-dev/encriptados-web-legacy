@@ -7,12 +7,14 @@ import ConnectInstanlySvg from "../svgs/ConectInstanlySvg";
 import WorldSvg from "../svgs/WorldSvg";
 import TotalAnonimateSvg from "../svgs/TotalAnonimateSvg";
 import UnlimitedDataSvg from "../svgs/UnlimitedDataSvg";
+import { useTranslations } from "next-intl";
 
 export const BenefitsForYou = () => {
+  const t = useTranslations("MayaData");
   return (
     <div className="flex justify-center flex-col items-center">
       <h1 className="text-base text-center pt-14 font-bold md:text-3xl xl:text-4xl mb-10">
-        Todos estos beneficios para ti
+        {t("allBenefits.title")}
       </h1>
 
       <div className="w-7/12">
@@ -22,39 +24,33 @@ export const BenefitsForYou = () => {
           columns={3}
           items={[
             {
-              title: "Conexiones 5G LTE",
-              description:
-                "Conéctate a redes móviles de alta velocidad como 5G y LTE, asegurando una conexión rápida y eficiente.",
+              title: t("allBenefits.connectionTitle"),
+              description: t("allBenefits.connectionDescription"),
               icon: <ConectionSvg width={50} height={50} />,
             },
             {
-              title: "Evita altos costos de roaming",
-              description:
-                "Evita el alto gasto de servicios de itinerancia y lleva el control de tus datos",
+              title: t("allBenefits.avoidHighRoamingTitle"),
+              description: t("allBenefits.avoidHighRoamingDescription"),
               icon: <HighPriceSvg height={50} width={50} />,
             },
             {
-              title: "Conéctate al instante",
-              description:
-                "Elige tu región, selecciona el plan que más se ajuste a tus necesidades y conéctate al instante",
+              title: t("allBenefits.connectInstanlyTitle"),
+              description: t("allBenefits.connectInstanlyDescription"),
               icon: <ConnectInstanlySvg />,
             },
             {
-              title: "Alcance Global",
-              description:
-                "Comunícate sin complicaciones y de forma anónima en más de 200 países con facilidad de conexión y economía",
+              title: t("allBenefits.globalReachTitle"),
+              description: t("allBenefits.globalReachDescription"),
               icon: <WorldSvg width={50} height={50} />,
             },
             {
-              title: "Total anonimato",
-              description:
-                "Comunícate con total anonimato desde 200 países en todo el mundo",
+              title: t("allBenefits.totalAnonymityTitle"),
+              description: t("allBenefits.totalAnonymityDescription"),
               icon: <TotalAnonimateSvg width={50} height={50} />,
             },
             {
-              title: "Datos ilimitados",
-              description:
-                "Encuentra planes imilitados para que las gigas no sean un problema. Mantente conectado",
+              title: t("allBenefits.unlimitedDataTitle"),
+              description: t("allBenefits.unlimitedDataDescription"),
               icon: <UnlimitedDataSvg height={50} width={50} />,
             },
           ]}

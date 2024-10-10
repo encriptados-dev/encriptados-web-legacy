@@ -146,80 +146,117 @@
         ],
         "priceRange": "10 USD",
         "headerTitle": "SIM Physique"
-      }},
+      }
+    },
 
-      "improveYourSecurity": {
-        "titleImproveYourSecurity": "Améliorez votre sécurité avec ces fonctionnalités",
-        "untraceable": {
-          "title": "Non traçable",
-          "description": "Communiquez depuis n'importe où en étant totalement anonyme et non traçable"
-        },
-        "anonymity": {
-          "title": "Anonymat",
-          "description": "Les informations de facturation et d'expédition ne sont pas liées à la puce, donc elles sont totalement anonymes"
-        },
-        "changeMSI": {
-          "title": "Changement d'IMSI",
-          "description": "Le changement d'IMSI remplace l'identité de votre SIM par une nouvelle. C'est l'équivalent de changer la SIM pour une nouvelle"
-        },
-        "subtituteNumber": {
-          "title": "Numéro de remplacement",
-          "description": "Générez un numéro aléatoire pour chaque appel qui apparaîtra sur l'identifiant de l'appelant du destinataire"
-        },
-        "voiceFilter": {
-          "title": "Filtres vocaux",
-          "description": "Utilisez 7 filtres vocaux différents pour plus d'anonymat dans vos appels"
-        },
-
-        "callback": {
-          "title": "Rappel",
-          "description": "Générez un numéro aléatoire pour chaque appel qui apparaîtra dans l'identifiant du destinataire"
-        },
-        "plans": {
-          "title": "Plans sans date de clôture",
-          "description": "Sans contrats ni dates de clôture. Profitez de la flexibilité des plans sans date d'expiration et d'un contrôle total de vos données"
-        },
-        "geolocalization": {
-          "title": "Géolocalisation chiffrée",
-          "description": "Protégez votre emplacement à tout moment avec un chiffrement avancé qui garantit que vous ne pourrez pas être suivi ni localisé"
-        },
-        "globalCoverage": {
-          "title": "Couverture mondiale",
-          "description": "Connectez-vous depuis n'importe où dans le monde avec une couverture totale et sans compromettre votre sécurité"
-        },
-        "maskMSI": {
-          "title": "Masquez l'IMSI",
-          "description": "Cachez votre IMSI pour éviter les interceptions ou les antennes factices comme les IMSI Catchers"
-        },
-
-        "providerPrivateRed": {
-          "title": "Fournisseur de réseau privé",
-          "description": "Nous sommes un MVNO privé avec une totale discrétion dans l'utilisation de vos données personnelles"
-        },
-        "withOutNumber": {
-          "title": "Sans numéro de téléphone",
-          "description": "Pour plus de sécurité et d'anonymat, cette SIM ne possède pas de numéro de téléphone"
-        }
+    "improveYourSecurity": {
+      "titleImproveYourSecurity": "Améliorez votre sécurité avec ces fonctionnalités",
+      "untraceable": {
+        "title": "Non traçable",
+        "description": "Communiquez depuis n'importe où en étant totalement anonyme et non traçable"
       },
-      "ourObjetiveTitle": "Notre objectif est de vous offrir une protection totale",
-      "ourObjetiveDescription": "Avoir une carte SIM internationale cryptée signifie avoir un fournisseur de réseau privé qui veillera à votre sécurité tout en empêchant que vos informations soient manipulées, partagées ou vendues",
-      "comunicationTitle": "Communiquez depuis n'importe où dans le monde en ayant l'esprit tranquille, en étant en sécurité et anonyme",
-      "secureAndEasyToUse": "Sûr et facile à utiliser !",
-      "secureAndEasyToUseDescription": "Elle s'active instantanément en ligne et garantit une totale confidentialité et protection de vos données. Vous pouvez la recharger facilement depuis l'endroit où vous vous trouvez",
-      "payOnlyForWhatYouUseTitle": "Payez seulement pour ce que vous utilisez",
-      "payOnlyForWhatYouUseDescription": "Tant que vous utilisez la carte SIM cryptée, votre solde n'expire jamais, peu importe le temps que vous mettez à l'utiliser",
-      "payOnlySecondCard": "Votre plan n'a pas de date de clôture",
-      "whyCallWithEncryptedSIM": {
-        "title": "Pourquoi appeler avec la SIM cryptée ?",
-        "card1": "Nous ne stockons pas l'historique des appels",
-        "card2": "Anonymat dans les appels grâce à des outils : substitution d'ID, rappel et filtre vocal",
-        "card3": "La SIM génère un numéro de remplacement aléatoire à chaque appel pour plus d'anonymat"
+      "anonymity": {
+        "title": "Anonymat",
+        "description": "Les informations de facturation et d'expédition ne sont pas liées à la puce, donc elles sont totalement anonymes"
+      },
+      "changeMSI": {
+        "title": "Changement d'IMSI",
+        "description": "Le changement d'IMSI remplace l'identité de votre SIM par une nouvelle. C'est l'équivalent de changer la SIM pour une nouvelle"
+      },
+      "subtituteNumber": {
+        "title": "Numéro de remplacement",
+        "description": "Générez un numéro aléatoire pour chaque appel qui apparaîtra sur l'identifiant de l'appelant du destinataire"
+      },
+      "voiceFilter": {
+        "title": "Filtres vocaux",
+        "description": "Utilisez 7 filtres vocaux différents pour plus d'anonymat dans vos appels"
       },
 
-      "coverageMoreThan200CountriesTitle": "Couverture dans plus de 200 pays",
-      "coverageMoreThan200CountriesDescription": "Communication sécurisée sans frontières",
-      "downloadAppTitle": "Téléchargez l'application pour iOS et Android",
-      "downloadAppDescription": "Téléchargez l'application pour iOS et Android"
+      "callback": {
+        "title": "Rappel",
+        "description": "Générez un numéro aléatoire pour chaque appel qui apparaîtra dans l'identifiant du destinataire"
+      },
+      "plans": {
+        "title": "Plans sans date de clôture",
+        "description": "Sans contrats ni dates de clôture. Profitez de la flexibilité des plans sans date d'expiration et d'un contrôle total de vos données"
+      },
+      "geolocalization": {
+        "title": "Géolocalisation chiffrée",
+        "description": "Protégez votre emplacement à tout moment avec un chiffrement avancé qui garantit que vous ne pourrez pas être suivi ni localisé"
+      },
+      "globalCoverage": {
+        "title": "Couverture mondiale",
+        "description": "Connectez-vous depuis n'importe où dans le monde avec une couverture totale et sans compromettre votre sécurité"
+      },
+      "maskMSI": {
+        "title": "Masquez l'IMSI",
+        "description": "Cachez votre IMSI pour éviter les interceptions ou les antennes factices comme les IMSI Catchers"
+      },
+
+      "providerPrivateRed": {
+        "title": "Fournisseur de réseau privé",
+        "description": "Nous sommes un MVNO privé avec une totale discrétion dans l'utilisation de vos données personnelles"
+      },
+      "withOutNumber": {
+        "title": "Sans numéro de téléphone",
+        "description": "Pour plus de sécurité et d'anonymat, cette SIM ne possède pas de numéro de téléphone"
+      }
+    },
+    "ourObjetiveTitle": "Notre objectif est de vous offrir une protection totale",
+    "ourObjetiveDescription": "Avoir une carte SIM internationale cryptée signifie avoir un fournisseur de réseau privé qui veillera à votre sécurité tout en empêchant que vos informations soient manipulées, partagées ou vendues",
+    "comunicationTitle": "Communiquez depuis n'importe où dans le monde en ayant l'esprit tranquille, en étant en sécurité et anonyme",
+    "secureAndEasyToUse": "Sûr et facile à utiliser !",
+    "secureAndEasyToUseDescription": "Elle s'active instantanément en ligne et garantit une totale confidentialité et protection de vos données. Vous pouvez la recharger facilement depuis l'endroit où vous vous trouvez",
+    "payOnlyForWhatYouUseTitle": "Payez seulement pour ce que vous utilisez",
+    "payOnlyForWhatYouUseDescription": "Tant que vous utilisez la carte SIM cryptée, votre solde n'expire jamais, peu importe le temps que vous mettez à l'utiliser",
+    "payOnlySecondCard": "Votre plan n'a pas de date de clôture",
+    "whyCallWithEncryptedSIM": {
+      "title": "Pourquoi appeler avec la SIM cryptée ?",
+      "card1": "Nous ne stockons pas l'historique des appels",
+      "card2": "Anonymat dans les appels grâce à des outils : substitution d'ID, rappel et filtre vocal",
+      "card3": "La SIM génère un numéro de remplacement aléatoire à chaque appel pour plus d'anonymat"
+    },
+
+    "coverageMoreThan200CountriesTitle": "Couverture dans plus de 200 pays",
+    "coverageMoreThan200CountriesDescription": "Communication sécurisée sans frontières",
+    "downloadAppTitle": "Téléchargez l'application pour iOS et Android",
+    "downloadAppDescription": "Téléchargez l'application pour iOS et Android"
+  },
+  "MayaData": {
+    "anonymSim": "eSIM anonyme",
+    "monthPackage": "avec des forfaits mensuels et des données illimitées",
+    "viewAllSims": "voir toutes les SIMs",
+    "payMore": "Payez moins, consommez plus",
+    "whereUseSim": "Où allez-vous utiliser votre SIM ?",
+    "connectInternet": "Connectez-vous à Internet avec votre SIM dans plus de 200 pays. Profitez d'un Internet sécurisé et d'une confidentialité totale",
+    "allBenefits": {
+      "title": "Tous ces avantages pour vous",
+      "connectionTitle": "Connexions 5G LTE",
+      "connectionDescription": "Connectez-vous à des réseaux mobiles à haute vitesse comme la 5G et la LTE, garantissant une connexion rapide et efficace",
+      "avoidHighRoamingTitle": "Évitez les frais d'itinérance élevés",
+      "avoidHighRoamingDescription": "Évitez les dépenses élevées en services d'itinérance et gardez le contrôle de vos données",
+      "connectInstanlyTitle": "Connectez-vous instantanément",
+      "connectInstanlyDescription": "Choisissez votre région, sélectionnez le plan qui correspond le mieux à vos besoins et connectez-vous instantanément",
+      "globalReachTitle": "Portée mondiale",
+      "globalReachDescription": "Communique sans complications et de manière anonyme dans plus de 200 pays avec une connectivité facile et économique",
+      "totalAnonymityTitle": "Anonymat total",
+      "totalAnonymityDescription": "Communiquez avec un anonymat total depuis 200 pays à travers le monde",
+      "unlimitedDataTitle": "Données illimitées",
+      "unlimitedDataDescription": "Trouvez des forfaits illimités pour que les gigas ne soient pas un problème. Restez connecté"
+    },
+
+    "howItWorks": {
+      "title": "Voici comment ça fonctionne",
+      "chooseRegionTitle": "Choisissez la région où vous souhaitez utiliser votre",
+      "chooseRegionSpecialWord": "eSIM",
+      "chooseRegionDescription": "Choisissez l'une de nos destinations ou régions où vous pouvez utiliser notre eSIM",
+      "choosePlanTitle": "Sélectionnez votre",
+      "choosePlanSpecialWord": "forfait de données",
+      "choosePlanTitle2": "et effectuez l'achat",
+      "choosePlanDescription": "Choisissez le plan qui correspond le mieux à vos besoins ; nous avons des forfaits d'un mois, de trois mois ou de six mois",
+      "activateSimTitle": "Activez votre eSIM et profitez de vos",
+      "activateSimSpecialWord": "données mobiles",
+      "activateSimDescription": "Activez votre eSIM facilement et rapidement, et commencez à profiter de communications mondiales avec anonymat"
     }
   }
-
+}
