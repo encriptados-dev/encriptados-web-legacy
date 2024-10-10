@@ -10,7 +10,7 @@ const config: Config = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['Roboto', 'Helvetica', 'Arial', 'sans-serif'], // Fuente personalizada Roboto
+        sans: ["Roboto", "Helvetica", "Arial", "sans-serif"], // Fuente personalizada Roboto
       },
       backgroundImage: {
         "cyan-gradient":
@@ -20,7 +20,13 @@ const config: Config = {
         "red-black-gradient":
           "linear-gradient(170deg, rgba(0,0,0,1) 25%, rgba(209,24,39,1) 100%)",
         "custom-gradient-img":
-         "linear-gradient(180deg, #def7ff 40%, transparent 60%)",        
+          "linear-gradient(180deg, #def7ff 40%, transparent 60%)",
+        "custom-gradient-our-sim-black":
+          "linear-gradient(180deg, rgba(25,25,25,1) 72%, rgba(16,180,231,1) 100%)",
+        "custom-gradient-our-sim-blue":
+          "linear-gradient(180deg, #6ADDFF 72%, #A8EBFF 100%)",
+        "custom-gradient-plans":
+          "linear-gradient(90deg, rgba(168,235,255,1) 0%, rgba(106,221,255,1) 100%)",
       },
     },
   },

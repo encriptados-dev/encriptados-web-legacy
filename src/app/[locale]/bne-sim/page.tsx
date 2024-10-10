@@ -1,9 +1,9 @@
-import SimSelection from "./components/SimSelection";
+import BneSimPage from "./components/BneSimPage";
 
 const Page = () => {
   return (
     <>
-      <SimSelection />
+      <BneSimPage />
     </>
   );
 };
