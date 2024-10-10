@@ -17,11 +17,15 @@ const WhereUseYourSim = () => {
         </p>
       </div>
       <BasicFormProvider
+        defaultValue={{
+          selectedcardvalue: "esim_recharge",
+          selectedregion: "region",
+        }}
         submit={(data) => {
           console.log(data);
         }}
       >
-        <StepperBuy />
+        <StepperBuy optionType="maya" />
       </BasicFormProvider>
     </>
   );

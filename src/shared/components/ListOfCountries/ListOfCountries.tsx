@@ -1,0 +1,54 @@
+import React, { useEffect, useState } from "react";
+import axios from "axios";
+import CountryCard from "./CountryCard";
+import { useFormContext } from "react-hook-form";
+
+interface Country {
+  cca3: string;
+  flags: {
+    svg: string;
+  };
+  name: {
+    common: string;
+  };
+}
+
+const CountryList: React.FC = () => {
+  const [countries, setCountries] = useState<Country[]>([]);
+  const [loading, setLoading] = useState<boolean>(true);
+
+  const { getValues } = useFormContext();
+
+  useEffect(() => {
+    const fetchCountries = async () => {
+      const countryName = getValues("country") || "Colombia"; // Usa "Colombia" si no hay entrada
+
+      try {
+        const response = await axios.get<Country[]>(
+          `https://restcountries.com/v3.1/name/${countryName}`
+        );
+        setCountries(response.data);
+      } catch (error) {
+        console.error("Error fetching countries:", error);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchCountries();
+  }, [getValues("country")]);
+
+  if (loading) {
+    return <div className="text-center text-lg">Cargando...</div>;
+  }
+
+  return (
+    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-1 lg:grid-cols-3 xl:grid-cols-6 w-full gap-2">
+      {countries.map((country) => (
+        <CountryCard key={country.cca3} country={country} />
+      ))}
+    </div>
+  );
+};
+
+export default CountryList;

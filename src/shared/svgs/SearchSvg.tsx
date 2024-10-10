@@ -8,7 +8,7 @@ interface PhySimSvgProps extends IconSvgProps {
 const SearchSvg: React.FC<PhySimSvgProps> = ({
   width = 21,
   height = 21,
-  color = "#1C1B1F", // Color por defecto
+  color = "#1C1B1F",
 }) => {
   return (
     <svg

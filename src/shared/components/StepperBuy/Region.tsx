@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { Controller, useFormContext, FieldValues } from "react-hook-form";
 
 interface Option {
@@ -12,15 +12,16 @@ interface SelectCardProps {
 }
 
 const Region: React.FC<SelectCardProps> = ({ name, options }) => {
-  const [selectedCard, setSelectedCard] = useState<string | null>(null);
-  const { control } = useFormContext<FieldValues>();
+  const { control, watch, setValue } = useFormContext<FieldValues>();
+
+  console.log(watch());
 
   return (
     <Controller
       name={name}
       control={control}
       defaultValue=""
-      render={({ field: { onChange, value } }) => (
+      render={({ field: { onChange } }) => (
         <div
           className={"flex gap-x-4"} // Una columna en móviles y 3 en pantallas medianas y grandes
         >
@@ -28,18 +29,18 @@ const Region: React.FC<SelectCardProps> = ({ name, options }) => {
             <div
               key={index}
               onClick={() => {
-                setSelectedCard(option.value);
+                setValue(name, option.value);
                 onChange(option.value);
               }}
               className={`flex  w-[100px] items-center justify-center py-4 cursor-pointer shadow-md rounded-full text-center  transition duration-200 ease-in-out ${
-                selectedCard === option.value
+                watch(name) === option.value
                   ? "bg-white font-bold"
                   : "bg-gray-300"
               }`} // Cambia el fondo según la selección
             >
               <span
                 className={`${
-                  selectedCard === option.value ? "text-black" : "text-gray-600"
+                  watch(name) === option.value ? "text-black" : "text-gray-600"
                 }`}
               >
                 {option.label}
