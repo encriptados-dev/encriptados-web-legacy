@@ -34,7 +34,7 @@ const SelectCard: React.FC<SelectCardProps> = ({ name, options }) => {
               className={`flex flex-col items-center justify-center w-48 h-48 cursor-pointer rounded-lg text-center font-bold border-4 shadow-md transition duration-200 ease-in-out ${
                 selectedValue === option.value
                   ? "border-[#35CDFB] bg-white"
-                  : "border-gray-400 bg-gray-100"
+                  : " bg-gray-100 border-none"
               }`}
             >
               <div className="mb-2">{option.icon}</div>

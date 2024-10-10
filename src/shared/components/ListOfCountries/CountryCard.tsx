@@ -17,7 +17,7 @@ interface CountryCardProps {
 
 const CountryCard: React.FC<CountryCardProps> = ({ country }) => {
   return (
-    <div className=" my-4 border  shadow-lg   bg-white rounded-full w-full flex justify-start p-4 items-center ">
+    <div className=" my-4 border  shadow-lg   bg-white rounded-full w-full flex justify-start p-4 items-center cursor-pointer ">
       <div className="relative  min-w-8 min-h-8 rounded-full overflow-hidden mr-3">
         <Image
           src={country.flags.svg}

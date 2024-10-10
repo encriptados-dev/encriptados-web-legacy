@@ -10,7 +10,7 @@ import RechargeSim from "./RechargeSim";
 const StepperBuy = ({
   optionType,
 }: {
-  optionType?: "maya" | "bme" | "sim";
+  optionType?: "maya" | "bme" | "encriptados-sim";
 }) => {
   const { watch } = useFormContext();
   const selectedValue = watch("selectedcardvalue");
@@ -65,12 +65,7 @@ const StepperBuy = ({
   ];
 
   const filteredOptions =
-    optionType === "maya"
-      ? allOptions.filter(
-          (option) =>
-            option.value === "esim_recharge" || option.value === "recharge_esim"
-        )
-      : optionType === "sim"
+    optionType === "encriptados-sim"
       ? [
           {
             label: "SIM Física",
@@ -89,6 +84,11 @@ const StepperBuy = ({
             ),
           },
         ]
+      : optionType === "maya"
+      ? allOptions.filter(
+          (option) =>
+            option.value === "esim_recharge" || option.value === "recharge_esim"
+        )
       : allOptions;
 
   const renderOptions: { [key: string]: JSX.Element } = {
