@@ -26,7 +26,6 @@ export function BasicFormProvider<T>({
   defaultValue,
   values,
   schema,
-  className = "p-10",
 }: ISubmitModulesForm<T>) {
   // hooks
   const currentMethods = useForm({
@@ -44,7 +43,6 @@ export function BasicFormProvider<T>({
           ? currentMethods.handleSubmit((data) => submit(data), onError)
           : undefined
       }
-      className={className}
     >
       <FormProvider {...currentMethods}>{children}</FormProvider>
     </form>

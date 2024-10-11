@@ -8,8 +8,9 @@ const buttonStyles = cva("px-4 py-2 font-bold flex items-center", {
       primary: "bg-[#2AABEE] text-white",
       secondary: "bg-[#35CDFB] text-[#00516B]",
       solid: "text-white",
-      ghost: "bg-transparent border border-black text-black", 
-      black: "bg-black text-white text-sm py-3 w-full flex items-center justify-center ",      
+      ghost: "bg-transparent border border-black text-black",
+      black:
+        "bg-black text-white text-sm py-3 w-full flex items-center justify-center ",
     },
     size: {
       small: "text-sm",
@@ -32,13 +33,14 @@ const buttonStyles = cva("px-4 py-2 font-bold flex items-center", {
 });
 
 type ButtonProps = {
-  intent?: "primary" | "secondary" | "solid" | "ghost" | "black" ;
+  intent?: "primary" | "secondary" | "solid" | "ghost" | "black";
   size?: "small" | "medium" | "large";
   rounded?: "none" | "sm" | "md" | "lg" | "full";
   customStyles?: string;
   children: React.ReactNode;
   icon?: React.ReactNode;
   iconPosition?: "left" | "right";
+  onClick?: () => void;
 };
 
 const Button: React.FC<ButtonProps> = ({
@@ -49,10 +51,13 @@ const Button: React.FC<ButtonProps> = ({
   children,
   icon,
   iconPosition = "left",
+  onClick,
 }) => {
   return (
     <button
+      type="button"
       className={`${buttonStyles({ intent, size, rounded })} ${customStyles}`}
+      onClick={onClick}
     >
       {icon && iconPosition === "left" && <span className="mr-2">{icon}</span>}
       {children}

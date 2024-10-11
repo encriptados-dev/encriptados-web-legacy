@@ -23,8 +23,8 @@ const HighPriceSvg: React.FC<IconSvgProps> = ({ width = 21, height = 21 }) => {
           y2="59.3346"
           gradientUnits="userSpaceOnUse"
         >
-          <stop offset="0.235" stop-color="#08BAF0" />
-          <stop offset="0.85" stop-color="#1CD2A5" />
+          <stop offset="0.235" stopColor="#08BAF0" />
+          <stop offset="0.85" stopColor="#1CD2A5" />
         </linearGradient>
       </defs>
     </svg>

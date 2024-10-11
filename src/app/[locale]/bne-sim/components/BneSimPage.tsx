@@ -24,7 +24,7 @@ const BneSimPage = () => {
         <div className="relative -translate-y-[400px] z-0">
           <CustomShapeDivider />
         </div>
-        <OurBneCard />
+        <OurBneCard title={""} description={""} imageSrc={""} imageAlt={""} />
       </div>
     </>
   );

@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import CountryCard from "./CountryCard";
 import { useFormContext } from "react-hook-form";
+import { useRouter } from "next/navigation";
 
 interface Country {
   cca3: string;
@@ -14,6 +15,7 @@ interface Country {
 }
 
 const CountryList: React.FC = () => {
+  const router = useRouter();
   const [countries, setCountries] = useState<Country[]>([]);
   const [loading, setLoading] = useState<boolean>(true);
 
@@ -44,8 +46,15 @@ const CountryList: React.FC = () => {
 
   return (
     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-1 lg:grid-cols-3 xl:grid-cols-6 w-full gap-2">
-      {countries.map((country) => (
-        <CountryCard key={country.cca3} country={country} />
+      {countries.map((country, index) => (
+        <div
+          key={index}
+          onClick={() => {
+            router.push("maya-data/payment-service#buy-section");
+          }}
+        >
+          <CountryCard key={country.cca3} country={country} />
+        </div>
       ))}
     </div>
   );

@@ -31,6 +31,14 @@ export const routing = defineRouting({
       pt: "/dados-maya",
     },
 
+    "/maya-data/payment-service": {
+      en: "/maya-data/payment-service",
+      es: "/datos-maya/servicio-de-pago",
+      fr: "/donnees-maya/service-de-paiement",
+      it: "/dati-maya/servizio-di-pagamento",
+      pt: "/dados-maya/servico-de-pagamento",
+    },
+
     "/where-to-find-encrypted": {
       en: "/where-to-find-encrypted",
       es: "/donde-encontrar-encriptados",

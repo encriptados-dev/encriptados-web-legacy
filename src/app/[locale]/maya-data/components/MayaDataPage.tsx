@@ -5,7 +5,7 @@ import WhereUseYourSim from "./WhereUseYourSim";
 const MayaDataPage = () => {
   return (
     <>
-      <div className="w-full  bg-cyan-gradient">
+      <div id="use-your-sim" className="w-full ">
         <WhereUseYourSim />
       </div>
     </>

@@ -8,11 +8,11 @@ interface CardOfRegionProps {
 
 const CardOfRegion: React.FC<CardOfRegionProps> = ({ region, icon }) => {
   return (
-    <div className="flex items-center p-10   rounded-2xl cursor-pointer  bg-white w-full ">
+    <div className="flex items-center p-10   rounded-2xl cursor-pointer  bg-white shadow-lg w-full ">
       <div className="mr-4">{icon}</div>
 
       <span className="flex-grow text-lg font-bold">{region}</span>
-      <ArrowRightSvg height={40} width={40} />
+      <ArrowRightSvg height={25} width={25} />
     </div>
   );
 };

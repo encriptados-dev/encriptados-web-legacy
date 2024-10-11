@@ -63,3 +63,18 @@
 .custom-shape-divider-bottom-1728419371 .shape-fill {
   fill: #f4f8fa;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
+.scroll-reveal-wrapper {
+  opacity: 0;
+
+  transition: opacity 1.5s ease-out, transform 0.6s ease-out;
+}
+
+.scroll-reveal-wrapper.visible {
+  opacity: 5;
+  transform: translateY(0); /* Posición final */
+}

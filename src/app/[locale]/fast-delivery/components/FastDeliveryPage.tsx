@@ -16,6 +16,7 @@ import Accordion from "@/shared/components/Accordion";
 import BannerBackground from "@/shared/components/BannerBackground";
 import PilaresBackground from "../../../../../public/images/fastdeliverypage/pilares.jpg";
 import PilaresBackgroundMobile from "../../../../../public/images/fastdeliverypage/pilaresmobile.jpg";
+import ScrollRevealWrapper from "@/shared/components/ScrollRevealWrapper";
 
 const FastDeliveryPage = () => {
   const t = useTranslations("DeliveryPage");
@@ -37,49 +38,73 @@ const FastDeliveryPage = () => {
   return (
     <>
       <div className="bg-[#EAF2F6]">
-        <Banner />
+        <ScrollRevealWrapper>
+          <Banner />
+        </ScrollRevealWrapper>
 
-        <div className="px-2 2xl:px-96 xl:px-10 lg:px-0">
-          <FindOurPoints />
-        </div>
-        <CenterWrapper>
-          <Button size="medium" rounded="full" intent="primary">
-            {t("chatTelegram")}
-          </Button>
-        </CenterWrapper>
-        <div className="px-2 2xl:px-96 xl:px-10 lg:px-0">
-          <HowDoesFastDelivery />
-        </div>
-
-        <div className="  2xl:px-96 xl:px-10 lg:px-0 z-1 relative mt-9 mb-9">
+        <ScrollRevealWrapper>
+          <div className="px-2 2xl:px-96 xl:px-10 lg:px-0">
+            <FindOurPoints />
+          </div>
+        </ScrollRevealWrapper>
+        <ScrollRevealWrapper>
           <CenterWrapper>
             <Button size="medium" rounded="full" intent="primary">
               {t("chatTelegram")}
             </Button>
           </CenterWrapper>
-        </div>
-        <div className="px-2 2xl:px-96 xl:px-10 lg:px-0 ">
-          <PhoneBanner />
-        </div>
-        <div className="px-2 2xl:px-[370px] xl:px-10 lg:px-0">
-          <FindOurProducts />
-        </div>
-        <div className="px-2 2xl:px-96 xl:px-10 lg:px-0 ">
-          <QRBanner title={t("downloadApp")} />
-        </div>
+        </ScrollRevealWrapper>
+        <ScrollRevealWrapper>
+          <div className="px-2 2xl:px-96 xl:px-10 lg:px-0">
+            <HowDoesFastDelivery />
+          </div>
+        </ScrollRevealWrapper>
 
-        <h1 className="sm:text-xl text-center md:text-base lg:text-lg xl:text-4xl mb-5  font-bold text-[#333333]">
-          {t("titleFAQS")}
-        </h1>
-        <div className="px-2 2xl:px-96 xl:px-10 lg:px-0 ">
-          <Accordion items={items} />
-        </div>
-        <div className="mt-7 ">
-          <BannerBackground
-            bgMobile={PilaresBackgroundMobile}
-            imageUrl={PilaresBackground}
-          />
-        </div>
+        <ScrollRevealWrapper>
+          <div className="  2xl:px-96 xl:px-10 lg:px-0 z-1 relative mt-9 mb-9">
+            <CenterWrapper>
+              <Button size="medium" rounded="full" intent="primary">
+                {t("chatTelegram")}
+              </Button>
+            </CenterWrapper>
+          </div>
+        </ScrollRevealWrapper>
+
+        <ScrollRevealWrapper>
+          <div className="px-2 2xl:px-96 xl:px-10 lg:px-0 ">
+            <PhoneBanner />
+          </div>
+        </ScrollRevealWrapper>
+
+        <ScrollRevealWrapper>
+          <div className="px-2 2xl:px-[370px] xl:px-10 lg:px-0">
+            <FindOurProducts />
+          </div>
+        </ScrollRevealWrapper>
+
+        <ScrollRevealWrapper>
+          <div className="px-2 2xl:px-96 xl:px-10 lg:px-0 ">
+            <QRBanner title={t("downloadApp")} />
+          </div>
+        </ScrollRevealWrapper>
+
+        <ScrollRevealWrapper>
+          <h1 className="sm:text-xl text-center md:text-base lg:text-lg xl:text-4xl mb-5  font-bold text-[#333333]">
+            {t("titleFAQS")}
+          </h1>
+          <div className="px-2 2xl:px-96 xl:px-10 lg:px-0 ">
+            <Accordion items={items} />
+          </div>
+        </ScrollRevealWrapper>
+
+        <ScrollRevealWrapper>
+          <div className="mt-7 ">
+            <BannerBackground
+              bgMobile={PilaresBackgroundMobile}
+              imageUrl={PilaresBackground}
+            />
+          </div>
+        </ScrollRevealWrapper>
       </div>
     </>
   );

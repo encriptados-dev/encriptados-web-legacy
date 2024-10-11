@@ -91,8 +91,8 @@ const SlickCarouselProducts = () => {
         y2="327.014"
         gradientUnits="userSpaceOnUse"
       >
-        <stop offset="0.5" stop-color="#35CDFB" />
-        <stop offset="0.9" stop-color="#71DFFF" />
+        <stop offset="0.5" stopColor="#35CDFB" />
+        <stop offset="0.9" stopColor="#71DFFF" />
       </linearGradient>
     </defs>
   </svg>;

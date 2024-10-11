@@ -8,6 +8,7 @@ import GlobalSvg from "./svgs/GlobalSvg";
 import LatinAmericSvg from "./svgs/LatinAmericSvg";
 import MidOrientAmericSvg from "./svgs/MidOrientAmericSvg";
 import NorthAmericSvg from "./svgs/NorthAmericSvg";
+import { useRouter } from "next/navigation";
 
 const ListOfRegions = () => {
   const regions = [
@@ -30,11 +31,19 @@ const ListOfRegions = () => {
     },
   ];
 
+  const router = useRouter();
+
   return (
     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-6  w-full">
-      {/* Mapea las regiones junto con los íconos */}
       {regions.map((region, index) => (
-        <CardOfRegion key={index} region={region.name} icon={region.icon} />
+        <div
+          key={index}
+          onClick={() => {
+            router.push("maya-data/payment-service#buy-section");
+          }}
+        >
+          <CardOfRegion key={index} region={region.name} icon={region.icon} />
+        </div>
       ))}
     </div>
   );
