@@ -18,7 +18,6 @@ import IcomMinutesSvg from "/public/images/encrypted-sim/icons/icon-minutes.svg"
 import IconDataSvg from "/public/images/encrypted-sim/icons/icon-data.svg";
 import IcomSimSvg from "/public/images/encrypted-sim/icons/icon-sim.svg";
 import { useTranslations } from "next-intl";
-import ScrollRevealWrapper from "@/shared/components/ScrollRevealWrapper";
 
 const SimProductsPage: React.FC = () => {
   const t = useTranslations("EncryptedSimPage");
@@ -222,10 +221,9 @@ const SimProductsPage: React.FC = () => {
   return (
     <div className="flex flex-col gap-6">
       {cardData.map((card, index) => (
-        <ScrollRevealWrapper key={index}>
-          <div
-            key={index}
-            className="
+        <div
+          key={index}
+          className="
                       bg-custom-linear 
                       sm:!bg-transparent 
                       shadow-lg 
@@ -242,22 +240,21 @@ const SimProductsPage: React.FC = () => {
                       sm:py-0
                       ls:py-0
                     "
-          >
-            <CardDescription
-              logoSrc={card.logoSrc}
-              title={card.title}
-              description={card.description}
-              features={card.features}
-            />
-            <CardSim
-              productImage={card.productImage}
-              features={card.featuresCardSim}
-              priceRange={card.priceRange}
-              headerIcon={card.headerIcon}
-              headerTitle={card.headerTitle}
-            />
-          </div>
-        </ScrollRevealWrapper>
+        >
+          <CardDescription
+            logoSrc={card.logoSrc}
+            title={card.title}
+            description={card.description}
+            features={card.features}
+          />
+          <CardSim
+            productImage={card.productImage}
+            features={card.featuresCardSim}
+            priceRange={card.priceRange}
+            headerIcon={card.headerIcon}
+            headerTitle={card.headerTitle}
+          />
+        </div>
       ))}
     </div>
   );
