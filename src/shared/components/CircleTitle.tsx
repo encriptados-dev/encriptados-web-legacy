@@ -2,13 +2,14 @@
 import React from "react";
 import { cva } from "class-variance-authority";
 
-const textStyles = cva("px-4 py-2 font-bold flex items-center  inline-flex", {
+const textStyles = cva("px-4 py-2 font-bold flex items-center inline-flex", {
   variants: {
     intent: {
       primary: "bg-transparent border border-[#2AABEE] text-[#2AABEE]",
       secondary: "bg-[#35CDFB] text-[#00516B]",
       solid: "text-white",
       ghost: "bg-transparent border border-black text-black",
+      gray: "bg-transparent border border-[#7E7E7E] text-white", // Nueva variante gray
     },
     size: {
       small: "text-sm",
@@ -31,7 +32,7 @@ const textStyles = cva("px-4 py-2 font-bold flex items-center  inline-flex", {
 });
 
 type CircleTitleProps = {
-  intent?: "primary" | "secondary" | "solid" | "ghost";
+  intent?: "primary" | "secondary" | "solid" | "ghost" | "gray"; // Añadir gray aquí
   size?: "small" | "medium" | "large";
   rounded?: "none" | "sm" | "md" | "lg" | "full";
   customStyles?: string;
