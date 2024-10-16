@@ -43,7 +43,7 @@ const SimData: React.FC = () => {
       <div className="w-full  flex items-center justify-center flex-wrap ">
         <div className="flex flex-col md:flex-row gap-x-4  w-10/12  mt-16  ">
           <Region options={Regions} name="selectedregion" />
-          <div className="w-full mt-5 lg:m-0">
+          <div className="w-6/12 mt-5 lg:m-0">
             <SearchInput
               inputClassName="border-4 border-[#DCF2F8] focus:outline-none focus:border-[#DCF2F8]"
               iconPosition="right"
