@@ -9,7 +9,8 @@ const textStyles = cva("px-4 py-2 font-bold flex items-center inline-flex", {
       secondary: "bg-[#35CDFB] text-[#00516B]",
       solid: "text-white",
       ghost: "bg-transparent border border-black text-black",
-      gray: "bg-transparent border border-[#7E7E7E] text-white", // Nueva variante gray
+      gray: "bg-transparent border border-[#7E7E7E] text-white",
+      white: "bg-transparent border border-white text-white", // Nueva variante white
     },
     size: {
       small: "text-sm",
@@ -32,13 +33,14 @@ const textStyles = cva("px-4 py-2 font-bold flex items-center inline-flex", {
 });
 
 type CircleTitleProps = {
-  intent?: "primary" | "secondary" | "solid" | "ghost" | "gray"; // Añadir gray aquí
+  intent?: "primary" | "secondary" | "solid" | "ghost" | "gray" | "white"; // Añadir white aquí
   size?: "small" | "medium" | "large";
   rounded?: "none" | "sm" | "md" | "lg" | "full";
   customStyles?: string;
   children: React.ReactNode;
   icon?: React.ReactNode;
   iconPosition?: "left" | "right";
+  onClick?: React.MouseEventHandler<HTMLSpanElement>; // Agregar la prop onClick
 };
 
 const CircleTitle: React.FC<CircleTitleProps> = ({
@@ -49,10 +51,14 @@ const CircleTitle: React.FC<CircleTitleProps> = ({
   children,
   icon,
   iconPosition = "left",
+  onClick, // Añadir onClick
 }) => {
   return (
     <span
       className={`${textStyles({ intent, size, rounded })} ${customStyles}`}
+      onClick={onClick} // Aplicar la función onClick
+      role="button" // Asignar el rol de botón para accesibilidad
+      tabIndex={0} // Hacer que sea seleccionable con teclado
     >
       {icon && iconPosition === "left" && <span className="mr-2">{icon}</span>}
       {children}

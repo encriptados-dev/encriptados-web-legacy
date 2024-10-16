@@ -41,6 +41,7 @@ type ButtonProps = {
   icon?: React.ReactNode;
   iconPosition?: "left" | "right";
   onClick?: () => void;
+  type?: "button" | "submit" | "reset"; // Agregar el tipo de botón
 };
 
 const Button: React.FC<ButtonProps> = ({
@@ -52,10 +53,11 @@ const Button: React.FC<ButtonProps> = ({
   icon,
   iconPosition = "left",
   onClick,
+  type = "button", // Valor por defecto
 }) => {
   return (
     <button
-      type="button"
+      type={type} // Usar el tipo dinámico pasado como prop
       className={`${buttonStyles({ intent, size, rounded })} ${customStyles}`}
       onClick={onClick}
     >
