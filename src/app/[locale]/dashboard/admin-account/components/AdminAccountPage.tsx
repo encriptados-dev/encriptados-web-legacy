@@ -28,7 +28,7 @@ const AdminAccountPage = () => {
   ];
 
   return (
-    <div className="p-4 sm:p-6 lg:p-8">
+    <div className="">
       <h1 className="text-black font-semibold text-2xl mb-4">
         Mis dispositivos
       </h1>

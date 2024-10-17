@@ -14,6 +14,7 @@ import ProfileSvg from "@/shared/svgs/ProfileSvg";
 import { ReactNode, useState, useEffect, useRef } from "react";
 import Banner from "./components/Banner";
 import Link from "next/link";
+import ChatSupport from "@/shared/svgs/ChatSupport";
 
 interface MenuItem {
   icon: ReactNode;
@@ -96,11 +97,25 @@ export default function Layout({ children }: LayoutProps) {
         </button>
 
         {/* Logo, oculto en pantallas pequeñas */}
-        <div className="hidden md:block w-48 md:w-64 pl-2">
-          <EncryptedLogoSvg width={200} />
+        <div className="hidden md:block w-48 md:w-64 ">
+          <EncryptedLogoSvg width={220} />
         </div>
 
         <div className="flex gap-x-2">
+          <div>
+            <Button
+              iconPosition="left"
+              icon={
+                <div className="hidden lg:block ">
+                  <ChatSupport />
+                </div>
+              }
+              customStyles="border-[#70DEFF] text-cyan-500 font-light"
+              intent="ghost"
+            >
+              Chat soporte
+            </Button>
+          </div>
           <Button iconPosition="right" icon={<ProfileSvg />} intent="profile">
             Mi cuenta
           </Button>
