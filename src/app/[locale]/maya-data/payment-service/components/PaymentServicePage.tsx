@@ -7,7 +7,7 @@ import Button from "@/shared/components/Button";
 import ShoppingCart from "@/shared/svgs/ShoppingCart";
 import SupportContact from "@/shared/svgs/SupportContact";
 import PhySimSvg from "@/shared/svgs/PhySimSvg";
-import ListOfGBSMonths from "./ListOfGBSMonths";
+import ListOfGBSMonths from "../../../../../shared/components/ListOfGBSMonths";
 import ThreeCountries from "../../svgs/ThreeCountries";
 
 import { useRouter } from "next/navigation";

@@ -12,6 +12,7 @@ import EncryptedLogoSvg from "@/shared/svgs/EncryptedLogoSvg";
 import ProfileSvg from "@/shared/svgs/ProfileSvg";
 import { ReactNode, useState, useEffect, useRef } from "react";
 import Banner from "./components/Banner";
+import Link from "next/link";
 
 interface MenuItem {
   icon: ReactNode;
@@ -28,7 +29,7 @@ export default function Layout({ children }: LayoutProps) {
   const menuRef = useRef<HTMLDivElement>(null);
 
   const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
+    setIsMenuOpen((prev) => !prev); // Actualizamos el estado usando el valor anterior
   };
 
   useEffect(() => {
@@ -51,8 +52,16 @@ export default function Layout({ children }: LayoutProps) {
 
   // Definimos el array de items del menú con iconos
   const menuItems: MenuItem[] = [
-    { icon: <Home size={20} />, label: "Mi consumo de SIMs", link: "#" },
-    { icon: <Activity size={20} />, label: "Mis actividades", link: "#" },
+    {
+      icon: <Home size={20} />,
+      label: "Mi consumo de SIMs",
+      link: "/dashboard/data-usage",
+    },
+    {
+      icon: <Activity size={20} />,
+      label: "Mis actividades",
+      link: "/dashboard/my-activity",
+    },
     { icon: <ShoppingCart size={20} />, label: "Tienda", link: "#" },
     { icon: <CreditCard size={20} />, label: "Mis compras", link: "#" },
     { icon: <Settings size={20} />, label: "Configuración", link: "#" },
@@ -88,20 +97,28 @@ export default function Layout({ children }: LayoutProps) {
       </header>
 
       {/* Main content area */}
-      <div className="flex flex-grow ">
+      <div className="flex flex-grow relative">
         {/* Sidebar con animación */}
         <aside
           ref={menuRef}
-          className={`absolute md:relative  top-0 left-0 h-full md:h-auto w-80 bg-[#1C1C1C] transform transition-transform duration-300 ease-in-out ${
+          className={`md:relative fixed top-0 left-0 h-full md:h-auto w-80 bg-[#1C1C1C] transform transition-transform duration-300 ease-in-out ${
             isMenuOpen ? "translate-x-0" : "-translate-x-full"
-          } md:translate-x-0`}
+          } md:translate-x-0 z-10`}
         >
+          <div className="flex justify-end font-bold py-4 mr-4">
+            <button
+              className="md:hidden px-2 bg-[#0D0D0D] rounded hover:bg-gray-800"
+              onClick={toggleMenu}
+            >
+              X
+            </button>
+          </div>
           <div className="flex justify-center gap-x-2 py-5 w-full items-center">
             <div className="bg-[#BCEFFF] rounded-full p-2">
               <ProfileSvg width={20} height={20} color="#0F587E" />
             </div>
 
-            <h2 className="text-xs  text-[#828282] ">
+            <h2 className="text-xs text-[#828282] ">
               CUENTA DE TIEMPO ILIMITADO <br />
               <span className="text-white">4291 - 4118 - **** - ****</span>
             </h2>
@@ -111,13 +128,13 @@ export default function Layout({ children }: LayoutProps) {
             <ul className="space-y-2 text-sm md:text-base">
               {menuItems.map((item, index) => (
                 <li key={index}>
-                  <a
+                  <Link
                     href={item.link}
                     className="flex items-center p-4 w-full pl-14 hover:bg-[#353535] rounded"
                   >
                     <span className="mr-2">{item.icon}</span>
                     {item.label}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -125,7 +142,7 @@ export default function Layout({ children }: LayoutProps) {
         </aside>
 
         {/* Main content area */}
-        <main className="flex-grow text-sm md:text-base">
+        <main className="flex-grow text-sm md:text-base bg-[#EEF5F9] relative z-0">
           <div className="hidden 2xl:block lg:block">
             <Banner />
           </div>
