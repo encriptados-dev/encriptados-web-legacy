@@ -1,7 +1,7 @@
 "use client";
 import Button from "@/shared/components/Button";
 import { InputFormContext } from "@/shared/components/InputFormContext";
-import OnlyKeyLoginIconSvg from "@/shared/svgs/OnlyKeyLoginIconSvg";
+
 import React from "react";
 
 const Email = () => {

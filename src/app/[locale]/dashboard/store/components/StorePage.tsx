@@ -13,8 +13,6 @@ import IcomMinutesSvg from "/public/images/encrypted-sim/icons/icon-minutes.svg"
 import IconDataSvg from "/public/images/encrypted-sim/icons/icon-data.svg";
 import { useTranslations } from "next-intl";
 import CardSim from "@/app/[locale]/encrypted-sim/components/CardSim";
-import Image from "next/image";
-import TravelSvg from "/public/images/encrypted-sim/icons/travel_explore.svg";
 
 import MultiMenuDark from "./MultiMenuDark";
 

@@ -1,8 +1,6 @@
-import ConectionSvg from "@/app/[locale]/maya-data/svgs/ConectionSvg";
 import SpiralSvg from "@/app/[locale]/maya-data/svgs/SpiralSvg";
 import Button from "@/shared/components/Button";
-import CircleTitle from "@/shared/components/CircleTitle";
-import PointConect from "@/shared/svgs/PointConect";
+
 import SimIconSvg from "@/shared/svgs/SimIconSvg";
 import Image from "next/image";
 import TravelSvg from "/public/images/encrypted-sim/icons/travel_explore.svg";
