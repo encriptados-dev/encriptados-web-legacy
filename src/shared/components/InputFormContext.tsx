@@ -9,18 +9,30 @@ interface InputProps<T extends FieldValues> {
   type?: string;
   placeholder?: string;
   icon?: React.ReactNode;
+  iconPosition?: "left" | "right"; // Nueva prop para la posición del ícono
+  light?: boolean; // Nueva prop para el fondo claro
+  rounded?: "xs" | "sm" | "lg" | "xl" | "full"; // Agregar 'full' para bordes redondeados completos
 }
 
-const inputStyles = cva("block w-full px-4 py-2 rounded-full transition-all", {
+const inputStyles = cva("block w-full px-4 py-2 transition-all", {
   variants: {
     intent: {
-      primary: "bg-[#191919] border-[#6A6A6A] text-[#6A6A6A]  ",
+      primary: "bg-[#191919] border-[#6A6A6A] text-[#6A6A6A]",
       error:
         "bg-[#191919] border-red-500 text-[#6A6A6A] focus:border-red-500 focus:ring-2 focus:ring-red-300",
+      light: "bg-[#F5F5F5] border-[#6A6A6A] text-[#191919]", // Estilo para el fondo claro
+    },
+    rounded: {
+      xs: "rounded-sm", // Pequeño
+      sm: "rounded-md", // Mediano
+      lg: "rounded-lg", // Grande
+      xl: "rounded-xl", // Extra grande
+      full: "rounded-full", // Bordes completamente redondeados
     },
   },
   defaultVariants: {
     intent: "primary",
+    rounded: "lg", // Valor predeterminado para los bordes redondeados
   },
 });
 
@@ -30,6 +42,9 @@ export const InputFormContext = <T extends FieldValues>({
   type = "text",
   placeholder,
   icon,
+  iconPosition = "left", // Prop predeterminada para la posición del ícono
+  light = false, // Prop predeterminada en false
+  rounded = "lg", // Prop predeterminada para los bordes redondeados
 }: InputProps<T>) => {
   const {
     register,
@@ -55,14 +70,26 @@ export const InputFormContext = <T extends FieldValues>({
         </label>
       )}
       <div className="relative">
+        {icon && iconPosition === "left" && (
+          <span className="absolute left-3 top-2/4 transform -translate-y-1/2 text-gray-500">
+            {icon}
+          </span>
+        )}
         <input
           id={name}
           type={inputType}
           placeholder={placeholder}
-          className={inputStyles({ intent: error ? "error" : "primary" })}
+          className={inputStyles({
+            intent: error ? "error" : light ? "light" : "primary",
+            rounded, // Aplicar la clase de bordes redondeados
+          })}
           aria-invalid={!!errorMessage}
           aria-describedby={errorMessage ? `${name}-error` : undefined}
           {...register(name)}
+          style={{
+            paddingLeft: icon && iconPosition === "left" ? "3rem" : "1rem",
+            paddingRight: icon && iconPosition === "right" ? "3rem" : "1rem",
+          }} // Aumentar el padding solo si hay ícono
         />
         {isPassword && (
           <button
@@ -76,8 +103,8 @@ export const InputFormContext = <T extends FieldValues>({
             {showPassword ? <Eye size={20} /> : <EyeOff size={20} />}
           </button>
         )}
-        {icon && (
-          <span className="absolute left-3 top-2/4 transform -translate-y-1/2 text-gray-500">
+        {icon && iconPosition === "right" && (
+          <span className="absolute right-3 top-2/4 transform -translate-y-1/2 text-gray-500">
             {icon}
           </span>
         )}

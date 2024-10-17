@@ -32,7 +32,7 @@ const AdminAccountPage = () => {
       <h1 className="text-black font-semibold text-2xl mb-4">
         Mis dispositivos
       </h1>
-      <div className="mb-4">
+      <div className="mb-4 xl:w-6/12 w-full">
         <p className="text-[#5D5D5D] mb-4 bg-[#FAFAFA] p-4 rounded-2xl text-center">
           Visualiza los dispositivos que han accedido recientemente con tu ID de
           ingreso

@@ -81,7 +81,7 @@ export default function Layout({ children }: LayoutProps) {
     {
       icon: <UserCheck />,
       label: "Administrar Cuentas",
-      link: "",
+      link: "/dashboard/config-account",
     },
   ];
 
