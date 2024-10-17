@@ -11,6 +11,8 @@ const buttonStyles = cva("px-4 py-2 font-bold flex items-center", {
       ghost: "bg-transparent border border-black text-black",
       black:
         "bg-black text-white text-sm py-3 w-full flex items-center justify-center ",
+      dangerMetal: "bg-[#2D0505] text-[#FF6C6C] font-light",
+      profile: "bg-[#1D1D1D] text-white font-medium",
     },
     size: {
       small: "text-sm",
@@ -33,7 +35,14 @@ const buttonStyles = cva("px-4 py-2 font-bold flex items-center", {
 });
 
 type ButtonProps = {
-  intent?: "primary" | "secondary" | "solid" | "ghost" | "black";
+  intent?:
+    | "primary"
+    | "secondary"
+    | "solid"
+    | "ghost"
+    | "black"
+    | "dangerMetal"
+    | "profile"; // Añadimos profile como opción
   size?: "small" | "medium" | "large";
   rounded?: "none" | "sm" | "md" | "lg" | "full";
   customStyles?: string;
@@ -41,7 +50,7 @@ type ButtonProps = {
   icon?: React.ReactNode;
   iconPosition?: "left" | "right";
   onClick?: () => void;
-  type?: "button" | "submit" | "reset"; // Agregar el tipo de botón
+  type?: "button" | "submit" | "reset";
 };
 
 const Button: React.FC<ButtonProps> = ({
@@ -53,11 +62,11 @@ const Button: React.FC<ButtonProps> = ({
   icon,
   iconPosition = "left",
   onClick,
-  type = "button", // Valor por defecto
+  type = "button",
 }) => {
   return (
     <button
-      type={type} // Usar el tipo dinámico pasado como prop
+      type={type}
       className={`${buttonStyles({ intent, size, rounded })} ${customStyles}`}
       onClick={onClick}
     >

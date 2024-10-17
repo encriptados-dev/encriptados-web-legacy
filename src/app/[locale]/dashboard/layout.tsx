@@ -11,6 +11,7 @@ import Button from "@/shared/components/Button";
 import EncryptedLogoSvg from "@/shared/svgs/EncryptedLogoSvg";
 import ProfileSvg from "@/shared/svgs/ProfileSvg";
 import { ReactNode, useState, useEffect, useRef } from "react";
+import Banner from "./components/Banner";
 
 interface MenuItem {
   icon: ReactNode;
@@ -69,21 +70,16 @@ export default function Layout({ children }: LayoutProps) {
         </button>
 
         {/* Logo, oculto en pantallas pequeñas */}
-        <div className="hidden md:block w-48 md:w-64">
+        <div className="hidden md:block w-48 md:w-64 pl-2">
           <EncryptedLogoSvg width={200} />
         </div>
 
         <div className="flex gap-x-2">
-          <Button
-            iconPosition="right"
-            icon={<ProfileSvg />}
-            intent="secondary"
-            customStyles="bg-[#1D1D1D] text-[#F5F5F5] font-light"
-          >
+          <Button iconPosition="right" icon={<ProfileSvg />} intent="profile">
             Mi cuenta
           </Button>
           <Button
-            intent="secondary"
+            intent="dangerMetal"
             customStyles="bg-[#2D0505] text-[#FF6C6C] font-light"
           >
             Cerrar sesión
@@ -92,22 +88,32 @@ export default function Layout({ children }: LayoutProps) {
       </header>
 
       {/* Main content area */}
-      <div className="flex flex-grow">
+      <div className="flex flex-grow ">
         {/* Sidebar con animación */}
         <aside
           ref={menuRef}
-          className={`absolute md:relative top-0 left-0 h-full md:h-auto w-64 bg-[#1C1C1C] transform transition-transform duration-300 ease-in-out ${
+          className={`absolute md:relative  top-0 left-0 h-full md:h-auto w-80 bg-[#1C1C1C] transform transition-transform duration-300 ease-in-out ${
             isMenuOpen ? "translate-x-0" : "-translate-x-full"
           } md:translate-x-0`}
         >
-          <h2 className="text-lg md:text-base font-semibold mb-4">Menu</h2>
+          <div className="flex justify-center gap-x-2 py-5 w-full items-center">
+            <div className="bg-[#BCEFFF] rounded-full p-2">
+              <ProfileSvg width={20} height={20} color="#0F587E" />
+            </div>
+
+            <h2 className="text-xs  text-[#828282] ">
+              CUENTA DE TIEMPO ILIMITADO <br />
+              <span className="text-white">4291 - 4118 - **** - ****</span>
+            </h2>
+          </div>
+
           <nav>
             <ul className="space-y-2 text-sm md:text-base">
               {menuItems.map((item, index) => (
                 <li key={index}>
                   <a
                     href={item.link}
-                    className="flex items-center p-4 w-full hover:bg-[#353535] rounded"
+                    className="flex items-center p-4 w-full pl-14 hover:bg-[#353535] rounded"
                   >
                     <span className="mr-2">{item.icon}</span>
                     {item.label}
@@ -119,7 +125,11 @@ export default function Layout({ children }: LayoutProps) {
         </aside>
 
         {/* Main content area */}
-        <main className="flex-grow p-4 md:ml-64 text-sm md:text-base">
+        <main className="flex-grow text-sm md:text-base">
+          <div className="hidden 2xl:block lg:block">
+            <Banner />
+          </div>
+
           {children}
         </main>
       </div>
