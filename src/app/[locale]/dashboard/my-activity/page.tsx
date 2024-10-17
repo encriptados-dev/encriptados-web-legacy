@@ -6,7 +6,7 @@ const Page = () => {
   const Product = "/images/dashboard/product-test.png";
   return (
     <>
-      <div className="p-7 flex flex-col gap-y-4">
+      <div className=" flex flex-col gap-y-4">
         <h1 className="font-bold text-black">Mis Actividades</h1>
         <p className="text-[#5D5D5D]">Recientes</p>
 

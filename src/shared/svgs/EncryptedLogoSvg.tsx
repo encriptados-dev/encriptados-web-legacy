@@ -4,7 +4,6 @@ import { IconSvgProps } from "../types/IconSvgProps";
 const EncryptedLogoSvg: React.FC<IconSvgProps> = ({
   width = 21,
   height = 21,
-  color = "white",
 }) => {
   return (
     <svg

@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import KeyLoginIconSvg from "@/shared/svgs/KeyLoginIconSvg";
+
 import { InputFormContext } from "@/shared/components/InputFormContext";
 import Button from "@/shared/components/Button";
 import CircleTitle from "@/shared/components/CircleTitle";

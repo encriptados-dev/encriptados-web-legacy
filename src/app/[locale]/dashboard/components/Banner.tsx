@@ -1,7 +1,7 @@
 import AppleGenericSvg from "@/shared/svgs/AppleGenericSvg";
-import AppleSvg from "@/shared/svgs/AppleSvg";
+
 import GooglePlayGenericSvg from "@/shared/svgs/GooglePlayGenericSvg";
-import PlayStoreSvg from "@/shared/svgs/PlayStoreSvg";
+
 import Image from "next/image";
 import React from "react";
 

@@ -1,11 +1,7 @@
 import React from "react";
 import { IconSvgProps } from "../types/IconSvgProps";
 
-const FIVEGSvg: React.FC<IconSvgProps> = ({
-  width = 21,
-  height = 21,
-  color = "white",
-}) => {
+const FIVEGSvg: React.FC<IconSvgProps> = ({}) => {
   return (
     <svg
       width="24"

@@ -13,6 +13,7 @@ const buttonStyles = cva("px-4 py-2 font-bold flex items-center", {
         "bg-black text-white text-sm py-3 w-full flex items-center justify-center ",
       dangerMetal: "bg-[#2D0505] text-[#FF6C6C] font-light",
       profile: "bg-[#1D1D1D] text-white font-medium",
+      elegant: "bg-[#F4F4F4] text-black", // Nuevo estilo elegante
     },
     size: {
       small: "text-sm",
@@ -42,7 +43,8 @@ type ButtonProps = {
     | "ghost"
     | "black"
     | "dangerMetal"
-    | "profile"; // Añadimos profile como opción
+    | "profile"
+    | "elegant"; // Añadimos elegant como opción
   size?: "small" | "medium" | "large";
   rounded?: "none" | "sm" | "md" | "lg" | "full";
   customStyles?: string;
@@ -70,7 +72,7 @@ const Button: React.FC<ButtonProps> = ({
       className={`${buttonStyles({ intent, size, rounded })} ${customStyles}`}
       onClick={onClick}
     >
-      {icon && iconPosition === "left" && <span className="mr-2">{icon}</span>}
+      {icon && iconPosition === "left" && <span className="mr-2 ">{icon}</span>}
       {children}
       {icon && iconPosition === "right" && <span className="ml-2">{icon}</span>}
     </button>

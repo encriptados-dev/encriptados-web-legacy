@@ -6,6 +6,7 @@ import {
   Settings,
   Activity,
   CreditCard,
+  UserCheck,
 } from "lucide-react";
 import Button from "@/shared/components/Button";
 import EncryptedLogoSvg from "@/shared/svgs/EncryptedLogoSvg";
@@ -50,7 +51,6 @@ export default function Layout({ children }: LayoutProps) {
     };
   }, [isMenuOpen]);
 
-  // Definimos el array de items del menú con iconos
   const menuItems: MenuItem[] = [
     {
       icon: <Home size={20} />,
@@ -62,14 +62,31 @@ export default function Layout({ children }: LayoutProps) {
       label: "Mis actividades",
       link: "/dashboard/my-activity",
     },
-    { icon: <ShoppingCart size={20} />, label: "Tienda", link: "#" },
-    { icon: <CreditCard size={20} />, label: "Mis compras", link: "#" },
-    { icon: <Settings size={20} />, label: "Configuración", link: "#" },
+    {
+      icon: <ShoppingCart size={20} />,
+      label: "Tienda",
+      link: "/dashboard/store",
+    },
+    {
+      icon: <CreditCard size={20} />,
+      label: "Mis compras",
+      link: "/dashboard/my-purchases",
+    },
+    {
+      icon: <Settings size={20} />,
+      label: "Administrar Cuentas",
+      link: "/dashboard/admin-account",
+    },
+
+    {
+      icon: <UserCheck />,
+      label: "Administrar Cuentas",
+      link: "",
+    },
   ];
 
   return (
     <div className="flex flex-col min-h-screen bg-gray-900 text-white">
-      {/* Header */}
       <header className="w-full bg-[#0D0D0D] p-4 flex justify-between items-center">
         <button
           className="md:hidden p-2 bg-[#0D0D0D] rounded hover:bg-gray-800"
@@ -142,12 +159,13 @@ export default function Layout({ children }: LayoutProps) {
         </aside>
 
         {/* Main content area */}
-        <main className="flex-grow text-sm md:text-base bg-[#EEF5F9] relative z-0">
+
+        <main className="flex-grow text-sm md:text-base bg-[#EEF5F9] relative z-0 ">
           <div className="hidden 2xl:block lg:block">
             <Banner />
           </div>
 
-          {children}
+          <div className="p-8">{children}</div>
         </main>
       </div>
     </div>

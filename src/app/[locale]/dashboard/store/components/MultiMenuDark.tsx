@@ -14,7 +14,7 @@ interface SelectCardProps {
   iconPosition?: "left" | "right";
 }
 
-const MultiMenu: React.FC<SelectCardProps> = ({
+const MultiMenuDark: React.FC<SelectCardProps> = ({
   name,
   options,
   icon,
@@ -29,7 +29,7 @@ const MultiMenu: React.FC<SelectCardProps> = ({
       control={control}
       defaultValue=""
       render={({ field: { onChange } }) => (
-        <div className="flex flex-col md:flex-row gap-y-2 md:gap-x-2 w-2/12">
+        <div className="flex flex-col md:flex-row gap-y-2 md:gap-x-2 w-3/12  ">
           {options.map((option, index) => (
             <motion.div
               key={index}
@@ -37,10 +37,10 @@ const MultiMenu: React.FC<SelectCardProps> = ({
                 setValue(name, option.value);
                 onChange(option.value);
               }}
-              className={`flex px-5 py-1 border w-full justify-center items-center rounded-lg cursor-pointer ${
+              className={`flex border w-full justify-center items-center  cursor-pointer rounded-full ${
                 selectedValue === option.value
-                  ? " bg-[#F2FCFF] font-bold text-[#0B90B9] shadow-xl text-xs "
-                  : "bg-gray-100 border-gray font-bold text-gray-500 text-xs"
+                  ? " bg-[#1D1D1D] font-bold rounded-full text-white shadow-xl text-xs  p-4 "
+                  : "bg-gray-100 border-gray font-bold text-gray-500 text-xs  p-4 "
               }`}
               initial={{ scale: 1 }} // Estado inicial
               whileTap={{ scale: 0.95 }} // Escalar al hacer clic
@@ -69,4 +69,4 @@ const MultiMenu: React.FC<SelectCardProps> = ({
   );
 };
 
-export default MultiMenu;
+export default MultiMenuDark;
