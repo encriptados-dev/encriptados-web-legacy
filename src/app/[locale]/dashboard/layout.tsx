@@ -12,9 +12,10 @@ import Button from "@/shared/components/Button";
 import EncryptedLogoSvg from "@/shared/svgs/EncryptedLogoSvg";
 import ProfileSvg from "@/shared/svgs/ProfileSvg";
 import { ReactNode, useState, useEffect, useRef } from "react";
-import Banner from "./components/Banner";
 import Link from "next/link";
 import ChatSupport from "@/shared/svgs/ChatSupport";
+import { usePathname } from "next/navigation";
+import SupportChat from "@/shared/components/SupportChat";
 
 interface MenuItem {
   icon: ReactNode;
@@ -30,8 +31,16 @@ export default function Layout({ children }: LayoutProps) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const menuRef = useRef<HTMLDivElement>(null);
 
+  const pathName = usePathname(); // Obtener la ruta actual
+
+  const pathFormat = pathName.replace(/^\/[a-z]{2}/, "");
+
+  useEffect(() => {
+    setIsMenuOpen(false);
+  }, [pathName]);
+
   const toggleMenu = () => {
-    setIsMenuOpen((prev) => !prev); // Actualizamos el estado usando el valor anterior
+    setIsMenuOpen((prev) => !prev);
   };
 
   useEffect(() => {
@@ -78,7 +87,6 @@ export default function Layout({ children }: LayoutProps) {
       label: "Administrar Cuentas",
       link: "/dashboard/admin-account",
     },
-
     {
       icon: <UserCheck />,
       label: "Administrar Cuentas",
@@ -96,26 +104,12 @@ export default function Layout({ children }: LayoutProps) {
           <Menu size={24} />
         </button>
 
-        {/* Logo, oculto en pantallas pequeñas */}
         <div className="hidden md:block w-48 md:w-64 ">
           <EncryptedLogoSvg width={220} />
         </div>
 
         <div className="flex gap-x-2">
-          <div>
-            <Button
-              iconPosition="left"
-              icon={
-                <div className="hidden lg:block ">
-                  <ChatSupport />
-                </div>
-              }
-              customStyles="border-[#70DEFF] text-cyan-500 font-light"
-              intent="ghost"
-            >
-              Chat soporte
-            </Button>
-          </div>
+          <SupportChat />
           <Button iconPosition="right" icon={<ProfileSvg />} intent="profile">
             Mi cuenta
           </Button>
@@ -161,8 +155,11 @@ export default function Layout({ children }: LayoutProps) {
               {menuItems.map((item, index) => (
                 <li key={index}>
                   <Link
+                    prefetch
                     href={item.link}
-                    className="flex items-center p-4 w-full pl-14 hover:bg-[#353535] rounded"
+                    className={`flex items-center p-4 w-full pl-14 hover:bg-[#353535] rounded ${
+                      pathFormat === item.link ? "bg-[#353535]" : ""
+                    }`}
                   >
                     <span className="mr-2">{item.icon}</span>
                     {item.label}
@@ -174,11 +171,10 @@ export default function Layout({ children }: LayoutProps) {
         </aside>
 
         {/* Main content area */}
-
         <main className="flex-grow text-sm md:text-base bg-[#EEF5F9] relative z-0 ">
-          <div className="hidden 2xl:block lg:block">
+          {/* <div className="hidden 2xl:block lg:block">
             <Banner />
-          </div>
+          </div> */}
 
           <div className="p-8">{children}</div>
         </main>
