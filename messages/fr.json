@@ -315,5 +315,17 @@
       "title": "Téléchargez l'App pour iOS & Android et achetez votre SIM maintenant",
       "description": "Ou scannez le code QR avec votre caméra"
     }
+  },
+  "DashboardPage": {
+    "menuDashboard": {
+      "items": {
+        "mySimConsume": "Ma consommation de données SIM",
+        "myActivities": "Mes activités",
+        "store": "Magasin",
+        "myPurchases": "Mes achats",
+        "accountAdmin": "Gérer les comptes",
+        "userConfig": "Paramètres"
+      }
+    }
   }
 }

@@ -1,5 +1,6 @@
+import { redirect } from "next/navigation";
 const Dashboard = () => {
-  return <h1>Simple dashbaord</h1>;
+  redirect("/dashboard/data-usage");
 };
 
 export default Dashboard;

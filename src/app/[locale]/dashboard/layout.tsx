@@ -12,14 +12,17 @@ import Button from "@/shared/components/Button";
 import EncryptedLogoSvg from "@/shared/svgs/EncryptedLogoSvg";
 import ProfileSvg from "@/shared/svgs/ProfileSvg";
 import { ReactNode, useState, useEffect, useRef } from "react";
-import Banner from "./components/Banner";
 import Link from "next/link";
-import ChatSupport from "@/shared/svgs/ChatSupport";
+import { usePathname } from "next/navigation";
+import SupportChat from "@/shared/components/SupportChat";
+import { useTranslations } from "next-intl";
+
+import { useLocale } from "next-intl";
 
 interface MenuItem {
   icon: ReactNode;
   label: string;
-  link: string;
+  link: { [key: string]: string }; // Cambiado para tener links por idioma
 }
 
 interface LayoutProps {
@@ -27,11 +30,22 @@ interface LayoutProps {
 }
 
 export default function Layout({ children }: LayoutProps) {
+  const language = useLocale();
+
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const menuRef = useRef<HTMLDivElement>(null);
+  const pathName = usePathname(); // Obtener la ruta actual
+
+  const pathFormat = pathName.replace(/^\/[a-z]{2}/, "");
+
+  console.log(pathFormat);
+
+  useEffect(() => {
+    setIsMenuOpen(false);
+  }, [pathName]);
 
   const toggleMenu = () => {
-    setIsMenuOpen((prev) => !prev); // Actualizamos el estado usando el valor anterior
+    setIsMenuOpen((prev) => !prev);
   };
 
   useEffect(() => {
@@ -52,37 +66,74 @@ export default function Layout({ children }: LayoutProps) {
     };
   }, [isMenuOpen]);
 
+  const t = useTranslations("DashboardPage");
+
   const menuItems: MenuItem[] = [
     {
       icon: <Home size={20} />,
-      label: "Mi consumo de SIMs",
-      link: "/dashboard/data-usage",
+      label: t("menuDashboard.items.mySimConsume"),
+      link: {
+        es: "/dashboard/uso-datos",
+        en: "/dashboard/data-usage",
+        fr: "/dashboard/utilisation-des-donnees",
+        it: "/dashboard/uso-dei-datis",
+        pt: "/dashboard/uso-de-dados",
+      },
     },
     {
       icon: <Activity size={20} />,
-      label: "Mis actividades",
-      link: "/dashboard/my-activity",
+      label: t("menuDashboard.items.myActivities"),
+      link: {
+        es: "/dashboard/mi-actividad",
+        en: "/dashboard/my-activity",
+        fr: "/dashboard/mon-activite",
+        it: "/dashboard/la-mia-attivita",
+        pt: "/dashboard/minha-atividade",
+      },
     },
     {
       icon: <ShoppingCart size={20} />,
-      label: "Tienda",
-      link: "/dashboard/store",
+      label: t("menuDashboard.items.store"),
+      link: {
+        es: "/dashboard/tienda",
+        en: "/dashboard/store",
+        fr: "/dashboard/boutique",
+        it: "/dashboard/negozio",
+        pt: "/dashboard/loja",
+      },
     },
     {
       icon: <CreditCard size={20} />,
-      label: "Mis compras",
-      link: "/dashboard/my-purchases",
+      label: t("menuDashboard.items.myPurchases"),
+      link: {
+        es: "/dashboard/mis-compras",
+        en: "/dashboard/my-purchases",
+        fr: "/dashboard/mes-achats",
+        it: "/dashboard/i-miei-acquisti",
+        pt: "/dashboard/minhas-compras",
+      },
     },
     {
       icon: <Settings size={20} />,
-      label: "Administrar Cuentas",
-      link: "/dashboard/admin-account",
+      label: t("menuDashboard.items.accountAdmin"),
+      link: {
+        en: "/dashboard/admin-account",
+        es: "/dashboard/cuenta-admin",
+        fr: "/dashboard/compte-admin",
+        it: "/dashboard/account-admin",
+        pt: "/dashboard/conta-admin",
+      },
     },
-
     {
       icon: <UserCheck />,
-      label: "Administrar Cuentas",
-      link: "/dashboard/config-account",
+      label: t("menuDashboard.items.userConfig"),
+      link: {
+        en: "/dashboard/config-account",
+        es: "/dashboard/configuracion-cuenta",
+        fr: "/dashboard/configuration-compte",
+        it: "/dashboard/configurazione-account",
+        pt: "/dashboard/configuracao-conta",
+      },
     },
   ];
 
@@ -96,26 +147,12 @@ export default function Layout({ children }: LayoutProps) {
           <Menu size={24} />
         </button>
 
-        {/* Logo, oculto en pantallas pequeñas */}
         <div className="hidden md:block w-48 md:w-64 ">
           <EncryptedLogoSvg width={220} />
         </div>
 
         <div className="flex gap-x-2">
-          <div>
-            <Button
-              iconPosition="left"
-              icon={
-                <div className="hidden lg:block ">
-                  <ChatSupport />
-                </div>
-              }
-              customStyles="border-[#70DEFF] text-cyan-500 font-light"
-              intent="ghost"
-            >
-              Chat soporte
-            </Button>
-          </div>
+          <SupportChat />
           <Button iconPosition="right" icon={<ProfileSvg />} intent="profile">
             Mi cuenta
           </Button>
@@ -161,8 +198,11 @@ export default function Layout({ children }: LayoutProps) {
               {menuItems.map((item, index) => (
                 <li key={index}>
                   <Link
-                    href={item.link}
-                    className="flex items-center p-4 w-full pl-14 hover:bg-[#353535] rounded"
+                    prefetch
+                    href={item.link[language]} // Usar el link correspondiente al idioma actual
+                    className={`flex items-center p-4 w-full pl-14 hover:bg-[#353535] rounded ${
+                      pathFormat === item.link[language] ? "bg-[#353535]" : ""
+                    }`}
                   >
                     <span className="mr-2">{item.icon}</span>
                     {item.label}
@@ -174,12 +214,7 @@ export default function Layout({ children }: LayoutProps) {
         </aside>
 
         {/* Main content area */}
-
         <main className="flex-grow text-sm md:text-base bg-[#EEF5F9] relative z-0 ">
-          <div className="hidden 2xl:block lg:block">
-            <Banner />
-          </div>
-
           <div className="p-8">{children}</div>
         </main>
       </div>
