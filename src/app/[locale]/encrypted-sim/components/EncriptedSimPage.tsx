@@ -29,7 +29,7 @@ const EncryptedSim = () => {
           <BannerConnect />
         </div>
 
-        <div className="w-full flex justify-center items-center">
+        <div className="max-w-[70vh] m-auto flex justify-center items-center">
           <div className="w-full">
             <BasicFormProvider>
               <div className="max-w-[1100px] mx-auto p-4 ">

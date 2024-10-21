@@ -69,7 +69,7 @@ const FastDeliveryPage = () => {
           <FindOurProducts />
         </div>
 
-        <div className="px-2 2xl:px-96 xl:px-10 lg:px-0 ">
+        <div className="max-w-[1100px] m-auto pb-20">
           <QRBanner title={t("downloadApp")} />
         </div>
 

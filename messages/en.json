@@ -259,5 +259,62 @@
       "activateSimSpecialWord": "mobile data",
       "activateSimDescription": "Activate your eSIM easily and quickly, and start enjoying global communications with anonymity"
     }
+  },
+  "BneSimPage": {
+    "headline": "Connect anywhere",
+    "headline1": "in the world",
+    "headline2": "with total anonymity",
+    "subheadline": "Your data won’t expire, no matter how long",
+    "subheadline2": "you take to use it",
+    "whyChooseSim": "Why choose our SIM?",
+    "anonTitle": "No data logs, anonymity guaranteed!",
+    "anonDescription": "Data that is not stored cannot be leaked or revealed. It’s part of our philosophy not to collect personal information or logs of our customers.",
+    "OurSimCard": {
+      "title": "No roaming charges",
+      "description": "Our SIM lets you connect to a local operator and avoid high roaming fees",
+      "title2": "Connect with just a few clicks",
+      "description2": "Activate your SIM easily, and your data will be ready to use in more than 200 countries",
+      "title3": "Flexible plans",
+      "description3": "Choose from various data plans based on your needs and take as long as you want to use your resources",
+      "title4": "Instant activation",
+      "description4": "Get your SIM from anywhere in the world and activate it instantly with ease and total anonymity"
+    },
+    "PromoBanner": {
+      "title": "No cutoff dates or expiring plans!",
+      "description": "Take as long as you want to use your SIM or eSIM resources. There are no cutoff dates or data expiration."
+    },
+    "BannerAnonymous": {
+      "title": "Your purchase is anonymous",
+      "description": "Enjoy complete anonymity when purchasing your SIM or eSIM, we do not store any trace or personal information"
+    },
+    "OurBneCard": {
+      "title": "Choose a data plan for your SIM or eSIM",
+      "description": "Select your region and choose the plan that best fits your needs and budget",
+      "title2": "Buy it, load it, and connect from anywhere",
+      "description2": "Purchase your SIM, load your plan, and activate anonymous communications from anywhere in the world",
+      "title3": "Enjoy your data plan with no cutoff dates",
+      "description3": "Your plan will activate instantly. Take as long as you want to use it."
+    },
+    "FaqsBne": {
+      "title": "Frequently Asked Questions",
+      "faqs": {
+        "whatIsBne": {
+          "title": "What is BNE SIM?",
+          "content": "BNE SIM is an international SIM card that allows you to connect to the internet in over 200 countries with complete anonymity and no cutoff dates"
+        },
+        "howToActivate": {
+          "title": "How do I activate my BNE SIM?",
+          "content": "Activate your SIM easily and quickly. Just insert it into your device and follow the activation instructions"
+        },
+        "howToBuy": {
+          "title": "How do I buy a BNE SIM?",
+          "content": "Buy your SIM on our website, select your data plan, and have it delivered to your home or anywhere in the world"
+        }
+      }
+    },
+    "QRBanner": {
+      "title": "Download the App for iOS & Android and buy your SIM now",
+      "description": "Or scan the QR code with your camera"
+    }
   }
 }
