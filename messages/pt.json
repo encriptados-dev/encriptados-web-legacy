@@ -257,5 +257,17 @@
       "activateSimSpecialWord": "dados móveis",
       "activateSimDescription": "Ative seu eSIM de forma fácil e rápida e comece a desfrutar de comunicações globais com anonimato"
     }
+  },
+  "DashboardPage": {
+    "menuDashboard": {
+      "items": {
+        "mySimConsume": "Meu consumo de dados SIM",
+        "myActivities": "Minhas atividades",
+        "store": "Loja",
+        "myPurchases": "Minhas compras",
+        "accountAdmin": "Gerenciar contas",
+        "userConfig": "Configurações"
+      }
+    }
   }
 }

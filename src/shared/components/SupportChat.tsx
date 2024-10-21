@@ -38,7 +38,7 @@ export default function SupportChat() {
       )}
 
       <div
-        className={`absolute right-0 mt-2 w-96 bg-white rounded-md shadow-lg overflow-hidden z-50 transition-all duration-300 ease-in-out ${
+        className={`absolute content-center mt-2 w-72 lg:w-96 xxl:w-96 md:w-96  bg-white rounded-md shadow-lg overflow-hidden z-50 transition-all duration-300 ease-in-out ${
           isOpen
             ? "opacity-100 translate-y-0"
             : "opacity-0 -translate-y-2 pointer-events-none"
