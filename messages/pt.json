@@ -1,4 +1,50 @@
 {
+  "HeaderMenu": {
+    "languages": {
+      "es": "Espanhol",
+      "pt": "Português",
+      "it": "Italiano",
+      "fr": "Francês",
+      "en": "Inglês"
+    },
+    "menuItems": {
+      "simShop": "Loja de SIMS",
+      "products": {
+        "title": "Produtos",
+        "sims": "SIMS",
+        "aplications": "Aplicativos",
+        "phones": "Celulares"
+      },
+      "others": {
+        "title": "Outros",
+        "distributors": "Distribuidores",
+        "blog": "Blog",
+        "securityTest": "Teste de segurança",
+        "offers": "Ofertas"
+      },
+      "aboutUs": "Sobre nós"
+    }
+  },
+  "FooterMenu": {
+    "downloadApp": "Baixe o aplicativo para o seu dispositivo móvel aqui:",
+    "simEsims": {
+      "encryptedSim": "SIM Criptografada",
+      "physicSim": "SIM Física",
+      "globalSim": "SIM Global"
+    },
+    "encryptedSims": {
+      "title": "Aplicativos Criptografados"
+    },
+    "phoneEncrypted": {
+      "title": "Telefones Criptografados"
+    },
+    "securePay": {
+      "title": "Pagamento Seguro"
+    },
+    "copyRight": "Copyright © 2024 Todos os direitos reservados.",
+    "termsAndConditions": "Termos e Condições",
+    "dataProcesing": "Política e tratamento de dados"
+  },
   "DeliveryPage": {
     "unnecessaryWaits": "Evite esperas desnecessárias",
     "fastDeliveryBannerTitle": "Com a Entrega Rápida, receba seu celular criptografado no menor tempo possível",

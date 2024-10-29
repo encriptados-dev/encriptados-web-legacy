@@ -1,13 +1,12 @@
 "use client";
-
 import { useState, useEffect } from "react";
 import EncryptedLogoSvg from "../svgs/EncryptedLogoSvg";
 import WorldIcon from "../svgs/WorldIcon";
 import useLanguageSwitcher, {
   LocaleLanguages,
 } from "../hooks/useLanguageSwitcher";
+import { useTranslations } from "next-intl";
 
-// Types for menu items and languages
 type MenuItem = {
   title: string;
   isNew?: boolean;
@@ -19,35 +18,47 @@ type Language = {
   name: string;
 };
 
-const menuItems: MenuItem[] = [
-  {
-    title: "Tienda de SIM's",
-    isNew: true,
-    sections: ["Planes Internacionales", "Planes Nacionales", "Recargas"],
-  },
-  {
-    title: "Productos",
-    sections: ["Dispositivos", "Accesorios", "Aplicaciones"],
-  },
-  {
-    title: "Otros",
-    sections: ["Servicios", "Asistencia", "Promociones"],
-  },
-  {
-    title: "Nosotros",
-    sections: ["Quiénes Somos", "Contacto", "Blog"],
-  },
-];
-
-const languages: Language[] = [
-  { code: "es", name: "Español" },
-  { code: "pt", name: "Portugués" },
-  { code: "it", name: "Italiano" },
-  { code: "fr", name: "Francés" },
-  { code: "en", name: "Inglés" },
-];
-
 export default function HeaderEncrypted() {
+  const t = useTranslations("HeaderMenu.languages");
+  const tmenu = useTranslations("HeaderMenu.menuItems");
+
+  const menuItems: MenuItem[] = [
+    {
+      title: tmenu("simShop"),
+      isNew: true,
+      sections: [],
+    },
+    {
+      title: tmenu("products.title"),
+      sections: [
+        tmenu("products.sims"),
+        tmenu("products.aplications"),
+        tmenu("products.phones"),
+      ],
+    },
+    {
+      title: tmenu("others.title"),
+      sections: [
+        tmenu("others.distributors"),
+        tmenu("others.blog"),
+        tmenu("others.securityTest"),
+        tmenu("others.offers"),
+      ],
+    },
+    {
+      title: "Nosotros",
+      sections: [],
+    },
+  ];
+
+  const languages: Language[] = [
+    { code: "es", name: t("es") },
+    { code: "pt", name: t("pt") },
+    { code: "it", name: t("it") },
+    { code: "fr", name: t("fr") },
+    { code: "en", name: t("en") },
+  ];
+
   const { currentLocale, changeLanguage } = useLanguageSwitcher();
   const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
   const [languageDropdownOpen, setLanguageDropdownOpen] =
@@ -67,7 +78,7 @@ export default function HeaderEncrypted() {
   const handleLanguageSelect = (code: LocaleLanguages) => {
     setSelectedLanguage(code);
     setLanguageDropdownOpen(false);
-    changeLanguage(code); // Use the selected code directly
+    changeLanguage(code);
   };
 
   return (
@@ -116,24 +127,40 @@ export default function HeaderEncrypted() {
         <nav className="hidden md:flex items-center space-x-6">
           {menuItems.map((item, index) => (
             <div key={index} className="group relative">
-              <button className="flex items-center justify-between  px-4 py-2">
+              <button className="flex items-center justify-between px-4 py-2">
                 <span>{item.title}</span>
                 {item.isNew && (
-                  <span className="bg-[#2C7BE5] text-xs px-2 py-0.5 rounded">
+                  <span className="bg-[#06546C] rounded-full text-xs ml-4 px-2 py-0.5 text-[#44D3FF]">
                     Nuevo
                   </span>
                 )}
-              </button>
-              <div className="invisible absolute z-50 flex flex-col bg-gray-100 py-1 px-4 text-gray-800 shadow-xl group-hover:visible">
-                {item.sections.map((section, idx) => (
-                  <div
-                    key={idx}
-                    className="my-2 block border-b cursor-pointer border-gray-100 py-1 font-semibold text-gray-500 hover:text-black"
+                {/* Mostrar icono de flecha hacia abajo si hay secciones */}
+                {item.sections.length > 0 && (
+                  <svg
+                    className="w-4 h-4 ml-2"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
                   >
-                    {section}
-                  </div>
-                ))}
-              </div>
+                    <path
+                      fillRule="evenodd"
+                      d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                      clipRule="evenodd"
+                    />
+                  </svg>
+                )}
+              </button>
+              {item.sections.length > 0 && (
+                <div className="invisible absolute z-50 flex flex-col bg-gray-100 rounded-xl py-1 px-4 text-gray-800 shadow-xl group-hover:visible">
+                  {item.sections.map((section, idx) => (
+                    <div
+                      key={idx}
+                      className="my-2 block border-b cursor-pointer border-gray-100 py-1 font-semibold text-gray-500 hover:text-black"
+                    >
+                      {section}
+                    </div>
+                  ))}
+                </div>
+              )}
             </div>
           ))}
           <button className="bg-[#E3F8FF] text-black px-4 py-2 rounded-full text-sm font-medium cursor-pointer">

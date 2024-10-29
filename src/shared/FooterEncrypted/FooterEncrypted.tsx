@@ -27,21 +27,24 @@ import EthFooter from "./payicon/EthFooter";
 import DollarBlueFooter from "./payicon/DollarBlueFooter";
 import DFooter from "./payicon/DFooter";
 import LFooter from "./payicon/LFooter";
+import { useTranslations } from "next-intl";
 
 export default function FooterEncrypted() {
+  const t = useTranslations("FooterMenu");
+
   const sections = [
     {
       title: "SIM - eSIMs",
       items: [
-        "SIM Encriptada",
-        "SIM Física",
-        "SIM Global",
+        t("simEsims.encryptedSim"),
+        t("simEsims.physicSim"),
+        t("simEsims.globalSim"),
         "BNE SIM",
         "MAYA SIM",
       ],
     },
     {
-      title: "Apps Encriptadas",
+      title: t("encryptedSims.title"),
       items: [
         "Silent Circle",
         "Vnclagoon",
@@ -54,7 +57,7 @@ export default function FooterEncrypted() {
       ],
     },
     {
-      title: "Teléfonos Encriptados",
+      title: t("phoneEncrypted.title"),
       items: [
         "Secure Crypt",
         "Armadillo",
@@ -108,9 +111,7 @@ export default function FooterEncrypted() {
           {/* Columna izquierda */}
           <div className="col-span-1 lg:col-span-1">
             <EncryptedLogoSvg width={150} height={50} />
-            <p className="text-lg mb-4">
-              Descargar la aplicación para tu dispositivo móvil aquí:
-            </p>
+            <p className="text-lg mb-4">{t("downloadApp")}</p>
             <div className="flex flex-col space-y-2">
               <AppleSvg />
               <PlayStoreSvg />
@@ -139,7 +140,9 @@ export default function FooterEncrypted() {
 
           {/* Columna derecha (Métodos de pago) */}
           <div className="col-span-1 lg:col-span-1">
-            <h3 className="text-lg font-semibold mb-4">Pago seguro</h3>
+            <h3 className="text-lg font-semibold mb-4">
+              {t("securePay.title")}
+            </h3>
             <div className="grid grid-cols-3 gap-2 bg-[#131313] rounded-xl p-4">
               {paymentMethods.map((icon, i) => (
                 <div
@@ -169,21 +172,19 @@ export default function FooterEncrypted() {
 
         {/* Derechos de autor */}
         <div className="text-center mt-8">
-          <p className="text-sm">
-            Copyright © 2024 Todos los derechos reservados.
-          </p>
+          <p className="text-sm">{t("copyRight")}</p>
         </div>
         <hr className="w-full border-t border-[#464646] mt-4" />
 
         {/* Términos y condiciones */}
         <div className="text-center py-2 ">
           <Link href="#" className="text-sm hover:text-white">
-            Términos y condiciones
+            {t("termsAndConditions")}
           </Link>
 
           <span className="mx-2">|</span>
           <Link href="#" className="text-sm hover:text-white">
-            Política y tratamiento de datos
+            {t("dataProcesing")}
           </Link>
         </div>
         <hr className="w-full border-t border-[#464646]" />

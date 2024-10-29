@@ -1,4 +1,50 @@
 {
+  "HeaderMenu": {
+    "languages": {
+      "es": "Spanish",
+      "pt": "Portuguese",
+      "it": "Italian",
+      "fr": "French",
+      "en": "English"
+    },
+    "menuItems": {
+      "simShop": "SIM Shop",
+      "products": {
+        "title": "Products",
+        "sims": "SIMS",
+        "aplications": "Applications",
+        "phones": "Phones"
+      },
+      "others": {
+        "title": "Others",
+        "distributors": "Distributors",
+        "blog": "Blog",
+        "securityTest": "Security Test",
+        "offers": "Offers"
+      },
+      "aboutUs": "About Us"
+    }
+  },
+  "FooterMenu": {
+    "downloadApp": "Download the app for your mobile device here:",
+    "simEsims": {
+      "encryptedSim": "Encrypted SIM",
+      "physicSim": "Physical SIM",
+      "globalSim": "Global SIM"
+    },
+    "encryptedSims": {
+      "title": "Encrypted Apps"
+    },
+    "phoneEncrypted": {
+      "title": "Encrypted Phones"
+    },
+    "securePay": {
+      "title": "Secure Payment"
+    },
+    "copyRight": "Copyright © 2024 All rights reserved.",
+    "termsAndConditions": "Terms and Conditions",
+    "dataProcesing": "Data Policy and Processing"
+  },
   "DeliveryPage": {
     "unnecessaryWaits": "Avoid unnecessary waits",
     "fastDeliveryBannerTitle": "With Fast Delivery, receive your encrypted phone in the shortest time possible",
