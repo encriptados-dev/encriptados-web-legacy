@@ -4,8 +4,12 @@ import { getMessages } from "next-intl/server";
 import {} from "../";
 
 import { NextIntlClientProvider } from "next-intl";
-import HeaderEncrypted from "@/shared/components/HeaderEncrypted";
+
 import FooterEncrypted from "@/shared/FooterEncrypted/FooterEncrypted";
+import DashboardHeader from "@/shared/components/DashboardHeader";
+import EncryptedHeader from "@/shared/components/EncryptedHeader";
+import { usePathname } from "next/navigation";
+import CurrentHeader from "@/shared/CurrentHeader";
 
 const geistSans = localFont({
   src: "../fonts/GeistVF.woff",
@@ -24,13 +28,16 @@ export default async function RootLayout({
   children: React.ReactNode;
 }>) {
   const messages = await getMessages();
+
+  const userLogged = false;
+
   return (
     <html lang="en">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <NextIntlClientProvider messages={messages}>
-          <HeaderEncrypted />
+          <CurrentHeader />
           {children}
           <FooterEncrypted />
         </NextIntlClientProvider>

@@ -137,32 +137,6 @@ export default function Layout({ children }: LayoutProps) {
 
   return (
     <div className="flex flex-col min-h-screen bg-gray-900 text-white">
-      <header className="w-full bg-[#0D0D0D] p-4 flex justify-between items-center">
-        <button
-          className="md:hidden p-2 bg-[#0D0D0D] rounded hover:bg-gray-800"
-          onClick={toggleMenu}
-        >
-          <Menu size={24} />
-        </button>
-
-        <div className="hidden md:block w-48 md:w-64 ">
-          <EncryptedLogoSvg width={220} />
-        </div>
-
-        <div className="flex gap-x-2">
-          <SupportChat />
-          <Button iconPosition="right" icon={<ProfileSvg />} intent="profile">
-            {t("menuDashboard.header.myAccount")}
-          </Button>
-          <Button
-            intent="dangerMetal"
-            customStyles="bg-[#2D0505] text-[#FF6C6C] font-light"
-          >
-            {t("menuDashboard.header.logOut")}
-          </Button>
-        </div>
-      </header>
-
       {/* Main content area */}
       <div className="flex flex-grow relative">
         {/* Sidebar con animación */}
