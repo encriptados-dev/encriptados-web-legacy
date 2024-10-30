@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import Button from "./Button";
 import ChatSupport from "../svgs/ChatSupport";
 import Accordion from "./Accordion";
+import { useTranslations } from "next-intl";
 
 export default function SupportChat() {
   const [isOpen, setIsOpen] = useState(false);
@@ -11,6 +12,8 @@ export default function SupportChat() {
   const toggleDropdown = () => setIsOpen(!isOpen);
 
   const SupportGirl = "/images/dashboard/supportgirl.png";
+
+  const t = useTranslations("DashboardPage");
 
   return (
     <div className="relative">
@@ -26,7 +29,7 @@ export default function SupportChat() {
         aria-expanded={isOpen}
         aria-haspopup="true"
       >
-        Chat soporte
+        {t("menuDashboard.header.supportChat")}
       </Button>
 
       {isOpen && (

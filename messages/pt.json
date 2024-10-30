@@ -260,6 +260,12 @@
   },
   "DashboardPage": {
     "menuDashboard": {
+      "header": {
+        "supportChat": "Chat de soporte",
+        "myAccount": "Minha Conta",
+        "logOut": "Sair da conta",
+        "limitedAccount": "CONTA DE TEMPO ILIMITADO"
+      },
       "items": {
         "mySimConsume": "Meu consumo de dados SIM",
         "myActivities": "Minhas atividades",

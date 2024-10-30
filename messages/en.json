@@ -263,6 +263,12 @@
 
   "DashboardPage": {
     "menuDashboard": {
+      "header": {
+        "supportChat": "Support Chat",
+        "myAccount": "My Account",
+        "logOut": "Log out",
+        "limitedAccount": "UNLIMITED TIME ACCOUNT"
+      },
       "items": {
         "mySimConsume": "My SIM data usage",
         "myActivities": "My activities",

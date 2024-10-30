@@ -38,8 +38,6 @@ export default function Layout({ children }: LayoutProps) {
 
   const pathFormat = pathName.replace(/^\/[a-z]{2}/, "");
 
-  console.log(pathFormat);
-
   useEffect(() => {
     setIsMenuOpen(false);
   }, [pathName]);
@@ -154,13 +152,13 @@ export default function Layout({ children }: LayoutProps) {
         <div className="flex gap-x-2">
           <SupportChat />
           <Button iconPosition="right" icon={<ProfileSvg />} intent="profile">
-            Mi cuenta
+            {t("menuDashboard.header.myAccount")}
           </Button>
           <Button
             intent="dangerMetal"
             customStyles="bg-[#2D0505] text-[#FF6C6C] font-light"
           >
-            Cerrar sesión
+            {t("menuDashboard.header.logOut")}
           </Button>
         </div>
       </header>
@@ -188,7 +186,8 @@ export default function Layout({ children }: LayoutProps) {
             </div>
 
             <h2 className="text-xs text-[#828282] ">
-              CUENTA DE TIEMPO ILIMITADO <br />
+              {t("menuDashboard.header.limitedAccount")}
+              <br />
               <span className="text-white">4291 - 4118 - **** - ****</span>
             </h2>
           </div>

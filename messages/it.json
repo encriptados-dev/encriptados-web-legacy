@@ -261,6 +261,12 @@
   },
   "DashboardPage": {
     "menuDashboard": {
+      "header": {
+        "supportChat": "Chat di supporto",
+        "myAccount": "Il Mio Conto",
+        "logOut": "Disconnettersi",
+        "limitedAccount": "ACCOUNT DI TEMPO ILLIMITATO"
+      },
       "items": {
         "mySimConsume": "Il mio consumo di dati SIM",
         "myActivities": "Le mie attività",
