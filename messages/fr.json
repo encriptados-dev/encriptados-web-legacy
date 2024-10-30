@@ -380,5 +380,11 @@
         "userConfig": "Paramètres"
       }
     }
+  },
+  "OurProductsPage": {
+    "banner": {
+      "title": "Gérez plusieurs SIM avec notre",
+      "subtitle": "Application Encryptée"
+    }
   }
 }

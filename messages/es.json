@@ -383,5 +383,11 @@
         "userConfig": "Configuración"
       }
     }
+  },
+  "OurProductsPage": {
+    "banner": {
+      "title": "Administra múltiples SIMs con nuestra",
+      "subtitle": "App Encriptados"
+    }
   }
 }

@@ -9,6 +9,9 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      screens: {
+        "lg-custom": "1358px", // Nuevo breakpoint personalizado
+      },
       fontFamily: {
         sans: ["Roboto", "Helvetica", "Arial", "sans-serif"], // Fuente personalizada Roboto
       },
