@@ -5,7 +5,6 @@ import WifiSvg from "/public/images/encrypted-sim/icons/wifi_tethering.svg";
 import CheckSvg from "/public/images/encrypted-sim/icons/check.svg";
 import StarSvg from "/public/images/encrypted-sim/icons/star_half2.svg";
 import LocalMallSvg from "/public/images/encrypted-sim/icons/local_mall.svg";
-import { useTranslations } from "next-intl";
 
 interface CardSimProps {
   productImage: StaticImageData;
@@ -13,8 +12,6 @@ interface CardSimProps {
   priceRange: string;
   headerIcon: string;
   headerTitle: string;
-  size?: "small" | "medium" | "large"; // Prop opcional para el tamaño
-  fullWidth?: boolean; // Prop opcional para el ancho completo
 }
 
 const CardSim: React.FC<CardSimProps> = ({
@@ -23,39 +20,24 @@ const CardSim: React.FC<CardSimProps> = ({
   priceRange,
   headerIcon,
   headerTitle,
-  size = "medium", // Valor por defecto
-  fullWidth = false, // Valor por defecto
 }) => {
-  const t = useTranslations("EncryptedSimPage");
-
-  // Clases de tamaño para la tarjeta
-  const sizeClasses = {
-    small: "max-w-xs",
-    medium: "max-w-sm",
-    large: "max-w-lg",
-  };
-
   return (
-    <div
-      className={`bg-white shadow-lg rounded-2xl overflow-hidden ${
-        fullWidth ? "w-full" : sizeClasses[size]
-      }`}
-    >
-      <div className="p-2 bg-[#5D5D5D]">
+    <div className="w-full max-w-sm mx-auto bg-white shadow-lg rounded-2xl overflow-hidden">
+      <div className="p-2 bg-[#5D5D5D] ">
         <Image
           src={productImage}
-          alt={t("CardSim.simCard")}
-          className="w-full h-48 object-contain"
+          alt="Sim Card"
+          className=" w-full h-48 object-contain"
         />
         <div className="p-2">
-          <div className="flex justify-end gap-2 mb-1 text-sm text-gray-600">
+          <div className="flex justify-end gap-2  mb-1 text-sm text-gray-600">
             <div className="bg-[#FFFFFF] text-black px-2 py-1 rounded-full text-xs font-semibold flex gap-1">
               <Image src={TravelSvg} alt="Icon" className="w-4 h-4" />
-              <span>{t("CardSim.availableCountries")}</span>
+              <span>+200 países disponibles</span>
             </div>
 
             <div className="bg-[#81E2FF] text-black px-2 py-1 rounded-full text-xs font-semibold flex gap-1">
-              <span>{t("CardSim.lteSpeed")}</span>
+              <span>5G LTE</span>
               <Image src={WifiSvg} alt="Icon" className="w-4 h-4" />
             </div>
           </div>
@@ -63,7 +45,7 @@ const CardSim: React.FC<CardSimProps> = ({
       </div>
 
       <div className="p-6">
-        <div className="text-black rounded-full text-xs font-semibold flex gap-2">
+        <div className="text-black rounded-full text-xs font-semibold flex gap-1">
           <Image
             src={headerIcon}
             alt="Icon"
@@ -94,7 +76,7 @@ const CardSim: React.FC<CardSimProps> = ({
                   className="w-6 h-6 fill-current text-yellow-400 font-bold"
                 />
                 <span className="ml-1 text-sm text-gray-600 font-semibold">
-                  {t("CardSim.rating")}
+                  5/5
                 </span>
               </div>
             </div>
@@ -111,7 +93,7 @@ const CardSim: React.FC<CardSimProps> = ({
               }
               iconPosition="right"
             >
-              {t("CardSim.buyNow")}
+              Comprar Ahora
             </Button>
           </div>
         </div>

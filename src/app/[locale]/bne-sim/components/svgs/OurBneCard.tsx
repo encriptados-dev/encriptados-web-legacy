@@ -1,27 +1,27 @@
 import Image from 'next/image';
+import { StaticImageData } from 'next/image';
 import React from 'react';
 
 interface CardProps {
   title: string;
   description: string;
-  imageSrc: string;
-  imageAlt: string;
-  objectFit?: 'cover' | 'contain';
+  imageSrc: string | StaticImageData;
+  imageAlt: string; 
 }
 
-const OurBneCard: React.FC<CardProps> = ({ title, description, imageSrc, imageAlt, objectFit = 'cover' }) => {
+const OurBneCard: React.FC<CardProps> = ({ title, description, imageSrc, imageAlt }) => {
   return (
-    <div className="w-full bg-white rounded-lg shadow-lg p-6">
+    <div className="w-full bg-white rounded-2xl shadow-lg px-6 pt-6 flex flex-col justify-between">
       <div className="mb-4">
         <h2 className="text-xl font-bold">{title}</h2>
         <p className="text-gray-600">{description}</p>
       </div>
-      <div className="relative h-48 rounded-lg overflow-hidden">
+      <div className="rounded-lg overflow-hidden">
         <Image
           src={imageSrc}
           alt={imageAlt}
-          layout="fill"
-          objectFit={objectFit}
+          width={500} height={500} 
+          className=""          
         />
       </div>
     </div>

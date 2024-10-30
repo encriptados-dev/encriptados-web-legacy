@@ -219,7 +219,7 @@ const SimProductsPage: React.FC = () => {
   ];
 
   return (
-    <div className="flex flex-col gap-6">
+    <div className="flex flex-col gap-5">
       {cardData.map((card, index) => (
         <div
           key={index}

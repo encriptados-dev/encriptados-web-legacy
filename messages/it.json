@@ -1,4 +1,50 @@
 {
+  "HeaderMenu": {
+    "languages": {
+      "es": "Spagnolo",
+      "pt": "Portoghese",
+      "it": "Italiano",
+      "fr": "Francese",
+      "en": "Inglese"
+    },
+    "menuItems": {
+      "simShop": "Negozio di SIMS",
+      "products": {
+        "title": "Prodotti",
+        "sims": "SIMS",
+        "aplications": "Applicazioni",
+        "phones": "Cellulari"
+      },
+      "others": {
+        "title": "Altri",
+        "distributors": "Distributori",
+        "blog": "Blog",
+        "securityTest": "Test di sicurezza",
+        "offers": "Offerte"
+      },
+      "aboutUs": "Chi siamo"
+    }
+  },
+  "FooterMenu": {
+    "downloadApp": "Scarica l'app per il tuo dispositivo mobile qui:",
+    "simEsims": {
+      "encryptedSim": "SIM Criptata",
+      "physicSim": "SIM Fisica",
+      "globalSim": "SIM Globale"
+    },
+    "encryptedSims": {
+      "title": "App Criptate"
+    },
+    "phoneEncrypted": {
+      "title": "Telefoni Criptati"
+    },
+    "securePay": {
+      "title": "Pagamento Sicuro"
+    },
+    "copyRight": "Copyright © 2024 Tutti i diritti riservati.",
+    "termsAndConditions": "Termini e Condizioni",
+    "dataProcesing": "Politica e trattamento dei dati"
+  },
   "DeliveryPage": {
     "unnecessaryWaits": "Evita attese inutili",
     "fastDeliveryBannerTitle": "Con la Consegna Veloce, ricevi il tuo cellulare criptato nel minor tempo possibile",
@@ -257,6 +303,63 @@
       "activateSimTitle": "Attiva la tua eSIM e goditi i tuoi",
       "activateSimSpecialWord": "dati mobili",
       "activateSimDescription": "Attiva la tua eSIM in modo facile e veloce e inizia a godere di comunicazioni globali con anonimato"
+    }
+  },
+  "BneSim": {
+    "headline": "Connettiti ovunque",
+    "headline1": "nel mondo",
+    "headline2": "con totale anonimato",
+    "subheadline": "I tuoi dati non scadono, non importa quanto tempo",
+    "subheadline2": "impieghi a utilizzarli",
+    "whyChooseSim": "Perché scegliere la nostra SIM?",
+    "anonTitle": "Nessun registro dati, anonimato garantito!",
+    "anonDescription": "I dati che non vengono memorizzati non possono essere divulgati o rivelati. Fa parte della nostra filosofia non raccogliere informazioni personali né registri dei nostri clienti.",
+    "OurSimCard": {
+      "title": "Nessun costo di roaming",
+      "description": "La nostra SIM ti permette di connetterti a un operatore locale e di evitare le alte tariffe di roaming",
+      "title2": "Connettiti con pochi clic",
+      "description2": "Attiva facilmente la tua SIM, i tuoi dati saranno pronti per l'uso in più di 200 paesi",
+      "title3": "Piani flessibili",
+      "description3": "Scegli tra vari piani dati in base alle tue esigenze e impiega tutto il tempo che desideri per utilizzare le tue risorse",
+      "title4": "Attivazione immediata",
+      "description4": "Acquista la tua SIM da qualsiasi parte del mondo e attivala istantaneamente in modo facile e con totale anonimato"
+    },
+    "PromoBanner": {
+      "title": "Nessuna data di scadenza o piani che scadono!",
+      "description": "Prenditi tutto il tempo che desideri per utilizzare le risorse della tua SIM o eSIM. Non ci sono date di scadenza né scadenze dei dati."
+    },
+    "BannerAnonymous": {
+      "title": "Il tuo acquisto è anonimo",
+      "description": "Goditi un anonimato completo nell'acquisto della tua SIM o eSIM, non memorizziamo alcuna traccia o informazione personale"
+    },
+    "OurBneCard": {
+      "title": "Scegli un piano dati per la tua SIM o eSIM",
+      "description": "Seleziona la tua regione e scegli il piano che meglio si adatta alle tue esigenze e al tuo budget",
+      "title2": "Comprala, ricaricala e connettiti da qualsiasi luogo",
+      "description2": "Acquista la tua SIM, carica il tuo piano e attiva le tue comunicazioni anonime da qualsiasi parte del mondo",
+      "title3": "Goditi il tuo piano dati senza scadenze",
+      "description3": "Il tuo piano sarà attivato istantaneamente. Impiega tutto il tempo che vuoi per utilizzarlo."
+    },
+    "FaqsBne": {
+      "title": "Domande Frequenti",
+      "faqs": {
+        "whatIsBne": {
+          "title": "Cos'è BNE SIM?",
+          "content": "BNE SIM è una carta SIM internazionale che ti permette di connetterti a Internet in più di 200 paesi con totale anonimato e senza scadenze"
+        },
+        "howToActivate": {
+          "title": "Come attivo la mia BNE SIM?",
+          "content": "Attiva la tua SIM in modo facile e veloce. Basta inserirla nel tuo dispositivo e seguire le istruzioni di attivazione"
+        },
+        "howToBuy": {
+          "title": "Come posso acquistare una BNE SIM?",
+          "content": "Acquista la tua SIM sul nostro sito web, seleziona il tuo piano dati e ricevila a casa tua o in qualsiasi parte del mondo"
+        }
+      }
+    },
+    "QRBanner": {
+      "title": "Scarica l'app per iOS e Android e acquista subito la tua SIM",
+      "description": "Oppure scansiona il codice QR con la tua fotocamera"
     }
   },
   "DashboardPage": {
