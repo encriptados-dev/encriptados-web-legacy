@@ -2,14 +2,9 @@
 import Image from "next/image";
 import { useState } from "react";
 import BannerOur from "/public/images/our-products/banner-our.png";
+import { useFormContext } from "react-hook-form";
 const FormOurProducts: React.FC = () => {
-  const [email, setEmail] = useState("");
-
-  const handleSubmit = (event: React.FormEvent) => {
-    event.preventDefault();
-    // Aquí puedes manejar el envío del formulario, por ejemplo, enviar el email a una API
-    console.log("Email registrado:", email);
-  };
+  const { setValue, register, watch, reset } = useFormContext();
 
   return (
     <div className="relative min-h-screen w-full bg-[#000] text-white overflow-hidden py-8">
@@ -23,22 +18,20 @@ const FormOurProducts: React.FC = () => {
           </p>
 
           <div className="max-w-[360px] mx-auto">
-            <form onSubmit={handleSubmit} className="relative flex items-center">
-              <input
-                type="email"
-                placeholder="Ingresa tu correo electrónico"
-                className="w-full h-12 pl-6 pr-32 rounded-full bg-white border-0 text-black text-sm"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                required
-              />
-              <button
-                type="submit"
-                className="absolute right-0 h-12 rounded-full bg-[#35CDFB] hover:bg-[#2eb0d8]/90 text-[#085D77] px-6 font-semibold"
-              >
-                Suscribirme
-              </button>
-            </form>
+            <input
+              {...register("mail")}
+              type="email"
+              placeholder="Ingresa tu correo electrónico"
+              className="w-full h-12 pl-6 pr-32 rounded-full bg-white border-0 text-black text-sm"
+              required
+            />
+            <button
+              type="submit"
+              className="absolute right-0 h-12 rounded-full bg-[#35CDFB] hover:bg-[#2eb0d8]/90 text-[#085D77] px-6 font-semibold"
+            >
+              Suscribirme
+            </button>
+            <button onClick={() => reset()}>Resetear formulario</button>
           </div>
         </div>
 
@@ -61,6 +54,6 @@ const FormOurProducts: React.FC = () => {
       <div className="absolute top-1/2 right-40 w-[700px] h-[500px] bg-[#10B4E7]/20 rounded-full blur-3xl" />
     </div>
   );
-}
+};
 
 export default FormOurProducts;

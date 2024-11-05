@@ -3,11 +3,7 @@ import OurProductsPage from "./OurProductsPage";
 import { BasicFormProvider } from "@/shared/components/BasicFormProvider";
 
 const page = () => {
-  return (
-    <BasicFormProvider>
-      <OurProductsPage />
-    </BasicFormProvider>
-  );
+  return <OurProductsPage />;
 };
 
 export default page;
