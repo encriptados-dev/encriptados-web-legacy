@@ -383,6 +383,17 @@
     "banner": {
       "title": "Gerencie múltiplos SIMs com nosso",
       "subtitle": "Aplicativo Criptografado"
+    },
+    "filterProducts": {
+      "title": "Nossos produtos",
+      "categoryTitle": "Categoria",
+      "sim": "Sim",
+      "apps": "Aplicativos",
+      "software": "Software",
+      "osTitle": "Sistemas operacionais",
+      "licenseTitle": "Duração da licença",
+      "selectPlacerholder": "Selecionar",
+      "searchPlaceholder": "Buscar"
     }
   }
 }

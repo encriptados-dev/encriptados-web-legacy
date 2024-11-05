@@ -384,6 +384,17 @@
     "banner": {
       "title": "Gestisci più SIM con la nostra",
       "subtitle": "App Cifrata"
+    },
+    "filterProducts": {
+      "title": "I nostri prodotti",
+      "categoryTitle": "Categoria",
+      "sim": "Sim",
+      "apps": "Applicazioni",
+      "software": "Software",
+      "osTitle": "Sistemi operativi",
+      "licenseTitle": "Durata della licenza",
+      "selectPlacerholder": "Seleziona",
+      "searchPlaceholder": "Cerca"
     }
   }
 }

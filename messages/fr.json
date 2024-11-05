@@ -385,6 +385,17 @@
     "banner": {
       "title": "Gérez plusieurs SIM avec notre",
       "subtitle": "Application Encryptée"
+    },
+    "filterProducts": {
+      "title": "Nos produits",
+      "categoryTitle": "Catégorie",
+      "sim": "Sim",
+      "apps": "Applications",
+      "software": "Logiciel",
+      "osTitle": "Systèmes d'exploitation",
+      "licenseTitle": "Durée de licence",
+      "selectPlacerholder": "Sélectionner",
+      "searchPlaceholder": "Chercher"
     }
   }
 }

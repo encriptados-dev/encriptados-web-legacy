@@ -3,6 +3,7 @@ import React from "react";
 import { useFormContext, Controller } from "react-hook-form";
 import { Menu, MenuButton, MenuItem } from "@szhsin/react-menu";
 import "@szhsin/react-menu/dist/index.css"; // Asegúrate de incluir los estilos
+import { useTranslations } from "next-intl";
 
 interface Option {
   value: string;
@@ -22,6 +23,8 @@ const MenuDropdownProductBar: React.FC<MenuDropdownProductBarProps> = ({
   const { control, watch } = useFormContext();
   const selectedItem = watch(name);
 
+  const t = useTranslations("OurProductsPage");
+
   return (
     <Controller
       name={name}
@@ -40,8 +43,8 @@ const MenuDropdownProductBar: React.FC<MenuDropdownProductBarProps> = ({
               <span>
                 {selectedItem
                   ? options.find((option) => option.value === selectedItem)
-                      ?.label || "Seleccionar"
-                  : "Seleccionar"}
+                      ?.label || t("filterProducts.selectPlacerholder")
+                  : t("filterProducts.selectPlacerholder")}
               </span>
             </MenuButton>
           }

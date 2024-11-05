@@ -8,8 +8,10 @@ import BannerCoverage from "@/shared/BannerCoverage";
 import BannerSecureMdm from "./components/BannerSecureMdm";
 import DownloadAppBanner from "./components/DownloadAppBanner";
 import FormOurProducts from "./components/FormOurProducts";
+import { useTranslations } from "next-intl";
 
 const OurProductsPage = () => {
+  const t = useTranslations("OurProductsPage");
   return (
     <>
       <div className="p-8">
@@ -45,6 +47,9 @@ const OurProductsPage = () => {
       <div>
         <FormOurProducts  />
       </div>
+      <h1 className="bg-gradient-to-r text-3xl justify-center font-bold  flex items-center from-[#000000] to-[#35CDFB] bg-clip-text text-transparent mb-4 text-center">
+        {t("filterProducts.title")}
+      </h1>
 
     </>
   );

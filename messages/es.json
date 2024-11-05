@@ -388,6 +388,18 @@
     "banner": {
       "title": "Administra múltiples SIMs con nuestra",
       "subtitle": "App Encriptados"
+    },
+
+    "filterProducts": {
+      "title": "Nuestros productos",
+      "categoryTitle": "Categoría",
+      "sim": "Sim",
+      "apps": "Aplicaciones",
+      "software": "Software",
+      "osTitle": "Sistemas operativos",
+      "licenseTitle": "Duración de licencia",
+      "selectPlacerholder": "Seleccionar",
+      "searchPlaceholder": "Buscar"
     }
   }
 }

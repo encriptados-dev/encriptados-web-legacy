@@ -8,6 +8,7 @@ import PhoneProductsBarIcon from "./icons/PhoneProductsBarIcon";
 import { useFormContext } from "react-hook-form";
 import MenuDropdownProductBar from "./MenuDropdownProductBar";
 import SearchProduct from "./SearchProduct";
+import { useTranslations } from "next-intl";
 
 type IconKeys = "sim" | "app" | "software";
 
@@ -24,6 +25,7 @@ const icons: Record<IconKeys, React.FC<IconProps>> = {
 };
 
 export default function FilterProductsBar() {
+  const t = useTranslations("OurProductsPage");
   const { getValues } = useFormContext();
   const selected = getValues("selectedOption");
 
@@ -36,7 +38,7 @@ export default function FilterProductsBar() {
       value: iconKey,
       label:
         iconKey === "app"
-          ? "Aplicaciones"
+          ? t("filterProducts.apps")
           : key.charAt(0).toUpperCase() + key.slice(1),
       icon: React.createElement(icons[iconKey], {
         color:
@@ -52,14 +54,14 @@ export default function FilterProductsBar() {
           <div className="flex flex-col lg:flex-row space-y-4 lg:space-y-0">
             <div className="w-full lg:w-[340px] lg:mr-6">
               <h1 className="text-[rgb(8,93,119)] font-semibold mb-2">
-                Categoría
+                {t("filterProducts.categoryTitle")}
               </h1>
               <ListOfFiltersButton items={items} name="selectedOption" />
             </div>
 
             <div className="w-full lg:w-auto">
               <h1 className="text-[rgb(8,93,119)] font-semibold mb-2">
-                Sistemas operativos
+                {t("filterProducts.osTitle")}
               </h1>
               <MenuDropdownProductBar
                 name="os"
@@ -72,7 +74,7 @@ export default function FilterProductsBar() {
 
             <div className="w-full lg:w-auto lg:ml-4">
               <h1 className="text-[rgb(8,93,119)] font-semibold mb-2">
-                Duración de licencia
+                {t("filterProducts.licenseTitle")}
               </h1>
               <MenuDropdownProductBar
                 name="license"
@@ -86,7 +88,10 @@ export default function FilterProductsBar() {
         </div>
 
         <div className="flex  w-full lg:w-auto ">
-          <SearchProduct name="searchinputproduct" placeholder="Buscar" />
+          <SearchProduct
+            name="searchinputproduct"
+            placeholder={t("filterProducts.searchPlaceholder")}
+          />
         </div>
       </div>
     </div>
