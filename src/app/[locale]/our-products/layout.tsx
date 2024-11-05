@@ -23,7 +23,7 @@ export default function Layout({ children }: LayoutProps) {
   return (
     <div className="flex flex-col min-h-screen bg-[#EBF5FA] text-white">
       <BannerOurSims />
-      <div className="p-8">{children}</div>
+      <div className="">{children}</div>
     </div>
   );
 }
