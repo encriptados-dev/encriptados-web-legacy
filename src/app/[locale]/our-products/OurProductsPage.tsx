@@ -46,10 +46,7 @@ const OurProductsPage = () => {
 
       <div>
         <FormOurProducts  />
-      </div>
-      <h1 className="bg-gradient-to-r text-3xl justify-center font-bold  flex items-center from-[#000000] to-[#35CDFB] bg-clip-text text-transparent mb-4 text-center">
-        {t("filterProducts.title")}
-      </h1>
+      </div>    
 
     </>
   );
