@@ -4,7 +4,7 @@ import CardProductBanner from "./CardProductBanner";
 import Features from "./Features";
 import Advantages from "./Advantages";
 import BannerCoverage from "@/shared/BannerCoverage";
-import FaqsBne from "@/app/[locale]/bne-sim/components/FaqsBne";
+
 import Accordion from "@/shared/components/Accordion";
 import { useTranslations } from "next-intl";
 
