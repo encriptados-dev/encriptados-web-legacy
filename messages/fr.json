@@ -397,5 +397,52 @@
       "selectPlacerholder": "Sélectionner",
       "searchPlaceholder": "Chercher"
     }
+  },
+  "DistributorsPage": {
+    "banner": {
+      "becomeOurAllyBannerTitle": "Devenez notre allié commercial et vendez nos produits",
+      "becomeOurAllyBannerDescription": "Devenez distributeur de nos produits : eSIMs, applications et téléphones cryptés, et gagnez des profits",
+      "sendRequest": "Envoyer une demande"
+    },
+    "toBeADistributor": {
+      "title": "Qu'est-ce qu'être un distributeur d'Encriptados ?",
+      "description": "Si vous êtes une personne ou une organisation avec un public intéressé par les outils de communication chiffrée, vous pouvez vous associer avec nous pour leur distribuer nos produits"
+    },
+    "knowsBenefits": {
+      "title": "Découvrez les avantages",
+      "subtitle": "Pourquoi des systèmes de communication chiffrée ?"
+    },
+    "benefitsCards": {
+      "card1": {
+        "title": "Protection contre les menaces avancées",
+        "description": "Les menaces numériques évoluent chaque jour. Notre technologie de chiffrement garde vos données en sécurité face à des cyberattaques de plus en plus sophistiquées."
+      },
+      "card2": {
+        "title": "Sécurité pour tous",
+        "description": "Des particuliers aux gouvernements, tout le monde est à risque. Avec notre chiffrement, nous protégeons les informations des individus, entreprises et organismes contre les attaques constantes."
+      },
+      "card3": {
+        "title": "Réduction des coûts en cybersécurité",
+        "description": "Les menaces numériques évoluent chaque jour. Notre technologie de chiffrement garde vos données en sécurité face à des cyberattaques de plus en plus sophistiquées."
+      },
+      "card4": {
+        "title": "Confiance dans chaque interaction",
+        "description": "Sécurisez vos transactions et communications avec un chiffrement qui protège les données de bout en bout, offrant la tranquillité d'esprit d'un environnement sécurisé."
+      }
+    },
+    "beEncryptedDistributor": {
+      "title": "Qu'implique être un distributeur d'Encriptados ?",
+      "description": "Être un distributeur d'Encriptados nécessite une grande prudence, discrétion et responsabilité dans l'utilisation des données afin de garantir la sécurité maximale de nos utilisateurs."
+    },
+    "ourProducts": {
+      "title": "Nos produits",
+      "subtitle": "Découvrez nos produits",
+      "cards": {
+        "card1": "SIM cryptées",
+        "card2": "Applications de messagerie sécurisée",
+        "card3": "Systèmes de sécurité"
+      }
+    },
+    "bannerJoinUs": "Rejoignez-nous maintenant en tant qu'allié et générez des revenus avec nos produits"
   }
 }

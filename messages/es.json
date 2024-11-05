@@ -401,5 +401,52 @@
       "selectPlacerholder": "Seleccionar",
       "searchPlaceholder": "Buscar"
     }
+  },
+  "DistributorsPage": {
+    "banner": {
+      "becomeOurAllyBannerTitle": "Conviértete en nuestro aliado comercial y vende nuestros productos",
+      "becomeOurAllyBannerDescription": "Sé distribuidor de nuestros productos: eSIMs, Apps y celulares encriptados y obtén ganancias",
+      "sendRequest": "Enviar solicitud"
+    },
+    "toBeADistributor": {
+      "title": "¿Qué es ser un distribuidor de Encriptados?",
+      "description": "Si eres una persona u organización que cuenta con un público interesado en herramientas de comunicaciones cifradas, puedes aliarte con nosotros para distribuirles nuestros productos"
+    },
+    "knowsBenefits": {
+      "title": "Conoce los beneficios",
+      "subtitle": "¿Por qué sistemas de comunicación cifrada?"
+    },
+    "benefitsCards": {
+      "card1": {
+        "title": "Protección contra Amenazas Avanzadas",
+        "description": "Las amenazas digitales evolucionan cada día. Nuestra tecnología de encriptación mantiene tus datos seguros frente a ataques cibernéticos cada vez más sofisticados."
+      },
+      "card2": {
+        "title": "Seguridad para Todos",
+        "description": "Desde personas hasta gobiernos, todos estamos en riesgo. Con nuestra encriptación, protegemos la información de individuos, empresas y organismos frente a ataques constantes."
+      },
+      "card3": {
+        "title": "Reducción de Costos en Ciberseguridad",
+        "description": "Las amenazas digitales evolucionan cada día. Nuestra tecnología de encriptación mantiene tus datos seguros frente a ataques cibernéticos cada vez más sofisticados."
+      },
+      "card4": {
+        "title": "Confianza en Cada Interacción",
+        "description": "Asegura tus transacciones y comunicaciones con una encriptación que protege los datos de principio a fin, brindando la tranquilidad de un entorno seguro."
+      }
+    },
+    "beEncryptedDistributor": {
+      "title": "¿Qué implica ser un distribuidor de Encriptados?",
+      "description": "Para ser un distribuidor de Encriptados se requiere mucha precaución, reserva y responsabilidad en el uso de los datos, esto con el fin de brindarle la mayor seguridad posible a nuestros usuarios."
+    },
+    "ourProducts": {
+      "title": "Nuestros productos",
+      "subtitle": "Conoce nuestros productos",
+      "cards": {
+        "card1": "SIMS Encriptadas",
+        "card2": "Aplicaciones de mensajería segura",
+        "card3": "Sistemas de seguridad"
+      }
+    },
+    "bannerJoinUs": "Únete ahora como aliado y genera ingresos con nuestros productos"
   }
 }
