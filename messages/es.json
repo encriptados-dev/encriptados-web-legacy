@@ -440,13 +440,29 @@
     },
     "ourProducts": {
       "title": "Nuestros productos",
-      "subtitle": "Conoce nuestros productos",
+      "subtitle": "Conoce nuestros productos Encriptados",
+      "seeProducts": "Ver productos",
+
       "cards": {
         "card1": "SIMS Encriptadas",
         "card2": "Aplicaciones de mensajería segura",
         "card3": "Sistemas de seguridad"
       }
     },
-    "bannerJoinUs": "Únete ahora como aliado y genera ingresos con nuestros productos"
+    "bannerJoinUs": "Únete ahora como aliado y genera ingresos con nuestros productos",
+    "modal": {
+      "becomeDistributor": "Conviertete en distribuidor",
+      "descriptionDistributor": "Vende los mejores productos de comunicación encriptada",
+      "requestDistributor": "Solicitud de distribuidor",
+      "inputName": "Ingresa tu nombre o seudónimo",
+      "inputEmail": "Correo electrónico",
+      "inputContact": "Chat de contacto (Signal, Telegram, Threema)",
+      "inputStore": "¿Tienes una tienda física? ¿En qué lugar?",
+      "inputCity": {
+        "placeholder": "Elige una ciudad"
+      },
+      "inputExperience": "¿Tiene experiencia usando o vendiendo sistemas encriptados? Cuéntenos",
+      "sendRequest": "Enviar solicitud"
+    }
   }
 }
