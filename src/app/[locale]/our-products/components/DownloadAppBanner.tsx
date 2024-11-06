@@ -5,16 +5,16 @@ import PhoneQr from "/public/images/our-products/phone-qr.png";
 
 const Component: React.FC = () => {
   return (
-    <div className="bg-custom-gradient-qr-black-y-grey max-h-[450px] flex items-center justify-center p-4">
+    <div className="bg-custom-gradient-qr-black-y-grey md:max-h-[450px] flex items-center justify-center p-4">
       <div className="container max-w-5xl mx-auto grid md:grid-cols-2 gap-8 items-center">
-        <div className="space-y-6">
-          <h2 className="text-4xl md:text-5xl font-bold text-white leading-tight">
+        <div className="space-y-6 p-6">
+          <h2 className="text-4xl md:text-5xl font-bold text-white leading-tight text-center sm:text-left">
             Descarga la App
             <br />
             para iOS & Android
           </h2>
 
-          <div className="flex flex-col sm:flex-row gap-4">
+          <div className="flex flex-row justify-center sm:justify-start gap-4">
             <a
               href="#"
               className="inline-block transition-transform hover:scale-105"
@@ -46,13 +46,13 @@ const Component: React.FC = () => {
             </a>
           </div>
 
-          <p className="text-gray-400 text-lg">
+          <p className="text-gray-400 text-lg text-center sm:text-left">
             O Escanea el código QR con tu cámara
           </p>
         </div>
 
-        <div className="relative mx-auto w-full max-w-[250px] aspect-[1/2]">
-          <div className="absolute top-[20%] left-1/2 -translate-x-1/2 w-[400px] h-[400px]  rounded-2xl flex items-center justify-center p-4">
+        <div className="relative mx-auto w-full sm:max-w-[250px] max-w-[250px] aspect-[5/7]">
+          <div className="absolute left-1/2 -translate-x-1/2 w-[400px] h-[400px]  rounded-2xl flex items-center justify-center p-4">
             <Image
               src={PhoneQr}
               alt="QR Code"
