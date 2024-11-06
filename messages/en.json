@@ -398,7 +398,6 @@
       "selectPlacerholder": "Select",
       "searchPlaceholder": "Search"
     }
-<<<<<<< HEAD
   },
 
   "DistributorsPage": {
@@ -462,7 +461,5 @@
       "inputExperience": "Do you have experience using or selling encrypted systems? Tell us",
       "sendRequest": "Send request"
     }
-=======
->>>>>>> f8054e9fce3bbb2c9b5232e1be88377922ed8753
   }
 }
