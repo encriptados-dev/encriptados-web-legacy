@@ -25,7 +25,7 @@ const OurProductsPage = () => {
         </BasicFormProvider>
       </div>
 
-      <div className="my-20">
+      <div className="my-20 ">
         <CardOurProducts />
       </div>
       <div className="w-full m-0 p-0">

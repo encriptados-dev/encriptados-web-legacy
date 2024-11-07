@@ -38,9 +38,9 @@ const CardSimEsim: FC<CardSimEsimProps> = ({
   onMoreInfoClick,
 }) => {
   return (
-    <div className={`${background} max-w-[500px] rounded-3xl`}>
-      <div className="p-8 flex flex-row gap-4">
-        <div className="w-[55%]">
+    <div className={`${background} max-w-[500px] sm:rounded-3xl rounded-2xl m-4` }>
+      <div className="p-4 flex flex-row gap-0">
+        <div className="sm:w-[55%]">
           <h2 className={`text-xl mb-2 font-semibold ${titleColor}`}>{title}</h2>
           {description && (
             <p className={`text-xs mb-6 ${descriptionColor}`}>{description}</p>
@@ -67,12 +67,13 @@ const CardSimEsim: FC<CardSimEsimProps> = ({
           </div>
         </div>
 
-        <div className="w-[45%]">
+        <div className="sm:w-[45%] self-center">
           <Image
             src={imageSrc}
             alt={altText}
             width={200} // Ancho especificado directamente
-            height={160} // Alto especificado directamente
+            height={160}
+            className="w-full h-auto self-center" // Alto especificado directamente
           />
         </div>
       </div>

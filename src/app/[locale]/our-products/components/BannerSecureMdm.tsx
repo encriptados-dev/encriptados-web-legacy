@@ -6,7 +6,7 @@ import PhoneSecure from "../../../../../public/images/our-products/phone-secure.
 export default function BannerSecureMdm() {
   return (
     <div className="flex flex-col md:flex-row md:max-h-[400px] bg-custom-gradient-secure-black-y-grey lg:pl-[16vh] pl-5">
-      <div className="md:w-1/2 self-center py-8">
+      <div className="order-2 sm:order-1 md:w-1/2 self-center py-8">
         {/* Contenido de texto */}
         <div className="text-center md:text-left z-10">
           {/* Logo y título */}
@@ -32,7 +32,7 @@ export default function BannerSecureMdm() {
       </div>
 
       {/* Imagen del iPhone centrada */}
-      <div className="w-1/2 md:self-end mx-auto">
+      <div className="order-3 sm:order-2 w-1/2 md:self-end mx-auto">
         <Image 
           src={PhoneSecure}
           alt="Secure MDM iPhone"
@@ -42,7 +42,7 @@ export default function BannerSecureMdm() {
       </div>      
 
       {/* Imagen de la mujer a la derecha */}
-      <div className="w-1/2 mx-auto">
+      <div className="order-1 w-1/2 mx-auto">
         <Image
           src={WomenActivate}
           alt="Mujer con auricular"

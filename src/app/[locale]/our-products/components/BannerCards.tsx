@@ -22,7 +22,7 @@ const BannerCards: React.FC = () => {
   return (
     <div className="flex flex-col lg:flex-row items-center gap-10 max-w-[1100px] mx-auto">
       {/* Texto de encabezado */}
-      <div className="lg:w-1/3 space-y-4">
+      <div className="lg:w-1/3 space-y-4 p-4">
         <h2 className="text-3xl font-bold text-black">
           Tu SIM o E-SIM tienen estos superpoderes
         </h2>
@@ -34,7 +34,7 @@ const BannerCards: React.FC = () => {
 
       {/* Contenedor de tarjetas en disposición horizontal */}
       <div
-        className="flex flex-col lg:flex-row gap-4 lg:w-2/3 overflow-x-auto cursor-pointer no-scrollbar"
+        className="flex flex-row gap-4 lg:w-2/3 overflow-x-auto cursor-pointer no-scrollbar"
         ref={carouselRef}
         onMouseMove={handleMouseDrag}
         onWheel={(e) => {
