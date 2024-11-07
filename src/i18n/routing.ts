@@ -148,6 +148,13 @@ export const routing = defineRouting({
       it: "/dashboard/configurazione-account",
       pt: "/dashboard/configuracao-conta",
     },
+    "/distributors": {
+      en: "/distributors",
+      es: "/distribuidores",
+      fr: "/distributeurs",
+      it: "/distributori",
+      pt: "/distribuidores",
+    },
   },
 });
 

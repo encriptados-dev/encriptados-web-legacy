@@ -439,12 +439,28 @@
     "ourProducts": {
       "title": "Our products",
       "subtitle": "Discover our products",
+      "subtitle": "Discover our Encrypted Products",
+      "seeProducts": "See products",
       "cards": {
         "card1": "Encrypted SIMs",
         "card2": "Secure messaging applications",
         "card3": "Security systems"
       }
     },
-    "bannerJoinUs": "Join us now as an ally and generate income with our products"
+    "bannerJoinUs": "Join us now as an ally and generate income with our products",    
+    "modal": {
+      "becomeDistributor": "Become a distributor",
+      "descriptionDistributor": "Sell the best encrypted communication products",
+      "requestDistributor": "Distributor request",
+      "inputName": "Enter your name or nickname",
+      "inputEmail": "Email address",
+      "inputContact": "Contact chat (Signal, Telegram, Threema)",
+      "inputStore": "Do you have a physical store? Where is it located?",
+      "inputCity": {
+        "placeholder": "Choose a city"
+      },
+      "inputExperience": "Do you have experience using or selling encrypted systems? Tell us",
+      "sendRequest": "Send request"
+    }
   }
 }

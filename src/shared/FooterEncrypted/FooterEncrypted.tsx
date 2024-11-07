@@ -1,4 +1,6 @@
+"use client";
 import Link from "next/link";
+import Slider from "react-slick";
 import EncryptedLogoSvg from "../svgs/EncryptedLogoSvg";
 import AppleSvg from "../svgs/AppleSvg";
 import PlayStoreSvg from "../svgs/PlayStoreSvg";
@@ -84,7 +86,6 @@ export default function FooterEncrypted() {
     { name: "Perú", flag: <PeruFooterFlag /> },
     { name: "Costa Rica", flag: <CostaRicaFooterFlag /> },
     { name: "El Salvador", flag: <ElSalvadorFooterFlag /> },
-    { name: "EE.UU.", flag: <UnitedStatesFooterFlag /> },
     { name: "Brasil", flag: <BrasilFooterFlag /> },
   ];
 
@@ -103,11 +104,42 @@ export default function FooterEncrypted() {
     <LFooter />,
   ];
 
+  const settings = {
+    infinite: true,
+    speed: 3000,
+    slidesToShow: 5,
+    autoplay: true,
+    autoplaySpeed: 0,
+    cssEase: "linear",
+    pauseOnHover: true,
+    arrows: false,
+    dots: false,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 4,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 3,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+    ],
+  };
+
   return (
     <footer className="bg-black text-gray-300 py-8 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto gap-x-6">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
-          {/* Columna izquierda */}
           <div className="col-span-1 lg:col-span-1 mb-8 flex flex-col items-center md:items-start">
             <EncryptedLogoSvg width={150} height={50} />
             <p className="text-lg mb-4 text-center md:text-left">
@@ -123,7 +155,6 @@ export default function FooterEncrypted() {
             </div>
           </div>
 
-          {/* Columnas del medio */}
           {sections.map((section, index) => (
             <div key={index} className="col-span-1 mb-8">
               <h3 className="text-lg font-semibold mb-4 text-center md:text-left">
@@ -141,7 +172,6 @@ export default function FooterEncrypted() {
             </div>
           ))}
 
-          {/* Columna derecha (Métodos de pago) */}
           <div className="col-span-1 lg:col-span-1 mb-8">
             <h3 className="text-lg font-semibold mb-4 text-center md:text-left">
               {t("securePay.title")}
@@ -159,7 +189,6 @@ export default function FooterEncrypted() {
           </div>
         </div>
 
-        {/* Iconos de redes sociales */}
         <div className="flex justify-center items-center space-x-6 mt-8 flex-wrap">
           {socialMedia.map((social) => (
             <Link
@@ -173,36 +202,29 @@ export default function FooterEncrypted() {
           ))}
         </div>
 
-        {/* Derechos de autor */}
         <div className="text-center mt-8">
           <p className="text-sm">{t("copyRight")}</p>
         </div>
-        <hr className="w-full border-t border-[#464646] mt-4" />
+        <hr className="w-full border-t border-[#464646] mt-8 mb-4" />
 
-        {/* Términos y condiciones */}
-        <div className="text-center py-2">
-          <Link href="#" className="text-sm hover:text-white">
-            {t("termsAndConditions")}
-          </Link>
-
-          <span className="mx-2">|</span>
-          <Link href="#" className="text-sm hover:text-white">
-            {t("dataProcesing")}
-          </Link>
-        </div>
-        <hr className="w-full border-t border-[#464646]" />
-
-        {/* Países con banderas */}
-        <div className="flex flex-wrap justify-center mt-4 space-x-4">
-          {countries.map((country) => (
-            <div
-              key={country.name}
-              className="flex items-center space-x-2 mb-2"
-            >
-              {country.flag}
-              <span className="text-sm">{country.name}</span>
-            </div>
-          ))}
+        <div className="">
+          <Slider {...settings}>
+            {countries.map((country) => (
+              <div
+                key={country.name}
+                className="flex items-center justify-center mb-2 cursor-grab"
+              >
+                <div className="flex justify-center items-center">
+                  <div className="w-14 h-14 md:w-16 md:h-16 flex items-center justify-center">
+                    {country.flag}
+                  </div>
+                  <span className="text-sm text-center md:text-base ml-2">
+                    {country.name}
+                  </span>
+                </div>
+              </div>
+            ))}
+          </Slider>
         </div>
       </div>
     </footer>

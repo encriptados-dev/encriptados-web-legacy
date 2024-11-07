@@ -434,13 +434,29 @@
     },
     "ourProducts": {
       "title": "Nossos produtos",
-      "subtitle": "Conheça nossos produtos",
+      "subtitle": "Conheça nossos Produtos Criptografados",
+
+      "seeProducts": "Ver produtos",
       "cards": {
         "card1": "SIMs Criptografadas",
         "card2": "Aplicativos de mensagens seguras",
         "card3": "Sistemas de segurança"
       }
     },
-    "bannerJoinUs": "Junte-se a nós agora como aliado e gere renda com nossos produtos"
+    "bannerJoinUs": "Junte-se a nós agora como aliado e gere renda com nossos produtos",
+    "modal": {
+      "becomeDistributor": "Torne-se um distribuidor",
+      "descriptionDistributor": "Venda os melhores produtos de comunicação criptografada",
+      "requestDistributor": "Solicitação de distribuidor",
+      "inputName": "Digite seu nome ou apelido",
+      "inputEmail": "Endereço de e-mail",
+      "inputContact": "Chat de contato (Signal, Telegram, Threema)",
+      "inputStore": "Você tem uma loja física? Onde ela está localizada?",
+      "inputCity": {
+        "placeholder": "Escolha uma cidade"
+      },
+      "inputExperience": "Você tem experiência usando ou vendendo sistemas criptografados? Conte-nos",
+      "sendRequest": "Enviar solicitação"
+    }
   }
 }
