@@ -1,5 +1,6 @@
 import type { Config } from "tailwindcss";
 
+
 const config: Config = {
   content: [
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
@@ -14,7 +15,7 @@ const config: Config = {
       },
       fontFamily: {
         sans: ["Roboto", "Helvetica", "Arial", "sans-serif"], // Fuente personalizada Roboto
-      },
+      },     
       backgroundImage: {
         "cyan-gradient":
           "linear-gradient(360deg, rgba(211,245,255,1) 0%, rgba(244,248,250,1) 29%)",
@@ -39,7 +40,8 @@ const config: Config = {
       },
     },
   },
-  plugins: [],
+  plugins: [    
+  ],
 };
 
 export default config;

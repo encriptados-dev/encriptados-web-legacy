@@ -398,5 +398,53 @@
       "selectPlacerholder": "Select",
       "searchPlaceholder": "Search"
     }
+  },
+
+  "DistributorsPage": {
+    "banner": {
+      "becomeOurAllyBannerTitle": "Become our business ally and sell our products",
+      "becomeOurAllyBannerDescription": "Become a distributor of our products: eSIMs, Apps, and encrypted phones, and earn profits",
+      "sendRequest": "Send Request"
+    },
+    "toBeADistributor": {
+      "title": "What does it mean to be a distributor of Encriptados?",
+      "description": "If you are an individual or organization with an audience interested in encrypted communication tools, you can partner with us to distribute our products to them"
+    },
+    "knowsBenefits": {
+      "title": "Discover the benefits",
+      "subtitle": "Why encrypted communication systems?"
+    },
+    "benefitsCards": {
+      "card1": {
+        "title": "Protection Against Advanced Threats",
+        "description": "Digital threats evolve every day. Our encryption technology keeps your data safe from increasingly sophisticated cyber attacks."
+      },
+      "card2": {
+        "title": "Security for Everyone",
+        "description": "From individuals to governments, everyone is at risk. With our encryption, we protect the information of individuals, businesses, and organizations from constant attacks."
+      },
+      "card3": {
+        "title": "Cost Reduction in Cybersecurity",
+        "description": "Digital threats evolve every day. Our encryption technology keeps your data safe from increasingly sophisticated cyber attacks."
+      },
+      "card4": {
+        "title": "Trust in Every Interaction",
+        "description": "Secure your transactions and communications with encryption that protects data end-to-end, providing the peace of mind of a safe environment."
+      }
+    },
+    "beEncryptedDistributor": {
+      "title": "What does it mean to be a distributor of Encriptados?",
+      "description": "To be a distributor of Encriptados requires a high level of caution, discretion, and responsibility in data usage to provide the highest level of security to our users."
+    },
+    "ourProducts": {
+      "title": "Our products",
+      "subtitle": "Discover our products",
+      "cards": {
+        "card1": "Encrypted SIMs",
+        "card2": "Secure messaging applications",
+        "card3": "Security systems"
+      }
+    },
+    "bannerJoinUs": "Join us now as an ally and generate income with our products"
   }
 }
