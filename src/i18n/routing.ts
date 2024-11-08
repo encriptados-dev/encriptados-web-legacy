@@ -162,6 +162,13 @@ export const routing = defineRouting({
       it: "/test-crittografato",
       pt: "/teste-encriptado",
     },
+    "/encrypted-test/[typeOfTest]": {
+      en: "/encrypted-test/[typeOfTest]",
+      es: "/prueba-encriptada/[typeOfTest]",
+      fr: "/test-chiffré/[typeOfTest]",
+      it: "/test-crittografato/[typeOfTest]",
+      pt: "/teste-encriptado/[typeOfTest]",
+    },
   },
 });
 

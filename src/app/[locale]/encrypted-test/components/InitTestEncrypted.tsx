@@ -6,8 +6,10 @@ import SpiralLock from "../icons/SpiralLock";
 import InfoEncrypted from "../icons/PhoneSecureEncrypted";
 import PhoneSecureEncrypted from "../icons/PhoneSecureEncrypted";
 import KeySecureEncrypted from "../icons/KeySecureEncrypted";
+import { useRouter } from "next/navigation";
 
 const InitTestEncrypted = () => {
+  const router = useRouter();
   return (
     <>
       <div className="bg-black pt-14  pb-14">
@@ -16,7 +18,7 @@ const InitTestEncrypted = () => {
 
           <SpiralLock
             onTestInit={() => {
-              alert("Init test...");
+              router.push("encrypted-test/phone");
             }}
           />
         </div>
@@ -26,7 +28,7 @@ const InitTestEncrypted = () => {
 
           <SpiralLock
             onTestInit={() => {
-              alert("Init test...");
+              router.push("encrypted-test/password");
             }}
           />
         </div>
