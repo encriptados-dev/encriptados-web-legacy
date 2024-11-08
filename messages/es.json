@@ -464,5 +464,20 @@
       "inputExperience": "¿Tiene experiencia usando o vendiendo sistemas encriptados? Cuéntenos",
       "sendRequest": "Enviar solicitud"
     }
+  },
+  "EncryptedTestPage": {
+    "banner": {
+      "securityTestTitle": "Test de seguridad",
+      "securityTestDescription": "Descubre tu nivel de seguridad con estas herramientas"
+    },
+    "initTest": "Iniciar test",
+    "tryOurPhoneSecure": {
+      "title": "Prueba qué tan seguro es tu celular",
+      "description": "Fortalece tu seguridad digital como nunca antes."
+    },
+    "tryPassowordSecure": {
+      "title": "Prueba qué tan segura es tu contraseña",
+      "description": "Ingresa una contraseña y descubre su nivel de seguridad"
+    }
   }
 }

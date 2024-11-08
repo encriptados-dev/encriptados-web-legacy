@@ -155,6 +155,20 @@ export const routing = defineRouting({
       it: "/distributori",
       pt: "/distribuidores",
     },
+    "/encrypted-test": {
+      en: "/encrypted-test",
+      es: "/prueba-encriptada",
+      fr: "/test-chiffré",
+      it: "/test-crittografato",
+      pt: "/teste-encriptado",
+    },
+    "/encrypted-test/[typeOfTest]": {
+      en: "/encrypted-test/[typeOfTest]",
+      es: "/prueba-encriptada/[typeOfTest]",
+      fr: "/test-chiffré/[typeOfTest]",
+      it: "/test-crittografato/[typeOfTest]",
+      pt: "/teste-encriptado/[typeOfTest]",
+    },
   },
 });
 

@@ -15,6 +15,8 @@ const buttonStyles = cva("px-4 py-2 font-bold flex items-center", {
       profile: "bg-[#1D1D1D] text-white font-medium",
       elegant: "bg-[#F4F4F4] text-black",
       cyan: "bg-transparent border border-[#70DEFF] text-cyan-500 font-light", // Nuevo estilo cyan
+      support:
+        "bg-[#EDF4F6] text-[#00516B] text-sm py-3 w-full flex items-center justify-center",
     },
     size: {
       small: "text-sm",
@@ -46,7 +48,8 @@ type ButtonProps = {
     | "dangerMetal"
     | "profile"
     | "elegant"
-    | "cyan"; // Añadimos cyan como opción
+    | "support" // Ajuste para incluir support
+    | "cyan";
   size?: "small" | "medium" | "large";
   rounded?: "none" | "sm" | "md" | "lg" | "full";
   customStyles?: string;

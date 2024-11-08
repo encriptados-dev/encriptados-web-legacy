@@ -1,6 +1,5 @@
 "use client";
 import Link from "next/link";
-import Slider from "react-slick";
 import EncryptedLogoSvg from "../svgs/EncryptedLogoSvg";
 import AppleSvg from "../svgs/AppleSvg";
 import PlayStoreSvg from "../svgs/PlayStoreSvg";
@@ -30,6 +29,7 @@ import DollarBlueFooter from "./payicon/DollarBlueFooter";
 import DFooter from "./payicon/DFooter";
 import LFooter from "./payicon/LFooter";
 import { useTranslations } from "next-intl";
+import Marquee from "react-fast-marquee";
 
 export default function FooterEncrypted() {
   const t = useTranslations("FooterMenu");
@@ -104,38 +104,6 @@ export default function FooterEncrypted() {
     <LFooter />,
   ];
 
-  const settings = {
-    infinite: true,
-    speed: 3000,
-    slidesToShow: 5,
-    autoplay: true,
-    autoplaySpeed: 0,
-    cssEase: "linear",
-    pauseOnHover: true,
-    arrows: false,
-    dots: false,
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 4,
-        },
-      },
-      {
-        breakpoint: 768,
-        settings: {
-          slidesToShow: 3,
-        },
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          slidesToShow: 2,
-        },
-      },
-    ],
-  };
-
   return (
     <footer className="bg-black text-gray-300 py-8 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto gap-x-6">
@@ -207,24 +175,40 @@ export default function FooterEncrypted() {
         </div>
         <hr className="w-full border-t border-[#464646] mt-8 mb-4" />
 
-        <div className="">
-          <Slider {...settings}>
-            {countries.map((country) => (
-              <div
-                key={country.name}
-                className="flex items-center justify-center mb-2 cursor-grab"
-              >
-                <div className="flex justify-center items-center">
-                  <div className="w-14 h-14 md:w-16 md:h-16 flex items-center justify-center">
-                    {country.flag}
+        <div>
+          <Marquee direction="left" speed={50} gradient={false} delay={0}>
+            <div className="flex">
+              {countries.map((country, index) => (
+                <div
+                  key={index}
+                  className="flex items-center justify-center mb-2 cursor-grab"
+                  style={{ width: "120px" }} // Establece el ancho fijo para cada bandera
+                >
+                  <div className="flex justify-center items-center">
+                    <div className="w-20 h-14 md:w-16 md:h-16 flex items-center justify-center">
+                      {country.flag}
+                    </div>
+                    <p className="text-xs ">{country.name}</p>
                   </div>
-                  <span className="text-sm text-center md:text-base ml-2">
-                    {country.name}
-                  </span>
                 </div>
-              </div>
-            ))}
-          </Slider>
+              ))}
+              {/* Duplicamos las banderas para el efecto de bucle infinito */}
+              {countries.map((country, index) => (
+                <div
+                  key={`duplicate-${index}`}
+                  className="flex items-center justify-center mb-2 cursor-grab"
+                  style={{ width: "120px" }} // Establece el ancho fijo para cada bandera
+                >
+                  <div className="flex justify-center items-center">
+                    <div className="w-20 h-14 md:w-16 md:h-16 flex items-center justify-center">
+                      {country.flag}
+                    </div>
+                    <p className="text-xs ">{country.name}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </Marquee>
         </div>
       </div>
     </footer>

@@ -458,5 +458,20 @@
       "inputExperience": "Hai esperienza nell'uso o nella vendita di sistemi crittografati? Raccontaci",
       "sendRequest": "Invia richiesta"
     }
+  },
+  "EncryptedTestPage": {
+    "banner": {
+      "securityTestTitle": "Test di sicurezza",
+      "securityTestDescription": "Scopri il tuo livello di sicurezza con questi strumenti"
+    },
+    "initTest": "Inizia il test",
+    "tryOurPhoneSecure": {
+      "title": "Verifica quanto è sicuro il tuo telefono",
+      "description": "Rafforza la tua sicurezza digitale come mai prima."
+    },
+    "tryPassowordSecure": {
+      "title": "Verifica quanto è sicura la tua password",
+      "description": "Inserisci una password e scopri il suo livello di sicurezza"
+    }
   }
 }
