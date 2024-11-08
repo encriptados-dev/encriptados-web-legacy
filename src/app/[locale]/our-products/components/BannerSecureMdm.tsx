@@ -42,7 +42,7 @@ export default function BannerSecureMdm() {
       </div>      
 
       {/* Imagen de la mujer a la derecha */}
-      <div className="order-1 w-1/2 mx-auto">
+      <div className="order-1 sm:order-3 w-1/2 mx-auto">
         <Image
           src={WomenActivate}
           alt="Mujer con auricular"
