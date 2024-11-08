@@ -2,6 +2,7 @@
 import React from "react";
 import TestBasic from "./components/TestBasic";
 import { useParams } from "next/navigation";
+import PasswordTest from "./components/PasswordTest";
 
 interface Option {
   answer: string;
@@ -15,68 +16,103 @@ interface Question {
 
 const page = () => {
   const { typeOfTest } = useParams();
-
   const testType = Array.isArray(typeOfTest) ? typeOfTest[0] : typeOfTest;
 
-  const questionsPhone: Question[] = [
+  const questionsPhone = [
     {
-      question: "¿Qué es un celular?",
+      question: "¿Qué tipo de contraseña o desbloqueo usas?",
       options: [
-        { answer: "Un dispositivo móvil", isCorrect: true },
-        { answer: "Una computadora de escritorio", isCorrect: false },
-        { answer: "Una televisión", isCorrect: false },
-        { answer: "Una cámara", isCorrect: false },
+        { answer: "Alfanumérica de 6 carácteres o más.", isCorrect: true },
+        { answer: "Pin o patrón de 6 caracteres", isCorrect: false },
+        { answer: "Pin o patrón de 8 o más caracteres", isCorrect: false },
       ],
     },
     {
-      question: "¿Qué es un teléfono encriptado?",
+      question:
+        "¿Tienes actualizado tu smartphone con el sistema operativo más reciente?",
       options: [
-        {
-          answer:
-            "Un teléfono que usa un sistema de codificación para proteger datos",
-          isCorrect: true,
-        },
-        { answer: "Un teléfono antiguo", isCorrect: false },
-        { answer: "Un teléfono con cámara avanzada", isCorrect: false },
-        { answer: "Un teléfono con alta gama de sonidos", isCorrect: false },
-      ],
-    },
-  ];
-
-  const questionsSoftware: Question[] = [
-    {
-      question: "¿Qué es el software?",
-      options: [
-        {
-          answer:
-            "Un conjunto de instrucciones que le dicen a una computadora cómo funcionar",
-          isCorrect: true,
-        },
-        { answer: "Un hardware que guarda información", isCorrect: false },
-        { answer: "Una red de computadoras", isCorrect: false },
-        { answer: "Un componente físico", isCorrect: false },
+        { answer: "Si", isCorrect: true },
+        { answer: "No", isCorrect: false },
       ],
     },
     {
-      question: "¿Qué es la encriptación de software?",
+      question: "¿Tienes instalado un antivirus?",
       options: [
-        {
-          answer:
-            "El proceso de codificar información para que solo pueda ser leída por quien tenga la clave",
-          isCorrect: true,
-        },
-        {
-          answer: "El proceso de eliminar datos de la computadora",
-          isCorrect: false,
-        },
-        {
-          answer: "El proceso de aumentar el rendimiento de un software",
-          isCorrect: false,
-        },
-        {
-          answer: "El proceso de desarrollar un nuevo sistema operativo",
-          isCorrect: false,
-        },
+        { answer: "Si", isCorrect: true },
+        { answer: "No", isCorrect: false },
+      ],
+    },
+    {
+      question: "¿Usas VPN para conectarte a Internet?",
+      options: [
+        { answer: "Si", isCorrect: true },
+        { answer: "No", isCorrect: false },
+      ],
+    },
+    {
+      question: "¿Realizas copias de seguridad periódicamente?",
+      options: [
+        { answer: "Si", isCorrect: true },
+        { answer: "No", isCorrect: false },
+      ],
+    },
+    {
+      question:
+        "¿Tienes claves de acceso para las aplicaciones sensibles (Banco, Wallets)?",
+      options: [
+        { answer: "Si", isCorrect: true },
+        { answer: "No", isCorrect: false },
+      ],
+    },
+    {
+      question: "¿Eliminas las aplicaciones que ya no usas?",
+      options: [
+        { answer: "Si", isCorrect: true },
+        { answer: "No", isCorrect: false },
+      ],
+    },
+    {
+      question:
+        "¿Revisas los permisos de privacidad que otorgas a las aplicaciones?",
+      options: [
+        { answer: "Si", isCorrect: true },
+        { answer: "No", isCorrect: false },
+      ],
+    },
+    {
+      question: "¿Te conectas a redes de WiFi público constantemente?",
+      options: [
+        { answer: "Si", isCorrect: false },
+        { answer: "No", isCorrect: true },
+      ],
+    },
+    {
+      question: "¿Utilizas un operador móvil convencional o uno alternativo?",
+      options: [
+        { answer: "Convencional", isCorrect: false },
+        { answer: "Otro", isCorrect: true },
+      ],
+    },
+    {
+      question: "¿Separas las comunicaciones personales de las laborales?",
+      options: [
+        { answer: "Si", isCorrect: true },
+        { answer: "No", isCorrect: false },
+      ],
+    },
+    {
+      question:
+        "¿Usas aplicaciones de mensajería convencionales para compartir información sensible?",
+      options: [
+        { answer: "Si", isCorrect: false },
+        { answer: "No", isCorrect: true },
+      ],
+    },
+    {
+      question: "¿Tu teléfono y plan de datos está registrado a tu nombre?",
+      options: [
+        { answer: "Si", isCorrect: true },
+        { answer: "No", isCorrect: false },
       ],
     },
   ];
@@ -112,10 +148,13 @@ const page = () => {
   let selectedQuestions: Question[] = [];
   if (testType === "phone") {
     selectedQuestions = questionsPhone;
-  } else if (testType === "software") {
-    selectedQuestions = questionsSoftware;
   } else if (testType === "password") {
     selectedQuestions = questionsPassword;
+  }
+
+  // Condicional para renderizar el componente adecuado según el tipo de prueba
+  if (testType === "password") {
+    return <PasswordTest />;
   }
 
   return <TestBasic test={selectedQuestions} />;
