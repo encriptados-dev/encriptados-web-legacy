@@ -6,8 +6,8 @@ const PhoneSecureEncrypted = () => {
   return (
     <div className="flex items-center space-x-4">
       <svg
-        width="450"
-        height="450"
+        width="300"
+        height="300"
         viewBox="0 0 576 591"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"

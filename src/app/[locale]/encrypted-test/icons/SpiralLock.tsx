@@ -18,7 +18,7 @@ const SpiralLock: React.FC<SpiralLockProps> = ({ onTestInit }) => {
         </Button>
       </div>
       <svg
-        className="w-40 h-auto sm:w-72 lg:w-80"
+        className="w-40 h-auto sm:w-72 lg:w-56"
         viewBox="0 0 320 472"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
