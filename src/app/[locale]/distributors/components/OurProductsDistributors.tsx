@@ -40,14 +40,14 @@ const OurProductsDistributors = () => {
           </div>
         </div>
 
-        <div className="w-[400px]">
-          <h1 className="text-white text-4xl text-center font-bold">
+        <div className="">
+          <h1 className="text-white text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-center font-bold">
             {t("subtitle")}
           </h1>
         </div>
       </div>
       <div className="w-full bg-gradient-to-r from-[#00372B] via-black to-[#022530] flex flex-col justify-center items-center">
-        <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 px-4 md:px-8">
+        <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 px-4 md:px-8 mb-20">
           {distributors.map((distributor) => (
             <div
               key={distributor.id}
