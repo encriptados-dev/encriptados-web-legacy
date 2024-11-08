@@ -16,92 +16,95 @@ const appData = [
   { name: "line", icon: IconLineSVG, bgColor: "bg-green-600" },
 ];
 
-const Component: React.FC = () => {
+export default function Component() {
   return (
-    <div className="relative min-h-[400px] w-full bg-black">
+    <div className="relative min-h-[400px] h-auto w-full bg-black overflow-hidden">
       {/* Background image with diagonal overlay */}
-      <div className="absolute left-0 top-0 h-full w-4/4 overflow-hidden md:w-2/3">
-        <div className="relative h-full w-full">
+      <div className="absolute inset-0 w-full h-full">
+        <div className="relative h-full w-full opacity-60">
           <Image
             src={FondoActivate}
             alt="Office building background"
             className="h-full w-full object-cover"
-            width={800}
-            height={600}
+            fill
             priority
-            title="Office building background" // Image description for screen readers
+            sizes="100vw"
           />
           <div
-            className="absolute inset-0"
+            className="absolute inset-0 bg-gradient-to-r from-transparent via-black/70 to-black sm:bg-none"
             style={{
-              background: "linear-gradient(105deg, transparent 50%, black 50.5%)",
+              background: "linear-gradient(105deg, transparent 0%, black 100%)",
             }}
           />
+          {/* Diagonal division for desktop */}
+          <div className="hidden sm:block absolute inset-0 bg-black" style={{ clipPath: "polygon(65% 0, 100% 0, 100% 100%, 45% 100%)" }} />
         </div>
       </div>
 
       {/* Person image */}
-      <div className="absolute bottom-0 left-0 top-0 w-1/2 md:w-1/3">
+      <div className="absolute bottom-0 left-0 w-1/3 h-full hidden sm:block">
         <Image
           src={ManMinutos}
           alt="Person using phone"
-          className="h-full w-full object-contain object-bottom scale-110 -translate-y-[19px]"
-          width={400}
-          height={600}
+          className="object-contain object-bottom"
+          fill
           priority
+          sizes="50vw"
         />
       </div>
 
       {/* Content */}
       <div className="relative mx-auto max-w-6xl px-4 py-12 sm:px-6 lg:px-8">
-        <div className="ml-auto w-full md:w-1/2">
-          <div className="space-y-8">
-            <div className="space-y-4">
-              <h1 className="text-2xl font-light text-white md:text-2xl lg:text-2xl">
-                Activa APPs por SMS con <strong className="text-primary font-bold">Encriptados</strong>
-              </h1>
-              <p className="text-lg text-gray-400">
-                Regístrate en cualquier aplicación con un número de teléfono virtual
-              </p>
-            </div>
+        <div className="w-full sm:w-3/4 md:w-1/2 ml-auto space-y-8">
+          <div className="space-y-4">
+            <h1 className="text-xl font-light text-white sm:text-2xl lg:text-3xl">
+              Activa APPs por SMS con{" "}
+              <strong className="text-primary font-bold">Encriptados</strong>
+            </h1>
+            <p className="text-base sm:text-lg text-white">
+              Regístrate en cualquier aplicación con un número de teléfono
+              virtual
+            </p>
+          </div>
 
-            {/* App icons */}
-            <div className="flex flex-wrap gap-4">
-              {appData.map(({ name, icon, bgColor }) => (
-                <div
-                  key={name}
-                  className={`flex h-20 w-20 items-center justify-center rounded-xl p-2 ${bgColor}`}
-                >
-                  <Image
-                    src={icon}
-                    alt={`${name} icon`}
-                    width={40}
-                    height={40}
-                    className="h-12 w-12"
-                  />
-                </div>
-              ))}
-            </div>
-
-            <div className="flex items-center gap-4">
-              <div className="flex items-center gap-2">
+          {/* App icons */}
+          <div className="flex flex-wrap gap-2 sm:gap-4">
+            {appData.map(({ name, icon, bgColor }) => (
+              <div
+                key={name}
+                className={`flex h-14 w-14 sm:h-16 sm:w-16 md:h-20 md:w-20 items-center justify-center rounded-xl p-2 ${bgColor}`}
+              >
                 <Image
-                  src={IconColombiaSVG}
-                  alt="Colombian flag icon"
-                  width={24}
-                  height={24}
-                  className="h-6 w-6"
+                  src={icon}
+                  alt={`${name} icon`}
+                  width={40}
+                  height={40}
+                  className="h-8 w-8 sm:h-10 sm:w-10 md:h-12 md:w-12"
                 />
-                <span className="text-sm text-gray-400">
-                  Se genera un número colombiano
-                </span>
               </div>
+            ))}
+          </div>
+
+          {/* Colombian flag icon and Buy Now Button */}
+          <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4">
+            <button className="rounded-full bg-[#0AAEE1] px-8 sm:px-12 py-2 sm:py-3 text-sm sm:text-base text-white font-bold hover:bg-blue-600 transition-colors">
+              Comprar ahora
+            </button>
+            <div className="flex items-center gap-2">
+              <Image
+                src={IconColombiaSVG}
+                alt="Colombian flag icon"
+                width={24}
+                height={24}
+                className="h-5 w-5 sm:h-6 sm:w-6"
+              />
+              <span className="text-xs sm:text-sm text-white">
+                Se genera un número colombiano
+              </span>
             </div>
           </div>
         </div>
       </div>
     </div>
   );
-};
-
-export default Component;
+}
