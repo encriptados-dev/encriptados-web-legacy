@@ -473,5 +473,84 @@
       "title": "Teste o quão segura é sua senha",
       "description": "Insira uma senha e descubra seu nível de segurança"
     }
+  },
+  "phoneTest": {
+    "backToTests": "Voltar aos testes",
+    "startservices": "Comece a usar alguns serviços criptografados.",
+    "solutions": "Convidamos você a utilizar nossas soluções criptografadas.",
+    "complement": "Você pode complementá-lo com uma camada adicional de proteção.",
+    "protectTop": "Você tem alta proteção para suas comunicações e dispositivos",
+    "finalScore": "Sua pontuação é:",
+    "correctAnswer": "Resposta correta",
+    "incorrectAnswer": "Resposta incorreta",
+    "title": "Teste a segurança do seu telefone",
+    "answer": "Pergunta",
+    "of": "de",
+    "question1": {
+      "titleQuestion": "Que tipo de senha ou método de desbloqueio você usa?",
+      "answer1": "Alfanumérica com 6 ou mais caracteres.",
+      "answer2": "PIN ou padrão com 6 caracteres",
+      "answer3": "PIN ou padrão com 8 ou mais caracteres"
+    },
+    "question2": {
+      "titleQuestion": "Seu smartphone está atualizado com o sistema operacional mais recente?",
+      "answer1": "Sim",
+      "answer2": "Não"
+    },
+    "question3": {
+      "titleQuestion": "Você tem um antivírus instalado?",
+      "answer1": "Sim",
+      "answer2": "Não"
+    },
+    "question4": {
+      "titleQuestion": "Você usa uma VPN para se conectar à Internet?",
+      "answer1": "Sim",
+      "answer2": "Não"
+    },
+    "question5": {
+      "titleQuestion": "Você realiza backups regularmente?",
+      "answer1": "Sim",
+      "answer2": "Não"
+    },
+    "question6": {
+      "titleQuestion": "Você tem senhas de acesso para aplicativos sensíveis (Banco, Wallets)?",
+      "answer1": "Sim",
+      "answer2": "Não"
+    },
+    "question7": {
+      "titleQuestion": "Você exclui os aplicativos que não usa mais?",
+      "answer1": "Sim",
+      "answer2": "Não"
+    },
+    "question8": {
+      "titleQuestion": "Você revisa as permissões de privacidade concedidas aos aplicativos?",
+      "answer1": "Sim",
+      "answer2": "Não"
+    },
+    "question9": {
+      "titleQuestion": "Você se conecta frequentemente a redes WiFi públicas?",
+      "answer1": "Sim",
+      "answer2": "Não"
+    },
+    "question10": {
+      "titleQuestion": "Você usa uma operadora móvel convencional ou alternativa?",
+      "answer1": "Convencional",
+      "answer2": "Alternativa"
+    },
+    "question11": {
+      "titleQuestion": "Você separa as comunicações pessoais das profissionais?",
+      "answer1": "Sim",
+      "answer2": "Não"
+    },
+    "question12": {
+      "titleQuestion": "Você usa aplicativos de mensagens convencionais para compartilhar informações sensíveis?",
+      "answer1": "Sim",
+      "answer2": "Não"
+    },
+    "question13": {
+      "titleQuestion": "Seu telefone e plano de dados estão registrados em seu nome?",
+      "answer1": "Sim",
+      "answer2": "Não"
+    }
   }
 }

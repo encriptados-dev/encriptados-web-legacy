@@ -3,6 +3,7 @@ import React from "react";
 import TestBasic from "./components/TestBasic";
 import { useParams } from "next/navigation";
 import PasswordTest from "./components/PasswordTest";
+import { useTranslations } from "next-intl";
 
 interface Option {
   answer: string;
@@ -18,101 +19,99 @@ const page = () => {
   const { typeOfTest } = useParams();
   const testType = Array.isArray(typeOfTest) ? typeOfTest[0] : typeOfTest;
 
+  const t = useTranslations();
+
   const questionsPhone = [
     {
-      question: "¿Qué tipo de contraseña o desbloqueo usas?",
+      question: t("phoneTest.question1.titleQuestion"),
       options: [
-        { answer: "Alfanumérica de 6 carácteres o más.", isCorrect: true },
-        { answer: "Pin o patrón de 6 caracteres", isCorrect: false },
-        { answer: "Pin o patrón de 8 o más caracteres", isCorrect: false },
+        { answer: t("phoneTest.question1.answer1"), isCorrect: true },
+        { answer: t("phoneTest.question1.answer2"), isCorrect: false },
+        { answer: t("phoneTest.question1.answer3"), isCorrect: false },
       ],
     },
     {
-      question:
-        "¿Tienes actualizado tu smartphone con el sistema operativo más reciente?",
+      question: t("phoneTest.question2.titleQuestion"),
       options: [
-        { answer: "Si", isCorrect: true },
-        { answer: "No", isCorrect: false },
+        { answer: t("phoneTest.question2.answer1"), isCorrect: true },
+        { answer: t("phoneTest.question2.answer2"), isCorrect: false },
       ],
     },
     {
-      question: "¿Tienes instalado un antivirus?",
+      question: t("phoneTest.question3.titleQuestion"),
       options: [
-        { answer: "Si", isCorrect: true },
-        { answer: "No", isCorrect: false },
+        { answer: t("phoneTest.question3.answer1"), isCorrect: true },
+        { answer: t("phoneTest.question3.answer2"), isCorrect: false },
       ],
     },
     {
-      question: "¿Usas VPN para conectarte a Internet?",
+      question: t("phoneTest.question4.titleQuestion"),
       options: [
-        { answer: "Si", isCorrect: true },
-        { answer: "No", isCorrect: false },
+        { answer: t("phoneTest.question4.answer1"), isCorrect: true },
+        { answer: t("phoneTest.question4.answer2"), isCorrect: false },
       ],
     },
     {
-      question: "¿Realizas copias de seguridad periódicamente?",
+      question: t("phoneTest.question5.titleQuestion"),
       options: [
-        { answer: "Si", isCorrect: true },
-        { answer: "No", isCorrect: false },
+        { answer: t("phoneTest.question5.answer1"), isCorrect: true },
+        { answer: t("phoneTest.question5.answer2"), isCorrect: false },
       ],
     },
     {
-      question:
-        "¿Tienes claves de acceso para las aplicaciones sensibles (Banco, Wallets)?",
+      question: t("phoneTest.question6.titleQuestion"),
       options: [
-        { answer: "Si", isCorrect: true },
-        { answer: "No", isCorrect: false },
+        { answer: t("phoneTest.question6.answer1"), isCorrect: true },
+        { answer: t("phoneTest.question6.answer2"), isCorrect: false },
       ],
     },
     {
-      question: "¿Eliminas las aplicaciones que ya no usas?",
+      question: t("phoneTest.question7.titleQuestion"),
       options: [
-        { answer: "Si", isCorrect: true },
-        { answer: "No", isCorrect: false },
+        { answer: t("phoneTest.question7.answer1"), isCorrect: true },
+        { answer: t("phoneTest.question7.answer2"), isCorrect: false },
       ],
     },
     {
-      question:
-        "¿Revisas los permisos de privacidad que otorgas a las aplicaciones?",
+      question: t("phoneTest.question8.titleQuestion"),
       options: [
-        { answer: "Si", isCorrect: true },
-        { answer: "No", isCorrect: false },
+        { answer: t("phoneTest.question8.answer1"), isCorrect: true },
+        { answer: t("phoneTest.question8.answer2"), isCorrect: false },
       ],
     },
     {
-      question: "¿Te conectas a redes de WiFi público constantemente?",
+      question: t("phoneTest.question9.titleQuestion"),
       options: [
-        { answer: "Si", isCorrect: false },
-        { answer: "No", isCorrect: true },
+        { answer: t("phoneTest.question9.answer1"), isCorrect: false },
+        { answer: t("phoneTest.question9.answer2"), isCorrect: true },
       ],
     },
     {
-      question: "¿Utilizas un operador móvil convencional o uno alternativo?",
+      question: t("phoneTest.question10.titleQuestion"),
       options: [
-        { answer: "Convencional", isCorrect: false },
-        { answer: "Otro", isCorrect: true },
+        { answer: t("phoneTest.question10.answer1"), isCorrect: false },
+        { answer: t("phoneTest.question10.answer2"), isCorrect: true },
       ],
     },
     {
-      question: "¿Separas las comunicaciones personales de las laborales?",
+      question: t("phoneTest.question11.titleQuestion"),
       options: [
-        { answer: "Si", isCorrect: true },
-        { answer: "No", isCorrect: false },
+        { answer: t("phoneTest.question11.answer1"), isCorrect: true },
+        { answer: t("phoneTest.question11.answer2"), isCorrect: false },
       ],
     },
     {
-      question:
-        "¿Usas aplicaciones de mensajería convencionales para compartir información sensible?",
+      question: t("phoneTest.question12.titleQuestion"),
       options: [
-        { answer: "Si", isCorrect: false },
-        { answer: "No", isCorrect: true },
+        { answer: t("phoneTest.question12.answer1"), isCorrect: false },
+        { answer: t("phoneTest.question12.answer2"), isCorrect: true },
       ],
     },
     {
-      question: "¿Tu teléfono y plan de datos está registrado a tu nombre?",
+      question: t("phoneTest.question13.titleQuestion"),
       options: [
-        { answer: "Si", isCorrect: true },
-        { answer: "No", isCorrect: false },
+        { answer: t("phoneTest.question13.answer1"), isCorrect: true },
+        { answer: t("phoneTest.question13.answer2"), isCorrect: false },
       ],
     },
   ];

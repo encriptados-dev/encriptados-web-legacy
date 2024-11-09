@@ -474,5 +474,84 @@
       "title": "Testez la sécurité de votre mot de passe",
       "description": "Entrez un mot de passe et découvrez son niveau de sécurité"
     }
+  },
+  "phoneTest": {
+    "backToTests": "Retour aux tests",
+    "startservices": "Commencez à utiliser certains services cryptés.",
+    "solutions": "Nous vous invitons à utiliser nos solutions cryptées.",
+    "complement": "Vous pouvez le compléter avec une couche supplémentaire de protection.",
+    "protectTop": "Vous avez une haute protection pour vos communications et appareils",
+    "finalScore": "Votre score est :",
+    "correctAnswer": "Réponse correcte",
+    "incorrectAnswer": "Réponse incorrecte",
+    "title": "Testez la sécurité de votre téléphone",
+    "answer": "Question",
+    "of": "de",
+    "question1": {
+      "titleQuestion": "Quel type de mot de passe ou de méthode de déverrouillage utilisez-vous?",
+      "answer1": "Alphanumérique avec 6 caractères ou plus.",
+      "answer2": "PIN ou schéma avec 6 caractères",
+      "answer3": "PIN ou schéma avec 8 caractères ou plus"
+    },
+    "question2": {
+      "titleQuestion": "Votre smartphone est-il mis à jour avec le dernier système d'exploitation?",
+      "answer1": "Oui",
+      "answer2": "Non"
+    },
+    "question3": {
+      "titleQuestion": "Avez-vous un antivirus installé?",
+      "answer1": "Oui",
+      "answer2": "Non"
+    },
+    "question4": {
+      "titleQuestion": "Utilisez-vous un VPN pour vous connecter à Internet?",
+      "answer1": "Oui",
+      "answer2": "Non"
+    },
+    "question5": {
+      "titleQuestion": "Effectuez-vous des sauvegardes régulières?",
+      "answer1": "Oui",
+      "answer2": "Non"
+    },
+    "question6": {
+      "titleQuestion": "Avez-vous des mots de passe pour les applications sensibles (Banque, Wallets)?",
+      "answer1": "Oui",
+      "answer2": "Non"
+    },
+    "question7": {
+      "titleQuestion": "Supprimez-vous les applications que vous n'utilisez plus?",
+      "answer1": "Oui",
+      "answer2": "Non"
+    },
+    "question8": {
+      "titleQuestion": "Vérifiez-vous les autorisations de confidentialité accordées aux applications?",
+      "answer1": "Oui",
+      "answer2": "Non"
+    },
+    "question9": {
+      "titleQuestion": "Vous connectez-vous fréquemment aux réseaux WiFi publics?",
+      "answer1": "Oui",
+      "answer2": "Non"
+    },
+    "question10": {
+      "titleQuestion": "Utilisez-vous un opérateur mobile conventionnel ou alternatif?",
+      "answer1": "Conventionnel",
+      "answer2": "Alternatif"
+    },
+    "question11": {
+      "titleQuestion": "Séparez-vous les communications personnelles et professionnelles?",
+      "answer1": "Oui",
+      "answer2": "Non"
+    },
+    "question12": {
+      "titleQuestion": "Utilisez-vous des applications de messagerie conventionnelles pour partager des informations sensibles?",
+      "answer1": "Oui",
+      "answer2": "Non"
+    },
+    "question13": {
+      "titleQuestion": "Votre téléphone et votre forfait de données sont-ils enregistrés à votre nom?",
+      "answer1": "Oui",
+      "answer2": "Non"
+    }
   }
 }

@@ -6,6 +6,7 @@ import ShieldTest from "../icons/ShieldTest";
 import CheckFinishTest from "./CheckFinishTest";
 import Button from "@/shared/components/Button";
 import { useRouter } from "next/navigation";
+import { useTranslations } from "next-intl";
 
 interface Option {
   answer: string;
@@ -22,6 +23,7 @@ interface TestPhoneProps {
 }
 
 const TestBasic: React.FC<TestPhoneProps> = ({ test }) => {
+  const t = useTranslations("phoneTest");
   const router = useRouter();
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const [score, setScore] = useState(0);
@@ -34,9 +36,9 @@ const TestBasic: React.FC<TestPhoneProps> = ({ test }) => {
     setSelectedOption(option);
     if (option.isCorrect) {
       setScore((prevScore) => prevScore + 1);
-      setMessage("¡Respuesta correcta!");
+      setMessage(t("correctAnswer"));
     } else {
-      setMessage("¡Respuesta incorrecta!");
+      setMessage(t("incorrectAnswer"));
     }
 
     setTimeout(() => {
@@ -65,7 +67,7 @@ const TestBasic: React.FC<TestPhoneProps> = ({ test }) => {
             strokeWidth={2}
           />
         </svg>
-        <span>Test seguridad de tu celular</span>
+        <span>{t("title")}</span>
       </div>
 
       <div className="mb-6 h-1 w-full overflow-hidden rounded-full bg-gray-800">
@@ -80,7 +82,7 @@ const TestBasic: React.FC<TestPhoneProps> = ({ test }) => {
           <>
             <div className="mb-4 text-white text-center">
               <span>
-                Pregunta {currentQuestionIndex + 1} de {test.length}
+                {t("answer")} {currentQuestionIndex + 1} {t("of")} {test.length}
               </span>
             </div>
             <h2 className="mb-8 text-xl  text-white font-bold">
@@ -141,7 +143,7 @@ const TestBasic: React.FC<TestPhoneProps> = ({ test }) => {
         ) : (
           <>
             <p className="text-center font-medium text-[#A2A2A2] tracking-widest uppercase">
-              Tu puntuación es:
+              {t("finalScore")}
             </p>
 
             <div className="flex justify-center items-center mt-4">
@@ -153,17 +155,13 @@ const TestBasic: React.FC<TestPhoneProps> = ({ test }) => {
             <div className="mt-4">
               <CardFinishTest
                 iconPosition="left"
-                title="Tienes una protección alta de tus comunicaciones y dispositivos"
+                title={t("protectTop")}
                 icon={<ShieldTest />}
               />
             </div>
             <div className="mt-4">
               <CheckFinishTest
-                options={[
-                  "Puedes complementarlo con una capa adicional de protección.",
-                  "Te invitamos a utilizar nuestras soluciones encriptadas.",
-                  "Comienza a usar algunos servicios encriptados",
-                ]}
+                options={[t("complement"), t("solutions"), t("startservices")]}
               />
 
               <div className="mt-4">
@@ -173,7 +171,7 @@ const TestBasic: React.FC<TestPhoneProps> = ({ test }) => {
                     router.push("/encrypted-test");
                   }}
                 >
-                  Volver a los tests
+                  {t("backToTests")}
                 </Button>
               </div>
             </div>

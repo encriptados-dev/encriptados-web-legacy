@@ -473,5 +473,84 @@
       "title": "Verifica quanto è sicura la tua password",
       "description": "Inserisci una password e scopri il suo livello di sicurezza"
     }
+  },
+  "phoneTest": {
+    "backToTests": "Torna ai test",
+    "startservices": "Inizia a utilizzare alcuni servizi criptati.",
+    "solutions": "Ti invitiamo a utilizzare le nostre soluzioni criptate.",
+    "complement": "Puoi integrarlo con uno strato aggiuntivo di protezione.",
+    "protectTop": "Hai una protezione elevata per le tue comunicazioni e dispositivi",
+    "finalScore": "Il tuo punteggio è:",
+    "correctAnswer": "Risposta corretta",
+    "incorrectAnswer": "Risposta errata",
+    "title": "Testa la sicurezza del tuo telefono",
+    "answer": "Domanda",
+    "of": "di",
+    "question1": {
+      "titleQuestion": "Che tipo di password o metodo di sblocco usi?",
+      "answer1": "Alfanumerica con 6 o più caratteri.",
+      "answer2": "PIN o schema con 6 caratteri",
+      "answer3": "PIN o schema con 8 o più caratteri"
+    },
+    "question2": {
+      "titleQuestion": "Il tuo smartphone è aggiornato con l'ultimo sistema operativo?",
+      "answer1": "Sì",
+      "answer2": "No"
+    },
+    "question3": {
+      "titleQuestion": "Hai installato un antivirus?",
+      "answer1": "Sì",
+      "answer2": "No"
+    },
+    "question4": {
+      "titleQuestion": "Usi una VPN per connetterti a Internet?",
+      "answer1": "Sì",
+      "answer2": "No"
+    },
+    "question5": {
+      "titleQuestion": "Esegui backup periodici?",
+      "answer1": "Sì",
+      "answer2": "No"
+    },
+    "question6": {
+      "titleQuestion": "Hai password di accesso per le app sensibili (Banca, Wallets)?",
+      "answer1": "Sì",
+      "answer2": "No"
+    },
+    "question7": {
+      "titleQuestion": "Elimini le applicazioni che non usi più?",
+      "answer1": "Sì",
+      "answer2": "No"
+    },
+    "question8": {
+      "titleQuestion": "Controlli le autorizzazioni sulla privacy concesse alle app?",
+      "answer1": "Sì",
+      "answer2": "No"
+    },
+    "question9": {
+      "titleQuestion": "Ti connetti spesso a reti WiFi pubbliche?",
+      "answer1": "Sì",
+      "answer2": "No"
+    },
+    "question10": {
+      "titleQuestion": "Usi un operatore mobile convenzionale o alternativo?",
+      "answer1": "Convenzionale",
+      "answer2": "Alternativo"
+    },
+    "question11": {
+      "titleQuestion": "Separa le comunicazioni personali da quelle lavorative?",
+      "answer1": "Sì",
+      "answer2": "No"
+    },
+    "question12": {
+      "titleQuestion": "Usi app di messaggistica convenzionali per condividere informazioni sensibili?",
+      "answer1": "Sì",
+      "answer2": "No"
+    },
+    "question13": {
+      "titleQuestion": "Il tuo telefono e il piano dati sono registrati a tuo nome?",
+      "answer1": "Sì",
+      "answer2": "No"
+    }
   }
 }
