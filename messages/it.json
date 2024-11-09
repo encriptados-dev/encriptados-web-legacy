@@ -474,6 +474,55 @@
       "description": "Inserisci una password e scopri il suo livello di sicurezza"
     }
   },
+  "passwordTest": {
+    "verificationTitle": "Verificatore di Forza della Password",
+    "verificationSubtitle": "Verifiche",
+    "statsSubtitle": "Statistiche",
+    "passwordInputLabel": "Inserisci la tua password",
+    "passwordInputPlaceholder": "Inserisci la tua password",
+    "strengthLabel": "Forza: ",
+    "verifications": {
+      "length": "Almeno 12 caratteri",
+      "uppercase": "Contiene lettere maiuscole",
+      "lowercase": "Contiene lettere minuscole",
+      "number": "Contiene numeri",
+      "special": "Contiene caratteri speciali",
+      "noCommon": "Non è una password comune"
+    },
+    "stats": {
+      "length": "Lunghezza totale",
+      "uppercase": "Lettere maiuscole",
+      "lowercase": "Lettere minuscole",
+      "numbers": "Numeri",
+      "special": "Caratteri speciali"
+    },
+    "improvementTips": "Suggerimenti per migliorare:",
+    "improvementMessages": {
+      "length": "Aumenta la lunghezza a almeno 12 caratteri",
+      "uppercase": "Aggiungi lettere maiuscole",
+      "lowercase": "Aggiungi lettere minuscole",
+      "number": "Includi numeri",
+      "special": "Includi caratteri speciali",
+      "noCommon": "Evita di usare password comuni"
+    },
+    "strengthCategories": {
+      "veryWeak": "Molto debole",
+      "weak": "Debole",
+      "medium": "Media",
+      "strong": "Forte",
+      "veryStrong": "Molto forte",
+      "excellent": "Eccellente"
+    },
+    "strengthScore": "Punteggio",
+    "commonPasswords": {
+      "123456": "123456",
+      "password": "password",
+      "qwerty": "qwerty",
+      "admin": "admin",
+      "letmein": "letmein",
+      "welcome": "welcome"
+    }
+  },
   "phoneTest": {
     "backToTests": "Torna ai test",
     "startservices": "Inizia a utilizzare alcuni servizi criptati.",

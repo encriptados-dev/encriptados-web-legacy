@@ -475,6 +475,55 @@
       "description": "Entrez un mot de passe et découvrez son niveau de sécurité"
     }
   },
+  "passwordTest": {
+    "verificationTitle": "Vérificateur de Force du Mot de Passe",
+    "verificationSubtitle": "Vérifications",
+    "statsSubtitle": "Statistiques",
+    "passwordInputLabel": "Entrez votre mot de passe",
+    "passwordInputPlaceholder": "Entrez votre mot de passe",
+    "strengthLabel": "Force : ",
+    "verifications": {
+      "length": "Au moins 12 caractères",
+      "uppercase": "Contient des lettres majuscules",
+      "lowercase": "Contient des lettres minuscules",
+      "number": "Contient des chiffres",
+      "special": "Contient des caractères spéciaux",
+      "noCommon": "Ce n'est pas un mot de passe commun"
+    },
+    "stats": {
+      "length": "Longueur totale",
+      "uppercase": "Lettres majuscules",
+      "lowercase": "Lettres minuscules",
+      "numbers": "Chiffres",
+      "special": "Caractères spéciaux"
+    },
+    "improvementTips": "Conseils pour améliorer :",
+    "improvementMessages": {
+      "length": "Augmentez la longueur à au moins 12 caractères",
+      "uppercase": "Ajoutez des lettres majuscules",
+      "lowercase": "Ajoutez des lettres minuscules",
+      "number": "Incluez des chiffres",
+      "special": "Incluez des caractères spéciaux",
+      "noCommon": "Évitez d'utiliser des mots de passe communs"
+    },
+    "strengthCategories": {
+      "veryWeak": "Très faible",
+      "weak": "Faible",
+      "medium": "Moyenne",
+      "strong": "Fort",
+      "veryStrong": "Très fort",
+      "excellent": "Excellent"
+    },
+    "strengthScore": "Score",
+    "commonPasswords": {
+      "123456": "123456",
+      "password": "password",
+      "qwerty": "qwerty",
+      "admin": "admin",
+      "letmein": "letmein",
+      "welcome": "welcome"
+    }
+  },
   "phoneTest": {
     "backToTests": "Retour aux tests",
     "startservices": "Commencez à utiliser certains services cryptés.",

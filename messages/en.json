@@ -463,6 +463,70 @@
       "sendRequest": "Send request"
     }
   },
+  "EncryptedTestPage": {
+    "banner": {
+      "securityTestTitle": "Security Test",
+      "securityTestDescription": "Discover your security level with these tools"
+    },
+    "initTest": "Start test",
+    "tryOurPhoneSecure": {
+      "title": "Test how secure your phone is",
+      "description": "Strengthen your digital security like never before."
+    },
+    "tryPassowordSecure": {
+      "title": "Test how secure your password is",
+      "description": "Enter a password and discover its security level"
+    }
+  },
+  "passwordTest": {
+    "verificationTitle": "Password Strength Checker",
+    "verificationSubtitle": "Verifications",
+    "statsSubtitle": "Statistics",
+    "passwordInputLabel": "Enter your password",
+    "passwordInputPlaceholder": "Enter your password",
+    "strengthLabel": "Strength: ",
+    "verifications": {
+      "length": "At least 12 characters",
+      "uppercase": "Contains uppercase letters",
+      "lowercase": "Contains lowercase letters",
+      "number": "Contains numbers",
+      "special": "Contains special characters",
+      "noCommon": "Not a common password"
+    },
+    "stats": {
+      "length": "Total length",
+      "uppercase": "Uppercase letters",
+      "lowercase": "Lowercase letters",
+      "numbers": "Numbers",
+      "special": "Special characters"
+    },
+    "improvementTips": "Improvement tips:",
+    "improvementMessages": {
+      "length": "Increase the length to at least 12 characters",
+      "uppercase": "Add uppercase letters",
+      "lowercase": "Add lowercase letters",
+      "number": "Include numbers",
+      "special": "Include special characters",
+      "noCommon": "Avoid using common passwords"
+    },
+    "strengthCategories": {
+      "veryWeak": "Very Weak",
+      "weak": "Weak",
+      "medium": "Medium",
+      "strong": "Strong",
+      "veryStrong": "Very Strong",
+      "excellent": "Excellent"
+    },
+    "strengthScore": "Score",
+    "commonPasswords": {
+      "123456": "123456",
+      "password": "password",
+      "qwerty": "qwerty",
+      "admin": "admin",
+      "letmein": "letmein",
+      "welcome": "welcome"
+    }
+  },
   "phoneTest": {
     "backToTests": "Back to the tests",
     "startservices": "Start using some encrypted services.",

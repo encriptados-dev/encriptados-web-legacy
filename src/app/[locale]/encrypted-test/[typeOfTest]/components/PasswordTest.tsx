@@ -1,8 +1,10 @@
 "use client";
 
+import { useTranslations } from "next-intl";
 import { useState, useEffect } from "react";
 
 export default function PasswordTest() {
+  const t = useTranslations();
   const [password, setPassword] = useState("");
   const [strength, setStrength] = useState(0);
   const [checks, setChecks] = useState({
@@ -55,12 +57,12 @@ export default function PasswordTest() {
 
   const getStrengthLabel = (score: number) => {
     const labels = [
-      "Muy débil",
-      "Débil",
-      "Medio",
-      "Fuerte",
-      "Muy fuerte",
-      "Excelente",
+      t("passwordTest.strengthCategories.veryWeak"),
+      t("passwordTest.strengthCategories.weak"),
+      t("passwordTest.strengthCategories.medium"),
+      t("passwordTest.strengthCategories.strong"),
+      t("passwordTest.strengthCategories.veryStrong"),
+      t("passwordTest.strengthCategories.excellent"),
     ];
     return labels[score] || "Sin contraseña";
   };
@@ -89,27 +91,29 @@ export default function PasswordTest() {
   return (
     <div className="w-full max-w-2xl   rounded-lg shadow-lg  h-[645px] p-6 text-white">
       <h2 className="text-2xl font-semibold text-center mb-4">
-        Verificador de Fortaleza de Contraseña
+        {t("passwordTest.verificationTitle")}
       </h2>
 
       <div className="space-y-6">
         <div className="space-y-2">
           <label htmlFor="password" className="text-sm font-medium">
-            Ingresa tu contraseña
+            {t("passwordTest.passwordInputLabel")}
           </label>
           <input
             id="password"
             type="password"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
-            placeholder="Ingresa tu contraseña"
+            placeholder={t("passwordTest.passwordInputPlaceholder")}
             className="w-full p-2 border border-gray-300 text-black rounded-md"
           />
         </div>
 
         <div className="space-y-2">
           <div className="flex justify-between text-sm">
-            <span>Fortaleza: {getStrengthLabel(strength)}</span>
+            <span>
+              {t("passwordTest.strengthLabel")} {getStrengthLabel(strength)}
+            </span>
             <span>{Math.round((strength / 6) * 100)}%</span>
           </div>
           <div
@@ -122,7 +126,9 @@ export default function PasswordTest() {
 
         <div className="grid grid-cols-2 gap-4">
           <div>
-            <h3 className="font-semibold mb-2">Verificaciones</h3>
+            <h3 className="font-semibold mb-2">
+              {t("passwordTest.verificationSubtitle")}
+            </h3>
             <ul className="space-y-1">
               <li className="flex items-center">
                 {checks.length ? (
@@ -130,7 +136,7 @@ export default function PasswordTest() {
                 ) : (
                   <span className="text-red-500 mr-2">✘</span>
                 )}
-                <span>Al menos 12 caracteres</span>
+                <span> {t("passwordTest.verifications.length")}</span>
               </li>
               <li className="flex items-center">
                 {checks.uppercase ? (
@@ -138,7 +144,7 @@ export default function PasswordTest() {
                 ) : (
                   <span className="text-red-500 mr-2">✘</span>
                 )}
-                <span>Contiene mayúsculas</span>
+                <span>{t("passwordTest.verifications.uppercase")}</span>
               </li>
               <li className="flex items-center">
                 {checks.lowercase ? (
@@ -146,7 +152,7 @@ export default function PasswordTest() {
                 ) : (
                   <span className="text-red-500 mr-2">✘</span>
                 )}
-                <span>Contiene minúsculas</span>
+                <span>{t("passwordTest.verifications.lowercase")}</span>
               </li>
               <li className="flex items-center">
                 {checks.number ? (
@@ -154,7 +160,7 @@ export default function PasswordTest() {
                 ) : (
                   <span className="text-red-500 mr-2">✘</span>
                 )}
-                <span>Contiene números</span>
+                <span>{t("passwordTest.verifications.number")}</span>
               </li>
               <li className="flex items-center">
                 {checks.special ? (
@@ -162,7 +168,7 @@ export default function PasswordTest() {
                 ) : (
                   <span className="text-red-500 mr-2">✘</span>
                 )}
-                <span>Contiene caracteres especiales</span>
+                <span>{t("passwordTest.verifications.special")}</span>
               </li>
               <li className="flex items-center">
                 {checks.noCommon ? (
@@ -170,34 +176,59 @@ export default function PasswordTest() {
                 ) : (
                   <span className="text-red-500 mr-2">✘</span>
                 )}
-                <span>No es una contraseña común</span>
+                <span>{t("passwordTest.verifications.noCommon")}</span>
               </li>
             </ul>
           </div>
           <div>
-            <h3 className="font-semibold mb-2">Estadísticas</h3>
+            <h3 className="font-semibold mb-2">
+              {" "}
+              {t("passwordTest.statsSubtitle")}
+            </h3>
             <ul className="space-y-1">
-              <li>Longitud total: {stats.length}</li>
-              <li>Mayúsculas: {stats.uppercase}</li>
-              <li>Minúsculas: {stats.lowercase}</li>
-              <li>Números: {stats.numbers}</li>
-              <li>Caracteres especiales: {stats.special}</li>
+              <li>
+                {t("passwordTest.stats.length")} {stats.length}
+              </li>
+              <li>
+                {t("passwordTest.stats.uppercase")} {stats.uppercase}
+              </li>
+              <li>
+                {" "}
+                {t("passwordTest.stats.lowercase")} {stats.lowercase}
+              </li>
+              <li>
+                {" "}
+                {t("passwordTest.stats.numbers")} {stats.numbers}
+              </li>
+              <li>
+                {t("passwordTest.stats.special")} {stats.special}
+              </li>
             </ul>
           </div>
         </div>
 
         {password && (
           <div className="text-sm text-gray-500">
-            <p>Consejos para mejorar:</p>
+            <p> {t("passwordTest.improvementTips")}</p>
             <ul className="list-disc pl-5 space-y-1">
               {!checks.length && (
-                <li>Aumenta la longitud a al menos 12 caracteres</li>
+                <li>{t("passwordTest.improvementMessages.length")}</li>
               )}
-              {!checks.uppercase && <li>Añade letras mayúsculas</li>}
-              {!checks.lowercase && <li>Añade letras minúsculas</li>}
-              {!checks.number && <li>Incluye números</li>}
-              {!checks.special && <li>Incluye caracteres especiales</li>}
-              {!checks.noCommon && <li>Evita usar contraseñas comunes</li>}
+              {!checks.uppercase && (
+                <li>{t("passwordTest.improvementMessages.uppercase")}</li>
+              )}
+              {!checks.lowercase && (
+                <li>{t("passwordTest.improvementMessages.lowercase")}</li>
+              )}
+              {!checks.number && (
+                <li>{t("passwordTest.improvementMessages.number")}</li>
+              )}
+              {!checks.special && (
+                <li>{t("passwordTest.improvementMessages.special")}</li>
+              )}
+              {!checks.noCommon && (
+                <li>{t("passwordTest.improvementMessages.noCommon")}</li>
+              )}
             </ul>
           </div>
         )}

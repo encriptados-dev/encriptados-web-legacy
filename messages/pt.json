@@ -474,6 +474,55 @@
       "description": "Insira uma senha e descubra seu nível de segurança"
     }
   },
+  "passwordTest": {
+    "verificationTitle": "Verificador de Força da Senha",
+    "verificationSubtitle": "Verificações",
+    "statsSubtitle": "Estatísticas",
+    "passwordInputLabel": "Digite sua senha",
+    "passwordInputPlaceholder": "Digite sua senha",
+    "strengthLabel": "Força: ",
+    "verifications": {
+      "length": "Pelo menos 12 caracteres",
+      "uppercase": "Contém letras maiúsculas",
+      "lowercase": "Contém letras minúsculas",
+      "number": "Contém números",
+      "special": "Contém caracteres especiais",
+      "noCommon": "Não é uma senha comum"
+    },
+    "stats": {
+      "length": "Comprimento total",
+      "uppercase": "Letras maiúsculas",
+      "lowercase": "Letras minúsculas",
+      "numbers": "Números",
+      "special": "Caracteres especiais"
+    },
+    "improvementTips": "Dicas para melhorar:",
+    "improvementMessages": {
+      "length": "Aumente o comprimento para pelo menos 12 caracteres",
+      "uppercase": "Adicione letras maiúsculas",
+      "lowercase": "Adicione letras minúsculas",
+      "number": "Inclua números",
+      "special": "Inclua caracteres especiais",
+      "noCommon": "Evite usar senhas comuns"
+    },
+    "strengthCategories": {
+      "veryWeak": "Muito fraca",
+      "weak": "Fraca",
+      "medium": "Média",
+      "strong": "Forte",
+      "veryStrong": "Muito forte",
+      "excellent": "Excelente"
+    },
+    "strengthScore": "Pontuação",
+    "commonPasswords": {
+      "123456": "123456",
+      "password": "password",
+      "qwerty": "qwerty",
+      "admin": "admin",
+      "letmein": "letmein",
+      "welcome": "welcome"
+    }
+  },
   "phoneTest": {
     "backToTests": "Voltar aos testes",
     "startservices": "Comece a usar alguns serviços criptografados.",
