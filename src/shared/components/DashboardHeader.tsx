@@ -3,7 +3,7 @@ import { Menu } from "lucide-react";
 import Button from "@/shared/components/Button";
 import EncryptedLogoSvg from "@/shared/svgs/EncryptedLogoSvg";
 import ProfileSvg from "@/shared/svgs/ProfileSvg";
-import { ReactNode, useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef } from "react";
 
 import { usePathname } from "next/navigation";
 import SupportChat from "@/shared/components/SupportChat";

@@ -1,6 +1,5 @@
 "use client";
 import {
-  Menu,
   Home,
   ShoppingCart,
   Settings,
@@ -8,13 +7,12 @@ import {
   CreditCard,
   UserCheck,
 } from "lucide-react";
-import Button from "@/shared/components/Button";
-import EncryptedLogoSvg from "@/shared/svgs/EncryptedLogoSvg";
+
 import ProfileSvg from "@/shared/svgs/ProfileSvg";
 import { ReactNode, useState, useEffect, useRef } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import SupportChat from "@/shared/components/SupportChat";
+
 import { useTranslations } from "next-intl";
 
 import { useLocale } from "next-intl";

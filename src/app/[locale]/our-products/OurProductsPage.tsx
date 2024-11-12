@@ -9,11 +9,10 @@ import BannerCoverage from "@/shared/BannerCoverage";
 import BannerSecureMdm from "./components/BannerSecureMdm";
 import DownloadAppBanner from "./components/DownloadAppBanner";
 import FormOurProducts from "./components/FormOurProducts";
-import { useTranslations } from "next-intl";
+
 import { BasicFormProvider } from "@/shared/components/BasicFormProvider";
 
 const OurProductsPage = () => {
-  const t = useTranslations("OurProductsPage");
   return (
     <>
       <div className="p-8">

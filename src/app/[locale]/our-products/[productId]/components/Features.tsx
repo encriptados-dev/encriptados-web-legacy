@@ -1,10 +1,7 @@
 import React from "react";
 import Image from "next/image";
 
-const Product1 = "/images/our-products/silent-1.png";
 const Product2 = "/images/our-products/silent-2.png";
-const Product3 = "/images/our-products/silent-3.png";
-const Product4 = "/images/our-products/silent-4.png";
 
 const features = [
   {

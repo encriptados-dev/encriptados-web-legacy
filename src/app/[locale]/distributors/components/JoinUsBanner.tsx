@@ -1,7 +1,7 @@
 import Button from "@/shared/components/Button";
 import { useTranslations } from "next-intl";
 import React from "react";
-import Bag from "../icons/Bag";
+
 import EncryptedBgIcon from "../icons/EncryptedBgIcon";
 
 const JoinUsBanner = () => {

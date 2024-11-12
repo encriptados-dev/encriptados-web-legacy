@@ -14,7 +14,6 @@ import MexicoFooterFlag from "./icon/MexicoFooterFlag";
 import PeruFooterFlag from "./icon/PeruFooterFlag";
 import CostaRicaFooterFlag from "./icon/CostaRicaFooterFlag";
 import ElSalvadorFooterFlag from "./icon/ElSalvadorFooterFlag";
-import UnitedStatesFooterFlag from "./icon/UnitedStatesFooterFlag";
 import BrasilFooterFlag from "./icon/BrasilFooterFlag";
 import BancolombiaFooter from "./payicon/BancolombiaFooter";
 import VisaFooter from "./payicon/VisaFooter";
@@ -90,18 +89,18 @@ export default function FooterEncrypted() {
   ];
 
   const paymentMethods = [
-    <BancolombiaFooter />,
-    <VisaFooter />,
-    <MasterCardRedYellowFooter />,
-    <PSEFooter />,
-    <AmericanExpressFooter />,
-    <MasterCardRedBlueFooter />,
-    <BitCoinFooter />,
-    <TFooter />,
-    <EthFooter />,
-    <DollarBlueFooter />,
-    <DFooter />,
-    <LFooter />,
+    { key: "bancolombia", icon: <BancolombiaFooter /> },
+    { key: "visa", icon: <VisaFooter /> },
+    { key: "mastercardRedYellow", icon: <MasterCardRedYellowFooter /> },
+    { key: "pse", icon: <PSEFooter /> },
+    { key: "americanExpress", icon: <AmericanExpressFooter /> },
+    { key: "mastercardRedBlue", icon: <MasterCardRedBlueFooter /> },
+    { key: "bitcoin", icon: <BitCoinFooter /> },
+    { key: "tether", icon: <TFooter /> },
+    { key: "ethereum", icon: <EthFooter /> },
+    { key: "dollarBlue", icon: <DollarBlueFooter /> },
+    { key: "dFooter", icon: <DFooter /> },
+    { key: "lFooter", icon: <LFooter /> },
   ];
 
   return (
@@ -145,9 +144,9 @@ export default function FooterEncrypted() {
               {t("securePay.title")}
             </h3>
             <div className="grid grid-cols-3 gap-2 bg-[#131313] rounded-xl p-4">
-              {paymentMethods.map((icon, i) => (
+              {paymentMethods.map(({ key, icon }) => (
                 <div
-                  key={i}
+                  key={key}
                   className="rounded p-2 flex items-center justify-center"
                 >
                   {icon}
@@ -182,28 +181,27 @@ export default function FooterEncrypted() {
                 <div
                   key={index}
                   className="flex items-center justify-center mb-2 cursor-grab"
-                  style={{ width: "120px" }} // Establece el ancho fijo para cada bandera
+                  style={{ width: "120px" }}
                 >
                   <div className="flex justify-center items-center">
                     <div className="w-20 h-14 md:w-16 md:h-16 flex items-center justify-center">
                       {country.flag}
                     </div>
-                    <p className="text-xs ">{country.name}</p>
+                    <p className="text-xs">{country.name}</p>
                   </div>
                 </div>
               ))}
-              {/* Duplicamos las banderas para el efecto de bucle infinito */}
               {countries.map((country, index) => (
                 <div
                   key={`duplicate-${index}`}
                   className="flex items-center justify-center mb-2 cursor-grab"
-                  style={{ width: "120px" }} // Establece el ancho fijo para cada bandera
+                  style={{ width: "120px" }}
                 >
                   <div className="flex justify-center items-center">
                     <div className="w-20 h-14 md:w-16 md:h-16 flex items-center justify-center">
                       {country.flag}
                     </div>
-                    <p className="text-xs ">{country.name}</p>
+                    <p className="text-xs">{country.name}</p>
                   </div>
                 </div>
               ))}
