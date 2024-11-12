@@ -637,5 +637,31 @@
         "description": "Nosso chip internacional funciona em qualquer dispositivo IOS, Android, Windows ou BlackBerry."
       }
     }
+  },
+  "BlogPage": {
+    "ourBlogTitleBanner": "Nosso blog",
+    "ourBlogDescriptionBanner": "Informe-se sobre segurança criptografada",
+    "menu": {
+      "techTitle": "Tecnologia",
+      "ventureTitle": "Empreendedorismo",
+      "eCommerceTitle": "E-Commerce",
+      "marketingTitle": "Marketing",
+      "toolsTitle": "Ferramentas",
+      "publicityTitle": "Publicidade"
+    },
+    "downloadAppTitle": "Baixe o App para iOS e Android",
+    "downloadAppSubtitle": "Ou escaneie o código QR com a sua câmera",
+    "saveTitle": "Economize até 50% em taxas móveis",
+    "saveDescription": "Registre seu e-mail e receba um desconto de boas-vindas",
+    "saveInputPlaceholder": "Digite seu e-mail",
+    "subscribe": "Inscrever-se",
+    "optimizeBanner": {
+      "title": "Otimize a experiência do cliente na sua loja online com tecnologia avançada"
+    },
+    "writeBy": "Escrito por:",
+    "share": "Compartilhar:",
+    "talkWithSupport": "Converse agora com um consultor da Encriptados diretamente no Telegram",
+    "goTelegram": "Ir para o Telegram",
+    "articleTitle": "Artigos relacionados"
   }
 }

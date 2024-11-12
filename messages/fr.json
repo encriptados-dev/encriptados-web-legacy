@@ -638,5 +638,31 @@
         "description": "Notre puce internationale fonctionne sur n'importe quel appareil IOS, Android, Windows ou BlackBerry."
       }
     }
+  },
+  "BlogPage": {
+    "ourBlogTitleBanner": "Notre blog",
+    "ourBlogDescriptionBanner": "Informez-vous sur la sécurité chiffrée",
+    "menu": {
+      "techTitle": "Technologie",
+      "ventureTitle": "Entrepreneuriat",
+      "eCommerceTitle": "E-Commerce",
+      "marketingTitle": "Marketing",
+      "toolsTitle": "Outils",
+      "publicityTitle": "Publicité"
+    },
+    "downloadAppTitle": "Téléchargez l'application pour iOS et Android",
+    "downloadAppSubtitle": "Ou scannez le code QR avec votre appareil photo",
+    "saveTitle": "Économisez jusqu'à 50% sur les frais mobiles",
+    "saveDescription": "Enregistrez votre email et recevez une remise de bienvenue",
+    "saveInputPlaceholder": "Entrez votre email",
+    "subscribe": "S'abonner",
+    "optimizeBanner": {
+      "title": "Optimisez l'expérience client dans votre boutique en ligne avec une technologie avancée"
+    },
+    "writeBy": "Écrit par :",
+    "share": "Partager :",
+    "talkWithSupport": "Discutez maintenant avec un conseiller d'Encriptados directement sur Telegram",
+    "goTelegram": "Aller sur Telegram",
+    "articleTitle": "Articles connexes"
   }
 }
