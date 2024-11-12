@@ -1,5 +1,10 @@
 "use client";
+
 import React from "react";
+
+import FiltersOffers from "./FiltersOffers";
+import { useFormContext } from "react-hook-form";
+
 import CharacteristicDatasSvg from "/public/images/encrypted-sim/icons/characteristic-data.svg";
 import CharacteristicSpeedSvg from "/public/images/encrypted-sim/icons/characteristic-speed.svg";
 import CharacteristicAppSvg from "/public/images/encrypted-sim/icons/characteristic-app.svg";
@@ -14,10 +19,12 @@ import IconDataSvg from "/public/images/encrypted-sim/icons/icon-data.svg";
 import { useTranslations } from "next-intl";
 import CardSim from "@/app/[locale]/encrypted-sim/components/CardSim";
 
-import MultiMenuDark from "./MultiMenuDark";
+const ListOfOffers = () => {
+  const o = useTranslations("OffersPage");
 
-const StorePage = () => {
   const t = useTranslations("EncryptedSimPage");
+
+  const { watch } = useFormContext();
 
   const commonFeatures = [
     {
@@ -99,40 +106,38 @@ const StorePage = () => {
     },
   ];
 
-  type MenuOption = {
-    label: string;
-    value: "mobiledata" | "minutes" | "msi";
-  };
-
-  const menuOptions: MenuOption[] = [
-    { label: "DATOS", value: "mobiledata" },
-    { label: "MINUTOS", value: "minutes" },
-    { label: "IMSI", value: "msi" },
-  ];
-
   return (
-    <div>
-      <h1 className="text-black font-semibold mb-7">
-        Tienda productos Encriptados
+    <div className="flex flex-col justify-center items-center mx-auto text-center">
+      <h1 className="text-white font-bold mb-4 text-2xl">
+        {o("exclusiveOffersTitle")}
       </h1>
-
-      <div className="mb-7">
-        <MultiMenuDark name="currentmenu" options={menuOptions} />
+      <div className="w-full sm:w-1/2 md:w-5/12">
+        <FiltersOffers
+          items={[
+            { label: o("menu.sims"), value: "sims" },
+            { label: o("menu.apps"), value: "apps" },
+            { label: o("menu.system"), value: "system" },
+          ]}
+          name={"currentoffer"}
+        />
       </div>
-      <div className="flex flex-col gap-4  w-full md:w-full xl:w-8/12 md:flex-row text-black md:gap-6">
-        {cardData.map((card, index) => (
-          <CardSim
-            key={index}
-            productImage={card.productImage}
-            features={card.featuresCardSim}
-            priceRange={card.priceRange}
-            headerIcon={card.headerIcon}
-            headerTitle={card.headerTitle}
-          />
-        ))}
+
+      <div className="flex items-center justify-center">
+        <div className="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 text-black mt-9">
+          {cardData.map((card, index) => (
+            <CardSim
+              key={index}
+              productImage={card.productImage}
+              features={card.featuresCardSim}
+              priceRange={card.priceRange}
+              headerIcon={card.headerIcon}
+              headerTitle={card.headerTitle}
+            />
+          ))}
+        </div>
       </div>
     </div>
   );
 };
 
-export default StorePage;
+export default ListOfOffers;

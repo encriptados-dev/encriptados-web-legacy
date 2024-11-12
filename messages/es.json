@@ -608,5 +608,41 @@
       "answer1": "Si",
       "answer2": "No"
     }
+  },
+  "OffersPage": {
+    "exclusiveOffersTitle": "Ofertas Exclusivas",
+    "menu": {
+      "sims": "SIMS",
+      "apps": "Aplicaciones",
+      "system": "Sistemas"
+    },
+    "discoverSimTitle": "Descubre las SIM cards de Encriptados.io",
+    "discoverSimDescription": "Diseñadas para proteger tu privacidad en cada llamada. Sin necesidad de registro, nuestras SIMs garantizan una comunicación segura y anónima, ideal para quienes valoran la discreción y la seguridad",
+    "cards": {
+      "card1": {
+        "title": "Cambios de IMSI",
+        "description": "Nuestra SIM no emite un IMSI, protegiendo el origen de conexión."
+      },
+      "card2": {
+        "title": "Números sustitutos",
+        "description": "Las SIM encriptadas generan un número aleatorio para cada llamada, aumentando la privacidad y evitando rastreos."
+      },
+      "card3": {
+        "title": "Planes vitalicios",
+        "description": "No tienes límite de tiempo para consumir los recursos de tu plan."
+      },
+      "card4": {
+        "title": "Alcance Global",
+        "description": "La SIM Encriptados funciona en más de 200 países con facilidad de conexión y economía."
+      },
+      "card5": {
+        "title": "Máxima seguridad",
+        "description": "Tendrás cifrado en los datos de geolocalización."
+      },
+      "card6": {
+        "title": "Múltiples dispositivos",
+        "description": "Nuestro Chip internacional funciona en cualquier tipo de dispositivo IOS, Android, Windows o BlackBerry."
+      }
+    }
   }
 }

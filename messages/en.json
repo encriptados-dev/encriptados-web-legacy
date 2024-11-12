@@ -605,5 +605,41 @@
       "answer1": "Yes",
       "answer2": "No"
     }
+  },
+  "OffersPage": {
+    "exclusiveOffersTitle": "Exclusive Offers",
+    "menu": {
+      "sims": "SIMS",
+      "apps": "Applications",
+      "system": "Systems"
+    },
+    "discoverSimTitle": "Discover Encriptados.io SIM Cards",
+    "discoverSimDescription": "Designed to protect your privacy on every call. No registration required, our SIMs ensure secure and anonymous communication, ideal for those who value discretion and security.",
+    "cards": {
+      "card1": {
+        "title": "IMSI Changes",
+        "description": "Our SIM does not issue an IMSI, protecting the origin of the connection."
+      },
+      "card2": {
+        "title": "Substitute Numbers",
+        "description": "Encrypted SIMs generate a random number for each call, enhancing privacy and preventing tracking."
+      },
+      "card3": {
+        "title": "Lifetime Plans",
+        "description": "There is no time limit to use the resources of your plan."
+      },
+      "card4": {
+        "title": "Global Reach",
+        "description": "The Encriptados SIM works in over 200 countries with ease of connection and affordability."
+      },
+      "card5": {
+        "title": "Maximum Security",
+        "description": "Your geolocation data will be encrypted."
+      },
+      "card6": {
+        "title": "Multiple Devices",
+        "description": "Our international chip works on any device: IOS, Android, Windows, or BlackBerry."
+      }
+    }
   }
 }
