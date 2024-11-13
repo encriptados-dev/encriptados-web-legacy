@@ -24,7 +24,7 @@ const BannerBlog = () => {
         </h1>
         <div className="flex justify-center items-center">
           <div className="w-[450px] mt-4">
-            <h1 className="relative z-20 text-white text-4xl text-center font-bold">
+            <h1 className="relative z-20 text-white text-4xl  text-center font-bold">
               {t("ourBlogDescriptionBanner")}
             </h1>
           </div>

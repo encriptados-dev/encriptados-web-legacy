@@ -52,7 +52,7 @@ const Component: React.FC = () => {
         </div>
 
         <div className="relative mx-auto w-full sm:max-w-[250px] max-w-[250px] aspect-[5/7]">
-          <div className="absolute left-1/2 -translate-x-1/2 w-[400px] h-[400px]  rounded-2xl flex items-center justify-center p-4">
+          <div className="absolute left-1/2 -translate-x-1/2 w-[370px] h-[400px]  rounded-2xl flex items-center justify-center p-4">
             <Image
               src={PhoneQr}
               alt="QR Code"
