@@ -7,6 +7,7 @@ import { NextIntlClientProvider } from "next-intl";
 import FooterEncrypted from "@/shared/FooterEncrypted/FooterEncrypted";
 
 import CurrentHeader from "@/shared/CurrentHeader";
+import { QueryClientProvider } from "@/providers/query-client/QueryClientProvider";
 
 const geistSans = localFont({
   src: "../fonts/GeistVF.woff",
@@ -31,11 +32,13 @@ export default async function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <NextIntlClientProvider messages={messages}>
-          <CurrentHeader />
-          {children}
-          <FooterEncrypted />
-        </NextIntlClientProvider>
+        <QueryClientProvider>
+          <NextIntlClientProvider messages={messages}>
+            <CurrentHeader />
+            {children}
+            <FooterEncrypted />
+          </NextIntlClientProvider>
+        </QueryClientProvider>
       </body>
     </html>
   );
