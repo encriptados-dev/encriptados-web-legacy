@@ -1,11 +1,16 @@
 import { useMutation } from "@tanstack/react-query";
-import { MutationOptions } from "@/shared/types/MutationOptions";
-import { userAuthLogin } from "../services";
 
-export const useAuthLogin = ({ onSuccess, onError }: MutationOptions = {}) => {
+import { MutationOptions } from "@/shared/types/MutationOptions";
+import { userRegisterToken } from "../services";
+import { RegisterTokenResponse } from "../types/registerToken";
+
+export const useRegisterToken = ({
+  onSuccess,
+  onError,
+}: MutationOptions = {}) => {
   const mutation = useMutation({
-    mutationFn: userAuthLogin,
-    onSuccess: (data) => {
+    mutationFn: userRegisterToken,
+    onSuccess: (data: RegisterTokenResponse) => {
       if (onSuccess) {
         onSuccess(data);
       }
@@ -20,7 +25,7 @@ export const useAuthLogin = ({ onSuccess, onError }: MutationOptions = {}) => {
   });
 
   return {
-    login: mutation.mutate,
+    registerToken: mutation.mutate,
     isPending: mutation.isPending,
     isSuccess: mutation.isSuccess,
     isError: mutation.isError,

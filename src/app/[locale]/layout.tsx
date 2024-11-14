@@ -8,6 +8,8 @@ import FooterEncrypted from "@/shared/FooterEncrypted/FooterEncrypted";
 
 import CurrentHeader from "@/shared/CurrentHeader";
 import { QueryClientProvider } from "@/providers/query-client/QueryClientProvider";
+import toast, { Toaster } from "react-hot-toast";
+import { ToastProvider } from "@/shared/context/ToastContext";
 
 const geistSans = localFont({
   src: "../fonts/GeistVF.woff",
@@ -32,13 +34,15 @@ export default async function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <QueryClientProvider>
-          <NextIntlClientProvider messages={messages}>
-            <CurrentHeader />
-            {children}
-            <FooterEncrypted />
-          </NextIntlClientProvider>
-        </QueryClientProvider>
+        <ToastProvider>
+          <QueryClientProvider>
+            <NextIntlClientProvider messages={messages}>
+              <CurrentHeader />
+              {children}
+              <FooterEncrypted />
+            </NextIntlClientProvider>
+          </QueryClientProvider>
+        </ToastProvider>
       </body>
     </html>
   );

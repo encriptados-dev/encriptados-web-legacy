@@ -1,61 +1,59 @@
+import { jwtVerify, importSPKI } from "jose"; // Cambiado a importSPKI
 import { NextRequest, NextResponse } from "next/server";
 import createMiddleware from "next-intl/middleware";
 import { routing } from "./i18n/routing";
-import { jwtVerify } from "jose";
 import { protectedRoutesArray } from "./app/constants/protectedRoutes";
 
 const intlMiddleware = createMiddleware(routing);
 
-export async function authMiddleware(
-  request: NextRequest
-): Promise<NextResponse | undefined> {
-  const jwt = request.cookies.get("myTokenName");
-
-  if (!jwt) {
-    return NextResponse.redirect(new URL("/login", request.url));
-  }
-
-  try {
-    const { payload } = await jwtVerify(
-      jwt.value,
-      new TextEncoder().encode("secret")
-    );
-    return NextResponse.next();
-  } catch (error) {
-    return NextResponse.redirect(new URL("/login", request.url));
-  }
-}
-
 export async function middleware(
   request: NextRequest
 ): Promise<NextResponse | undefined> {
-  // First, execute the internationalization middleware
+  // Primero, ejecutar el middleware de internacionalización
   const intlResponse = await intlMiddleware(request);
 
-  // Define the protected routes
-  const protectedRoutes: string[] = protectedRoutesArray;
+  // Verificar si la ruta actual es una de las rutas protegidas
+  const isProtectedRoute = protectedRoutesArray.some((route) =>
+    request.nextUrl.pathname.startsWith(route)
+  );
 
-  // Check if the path is in the protected routes
-  if (
-    protectedRoutes.some((route) => request.nextUrl.pathname.startsWith(route))
-  ) {
-    // Apply authentication if the route is protected
-    const authResponse = await authMiddleware(request);
-    if (authResponse) return authResponse; // Redirect to login if authentication fails
+  // Obtener el JWT desde las cookies
+  const jwtToken = request?.cookies.get("authToken");
+
+  if (!jwtToken?.value) {
+    // Si no hay JWT, redirigir a la página de login
+    if (isProtectedRoute) {
+      return NextResponse.redirect(new URL("/login", request.url));
+    }
+    return intlResponse || NextResponse.next();
   }
 
-  // Continue the request if all checks pass
-  return intlResponse || NextResponse.next();
+  const publicKey = process.env.JWT_PUBLIC_KEY;
+
+  if (!publicKey) {
+    throw new Error("La clave pública no está definida.");
+  }
+
+  try {
+    const key = await importSPKI(publicKey, "RS256");
+
+    // Verificar el JWT utilizando RS256
+    const decoded = await jwtVerify(jwtToken.value, key);
+
+    // Aquí puedes acceder al payload decodificado si es necesario
+    console.log(decoded); // Si lo necesitas para algo específico
+
+    return intlResponse || NextResponse.next();
+  } catch (error) {
+    console.log("JWT inválido o expirado:", error);
+    // En caso de error al verificar el JWT (JWT inválido o expirado), redirigir a login
+    if (isProtectedRoute) {
+      return NextResponse.redirect(new URL("/login", request.url));
+    }
+    return intlResponse || NextResponse.next();
+  }
 }
 
-// Configuration for the middleware matcher
 export const config = {
-  matcher: [
-    "/", // Ensure the root routes are handled correctly
-    "/(en|es|fr|it|pt|)/:path*", // Routes with locale prefixes
-    "/((?!_next|_vercel|.*\\..*).*)", // Exclude static files or _next
-    "/dashboard/:path*", // Protected routes like the dashboard
-    "/profile/:path*", // Additional protected route
-    "/settings/:path*", // Additional protected route
-  ],
+  matcher: ["/", "/(en|es|fr|it|pt|)/:path*", "/((?!_next|_vercel|.*\\..*).*)"],
 };

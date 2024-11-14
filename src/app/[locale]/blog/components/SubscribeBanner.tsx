@@ -40,9 +40,7 @@ export default function SubscribeBanner() {
               rounded="full"
               type="button"
               intent="black"
-              onClick={() => {
-                console.log("sub");
-              }}
+              onClick={() => {}}
             >
               {t("subscribe")}
             </Button>

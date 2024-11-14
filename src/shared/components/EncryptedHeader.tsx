@@ -275,7 +275,12 @@ export default function HeaderEncrypted() {
               </AnimatePresence>
             </div>
           ))}
-          <button className="bg-[#E3F8FF] text-black px-3 xl:px-4 py-1 xl:py-2 rounded-full text-sm font-medium cursor-pointer hover:bg-[#B3E5FF] transition-colors duration-200">
+          <button
+            onClick={() => {
+              router.push("/dashboard");
+            }}
+            className="bg-[#E3F8FF] text-black px-3 xl:px-4 py-1 xl:py-2 rounded-full text-sm font-medium cursor-pointer hover:bg-[#B3E5FF] transition-colors duration-200"
+          >
             Ingresar
           </button>
         </nav>
@@ -368,7 +373,12 @@ export default function HeaderEncrypted() {
                 </AnimatePresence>
               </div>
             ))}
-            <button className="mt-2 md:mt-4 w-full bg-[#E3F8FF] text-black px-4 py-2 rounded-full text-sm font-medium cursor-pointer hover:bg-[#B3E5FF] transition-colors duration-200">
+            <button
+              onClick={() => {
+                router.push("/dashboard");
+              }}
+              className="mt-2 md:mt-4 w-full bg-[#E3F8FF] text-black px-4 py-2 rounded-full text-sm font-medium cursor-pointer hover:bg-[#B3E5FF] transition-colors duration-200"
+            >
               Ingresar
             </button>
             <div className="mt-2 md:mt-4 flex items-center space-x-2">

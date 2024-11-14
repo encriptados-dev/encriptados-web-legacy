@@ -1,7 +1,7 @@
 import axios, { AxiosInstance, InternalAxiosRequestConfig } from "axios";
 
 const axiosInstance: AxiosInstance = axios.create({
-  baseURL: process.env.REACT_APP_BASE_URL,
+  baseURL: process.env.NEXT_PUBLIC_API_KEY,
   headers: {
     "Content-Type": "application/json",
   },

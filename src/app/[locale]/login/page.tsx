@@ -7,7 +7,13 @@ import LoginPage from "./components/LoginPage";
 const Page = () => {
   return (
     <>
-      <BasicFormProvider values={{ currentStep: "welcome" }}>
+      <BasicFormProvider
+        values={{
+          currentStep: "welcome",
+          currentGeneratedNumber: "",
+          generatedCurrentNumberSeparated: "",
+        }}
+      >
         <LoginPage />
       </BasicFormProvider>
     </>

@@ -10,7 +10,9 @@ import OnlyKeyLoginIconSvg from "@/shared/svgs/OnlyKeyLoginIconSvg";
 const Welcome = () => {
   const Mans = "/images/login/mans.png";
 
-  const { handleSubmit, setValue } = useFormContext();
+  const { handleSubmit, setValue, watch } = useFormContext();
+
+  console.log(watch());
 
   return (
     <>
@@ -76,11 +78,14 @@ const Welcome = () => {
         {/* Crear nueva cuenta */}
         <div className="w-full cursor-pointer">
           <CircleTitle
+            onClick={() => {
+              setValue("currentStep", "accountnumber");
+            }}
             customStyles="font-light w-full flex justify-center"
             rounded="full"
             intent="gray"
           >
-            Crear una nueva cuenta
+            Generar numero de cuenta
           </CircleTitle>
         </div>
       </div>

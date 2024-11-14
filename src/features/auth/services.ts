@@ -1,12 +1,15 @@
-import { SignUp, SignUpResponse } from "./types/signup";
-import { LoginBody, LoginResponse } from "./types/login";
+import {
+  LoginWithTokenBody,
+  LoginWithTokenResponse,
+} from "./types/loginWithToken";
 import axiosInstance from "../../../config/axionsInstance";
+import { registerTokenResponse } from "./types/registerToken";
 
 export const userAuthLogin = async (
-  credentials: LoginBody
-): Promise<LoginResponse> => {
+  credentials: LoginWithTokenBody
+): Promise<LoginWithTokenResponse> => {
   try {
-    const response = await axiosInstance.post("/auth/login", credentials, {
+    const response = await axiosInstance.post("/loginWithToken", credentials, {
       headers: {
         "Content-Type": "application/json",
       },
@@ -20,31 +23,14 @@ export const userAuthLogin = async (
   }
 };
 
-export const userAuthSignUp = async (
-  credentials: SignUp
-): Promise<SignUpResponse> => {
+export const userRegisterToken = async (): Promise<registerTokenResponse> => {
   try {
-    const response = await axiosInstance.post("/users/sign-up", credentials, {
+    const response = await axiosInstance.post("/registerToken", {
       headers: {
         "Content-Type": "application/json",
       },
     });
 
-    const result = response.data;
-
-    return result;
-  } catch (error) {
-    throw error;
-  }
-};
-
-export const userAuthJwtRefresh = async () => {
-  try {
-    const response = await axiosInstance.post("/auth/jwt/refresh", {
-      headers: {
-        "Content-Type": "application/json",
-      },
-    });
     const result = response.data;
 
     return result;
