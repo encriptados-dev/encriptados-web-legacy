@@ -9,48 +9,77 @@ import useLanguageSwitcher, {
   LocaleLanguages,
 } from "../hooks/useLanguageSwitcher";
 import { useTranslations } from "next-intl";
+import { useRouter } from "next/navigation";
+
+type Section = {
+  title: string;
+  link: string;
+};
 
 type MenuItem = {
   title: string;
   isNew?: boolean;
-  sections: string[];
+  sections: Section[];
+  link?: string;
 };
-
 type Language = {
   code: string;
   name: string;
 };
 
 export default function HeaderEncrypted() {
+  const router = useRouter();
   const t = useTranslations("HeaderMenu.languages");
   const tmenu = useTranslations("HeaderMenu.menuItems");
 
   const menuItems: MenuItem[] = [
     {
+      title: "Entregas",
+      isNew: true,
+      sections: [],
+      link: "/fast-delivery",
+    },
+    {
       title: tmenu("simShop"),
       isNew: true,
       sections: [],
+      link: "/encrypted-sim",
     },
     {
       title: tmenu("products.title"),
+      link: "",
       sections: [
-        tmenu("products.sims"),
-        tmenu("products.aplications"),
-        tmenu("products.phones"),
+        {
+          title: tmenu("products.sims"),
+          link: "/bne-sim",
+        },
+        {
+          title: "Nuestros productos",
+          link: "/our-products",
+        },
       ],
     },
     {
       title: tmenu("others.title"),
+      link: "",
       sections: [
-        tmenu("others.distributors"),
-        tmenu("others.blog"),
-        tmenu("others.securityTest"),
-        tmenu("others.offers"),
+        {
+          title: tmenu("others.distributors"),
+          link: "/distributors",
+        },
+        {
+          title: tmenu("others.blog"),
+          link: "/blog",
+        },
+        {
+          title: tmenu("others.securityTest"),
+          link: "/encrypted-test",
+        },
+        {
+          title: tmenu("others.offers"),
+          link: "/offers",
+        },
       ],
-    },
-    {
-      title: "Nosotros",
-      sections: [],
     },
   ];
 
@@ -123,10 +152,17 @@ export default function HeaderEncrypted() {
     >
       <div className="flex items-center justify-between">
         <div className="flex items-center space-x-2 md:space-x-4">
-          <EncryptedLogoSvg
-            width={isSmallScreen ? 150 : isMediumScreen ? 200 : 250}
-            height={25}
-          />
+          <div
+            className="cursor-pointer"
+            onClick={() => {
+              router.push("/");
+            }}
+          >
+            <EncryptedLogoSvg
+              width={isSmallScreen ? 150 : isMediumScreen ? 200 : 250}
+              height={25}
+            />
+          </div>
           <div className="relative hidden sm:flex items-center space-x-1 text-xs md:text-sm">
             <WorldIcon height={16} width={16} />
             <button
@@ -185,7 +221,10 @@ export default function HeaderEncrypted() {
             <div key={index} className="group relative">
               <button
                 className="flex items-center justify-between px-2 xl:px-4 py-1 xl:py-2 text-sm xl:text-base"
-                onClick={() => toggleDropdown(index)}
+                onClick={() => {
+                  if (item.link) router.push(item.link);
+                  toggleDropdown(index);
+                }}
                 aria-haspopup={item.sections.length > 0 ? "true" : "false"}
                 aria-expanded={activeDropdown === index}
               >
@@ -222,10 +261,13 @@ export default function HeaderEncrypted() {
                   >
                     {item.sections.map((section, idx) => (
                       <div
+                        onClick={() => {
+                          router.push(section.link);
+                        }}
                         key={idx}
                         className="my-1 xl:my-2 block border-b cursor-pointer border-gray-100 py-1 font-semibold text-gray-500 hover:text-black transition-colors duration-200"
                       >
-                        {section}
+                        {section.title}
                       </div>
                     ))}
                   </motion.div>
@@ -273,7 +315,10 @@ export default function HeaderEncrypted() {
               <div key={index} className="py-1 md:py-2">
                 <button
                   className="flex items-center justify-between w-full text-left text-sm md:text-base"
-                  onClick={() => toggleDropdown(index)}
+                  onClick={() => {
+                    if (item.link) router.push(item.link);
+                    toggleDropdown(index);
+                  }}
                   aria-expanded={activeDropdown === index}
                 >
                   <span>{item.title}</span>
@@ -309,10 +354,13 @@ export default function HeaderEncrypted() {
                     >
                       {item.sections.map((section, idx) => (
                         <div
+                          onClick={() => {
+                            router.push(section.link);
+                          }}
                           key={idx}
                           className="text-sm text-gray-300 hover:text-white transition-colors duration-200"
                         >
-                          {section}
+                          {section.title}
                         </div>
                       ))}
                     </motion.div>
