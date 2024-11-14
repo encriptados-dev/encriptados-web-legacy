@@ -32,7 +32,7 @@ const AccountNumber = () => {
 
       success("Generando número de cuenta correctamente");
     },
-    onError: (error) => {
+    onError: () => {
       errorToast("Error generando número de cuenta correctamente");
     },
   });

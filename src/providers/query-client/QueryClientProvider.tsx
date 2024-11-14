@@ -3,7 +3,7 @@
 
 // We can not useState or useRef in a server component, which is why we are
 // extracting this part out into it's own file with 'use client' on top
-import { useState } from "react";
+
 import {
   QueryClient,
   QueryClientProvider as QueryClientProviderBase,

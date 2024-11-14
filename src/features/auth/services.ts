@@ -3,7 +3,7 @@ import {
   LoginWithTokenResponse,
 } from "./types/loginWithToken";
 import axiosInstance from "../../../config/axionsInstance";
-import { registerTokenResponse } from "./types/registerToken";
+import { RegisterTokenResponse } from "./types/registerToken";
 
 export const userAuthLogin = async (
   credentials: LoginWithTokenBody
@@ -23,7 +23,7 @@ export const userAuthLogin = async (
   }
 };
 
-export const userRegisterToken = async (): Promise<registerTokenResponse> => {
+export const userRegisterToken = async (): Promise<RegisterTokenResponse> => {
   try {
     const response = await axiosInstance.post("/registerToken", {
       headers: {

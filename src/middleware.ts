@@ -9,19 +9,15 @@ const intlMiddleware = createMiddleware(routing);
 export async function middleware(
   request: NextRequest
 ): Promise<NextResponse | undefined> {
-  // Primero, ejecutar el middleware de internacionalización
   const intlResponse = await intlMiddleware(request);
 
-  // Verificar si la ruta actual es una de las rutas protegidas
   const isProtectedRoute = protectedRoutesArray.some((route) =>
     request.nextUrl.pathname.startsWith(route)
   );
 
-  // Obtener el JWT desde las cookies
   const jwtToken = request?.cookies.get("authToken");
 
   if (!jwtToken?.value) {
-    // Si no hay JWT, redirigir a la página de login
     if (isProtectedRoute) {
       return NextResponse.redirect(new URL("/login", request.url));
     }
@@ -37,17 +33,12 @@ export async function middleware(
   try {
     const key = await importSPKI(publicKey, "RS256");
 
-    // Verificar el JWT utilizando RS256
-    const decoded = await jwtVerify(jwtToken.value, key);
-
-    // Aquí puedes acceder al payload decodificado si es necesario
-    console.log(decoded); // Si lo necesitas para algo específico
+    await jwtVerify(jwtToken.value, key);
 
     return intlResponse || NextResponse.next();
   } catch (error) {
-    console.log("JWT inválido o expirado:", error);
-    // En caso de error al verificar el JWT (JWT inválido o expirado), redirigir a login
     if (isProtectedRoute) {
+      console.log(error);
       return NextResponse.redirect(new URL("/login", request.url));
     }
     return intlResponse || NextResponse.next();

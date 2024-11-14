@@ -8,7 +8,6 @@ import FooterEncrypted from "@/shared/FooterEncrypted/FooterEncrypted";
 
 import CurrentHeader from "@/shared/CurrentHeader";
 import { QueryClientProvider } from "@/providers/query-client/QueryClientProvider";
-import toast, { Toaster } from "react-hot-toast";
 import { ToastProvider } from "@/shared/context/ToastContext";
 
 const geistSans = localFont({
