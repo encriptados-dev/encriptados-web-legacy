@@ -3,29 +3,25 @@ import { Menu } from "lucide-react";
 import Button from "@/shared/components/Button";
 import EncryptedLogoSvg from "@/shared/svgs/EncryptedLogoSvg";
 import ProfileSvg from "@/shared/svgs/ProfileSvg";
-import { useState, useEffect, useRef } from "react";
+import { useEffect, useRef } from "react";
 
-import { usePathname } from "next/navigation";
 import SupportChat from "@/shared/components/SupportChat";
 import { useTranslations } from "next-intl";
+import useMenuStore from "@/store/useMenuStore";
+import Cookies from "js-cookie";
+import { useRouter } from "next/navigation";
 
 const DashboardHeader = () => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const { toggleMenu, closeMenu, isMenuOpen } = useMenuStore();
+
+  const router = useRouter();
+
   const menuRef = useRef<HTMLDivElement>(null);
-  const pathName = usePathname(); // Obtener la ruta actual
-
-  useEffect(() => {
-    setIsMenuOpen(false);
-  }, [pathName]);
-
-  const toggleMenu = () => {
-    setIsMenuOpen((prev) => !prev);
-  };
 
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
       if (menuRef.current && !menuRef.current.contains(event.target as Node)) {
-        setIsMenuOpen(false);
+        closeMenu();
       }
     };
 
@@ -45,10 +41,10 @@ const DashboardHeader = () => {
   return (
     <header className="w-full bg-[#0D0D0D] p-4 flex justify-between items-center">
       <button
-        className="md:hidden p-2 bg-[#0D0D0D] rounded hover:bg-gray-800"
+        className="md:hidden p-2  rounded hover:bg-gray-800"
         onClick={toggleMenu}
       >
-        <Menu size={24} />
+        <Menu color={"white"} size={24} />
       </button>
 
       <div className="hidden md:block w-48 md:w-64 ">
@@ -61,6 +57,13 @@ const DashboardHeader = () => {
           {t("menuDashboard.header.myAccount")}
         </Button>
         <Button
+          onClick={() => {
+            Cookies.remove("authToken");
+
+            setTimeout(() => {
+              router.push("/login");
+            }, 1000);
+          }}
           intent="dangerMetal"
           customStyles="bg-[#2D0505] text-[#FF6C6C] font-light"
         >

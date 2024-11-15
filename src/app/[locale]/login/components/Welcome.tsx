@@ -6,13 +6,53 @@ import Button from "@/shared/components/Button";
 import CircleTitle from "@/shared/components/CircleTitle";
 import { useFormContext } from "react-hook-form";
 import OnlyKeyLoginIconSvg from "@/shared/svgs/OnlyKeyLoginIconSvg";
+import { useAuthLogin } from "@/features/auth/mutations/useAuthLogin";
+import { LoginWithTokenResponse } from "@/features/auth/types/loginWithToken";
+import { useToast } from "@/shared/context/ToastContext";
+import Cookies from "js-cookie";
+import { useRouter } from "next/navigation";
+import Loader from "@/shared/components/Loader";
 
 const Welcome = () => {
+  const router = useRouter();
   const Mans = "/images/login/mans.png";
 
-  const { handleSubmit, setValue, watch } = useFormContext();
+  const {
+    handleSubmit,
+    setValue,
+    formState: { errors },
+  } = useFormContext();
 
-  console.log(watch());
+  console.log(errors);
+
+  const { success, error: errorToast } = useToast();
+
+  const { login, isPending } = useAuthLogin({
+    onError: () => {
+      errorToast("Error durante el inicio de sesión");
+    },
+    onSuccess: async (data) => {
+      try {
+        const responseData = data as LoginWithTokenResponse;
+
+        success("Inicio de sesión exitoso");
+
+        Cookies.set("authToken", responseData.data.token, {
+          expires: 7,
+          path: "/",
+          secure: true,
+          sameSite: "None",
+        });
+
+        setTimeout(() => {
+          router.push("/dashboard/data-usage");
+        }, 1000);
+      } catch (error) {
+        console.log(error);
+        errorToast("Error durante el inicio de sesión:");
+      }
+    },
+  });
 
   return (
     <>
@@ -51,12 +91,7 @@ const Welcome = () => {
           <Button
             type="submit"
             onClick={handleSubmit((data) => {
-              if (data.accountNumber == 12345) {
-                setValue("currentStep", "accountnumber");
-
-                console.log(data);
-              }
-              console.log(data);
+              login({ token: data.accountNumber });
             })}
             customStyles="font-light w-full flex justify-center"
             rounded="full"
@@ -76,6 +111,11 @@ const Welcome = () => {
         <hr className="w-full border-[#7E7E7E] my-4" />
 
         {/* Crear nueva cuenta */}
+        {isPending ? (
+          <div className="absolute top-0 left-0 right-0 bottom-0 flex justify-center items-center z-10 ">
+            <Loader />
+          </div>
+        ) : null}
         <div className="w-full cursor-pointer">
           <CircleTitle
             onClick={() => {

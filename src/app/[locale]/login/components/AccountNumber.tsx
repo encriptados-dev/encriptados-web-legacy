@@ -13,10 +13,15 @@ import { LoginWithTokenResponse } from "@/features/auth/types/loginWithToken";
 import { RegisterTokenResponse } from "@/features/auth/types/registerToken";
 import { useToast } from "@/shared/context/ToastContext";
 import Cookies from "js-cookie";
+import Loader from "@/shared/components/Loader";
+import { useRouter } from "next/navigation";
 
 const AccountNumber = () => {
+  const router = useRouter();
   const Mans = "/images/login/mans.png";
+
   const { setValue, getValues } = useFormContext();
+
   const [generatedNumber, setGeneratedNumber] = useState("");
   const [isGenerating, setIsGenerating] = useState(false);
 
@@ -36,18 +41,27 @@ const AccountNumber = () => {
       errorToast("Error generando número de cuenta correctamente");
     },
   });
+  const { login, isPending: isPendingLoading } = useAuthLogin({
+    onSuccess: async (data) => {
+      try {
+        const responseData = data as LoginWithTokenResponse;
 
-  const { login } = useAuthLogin({
-    onSuccess: (data) => {
-      const responseData = data as LoginWithTokenResponse;
-      success("Inicio de sesión exitoso");
+        success("Inicio de sesión exitoso");
 
-      Cookies.set("authToken", responseData.data.token, {
-        expires: 7, // Expira en 7 días
-        path: "/", // La cookie será accesible desde todas las rutas
-        secure: true, // Asegúrate de que la cookie solo se envíe a través de HTTPS
-        sameSite: "None", // Permite que la cookie se envíe en contextos de terceros (si es necesario)
-      });
+        Cookies.set("authToken", responseData.data.token, {
+          expires: 7,
+          path: "/",
+          secure: true,
+          sameSite: "None",
+        });
+
+        setTimeout(() => {
+          router.push("/dashboard/data-usage");
+        }, 1000);
+      } catch (error) {
+        console.log(error);
+        errorToast("Error durante el inicio de sesión:");
+      }
     },
   });
 
@@ -68,9 +82,11 @@ const AccountNumber = () => {
   };
 
   const copyToClipboard = () => {
-    const accountNumber = getValues("generatedCurrentNumberSeparated");
+    const accountNumber = getValues("currentGeneratedNumber");
     if (accountNumber) {
-      navigator.clipboard.writeText(accountNumber);
+      navigator.clipboard.writeText(accountNumber).then(() => {
+        success("Número de cuenta copiado exitosamente");
+      });
     }
   };
 
@@ -100,14 +116,14 @@ const AccountNumber = () => {
         </div>
       </div>
 
-      <div className="w-full md:w-[500px] bg-[#0E0E0E] h-auto md:h-[500px] rounded-2xl flex flex-col py-14 px-10 items-center gap-y-4 md:px-10">
+      <div className="w-full md:w-[500px] bg-[#0E0E0E] h-auto md:h-[500px] rounded-2xl flex flex-col py-14 px-10 items-center gap-y-4 md:px-10 relative">
         <OnlyKeyLoginIconSvg height={55} width={55} color="white" />
         <h1 className="text-white text-center text-lg md:text-xl">
           Obtén un número de cuenta
         </h1>
 
         <div className="w-full space-y-4 text-center">
-          <div className="text-white text-2xl font-mono mb-4">
+          <div className="text-white text-2xl font-mono mb-4 select-none">
             {generatedNumber || "—— —— —— —— —— —— —— "}
           </div>
           <Button
@@ -116,12 +132,12 @@ const AccountNumber = () => {
             customStyles="font-light w-full flex justify-center"
             rounded="full"
             intent="primary"
-            disabled={isPending || isGenerating} // Deshabilitar el botón si está pendiente o generando
+            disabled={isPending || isGenerating}
           >
             {isGenerating
-              ? "Generando..." // Texto que indica que se está generando
+              ? "Generando..."
               : generatedNumber
-              ? "Iniciar sesión" // Solo mostrar "Iniciar sesión" cuando no esté pendiente y se haya generado el número
+              ? "Iniciar sesión"
               : "Generar nuevo número de cuenta"}
           </Button>
         </div>
@@ -152,15 +168,21 @@ const AccountNumber = () => {
             </div>
           </div>
         )}
+
         <h1
           onClick={() => {
             setValue("currentStep", "welcome");
           }}
-          className="text-white cursor-pointer"
+          className="text-white cursor-pointer mt-4"
         >
           Volver atrás
         </h1>
       </div>
+      {isPendingLoading || isPending ? (
+        <div className="absolute top-0 left-0 right-0 bottom-0 flex justify-center items-center z-10 ">
+          <Loader />
+        </div>
+      ) : null}
     </>
   );
 };
