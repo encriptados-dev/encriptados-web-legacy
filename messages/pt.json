@@ -1,4 +1,28 @@
 {
+  "AboutUsPage": {
+    "banner": {
+      "title": "Sobre nós",
+      "description": "Protegendo sua privacidade em cada conexão."
+    },
+    "aboutUs": {
+      "title": "Quem somos",
+      "description": "Somos especialistas em equipamentos e softwares de comunicação segura, como celulares, aplicativos e cartões SIM. Nosso objetivo é aproximar a segurança digital de qualquer pessoa ou empresa que deseje proteger suas informações e privacidade. Trabalhamos com os sistemas mais seguros e reconhecidos no mundo, que foram testados por anos e provaram ser impenetráveis."
+    },
+    "cards": {
+      "communicationCard": {
+        "title": "Comunicação segura e sem fronteiras",
+        "description": "Contamos com uma ampla rede de revendedores e distribuidores na América do Norte, América do Sul e Europa, que levam as soluções da Encriptados a quem precisa, para que mais pessoas possam se beneficiar das vantagens das comunicações seguras."
+      },
+      "privacyCard": {
+        "title": "Levamos sua privacidade a sério",
+        "description": "Estamos sempre na vanguarda das novas tecnologias para oferecer comunicações criptografadas totalmente impenetráveis e fáceis de usar. Ajudamos corporações, empresas, instituições governamentais, celebridades, advogados, viajantes e pessoas que desejam melhorar sua cibersegurança."
+      },
+      "informationCard": {
+        "title": "Suas informações pessoais nunca chegarão a terceiros",
+        "description": "Com a Encriptados, você terá um provedor de rede privada que garantirá sua segurança e maior privacidade, evitando que suas informações sejam manipuladas, compartilhadas ou vendidas."
+      }
+    }
+  },
   "LoginPage": {
     "inputErrors": {
       "moreThanSixteenNumbers": "O número da conta deve ter exatamente 16 caracteres."

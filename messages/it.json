@@ -1,4 +1,28 @@
 {
+  "AboutUsPage": {
+    "banner": {
+      "title": "Chi siamo",
+      "description": "Proteggere la tua privacy in ogni connessione."
+    },
+    "aboutUs": {
+      "title": "Chi siamo",
+      "description": "Siamo specialisti in apparecchiature e software di comunicazione sicura come telefoni, applicazioni e schede SIM. Il nostro obiettivo è avvicinare la sicurezza digitale a chiunque o a qualsiasi azienda che desideri proteggere le proprie informazioni e la propria privacy. Lavoriamo con i sistemi più sicuri e riconosciuti al mondo, che sono stati testati per anni e si sono dimostrati impenetrabili."
+    },
+    "cards": {
+      "communicationCard": {
+        "title": "Comunicazione sicura e senza confini",
+        "description": "Abbiamo una vasta rete di rivenditori e distributori in Nord America, Sud America ed Europa che portano le soluzioni di Encriptados a chi ne ha bisogno, affinché sempre più persone possano beneficiare dei vantaggi delle comunicazioni sicure."
+      },
+      "privacyCard": {
+        "title": "Prendiamo sul serio la tua privacy",
+        "description": "Siamo sempre all'avanguardia nelle nuove tecnologie per offrirti comunicazioni crittografate completamente impenetrabili e facili da usare. Aiutiamo aziende, istituzioni governative, celebrità, avvocati, viaggiatori e privati che desiderano migliorare la propria cybersicurezza."
+      },
+      "informationCard": {
+        "title": "Le tue informazioni personali non saranno mai condivise con terzi",
+        "description": "Con Encriptados avrai un provider di rete privato che si occuperà di garantirti sicurezza e maggiore privacy, evitando che le tue informazioni vengano manipolate, condivise o vendute."
+      }
+    }
+  },
   "LoginPage": {
     "inputErrors": {
       "moreThanSixteenNumbers": "Il numero di conto deve essere lungo esattamente 16 caratteri."

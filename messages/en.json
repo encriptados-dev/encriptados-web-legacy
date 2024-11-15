@@ -1,4 +1,28 @@
 {
+  "AboutUsPage": {
+    "banner": {
+      "title": "About Us",
+      "description": "Protecting your privacy in every connection."
+    },
+    "aboutUs": {
+      "title": "Who we are",
+      "description": "We are specialists in secure communication equipment and software, such as phones, applications, and SIM cards. We aim to bring digital security closer to anyone or any company looking to protect their information and privacy. We work with the most secure and recognized systems around the world, which have been tested for years and proven to be impenetrable."
+    },
+    "cards": {
+      "communicationCard": {
+        "title": "Secure communication without borders",
+        "description": "We have an extensive network of resellers and distributors in North America, South America, and Europe that bring Encriptados' solutions to those who need them, so more people can benefit from the advantages of secure communications."
+      },
+      "privacyCard": {
+        "title": "We take your privacy seriously",
+        "description": "We are always at the forefront of new technologies to offer you fully impenetrable and easy-to-use encrypted communications. We help corporations, businesses, government institutions, celebrities, lawyers, travelers, and individuals who want to improve their cybersecurity."
+      },
+      "informationCard": {
+        "title": "Your personal information will never reach third parties",
+        "description": "With Encriptados, you'll have a private network provider that ensures your security and guarantees greater privacy by preventing your information from being manipulated, shared, or sold."
+      }
+    }
+  },
   "LoginPage": {
     "inputErrors": {
       "moreThanSixteenNumbers": "The account number must be exactly 16 characters long."

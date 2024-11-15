@@ -1,4 +1,28 @@
 {
+  "AboutUsPage": {
+    "banner": {
+      "title": "À propos de nous",
+      "description": "Protéger votre vie privée à chaque connexion."
+    },
+    "aboutUs": {
+      "title": "Qui sommes-nous",
+      "description": "Nous sommes spécialisés dans les équipements et logiciels de communication sécurisés tels que les téléphones, applications et cartes SIM. Nous visons à rapprocher la sécurité numérique de toute personne ou entreprise souhaitant protéger ses informations et sa vie privée. Nous travaillons avec les systèmes les plus sûrs et les plus reconnus au monde, qui ont été testés pendant des années et se sont avérés impénétrables."
+    },
+    "cards": {
+      "communicationCard": {
+        "title": "Communication sécurisée sans frontières",
+        "description": "Nous disposons d'un vaste réseau de revendeurs et de distributeurs en Amérique du Nord, Amérique du Sud et Europe, qui apportent les solutions d'Encriptados à ceux qui en ont besoin, afin que de plus en plus de personnes puissent bénéficier des avantages des communications sécurisées."
+      },
+      "privacyCard": {
+        "title": "Nous prenons votre vie privée au sérieux",
+        "description": "Nous sommes toujours à la pointe des nouvelles technologies pour vous offrir des communications chiffrées totalement impénétrables et faciles à utiliser. Nous aidons les entreprises, institutions gouvernementales, célébrités, avocats, voyageurs et particuliers souhaitant améliorer leur cybersécurité."
+      },
+      "informationCard": {
+        "title": "Vos informations personnelles ne seront jamais transmises à des tiers",
+        "description": "Avec Encriptados, vous disposerez d'un fournisseur de réseau privé qui assurera votre sécurité et garantira une plus grande confidentialité, en évitant que vos informations ne soient manipulées, partagées ou vendues."
+      }
+    }
+  },
   "LoginPage": {
     "inputErrors": {
       "moreThanSixteenNumbers": "Le numéro de compte doit comporter exactement 16 caractères."
