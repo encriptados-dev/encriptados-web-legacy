@@ -29,6 +29,8 @@ const AccountNumber = () => {
   const [currentDownloadLinkNumber, setCurrentDownloadLinkNumber] =
     useState("");
 
+  console.log(currentDownloadLinkNumber);
+
   const { success, error: errorToast } = useToast();
 
   const { registerToken, isPending } = useRegisterToken({
@@ -65,9 +67,7 @@ const AccountNumber = () => {
           sameSite: "None",
         });
 
-        setTimeout(() => {
-          router.push("/dashboard/data-usage");
-        }, 1000);
+        router.push("/dashboard/data-usage");
       } catch (error) {
         console.log(error);
         errorToast(t("LoginPage.generatedSection.accountNumber.errorMessage"));

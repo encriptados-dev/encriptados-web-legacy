@@ -59,10 +59,7 @@ const DashboardHeader = () => {
         <Button
           onClick={() => {
             Cookies.remove("authToken");
-
-            setTimeout(() => {
-              router.push("/login");
-            }, 1000);
+            router.push("/login");
           }}
           intent="dangerMetal"
           customStyles="bg-[#2D0505] text-[#FF6C6C] font-light"

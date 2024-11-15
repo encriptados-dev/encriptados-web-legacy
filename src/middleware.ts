@@ -1,4 +1,4 @@
-import { jwtVerify, importSPKI } from "jose"; // Cambiado a importSPKI
+import { jwtVerify, importSPKI } from "jose";
 import { NextRequest, NextResponse } from "next/server";
 import createMiddleware from "next-intl/middleware";
 import { routing } from "./i18n/routing";
@@ -17,7 +17,6 @@ export async function middleware(
 
   const jwtToken = request?.cookies.get("authToken");
 
-  // Si no hay token JWT y la ruta es protegida, redirigir a /login
   if (!jwtToken?.value) {
     if (isProtectedRoute) {
       return NextResponse.redirect(new URL("/login", request.url));
@@ -25,7 +24,6 @@ export async function middleware(
     return intlResponse || NextResponse.next();
   }
 
-  // Si existe el token, validarlo con la clave pública
   const publicKey = process.env.JWT_PUBLIC_KEY;
 
   if (!publicKey) {
@@ -35,10 +33,10 @@ export async function middleware(
   try {
     const key = await importSPKI(publicKey, "RS256");
 
-    // Validación del JWT
-    await jwtVerify(jwtToken.value, key);
+    await jwtVerify(jwtToken.value, key, {
+      clockTolerance: 30,
+    });
 
-    // Si es un login o ruta pública y el JWT es válido, redirigir a /dashboard
     if (
       request.nextUrl.pathname === "/en/login" ||
       request.nextUrl.pathname === "/es/login" ||
@@ -46,18 +44,19 @@ export async function middleware(
       request.nextUrl.pathname === "/pt/login" ||
       request.nextUrl.pathname === "/fr/login"
     ) {
-      return NextResponse.redirect(new URL("/dashboard", request.url));
+      return NextResponse.redirect(
+        new URL("/dashboard/data-usage", request.url)
+      );
     }
 
-    // Si todo es correcto, continuar con la respuesta internacionalizada o la siguiente respuesta
     return intlResponse || NextResponse.next();
   } catch (error) {
     console.log(error);
-    // Si la validación del JWT falla, redirigir al login
+
     if (isProtectedRoute) {
       return NextResponse.redirect(new URL("/login", request.url));
     }
-    // Si no es una ruta protegida, continuar normalmente
+
     return intlResponse || NextResponse.next();
   }
 }

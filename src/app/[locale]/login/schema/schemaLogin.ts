@@ -1,6 +1,6 @@
 import * as yup from "yup";
 
-const schemaLogin = (t: Function) =>
+const schemaLogin = (t: any) =>
   yup.object().shape({
     accountNumber: yup
       .string()

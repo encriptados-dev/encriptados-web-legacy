@@ -33,16 +33,13 @@ const Welcome = () => {
 
         success(t("LoginPage.welcomeSection.succesfullyLogin"));
 
-        Cookies.set("authToken", responseData.data.token, {
+        Cookies.set("authToken", responseData?.data?.token, {
           expires: 7,
           path: "/",
           secure: true,
           sameSite: "None",
         });
-
-        setTimeout(() => {
-          router.push("/dashboard/data-usage");
-        }, 1000);
+        router.push("/dashboard/data-usage");
       } catch (error) {
         console.log(error);
         errorToast(t("LoginPage.welcomeSection.errorWhileLogin"));
