@@ -15,8 +15,10 @@ import { useToast } from "@/shared/context/ToastContext";
 import Cookies from "js-cookie";
 import Loader from "@/shared/components/Loader";
 import { useRouter } from "next/navigation";
+import { useTranslations } from "next-intl";
 
 const AccountNumber = () => {
+  const t = useTranslations();
   const router = useRouter();
   const Mans = "/images/login/mans.png";
 
@@ -35,10 +37,14 @@ const AccountNumber = () => {
 
       setValue("currentGeneratedNumber", responseData.data.token);
 
-      success("Generando número de cuenta correctamente");
+      success(
+        t("LoginPage.generatedSection.accountNumber.succesfulyGenerateAccount")
+      );
     },
     onError: () => {
-      errorToast("Error generando número de cuenta correctamente");
+      errorToast(
+        t("LoginPage.generatedSection.accountNumber.errorMessageNumberAccount")
+      );
     },
   });
   const { login, isPending: isPendingLoading } = useAuthLogin({
@@ -46,7 +52,7 @@ const AccountNumber = () => {
       try {
         const responseData = data as LoginWithTokenResponse;
 
-        success("Inicio de sesión exitoso");
+        success(t("LoginPage.generatedSection.accountNumber.loginSuccesfuly"));
 
         Cookies.set("authToken", responseData.data.token, {
           expires: 7,
@@ -60,7 +66,7 @@ const AccountNumber = () => {
         }, 1000);
       } catch (error) {
         console.log(error);
-        errorToast("Error durante el inicio de sesión:");
+        errorToast(t("LoginPage.generatedSection.accountNumber.errorMessage"));
       }
     },
   });
@@ -85,7 +91,9 @@ const AccountNumber = () => {
     const accountNumber = getValues("currentGeneratedNumber");
     if (accountNumber) {
       navigator.clipboard.writeText(accountNumber).then(() => {
-        success("Número de cuenta copiado exitosamente");
+        success(
+          t("LoginPage.generatedSection.accountNumber.copyNumberSuccesfully")
+        );
       });
     }
   };
@@ -102,7 +110,7 @@ const AccountNumber = () => {
     <>
       <div className="flex flex-col justify-center w-full md:w-5/12 lg:w-4/12 mb-6 md:mb-0 md:mr-6">
         <h2 className="text-white mt-2 text-base md:text-xl lg:text-xl font-light">
-          Gestiona todo sin involucrar tus datos personales.
+          {t("LoginPage.generatedSection.accountNumber.title")}
         </h2>
         <div className="w-8/12 mt-6 md:mt-8">
           <Image
@@ -119,7 +127,7 @@ const AccountNumber = () => {
       <div className="w-full md:w-[500px] bg-[#0E0E0E] h-auto md:h-[500px] rounded-2xl flex flex-col py-14 px-10 items-center gap-y-4 md:px-10 relative">
         <OnlyKeyLoginIconSvg height={55} width={55} color="white" />
         <h1 className="text-white text-center text-lg md:text-xl">
-          Obtén un número de cuenta
+          {t("LoginPage.generatedSection.accountNumber.generateAccountNumber")}
         </h1>
 
         <div className="w-full space-y-4 text-center">
@@ -135,10 +143,12 @@ const AccountNumber = () => {
             disabled={isPending || isGenerating}
           >
             {isGenerating
-              ? "Generando..."
+              ? t("LoginPage.generatedSection.accountNumber.generating")
               : generatedNumber
-              ? "Iniciar sesión"
-              : "Generar nuevo número de cuenta"}
+              ? t("LoginPage.generatedSection.accountNumber.login")
+              : t(
+                  "LoginPage.generatedSection.accountNumber.generateAccountNumber"
+                )}
           </Button>
         </div>
 
@@ -154,7 +164,7 @@ const AccountNumber = () => {
                 customStyles="w-6/12 justify-center cursor-pointer"
                 onClick={copyToClipboard}
               >
-                Copiar
+                {t("LoginPage.generatedSection.accountNumber.copy")}
               </CircleTitle>
               <CircleTitle
                 onClick={() => {}}
@@ -163,7 +173,7 @@ const AccountNumber = () => {
                 intent="primary"
                 customStyles="w-6/12 justify-center cursor-pointer font-light"
               >
-                Descargar
+                {t("LoginPage.generatedSection.accountNumber.download")}
               </CircleTitle>
             </div>
           </div>
@@ -175,7 +185,7 @@ const AccountNumber = () => {
           }}
           className="text-white cursor-pointer mt-4"
         >
-          Volver atrás
+          {t("LoginPage.generatedSection.accountNumber.goBack")}
         </h1>
       </div>
       {isPendingLoading || isPending ? (

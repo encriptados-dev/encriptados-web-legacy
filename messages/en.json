@@ -1,4 +1,38 @@
 {
+  "LoginPage": {
+    "welcomeSection": {
+      "titleGenerate": "Generate a random account with a unique access code",
+      "subtitleGenerate": "Manage everything without involving your personal data.",
+      "welcome": "Welcome",
+      "writeYourAccountPlaceholder": "Enter your account number",
+      "errorMessageWriteAccount": "The account number must be exactly 16 characters",
+      "forgotPassword": "I forgot my account number",
+      "generateAccountNumber": "Generate account number",
+      "login": "Log in",
+      "errorLogin": "Error during login",
+      "succesfullyLogin": "Login successful",
+
+      "errorWhileLogin": "Error during login:",
+      "withAccesCode": "with a unique access code"
+    },
+    "generatedSection": {
+      "accountNumber": {
+        "title": "Manage everything without involving your personal data.",
+        "getNumberAccountTitle": "Get an account number",
+        "generateAccountNumber": "Generate new account number",
+        "generating": "Generating...",
+        "goBack": "Go back",
+        "copy": "Copy",
+        "download": "Download",
+        "login": "Log in",
+        "copyNumberSuccesfully": "Account number copied successfully",
+        "errorMessage": "Error during login",
+        "errorMessageNumberAccount": "Error generating account number",
+        "loginSuccesfuly": "Login successful",
+        "succesfulyGenerateAccount": "Successfully generating account number"
+      }
+    }
+  },
   "HeaderMenu": {
     "languages": {
       "es": "Spanish",

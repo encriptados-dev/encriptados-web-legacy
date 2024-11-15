@@ -12,30 +12,26 @@ import { useToast } from "@/shared/context/ToastContext";
 import Cookies from "js-cookie";
 import { useRouter } from "next/navigation";
 import Loader from "@/shared/components/Loader";
+import { useTranslations } from "next-intl";
 
 const Welcome = () => {
+  const t = useTranslations();
   const router = useRouter();
   const Mans = "/images/login/mans.png";
 
-  const {
-    handleSubmit,
-    setValue,
-    formState: { errors },
-  } = useFormContext();
-
-  console.log(errors);
+  const { handleSubmit, setValue } = useFormContext();
 
   const { success, error: errorToast } = useToast();
 
   const { login, isPending } = useAuthLogin({
     onError: () => {
-      errorToast("Error durante el inicio de sesión");
+      errorToast(t("LoginPage.welcomeSection.errorLogin"));
     },
     onSuccess: async (data) => {
       try {
         const responseData = data as LoginWithTokenResponse;
 
-        success("Inicio de sesión exitoso");
+        success(t("LoginPage.welcomeSection.succesfullyLogin"));
 
         Cookies.set("authToken", responseData.data.token, {
           expires: 7,
@@ -49,7 +45,7 @@ const Welcome = () => {
         }, 1000);
       } catch (error) {
         console.log(error);
-        errorToast("Error durante el inicio de sesión:");
+        errorToast(t("LoginPage.welcomeSection.errorWhileLogin"));
       }
     },
   });
@@ -58,11 +54,14 @@ const Welcome = () => {
     <>
       <div className="flex flex-col justify-center w-full md:w-5/12 lg:w-4/12 mb-6 md:mb-0 md:mr-6">
         <h1 className="text-white text-2xl md:text-4xl lg:text-5xl font-bold mb-2">
-          Genera una cuenta aleatoria{" "}
-          <span className="text-[#35CDFB]">con un código único de acceso</span>
+          {t("LoginPage.welcomeSection.titleGenerate")}{" "}
+          <span className="text-[#35CDFB]">
+            {" "}
+            {t("LoginPage.welcomeSection.withAccesCode")}
+          </span>
         </h1>
         <h2 className="text-white mt-2 text-base md:text-xl lg:text-xl font-light ">
-          Gestiona todo sin involucrar tus datos personales.
+          {t("LoginPage.welcomeSection.subtitleGenerate")}
         </h2>
         <div className="w-8/12 mt-6 md:mt-8">
           <Image
@@ -79,12 +78,14 @@ const Welcome = () => {
       <div className="w-full md:w-[500px] bg-[#0E0E0E] h-auto md:h-[500px] rounded-2xl flex flex-col justify-center items-center gap-y-4 p-6 md:px-10">
         <OnlyKeyLoginIconSvg height={40} width={40} color="white" />
         <h1 className="text-white text-center text-lg md:text-xl">
-          Bienvenido
+          {t("LoginPage.welcomeSection.welcome")}
         </h1>
 
         <div className="w-full space-y-4">
           <InputFormContext
-            placeholder="Escribe tu número de cuenta"
+            placeholder={t(
+              "LoginPage.welcomeSection.writeYourAccountPlaceholder"
+            )}
             type="password"
             name="accountNumber"
           />
@@ -97,14 +98,14 @@ const Welcome = () => {
             rounded="full"
             intent="primary"
           >
-            Iniciar sesión
+            {t("LoginPage.welcomeSection.login")}
           </Button>
         </div>
 
         {/* Olvidé mi número de cuenta */}
         <div className="w-full flex justify-center cursor-pointer">
           <h1 className="text-[#7E7E7E] text-sm md:text-base">
-            Olvidé mi número de cuenta
+            {t("LoginPage.welcomeSection.forgotPassword")}
           </h1>
         </div>
 
@@ -125,7 +126,7 @@ const Welcome = () => {
             rounded="full"
             intent="gray"
           >
-            Generar numero de cuenta
+            {t("LoginPage.welcomeSection.generateAccountNumber")}
           </CircleTitle>
         </div>
       </div>

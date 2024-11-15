@@ -1,4 +1,37 @@
 {
+  "LoginPage": {
+    "welcomeSection": {
+      "titleGenerate": "Gere uma conta aleatória com um código de acesso único",
+      "subtitleGenerate": "Gerencie tudo sem envolver seus dados pessoais.",
+      "welcome": "Bem-vindo",
+      "writeYourAccountPlaceholder": "Digite seu número de conta",
+      "errorMessageWriteAccount": "O número da conta deve ter exatamente 16 caracteres",
+      "forgotPassword": "Esqueci meu número de conta",
+      "generateAccountNumber": "Gerar número de conta",
+      "login": "Entrar",
+      "errorLogin": "Erro durante o login",
+      "succesfullyLogin": "Login bem-sucedido",
+      "errorWhileLogin": "Erro durante o login:",
+      "withAccesCode": "com um código único de acesso"
+    },
+    "generatedSection": {
+      "accountNumber": {
+        "title": "Gerencie tudo sem envolver seus dados pessoais.",
+        "getNumberAccountTitle": "Obtenha um número de conta",
+        "generateAccountNumber": "Gerar novo número de conta",
+        "generating": "Gerando...",
+        "goBack": "Voltar",
+        "copy": "Copiar",
+        "download": "Baixar",
+        "login": "Entrar",
+        "copyNumberSuccesfully": "Número da conta copiado com sucesso",
+        "errorMessage": "Erro durante o login",
+        "errorMessageNumberAccount": "Erro ao gerar número de conta",
+        "loginSuccesfuly": "Login bem-sucedido",
+        "succesfulyGenerateAccount": "Gerando número de conta com sucesso"
+      }
+    }
+  },
   "HeaderMenu": {
     "languages": {
       "es": "Espanhol",
