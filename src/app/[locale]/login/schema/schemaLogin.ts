@@ -1,13 +1,14 @@
 import * as yup from "yup";
 
-const schemaLogin = yup.object().shape({
-  accountNumber: yup
-    .string()
-    .length(16, "El número de cuenta debe tener exactamente 16 caracteres")
-    .required("El número de cuenta es obligatorio"),
-});
+const schemaLogin = (t: Function) =>
+  yup.object().shape({
+    accountNumber: yup
+      .string()
+      .length(16, t("LoginPage.inputErrors.moreThanSixteenNumbers"))
+      .required(),
+  });
 
-type SchemaLoginType = yup.InferType<typeof schemaLogin>;
+type SchemaLoginType = yup.InferType<any>;
 
 export { schemaLogin };
 export type { SchemaLoginType };

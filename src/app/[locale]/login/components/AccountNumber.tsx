@@ -26,6 +26,8 @@ const AccountNumber = () => {
 
   const [generatedNumber, setGeneratedNumber] = useState("");
   const [isGenerating, setIsGenerating] = useState(false);
+  const [currentDownloadLinkNumber, setCurrentDownloadLinkNumber] =
+    useState("");
 
   const { success, error: errorToast } = useToast();
 
@@ -36,6 +38,8 @@ const AccountNumber = () => {
       animateToken(responseData.data.token_separated);
 
       setValue("currentGeneratedNumber", responseData.data.token);
+
+      setCurrentDownloadLinkNumber(responseData.data.download_url);
 
       success(
         t("LoginPage.generatedSection.accountNumber.succesfulyGenerateAccount")

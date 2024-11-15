@@ -1,5 +1,8 @@
 {
   "LoginPage": {
+    "inputErrors": {
+      "moreThanSixteenNumbers": "The account number must be exactly 16 characters long."
+    },
     "welcomeSection": {
       "titleGenerate": "Generate a random account with a unique access code",
       "subtitleGenerate": "Manage everything without involving your personal data.",
@@ -11,7 +14,6 @@
       "login": "Log in",
       "errorLogin": "Error during login",
       "succesfullyLogin": "Login successful",
-
       "errorWhileLogin": "Error during login:",
       "withAccesCode": "with a unique access code"
     },

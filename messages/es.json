@@ -1,5 +1,8 @@
 {
   "LoginPage": {
+    "inputErrors": {
+      "moreThanSixteenNumbers": "El número de cuenta debe tener exactamente 16 caracteres."
+    },
     "welcomeSection": {
       "titleGenerate": "Genera una cuenta aleatoria con un código único de acceso",
       "subtitleGenerate": "Gestiona todo sin involucrar tus datos personales.",

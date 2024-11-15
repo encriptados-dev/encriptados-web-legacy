@@ -1,5 +1,8 @@
 {
   "LoginPage": {
+    "inputErrors": {
+      "moreThanSixteenNumbers": "Il numero di conto deve essere lungo esattamente 16 caratteri."
+    },
     "welcomeSection": {
       "titleGenerate": "Genera un account casuale con un codice di accesso unico",
       "subtitleGenerate": "Gestisci tutto senza coinvolgere i tuoi dati personali.",
