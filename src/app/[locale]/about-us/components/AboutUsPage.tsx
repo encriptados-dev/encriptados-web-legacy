@@ -12,7 +12,7 @@ const AboutUsPage = () => {
 
   return (
     <>
-      <div className="w-full bg-gradient-to-b from-[#005340] via-[#073A4B] to-black relative py-28">
+      <div className="w-full bg-gradient-to-b from-[#005340] via-[#073A4B] to-black relative py-9">
         {/* Imagen del espiral en el fondo */}
         <div className="absolute top-0 left-0 right-0 bottom-0 z-0">
           <Image
@@ -32,7 +32,7 @@ const AboutUsPage = () => {
           alt="Phone in Hand"
           width={2000}
           height={2000}
-          className="object-contain -translate-y-16 md:-translate-y-24 xl:-translate-y-20  "
+          className="object-contain -translate-y-10 md:-translate-y-11 xl:-translate-y-20  "
           priority
         />
 

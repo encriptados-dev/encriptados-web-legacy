@@ -4,7 +4,7 @@ import React from "react";
 const WhoWeAre = () => {
   const t = useTranslations();
   return (
-    <div className="flex justify-center items-center px-4 md:px-8">
+    <div className="flex justify-center items-center px-4 md:px-8 py-28">
       <div className="w-full max-w-6xl flex flex-col md:flex-row items-center justify-center">
         {/* Título */}
         <h1 className="text-[#5CDAFF] font-bold text-3xl md:text-5xl text-center md:text-left mb-4 md:mb-0 md:w-6/12">
