@@ -1,4 +1,66 @@
 {
+  "WhereToFindUs": {
+    "banner": {
+      "titleEasyToBuyLicense": "Nunca foi tão fácil comprar sua licença criptografada.",
+      "moreThanTitle": "Mais de",
+      "pointsOfPay": "pontos de pagamento",
+      "forYou": "para você"
+    },
+    "whereCards": {
+      "title": "Onde quer que você esteja, haverá um caixa eletrônico cripto pronto para comprar produtos de",
+      "titleEncrypted": "Criptografados",
+      "paymentPoint": {
+        "title": "Pontos de pagamento",
+        "description": "Lugares onde você pode comprar suas licenças cripto rapidamente"
+      },
+      "countriesAvailable": {
+        "title": "Países disponíveis",
+        "description": "A maior cobertura disponível para você"
+      }
+    },
+    "findATM": {
+      "title": "Encontre um caixa eletrônico cripto perto de você",
+      "results": "Resultados",
+      "showPoints": "Ver locais"
+    },
+    "howToBuy": {
+      "orderTitle": "Faça seu pedido",
+      "depositATMTitle": "Deposite via caixa eletrônico",
+      "reciveYourPurchase": "Receba sua compra"
+    }
+  },
+  "AmbassadorsPage": {
+    "banner": {
+      "joinUsTitle": "Junte-se ao nosso",
+      "programTitle": "programa",
+      "ofTitle": "de",
+      "ambassadorsTitle": "embaixadores",
+      "showBenefits": "Ver Benefícios"
+    },
+    "partnerCards": {
+      "title": "Que tipo de parceiro você gostaria de ser?",
+      "promotor": {
+        "promotorTitle": "Promotor",
+        "encryptedTag": "Criptografado",
+        "description": "Você é um blogueiro, Youtuber, Influenciador ou tem voz no mundo da cibersegurança e comunicações seguras? Torne-se um aliado do Criptografado e ganhe grandes recompensas por promover nossos produtos e serviços!",
+        "benefits": "Benefícios:",
+        "benefit1": "Comissões atraentes em dinheiro ou produtos",
+        "benefit2": "Relação direta com Criptografado",
+        "benefit3": "Acesso exclusivo a lançamentos, notícias e conteúdo do Criptografado",
+        "sendRequest": "Enviar solicitação de Promotor"
+      },
+      "distributor": {
+        "distributorTitle": "Distribuidor",
+        "encryptedTag": "Criptografado",
+        "description": "Se você possui uma loja ou negócio, ou tem contatos que precisam de celulares, aplicativos, cartões SIM ou equipamentos criptografados, entre em contato conosco! Você pode se tornar um distribuidor de nossos produtos.",
+        "benefits": "Benefícios:",
+        "benefit1": "Preços especiais em todos os nossos produtos",
+        "benefit2": "Acesso direto a suporte e treinamento",
+        "benefit3": "Materiais promocionais, publicidade e conteúdo digital",
+        "sendRequest": "Enviar solicitação de Distribuidor"
+      }
+    }
+  },
   "AboutUsPage": {
     "banner": {
       "title": "Sobre nós",

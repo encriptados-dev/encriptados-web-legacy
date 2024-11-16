@@ -1,4 +1,66 @@
 {
+  "WhereToFindUs": {
+    "banner": {
+      "titleEasyToBuyLicense": "Il n’a jamais été aussi facile d’acheter votre licence cryptée.",
+      "moreThanTitle": "Plus de",
+      "pointsOfPay": "points de paiement",
+      "forYou": "pour vous"
+    },
+    "whereCards": {
+      "title": "Où que vous soyez, un ATM crypto sera prêt à acheter des produits de",
+      "titleEncrypted": "Cryptés",
+      "paymentPoint": {
+        "title": "Points de paiement",
+        "description": "Lieux où vous pouvez rapidement acheter vos licences crypto"
+      },
+      "countriesAvailable": {
+        "title": "Pays disponibles",
+        "description": "La couverture la plus large disponible pour vous"
+      }
+    },
+    "findATM": {
+      "title": "Trouvez un ATM crypto près de chez vous",
+      "results": "Résultats",
+      "showPoints": "Voir les emplacements"
+    },
+    "howToBuy": {
+      "orderTitle": "Passez votre commande",
+      "depositATMTitle": "Déposez via ATM",
+      "reciveYourPurchase": "Recevez votre achat"
+    }
+  },
+  "AmbassadorsPage": {
+    "banner": {
+      "joinUsTitle": "Rejoignez notre",
+      "programTitle": "programme",
+      "ofTitle": "de",
+      "ambassadorsTitle": "ambassadeurs",
+      "showBenefits": "Voir les Avantages"
+    },
+    "partnerCards": {
+      "title": "Quel type de partenaire souhaitez-vous être ?",
+      "promotor": {
+        "promotorTitle": "Promoteur",
+        "encryptedTag": "Crypté",
+        "description": "Êtes-vous un blogueur, YouTuber, influenceur, ou avez-vous une voix dans le monde de la cybersécurité et des communications sécurisées ? Devenez un allié de Crypté et obtenez de grandes récompenses pour promouvoir nos produits et services !",
+        "benefits": "Avantages :",
+        "benefit1": "Commissions attractives en argent ou en produits",
+        "benefit2": "Relation directe avec Crypté",
+        "benefit3": "Accès exclusif aux lancements, actualités et contenus de Crypté",
+        "sendRequest": "Envoyer la demande de promoteur"
+      },
+      "distributor": {
+        "distributorTitle": "Distributeur",
+        "encryptedTag": "Crypté",
+        "description": "Si vous possédez un magasin ou une entreprise, ou si vous avez des contacts qui ont besoin de téléphones, d'applications, de cartes SIM ou de matériel crypté, contactez-nous ! Vous pouvez devenir distributeur de nos produits.",
+        "benefits": "Avantages :",
+        "benefit1": "Prix spéciaux sur tous nos produits",
+        "benefit2": "Accès direct au support et à la formation",
+        "benefit3": "Matériel promotionnel, publicité et contenu numérique",
+        "sendRequest": "Envoyer la demande de distributeur"
+      }
+    }
+  },
   "AboutUsPage": {
     "banner": {
       "title": "À propos de nous",

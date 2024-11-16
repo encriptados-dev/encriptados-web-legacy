@@ -1,4 +1,66 @@
 {
+  "WhereToFindUs": {
+    "banner": {
+      "titleEasyToBuyLicense": "Nunca fue tan fácil comprar tu licencia encriptada.",
+      "moreThanTitle": "Más de",
+      "pointsOfPay": "puntos de pago",
+      "forYou": "para ti"
+    },
+    "whereCards": {
+      "title": "Donde estés habrá un cajero cripto ATM listo para comprar productos de",
+      "titleEncrypted": "Encriptados",
+      "paymentPoint": {
+        "title": "Puntos de pago",
+        "description": "Lugares donde puedes comprar rápido tus licencias cripto"
+      },
+      "countriesAvailable": {
+        "title": "Países disponibles",
+        "description": "La mayor cobertura disponible para ti"
+      }
+    },
+    "findATM": {
+      "title": "Busca un cajero Cripto ATM cerca de ti",
+      "results": "Resultados",
+      "showPoints": "Ver ubicaciones"
+    },
+    "howToBuy": {
+      "orderTitle": "Realiza tu pedido",
+      "depositATMTitle": "Deposita via ATM",
+      "reciveYourPurchase": "Recibe tu compra"
+    }
+  },
+  "AmbassadorsPage": {
+    "banner": {
+      "joinUsTitle": "Únete a nuestro",
+      "programTitle": "programa",
+      "ofTitle": "de",
+      "ambassadorsTitle": "embajadores",
+      "showBenefits": "Ver Beneficios"
+    },
+    "partnerCards": {
+      "title": "¿Qué tipo de socio quieres ser?",
+      "promotor": {
+        "promotorTitle": "Promotor",
+        "encryptedTag": "Encriptados",
+        "description": "¿Eres un blogger, Youtuber, Influencer o tienes una voz en el mundo de la ciberseguridad y las comunicaciones seguras? ¡Conviértete en un aliado de Encriptados y obtén grandes recompensas por promocionar nuestros productos y servicios!",
+        "benefits": "Beneficios:",
+        "benefit1": "Atractivas comisiones económicas o en productos",
+        "benefit2": "Relación directa con Encriptados",
+        "benefit3": "Acceso exclusivo a lanzamientos, noticias y contenido de Encriptados",
+        "sendRequest": "Enviar solicitud de Promotor"
+      },
+      "distributor": {
+        "distributorTitle": "Distribuidor",
+        "encryptedTag": "Encriptados",
+        "description": "Si tienes una tienda o negocio, o si tienes contactos que requieran celulares, apps, SIM cards o equipos encriptados, ¡comunícate con nosotros! puedes ser distribuidor de nuestros productos.",
+        "benefits": "Beneficios:",
+        "benefit1": "Precios especiales en todos nuestros productos",
+        "benefit2": "Acceso directo a soporte y capacitación",
+        "benefit3": "Materiales promocionales, publicidad y contenido digital",
+        "sendRequest": "Enviar solicitud de Promotor"
+      }
+    }
+  },
   "AboutUsPage": {
     "banner": {
       "title": "Sobre Nosotros",
