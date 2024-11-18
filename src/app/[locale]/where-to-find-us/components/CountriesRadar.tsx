@@ -7,8 +7,6 @@ export const CountriesRadar = () => {
   const { watch } = useFormContext();
   const country = watch("country"); // Asegúrate de que "country" sea el nombre del campo en tu formulario
 
-  console.log(country);
-
   const countries = [
     {
       code: "US",
@@ -506,15 +504,13 @@ export const CountriesRadar = () => {
       ) : (
         filteredCountries.map((country, index) => (
           <a
+            key={index}
             href={country.url}
             rel="nofollow"
             target="_blank"
             className="text-sm text-white truncate"
           >
-            <div
-              className="flex items-center space-x-2 bg-[#181818] px-3 py-5 rounded-2xl "
-              key={index}
-            >
+            <div className="flex items-center space-x-2 bg-[#181818] px-3 py-5 rounded-2xl ">
               <Flag code={country.code} style={{ width: 36, height: 24 }} />
 
               <span>{country.name}</span>

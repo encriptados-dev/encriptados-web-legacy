@@ -6,7 +6,6 @@ import WhereListOfCards from "./WhereListOfCards";
 import FormWhereToFind from "./FormWhereToFind";
 import { BasicFormProvider } from "@/shared/components/BasicFormProvider";
 import HowToBuy from "./HowToBuy";
-import { CountriesRadar } from "./CountriesRadar";
 
 const WhereToFindUsPage = () => {
   return (
