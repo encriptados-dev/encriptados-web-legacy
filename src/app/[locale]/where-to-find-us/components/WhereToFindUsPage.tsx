@@ -6,6 +6,7 @@ import WhereListOfCards from "./WhereListOfCards";
 import FormWhereToFind from "./FormWhereToFind";
 import { BasicFormProvider } from "@/shared/components/BasicFormProvider";
 import HowToBuy from "./HowToBuy";
+import { CountriesRadar } from "./CountriesRadar";
 
 const WhereToFindUsPage = () => {
   return (
@@ -14,7 +15,7 @@ const WhereToFindUsPage = () => {
 
       <WhereListOfCards />
 
-      <BasicFormProvider>
+      <BasicFormProvider values={{ country: "Colombia" }}>
         <FormWhereToFind />
       </BasicFormProvider>
 

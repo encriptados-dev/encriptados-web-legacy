@@ -3,12 +3,16 @@ import SearchFormIcon from "../icons/SearchFormIcon";
 import { useTranslations } from "next-intl";
 import SearchInput from "@/shared/components/SearchInput";
 import Image from "next/image";
+import { CountriesRadar } from "./CountriesRadar";
+import { useFormContext } from "react-hook-form";
 
 const FormWhereToFind = () => {
   const t = useTranslations();
 
   const Man = "/images/where-to-find-us/leftman.png";
   const Woman = "/images/where-to-find-us/rightwoman.png";
+
+  const { watch } = useFormContext();
 
   return (
     <div className="bg-[#041A20] overflow-x-hidden">
@@ -33,10 +37,16 @@ const FormWhereToFind = () => {
           </h1>
 
           <SearchInput
-            inputClassName="bg-[#040403] border-[#505050]"
+            inputClassName="bg-[#040403] border-[#505050] text-white"
             placeholder="Busca por pais"
             name="country"
           />
+
+          {watch("country") ? (
+            <div className="bg-[#040404] border-[#505050] border-2 p-5 rounded-2xl">
+              <CountriesRadar />
+            </div>
+          ) : null}
         </div>
 
         <div className="w-full md:w-[300px] h-[400px] relative">
