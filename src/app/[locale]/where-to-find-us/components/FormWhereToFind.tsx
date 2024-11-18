@@ -16,7 +16,7 @@ const FormWhereToFind = () => {
         <div className="w-[350px] md:w-[200px] h-[400px]  relative mb-8 md:mb-0">
           <Image
             alt="Man"
-            className="-translate-x-7"
+            className="-translate-x-24 md:-translate-x-4"
             src={Man}
             layout="fill"
             objectFit="contain"
@@ -44,7 +44,7 @@ const FormWhereToFind = () => {
             alt="Woman"
             src={Woman}
             layout="fill"
-            className="translate-x-0 md:translate-x-7"
+            className="translate-x-12 md:translate-x-7"
             objectFit="contain"
           />
         </div>

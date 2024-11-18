@@ -19,8 +19,8 @@ export default function HowToBuy() {
               <span className="bg-white text-black rounded-full w-8 h-8 flex items-center justify-center font-bold mb-4">
                 1
               </span>
-              <h2 className="text-white text-4xl md:text-4xl font-bold">
-                Realiza tu pedido
+              <h2 className="text-white text-xl md:text-2xl font-bold">
+                {t("WhereToFindUs.howToBuy.orderTitle")}
               </h2>
             </div>
           </div>
@@ -42,10 +42,10 @@ export default function HowToBuy() {
           <div className="relative bg-gradient-to-br from-[#29CEFF] to-[#A8EBFF] rounded-2xl p-6 overflow-hidden flex items-center justify-between">
             <div className="flex flex-col items-start">
               <span className="bg-white text-black rounded-full w-8 h-8 flex items-center justify-center font-bold mb-4">
-                3
+                2
               </span>
               <h2 className="text-black text-xl md:text-2xl font-bold mb-4">
-                Recibe tu compra
+                {t("WhereToFindUs.howToBuy.orderTitle")}
               </h2>
             </div>
             <div className="w-1/2">
@@ -63,10 +63,10 @@ export default function HowToBuy() {
           <div className="relative bg-gradient-to-br from-[#29CEFF] to-[#A8EBFF] rounded-2xl p-6 overflow-hidden flex items-center justify-between">
             <div className="flex flex-col items-start">
               <span className="bg-white text-black rounded-full w-8 h-8 flex items-center justify-center font-bold mb-4">
-                4
+                3
               </span>
               <h2 className="text-black text-xl md:text-2xl font-bold mb-4">
-                Confirma tu compra
+                {t("WhereToFindUs.howToBuy.reciveYourPurchase")}
               </h2>
             </div>
             <div className="w-1/2">
