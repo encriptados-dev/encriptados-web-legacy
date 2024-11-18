@@ -24,6 +24,7 @@
       "showPoints": "View locations"
     },
     "howToBuy": {
+      "howToBuyTitle": "How to buy",
       "orderTitle": "Place your order",
       "depositATMTitle": "Deposit via ATM",
       "reciveYourPurchase": "Receive your purchase"

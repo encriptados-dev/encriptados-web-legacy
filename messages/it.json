@@ -24,6 +24,7 @@
       "showPoints": "Visualizza posizioni"
     },
     "howToBuy": {
+      "howToBuyTitle": "Come acquistare",
       "orderTitle": "Effettua il tuo ordine",
       "depositATMTitle": "Deposita tramite ATM",
       "reciveYourPurchase": "Ricevi il tuo acquisto"

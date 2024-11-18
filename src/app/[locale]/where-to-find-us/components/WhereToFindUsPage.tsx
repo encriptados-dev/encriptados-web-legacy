@@ -1,11 +1,25 @@
+"use client";
 import React from "react";
 import WhereToFindUsBanner from "./WhereToFindUsBanner";
 import DownloadAppBanner from "../../our-products/components/DownloadAppBanner";
+import WhereListOfCards from "./WhereListOfCards";
+import FormWhereToFind from "./FormWhereToFind";
+import { BasicFormProvider } from "@/shared/components/BasicFormProvider";
+import HowToBuy from "./HowToBuy";
 
 const WhereToFindUsPage = () => {
   return (
     <>
       <WhereToFindUsBanner />
+
+      <WhereListOfCards />
+
+      <BasicFormProvider>
+        <FormWhereToFind />
+      </BasicFormProvider>
+
+      <HowToBuy />
+
       <DownloadAppBanner />
     </>
   );
