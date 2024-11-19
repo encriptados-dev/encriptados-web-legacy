@@ -28,26 +28,30 @@ const EncryptedCommunication = () => {
   return (
     <div className="w-full bg-gradient-to-r from-[#00372B] via-black to-[#022530] flex justify-center items-center py-10 md:py-16 px-4">
       <div>
+        {/* Botón flotante */}
         <div className="flex min-h-[100px] items-center justify-center p-4">
           <div className="relative inline-block">
             <div className="absolute -inset-0.5 bg-gradient-to-r from-[#00FFFF] to-[#0080FF] opacity-75 blur-sm rounded-full" />
             <button className="relative px-6 py-2 bg-[#0E0E0E] rounded-full leading-none border border-transparent bg-clip-padding">
-              <span className="bg-gradient-to-r from-[#00FFFF] to-[#0080FF] bg-clip-text text-transparent font-sans text-sm font-medium">
+              <span className="bg-gradient-to-r from-[#00FFFF] to-[#0080FF] bg-clip-text text-transparent font-sans text-xs sm:text-sm font-medium">
                 {t("knowsBenefits.title")}
               </span>
             </button>
           </div>
         </div>
+
+        {/* Contenido principal */}
         <div className="flex justify-center items-center">
           <div className="w-full md:w-6/12">
             <div className="w-full flex items-center justify-center">
-              <div className="w-6/12">
-                <h1 className="text-white text-3xl text-center mb-7  font-bold">
+              <div className="w-10/12 md:w-6/12">
+                <h1 className="text-white text-xl sm:text-2xl md:text-3xl text-center mb-6 sm:mb-7 font-bold">
                   {t("knowsBenefits.subtitle")}
                 </h1>
               </div>
             </div>
 
+            {/* Lista de Tarjetas */}
             <ListOfCards
               columns={columns} // Utiliza el estado para las columnas
               titleColor="white"

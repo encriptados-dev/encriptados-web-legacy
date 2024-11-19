@@ -5,7 +5,7 @@ import Flag from "react-world-flags";
 
 export const CountriesRadar = () => {
   const { watch } = useFormContext();
-  const country = watch("country"); // Asegúrate de que "country" sea el nombre del campo en tu formulario
+  const country = watch("country");
 
   const countries = [
     {
