@@ -1,7 +1,5 @@
 export default function CardTestLayout({
   children,
-  currentStep = 1,
-  totalSteps = 3,
 }: {
   children: React.ReactNode;
   currentStep?: number;

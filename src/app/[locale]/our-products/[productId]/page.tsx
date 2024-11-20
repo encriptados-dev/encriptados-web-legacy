@@ -1,5 +1,5 @@
 import React from "react";
-import ProductById from "./components/ProductByIdPage";
+
 import ProductByIdPage from "./components/ProductByIdPage";
 
 const page = () => {

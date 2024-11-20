@@ -41,7 +41,7 @@ const OurProductsDistributors = () => {
         </div>
 
         <div className="">
-          <h1 className="text-white text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-center font-bold">
+          <h1 className="text-white text-2xl md:text-3xl text-center font-bold">
             {t("subtitle")}
           </h1>
         </div>

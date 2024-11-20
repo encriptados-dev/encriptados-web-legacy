@@ -1,4 +1,127 @@
 {
+  "WhereToFindUs": {
+    "banner": {
+      "titleEasyToBuyLicense": "Il n’a jamais été aussi facile d’acheter votre licence cryptée.",
+      "moreThanTitle": "Plus de",
+      "pointsOfPay": "points de paiement",
+      "forYou": "pour vous"
+    },
+    "whereCards": {
+      "title": "Où que vous soyez, un ATM crypto sera prêt à acheter des produits de",
+      "titleEncrypted": "Cryptés",
+      "paymentPoint": {
+        "title": "Points de paiement",
+        "description": "Lieux où vous pouvez rapidement acheter vos licences crypto"
+      },
+      "countriesAvailable": {
+        "title": "Pays disponibles",
+        "description": "La couverture la plus large disponible pour vous"
+      }
+    },
+    "findATM": {
+      "title": "Trouvez un ATM crypto près de chez vous",
+      "results": "Résultats",
+      "showPoints": "Voir les emplacements"
+    },
+    "howToBuy": {
+      "howToBuyTitle": "Comment acheter",
+      "orderTitle": "Passez votre commande",
+      "depositATMTitle": "Déposez via ATM",
+      "reciveYourPurchase": "Recevez votre achat"
+    }
+  },
+  "AmbassadorsPage": {
+    "banner": {
+      "joinUsTitle": "Rejoignez notre",
+      "programTitle": "programme",
+      "ofTitle": "de",
+      "ambassadorsTitle": "ambassadeurs",
+      "showBenefits": "Voir les Avantages"
+    },
+    "partnerCards": {
+      "title": "Quel type de partenaire souhaitez-vous être ?",
+      "promotor": {
+        "promotorTitle": "Promoteur",
+        "encryptedTag": "Crypté",
+        "description": "Êtes-vous un blogueur, YouTuber, influenceur, ou avez-vous une voix dans le monde de la cybersécurité et des communications sécurisées ? Devenez un allié de Crypté et obtenez de grandes récompenses pour promouvoir nos produits et services !",
+        "benefits": "Avantages :",
+        "benefit1": "Commissions attractives en argent ou en produits",
+        "benefit2": "Relation directe avec Crypté",
+        "benefit3": "Accès exclusif aux lancements, actualités et contenus de Crypté",
+        "sendRequest": "Envoyer la demande de promoteur"
+      },
+      "distributor": {
+        "distributorTitle": "Distributeur",
+        "encryptedTag": "Crypté",
+        "description": "Si vous possédez un magasin ou une entreprise, ou si vous avez des contacts qui ont besoin de téléphones, d'applications, de cartes SIM ou de matériel crypté, contactez-nous ! Vous pouvez devenir distributeur de nos produits.",
+        "benefits": "Avantages :",
+        "benefit1": "Prix spéciaux sur tous nos produits",
+        "benefit2": "Accès direct au support et à la formation",
+        "benefit3": "Matériel promotionnel, publicité et contenu numérique",
+        "sendRequest": "Envoyer la demande de distributeur"
+      }
+    }
+  },
+  "AboutUsPage": {
+    "banner": {
+      "title": "À propos de nous",
+      "description": "Protéger votre vie privée à chaque connexion."
+    },
+    "aboutUs": {
+      "title": "Qui sommes-nous",
+      "description": "Nous sommes spécialisés dans les équipements et logiciels de communication sécurisés tels que les téléphones, applications et cartes SIM. Nous visons à rapprocher la sécurité numérique de toute personne ou entreprise souhaitant protéger ses informations et sa vie privée. Nous travaillons avec les systèmes les plus sûrs et les plus reconnus au monde, qui ont été testés pendant des années et se sont avérés impénétrables."
+    },
+    "cards": {
+      "communicationCard": {
+        "title": "Communication sécurisée sans frontières",
+        "description": "Nous disposons d'un vaste réseau de revendeurs et de distributeurs en Amérique du Nord, Amérique du Sud et Europe, qui apportent les solutions d'Encriptados à ceux qui en ont besoin, afin que de plus en plus de personnes puissent bénéficier des avantages des communications sécurisées."
+      },
+      "privacyCard": {
+        "title": "Nous prenons votre vie privée au sérieux",
+        "description": "Nous sommes toujours à la pointe des nouvelles technologies pour vous offrir des communications chiffrées totalement impénétrables et faciles à utiliser. Nous aidons les entreprises, institutions gouvernementales, célébrités, avocats, voyageurs et particuliers souhaitant améliorer leur cybersécurité."
+      },
+      "informationCard": {
+        "title": "Vos informations personnelles ne seront jamais transmises à des tiers",
+        "description": "Avec Encriptados, vous disposerez d'un fournisseur de réseau privé qui assurera votre sécurité et garantira une plus grande confidentialité, en évitant que vos informations ne soient manipulées, partagées ou vendues."
+      }
+    }
+  },
+  "LoginPage": {
+    "inputErrors": {
+      "moreThanSixteenNumbers": "Le numéro de compte doit comporter exactement 16 caractères."
+    },
+    "welcomeSection": {
+      "titleGenerate": "Générez un compte aléatoire avec un code d'accès unique",
+      "subtitleGenerate": "Gérez tout sans impliquer vos données personnelles.",
+      "welcome": "Bienvenue",
+      "writeYourAccountPlaceholder": "Entrez votre numéro de compte",
+      "errorMessageWriteAccount": "Le numéro de compte doit comporter exactement 16 caractères",
+      "forgotPassword": "J'ai oublié mon numéro de compte",
+      "generateAccountNumber": "Générer un numéro de compte",
+      "login": "Se connecter",
+      "errorLogin": "Erreur lors de la connexion",
+      "succesfullyLogin": "Connexion réussie",
+      "errorWhileLogin": "Erreur lors de la connexion :",
+      "withAccesCode": "avec un code d'accès unique"
+    },
+    "generatedSection": {
+      "accountNumber": {
+        "title": "Gérez tout sans impliquer vos données personnelles.",
+        "getNumberAccountTitle": "Obtenez un numéro de compte",
+        "generateAccountNumber": "Générer un nouveau numéro de compte",
+        "generating": "Génération en cours...",
+        "goBack": "Retour",
+        "copy": "Copier",
+        "download": "Télécharger",
+        "login": "Se connecter",
+        "copyNumberSuccesfully": "Numéro de compte copié avec succès",
+        "errorMessage": "Erreur lors de la connexion",
+        "errorMessageNumberAccount": "Erreur lors de la génération du numéro de compte",
+        "loginSuccesfuly": "Connexion réussie",
+        "succesfulyGenerateAccount": "Génération du numéro de compte réussie"
+      }
+    }
+  },
   "HeaderMenu": {
     "languages": {
       "es": "Espagnol",
@@ -638,5 +761,31 @@
         "description": "Notre puce internationale fonctionne sur n'importe quel appareil IOS, Android, Windows ou BlackBerry."
       }
     }
+  },
+  "BlogPage": {
+    "ourBlogTitleBanner": "Notre blog",
+    "ourBlogDescriptionBanner": "Informez-vous sur la sécurité chiffrée",
+    "menu": {
+      "techTitle": "Technologie",
+      "ventureTitle": "Entrepreneuriat",
+      "eCommerceTitle": "E-Commerce",
+      "marketingTitle": "Marketing",
+      "toolsTitle": "Outils",
+      "publicityTitle": "Publicité"
+    },
+    "downloadAppTitle": "Téléchargez l'application pour iOS et Android",
+    "downloadAppSubtitle": "Ou scannez le code QR avec votre appareil photo",
+    "saveTitle": "Économisez jusqu'à 50% sur les frais mobiles",
+    "saveDescription": "Enregistrez votre email et recevez une remise de bienvenue",
+    "saveInputPlaceholder": "Entrez votre email",
+    "subscribe": "S'abonner",
+    "optimizeBanner": {
+      "title": "Optimisez l'expérience client dans votre boutique en ligne avec une technologie avancée"
+    },
+    "writeBy": "Écrit par :",
+    "share": "Partager :",
+    "talkWithSupport": "Discutez maintenant avec un conseiller d'Encriptados directement sur Telegram",
+    "goTelegram": "Aller sur Telegram",
+    "articleTitle": "Articles connexes"
   }
 }

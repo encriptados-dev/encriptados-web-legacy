@@ -47,9 +47,7 @@ const AdminAccountPage = () => {
             deviceName={device.deviceName}
             lastAccess={device.lastAccess}
             location={device.location}
-            onSignOut={() => {
-              console.log(`Sign out from ${device.deviceName}`);
-            }}
+            onSignOut={() => {}}
           />
         ))}
       </div>

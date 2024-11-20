@@ -15,7 +15,7 @@ interface Question {
   options: Option[];
 }
 
-const page = () => {
+const Page = () => {
   const { typeOfTest } = useParams();
   const testType = Array.isArray(typeOfTest) ? typeOfTest[0] : typeOfTest;
 
@@ -159,4 +159,4 @@ const page = () => {
   return <TestBasic test={selectedQuestions} />;
 };
 
-export default page;
+export default Page;

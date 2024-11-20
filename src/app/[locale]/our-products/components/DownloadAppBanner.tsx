@@ -5,7 +5,7 @@ import PhoneQr from "/public/images/our-products/phone-qr.png";
 
 const Component: React.FC = () => {
   return (
-    <div className="bg-custom-gradient-qr-black-y-grey md:max-h-[450px] flex items-center justify-center p-4">
+    <div className="bg-custom-gradient-qr-black-y-grey md:max-h-[450px] flex items-center justify-center p-4 overflow-y-hidden">
       <div className="container max-w-5xl mx-auto grid md:grid-cols-2 gap-8 items-center">
         <div className="space-y-6 p-6">
           <h2 className="text-4xl md:text-5xl font-bold text-white leading-tight text-center sm:text-left">
@@ -52,7 +52,7 @@ const Component: React.FC = () => {
         </div>
 
         <div className="relative mx-auto w-full sm:max-w-[250px] max-w-[250px] aspect-[5/7]">
-          <div className="absolute left-1/2 -translate-x-1/2 w-[400px] h-[400px]  rounded-2xl flex items-center justify-center p-4">
+          <div className="absolute left-1/2 -translate-x-1/2 w-[370px] h-[400px]  rounded-2xl flex items-center justify-center p-4">
             <Image
               src={PhoneQr}
               alt="QR Code"

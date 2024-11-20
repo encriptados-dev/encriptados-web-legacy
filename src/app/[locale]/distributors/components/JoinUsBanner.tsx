@@ -1,7 +1,7 @@
 import Button from "@/shared/components/Button";
 import { useTranslations } from "next-intl";
 import React from "react";
-import Bag from "../icons/Bag";
+
 import EncryptedBgIcon from "../icons/EncryptedBgIcon";
 
 const JoinUsBanner = () => {
@@ -21,7 +21,7 @@ const JoinUsBanner = () => {
         }}
       >
         <EncryptedBgIcon />
-        <h1 className="text-white text-3xl md:text-4xl w-10/12 md:w-8/12 font-bold text-center">
+        <h1 className="text-white text-2xl md:text-3xl w-10/12 md:w-8/12 font-bold text-center">
           {title("bannerJoinUs")}
         </h1>
 

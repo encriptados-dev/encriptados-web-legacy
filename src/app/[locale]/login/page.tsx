@@ -3,11 +3,24 @@ import React from "react";
 
 import { BasicFormProvider } from "@/shared/components/BasicFormProvider";
 import LoginPage from "./components/LoginPage";
+import { schemaLogin } from "./schema/schemaLogin";
+import { useTranslations } from "next-intl";
 
 const Page = () => {
+  const t = useTranslations();
+  const loginSchema = schemaLogin(t);
+
   return (
     <>
-      <BasicFormProvider values={{ currentStep: "welcome" }}>
+      <BasicFormProvider
+        schema={loginSchema}
+        values={{
+          currentStep: "welcome",
+          currentNumber: "",
+          currentGeneratedNumber: "",
+          generatedCurrentNumberSeparated: "",
+        }}
+      >
         <LoginPage />
       </BasicFormProvider>
     </>

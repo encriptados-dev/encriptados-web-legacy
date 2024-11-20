@@ -1,7 +1,5 @@
 "use client";
 
-import { useState } from "react";
-import ModalJoinUs from "./ModalJoinUs";
 import { InputFormContext } from "@/shared/components/InputFormContext";
 import UserInputIcon from "../icons/UserInputIcon";
 import MessageInputIcon from "../icons/MessageInputIcon";

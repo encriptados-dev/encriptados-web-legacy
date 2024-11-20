@@ -1,7 +1,8 @@
 import React from "react";
+import AboutUsPage from "./components/AboutUsPage";
 
-const NosotrosPage = () => {
-  return <div>Contenido de Nosotros</div>;
+const Page = () => {
+  return <AboutUsPage />;
 };
 
-export default NosotrosPage;
+export default Page;

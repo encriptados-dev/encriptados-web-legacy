@@ -1,4 +1,127 @@
 {
+  "WhereToFindUs": {
+    "banner": {
+      "titleEasyToBuyLicense": "It has never been so easy to buy your encrypted license.",
+      "moreThanTitle": "More than",
+      "pointsOfPay": "payment points",
+      "forYou": "for you"
+    },
+    "whereCards": {
+      "title": "Wherever you are, there will be a crypto ATM ready to buy products from",
+      "titleEncrypted": "Encrypted",
+      "paymentPoint": {
+        "title": "Payment Points",
+        "description": "Places where you can quickly buy your crypto licenses"
+      },
+      "countriesAvailable": {
+        "title": "Available Countries",
+        "description": "The widest coverage available for you"
+      }
+    },
+    "findATM": {
+      "title": "Find a Crypto ATM near you",
+      "results": "Results",
+      "showPoints": "View locations"
+    },
+    "howToBuy": {
+      "howToBuyTitle": "How to buy",
+      "orderTitle": "Place your order",
+      "depositATMTitle": "Deposit via ATM",
+      "reciveYourPurchase": "Receive your purchase"
+    }
+  },
+  "AmbassadorsPage": {
+    "banner": {
+      "joinUsTitle": "Join our",
+      "programTitle": "program",
+      "ofTitle": "of",
+      "ambassadorsTitle": "ambassadors",
+      "showBenefits": "See Benefits"
+    },
+    "partnerCards": {
+      "title": "What type of partner would you like to be?",
+      "promotor": {
+        "promotorTitle": "Promoter",
+        "encryptedTag": "Encrypted",
+        "description": "Are you a blogger, YouTuber, Influencer, or do you have a voice in the world of cybersecurity and secure communications? Become an ally of Encrypted and earn great rewards for promoting our products and services!",
+        "benefits": "Benefits:",
+        "benefit1": "Attractive commissions in cash or products",
+        "benefit2": "Direct relationship with Encrypted",
+        "benefit3": "Exclusive access to launches, news, and content from Encrypted",
+        "sendRequest": "Submit Promoter Request"
+      },
+      "distributor": {
+        "distributorTitle": "Distributor",
+        "encryptedTag": "Encrypted",
+        "description": "If you own a store or business, or if you have contacts who need phones, apps, SIM cards, or encrypted equipment, get in touch with us! You can become a distributor of our products.",
+        "benefits": "Benefits:",
+        "benefit1": "Special prices on all our products",
+        "benefit2": "Direct access to support and training",
+        "benefit3": "Promotional materials, advertising, and digital content",
+        "sendRequest": "Submit Distributor Request"
+      }
+    }
+  },
+  "AboutUsPage": {
+    "banner": {
+      "title": "About Us",
+      "description": "Protecting your privacy in every connection."
+    },
+    "aboutUs": {
+      "title": "Who we are",
+      "description": "We are specialists in secure communication equipment and software, such as phones, applications, and SIM cards. We aim to bring digital security closer to anyone or any company looking to protect their information and privacy. We work with the most secure and recognized systems around the world, which have been tested for years and proven to be impenetrable."
+    },
+    "cards": {
+      "communicationCard": {
+        "title": "Secure communication without borders",
+        "description": "We have an extensive network of resellers and distributors in North America, South America, and Europe that bring Encriptados' solutions to those who need them, so more people can benefit from the advantages of secure communications."
+      },
+      "privacyCard": {
+        "title": "We take your privacy seriously",
+        "description": "We are always at the forefront of new technologies to offer you fully impenetrable and easy-to-use encrypted communications. We help corporations, businesses, government institutions, celebrities, lawyers, travelers, and individuals who want to improve their cybersecurity."
+      },
+      "informationCard": {
+        "title": "Your personal information will never reach third parties",
+        "description": "With Encriptados, you'll have a private network provider that ensures your security and guarantees greater privacy by preventing your information from being manipulated, shared, or sold."
+      }
+    }
+  },
+  "LoginPage": {
+    "inputErrors": {
+      "moreThanSixteenNumbers": "The account number must be exactly 16 characters long."
+    },
+    "welcomeSection": {
+      "titleGenerate": "Generate a random account with a unique access code",
+      "subtitleGenerate": "Manage everything without involving your personal data.",
+      "welcome": "Welcome",
+      "writeYourAccountPlaceholder": "Enter your account number",
+      "errorMessageWriteAccount": "The account number must be exactly 16 characters",
+      "forgotPassword": "I forgot my account number",
+      "generateAccountNumber": "Generate account number",
+      "login": "Log in",
+      "errorLogin": "Error during login",
+      "succesfullyLogin": "Login successful",
+      "errorWhileLogin": "Error during login:",
+      "withAccesCode": "with a unique access code"
+    },
+    "generatedSection": {
+      "accountNumber": {
+        "title": "Manage everything without involving your personal data.",
+        "getNumberAccountTitle": "Get an account number",
+        "generateAccountNumber": "Generate new account number",
+        "generating": "Generating...",
+        "goBack": "Go back",
+        "copy": "Copy",
+        "download": "Download",
+        "login": "Log in",
+        "copyNumberSuccesfully": "Account number copied successfully",
+        "errorMessage": "Error during login",
+        "errorMessageNumberAccount": "Error generating account number",
+        "loginSuccesfuly": "Login successful",
+        "succesfulyGenerateAccount": "Successfully generating account number"
+      }
+    }
+  },
   "HeaderMenu": {
     "languages": {
       "es": "Spanish",
@@ -476,5 +599,195 @@
       "title": "Test How Secure Your Password Is",
       "description": "Enter a password and discover its security level"
     }
+  },
+  "passwordTest": {
+    "verificationTitle": "Password Strength Checker",
+    "verificationSubtitle": "Verifications",
+    "statsSubtitle": "Statistics",
+    "passwordInputLabel": "Enter your password",
+    "passwordInputPlaceholder": "Enter your password",
+    "strengthLabel": "Strength: ",
+    "verifications": {
+      "length": "At least 12 characters",
+      "uppercase": "Contains uppercase letters",
+      "lowercase": "Contains lowercase letters",
+      "number": "Contains numbers",
+      "special": "Contains special characters",
+      "noCommon": "Not a common password"
+    },
+    "stats": {
+      "length": "Total length",
+      "uppercase": "Uppercase letters",
+      "lowercase": "Lowercase letters",
+      "numbers": "Numbers",
+      "special": "Special characters"
+    },
+    "improvementTips": "Improvement tips:",
+    "improvementMessages": {
+      "length": "Increase the length to at least 12 characters",
+      "uppercase": "Add uppercase letters",
+      "lowercase": "Add lowercase letters",
+      "number": "Include numbers",
+      "special": "Include special characters",
+      "noCommon": "Avoid using common passwords"
+    },
+    "strengthCategories": {
+      "veryWeak": "Very Weak",
+      "weak": "Weak",
+      "medium": "Medium",
+      "strong": "Strong",
+      "veryStrong": "Very Strong",
+      "excellent": "Excellent"
+    },
+    "strengthScore": "Score",
+    "commonPasswords": {
+      "123456": "123456",
+      "password": "password",
+      "qwerty": "qwerty",
+      "admin": "admin",
+      "letmein": "letmein",
+      "welcome": "welcome"
+    }
+  },
+  "phoneTest": {
+    "backToTests": "Back to the tests",
+    "startservices": "Start using some encrypted services.",
+    "solutions": "We invite you to use our encrypted solutions.",
+    "complement": "You can complement it with an additional layer of protection.",
+    "protectTop": "You have high protection for your communications and devices",
+    "finalScore": "Your score is:",
+    "correctAnswer": "Correct answer",
+    "incorrectAnswer": "Incorrect answer",
+    "title": "Test your phone's security",
+    "answer": "Question",
+    "of": "of",
+    "question1": {
+      "titleQuestion": "What type of password or unlock method do you use?",
+      "answer1": "Alphanumeric with 6 or more characters.",
+      "answer2": "PIN or pattern with 6 characters",
+      "answer3": "PIN or pattern with 8 or more characters"
+    },
+    "question2": {
+      "titleQuestion": "Is your smartphone updated with the latest operating system?",
+      "answer1": "Yes",
+      "answer2": "No"
+    },
+    "question3": {
+      "titleQuestion": "Do you have an antivirus installed?",
+      "answer1": "Yes",
+      "answer2": "No"
+    },
+    "question4": {
+      "titleQuestion": "Do you use a VPN to connect to the Internet?",
+      "answer1": "Yes",
+      "answer2": "No"
+    },
+    "question5": {
+      "titleQuestion": "Do you perform regular backups?",
+      "answer1": "Yes",
+      "answer2": "No"
+    },
+    "question6": {
+      "titleQuestion": "Do you have access passwords for sensitive apps (Bank, Wallets)?",
+      "answer1": "Yes",
+      "answer2": "No"
+    },
+    "question7": {
+      "titleQuestion": "Do you delete applications you no longer use?",
+      "answer1": "Yes",
+      "answer2": "No"
+    },
+    "question8": {
+      "titleQuestion": "Do you review the privacy permissions granted to apps?",
+      "answer1": "Yes",
+      "answer2": "No"
+    },
+    "question9": {
+      "titleQuestion": "Do you frequently connect to public WiFi networks?",
+      "answer1": "Yes",
+      "answer2": "No"
+    },
+    "question10": {
+      "titleQuestion": "Do you use a conventional or alternative mobile operator?",
+      "answer1": "Conventional",
+      "answer2": "Alternative"
+    },
+    "question11": {
+      "titleQuestion": "Do you separate personal and work communications?",
+      "answer1": "Yes",
+      "answer2": "No"
+    },
+    "question12": {
+      "titleQuestion": "Do you use conventional messaging apps to share sensitive information?",
+      "answer1": "Yes",
+      "answer2": "No"
+    },
+    "question13": {
+      "titleQuestion": "Is your phone and data plan registered in your name?",
+      "answer1": "Yes",
+      "answer2": "No"
+    }
+  },
+  "OffersPage": {
+    "exclusiveOffersTitle": "Exclusive Offers",
+    "menu": {
+      "sims": "SIMS",
+      "apps": "Applications",
+      "system": "Systems"
+    },
+    "discoverSimTitle": "Discover Encriptados.io SIM Cards",
+    "discoverSimDescription": "Designed to protect your privacy on every call. No registration required, our SIMs ensure secure and anonymous communication, ideal for those who value discretion and security.",
+    "cards": {
+      "card1": {
+        "title": "IMSI Changes",
+        "description": "Our SIM does not issue an IMSI, protecting the origin of the connection."
+      },
+      "card2": {
+        "title": "Substitute Numbers",
+        "description": "Encrypted SIMs generate a random number for each call, enhancing privacy and preventing tracking."
+      },
+      "card3": {
+        "title": "Lifetime Plans",
+        "description": "There is no time limit to use the resources of your plan."
+      },
+      "card4": {
+        "title": "Global Reach",
+        "description": "The Encriptados SIM works in over 200 countries with ease of connection and affordability."
+      },
+      "card5": {
+        "title": "Maximum Security",
+        "description": "Your geolocation data will be encrypted."
+      },
+      "card6": {
+        "title": "Multiple Devices",
+        "description": "Our international chip works on any device: IOS, Android, Windows, or BlackBerry."
+      }
+    }
+  },
+  "BlogPage": {
+    "ourBlogTitleBanner": "Our Blog",
+    "ourBlogDescriptionBanner": "Learn about encrypted security",
+    "menu": {
+      "techTitle": "Technology",
+      "ventureTitle": "Entrepreneurship",
+      "eCommerceTitle": "E-Commerce",
+      "marketingTitle": "Marketing",
+      "toolsTitle": "Tools",
+      "publicityTitle": "Advertising"
+    },
+    "downloadAppTitle": "Download the App for iOS & Android",
+    "downloadAppSubtitle": "Or scan the QR code with your camera",
+    "saveTitle": "Save up to 50% on mobile fees",
+    "saveDescription": "Register your email and receive a welcome discount",
+    "saveInputPlaceholder": "Enter your email",
+    "subscribe": "Subscribe",
+    "optimizeBanner": {
+      "title": "Optimize customer experience in your online store with advanced technology"
+    },
+    "writeBy": "Written by:",
+    "share": "Share:",
+    "talkWithSupport": "Chat now with an Encriptados advisor directly on Telegram",
+    "goTelegram": "Go to Telegram",
+    "articleTitle": "Related Articles"
   }
 }

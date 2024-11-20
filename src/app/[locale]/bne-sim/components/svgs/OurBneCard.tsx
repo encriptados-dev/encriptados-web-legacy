@@ -1,15 +1,20 @@
-import Image from 'next/image';
-import { StaticImageData } from 'next/image';
-import React from 'react';
+import Image from "next/image";
+import { StaticImageData } from "next/image";
+import React from "react";
 
 interface CardProps {
   title: string;
   description: string;
   imageSrc: string | StaticImageData;
-  imageAlt: string; 
+  imageAlt: string;
 }
 
-const OurBneCard: React.FC<CardProps> = ({ title, description, imageSrc, imageAlt }) => {
+const OurBneCard: React.FC<CardProps> = ({
+  title,
+  description,
+  imageSrc,
+  imageAlt,
+}) => {
   return (
     <div className="w-full bg-white rounded-2xl shadow-lg px-6 pt-6 flex flex-col justify-between">
       <div className="mb-4">
@@ -20,8 +25,9 @@ const OurBneCard: React.FC<CardProps> = ({ title, description, imageSrc, imageAl
         <Image
           src={imageSrc}
           alt={imageAlt}
-          width={500} height={500} 
-          className=""          
+          width={500}
+          height={500}
+          className=""
         />
       </div>
     </div>

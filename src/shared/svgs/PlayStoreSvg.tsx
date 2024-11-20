@@ -1,5 +1,5 @@
 import * as React from "react";
-const PlayStoreSvg: React.FC<React.SVGProps<SVGSVGElement>> = (props) => (
+const PlayStoreSvg: React.FC<React.SVGProps<SVGSVGElement>> = () => (
   <svg
     width="187"
     height="55"

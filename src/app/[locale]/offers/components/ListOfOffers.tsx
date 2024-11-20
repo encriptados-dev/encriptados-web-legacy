@@ -3,7 +3,6 @@
 import React from "react";
 
 import FiltersOffers from "./FiltersOffers";
-import { useFormContext } from "react-hook-form";
 
 import CharacteristicDatasSvg from "/public/images/encrypted-sim/icons/characteristic-data.svg";
 import CharacteristicSpeedSvg from "/public/images/encrypted-sim/icons/characteristic-speed.svg";
@@ -23,8 +22,6 @@ const ListOfOffers = () => {
   const o = useTranslations("OffersPage");
 
   const t = useTranslations("EncryptedSimPage");
-
-  const { watch } = useFormContext();
 
   const commonFeatures = [
     {

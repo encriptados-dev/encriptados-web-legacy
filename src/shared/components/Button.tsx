@@ -58,6 +58,7 @@ type ButtonProps = {
   iconPosition?: "left" | "right";
   onClick?: () => void;
   type?: "button" | "submit" | "reset";
+  disabled?: boolean; // Agregado para habilitar la propiedad disabled
 };
 
 const Button: React.FC<ButtonProps> = ({
@@ -70,12 +71,14 @@ const Button: React.FC<ButtonProps> = ({
   iconPosition = "left",
   onClick,
   type = "button",
+  disabled = false, // Valor por defecto de disabled
 }) => {
   return (
     <button
       type={type}
       className={`${buttonStyles({ intent, size, rounded })} ${customStyles}`}
       onClick={onClick}
+      disabled={disabled} // Se pasa el disabled al botón
     >
       {icon && iconPosition === "left" && <span className="mr-2">{icon}</span>}
       {children}

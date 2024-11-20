@@ -1,6 +1,6 @@
 "use client";
 
-import { useParams, useRouter, usePathname } from "next/navigation";
+import { useRouter, usePathname } from "next/navigation";
 
 export type LocaleLanguages = "es" | "en" | "pt" | "it" | "fr";
 

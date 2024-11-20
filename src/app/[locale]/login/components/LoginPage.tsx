@@ -12,7 +12,7 @@ const LoginPage = () => {
     accountnumber: ReactNode;
   };
 
-  const { getValues } = useFormContext();
+  const { watch } = useFormContext();
 
   const allSteps: LoginSteps = {
     welcome: <Welcome />,
@@ -21,7 +21,7 @@ const LoginPage = () => {
 
   return (
     <div className="bg-cyan-black-gradient flex flex-col md:flex-row items-center justify-center w-screen h-full md:h-screen p-4">
-      {allSteps[getValues("currentStep") as keyof LoginSteps]}
+      {allSteps[watch("currentStep") as keyof LoginSteps]}
     </div>
   );
 };

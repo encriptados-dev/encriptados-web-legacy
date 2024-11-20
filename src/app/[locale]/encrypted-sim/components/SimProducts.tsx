@@ -248,7 +248,6 @@ const SimProductsPage: React.FC = () => {
             features={card.features}
           />
           <CardSim
-            fullWidth
             productImage={card.productImage}
             features={card.featuresCardSim}
             priceRange={card.priceRange}
