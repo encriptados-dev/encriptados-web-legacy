@@ -105,7 +105,7 @@ const ListOfOffers = () => {
 
   return (
     <div className="flex flex-col justify-center items-center mx-auto text-center">
-      <h1 className="text-white font-bold mb-4 text-2xl">
+      <h1 className="text-white font-bold mb-4 text-xl sm:text-2xl md:text-3xl ">
         {o("exclusiveOffersTitle")}
       </h1>
       <div className="w-full sm:w-1/2 md:w-5/12">
