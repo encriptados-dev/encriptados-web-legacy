@@ -438,8 +438,7 @@
     },
     "ourProducts": {
       "title": "Our products",
-
-      "subtitle": "Discover our Encrypted Products",
+      "subtitle": "Discover our products",      
       "seeProducts": "See products",
       "cards": {
         "card1": "Encrypted SIMs",
@@ -447,7 +446,7 @@
         "card3": "Security systems"
       }
     },
-    "bannerJoinUs": "Join us now as an ally and generate income with our products",
+    "bannerJoinUs": "Join us now as an ally and generate income with our products",    
     "modal": {
       "becomeDistributor": "Become a distributor",
       "descriptionDistributor": "Sell the best encrypted communication products",
@@ -468,178 +467,14 @@
       "securityTestTitle": "Security Test",
       "securityTestDescription": "Discover your security level with these tools"
     },
-    "initTest": "Start test",
+    "initTest": "Start Test",
     "tryOurPhoneSecure": {
-      "title": "Test how secure your phone is",
+      "title": "Test How Secure Your Phone Is",
       "description": "Strengthen your digital security like never before."
     },
     "tryPassowordSecure": {
-      "title": "Test how secure your password is",
+      "title": "Test How Secure Your Password Is",
       "description": "Enter a password and discover its security level"
-    }
-  },
-  "passwordTest": {
-    "verificationTitle": "Password Strength Checker",
-    "verificationSubtitle": "Verifications",
-    "statsSubtitle": "Statistics",
-    "passwordInputLabel": "Enter your password",
-    "passwordInputPlaceholder": "Enter your password",
-    "strengthLabel": "Strength: ",
-    "verifications": {
-      "length": "At least 12 characters",
-      "uppercase": "Contains uppercase letters",
-      "lowercase": "Contains lowercase letters",
-      "number": "Contains numbers",
-      "special": "Contains special characters",
-      "noCommon": "Not a common password"
-    },
-    "stats": {
-      "length": "Total length",
-      "uppercase": "Uppercase letters",
-      "lowercase": "Lowercase letters",
-      "numbers": "Numbers",
-      "special": "Special characters"
-    },
-    "improvementTips": "Improvement tips:",
-    "improvementMessages": {
-      "length": "Increase the length to at least 12 characters",
-      "uppercase": "Add uppercase letters",
-      "lowercase": "Add lowercase letters",
-      "number": "Include numbers",
-      "special": "Include special characters",
-      "noCommon": "Avoid using common passwords"
-    },
-    "strengthCategories": {
-      "veryWeak": "Very Weak",
-      "weak": "Weak",
-      "medium": "Medium",
-      "strong": "Strong",
-      "veryStrong": "Very Strong",
-      "excellent": "Excellent"
-    },
-    "strengthScore": "Score",
-    "commonPasswords": {
-      "123456": "123456",
-      "password": "password",
-      "qwerty": "qwerty",
-      "admin": "admin",
-      "letmein": "letmein",
-      "welcome": "welcome"
-    }
-  },
-  "phoneTest": {
-    "backToTests": "Back to the tests",
-    "startservices": "Start using some encrypted services.",
-    "solutions": "We invite you to use our encrypted solutions.",
-    "complement": "You can complement it with an additional layer of protection.",
-    "protectTop": "You have high protection for your communications and devices",
-    "finalScore": "Your score is:",
-    "correctAnswer": "Correct answer",
-    "incorrectAnswer": "Incorrect answer",
-    "title": "Test your phone's security",
-    "answer": "Question",
-    "of": "of",
-    "question1": {
-      "titleQuestion": "What type of password or unlock method do you use?",
-      "answer1": "Alphanumeric with 6 or more characters.",
-      "answer2": "PIN or pattern with 6 characters",
-      "answer3": "PIN or pattern with 8 or more characters"
-    },
-    "question2": {
-      "titleQuestion": "Is your smartphone updated with the latest operating system?",
-      "answer1": "Yes",
-      "answer2": "No"
-    },
-    "question3": {
-      "titleQuestion": "Do you have an antivirus installed?",
-      "answer1": "Yes",
-      "answer2": "No"
-    },
-    "question4": {
-      "titleQuestion": "Do you use a VPN to connect to the Internet?",
-      "answer1": "Yes",
-      "answer2": "No"
-    },
-    "question5": {
-      "titleQuestion": "Do you perform regular backups?",
-      "answer1": "Yes",
-      "answer2": "No"
-    },
-    "question6": {
-      "titleQuestion": "Do you have access passwords for sensitive apps (Bank, Wallets)?",
-      "answer1": "Yes",
-      "answer2": "No"
-    },
-    "question7": {
-      "titleQuestion": "Do you delete applications you no longer use?",
-      "answer1": "Yes",
-      "answer2": "No"
-    },
-    "question8": {
-      "titleQuestion": "Do you review the privacy permissions granted to apps?",
-      "answer1": "Yes",
-      "answer2": "No"
-    },
-    "question9": {
-      "titleQuestion": "Do you frequently connect to public WiFi networks?",
-      "answer1": "Yes",
-      "answer2": "No"
-    },
-    "question10": {
-      "titleQuestion": "Do you use a conventional or alternative mobile operator?",
-      "answer1": "Conventional",
-      "answer2": "Alternative"
-    },
-    "question11": {
-      "titleQuestion": "Do you separate personal and work communications?",
-      "answer1": "Yes",
-      "answer2": "No"
-    },
-    "question12": {
-      "titleQuestion": "Do you use conventional messaging apps to share sensitive information?",
-      "answer1": "Yes",
-      "answer2": "No"
-    },
-    "question13": {
-      "titleQuestion": "Is your phone and data plan registered in your name?",
-      "answer1": "Yes",
-      "answer2": "No"
-    }
-  },
-  "OffersPage": {
-    "exclusiveOffersTitle": "Exclusive Offers",
-    "menu": {
-      "sims": "SIMS",
-      "apps": "Applications",
-      "system": "Systems"
-    },
-    "discoverSimTitle": "Discover Encriptados.io SIM Cards",
-    "discoverSimDescription": "Designed to protect your privacy on every call. No registration required, our SIMs ensure secure and anonymous communication, ideal for those who value discretion and security.",
-    "cards": {
-      "card1": {
-        "title": "IMSI Changes",
-        "description": "Our SIM does not issue an IMSI, protecting the origin of the connection."
-      },
-      "card2": {
-        "title": "Substitute Numbers",
-        "description": "Encrypted SIMs generate a random number for each call, enhancing privacy and preventing tracking."
-      },
-      "card3": {
-        "title": "Lifetime Plans",
-        "description": "There is no time limit to use the resources of your plan."
-      },
-      "card4": {
-        "title": "Global Reach",
-        "description": "The Encriptados SIM works in over 200 countries with ease of connection and affordability."
-      },
-      "card5": {
-        "title": "Maximum Security",
-        "description": "Your geolocation data will be encrypted."
-      },
-      "card6": {
-        "title": "Multiple Devices",
-        "description": "Our international chip works on any device: IOS, Android, Windows, or BlackBerry."
-      }
     }
   }
 }
