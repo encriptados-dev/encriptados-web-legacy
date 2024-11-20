@@ -16,7 +16,7 @@ const BannerBlog = () => {
         objectFit="cover"
         className="absolute inset-0 z-0"
       />
-      <div className="absolute inset-0 bg-black opacity-50 z-10"></div>
+      <div className="absolute inset-0 bg-black opacity-80 z-10"></div>
 
       <div>
         <h1 className="relative z-20 text-white text-3xl text-center  ">
