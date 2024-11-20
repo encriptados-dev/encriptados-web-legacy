@@ -1,4 +1,173 @@
 {
+  "WhereToFindUs": {
+    "banner": {
+      "titleEasyToBuyLicense": "Nunca foi tão fácil comprar sua licença criptografada.",
+      "moreThanTitle": "Mais de",
+      "pointsOfPay": "pontos de pagamento",
+      "forYou": "para você"
+    },
+    "whereCards": {
+      "title": "Onde quer que você esteja, haverá um caixa eletrônico cripto pronto para comprar produtos de",
+      "titleEncrypted": "Criptografados",
+      "paymentPoint": {
+        "title": "Pontos de pagamento",
+        "description": "Lugares onde você pode comprar suas licenças cripto rapidamente"
+      },
+      "countriesAvailable": {
+        "title": "Países disponíveis",
+        "description": "A maior cobertura disponível para você"
+      }
+    },
+    "findATM": {
+      "title": "Encontre um caixa eletrônico cripto perto de você",
+      "results": "Resultados",
+      "showPoints": "Ver locais"
+    },
+    "howToBuy": {
+      "howToBuyTitle": "Como comprar",
+      "orderTitle": "Faça seu pedido",
+      "depositATMTitle": "Deposite via caixa eletrônico",
+      "reciveYourPurchase": "Receba sua compra"
+    }
+  },
+  "AmbassadorsPage": {
+    "banner": {
+      "joinUsTitle": "Junte-se ao nosso",
+      "programTitle": "programa",
+      "ofTitle": "de",
+      "ambassadorsTitle": "embaixadores",
+      "showBenefits": "Ver Benefícios"
+    },
+    "partnerCards": {
+      "title": "Que tipo de parceiro você gostaria de ser?",
+      "promotor": {
+        "promotorTitle": "Promotor",
+        "encryptedTag": "Criptografado",
+        "description": "Você é um blogueiro, Youtuber, Influenciador ou tem voz no mundo da cibersegurança e comunicações seguras? Torne-se um aliado do Criptografado e ganhe grandes recompensas por promover nossos produtos e serviços!",
+        "benefits": "Benefícios:",
+        "benefit1": "Comissões atraentes em dinheiro ou produtos",
+        "benefit2": "Relação direta com Criptografado",
+        "benefit3": "Acesso exclusivo a lançamentos, notícias e conteúdo do Criptografado",
+        "sendRequest": "Enviar solicitação de Promotor"
+      },
+      "distributor": {
+        "distributorTitle": "Distribuidor",
+        "encryptedTag": "Criptografado",
+        "description": "Se você possui uma loja ou negócio, ou tem contatos que precisam de celulares, aplicativos, cartões SIM ou equipamentos criptografados, entre em contato conosco! Você pode se tornar um distribuidor de nossos produtos.",
+        "benefits": "Benefícios:",
+        "benefit1": "Preços especiais em todos os nossos produtos",
+        "benefit2": "Acesso direto a suporte e treinamento",
+        "benefit3": "Materiais promocionais, publicidade e conteúdo digital",
+        "sendRequest": "Enviar solicitação de Distribuidor"
+      }
+    }
+  },
+  "AboutUsPage": {
+    "banner": {
+      "title": "Sobre nós",
+      "description": "Protegendo sua privacidade em cada conexão."
+    },
+    "aboutUs": {
+      "title": "Quem somos",
+      "description": "Somos especialistas em equipamentos e softwares de comunicação segura, como celulares, aplicativos e cartões SIM. Nosso objetivo é aproximar a segurança digital de qualquer pessoa ou empresa que deseje proteger suas informações e privacidade. Trabalhamos com os sistemas mais seguros e reconhecidos no mundo, que foram testados por anos e provaram ser impenetráveis."
+    },
+    "cards": {
+      "communicationCard": {
+        "title": "Comunicação segura e sem fronteiras",
+        "description": "Contamos com uma ampla rede de revendedores e distribuidores na América do Norte, América do Sul e Europa, que levam as soluções da Encriptados a quem precisa, para que mais pessoas possam se beneficiar das vantagens das comunicações seguras."
+      },
+      "privacyCard": {
+        "title": "Levamos sua privacidade a sério",
+        "description": "Estamos sempre na vanguarda das novas tecnologias para oferecer comunicações criptografadas totalmente impenetráveis e fáceis de usar. Ajudamos corporações, empresas, instituições governamentais, celebridades, advogados, viajantes e pessoas que desejam melhorar sua cibersegurança."
+      },
+      "informationCard": {
+        "title": "Suas informações pessoais nunca chegarão a terceiros",
+        "description": "Com a Encriptados, você terá um provedor de rede privada que garantirá sua segurança e maior privacidade, evitando que suas informações sejam manipuladas, compartilhadas ou vendidas."
+      }
+    }
+  },
+  "LoginPage": {
+    "inputErrors": {
+      "moreThanSixteenNumbers": "O número da conta deve ter exatamente 16 caracteres."
+    },
+    "welcomeSection": {
+      "titleGenerate": "Gere uma conta aleatória com um código de acesso único",
+      "subtitleGenerate": "Gerencie tudo sem envolver seus dados pessoais.",
+      "welcome": "Bem-vindo",
+      "writeYourAccountPlaceholder": "Digite seu número de conta",
+      "errorMessageWriteAccount": "O número da conta deve ter exatamente 16 caracteres",
+      "forgotPassword": "Esqueci meu número de conta",
+      "generateAccountNumber": "Gerar número de conta",
+      "login": "Entrar",
+      "errorLogin": "Erro durante o login",
+      "succesfullyLogin": "Login bem-sucedido",
+      "errorWhileLogin": "Erro durante o login:",
+      "withAccesCode": "com um código único de acesso"
+    },
+    "generatedSection": {
+      "accountNumber": {
+        "title": "Gerencie tudo sem envolver seus dados pessoais.",
+        "getNumberAccountTitle": "Obtenha um número de conta",
+        "generateAccountNumber": "Gerar novo número de conta",
+        "generating": "Gerando...",
+        "goBack": "Voltar",
+        "copy": "Copiar",
+        "download": "Baixar",
+        "login": "Entrar",
+        "copyNumberSuccesfully": "Número da conta copiado com sucesso",
+        "errorMessage": "Erro durante o login",
+        "errorMessageNumberAccount": "Erro ao gerar número de conta",
+        "loginSuccesfuly": "Login bem-sucedido",
+        "succesfulyGenerateAccount": "Gerando número de conta com sucesso"
+      }
+    }
+  },
+  "HeaderMenu": {
+    "languages": {
+      "es": "Espanhol",
+      "pt": "Português",
+      "it": "Italiano",
+      "fr": "Francês",
+      "en": "Inglês"
+    },
+    "menuItems": {
+      "simShop": "Loja de SIMS",
+      "products": {
+        "title": "Produtos",
+        "sims": "SIMS",
+        "aplications": "Aplicativos",
+        "phones": "Celulares"
+      },
+      "others": {
+        "title": "Outros",
+        "distributors": "Distribuidores",
+        "blog": "Blog",
+        "securityTest": "Teste de segurança",
+        "offers": "Ofertas"
+      },
+      "aboutUs": "Sobre nós"
+    }
+  },
+  "FooterMenu": {
+    "downloadApp": "Baixe o aplicativo para o seu dispositivo móvel aqui:",
+    "simEsims": {
+      "encryptedSim": "SIM Criptografada",
+      "physicSim": "SIM Física",
+      "globalSim": "SIM Global"
+    },
+    "encryptedSims": {
+      "title": "Aplicativos Criptografados"
+    },
+    "phoneEncrypted": {
+      "title": "Telefones Criptografados"
+    },
+    "securePay": {
+      "title": "Pagamento Seguro"
+    },
+    "copyRight": "Copyright © 2024 Todos os direitos reservados.",
+    "termsAndConditions": "Termos e Condições",
+    "dataProcesing": "Política e tratamento de dados"
+  },
   "DeliveryPage": {
     "unnecessaryWaits": "Evite esperas desnecessárias",
     "fastDeliveryBannerTitle": "Com a Entrega Rápida, receba seu celular criptografado no menor tempo possível",
@@ -146,78 +315,476 @@
         ],
         "priceRange": "10 USD",
         "headerTitle": "SIM Físico"
-      }},
+      }
+    },
 
-      "improveYourSecurity": {
-        "titleImproveYourSecurity": "Melhore sua segurança com esses recursos",
-        "untraceable": {
-          "title": "Irreconhecível",
-          "description": "Comunique-se de qualquer lugar sendo totalmente anônimo e irreconhecível"
-        },
-        "anonymity": {
-          "title": "Anonimato",
-          "description": "As informações de faturamento e envio não estão vinculadas ao chip, portanto, são totalmente anônimas"
-        },
-        "changeMSI": {
-          "title": "Mudança de IMSI",
-          "description": "A mudança de IMSI substitui a identidade do seu SIM por uma nova. É o equivalente a trocar o SIM por um novo"
-        },
-        "subtituteNumber": {
-          "title": "Número substituto",
-          "description": "Gere um número aleatório para cada chamada que aparecerá no identificador do receptor"
-        },
-        "voiceFilter": {
-          "title": "Filtros de voz",
-          "description": "Utilize 7 filtros de voz diferentes para maior anonimato em suas chamadas"
-        },
-
-        "callback": {
-          "title": "Retorno de chamada",
-          "description": "Gere um número aleatório para cada chamada que aparecerá no identificador do receptor"
-        },
-        "plans": {
-          "title": "Planos sem data de corte",
-          "description": "Sem contratos nem datas de corte. Aproveite a flexibilidade de planos sem datas de vencimento e com controle total sobre seus dados"
-        },
-        "geolocalization": {
-          "title": "Geolocalização criptografada",
-          "description": "Proteja sua localização em todos os momentos com criptografia avançada que garante que você não poderá ser rastreado ou localizado"
-        },
-        "globalCoverage": {
-          "title": "Cobertura global",
-          "description": " Conecte-se de qualquer lugar do mundo com cobertura total e sem comprometer sua segurança"
-        },
-        "maskMSI": {
-          "title": "Mascarar o IMSI",
-          "description": "Oculte seu IMSI para evitar interceptações ou antenas falsas, como os IMSI Catchers"
-        },
-
-        "providerPrivateRed": {
-          "title": "Provedor de rede privada",
-          "description": "Somos uma MVNO privada com total discrição no uso de seus dados pessoais"
-        },
-        "withOutNumber": {
-          "title": "Sem número de telefone",
-          "description": "Para maior segurança e anonimato, este SIM não possui número de telefone"
-        }
+    "improveYourSecurity": {
+      "titleImproveYourSecurity": "Melhore sua segurança com esses recursos",
+      "untraceable": {
+        "title": "Irreconhecível",
+        "description": "Comunique-se de qualquer lugar sendo totalmente anônimo e irreconhecível"
       },
-      "ourObjetiveTitle": "Nosso objetivo é oferecer total proteção a você",
-      "ourObjetiveDescription": "Ter o cartão SIM Internacional Criptografado é ter um provedor de rede privada que se encarregará de garantir sua segurança e evitar que suas informações sejam manipuladas, compartilhadas ou vendidas",
-      "comunicationTitle": "Comunique-se de qualquer lugar do mundo com a tranquilidade de estar seguro e anônimo",
-      "secureAndEasyToUse": "Seguro e fácil de usar!",
-      "secureAndEasyToUseDescription": "Ela é ativada instantaneamente online e garante total privacidade e proteção para seus dados. Você pode recarregá-la facilmente de onde estiver",
-      "payOnlyForWhatYouUseTitle": "Pague apenas pelo que você usa",
-      "payOnlyForWhatYouUseDescription": "Enquanto você estiver usando o Cartão SIM Criptografado, seu saldo nunca expira, independentemente do tempo que você levar para consumi-lo",
-      "payOnlySecondCard": "Seu plano não tem data de corte",
-      "whyCallWithEncryptedSIM": {
-        "title": "Por que ligar com o SIM Criptografado?",
-        "card1": "Não armazenamos histórico de chamadas",
-        "card2": "Anonimato nas chamadas por meio de ferramentas: substituição de ID, Callback e Filtro de voz",
-        "card3": "O SIM gera um número substituto aleatório em cada chamada para mais anonimato"
+      "anonymity": {
+        "title": "Anonimato",
+        "description": "As informações de faturamento e envio não estão vinculadas ao chip, portanto, são totalmente anônimas"
       },
-      "coverageMoreThan200CountriesTitle": "Cobertura em mais de 200 países",
-      "coverageMoreThan200CountriesDescription": "Comunicação segura e sem fronteiras",
-      "downloadAppTitle": "Baixe o aplicativo para iOS e Android",
-      "downloadAppDescription": "Baixe o aplicativo para iOS e Android"
+      "changeMSI": {
+        "title": "Mudança de IMSI",
+        "description": "A mudança de IMSI substitui a identidade do seu SIM por uma nova. É o equivalente a trocar o SIM por um novo"
+      },
+      "subtituteNumber": {
+        "title": "Número substituto",
+        "description": "Gere um número aleatório para cada chamada que aparecerá no identificador do receptor"
+      },
+      "voiceFilter": {
+        "title": "Filtros de voz",
+        "description": "Utilize 7 filtros de voz diferentes para maior anonimato em suas chamadas"
+      },
+
+      "callback": {
+        "title": "Retorno de chamada",
+        "description": "Gere um número aleatório para cada chamada que aparecerá no identificador do receptor"
+      },
+      "plans": {
+        "title": "Planos sem data de corte",
+        "description": "Sem contratos nem datas de corte. Aproveite a flexibilidade de planos sem datas de vencimento e com controle total sobre seus dados"
+      },
+      "geolocalization": {
+        "title": "Geolocalização criptografada",
+        "description": "Proteja sua localização em todos os momentos com criptografia avançada que garante que você não poderá ser rastreado ou localizado"
+      },
+      "globalCoverage": {
+        "title": "Cobertura global",
+        "description": " Conecte-se de qualquer lugar do mundo com cobertura total e sem comprometer sua segurança"
+      },
+      "maskMSI": {
+        "title": "Mascarar o IMSI",
+        "description": "Oculte seu IMSI para evitar interceptações ou antenas falsas, como os IMSI Catchers"
+      },
+
+      "providerPrivateRed": {
+        "title": "Provedor de rede privada",
+        "description": "Somos uma MVNO privada com total discrição no uso de seus dados pessoais"
+      },
+      "withOutNumber": {
+        "title": "Sem número de telefone",
+        "description": "Para maior segurança e anonimato, este SIM não possui número de telefone"
+      }
+    },
+    "ourObjetiveTitle": "Nosso objetivo é oferecer total proteção a você",
+    "ourObjetiveDescription": "Ter o cartão SIM Internacional Criptografado é ter um provedor de rede privada que se encarregará de garantir sua segurança e evitar que suas informações sejam manipuladas, compartilhadas ou vendidas",
+    "comunicationTitle": "Comunique-se de qualquer lugar do mundo com a tranquilidade de estar seguro e anônimo",
+    "secureAndEasyToUse": "Seguro e fácil de usar!",
+    "secureAndEasyToUseDescription": "Ela é ativada instantaneamente online e garante total privacidade e proteção para seus dados. Você pode recarregá-la facilmente de onde estiver",
+    "payOnlyForWhatYouUseTitle": "Pague apenas pelo que você usa",
+    "payOnlyForWhatYouUseDescription": "Enquanto você estiver usando o Cartão SIM Criptografado, seu saldo nunca expira, independentemente do tempo que você levar para consumi-lo",
+    "payOnlySecondCard": "Seu plano não tem data de corte",
+    "whyCallWithEncryptedSIM": {
+      "title": "Por que ligar com o SIM Criptografado?",
+      "card1": "Não armazenamos histórico de chamadas",
+      "card2": "Anonimato nas chamadas por meio de ferramentas: substituição de ID, Callback e Filtro de voz",
+      "card3": "O SIM gera um número substituto aleatório em cada chamada para mais anonimato"
+    },
+    "coverageMoreThan200CountriesTitle": "Cobertura em mais de 200 países",
+    "coverageMoreThan200CountriesDescription": "Comunicação segura e sem fronteiras",
+    "downloadAppTitle": "Baixe o aplicativo para iOS e Android",
+    "downloadAppDescription": "Baixe o aplicativo para iOS e Android"
+  },
+  "MayaData": {
+    "anonymSim": "eSIM anônima",
+    "monthPackage": "com pacotes mensais e dados ilimitados",
+    "viewAllSims": "ver todas as SIMs",
+    "payMore": "Pague menos, consuma mais",
+    "whereUseSim": "Onde você vai usar seu SIM?",
+    "connectInternet": "Conecte-se à Internet com seu SIM em mais de 200 países. Aproveite a internet segura e com total privacidade",
+    "allBenefits": {
+      "title": "Todos esses benefícios para você",
+      "connectionTitle": "Conexões 5G LTE",
+      "connectionDescription": "Conecte-se a redes móveis de alta velocidade como 5G e LTE, garantindo uma conexão rápida e eficiente",
+      "avoidHighRoamingTitle": "Evite altos custos de roaming",
+      "avoidHighRoamingDescription": "Evite altos gastos com serviços de itinerância e controle seus dados",
+      "connectInstanlyTitle": "Conecte-se instantaneamente",
+      "connectInstanlyDescription": "Escolha sua região, selecione o plano que melhor se adequa às suas necessidades e conecte-se instantaneamente",
+      "globalReachTitle": "Alcance Global",
+      "globalReachDescription": "Comunique-se sem complicações e de forma anônima em mais de 200 países, com facilidade de conexão e economia",
+      "totalAnonymityTitle": "Anonimato total",
+      "totalAnonymityDescription": "Comunique-se com total anonimato de 200 países ao redor do mundo",
+      "unlimitedDataTitle": "Dados ilimitados",
+      "unlimitedDataDescription": "Encontre planos ilimitados para que os gigabytes não sejam um problema. Mantenha-se conectado"
+    },
+
+    "howItWorks": {
+      "title": "Assim funciona",
+      "chooseRegionTitle": "Escolha a região onde você deseja usar seu",
+      "chooseRegionSpecialWord": "eSIM",
+      "chooseRegionDescription": "Escolha um de nossos destinos ou regiões onde você pode usar nosso eSIM",
+      "choosePlanTitle": "Selecione seu",
+      "choosePlanSpecialWord": "plano de dados",
+      "choosePlanTitle2": "e realize a compra",
+      "choosePlanDescription": "Escolha o plano que melhor se adapta às suas necessidades; temos planos de um mês, três meses ou seis meses",
+      "activateSimTitle": "Ative seu eSIM e aproveite seus",
+      "activateSimSpecialWord": "dados móveis",
+      "activateSimDescription": "Ative seu eSIM de forma fácil e rápida e comece a desfrutar de comunicações globais com anonimato"
     }
+  },
+  "BneSim": {
+    "headline": "Conecte-se em qualquer",
+    "headline1": "lugar do mundo",
+    "headline2": "com total anonimato",
+    "subheadline": "Seus dados não expiram, não importa o tempo",
+    "subheadline2": "que você leva para usá-los",
+    "whyChooseSim": "Por que escolher nosso SIM?",
+    "anonTitle": "Sem registro de dados, anonimato garantido!",
+    "anonDescription": "Os dados que não são armazenados não podem ser vazados ou revelados. Faz parte da nossa filosofia não coletar informações pessoais nem registros de nossos clientes.",
+    "OurSimCard": {
+      "title": "Sem tarifas de roaming",
+      "description": "Nosso SIM permite que você se conecte a uma operadora local e evite altas tarifas de roaming",
+      "title2": "Conecte-se com alguns cliques",
+      "description2": "Ative seu SIM de forma fácil, seus dados estarão prontos para uso em mais de 200 países",
+      "title3": "Planos flexíveis",
+      "description3": "Escolha entre vários planos de dados de acordo com suas necessidades e demore o tempo que desejar para usar seus recursos",
+      "title4": "Ativação instantânea",
+      "description4": "Compre seu SIM de qualquer lugar do mundo e ative-o instantaneamente de forma fácil e com total anonimato"
+    },
+    "PromoBanner": {
+      "title": "Sem datas de corte ou planos que expiram!",
+      "description": "Leve o tempo que precisar para usar os recursos do seu SIM ou eSIM. Sem datas de corte ou vencimento dos dados."
+    },
+    "BannerAnonymous": {
+      "title": "Sua compra é anônima",
+      "description": "Tenha total anonimato ao comprar seu SIM ou eSIM, não armazenamos nenhum rastro ou informação pessoal"
+    },
+    "OurBneCard": {
+      "title": "Escolha um plano de dados para o seu SIM ou eSIM",
+      "description": "Selecione sua região e escolha o plano que melhor atenda às suas necessidades e orçamento",
+      "title2": "Compre, carregue e conecte-se de qualquer lugar",
+      "description2": "Compre seu SIM, carregue seu plano e ative suas comunicações anônimas em qualquer lugar do mundo",
+      "title3": "Aproveite seu plano de dados sem datas de corte",
+      "description3": "Seu plano será ativado instantaneamente. Demore o tempo que quiser para usá-lo."
+    },
+    "FaqsBne": {
+      "title": "Perguntas Frequentes",
+      "faqs": {
+        "whatIsBne": {
+          "title": "O que é o BNE SIM?",
+          "content": "O BNE SIM é um chip internacional que permite que você se conecte à internet em mais de 200 países com total anonimato e sem datas de corte"
+        },
+        "howToActivate": {
+          "title": "Como ativo meu BNE SIM?",
+          "content": "Ative seu SIM de maneira fácil e rápida. Basta inseri-lo no seu dispositivo e seguir as instruções de ativação"
+        },
+        "howToBuy": {
+          "title": "Como compro um BNE SIM?",
+          "content": "Compre seu SIM em nosso site, escolha seu plano de dados e receba-o em sua casa ou em qualquer parte do mundo"
+        }
+      }
+    },
+    "QRBanner": {
+      "title": "Baixe o App para iOS e Android e compre seu SIM agora",
+      "description": "Ou escaneie o código QR com sua câmera"
+    }
+  },
+  "DashboardPage": {
+    "menuDashboard": {
+      "header": {
+        "supportChat": "Chat de soporte",
+        "myAccount": "Minha Conta",
+        "logOut": "Sair da conta",
+        "limitedAccount": "CONTA DE TEMPO ILIMITADO"
+      },
+      "items": {
+        "mySimConsume": "Meu consumo de dados SIM",
+        "myActivities": "Minhas atividades",
+        "store": "Loja",
+        "myPurchases": "Minhas compras",
+        "accountAdmin": "Gerenciar contas",
+        "userConfig": "Configurações"
+      }
+    }
+  },
+  "OurProductsPage": {
+    "banner": {
+      "title": "Gerencie múltiplos SIMs com nosso",
+      "subtitle": "Aplicativo Criptografado"
+    },
+    "filterProducts": {
+      "title": "Nossos produtos",
+      "categoryTitle": "Categoria",
+      "sim": "Sim",
+      "apps": "Aplicativos",
+      "software": "Software",
+      "osTitle": "Sistemas operacionais",
+      "licenseTitle": "Duração da licença",
+      "selectPlacerholder": "Selecionar",
+      "searchPlaceholder": "Buscar"
+    }
+  },
+  "DistributorsPage": {
+    "banner": {
+      "becomeOurAllyBannerTitle": "Torne-se nosso aliado comercial e venda nossos produtos",
+      "becomeOurAllyBannerDescription": "Torne-se um distribuidor dos nossos produtos: eSIMs, aplicativos e telefones criptografados e obtenha lucros",
+      "sendRequest": "Enviar solicitação"
+    },
+    "toBeADistributor": {
+      "title": "O que significa ser um distribuidor da Encriptados?",
+      "description": "Se você é uma pessoa ou organização com um público interessado em ferramentas de comunicação criptografada, pode se associar a nós para distribuir nossos produtos"
+    },
+    "knowsBenefits": {
+      "title": "Conheça os benefícios",
+      "subtitle": "Por que sistemas de comunicação criptografada?"
+    },
+    "benefitsCards": {
+      "card1": {
+        "title": "Proteção contra Ameaças Avançadas",
+        "description": "As ameaças digitais evoluem a cada dia. Nossa tecnologia de criptografia mantém seus dados seguros contra ataques cibernéticos cada vez mais sofisticados."
+      },
+      "card2": {
+        "title": "Segurança para Todos",
+        "description": "De pessoas a governos, todos estamos em risco. Com nossa criptografia, protegemos as informações de indivíduos, empresas e organizações contra ataques constantes."
+      },
+      "card3": {
+        "title": "Redução de Custos em Cibersegurança",
+        "description": "As ameaças digitais evoluem a cada dia. Nossa tecnologia de criptografia mantém seus dados seguros contra ataques cibernéticos cada vez mais sofisticados."
+      },
+      "card4": {
+        "title": "Confiança em Cada Interação",
+        "description": "Proteja suas transações e comunicações com uma criptografia que protege os dados de ponta a ponta, oferecendo a tranquilidade de um ambiente seguro."
+      }
+    },
+    "beEncryptedDistributor": {
+      "title": "O que implica ser um distribuidor da Encriptados?",
+      "description": "Ser um distribuidor da Encriptados requer muita cautela, discrição e responsabilidade no uso dos dados, a fim de fornecer a maior segurança possível aos nossos usuários."
+    },
+    "ourProducts": {
+      "title": "Nossos produtos",
+      "subtitle": "Conheça nossos Produtos Criptografados",
+
+      "seeProducts": "Ver produtos",
+      "cards": {
+        "card1": "SIMs Criptografadas",
+        "card2": "Aplicativos de mensagens seguras",
+        "card3": "Sistemas de segurança"
+      }
+    },
+    "bannerJoinUs": "Junte-se a nós agora como aliado e gere renda com nossos produtos",
+    "modal": {
+      "becomeDistributor": "Torne-se um distribuidor",
+      "descriptionDistributor": "Venda os melhores produtos de comunicação criptografada",
+      "requestDistributor": "Solicitação de distribuidor",
+      "inputName": "Digite seu nome ou apelido",
+      "inputEmail": "Endereço de e-mail",
+      "inputContact": "Chat de contato (Signal, Telegram, Threema)",
+      "inputStore": "Você tem uma loja física? Onde ela está localizada?",
+      "inputCity": {
+        "placeholder": "Escolha uma cidade"
+      },
+      "inputExperience": "Você tem experiência usando ou vendendo sistemas criptografados? Conte-nos",
+      "sendRequest": "Enviar solicitação"
+    }
+  },
+  "EncryptedTestPage": {
+    "banner": {
+      "securityTestTitle": "Teste de segurança",
+      "securityTestDescription": "Descubra seu nível de segurança com essas ferramentas"
+    },
+    "initTest": "Iniciar teste",
+    "tryOurPhoneSecure": {
+      "title": "Teste a segurança do seu celular",
+      "description": "Fortaleça sua segurança digital como nunca antes."
+    },
+    "tryPassowordSecure": {
+      "title": "Teste o quão segura é sua senha",
+      "description": "Insira uma senha e descubra seu nível de segurança"
+    }
+  },
+  "passwordTest": {
+    "verificationTitle": "Verificador de Força da Senha",
+    "verificationSubtitle": "Verificações",
+    "statsSubtitle": "Estatísticas",
+    "passwordInputLabel": "Digite sua senha",
+    "passwordInputPlaceholder": "Digite sua senha",
+    "strengthLabel": "Força: ",
+    "verifications": {
+      "length": "Pelo menos 12 caracteres",
+      "uppercase": "Contém letras maiúsculas",
+      "lowercase": "Contém letras minúsculas",
+      "number": "Contém números",
+      "special": "Contém caracteres especiais",
+      "noCommon": "Não é uma senha comum"
+    },
+    "stats": {
+      "length": "Comprimento total",
+      "uppercase": "Letras maiúsculas",
+      "lowercase": "Letras minúsculas",
+      "numbers": "Números",
+      "special": "Caracteres especiais"
+    },
+    "improvementTips": "Dicas para melhorar:",
+    "improvementMessages": {
+      "length": "Aumente o comprimento para pelo menos 12 caracteres",
+      "uppercase": "Adicione letras maiúsculas",
+      "lowercase": "Adicione letras minúsculas",
+      "number": "Inclua números",
+      "special": "Inclua caracteres especiais",
+      "noCommon": "Evite usar senhas comuns"
+    },
+    "strengthCategories": {
+      "veryWeak": "Muito fraca",
+      "weak": "Fraca",
+      "medium": "Média",
+      "strong": "Forte",
+      "veryStrong": "Muito forte",
+      "excellent": "Excelente"
+    },
+    "strengthScore": "Pontuação",
+    "commonPasswords": {
+      "123456": "123456",
+      "password": "password",
+      "qwerty": "qwerty",
+      "admin": "admin",
+      "letmein": "letmein",
+      "welcome": "welcome"
+    }
+  },
+  "phoneTest": {
+    "backToTests": "Voltar aos testes",
+    "startservices": "Comece a usar alguns serviços criptografados.",
+    "solutions": "Convidamos você a utilizar nossas soluções criptografadas.",
+    "complement": "Você pode complementá-lo com uma camada adicional de proteção.",
+    "protectTop": "Você tem alta proteção para suas comunicações e dispositivos",
+    "finalScore": "Sua pontuação é:",
+    "correctAnswer": "Resposta correta",
+    "incorrectAnswer": "Resposta incorreta",
+    "title": "Teste a segurança do seu telefone",
+    "answer": "Pergunta",
+    "of": "de",
+    "question1": {
+      "titleQuestion": "Que tipo de senha ou método de desbloqueio você usa?",
+      "answer1": "Alfanumérica com 6 ou mais caracteres.",
+      "answer2": "PIN ou padrão com 6 caracteres",
+      "answer3": "PIN ou padrão com 8 ou mais caracteres"
+    },
+    "question2": {
+      "titleQuestion": "Seu smartphone está atualizado com o sistema operacional mais recente?",
+      "answer1": "Sim",
+      "answer2": "Não"
+    },
+    "question3": {
+      "titleQuestion": "Você tem um antivírus instalado?",
+      "answer1": "Sim",
+      "answer2": "Não"
+    },
+    "question4": {
+      "titleQuestion": "Você usa uma VPN para se conectar à Internet?",
+      "answer1": "Sim",
+      "answer2": "Não"
+    },
+    "question5": {
+      "titleQuestion": "Você realiza backups regularmente?",
+      "answer1": "Sim",
+      "answer2": "Não"
+    },
+    "question6": {
+      "titleQuestion": "Você tem senhas de acesso para aplicativos sensíveis (Banco, Wallets)?",
+      "answer1": "Sim",
+      "answer2": "Não"
+    },
+    "question7": {
+      "titleQuestion": "Você exclui os aplicativos que não usa mais?",
+      "answer1": "Sim",
+      "answer2": "Não"
+    },
+    "question8": {
+      "titleQuestion": "Você revisa as permissões de privacidade concedidas aos aplicativos?",
+      "answer1": "Sim",
+      "answer2": "Não"
+    },
+    "question9": {
+      "titleQuestion": "Você se conecta frequentemente a redes WiFi públicas?",
+      "answer1": "Sim",
+      "answer2": "Não"
+    },
+    "question10": {
+      "titleQuestion": "Você usa uma operadora móvel convencional ou alternativa?",
+      "answer1": "Convencional",
+      "answer2": "Alternativa"
+    },
+    "question11": {
+      "titleQuestion": "Você separa as comunicações pessoais das profissionais?",
+      "answer1": "Sim",
+      "answer2": "Não"
+    },
+    "question12": {
+      "titleQuestion": "Você usa aplicativos de mensagens convencionais para compartilhar informações sensíveis?",
+      "answer1": "Sim",
+      "answer2": "Não"
+    },
+    "question13": {
+      "titleQuestion": "Seu telefone e plano de dados estão registrados em seu nome?",
+      "answer1": "Sim",
+      "answer2": "Não"
+    }
+  },
+  "OffersPage": {
+    "exclusiveOffersTitle": "Ofertas Exclusivas",
+    "menu": {
+      "sims": "SIMS",
+      "apps": "Aplicações",
+      "system": "Sistemas"
+    },
+    "discoverSimTitle": "Descubra os Cartões SIM da Encriptados.io",
+    "discoverSimDescription": "Projetados para proteger sua privacidade em cada ligação. Sem necessidade de registro, nossos SIMs garantem uma comunicação segura e anônima, ideal para quem valoriza discrição e segurança.",
+    "cards": {
+      "card1": {
+        "title": "Alterações de IMSI",
+        "description": "Nosso SIM não emite um IMSI, protegendo a origem da conexão."
+      },
+      "card2": {
+        "title": "Números Substitutos",
+        "description": "Os SIMs criptografados geram um número aleatório para cada ligação, aumentando a privacidade e prevenindo o rastreamento."
+      },
+      "card3": {
+        "title": "Planos Vitalícios",
+        "description": "Não há limite de tempo para usar os recursos do seu plano."
+      },
+      "card4": {
+        "title": "Alcance Global",
+        "description": "O SIM Encriptados funciona em mais de 200 países com facilidade de conexão e economia."
+      },
+      "card5": {
+        "title": "Segurança Máxima",
+        "description": "Seus dados de geolocalização serão criptografados."
+      },
+      "card6": {
+        "title": "Múltiplos Dispositivos",
+        "description": "Nosso chip internacional funciona em qualquer dispositivo IOS, Android, Windows ou BlackBerry."
+      }
+    }
+  },
+  "BlogPage": {
+    "ourBlogTitleBanner": "Nosso blog",
+    "ourBlogDescriptionBanner": "Informe-se sobre segurança criptografada",
+    "menu": {
+      "techTitle": "Tecnologia",
+      "ventureTitle": "Empreendedorismo",
+      "eCommerceTitle": "E-Commerce",
+      "marketingTitle": "Marketing",
+      "toolsTitle": "Ferramentas",
+      "publicityTitle": "Publicidade"
+    },
+    "downloadAppTitle": "Baixe o App para iOS e Android",
+    "downloadAppSubtitle": "Ou escaneie o código QR com a sua câmera",
+    "saveTitle": "Economize até 50% em taxas móveis",
+    "saveDescription": "Registre seu e-mail e receba um desconto de boas-vindas",
+    "saveInputPlaceholder": "Digite seu e-mail",
+    "subscribe": "Inscrever-se",
+    "optimizeBanner": {
+      "title": "Otimize a experiência do cliente na sua loja online com tecnologia avançada"
+    },
+    "writeBy": "Escrito por:",
+    "share": "Compartilhar:",
+    "talkWithSupport": "Converse agora com um consultor da Encriptados diretamente no Telegram",
+    "goTelegram": "Ir para o Telegram",
+    "articleTitle": "Artigos relacionados"
   }
+}

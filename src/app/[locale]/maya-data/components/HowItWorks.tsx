@@ -1,10 +1,13 @@
 import React from "react";
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 
 const HowItWorks = () => {
   const FullWorld = "/images/maya-data/fullworld.png";
   const Balance = "/images/maya-data/balancecharge.png";
   const StepperMan = "/images/maya-data/stepperman.png";
+
+  const t = useTranslations("MayaData");
 
   const stepper = [
     {
@@ -18,12 +21,16 @@ const HowItWorks = () => {
       ),
       title: (
         <h1 className="text-xl font-bold mb-4">
-          Elige la región donde quieres usar tu{" "}
-          <span className="text-[#35CDFB]">eSIM</span>
+          {t("howItWorks.chooseRegionTitle")}
+          {""}
+
+          <span className="text-[#35CDFB]">
+            {" "}
+            {t("howItWorks.chooseRegionSpecialWord")}
+          </span>
         </h1>
       ),
-      description:
-        "Elige uno de nuestros destinos o regiones donde puedes usar nuestra sim electrónica",
+      description: t("howItWorks.chooseRegionDescription"),
       image: (
         <div className="w-full">
           <Image
@@ -48,12 +55,15 @@ const HowItWorks = () => {
       ),
       title: (
         <h1 className="text-xl font-bold mb-4">
-          Selecciona tu <span className="text-[#35CDFB]">plan de datos</span> y
-          realiza la compra
+          {t("howItWorks.choosePlanTitle")}{" "}
+          <span className="text-[#35CDFB]">
+            {" "}
+            {t("howItWorks.choosePlanSpecialWord")}
+          </span>{" "}
+          {t("howItWorks.choosePlanTitle2")}
         </h1>
       ),
-      description:
-        "Elige el plan que más se ajuste a tus necesidades, tenemos planes de un mes, 3 meses o 6 meses",
+      description: t("howItWorks.choosePlanDescription"),
       image: (
         <div className=" w-full">
           <Image
@@ -78,12 +88,14 @@ const HowItWorks = () => {
       ),
       title: (
         <h1 className="text-xl font-bold mb-4">
-          Activa tu eSIM y disfruta de tus{" "}
-          <span className="text-[#35CDFB]">datos móviles</span>
+          {t("howItWorks.activateSimTitle")}
+          <span className="text-[#35CDFB]">
+            {" "}
+            {t("howItWorks.activateSimSpecialWord")}
+          </span>
         </h1>
       ),
-      description:
-        "Activa tu eSIM de forma fácil y rápida y comienza a disfrutar de comunicaciones globales y con anonimato",
+      description: t("howItWorks.activateSimDescription"),
       image: (
         <div className="bg-[#DEF2F8] px-16 rounded-2xl  justify-center flex py-4 items-center w-full">
           <Image
@@ -102,7 +114,7 @@ const HowItWorks = () => {
   return (
     <>
       <h1 className="text-base text-center mt-14 font-bold md:text-3xl xl:text-4xl ">
-        Así funciona
+        {t("howItWorks.title")}
       </h1>
       <div className="flex justify-center mt-16 md:mt-32">
         <div className="w-full md:w-7/12">

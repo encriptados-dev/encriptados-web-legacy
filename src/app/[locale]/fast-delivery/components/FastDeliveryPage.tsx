@@ -42,11 +42,13 @@ const FastDeliveryPage = () => {
         <div className="px-2 2xl:px-96 xl:px-10 lg:px-0">
           <FindOurPoints />
         </div>
+
         <CenterWrapper>
           <Button size="medium" rounded="full" intent="primary">
             {t("chatTelegram")}
           </Button>
         </CenterWrapper>
+
         <div className="px-2 2xl:px-96 xl:px-10 lg:px-0">
           <HowDoesFastDelivery />
         </div>
@@ -58,13 +60,16 @@ const FastDeliveryPage = () => {
             </Button>
           </CenterWrapper>
         </div>
+
         <div className="px-2 2xl:px-96 xl:px-10 lg:px-0 ">
           <PhoneBanner />
         </div>
+
         <div className="px-2 2xl:px-[370px] xl:px-10 lg:px-0">
           <FindOurProducts />
         </div>
-        <div className="px-2 2xl:px-96 xl:px-10 lg:px-0 ">
+
+        <div className="max-w-[1100px] m-auto pb-20">
           <QRBanner title={t("downloadApp")} />
         </div>
 
@@ -74,6 +79,7 @@ const FastDeliveryPage = () => {
         <div className="px-2 2xl:px-96 xl:px-10 lg:px-0 ">
           <Accordion items={items} />
         </div>
+
         <div className="mt-7 ">
           <BannerBackground
             bgMobile={PilaresBackgroundMobile}

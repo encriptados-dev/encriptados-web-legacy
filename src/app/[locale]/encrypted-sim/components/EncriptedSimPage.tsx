@@ -10,6 +10,11 @@ import SimProductsPage from "./SimProducts";
 import CustomShapeDivider from "./CustomShapeDivider";
 import BannerCoverage from "@/shared/BannerCoverage";
 
+import { BasicFormProvider } from "@/shared/components/BasicFormProvider";
+import ListOfPlans from "./ListOfPlans";
+import { ListOfProductsData } from "../constants/ListOfProductsData";
+import SearchInput from "@/shared/components/SearchInput";
+
 const EncryptedSim = () => {
   const t = useTranslations("EncryptedSimPage");
 
@@ -24,10 +29,39 @@ const EncryptedSim = () => {
           <BannerConnect />
         </div>
 
+        <div className="max-w-[70vh] m-auto flex justify-center items-center">
+          <div className="w-full">
+            <BasicFormProvider>
+              <div className="max-w-[1100px] mx-auto p-4 ">
+                <h1 className="bg-gradient-to-r text-3xl justify-center font-bold  flex items-center from-[#35CDFB] to-[#000000] bg-clip-text text-transparent mb-4 text-center">
+                  Cobertura en más de 200 países
+                </h1>
+                <div className=" flex justify-center text-center mb-4">
+                  <p className="text-lg mb-4  text-[#012029]">
+                    Consulta el costo del gigabyte según el país y el perfil
+                    recomendado, así optimizas el consumo de tus datos al mejor
+                    precio
+                  </p>
+                </div>
+
+                <SearchInput
+                  inputClassName="border-4 border-[#DCF2F8] focus:outline-none focus:border-[#DCF2F8]"
+                  iconPosition="left"
+                  name="searchinputcountry"
+                  placeholder="Colombia"
+                />
+                <div className="mt-4 w-full">
+                  <ListOfPlans data={ListOfProductsData} />
+                </div>
+              </div>
+            </BasicFormProvider>
+          </div>
+        </div>
+
         <div className="max-w-[1100px] mx-auto p-4 ">
           <SimProductsPage />
-        </div>     
-     
+        </div>
+
         <div className="justify-center flex bg-cyan-gradient flex-col items-center mt-6">
           <div>
             <EncryptedSimBanner />
@@ -87,8 +121,6 @@ const EncryptedSim = () => {
       <div className="mt-16">
         <BannerCoverage />
       </div>
-
-      
     </>
   );
 };

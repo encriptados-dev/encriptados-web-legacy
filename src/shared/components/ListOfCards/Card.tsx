@@ -1,48 +1,51 @@
-import React, { ReactNode } from "react";
+import React from "react";
 
-interface Card {
+interface CardProps {
   title: string;
   description: string;
-  icon: ReactNode;
-  centered?: boolean; // Prop opcional para centrar verticalmente
-  bgIconCard?: string; // Prop opcional para el color de fondo del icono
+  icon: React.ReactElement;
+  centered?: boolean;
+  bgIconCard?: string;
+  bgColorCard?: string; // Nueva prop para el color de fondo
+  titleColor?: string; // Nueva prop para el color del título
+  descriptionColor?: string; // Nueva prop para el color de la descripción
 }
 
-const Card: React.FC<Card> = ({
+const Card: React.FC<CardProps> = ({
   title,
   description,
   icon,
-  centered = false, // Valor predeterminado es false
-  bgIconCard, // Nueva prop bgIconCard
+
+  centered,
+  bgIconCard,
+  bgColorCard,
+  titleColor,
+  descriptionColor,
 }) => {
   return (
     <div
-      className={`border rounded-2xl p-5 bg-white flex ${
-        centered
-          ? "flex-col items-center justify-center"
-          : "flex-col items-start"
-      }`}
+      className={`p-4 rounded-2xl shadow ${centered ? "text-center" : ""}`}
+      style={{ backgroundColor: bgColorCard }} // Aplicando el color de fondo
     >
       <div
-        className={`px-3 inline-block p-2 rounded-lg`}
+        className="icon"
         style={{
-          background: bgIconCard
-            ? bgIconCard // Si se pasa bgIconCard, usar el color proporcionado
-            : "linear-gradient(to bottom, rgba(8,186,240,1), rgba(28,210,165,1))", // Gradiente predeterminado
+          backgroundColor: bgIconCard,
+          display: "inline-flex",
+          justifyContent: "center",
+          alignItems: "center",
         }}
       >
         {icon}
       </div>
-      <h2 className={`text-lg font-bold mt-2 ${centered ? "text-center" : ""}`}>
+      <h3 className="text-lg font-bold" style={{ color: titleColor }}>
         {title}
-      </h2>
-      <p
-        className={`text-gray-600 text-sm mt-1 ${
-          centered ? "text-center" : ""
-        }`}
-      >
+      </h3>{" "}
+      {/* Aplicando el color del título */}
+      <p className="text-gray-700" style={{ color: descriptionColor }}>
         {description}
-      </p>
+      </p>{" "}
+      {/* Aplicando el color de la descripción */}
     </div>
   );
 };

@@ -41,6 +41,24 @@
       background: transparent;
     }
   }
+
+  .bg-our-products-gradient {
+    background: linear-gradient(
+      90deg,
+      rgba(0, 63, 48, 1) 0%,
+
+      rgba(0, 2, 1, 1) 35%,
+      rgba(5, 52, 67, 1) 100%
+    );
+  }
+
+  .bg-cyan-gradient-light {
+    background: linear-gradient(
+      90deg,
+      rgba(53, 205, 251, 1) 0%,
+      rgba(168, 235, 255, 1) 100%
+    );
+  }
 }
 
 .custom-shape-divider-bottom-1728419371 {
@@ -62,4 +80,17 @@
 
 .custom-shape-divider-bottom-1728419371 .shape-fill {
   fill: #f4f8fa;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none; /* Firefox */
 }
