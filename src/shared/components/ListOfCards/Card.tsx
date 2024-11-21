@@ -42,7 +42,7 @@ const Card: React.FC<CardProps> = ({
         {title}
       </h3>{" "}
       {/* Aplicando el color del título */}
-      <p className="text-gray-700" style={{ color: descriptionColor }}>
+      <p className="text-gray-700 mt-2" style={{ color: descriptionColor }}>
         {description}
       </p>{" "}
       {/* Aplicando el color de la descripción */}

@@ -37,7 +37,7 @@ export default function FiltersOffers({
               <button
                 type="button"
                 onClick={() => onChange(item.value)}
-                className={`flex-1 px-4 py-3 text-sm font-medium rounded-full transition-colors
+                className={`flex-1 px-4 py-3 text-sm sm:text-base md:text-lg font-medium rounded-full transition-colors
                   ${
                     selectedItem === item.value
                       ? "bg-[#2A2A2A] text-white"

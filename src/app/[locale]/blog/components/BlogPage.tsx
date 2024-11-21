@@ -1,11 +1,29 @@
-import React from "react";
+"use client";
+import React, { useState, useEffect } from "react";
 import BannerBlog from "./BannerBlog";
 import DownloadAppBanner from "../../our-products/components/DownloadAppBanner";
 import SubscribeBanner from "./SubscribeBanner";
 import { BasicFormProvider } from "@/shared/components/BasicFormProvider";
 import ListOfPosts from "./ListOfPosts";
+import MenuCategory from "./MenuCategory";
+import MenuCategoryResponsive from "./MenuCategoryResponsive";
 
 const BlogPage = () => {
+  const [isMobile, setIsMobile] = useState(false);
+
+  const handleResize = () => {
+    setIsMobile(window.innerWidth <= 1315);
+  };
+
+  useEffect(() => {
+    handleResize();
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
   const listOfPosts = [
     {
       image: "/images/blog/girlandman.png",
@@ -56,10 +74,41 @@ const BlogPage = () => {
       author: "Ronald Hernandez",
     },
   ];
+
   return (
     <>
-      <BasicFormProvider>
+      <BasicFormProvider defaultValue={{ category: "tech" }}>
         <BannerBlog />
+        <div className="bg-[#141414] flex justify-center items-center py-4">
+          {/* Renderizar el menú según el tamaño del navegador */}
+          {isMobile ? (
+            <div className="w-full">
+              <MenuCategoryResponsive
+                name="os"
+                options={[
+                  { value: "tech", label: "Tecnología" },
+                  { value: "venture", label: "Emprendimiento" },
+                  { value: "ecommerce", label: "Commerce" },
+                  { value: "marketing", label: "Marketing" },
+                  { value: "tools", label: "Herramientas" },
+                  { value: "publicity", label: "Publicidad" },
+                ]}
+              />
+            </div>
+          ) : (
+            <MenuCategory
+              name={"category"}
+              options={[
+                { value: "tech", label: "Tecnología" },
+                { value: "venture", label: "Emprendimiento" },
+                { value: "ecommerce", label: "Commerce" },
+                { value: "marketing", label: "Marketing" },
+                { value: "tools", label: "Herramientas" },
+                { value: "publicity", label: "Publicidad" },
+              ]}
+            />
+          )}
+        </div>
 
         <ListOfPosts posts={listOfPosts} />
 
