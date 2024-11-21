@@ -1,5 +1,5 @@
 import Button from "@/shared/components/Button";
-import { Key, Smartphone, RotateCw, Phone } from "lucide-react";
+
 import KeyResponsive from "../icons/KeyResponsive";
 import PhoneResponsive from "../icons/PhoneResponsive";
 import KeyRotateResponsive from "../icons/KeyRotateResponsive";
