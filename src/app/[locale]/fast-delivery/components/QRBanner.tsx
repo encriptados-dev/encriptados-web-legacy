@@ -1,7 +1,6 @@
 "use client";
 import Image from "next/image";
 import React from "react";
-import QR from "../../../../../public/images/fastdeliverypage/QR.png";
 
 import { useTranslations } from "use-intl";
 import AppleSvg from "@/shared/svgs/AppleSvg";
@@ -17,7 +16,7 @@ const QRBanner = ({ title }: { title: string }) => {
             {title}
           </h1>
           <div className="gap-4 2xl:flex xl:flex lg:flex md:flex sm:flex">
-            <AppleSvg />            
+            <AppleSvg />
             <PlayStoreSvg />
           </div>
           <h1 className="font-semibold mt-4">{t("scanQR")}</h1>
@@ -28,7 +27,7 @@ const QRBanner = ({ title }: { title: string }) => {
           height={220}
           quality={100}
           title="Image"
-          src={QR}
+          src={"/images/fastdeliverypage/QR.png"}
           alt="Image"
           className="mt-6 md:mt-0 lg:translate-y-[65px] translate-y-[72px]"
         />
