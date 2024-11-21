@@ -8,8 +8,8 @@ const AmbassadorsPage = () => {
   return (
     <div className="w-full bg-gradient-to-b from-[#005340] via-[#073A4B] to-black relative py-9">
       <AmbassadorBanner />
-      <div className="justify-center items-center flex mb-5">
-        <h1 className="text-white font-bold text-3xl">
+      <div className="flex items-center justify-center mb-5">
+        <h1 className="text-white font-bold text-xl sm:text-3xl lg:text-4xl text-center">
           {t("AmbassadorsPage.partnerCards.title")}
         </h1>
       </div>
