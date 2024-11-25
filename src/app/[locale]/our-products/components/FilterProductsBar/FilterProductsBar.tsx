@@ -9,6 +9,8 @@ import { useFormContext } from "react-hook-form";
 import MenuDropdownProductBar from "./MenuDropdownProductBar";
 import SearchProduct from "./SearchProduct";
 import { useTranslations } from "next-intl";
+import { useGetProducts } from "@/features/products/queries/useGetProducts";
+import CardSim from "@/app/[locale]/encrypted-sim/components/CardSim";
 
 type IconKeys = "sim" | "app" | "software";
 

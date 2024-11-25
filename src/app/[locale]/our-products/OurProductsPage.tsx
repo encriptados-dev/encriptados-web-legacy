@@ -11,6 +11,7 @@ import DownloadAppBanner from "./components/DownloadAppBanner";
 import FormOurProducts from "./components/FormOurProducts";
 
 import { BasicFormProvider } from "@/shared/components/BasicFormProvider";
+import ListOfProducts from "./components/ListOfProducts";
 
 const OurProductsPage = () => {
   return (
@@ -21,6 +22,8 @@ const OurProductsPage = () => {
         </h1>
         <BasicFormProvider>
           <FilterProductsBar />
+
+          <ListOfProducts />
         </BasicFormProvider>
       </div>
 
