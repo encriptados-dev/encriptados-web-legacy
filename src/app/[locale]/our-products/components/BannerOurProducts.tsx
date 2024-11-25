@@ -12,9 +12,9 @@ const BannerOurProducts = () => {
   return (
     <div className="bg-our-products-gradient flex flex-col lg:flex-row xl:flex justify-around items-center overflow-hidden p-6">
       <div className="max-w-[380px] text-center md:text-left mb-6 md:mb-0 mt-12">
-        <h1 className="text-3xl md:text-4xl mb-4">
+        <h1 className="text-3xl md:text-4xl mb-4 text-white">
           {t("title")}
-          <span className="font-bold"> {t("subtitle")}</span>
+          <span className="font-bold text-white"> {t("subtitle")}</span>
         </h1>
         <div className="flex flex-col lg-custom:flex-row justify-center items-center md:items-start md:justify-start gap-x-2 mt-10">
           <div className="w-[200px] mb-2 lg-custom:mb-0 cursor-pointer">
