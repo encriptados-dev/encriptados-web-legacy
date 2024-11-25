@@ -1,11 +1,12 @@
 import { useQuery } from "@tanstack/react-query";
-import { PRODUCTS_QUERY_KEY } from "../constants/queryProductsKeys";
 import { getAllProducts } from "../services";
 
-export const useGetProducts = () => {
+type ProductType = "app" | "sim" | "phone";
+
+export const useGetProducts = (productType: ProductType) => {
   const query = useQuery({
-    queryKey: PRODUCTS_QUERY_KEY,
-    queryFn: getAllProducts,
+    queryKey: ["products", productType], // Construye la queryKey dinámicamente
+    queryFn: () => getAllProducts(productType), // Pasa el parámetro al servicio
   });
 
   return query;

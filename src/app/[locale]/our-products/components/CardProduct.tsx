@@ -34,17 +34,7 @@ const CardProduct: React.FC<CardSimProps> = ({
           className="w-full h-48 object-contain"
         />
         <div className="p-2">
-          <div className="flex justify-end gap-2 mb-1 text-sm text-gray-600">
-            <div className="bg-[#FFFFFF] text-black px-2 py-1 rounded-full text-xs font-semibold flex gap-1">
-              <Image src={TravelSvg} alt="Icon" className="w-4 h-4" />
-              <span>+200 países disponibles</span>
-            </div>
-
-            <div className="bg-[#81E2FF] text-black px-2 py-1 rounded-full text-xs font-semibold flex gap-1">
-              <span>5G LTE</span>
-              <Image src={WifiSvg} alt="Icon" className="w-4 h-4" />
-            </div>
-          </div>
+          <div className="flex justify-end gap-2 mb-1 text-sm text-gray-600"></div>
         </div>
       </div>
 
@@ -70,7 +60,7 @@ const CardProduct: React.FC<CardSimProps> = ({
             <div className="flex justify-between items-center mb-2">
               <div className="flex gap-x-5 items-center justify-center">
                 <span className="text-lg font-bold">{priceRange}</span>
-                <span className="text-[15px] text-red-500 ">
+                <span className="text-[11px] text-red-500 ">
                   Ahorra hasta {priceDiscount} USD
                 </span>
               </div>

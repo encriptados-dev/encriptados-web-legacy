@@ -12,7 +12,7 @@ import { useTranslations } from "next-intl";
 import { useGetProducts } from "@/features/products/queries/useGetProducts";
 import CardSim from "@/app/[locale]/encrypted-sim/components/CardSim";
 
-type IconKeys = "sim" | "app" | "software";
+type IconKeys = "sim" | "app" | "mobile";
 
 interface IconProps {
   height?: any;
@@ -23,7 +23,7 @@ interface IconProps {
 const icons: Record<IconKeys, React.FC<IconProps>> = {
   sim: SimProductsBarIcon,
   app: AplicationsProductsBarIcon,
-  software: PhoneProductsBarIcon,
+  mobile: PhoneProductsBarIcon,
 };
 
 export default function FilterProductsBar() {
