@@ -1,44 +1,53 @@
-import AppStoreFooter from "@/shared/FooterEncrypted/icon/AppStoreFooter";
-import DownloadApkSvg from "@/shared/svgs/DownloadApkSvg";
-import PlayStoreSvg from "@/shared/svgs/PlayStoreSvg";
-import { useTranslations } from "next-intl";
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 import React from "react";
 
 const BannerOurProducts = () => {
-  const TwoCellphones = "/images/our-products/two-cellphones.png";
-
+  const BannerBackground = "/images/home/banner-home.jpg";
   const t = useTranslations("OurProductsPage.banner");
+
   return (
-    <div className="bg-our-products-gradient flex flex-col lg:flex-row xl:flex justify-around items-center overflow-hidden p-6">
-      <div className="max-w-[380px] text-center md:text-left mb-6 md:mb-0 mt-12">
-        <h1 className="text-3xl md:text-4xl mb-4 text-white">
-          {t("title")}
-          <span className="font-bold text-white"> {t("subtitle")}</span>
-        </h1>
-        <div className="flex flex-col lg-custom:flex-row justify-center items-center md:items-start md:justify-start gap-x-2 mt-10">
-          <div className="w-[200px] mb-2 lg-custom:mb-0 cursor-pointer">
-            <PlayStoreSvg />
-          </div>
-          <div className="w-[200px] mb-2 lg-custom:mb-0 cursor-pointer">
-            <AppStoreFooter />
-          </div>
-          <div className="w-[200px] mb-2 lg-custom:mb-0  cursor-pointer">
-            <DownloadApkSvg />
+    <div className="relative h-[500px] md:h-[500px] xl:h-[530px] 2xl:h-[650px] w-full overflow-hidden">
+      {/* Imagen de fondo */}
+      <Image
+        src={BannerBackground}
+        className="bg-[#060606]"
+        alt="Banner background"
+        layout="fill"
+        objectFit="cover"
+        quality={100}
+        priority
+      />
+
+      <div className="absolute inset-0 bg-black bg-opacity-50" />
+
+      <div className="relative z-10 flex flex-col justify-center items-start h-full max-w-6xl mx-auto px-4 sm:px-6 md:px-8">
+        <div className="text-white space-y-6 max-w-2xl">
+          <h1 className="text-xl sm:text-4xl md:text-5xl  leading-tight">
+            <span>Conéctate en todo el</span> <br></br> mundo con{" "}
+            <span className="text-[#7CD0F9] font-extrabold">
+              total seguridad<br></br>
+            </span>{" "}
+            <span className="font-extrabold">en tus comunicaciones</span>
+          </h1>
+
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold leading-tight"></h2>
+
+          <p className="text-base sm:text-lg md:text-xl">
+            Protégete de los ciber-delincuentes y mantén
+            <span className="block">tu información personal segura</span>
+          </p>
+
+          <div className="flex flex-wrap gap-4 pt-4">
+            <button className="bg-[#7CD0F9] text-black font-semibold px-6 sm:px-8 py-2 sm:py-3 rounded-full hover:bg-[#6bb8e0] transition-colors">
+              Comprar eSIM
+            </button>
+            <button className="border-2 border-white text-white font-semibold px-6 sm:px-8 py-2 sm:py-3 rounded-full hover:bg-white/10 transition-colors">
+              Apps Encriptados
+            </button>
           </div>
         </div>
       </div>
-
-      <section className="relative flex justify-center w-full md:w-auto">
-        <div className="absolute bg-cyan-gradient-light rounded-3xl w-[500px] h-[280px] md:w-[465px] md:h-[300px] mt-12 md:mt-24 md:ml-[-30px]"></div>
-        <Image
-          width={400}
-          height={400}
-          className="translate-y-6 md:translate-y-11 z-10"
-          src={TwoCellphones}
-          alt="Two cellphones"
-        />
-      </section>
     </div>
   );
 };
