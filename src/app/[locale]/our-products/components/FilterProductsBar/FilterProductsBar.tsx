@@ -11,6 +11,8 @@ import SearchProduct from "./SearchProduct";
 import { useTranslations } from "next-intl";
 import { useGetProducts } from "@/features/products/queries/useGetProducts";
 import CardSim from "@/app/[locale]/encrypted-sim/components/CardSim";
+import FilterAppWithLicense from "./FilterAppWithLicense";
+import FilterProviderServices from "./FilterProviderServices";
 
 type IconKeys = "sim" | "app" | "mobile";
 
@@ -28,8 +30,8 @@ const icons: Record<IconKeys, React.FC<IconProps>> = {
 
 export default function FilterProductsBar() {
   const t = useTranslations("OurProductsPage");
-  const { getValues } = useFormContext();
-  const selected = getValues("selectedOption");
+  const { getValues, watch } = useFormContext();
+  const selected = getValues("selectedOption") as IconKeys;
 
   const ICON_COLOR_SELECTED = "#0AAEE1";
   const ICON_COLOR_UNSELECTED = "#7E7E7E";
@@ -49,6 +51,12 @@ export default function FilterProductsBar() {
     };
   });
 
+  const selectedSubfilter = {
+    app: <FilterAppWithLicense />,
+    sim: <FilterProviderServices />,
+    mobile: <FilterAppWithLicense />,
+  };
+
   return (
     <div className="bg-white rounded-xl p-5 md:p-7 w-full max-w-7xl mx-auto">
       <div className="flex flex-col space-y-4 lg:space-y-0 lg:flex-row lg:items-end lg:space-x-4 justify-between">
@@ -61,31 +69,7 @@ export default function FilterProductsBar() {
               <ListOfFiltersButton items={items} name="selectedOption" />
             </div>
 
-            <div className="w-full lg:w-auto">
-              <h1 className="text-[rgb(8,93,119)] font-semibold mb-2">
-                {t("filterProducts.osTitle")}
-              </h1>
-              <MenuDropdownProductBar
-                name="os"
-                options={[
-                  { label: "Secure Crypt", value: "Secure Crypt" },
-                  { label: "Other Option", value: "Other Option" },
-                ]}
-              />
-            </div>
-
-            <div className="w-full lg:w-auto lg:ml-4">
-              <h1 className="text-[rgb(8,93,119)] font-semibold mb-2">
-                {t("filterProducts.licenseTitle")}
-              </h1>
-              <MenuDropdownProductBar
-                name="license"
-                options={[
-                  { label: "Secure Crypt", value: "Secure Crypt" },
-                  { label: "Other Option", value: "Other Option" },
-                ]}
-              />
-            </div>
+            {selectedSubfilter[selected]}
           </div>
         </div>
 
