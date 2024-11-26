@@ -12,15 +12,17 @@ type Props = {
   items: MenuItem[]; // Lista de elementos de la categoría
   setHoveredItem: (item: MenuItem) => void; // Actualiza el elemento seleccionado para la previsualización
   categoryLink?: string; // Enlace a la categoría principal (opcional)
+  closeMegaMenu?: () => void; // Nueva función para cerrar el MegaMenu
 };
 
 export default function CategoryPreview({
   items,
-  setHoveredItem,  
+  setHoveredItem,
+  closeMegaMenu, // Recibe la función para cerrar el menú
 }: Props) {
   const listRef = useRef<HTMLDivElement>(null);
   const [isOverflowing, setIsOverflowing] = useState(false);
-  const [isExpanded, setIsExpanded] = useState(false); // Nuevo estado para controlar si se muestra todo
+  const [isExpanded, setIsExpanded] = useState(false); // Estado para controlar si se muestra todo
 
   useEffect(() => {
     const element = listRef.current;
@@ -42,14 +44,15 @@ export default function CategoryPreview({
         {items.map((item, index) =>
           item.link ? (
             <Link
+              passHref={true}
               key={index}
               href={item.link} // Usa el enlace definido en `item.link`
               className="block text-gray-300 hover:text-white transition-colors"
               onMouseEnter={() => setHoveredItem(item)} // Actualiza el estado del elemento seleccionado
+              onClick={() => closeMegaMenu && closeMegaMenu()} // Cierra el menú si `closeMegaMenu` está definido
             >
               <div>
-                <p className="font-medium">{item.title}</p>              
-                
+                <p className="font-medium">{item.title}</p>
               </div>
             </Link>
           ) : (

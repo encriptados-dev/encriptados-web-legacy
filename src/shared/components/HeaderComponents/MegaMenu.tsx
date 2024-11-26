@@ -25,7 +25,7 @@ type Props = {
   setActiveCategory: (index: number) => void;
   hoveredItem: MenuItem | null;
   setHoveredItem: (item: MenuItem) => void;
-  closeMegaMenu: () => void; // Añadido aquí
+  closeMegaMenu: () => void; // Función para cerrar el MegaMenu
 };
 
 export default function MegaMenu({
@@ -46,7 +46,7 @@ export default function MegaMenu({
       initial={{ opacity: 0, y: 10 }}
       animate={{ opacity: 1, y: 0 }}
       exit={{ opacity: 0, y: 10 }}
-      className="absolute left-0 right-0 bg-[#0a0a0af5] border-b border-[#1A1A1A] shadow-xl backdrop-blur-sm z-50"
+      className="absolute left-0 right-0 bg-[#0a0a0af5] border-b border-[#1A1A1A] shadow-xl backdrop-blur-sm z-10"
     >
       <div className="max-w-[1400px] mx-auto px-4 py-8">
         <div className="grid grid-cols-12 gap-20">
@@ -54,14 +54,14 @@ export default function MegaMenu({
           <div className="col-span-4 space-y-6">
             {categories.map((category, index) => (
               <Link
-                key={index}
                 href={category.link}
+                key={index}
                 className={`block p-4 rounded-lg ${
                   activeCategory === index
                     ? "bg-[#1A1A1A]"
                     : "hover:bg-[#1A1A1A]"
                 }`}
-                onClick={closeMegaMenu} // Cierra el Mega Menu al hacer clic
+                onClick={closeMegaMenu} // Cierra el MegaMenu al hacer clic
                 onMouseEnter={() => setActiveCategory(index)} // Cambia la categoría activa al pasar el mouse
               >
                 <h3 className="text-white font-medium flex items-center">
@@ -100,13 +100,15 @@ export default function MegaMenu({
                   />
                   <div className="p-4">
                     <h3 className="text-white font-medium">
-                      {hoveredItem?.description || hoveredItem?.title || "Vista previa"}
+                      {hoveredItem?.description ||
+                        hoveredItem?.title ||
+                        "Vista previa"}
                     </h3>
                     {hoveredItem?.link && (
                       <Link
                         href={hoveredItem.link}
                         className="inline-flex items-center text-sm text-[#44D3FF] hover:text-white mt-2 transition-colors"
-                        onClick={closeMegaMenu} // Cierra el Mega Menu al hacer clic
+                        onClick={closeMegaMenu} // Cierra el MegaMenu al hacer clic
                       >
                         Ver más
                         <ArrowRight className="w-4 h-4 ml-1" />
@@ -135,7 +137,7 @@ export default function MegaMenu({
                     <Link
                       href={activeCategoryLink}
                       className="inline-flex items-center text-sm text-[#44D3FF] hover:text-white mt-2 transition-colors"
-                      onClick={closeMegaMenu} // Cierra el Mega Menu al hacer clic
+                      onClick={closeMegaMenu} // Cierra el MegaMenu al hacer clic
                     >
                       Ver más
                       <ArrowRight className="w-4 h-4 ml-1" />

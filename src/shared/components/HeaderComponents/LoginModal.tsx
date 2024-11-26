@@ -22,7 +22,7 @@ const Input = ({ ...props }: React.InputHTMLAttributes<HTMLInputElement>) => (
 
 type LoginStep = "login" | "generate" | "display";
 
-export function LoginModal({ onClose }: { onClose: () => void }) {
+export function LoginModal({ onClose = () => {} }: { onClose?: () => void }) {
   const [step, setStep] = useState<LoginStep>("login");
   const [accountNumber, setAccountNumber] = useState("");
   const [showPassword, setShowPassword] = useState(false);
