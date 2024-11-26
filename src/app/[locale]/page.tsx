@@ -1,5 +1,11 @@
+import BannerOurProducts from "./our-products/components/BannerOurProducts";
 import OurProductsPage from "./our-products/OurProductsPage";
 
 export default function HomePage() {
-  return <OurProductsPage />;
+  return (
+    <>
+      <BannerOurProducts />
+      <OurProductsPage />
+    </>
+  );
 }

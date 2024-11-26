@@ -1,12 +1,15 @@
-import { useState } from "react"
-import { AnimatePresence, motion } from "framer-motion"
-import { ChevronDown } from 'lucide-react'
-import WorldIcon from "../../svgs/WorldIcon"
-import useLanguageSwitcher from "../../hooks/useLanguageSwitcher"
+import { useState } from "react";
+import { AnimatePresence, motion } from "framer-motion";
+import { ChevronDown } from "lucide-react";
+import WorldIcon from "@/shared/svgs/WorldIcon";
+import  useLanguageSwitcher  from "@/shared/hooks/useLanguageSwitcher"; // Ajusta el path según tu estructura
+
+type LocaleLanguages = "es" | "en" | "fr" | "it" | "pt"; // Define los idiomas permitidos
 
 export default function LanguageDropdown() {
-  const { currentLocale, changeLanguage } = useLanguageSwitcher()
-  const [languageDropdownOpen, setLanguageDropdownOpen] = useState(false)
+  const { currentLocale, changeLanguage } = useLanguageSwitcher();
+  const [languageDropdownOpen, setLanguageDropdownOpen] = useState(false);
+
   const languages = [
     { code: "es", name: "Español" },
     { code: "en", name: "English" },
@@ -19,7 +22,7 @@ export default function LanguageDropdown() {
     <div className="relative">
       <button
         onClick={() => setLanguageDropdownOpen(!languageDropdownOpen)}
-        className="flex items-center text-sm  text-white px-3 py-2 rounded-xl "
+        className="flex items-center text-sm text-white px-3 py-2 rounded-xl"
         aria-haspopup="true"
         aria-expanded={languageDropdownOpen}
       >
@@ -42,8 +45,10 @@ export default function LanguageDropdown() {
               <div
                 key={language.code}
                 onClick={() => {
-                  changeLanguage(language.code)
-                  setLanguageDropdownOpen(false)
+                  if (["es", "en", "fr", "it", "pt"].includes(language.code)) {
+                    changeLanguage(language.code as LocaleLanguages); // Aseguramos el tipo
+                  }
+                  setLanguageDropdownOpen(false);
                 }}
                 className="px-4 py-2 hover:bg-[#0e0e0e] cursor-pointer rounded-xl"
               >
@@ -54,6 +59,6 @@ export default function LanguageDropdown() {
         )}
       </AnimatePresence>
     </div>
-  )
+  );
 }
 

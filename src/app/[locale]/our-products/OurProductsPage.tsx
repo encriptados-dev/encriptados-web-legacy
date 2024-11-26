@@ -11,6 +11,7 @@ import DownloadAppBanner from "./components/DownloadAppBanner";
 import FormOurProducts from "./components/FormOurProducts";
 
 import { BasicFormProvider } from "@/shared/components/BasicFormProvider";
+import ListOfProducts from "./components/ListOfProducts";
 
 const OurProductsPage = () => {
   return (
@@ -19,8 +20,10 @@ const OurProductsPage = () => {
         <h1 className="bg-gradient-to-r text-3xl justify-center font-bold  flex items-center from-[#000000] to-[#35CDFB] bg-clip-text text-transparent mb-4 text-center">
           Nuestros productos
         </h1>
-        <BasicFormProvider>
+        <BasicFormProvider defaultValue={{ selectedOption: "sim" }}>
           <FilterProductsBar />
+
+          <ListOfProducts />
         </BasicFormProvider>
       </div>
 

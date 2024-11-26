@@ -15,7 +15,7 @@ const AmbassadorCards = () => {
       className="relative flex justify-center items-center bg-cover bg-center w-full"
       style={{ backgroundImage: `url(${BackgroundSpiral})` }}
     >
-      <div className="flex flex-wrap gap-5 mt-4 justify-center z-10">
+      <div className="flex flex-wrap gap-5 mt-4 justify-center z-10 px-4">
         <AmbassadorCardPromotor
           company={t("AmbassadorsPage.partnerCards.promotor.encryptedTag")}
           title={t("AmbassadorsPage.partnerCards.promotor.promotorTitle")}

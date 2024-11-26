@@ -21,7 +21,10 @@ export default function Layout({ children }: LayoutProps) {
     return children;
   }
   return (
-    <div className="flex flex-col min-h-screen bg-[#EBF5FA] text-white">
+    <div
+      className="flex flex-col min-h-screen bg-[#EBF5FA]
+  "
+    >
       <BannerOurSims />
       <div className="">{children}</div>
     </div>
