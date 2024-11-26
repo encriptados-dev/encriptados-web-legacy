@@ -1,6 +1,4 @@
 import Link from "next/link";
-import { ArrowRight } from "lucide-react";
-import { useEffect, useRef, useState } from "react";
 
 type MenuItem = {
   title: string;
@@ -20,27 +18,10 @@ export default function CategoryPreview({
   setHoveredItem,
   closeMegaMenu, // Recibe la función para cerrar el menú
 }: Props) {
-  const listRef = useRef<HTMLDivElement>(null);
-  const [isOverflowing, setIsOverflowing] = useState(false);
-  const [isExpanded, setIsExpanded] = useState(false); // Estado para controlar si se muestra todo
-
-  useEffect(() => {
-    const element = listRef.current;
-    if (element) {
-      // Detecta si el contenido se desborda
-      setIsOverflowing(element.scrollHeight > element.clientHeight);
-    }
-  }, [items]);
-
   return (
     <div className="col-span-3">
-      <div
-        ref={listRef}
-        className={`space-y-4 ${
-          isExpanded ? "max-h-none" : "max-h-[400px] overflow-hidden"
-        }`}
-      >
-        {/* Renderiza los elementos de la categoría */}
+      <div className="space-y-4">
+        {/* Renderiza todos los elementos de la categoría */}
         {items.map((item, index) =>
           item.link ? (
             <Link
@@ -62,17 +43,6 @@ export default function CategoryPreview({
           )
         )}
       </div>
-
-      {/* Botón para mostrar todos los elementos si se desborda */}
-      {isOverflowing && !isExpanded && (
-        <button
-          onClick={() => setIsExpanded(true)} // Expande la lista al hacer clic
-          className="inline-flex items-center text-sm text-gray-400 hover:text-white transition-colors"
-        >
-          Ver todos
-          <ArrowRight className="w-4 h-4 ml-1" />
-        </button>
-      )}
     </div>
   );
 }

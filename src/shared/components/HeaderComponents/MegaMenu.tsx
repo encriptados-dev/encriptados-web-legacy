@@ -46,7 +46,11 @@ export default function MegaMenu({
       initial={{ opacity: 0, y: 10 }}
       animate={{ opacity: 1, y: 0 }}
       exit={{ opacity: 0, y: 10 }}
-      className="absolute left-0 right-0 bg-[#0a0a0af5] border-b border-[#1A1A1A] shadow-xl backdrop-blur-sm z-10"
+      className="absolute left-0 right-0 border-b border-[#1A1A1A] shadow-xl z-10 px-5 pt-4 pb-6"
+      style={{
+        background: "rgba(12, 12, 12, 0.85)", // Nuevo color de fondo
+        backdropFilter: "blur(42px)", // Nuevo blur
+      }}
     >
       <div className="max-w-[1400px] mx-auto px-4 py-8">
         <div className="grid grid-cols-12 gap-20">
