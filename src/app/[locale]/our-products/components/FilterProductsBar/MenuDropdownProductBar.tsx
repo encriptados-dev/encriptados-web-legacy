@@ -29,7 +29,7 @@ const MenuDropdownProductBar: React.FC<MenuDropdownProductBarProps> = ({
     <Controller
       name={name}
       control={control}
-      defaultValue=""
+      defaultValue={selectedItem || ""} // Usa el valor de selectedItem como defaultValue
       render={({ field: { onChange } }) => (
         <Menu
           menuButton={
@@ -40,11 +40,17 @@ const MenuDropdownProductBar: React.FC<MenuDropdownProductBarProps> = ({
                   : "border-gray-300 text-[#7E7E7E] bg-white"
               }`}
             >
-              <span>
-                {selectedItem
-                  ? options.find((option) => option.value === selectedItem)
-                      ?.label || t("filterProducts.selectPlacerholder")
-                  : t("filterProducts.selectPlacerholder")}
+              <span className="flex items-center gap-x-2">
+                {/* Mostrar el icono en el botón de selección si está presente */}
+                {selectedItem &&
+                  options.find((option) => option.value === selectedItem)?.icon}
+                {/* Mostrar la etiqueta seleccionada o el placeholder */}
+                <span>
+                  {selectedItem
+                    ? options.find((option) => option.value === selectedItem)
+                        ?.label || t("filterProducts.selectPlacerholder")
+                    : t("filterProducts.selectPlacerholder")}
+                </span>
               </span>
             </MenuButton>
           }
@@ -52,7 +58,7 @@ const MenuDropdownProductBar: React.FC<MenuDropdownProductBarProps> = ({
           {options.map((item, index) => (
             <MenuItem
               key={index}
-              onClick={() => onChange(item.value)}
+              onClick={() => onChange(item.value)} // Actualiza el valor al seleccionar
               className={`flex items-center hover:bg-[#E3F8FF] transition duration-150 ease-in-out bg-[#FAFAFA] m-4 rounded-xl ${
                 selectedItem === item.value ? "bg-cyan-50" : ""
               }`}
@@ -67,6 +73,7 @@ const MenuDropdownProductBar: React.FC<MenuDropdownProductBarProps> = ({
                   selectedItem === item.value ? "" : ""
                 }`}
               />
+              {/* Mostrar el icono de la opción */}
               {item.icon && <span className="mr-2">{item.icon}</span>}
               <span
                 className={`font-semibold py-2 ${
