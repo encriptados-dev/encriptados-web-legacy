@@ -644,5 +644,146 @@
         "description": "Nuestro Chip internacional funciona en cualquier tipo de dispositivo IOS, Android, Windows o BlackBerry."
       }
     }
+  },
+  
+    "productsCategories": {
+      "sims": {
+        "title": "SIMS",
+        "description": "Conoce nuestras eSIM/SIM",
+        "items": {
+          "encryptedSim": {
+            "title": "SIM Encriptada",
+            "description": "Conoce cómo funciona la SIM Encriptada"
+          },
+          "iraSim": {
+            "title": "SIM IRA",
+            "description": "Conoce cómo funciona la SIM IRA"
+          },
+          "timSim": {
+            "title": "SIM TIM",
+            "description": "Conoce cómo funciona la SIM TIM"
+          }
+        }
+      },
+      "apps": {
+        "title": "Aplicaciones",
+        "description": "Productos increíbles, aplicaciones y sistemas con encriptación de inicio a fin",
+        "items": {
+          "silentCircle": {
+            "title": "Silent Circle",
+            "description": "Silent Circle es una aplicación de mensajería segura."
+          },
+          "armadillo": {
+            "title": "Armadillo",
+            "description": "Armadillo es una aplicación de mensajería segura."
+          },
+          "vaultChat": {
+            "title": "VaultChat",
+            "description": "VaultChat es una aplicación de mensajería segura."
+          },
+          "nordVpn": {
+            "title": "NORD VPN",
+            "description": "NORD VPN es una aplicación de mensajería segura."
+          },
+          "salt": {
+            "title": "Salt",
+            "description": "Salt es una aplicación de mensajería segura."
+          },
+          "vnclagoon": {
+            "title": "VNClagoon",
+            "description": "VNClagoon es una aplicación de mensajería segura."
+          },
+          "threemaWork": {
+            "title": "ThreemaWork",
+            "description": "ThreemaWork es una aplicación de mensajería segura."
+          },
+          "threema": {
+            "title": "Threema",
+            "description": "Threema es una aplicación de mensajería segura."
+          },
+          "secureCrypt": {
+            "title": "SecureCrypt",
+            "description": "SecureCrypt es una aplicación de mensajería segura."
+          },
+          "elyon": {
+            "title": "Elyon",
+            "description": "Elyon es una aplicación de mensajería segura."
+          }
+        }
+      },
+      "systems": {
+        "title": "Sistemas",
+        "description": "Sistemas de encriptación de datos",
+        "items": {
+          "secureMdmIphone": {
+            "title": "Secure MDM iPhone",
+            "description": "Secure MDM iPhone es una aplicación de mensajería segura."
+          },
+          "secureMdmAndroid": {
+            "title": "Secure MDM Android",
+            "description": "Secure MDM Android es una aplicación de mensajería segura."
+          },
+          "cryptcom": {
+            "title": "Cryptcom",
+            "description": "Cryptcom es una aplicación de mensajería segura."
+          },
+          "renati": {
+            "title": "Renati",
+            "description": "Renati es una aplicación de mensajería segura."
+          },
+          "ultraX": {
+            "title": "Ultra X",
+            "description": "Ultra X es una aplicación de mensajería segura."
+          },
+          "chatMail": {
+            "title": "ChatMail",
+            "description": "ChatMail es una aplicación de mensajería segura."
+          },
+          "decSecure": {
+            "title": "DEC Secure",
+            "description": "DEC Secure es una aplicación de mensajería segura."
+          },
+          "totalSec": {
+            "title": "Total Sec",
+            "description": "Total Sec es una aplicación de mensajería segura."
+          },
+          "armadillo": {
+            "title": "Armadillo",
+            "description": "Armadillo es una aplicación de mensajería segura."
+          },
+          "vaultChat": {
+            "title": "VaultChat",
+            "description": "VaultChat es una aplicación de mensajería segura."
+          },
+          "t2Communicator": {
+            "title": "T2 Communicator",
+            "description": "T2 Communicator es una aplicación de mensajería segura."
+          },
+          "intactPhone": {
+            "title": "Intact Phone",
+            "description": "Intact Phone es una aplicación de mensajería segura."
+          }
+        }
+      }
+    },
+    "othersCategories": {
+      "distributors": {
+        "title": "Distribuidores",
+        "description": "Conviértete en distribuidor de nuestros productos"
+      },
+      "blog": {
+        "title": "Blog",
+        "description": "Últimas noticias y actualizaciones"
+      },
+      "securityTest": {
+        "title": "Test de seguridad",
+        "description": "¿Qué tan seguro son tus dispositivos?"
+      },
+      "offers": {
+        "title": "Ofertas",
+        "description": "Descubre nuestras ofertas"
+      }
+    }
   }
-}
+  
+

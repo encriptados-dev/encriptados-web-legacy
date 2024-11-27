@@ -786,5 +786,143 @@
     "talkWithSupport": "Parla ora con un consulente di Encriptados direttamente su Telegram",
     "goTelegram": "Vai su Telegram",
     "articleTitle": "Articoli correlati"
+  },
+  "productsCategories": {
+    "sims": {
+      "title": "SIM",
+      "description": "Scopri le nostre eSIM/SIM",
+      "items": {
+        "encryptedSim": {
+          "title": "SIM Crittografata",
+          "description": "Scopri come funziona la SIM Crittografata"
+        },
+        "iraSim": {
+          "title": "SIM IRA",
+          "description": "Scopri come funziona la SIM IRA"
+        },
+        "timSim": {
+          "title": "SIM TIM",
+          "description": "Scopri come funziona la SIM TIM"
+        }
+      }
+    },
+    "apps": {
+      "title": "Applicazioni",
+      "description": "Prodotti incredibili, applicazioni e sistemi con crittografia end-to-end",
+      "items": {
+        "silentCircle": {
+          "title": "Silent Circle",
+          "description": "Silent Circle è un'app di messaggistica sicura."
+        },
+        "armadillo": {
+          "title": "Armadillo",
+          "description": "Armadillo è un'app di messaggistica sicura."
+        },
+        "vaultChat": {
+          "title": "VaultChat",
+          "description": "VaultChat è un'app di messaggistica sicura."
+        },
+        "nordVpn": {
+          "title": "NORD VPN",
+          "description": "NORD VPN è un'app di messaggistica sicura."
+        },
+        "salt": {
+          "title": "Salt",
+          "description": "Salt è un'app di messaggistica sicura."
+        },
+        "vnclagoon": {
+          "title": "VNClagoon",
+          "description": "VNClagoon è un'app di messaggistica sicura."
+        },
+        "threemaWork": {
+          "title": "ThreemaWork",
+          "description": "ThreemaWork è un'app di messaggistica sicura."
+        },
+        "threema": {
+          "title": "Threema",
+          "description": "Threema è un'app di messaggistica sicura."
+        },
+        "secureCrypt": {
+          "title": "SecureCrypt",
+          "description": "SecureCrypt è un'app di messaggistica sicura."
+        },
+        "elyon": {
+          "title": "Elyon",
+          "description": "Elyon è un'app di messaggistica sicura."
+        }
+      }
+    },
+    "systems": {
+      "title": "Sistemi",
+      "description": "Sistemi di crittografia dei dati",
+      "items": {
+        "secureMdmIphone": {
+          "title": "Secure MDM iPhone",
+          "description": "Secure MDM iPhone è un'app di messaggistica sicura."
+        },
+        "secureMdmAndroid": {
+          "title": "Secure MDM Android",
+          "description": "Secure MDM Android è un'app di messaggistica sicura."
+        },
+        "cryptcom": {
+          "title": "Cryptcom",
+          "description": "Cryptcom è un'app di messaggistica sicura."
+        },
+        "renati": {
+          "title": "Renati",
+          "description": "Renati è un'app di messaggistica sicura."
+        },
+        "ultraX": {
+          "title": "Ultra X",
+          "description": "Ultra X è un'app di messaggistica sicura."
+        },
+        "chatMail": {
+          "title": "ChatMail",
+          "description": "ChatMail è un'app di messaggistica sicura."
+        },
+        "decSecure": {
+          "title": "DEC Secure",
+          "description": "DEC Secure è un'app di messaggistica sicura."
+        },
+        "totalSec": {
+          "title": "Total Sec",
+          "description": "Total Sec è un'app di messaggistica sicura."
+        },
+        "armadillo": {
+          "title": "Armadillo",
+          "description": "Armadillo è un'app di messaggistica sicura."
+        },
+        "vaultChat": {
+          "title": "VaultChat",
+          "description": "VaultChat è un'app di messaggistica sicura."
+        },
+        "t2Communicator": {
+          "title": "T2 Communicator",
+          "description": "T2 Communicator è un'app di messaggistica sicura."
+        },
+        "intactPhone": {
+          "title": "Intact Phone",
+          "description": "Intact Phone è un'app di messaggistica sicura."
+        }
+      }
+    }
+  },
+  "othersCategories": {
+    "distributors": {
+      "title": "Distributori",
+      "description": "Diventa un distributore dei nostri prodotti"
+    },
+    "blog": {
+      "title": "Blog",
+      "description": "Ultime notizie e aggiornamenti"
+    },
+    "securityTest": {
+      "title": "Test di Sicurezza",
+      "description": "Quanto sono sicuri i tuoi dispositivi?"
+    },
+    "offers": {
+      "title": "Offerte",
+      "description": "Scopri le nostre offerte"
+    }
   }
 }

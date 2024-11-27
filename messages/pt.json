@@ -786,5 +786,143 @@
     "talkWithSupport": "Converse agora com um consultor da Encriptados diretamente no Telegram",
     "goTelegram": "Ir para o Telegram",
     "articleTitle": "Artigos relacionados"
+  },
+  "productsCategories": {
+    "sims": {
+      "title": "SIMs",
+      "description": "Descubra nossas eSIM/SIM",
+      "items": {
+        "encryptedSim": {
+          "title": "SIM Criptografado",
+          "description": "Descubra como funciona o SIM Criptografado"
+        },
+        "iraSim": {
+          "title": "SIM IRA",
+          "description": "Descubra como funciona o SIM IRA"
+        },
+        "timSim": {
+          "title": "SIM TIM",
+          "description": "Descubra como funciona o SIM TIM"
+        }
+      }
+    },
+    "apps": {
+      "title": "Aplicativos",
+      "description": "Produtos incríveis, aplicativos e sistemas com criptografia de ponta a ponta",
+      "items": {
+        "silentCircle": {
+          "title": "Silent Circle",
+          "description": "Silent Circle é um aplicativo de mensagens seguras."
+        },
+        "armadillo": {
+          "title": "Armadillo",
+          "description": "Armadillo é um aplicativo de mensagens seguras."
+        },
+        "vaultChat": {
+          "title": "VaultChat",
+          "description": "VaultChat é um aplicativo de mensagens seguras."
+        },
+        "nordVpn": {
+          "title": "NORD VPN",
+          "description": "NORD VPN é um aplicativo de mensagens seguras."
+        },
+        "salt": {
+          "title": "Salt",
+          "description": "Salt é um aplicativo de mensagens seguras."
+        },
+        "vnclagoon": {
+          "title": "VNClagoon",
+          "description": "VNClagoon é um aplicativo de mensagens seguras."
+        },
+        "threemaWork": {
+          "title": "ThreemaWork",
+          "description": "ThreemaWork é um aplicativo de mensagens seguras."
+        },
+        "threema": {
+          "title": "Threema",
+          "description": "Threema é um aplicativo de mensagens seguras."
+        },
+        "secureCrypt": {
+          "title": "SecureCrypt",
+          "description": "SecureCrypt é um aplicativo de mensagens seguras."
+        },
+        "elyon": {
+          "title": "Elyon",
+          "description": "Elyon é um aplicativo de mensagens seguras."
+        }
+      }
+    },
+    "systems": {
+      "title": "Sistemas",
+      "description": "Sistemas de criptografia de dados",
+      "items": {
+        "secureMdmIphone": {
+          "title": "Secure MDM iPhone",
+          "description": "Secure MDM iPhone é um aplicativo de mensagens seguras."
+        },
+        "secureMdmAndroid": {
+          "title": "Secure MDM Android",
+          "description": "Secure MDM Android é um aplicativo de mensagens seguras."
+        },
+        "cryptcom": {
+          "title": "Cryptcom",
+          "description": "Cryptcom é um aplicativo de mensagens seguras."
+        },
+        "renati": {
+          "title": "Renati",
+          "description": "Renati é um aplicativo de mensagens seguras."
+        },
+        "ultraX": {
+          "title": "Ultra X",
+          "description": "Ultra X é um aplicativo de mensagens seguras."
+        },
+        "chatMail": {
+          "title": "ChatMail",
+          "description": "ChatMail é um aplicativo de mensagens seguras."
+        },
+        "decSecure": {
+          "title": "DEC Secure",
+          "description": "DEC Secure é um aplicativo de mensagens seguras."
+        },
+        "totalSec": {
+          "title": "Total Sec",
+          "description": "Total Sec é um aplicativo de mensagens seguras."
+        },
+        "armadillo": {
+          "title": "Armadillo",
+          "description": "Armadillo é um aplicativo de mensagens seguras."
+        },
+        "vaultChat": {
+          "title": "VaultChat",
+          "description": "VaultChat é um aplicativo de mensagens seguras."
+        },
+        "t2Communicator": {
+          "title": "T2 Communicator",
+          "description": "T2 Communicator é um aplicativo de mensagens seguras."
+        },
+        "intactPhone": {
+          "title": "Intact Phone",
+          "description": "Intact Phone é um aplicativo de mensagens seguras."
+        }
+      }
+    }
+  },
+  "othersCategories": {
+    "distributors": {
+      "title": "Distribuidores",
+      "description": "Torne-se um distribuidor de nossos produtos"
+    },
+    "blog": {
+      "title": "Blog",
+      "description": "Últimas notícias e atualizações"
+    },
+    "securityTest": {
+      "title": "Teste de Segurança",
+      "description": "Quão seguros estão seus dispositivos?"
+    },
+    "offers": {
+      "title": "Ofertas",
+      "description": "Descubra nossas ofertas"
+    }
   }
 }

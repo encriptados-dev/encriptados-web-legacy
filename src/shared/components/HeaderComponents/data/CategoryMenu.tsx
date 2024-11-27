@@ -1,102 +1,217 @@
-export const productsCategories = [
-  {
-    title: "SIMS",
-    description: "Conoce nuestras eSIM/SIM",
-    link: "/sim-encriptada", // Ruta válida para Link
-    items: [
-      {
-        title: "SIM Encriptada",
-        link: "/sim-encriptada", // Ruta válida
-        image: "/images/mega-menu/virtual-sim.jpeg",
-        description: "Conoce cómo funciona la SIM Encriptada",
-      },
-      {
-        title: "SIM IRA",
-        link: "/bne-sim", // Ruta válida
-        image: "/images/mega-menu/virtual-sim.jpeg",
-        description: "Conoce cómo funciona la SIM IRA",
-      },
-      {
-        title: "SIM TIM",
-        link: "/datos-maya", // Ruta válida
-        image: "/images/mega-menu/virtual-sim.jpeg",
-        description: "Conoce cómo funciona la SIM TIM",
-      },
-    ],
-  },
-  {
-    title: "Aplicaciones",
-    description: "Productos increíbles, aplicaciones y sistemas con encriptación de inicio a fin",
-    link: "/aplicaciones", // Ruta válida
-    items: [
-      { title: "Silent Circle",image: "/images/mega-menu/aplicaciones.jpeg", link: "/app1",description:"Silent Circle es una aplicación de mensajería segura que permite a los usuarios enviar mensajes de texto, imágenes, videos y archivos de forma segura." }, // Ruta válida
-      { title: "Armadillo",image: "/images/mega-menu/aplicaciones.jpeg", link: "/app2" , description:"Armadillo es una aplicación de mensajería segura que permite a los usuarios enviar mensajes de texto, imágenes, videos y archivos de forma segura."}, // Ruta válida
-      { title: "VaultChat",image: "/images/mega-menu/aplicaciones.jpeg", link: "/app2" , description:"VaultChat es una aplicación de mensajería segura que permite a los usuarios enviar mensajes de texto, imágenes, videos y archivos de forma segura."}, // Ruta válida
-      { title: "NORD VPN",image: "/images/mega-menu/aplicaciones.jpeg", link: "/app2" , description:"NORD VPN es una aplicación de mensajería segura que permite a los usuarios enviar mensajes de texto, imágenes, videos y archivos de forma segura."}, // Ruta válida
-      { title: "Salt",image: "/images/mega-menu/aplicaciones.jpeg", link: "/app2" , description:"Salt es una aplicación de mensajería segura que permite a los usuarios enviar mensajes de texto, imágenes, videos y archivos de forma segura."}, // Ruta válida
-      { title: "VNClagoon",image: "/images/mega-menu/aplicaciones.jpeg", link: "/app2" , description:"VNClagoon es una aplicación de mensajería segura que permite a los usuarios enviar mensajes de texto, imágenes, videos y archivos de forma segura."}, // Ruta válida
-      { title: "ThreemaWork",image: "/images/mega-menu/aplicaciones.jpeg", link: "/app2" , description:"ThreemaWork es una aplicación de mensajería segura que permite a los usuarios enviar mensajes de texto, imágenes, videos y archivos de forma segura."}, // Ruta válida
-      { title: "Threema",image: "/images/mega-menu/aplicaciones.jpeg", link: "/app2" , description:"Threema es una aplicación de mensajería segura que permite a los usuarios enviar mensajes de texto, imágenes, videos y archivos de forma segura."}, // Ruta válida
-      { title: "SecureCrypt",image: "/images/mega-menu/aplicaciones.jpeg", link: "/app2" , description:"SecureCrypt es una aplicación de mensajería segura que permite a los usuarios enviar mensajes de texto, imágenes, videos y archivos de forma segura."}, // Ruta válida
-      { title: "Elyon", image: "/images/mega-menu/aplicaciones.jpeg",link: "/app2" , description:"Elyon es una aplicación de mensajería segura que permite a los usuarios enviar mensajes de texto, imágenes, videos y archivos de forma segura."}, // Ruta válida     
-    ],
-  },
-  {
-    title: "Sistemas",
-    description: "Sistemas de encriptación de datos",
-    link: "/sistemas", // Ruta válida
-    items: [
-      { title: "Secure MDM iPhone", image: "/images/mega-menu/sistemas.jpeg", link: "/system1" , description:"Secure MDM iPhone es una aplicación de mensajería segura que permite a los usuarios enviar mensajes de texto, imágenes, videos y archivos de forma segura."}, // Ruta válida
-      { title: "Secure MDM Android", image: "/images/mega-menu/sistemas.jpeg", link: "/system2" ,   description:"Secure MDM Android es una aplicación de mensajería segura que permite a los usuarios enviar mensajes de texto, imágenes, videos y archivos de forma segura."}, // Ruta válida
-      { title: "Cryptcom", image: "/images/mega-menu/sistemas.jpeg", link: "/system2" , description:"Cryptcom es una aplicación de mensajería segura que permite a los usuarios enviar mensajes de texto, imágenes, videos y archivos de forma segura."}, // Ruta válida
-      { title: "Renati", image: "/images/mega-menu/sistemas.jpeg", link: "/system2" ,   description:"Renati es una aplicación de mensajería segura que permite a los usuarios enviar mensajes de texto, imágenes, videos y archivos de forma segura."}, // Ruta válida
-      { title: "Ultra X", image: "/images/mega-menu/sistemas.jpeg", link: "/system2"  , description:"Ultra X es una aplicación de mensajería segura que permite a los usuarios enviar mensajes de texto, imágenes, videos y archivos de forma segura."}, // Ruta válida
-      { title: "ChatMail", image: "/images/mega-menu/sistemas.jpeg", link: "/system2" ,   description:"ChatMail es una aplicación de mensajería segura que permite a los usuarios enviar mensajes de texto, imágenes, videos y archivos de forma segura."}, // Ruta válida
-      { title: "DEC Secure", image: "/images/mega-menu/sistemas.jpeg", link: "/system2" , description:"DEC Secure es una aplicación de mensajería segura que permite a los usuarios enviar mensajes de texto, imágenes, videos y archivos de forma segura."}, // Ruta válida
-      { title: "Total Sec", image: "/images/mega-menu/sistemas.jpeg", link: "/system2" , description:"Total Sec es una aplicación de mensajería segura que permite a los usuarios enviar mensajes de texto, imágenes, videos y archivos de forma segura."}, // Ruta válida
-      { title: "Armadillo", image: "/images/mega-menu/sistemas.jpeg", link: "/system2" , description:"Armadillo es una aplicación de mensajería segura que permite a los usuarios enviar mensajes de texto, imágenes, videos y archivos de forma segura."}, // Ruta válida
-      { title: "VaultChat", image: "/images/mega-menu/sistemas.jpeg", link: "/system2" , description:"VaultChat es una aplicación de mensajería segura que permite a los usuarios enviar mensajes de texto, imágenes, videos y archivos de forma segura."}, // Ruta válida
-      { title: "T2 Communicator", image: "/images/mega-menu/sistemas.jpeg", link: "/system2" , description:"T2 Communicator es una aplicación de mensajería segura que permite a los usuarios enviar mensajes de texto, imágenes, videos y archivos de forma segura."}, // Ruta válida
-      { title: "Intact Phone", image: "/images/mega-menu/sistemas.jpeg", link: "/system2" , description:"Intact Phone es una aplicación de mensajería segura que permite a los usuarios enviar mensajes de texto, imágenes, videos y archivos de forma segura."}, // Ruta válida
-    ],
-  },
-];
+import { useTranslations } from "next-intl";
+import { ProductsCategory, OthersCategory } from "./types";
 
-export const othersCategories = [
-  {
-    title: "Distribuidores",
-    description: "Conviértete en distribuidor de nuestros productos",
-    image: "/images/mega-menu/distribuidores.jpeg",
-    link: "/distributors", // Ruta
-    items: [
-      
-    ],
-  },
-  {
-    title: "Blog",
-    description: " Últimas noticias y actualizaciones", 
-    link: "/blog", 
-    image: "/images/mega-menu/blog.jpeg",
-    items: [
-      
-    ],
-  },
-  {
-    title: "Test de seguridad",
-    description: "¿Qué tan seguro son tus dispositivos?",
-    link: "/security-test", 
-    image: "/images/mega-menu/seguridad.jpeg",
-    items: [
-      
-    ],
-  },
-  {
-    title: "Ofertas",
-    description: "Descubre nuestras ofertas",
-    link: "/offers", 
-    image: "/images/mega-menu/ofertas.jpeg",
-    items: [
-      
-    ],
-  },
-];
+// Hook para obtener categorías de productos traducidas
+export function useTranslatedProductsCategories(): ProductsCategory[] {
+  const t = useTranslations("productsCategories");
+
+  return [
+    {
+      title: t("sims.title", { defaultValue: "SIMS" }),
+      description: t("sims.description", { defaultValue: "Conoce nuestras eSIM/SIM" }),
+      link: "/sim-encriptada",
+      items: [
+        {
+          title: t("sims.items.encryptedSim.title", { defaultValue: "SIM Encriptada" }),
+          link: "/sim-encriptada",
+          image: "/images/mega-menu/virtual-sim.jpeg",
+          description: t("sims.items.encryptedSim.description", { defaultValue: "Conoce cómo funciona la SIM Encriptada" }),
+        },
+        {
+          title: t("sims.items.iraSim.title", { defaultValue: "SIM IRA" }),
+          link: "/bne-sim",
+          image: "/images/mega-menu/virtual-sim.jpeg",
+          description: t("sims.items.iraSim.description", { defaultValue: "Conoce cómo funciona la SIM IRA" }),
+        },
+        {
+          title: t("sims.items.timSim.title", { defaultValue: "SIM TIM" }),
+          link: "/datos-maya",
+          image: "/images/mega-menu/virtual-sim.jpeg",
+          description: t("sims.items.timSim.description", { defaultValue: "Conoce cómo funciona la SIM TIM" }),
+        },
+      ],
+    },
+    {
+      title: t("apps.title", { defaultValue: "Aplicaciones" }),
+      description: t("apps.description", { defaultValue: "Productos increíbles, aplicaciones y sistemas con encriptación de inicio a fin" }),
+      link: "/aplicaciones",
+      items: [
+        {
+          title: t("apps.items.silentCircle.title", { defaultValue: "Silent Circle" }),
+          image: "/images/mega-menu/aplicaciones.jpeg",
+          link: "/app1",
+          description: t("apps.items.silentCircle.description", { defaultValue: "Silent Circle es una aplicación de mensajería segura." }),
+        },
+        {
+          title: t("apps.items.armadillo.title", { defaultValue: "Armadillo" }),
+          image: "/images/mega-menu/aplicaciones.jpeg",
+          link: "/app2",
+          description: t("apps.items.armadillo.description", { defaultValue: "Armadillo es una aplicación de mensajería segura." }),
+        },
+        {
+          title: t("apps.items.vaultChat.title", { defaultValue: "VaultChat" }),
+          image: "/images/mega-menu/aplicaciones.jpeg",
+          link: "/app3",
+          description: t("apps.items.vaultChat.description", { defaultValue: "VaultChat es una aplicación de mensajería segura." }),
+        },
+        {
+          title: t("apps.items.nordVpn.title", { defaultValue: "NORD VPN" }),
+          image: "/images/mega-menu/aplicaciones.jpeg",
+          link: "/app4",
+          description: t("apps.items.nordVpn.description", { defaultValue: "NORD VPN es una aplicación de mensajería segura." }),
+        },
+        {
+          title: t("apps.items.salt.title", { defaultValue: "Salt" }),
+          image: "/images/mega-menu/aplicaciones.jpeg",
+          link: "/app5",
+          description: t("apps.items.salt.description", { defaultValue: "Salt es una aplicación de mensajería segura." }),
+        },
+        {
+          title: t("apps.items.vnclagoon.title", { defaultValue: "VNClagoon" }),
+          image: "/images/mega-menu/aplicaciones.jpeg",
+          link: "/app6",
+          description: t("apps.items.vnclagoon.description", { defaultValue: "VNClagoon es una aplicación de mensajería segura." }),
+        },
+        {
+          title: t("apps.items.threemaWork.title", { defaultValue: "ThreemaWork" }),
+          image: "/images/mega-menu/aplicaciones.jpeg",
+          link: "/app7",
+          description: t("apps.items.threemaWork.description", { defaultValue: "ThreemaWork es una aplicación de mensajería segura." }),
+        },
+        {
+          title: t("apps.items.threema.title", { defaultValue: "Threema" }),
+          image: "/images/mega-menu/aplicaciones.jpeg",
+          link: "/app8",
+          description: t("apps.items.threema.description", { defaultValue: "Threema es una aplicación de mensajería segura." }),
+        },
+        {
+          title: t("apps.items.secureCrypt.title", { defaultValue: "SecureCrypt" }),
+          image: "/images/mega-menu/aplicaciones.jpeg",
+          link: "/app9",
+          description: t("apps.items.secureCrypt.description", { defaultValue: "SecureCrypt es una aplicación de mensajería segura." }),
+        },
+        {
+          title: t("apps.items.elyon.title", { defaultValue: "Elyon" }),
+          image: "/images/mega-menu/aplicaciones.jpeg",
+          link: "/app10",
+          description: t("apps.items.elyon.description", { defaultValue: "Elyon es una aplicación de mensajería segura." }),
+        },
+      ],
+    },
+    {
+      title: t("systems.title", { defaultValue: "Sistemas" }),
+      description: t("systems.description", { defaultValue: "Sistemas de encriptación de datos" }),
+      link: "/sistemas",
+      items: [
+        {
+          title: t("systems.items.secureMdmIphone.title", { defaultValue: "Secure MDM iPhone" }),
+          image: "/images/mega-menu/sistemas.jpeg",
+          link: "/system1",
+          description: t("systems.items.secureMdmIphone.description", { defaultValue: "Secure MDM iPhone es una aplicación de mensajería segura." }),
+        },
+        {
+          title: t("systems.items.secureMdmAndroid.title", { defaultValue: "Secure MDM Android" }),
+          image: "/images/mega-menu/sistemas.jpeg",
+          link: "/system2",
+          description: t("systems.items.secureMdmAndroid.description", { defaultValue: "Secure MDM Android es una aplicación de mensajería segura." }),
+        },
+        {
+          title: t("systems.items.cryptcom.title", { defaultValue: "Cryptcom" }),
+          image: "/images/mega-menu/sistemas.jpeg",
+          link: "/system3",
+          description: t("systems.items.cryptcom.description", { defaultValue: "Cryptcom es una aplicación de mensajería segura." }),
+        },
+        {
+          title: t("systems.items.renati.title", { defaultValue: "Renati" }),
+          image: "/images/mega-menu/sistemas.jpeg",
+          link: "/system4",
+          description: t("systems.items.renati.description", { defaultValue: "Renati es una aplicación de mensajería segura." }),
+        },
+        {
+          title: t("systems.items.ultraX.title", { defaultValue: "Ultra X" }),
+          image: "/images/mega-menu/sistemas.jpeg",
+          link: "/system5",
+          description: t("systems.items.ultraX.description", { defaultValue: "Ultra X es una aplicación de mensajería segura." }),
+        },
+        {
+          title: t("systems.items.chatMail.title", { defaultValue: "ChatMail" }),
+          image: "/images/mega-menu/sistemas.jpeg",
+          link: "/system6",
+          description: t("systems.items.chatMail.description", { defaultValue: "ChatMail es una aplicación de mensajería segura." }),
+        },
+        {
+          title: t("systems.items.decSecure.title", { defaultValue: "DEC Secure" }),
+          image: "/images/mega-menu/sistemas.jpeg",
+          link: "/system7",
+          description: t("systems.items.decSecure.description", { defaultValue: "DEC Secure es una aplicación de mensajería segura." }),
+        },
+        {
+          title: t("systems.items.totalSec.title", { defaultValue: "Total Sec" }),
+          image: "/images/mega-menu/sistemas.jpeg",
+          link: "/system8",
+          description: t("systems.items.totalSec.description", { defaultValue: "Total Sec es una aplicación de mensajería segura." }),
+        },
+        {
+          title: t("systems.items.armadillo.title", { defaultValue: "Armadillo" }),
+          image: "/images/mega-menu/sistemas.jpeg",
+          link: "/system9",
+          description: t("systems.items.armadillo.description", { defaultValue: "Armadillo es una aplicación de mensajería segura." }),
+        },
+        {
+          title: t("systems.items.vaultChat.title", { defaultValue: "VaultChat" }),
+          image: "/images/mega-menu/sistemas.jpeg",
+          link: "/system10",
+          description: t("systems.items.vaultChat.description", { defaultValue: "VaultChat es una aplicación de mensajería segura." }),
+        },
+        {
+          title: t("systems.items.t2Communicator.title", { defaultValue: "T2 Communicator" }),
+          image: "/images/mega-menu/sistemas.jpeg",
+          link: "/system11",
+          description: t("systems.items.t2Communicator.description", { defaultValue: "T2 Communicator es una aplicación de mensajería segura." }),
+        },
+        {
+          title: t("systems.items.intactPhone.title", { defaultValue: "Intact Phone" }),
+          image: "/images/mega-menu/sistemas.jpeg",
+          link: "/system12",
+          description: t("systems.items.intactPhone.description", { defaultValue: "Intact Phone es una aplicación de mensajería segura." }),
+        },
+      ],
+    },
+  ];
+}
+
+// Hook para obtener otras categorías traducidas
+export function useTranslatedOthersCategories(): OthersCategory[] {
+  const t2 = useTranslations("othersCategories");
+
+  return [
+    {
+      title: t2("distributors.title", { defaultValue: "Distribuidores" }),
+      description: t2("distributors.description", { defaultValue: "Conviértete en distribuidor de nuestros productos" }),
+      image: "/images/mega-menu/distribuidores.jpeg",
+      link: "/distributors",
+      items: [],
+    },
+    {
+      title: t2("blog.title", { defaultValue: "Blog" }),
+      description: t2("blog.description", { defaultValue: "Últimas noticias y actualizaciones" }),
+      link: "/blog",
+      image: "/images/mega-menu/blog.jpeg",
+      items: [],
+    },
+    {
+      title: t2("securityTest.title", { defaultValue: "Test de seguridad" }),
+      description: t2("securityTest.description", { defaultValue: "¿Qué tan seguro son tus dispositivos?" }),
+      link: "/security-test",
+      image: "/images/mega-menu/seguridad.jpeg",
+      items: [],
+    },
+    {
+      title: t2("offers.title", { defaultValue: "Ofertas" }),
+      description: t2("offers.description", { defaultValue: "Descubre nuestras ofertas" }),
+      link: "/offers",
+      image: "/images/mega-menu/ofertas.jpeg",
+      items: [],
+    },
+  ];
+}

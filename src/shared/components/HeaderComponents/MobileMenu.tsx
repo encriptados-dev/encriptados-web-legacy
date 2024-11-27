@@ -5,12 +5,15 @@ import { motion, AnimatePresence } from "framer-motion";
 import { ChevronDown, Menu } from 'lucide-react';
 import { useRouter } from "next/navigation";
 import { LoginModal } from "./LoginModal";
-import MobileMenuSvg from "@/shared/svgs/MobileMenuSvg";
+import EncryptedLogoMobile from "./EncrytedLogoMovbile";
 import LanguageDropdown from "./LanguageSelector";
 import WorldIcon from "@/shared/svgs/WorldIcon";
-import { productsCategories, othersCategories } from "@/shared/components/HeaderComponents/data/CategoryMenu";
+import {useTranslatedProductsCategories , useTranslatedOthersCategories } from "@/shared/components/HeaderComponents/data/CategoryMenu";
 
 export default function MobileMenu() {
+  const productsCategories = useTranslatedProductsCategories (); // Obtén las categorías traducidas
+  const othersCategories = useTranslatedOthersCategories(); // Obtén las otras categorías traducidas
+
   const [isOpen, setIsOpen] = useState(false);
   const [activeCategory, setActiveCategory] = useState(-1);
   const [activeSubCategory, setActiveSubCategory] = useState(-1);
@@ -48,8 +51,8 @@ export default function MobileMenu() {
     <div className="md:hidden">
       {/* Header */}
       <div className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-4 py-3 bg-[#151515] ">
-        <div className="flex items-center space-x-2">
-          <MobileMenuSvg />
+        <div className="flex items-center space-x-2">          
+          <EncryptedLogoMobile />          
           <LanguageDropdown />
         </div>
 
@@ -85,9 +88,9 @@ export default function MobileMenu() {
                 {/* Tienda with Nuevo badge */}
                 <button
                   onClick={() => handleLinkClick("/tienda")}
-                  className="flex items-center justify-start gap-4 w-full px-4 py-3 border-b border-[#1A1A1A] text-left"
+                  className="flex items-center justify-start gap-4 w-full px-4 py-3 border-b border-[#1A1A1A] text-left text-[#ffffff80] hover:text-white"
                 >
-                  <span className="text-[#ffffff80] text-xl font-extralight">Tienda</span>
+                  <span className=" text-xl font-extralight">Tienda</span>
                   <span className="px-2 py-0.5 text-xs text-[#44D3FF] bg-[#06546C] rounded-full">
                     Nuevo
                   </span>
@@ -235,4 +238,3 @@ export default function MobileMenu() {
     </div>
   );
 }
-

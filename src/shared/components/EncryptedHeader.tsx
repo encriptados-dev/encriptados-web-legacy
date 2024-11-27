@@ -8,25 +8,23 @@ import MobileMenu from "./HeaderComponents/MobileMenu";
 import LanguageDropdown from "./HeaderComponents/LanguageSelector";
 import EncryptedLogo from "./HeaderComponents/EncryptedLogo";
 import Link from "next/link";
-import {
-  productsCategories,
-  othersCategories,
-} from "../components/HeaderComponents/data/CategoryMenu";
+import { useTranslatedProductsCategories, useTranslatedOthersCategories } from './HeaderComponents/data/CategoryMenu';
 import WorldIcon from "../svgs/WorldIcon";
 
 export default function EncryptedHeader() {
+  const productsCategories = useTranslatedProductsCategories(); // Obtén las categorías traducidas
+  const othersCategories = useTranslatedOthersCategories(); // Obtén las otras categorías traducidas
+
   const [isMobile, setIsMobile] = useState(false);
   const [isDesktopMenuOpen, setIsDesktopMenuOpen] = useState(false);
-  const [currentMenu, setCurrentMenu] = useState<"products" | "others">(
-    "products"
-  );
+  const [currentMenu, setCurrentMenu] = useState<"products" | "others">('products');
   const [activeCategory, setActiveCategory] = useState(0);
   const [hoveredItem, setHoveredItem] = useState(
     productsCategories[0]?.items[0] || {
-      title: "No disponible",
-      link: "#",
-      description: "No hay elementos disponibles",
-      image: "/placeholder.svg",
+      title: 'No disponible',
+      link: '#',
+      description: 'No hay elementos disponibles',
+      image: '/placeholder.svg',
     }
   );
 

@@ -787,5 +787,143 @@
     "talkWithSupport": "Discutez maintenant avec un conseiller d'Encriptados directement sur Telegram",
     "goTelegram": "Aller sur Telegram",
     "articleTitle": "Articles connexes"
+  },
+  "productsCategories": {
+    "sims": {
+      "title": "SIMS",
+      "description": "Découvrez nos eSIM/SIM",
+      "items": {
+        "encryptedSim": {
+          "title": "SIM Cryptée",
+          "description": "Découvrez comment fonctionne la SIM Cryptée"
+        },
+        "iraSim": {
+          "title": "SIM IRA",
+          "description": "Découvrez comment fonctionne la SIM IRA"
+        },
+        "timSim": {
+          "title": "SIM TIM",
+          "description": "Découvrez comment fonctionne la SIM TIM"
+        }
+      }
+    },
+    "apps": {
+      "title": "Applications",
+      "description": "Produits incroyables, applications et systèmes avec cryptage de bout en bout",
+      "items": {
+        "silentCircle": {
+          "title": "Silent Circle",
+          "description": "Silent Circle est une application de messagerie sécurisée."
+        },
+        "armadillo": {
+          "title": "Armadillo",
+          "description": "Armadillo est une application de messagerie sécurisée."
+        },
+        "vaultChat": {
+          "title": "VaultChat",
+          "description": "VaultChat est une application de messagerie sécurisée."
+        },
+        "nordVpn": {
+          "title": "NORD VPN",
+          "description": "NORD VPN est une application de messagerie sécurisée."
+        },
+        "salt": {
+          "title": "Salt",
+          "description": "Salt est une application de messagerie sécurisée."
+        },
+        "vnclagoon": {
+          "title": "VNClagoon",
+          "description": "VNClagoon est une application de messagerie sécurisée."
+        },
+        "threemaWork": {
+          "title": "ThreemaWork",
+          "description": "ThreemaWork est une application de messagerie sécurisée."
+        },
+        "threema": {
+          "title": "Threema",
+          "description": "Threema est une application de messagerie sécurisée."
+        },
+        "secureCrypt": {
+          "title": "SecureCrypt",
+          "description": "SecureCrypt est une application de messagerie sécurisée."
+        },
+        "elyon": {
+          "title": "Elyon",
+          "description": "Elyon est une application de messagerie sécurisée."
+        }
+      }
+    },
+    "systems": {
+      "title": "Systèmes",
+      "description": "Systèmes de cryptage des données",
+      "items": {
+        "secureMdmIphone": {
+          "title": "Secure MDM iPhone",
+          "description": "Secure MDM iPhone est une application de messagerie sécurisée."
+        },
+        "secureMdmAndroid": {
+          "title": "Secure MDM Android",
+          "description": "Secure MDM Android est une application de messagerie sécurisée."
+        },
+        "cryptcom": {
+          "title": "Cryptcom",
+          "description": "Cryptcom est une application de messagerie sécurisée."
+        },
+        "renati": {
+          "title": "Renati",
+          "description": "Renati est une application de messagerie sécurisée."
+        },
+        "ultraX": {
+          "title": "Ultra X",
+          "description": "Ultra X est une application de messagerie sécurisée."
+        },
+        "chatMail": {
+          "title": "ChatMail",
+          "description": "ChatMail est une application de messagerie sécurisée."
+        },
+        "decSecure": {
+          "title": "DEC Secure",
+          "description": "DEC Secure est une application de messagerie sécurisée."
+        },
+        "totalSec": {
+          "title": "Total Sec",
+          "description": "Total Sec est une application de messagerie sécurisée."
+        },
+        "armadillo": {
+          "title": "Armadillo",
+          "description": "Armadillo est une application de messagerie sécurisée."
+        },
+        "vaultChat": {
+          "title": "VaultChat",
+          "description": "VaultChat est une application de messagerie sécurisée."
+        },
+        "t2Communicator": {
+          "title": "T2 Communicator",
+          "description": "T2 Communicator est une application de messagerie sécurisée."
+        },
+        "intactPhone": {
+          "title": "Intact Phone",
+          "description": "Intact Phone est une application de messagerie sécurisée."
+        }
+      }
+    }
+  },
+  "othersCategories": {
+    "distributors": {
+      "title": "Distributeurs",
+      "description": "Devenez distributeur de nos produits"
+    },
+    "blog": {
+      "title": "Blog",
+      "description": "Dernières nouvelles et mises à jour"
+    },
+    "securityTest": {
+      "title": "Test de Sécurité",
+      "description": "À quel point vos appareils sont-ils sécurisés ?"
+    },
+    "offers": {
+      "title": "Offres",
+      "description": "Découvrez nos offres"
+    }
   }
 }

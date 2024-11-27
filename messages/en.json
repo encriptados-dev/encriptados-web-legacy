@@ -790,71 +790,146 @@
     "goTelegram": "Go to Telegram",
     "articleTitle": "Related Articles"
   },
-  "productsCategories": {
+  
+    "productsCategories": {
       "sims": {
         "title": "SIMS",
-        "description": "Conoce nuestras eSIM/SIM",
+        "description": "Discover our eSIM/SIM",
         "items": {
           "encryptedSim": {
-            "title": "SIM Encriptada",
-            "description": "Conoce cómo funciona la SIM Encriptada"
+            "title": "Encrypted SIM",
+            "description": "Learn how the Encrypted SIM works"
           },
           "iraSim": {
-            "title": "SIM IRA",
-            "description": "Conoce cómo funciona la SIM IRA"
+            "title": "IRA SIM",
+            "description": "Learn how the IRA SIM works"
           },
           "timSim": {
-            "title": "SIM TIM",
-            "description": "Conoce cómo funciona la SIM TIM"
+            "title": "TIM SIM",
+            "description": "Learn how the TIM SIM works"
           }
         }
       },
       "apps": {
-        "title": "Aplicaciones",
-        "description": "Productos increíbles, aplicaciones y sistemas con encriptación de inicio a fin",
+        "title": "Applications",
+        "description": "Amazing products, applications, and systems with end-to-end encryption",
         "items": {
           "silentCircle": {
             "title": "Silent Circle",
-            "description": "Silent Circle es una aplicación de mensajería segura que permite a los usuarios enviar mensajes de texto, imágenes, videos y archivos de forma segura."
+            "description": "Silent Circle is a secure messaging app."
           },
           "armadillo": {
             "title": "Armadillo",
-            "description": "Armadillo es una aplicación de mensajería segura que permite a los usuarios enviar mensajes de texto, imágenes, videos y archivos de forma segura."
+            "description": "Armadillo is a secure messaging app."
+          },
+          "vaultChat": {
+            "title": "VaultChat",
+            "description": "VaultChat is a secure messaging app."
+          },
+          "nordVpn": {
+            "title": "NORD VPN",
+            "description": "NORD VPN is a secure messaging app."
+          },
+          "salt": {
+            "title": "Salt",
+            "description": "Salt is a secure messaging app."
+          },
+          "vnclagoon": {
+            "title": "VNClagoon",
+            "description": "VNClagoon is a secure messaging app."
+          },
+          "threemaWork": {
+            "title": "ThreemaWork",
+            "description": "ThreemaWork is a secure messaging app."
+          },
+          "threema": {
+            "title": "Threema",
+            "description": "Threema is a secure messaging app."
+          },
+          "secureCrypt": {
+            "title": "SecureCrypt",
+            "description": "SecureCrypt is a secure messaging app."
+          },
+          "elyon": {
+            "title": "Elyon",
+            "description": "Elyon is a secure messaging app."
           }
         }
       },
       "systems": {
-        "title": "Sistemas",
-        "description": "Sistemas de encriptación de datos",
+        "title": "Systems",
+        "description": "Data encryption systems",
         "items": {
           "secureMdmIphone": {
             "title": "Secure MDM iPhone",
-            "description": "Secure MDM iPhone es una aplicación de gestión segura para iPhone."
+            "description": "Secure MDM iPhone is a secure messaging app."
           },
           "secureMdmAndroid": {
             "title": "Secure MDM Android",
-            "description": "Secure MDM Android es una aplicación de gestión segura para Android."
+            "description": "Secure MDM Android is a secure messaging app."
+          },
+          "cryptcom": {
+            "title": "Cryptcom",
+            "description": "Cryptcom is a secure messaging app."
+          },
+          "renati": {
+            "title": "Renati",
+            "description": "Renati is a secure messaging app."
+          },
+          "ultraX": {
+            "title": "Ultra X",
+            "description": "Ultra X is a secure messaging app."
+          },
+          "chatMail": {
+            "title": "ChatMail",
+            "description": "ChatMail is a secure messaging app."
+          },
+          "decSecure": {
+            "title": "DEC Secure",
+            "description": "DEC Secure is a secure messaging app."
+          },
+          "totalSec": {
+            "title": "Total Sec",
+            "description": "Total Sec is a secure messaging app."
+          },
+          "armadillo": {
+            "title": "Armadillo",
+            "description": "Armadillo is a secure messaging app."
+          },
+          "vaultChat": {
+            "title": "VaultChat",
+            "description": "VaultChat is a secure messaging app."
+          },
+          "t2Communicator": {
+            "title": "T2 Communicator",
+            "description": "T2 Communicator is a secure messaging app."
+          },
+          "intactPhone": {
+            "title": "Intact Phone",
+            "description": "Intact Phone is a secure messaging app."
           }
         }
       }
     },
     "othersCategories": {
       "distributors": {
-        "title": "Distribuidores",
-        "description": "Conviértete en distribuidor de nuestros productos"
+        "title": "Distributors",
+        "description": "Become a distributor of our products"
       },
       "blog": {
         "title": "Blog",
-        "description": "Últimas noticias y actualizaciones"
+        "description": "Latest news and updates"
       },
       "securityTest": {
-        "title": "Test de seguridad",
-        "description": "¿Qué tan seguros son tus dispositivos?"
+        "title": "Security Test",
+        "description": "How secure are your devices?"
       },
       "offers": {
-        "title": "Ofertas",
-        "description": "Descubre nuestras ofertas"
+        "title": "Offers",
+        "description": "Discover our offers"
       }
-    } 
-  
-}
+    }
+  }
+    
+
+
