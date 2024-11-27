@@ -14,9 +14,9 @@ type MenuItem = {
 
 type Category = {
   title: string;
-  description: string;
-  link: string; // Enlace a la categoría
-  image?: string; // Imagen de la categoría
+  description?: string;
+  link: string;
+  image?: string;
   items: MenuItem[];
 };
 
@@ -26,7 +26,7 @@ type Props = {
   setActiveCategory: (index: number) => void;
   hoveredItem: MenuItem | null;
   setHoveredItem: (item: MenuItem) => void;
-  closeMegaMenu: () => void; // Función para cerrar el MegaMenu
+  closeMegaMenu: () => void;
 };
 
 export default function MegaMenu({
@@ -69,7 +69,10 @@ export default function MegaMenu({
                     : "hover:bg-[#1A1A1A]"
                 }`}
                 onClick={closeMegaMenu}
-                onMouseEnter={() => setActiveCategory(index)}
+                onMouseEnter={() => {
+                  setActiveCategory(index);
+                  setHoveredItem(null); // Asegúrate de resetear el hoveredItem
+                }}
               >
                 <h3 className="text-white font-medium flex items-center">
                   {category.title}
@@ -97,9 +100,15 @@ export default function MegaMenu({
               <div className="col-span-5">
                 <div className="rounded-xl overflow-hidden">
                   <Image
-                    src={hoveredItem?.image || "/placeholder.svg"}
+                    src={
+                      hoveredItem?.image ||
+                      activeCategoryImage ||
+                      "/placeholder.svg"
+                    }
                     alt={
-                      hoveredItem?.title || t("preview")
+                      hoveredItem?.title ||
+                      activeCategoryData.title ||
+                      t("preview")
                     }
                     width={400}
                     height={300}
@@ -109,6 +118,7 @@ export default function MegaMenu({
                     <h3 className="text-white font-medium">
                       {hoveredItem?.description ||
                         hoveredItem?.title ||
+                        activeCategoryData.description ||
                         t("preview")}
                     </h3>
                     {hoveredItem?.link && (

@@ -10,6 +10,7 @@ export function useTranslatedProductsCategories(): ProductsCategory[] {
       title: t("sims.title", { defaultValue: "SIMS" }),
       description: t("sims.description", { defaultValue: "Conoce nuestras eSIM/SIM" }),
       link: "/sim-encriptada",
+      image: "/images/mega-menu/virtual-sim.jpeg",
       items: [
         {
           title: t("sims.items.encryptedSim.title", { defaultValue: "SIM Encriptada" }),
@@ -35,6 +36,7 @@ export function useTranslatedProductsCategories(): ProductsCategory[] {
       title: t("apps.title", { defaultValue: "Aplicaciones" }),
       description: t("apps.description", { defaultValue: "Productos increíbles, aplicaciones y sistemas con encriptación de inicio a fin" }),
       link: "/aplicaciones",
+      image: "/images/mega-menu/aplicaciones.jpeg",
       items: [
         {
           title: t("apps.items.silentCircle.title", { defaultValue: "Silent Circle" }),
@@ -102,6 +104,7 @@ export function useTranslatedProductsCategories(): ProductsCategory[] {
       title: t("systems.title", { defaultValue: "Sistemas" }),
       description: t("systems.description", { defaultValue: "Sistemas de encriptación de datos" }),
       link: "/sistemas",
+      image: "/images/mega-menu/sistemas.jpeg",
       items: [
         {
           title: t("systems.items.secureMdmIphone.title", { defaultValue: "Secure MDM iPhone" }),
