@@ -61,6 +61,7 @@ export default function MegaMenu({
           <div className="col-span-4 space-y-6">
             {categories.map((category, index) => (
               <Link
+                prefetch={true}
                 href={category.link}
                 key={index}
                 className={`block p-4 rounded-lg ${
@@ -123,6 +124,7 @@ export default function MegaMenu({
                     </h3>
                     {hoveredItem?.link && (
                       <Link
+                        prefetch={true}
                         href={hoveredItem.link}
                         className="inline-flex items-center text-sm text-[#44D3FF] hover:text-white mt-2 transition-colors"
                         onClick={closeMegaMenu}
@@ -151,6 +153,7 @@ export default function MegaMenu({
                   </h3>
                   {activeCategoryLink && (
                     <Link
+                      prefetch={true}
                       href={activeCategoryLink}
                       className="inline-flex items-center text-sm text-[#44D3FF] hover:text-white mt-2 transition-colors"
                       onClick={closeMegaMenu}

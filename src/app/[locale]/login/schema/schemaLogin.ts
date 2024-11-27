@@ -1,14 +1,17 @@
 import * as yup from "yup";
 
-const schemaLogin = (t: any) =>
+// Recibe el traductor `t` como argumento
+const schemaLogin = (t: (key: string) => string) =>
   yup.object().shape({
     accountNumber: yup
       .string()
-      .length(16, t("LoginPage.inputErrors.moreThanSixteenNumbers"))
-      .required(),
+      .length(16, t("inputErrors.moreThanSixteenNumbers")) // Traducción de error
+      .required(t("inputErrors.required")), // Asume que tienes una clave 'required' en tu archivo de traducción
   });
 
-type SchemaLoginType = yup.InferType<any>;
+// Inferimos el tipo basado en el esquema
+type SchemaLoginType = ReturnType<typeof schemaLogin>["__outputType"];
 
 export { schemaLogin };
 export type { SchemaLoginType };
+

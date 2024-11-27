@@ -106,6 +106,7 @@
     },
     "generatedSection": {
       "accountNumber": {
+        "yourNewAccountNumber": "Seu novo número de conta",
         "title": "Gerencie tudo sem envolver seus dados pessoais.",
         "getNumberAccountTitle": "Obtenha um número de conta",
         "generateAccountNumber": "Gerar novo número de conta",

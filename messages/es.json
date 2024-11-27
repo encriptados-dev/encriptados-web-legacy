@@ -91,7 +91,43 @@
       }
     }
   },
-
+  "LoginPage": {
+    "inputErrors": {
+      "moreThanSixteenNumbers": "El número de cuenta debe tener exactamente 16 caracteres."
+    },
+    "welcomeSection": {
+      "titleGenerate": "Genera una cuenta aleatoria con un código de acceso único",
+      "subtitleGenerate": "Administra todo sin involucrar tus datos personales.",
+      "welcome": "Bienvenido",
+      "writeYourAccountPlaceholder": "Ingresa tu número de cuenta",
+      "errorMessageWriteAccount": "El número de cuenta debe tener exactamente 16 caracteres",
+      "forgotPassword": "Olvidé mi número de cuenta",
+      "generateAccountNumber": "Generar número de cuenta",
+      "login": "Iniciar sesión",
+      "errorLogin": "Error durante el inicio de sesión",
+      "succesfullyLogin": "Inicio de sesión exitoso",
+      "errorWhileLogin": "Error durante el inicio de sesión:",
+      "withAccesCode": "con un código de acceso único"
+    },
+    "generatedSection": {
+      "accountNumber": {
+        "yourNewAccountNumber": "Tu nuevo número de cuenta", 
+        "title": "Administra todo sin involucrar tus datos personales.",
+        "getNumberAccountTitle": "Obtener un número de cuenta",
+        "generateAccountNumber": "Generar un nuevo número de cuenta",
+        "generating": "Generando...",
+        "goBack": "Volver",
+        "copy": "Copiar",
+        "download": "Descargar",
+        "login": "Iniciar sesión",
+        "copyNumberSuccesfully": "Número de cuenta copiado exitosamente",
+        "errorMessage": "Error durante el inicio de sesión",
+        "errorMessageNumberAccount": "Error al generar el número de cuenta",
+        "loginSuccesfuly": "Inicio de sesión exitoso",
+        "succesfulyGenerateAccount": "Número de cuenta generado exitosamente"
+      }
+    }
+  },
   "EncryptedSimPage": {
     "connectAllWorldTitle": "Conéctate en todo el mundo",
     "totalSecurityTitle": "con total seguridad en tus comunicaciones",
