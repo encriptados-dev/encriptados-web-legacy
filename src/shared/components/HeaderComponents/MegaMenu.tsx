@@ -3,6 +3,7 @@ import CategoryPreview from "./CategoryPreview";
 import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
+import { useTranslations } from "next-intl";
 
 type MenuItem = {
   title: string;
@@ -36,6 +37,8 @@ export default function MegaMenu({
   setHoveredItem,
   closeMegaMenu,
 }: Props) {
+  const t = useTranslations("megaMenu");
+
   const activeCategoryData = categories[activeCategory] || {};
   const activeItems = activeCategoryData.items || [];
   const activeCategoryLink = activeCategoryData.link;
@@ -48,8 +51,8 @@ export default function MegaMenu({
       exit={{ opacity: 0, y: 10 }}
       className="absolute left-0 right-0 border-b border-[#1A1A1A] shadow-xl z-10 px-5 pt-4 pb-6"
       style={{
-        background: "rgba(12, 12, 12, 0.85)", // Nuevo color de fondo
-        backdropFilter: "blur(42px)", // Nuevo blur
+        background: "rgba(12, 12, 12, 0.85)",
+        backdropFilter: "blur(42px)",
       }}
     >
       <div className="max-w-[1400px] mx-auto px-4 py-8">
@@ -65,8 +68,8 @@ export default function MegaMenu({
                     ? "bg-[#1A1A1A]"
                     : "hover:bg-[#1A1A1A]"
                 }`}
-                onClick={closeMegaMenu} // Cierra el MegaMenu al hacer clic
-                onMouseEnter={() => setActiveCategory(index)} // Cambia la categoría activa al pasar el mouse
+                onClick={closeMegaMenu}
+                onMouseEnter={() => setActiveCategory(index)}
               >
                 <h3 className="text-white font-medium flex items-center">
                   {category.title}
@@ -84,20 +87,20 @@ export default function MegaMenu({
           {/* Contenido de la categoría activa */}
           {activeItems.length > 0 ? (
             <>
-              {/* Vista previa de elementos */}
               <CategoryPreview
                 items={activeItems}
                 setHoveredItem={setHoveredItem}
                 categoryLink={activeCategoryLink}
-                closeMegaMenu={closeMegaMenu} // Pasa la función para cerrar
+                closeMegaMenu={closeMegaMenu}
               />
 
-              {/* Vista previa del elemento seleccionado */}
               <div className="col-span-5">
                 <div className="rounded-xl overflow-hidden">
                   <Image
                     src={hoveredItem?.image || "/placeholder.svg"}
-                    alt={hoveredItem?.title || "Vista previa"}
+                    alt={
+                      hoveredItem?.title || t("preview")
+                    }
                     width={400}
                     height={300}
                     className="w-full object-cover rounded-xl"
@@ -106,15 +109,15 @@ export default function MegaMenu({
                     <h3 className="text-white font-medium">
                       {hoveredItem?.description ||
                         hoveredItem?.title ||
-                        "Vista previa"}
+                        t("preview")}
                     </h3>
                     {hoveredItem?.link && (
                       <Link
                         href={hoveredItem.link}
                         className="inline-flex items-center text-sm text-[#44D3FF] hover:text-white mt-2 transition-colors"
-                        onClick={closeMegaMenu} // Cierra el MegaMenu al hacer clic
+                        onClick={closeMegaMenu}
                       >
-                        Ver más
+                        {t("seeMore")}
                         <ArrowRight className="w-4 h-4 ml-1" />
                       </Link>
                     )}
@@ -123,27 +126,26 @@ export default function MegaMenu({
               </div>
             </>
           ) : (
-            /* Si no hay elementos, muestra solo la imagen y el enlace "Ver más" */
             <div className="col-span-6">
               <div className="rounded-xl overflow-hidden">
                 <Image
                   src={activeCategoryImage}
-                  alt={activeCategoryData.title || "Categoría"}
+                  alt={activeCategoryData.title || t("category")}
                   width={400}
                   height={300}
                   className="w-[550px] object-cover rounded-xl"
                 />
                 <div className="p-4">
                   <h3 className="text-white font-medium">
-                    {activeCategoryData.description || "Categoría"}
+                    {activeCategoryData.description || t("category")}
                   </h3>
                   {activeCategoryLink && (
                     <Link
                       href={activeCategoryLink}
                       className="inline-flex items-center text-sm text-[#44D3FF] hover:text-white mt-2 transition-colors"
-                      onClick={closeMegaMenu} // Cierra el MegaMenu al hacer clic
+                      onClick={closeMegaMenu}
                     >
-                      Ver más
+                      {t("seeMore")}
                       <ArrowRight className="w-4 h-4 ml-1" />
                     </Link>
                   )}

@@ -924,5 +924,42 @@
       "title": "Ofertas",
       "description": "Descubra nossas ofertas"
     }
+  },
+  "menuMobile": {
+    "openMenu": "Abrir menu",
+    "login": "Entrar",
+    "store": {
+      "label": "Loja",
+      "new": "Novo"
+    },
+    "categories": {
+      "products": "Produtos",
+      "others": "Outros"
+    },
+    "aboutUs": "Sobre nós",
+    "suggestions": {
+      "question": "Você viu algo errado?",
+      "link": "envie-nos uma sugestão aqui"
+    }
+  },
+  "encryptedHeader": {
+    "menu": {
+      "products": "Produtos",
+      "others": "Outros",
+      "store": {
+        "label": "Loja",
+        "new": "Novo"
+      },
+      "aboutUs": "Sobre nós",
+      "login": "Entrar",
+      "notAvailable": "Não disponível",
+      "noItemsAvailable": "Nenhum item disponível"
+    }
+  },
+  "megaMenu": {
+    "categories": "Categorias",
+    "preview": "Pré-visualização",
+    "seeMore": "Ver mais",
+    "category": "Categoria"
   }
 }

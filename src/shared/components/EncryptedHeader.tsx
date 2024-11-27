@@ -8,23 +8,26 @@ import MobileMenu from "./HeaderComponents/MobileMenu";
 import LanguageDropdown from "./HeaderComponents/LanguageSelector";
 import EncryptedLogo from "./HeaderComponents/EncryptedLogo";
 import Link from "next/link";
-import { useTranslatedProductsCategories, useTranslatedOthersCategories } from './HeaderComponents/data/CategoryMenu';
+import { useTranslatedProductsCategories, useTranslatedOthersCategories } from "./HeaderComponents/data/CategoryMenu";
 import WorldIcon from "../svgs/WorldIcon";
+import { useTranslations } from "next-intl";
 
 export default function EncryptedHeader() {
+  const t = useTranslations("encryptedHeader");
+
   const productsCategories = useTranslatedProductsCategories(); // Obtén las categorías traducidas
   const othersCategories = useTranslatedOthersCategories(); // Obtén las otras categorías traducidas
 
   const [isMobile, setIsMobile] = useState(false);
   const [isDesktopMenuOpen, setIsDesktopMenuOpen] = useState(false);
-  const [currentMenu, setCurrentMenu] = useState<"products" | "others">('products');
+  const [currentMenu, setCurrentMenu] = useState<"products" | "others">("products");
   const [activeCategory, setActiveCategory] = useState(0);
   const [hoveredItem, setHoveredItem] = useState(
     productsCategories[0]?.items[0] || {
-      title: 'No disponible',
-      link: '#',
-      description: 'No hay elementos disponibles',
-      image: '/placeholder.svg',
+      title: t("menu.notAvailable"),
+      link: "#",
+      description: t("menu.noItemsAvailable"),
+      image: "/placeholder.svg",
     }
   );
 
@@ -53,8 +56,7 @@ export default function EncryptedHeader() {
 
   // Memoriza las categorías actuales para optimizar renders
   const currentCategories = useMemo(
-    () =>
-      currentMenu === "products" ? productsCategories : othersCategories,
+    () => (currentMenu === "products" ? productsCategories : othersCategories),
     [currentMenu]
   );
 
@@ -89,9 +91,9 @@ export default function EncryptedHeader() {
                 prefetch
                 className="px-4 py-2 text-sm text-white hover:bg-[#054d6121] rounded-full transition-colors"
               >
-                Tienda
+                {t("menu.store.label")}
                 <span className="ml-2 px-2 py-0.5 text-xs bg-[#06546C] text-[#44D3FF] rounded-full">
-                  Nuevo
+                  {t("menu.store.new")}
                 </span>
               </Link>
 
@@ -99,7 +101,7 @@ export default function EncryptedHeader() {
               <Navigation
                 isOpen={isDesktopMenuOpen && currentMenu === "products"}
                 setIsOpen={() => handleMenuChange("products")}
-                label="Productos"
+                label={t("menu.products")}
                 buttonClassName="px-4 py-2"
               />
 
@@ -107,7 +109,7 @@ export default function EncryptedHeader() {
               <Navigation
                 isOpen={isDesktopMenuOpen && currentMenu === "others"}
                 setIsOpen={() => handleMenuChange("others")}
-                label="Otros"
+                label={t("menu.others")}
                 buttonClassName="px-4 py-2"
               />
 
@@ -117,7 +119,7 @@ export default function EncryptedHeader() {
                 prefetch
                 className="text-sm ml-4 text-gray-300 hover:text-white transition-colors"
               >
-                Nosotros
+                {t("menu.aboutUs")}
               </Link>
 
               {/* Ingresar */}
@@ -127,7 +129,7 @@ export default function EncryptedHeader() {
                 className="px-4 ml-14 py-2 text-sm text-[#1C1B1F] bg-[#E3F8FF] hover:bg-gray-100 rounded-xl transition-colors flex items-center gap-2"
               >
                 <WorldIcon color="#1C1B1F" />
-                Ingresar
+                {t("menu.login")}
               </Link>
             </div>
           </nav>

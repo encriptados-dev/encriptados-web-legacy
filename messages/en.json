@@ -561,7 +561,7 @@
     },
     "ourProducts": {
       "title": "Our products",
-      "subtitle": "Discover our products",      
+      "subtitle": "Discover our products",
       "seeProducts": "See products",
       "cards": {
         "card1": "Encrypted SIMs",
@@ -569,7 +569,7 @@
         "card3": "Security systems"
       }
     },
-    "bannerJoinUs": "Join us now as an ally and generate income with our products",    
+    "bannerJoinUs": "Join us now as an ally and generate income with our products",
     "modal": {
       "becomeDistributor": "Become a distributor",
       "descriptionDistributor": "Sell the best encrypted communication products",
@@ -790,146 +790,180 @@
     "goTelegram": "Go to Telegram",
     "articleTitle": "Related Articles"
   },
-  
-    "productsCategories": {
-      "sims": {
-        "title": "SIMS",
-        "description": "Discover our eSIM/SIM",
-        "items": {
-          "encryptedSim": {
-            "title": "Encrypted SIM",
-            "description": "Learn how the Encrypted SIM works"
-          },
-          "iraSim": {
-            "title": "IRA SIM",
-            "description": "Learn how the IRA SIM works"
-          },
-          "timSim": {
-            "title": "TIM SIM",
-            "description": "Learn how the TIM SIM works"
-          }
-        }
-      },
-      "apps": {
-        "title": "Applications",
-        "description": "Amazing products, applications, and systems with end-to-end encryption",
-        "items": {
-          "silentCircle": {
-            "title": "Silent Circle",
-            "description": "Silent Circle is a secure messaging app."
-          },
-          "armadillo": {
-            "title": "Armadillo",
-            "description": "Armadillo is a secure messaging app."
-          },
-          "vaultChat": {
-            "title": "VaultChat",
-            "description": "VaultChat is a secure messaging app."
-          },
-          "nordVpn": {
-            "title": "NORD VPN",
-            "description": "NORD VPN is a secure messaging app."
-          },
-          "salt": {
-            "title": "Salt",
-            "description": "Salt is a secure messaging app."
-          },
-          "vnclagoon": {
-            "title": "VNClagoon",
-            "description": "VNClagoon is a secure messaging app."
-          },
-          "threemaWork": {
-            "title": "ThreemaWork",
-            "description": "ThreemaWork is a secure messaging app."
-          },
-          "threema": {
-            "title": "Threema",
-            "description": "Threema is a secure messaging app."
-          },
-          "secureCrypt": {
-            "title": "SecureCrypt",
-            "description": "SecureCrypt is a secure messaging app."
-          },
-          "elyon": {
-            "title": "Elyon",
-            "description": "Elyon is a secure messaging app."
-          }
-        }
-      },
-      "systems": {
-        "title": "Systems",
-        "description": "Data encryption systems",
-        "items": {
-          "secureMdmIphone": {
-            "title": "Secure MDM iPhone",
-            "description": "Secure MDM iPhone is a secure messaging app."
-          },
-          "secureMdmAndroid": {
-            "title": "Secure MDM Android",
-            "description": "Secure MDM Android is a secure messaging app."
-          },
-          "cryptcom": {
-            "title": "Cryptcom",
-            "description": "Cryptcom is a secure messaging app."
-          },
-          "renati": {
-            "title": "Renati",
-            "description": "Renati is a secure messaging app."
-          },
-          "ultraX": {
-            "title": "Ultra X",
-            "description": "Ultra X is a secure messaging app."
-          },
-          "chatMail": {
-            "title": "ChatMail",
-            "description": "ChatMail is a secure messaging app."
-          },
-          "decSecure": {
-            "title": "DEC Secure",
-            "description": "DEC Secure is a secure messaging app."
-          },
-          "totalSec": {
-            "title": "Total Sec",
-            "description": "Total Sec is a secure messaging app."
-          },
-          "armadillo": {
-            "title": "Armadillo",
-            "description": "Armadillo is a secure messaging app."
-          },
-          "vaultChat": {
-            "title": "VaultChat",
-            "description": "VaultChat is a secure messaging app."
-          },
-          "t2Communicator": {
-            "title": "T2 Communicator",
-            "description": "T2 Communicator is a secure messaging app."
-          },
-          "intactPhone": {
-            "title": "Intact Phone",
-            "description": "Intact Phone is a secure messaging app."
-          }
+
+  "productsCategories": {
+    "sims": {
+      "title": "SIMS",
+      "description": "Discover our eSIM/SIM",
+      "items": {
+        "encryptedSim": {
+          "title": "Encrypted SIM",
+          "description": "Learn how the Encrypted SIM works"
+        },
+        "iraSim": {
+          "title": "IRA SIM",
+          "description": "Learn how the IRA SIM works"
+        },
+        "timSim": {
+          "title": "TIM SIM",
+          "description": "Learn how the TIM SIM works"
         }
       }
     },
-    "othersCategories": {
-      "distributors": {
-        "title": "Distributors",
-        "description": "Become a distributor of our products"
-      },
-      "blog": {
-        "title": "Blog",
-        "description": "Latest news and updates"
-      },
-      "securityTest": {
-        "title": "Security Test",
-        "description": "How secure are your devices?"
-      },
-      "offers": {
-        "title": "Offers",
-        "description": "Discover our offers"
+    "apps": {
+      "title": "Applications",
+      "description": "Amazing products, applications, and systems with end-to-end encryption",
+      "items": {
+        "silentCircle": {
+          "title": "Silent Circle",
+          "description": "Silent Circle is a secure messaging app."
+        },
+        "armadillo": {
+          "title": "Armadillo",
+          "description": "Armadillo is a secure messaging app."
+        },
+        "vaultChat": {
+          "title": "VaultChat",
+          "description": "VaultChat is a secure messaging app."
+        },
+        "nordVpn": {
+          "title": "NORD VPN",
+          "description": "NORD VPN is a secure messaging app."
+        },
+        "salt": {
+          "title": "Salt",
+          "description": "Salt is a secure messaging app."
+        },
+        "vnclagoon": {
+          "title": "VNClagoon",
+          "description": "VNClagoon is a secure messaging app."
+        },
+        "threemaWork": {
+          "title": "ThreemaWork",
+          "description": "ThreemaWork is a secure messaging app."
+        },
+        "threema": {
+          "title": "Threema",
+          "description": "Threema is a secure messaging app."
+        },
+        "secureCrypt": {
+          "title": "SecureCrypt",
+          "description": "SecureCrypt is a secure messaging app."
+        },
+        "elyon": {
+          "title": "Elyon",
+          "description": "Elyon is a secure messaging app."
+        }
+      }
+    },
+    "systems": {
+      "title": "Systems",
+      "description": "Data encryption systems",
+      "items": {
+        "secureMdmIphone": {
+          "title": "Secure MDM iPhone",
+          "description": "Secure MDM iPhone is a secure messaging app."
+        },
+        "secureMdmAndroid": {
+          "title": "Secure MDM Android",
+          "description": "Secure MDM Android is a secure messaging app."
+        },
+        "cryptcom": {
+          "title": "Cryptcom",
+          "description": "Cryptcom is a secure messaging app."
+        },
+        "renati": {
+          "title": "Renati",
+          "description": "Renati is a secure messaging app."
+        },
+        "ultraX": {
+          "title": "Ultra X",
+          "description": "Ultra X is a secure messaging app."
+        },
+        "chatMail": {
+          "title": "ChatMail",
+          "description": "ChatMail is a secure messaging app."
+        },
+        "decSecure": {
+          "title": "DEC Secure",
+          "description": "DEC Secure is a secure messaging app."
+        },
+        "totalSec": {
+          "title": "Total Sec",
+          "description": "Total Sec is a secure messaging app."
+        },
+        "armadillo": {
+          "title": "Armadillo",
+          "description": "Armadillo is a secure messaging app."
+        },
+        "vaultChat": {
+          "title": "VaultChat",
+          "description": "VaultChat is a secure messaging app."
+        },
+        "t2Communicator": {
+          "title": "T2 Communicator",
+          "description": "T2 Communicator is a secure messaging app."
+        },
+        "intactPhone": {
+          "title": "Intact Phone",
+          "description": "Intact Phone is a secure messaging app."
+        }
       }
     }
+  },
+  "othersCategories": {
+    "distributors": {
+      "title": "Distributors",
+      "description": "Become a distributor of our products"
+    },
+    "blog": {
+      "title": "Blog",
+      "description": "Latest news and updates"
+    },
+    "securityTest": {
+      "title": "Security Test",
+      "description": "How secure are your devices?"
+    },
+    "offers": {
+      "title": "Offers",
+      "description": "Discover our offers"
+    }
+  },
+  "menuMobile": {
+    "openMenu": "Open menu",
+    "login": "Log in",
+    "store": {
+      "label": "Store",
+      "new": "New"
+    },
+    "categories": {
+      "products": "Products",
+      "others": "Others"
+    },
+    "aboutUs": "About us",
+    "suggestions": {
+      "question": "Did you see something wrong?",
+      "link": "send us a suggestion here"
+    }
+  },
+  "encryptedHeader": {
+    "menu": {
+      "products": "Products",
+      "others": "Others",
+      "store": {
+        "label": "Store",
+        "new": "New"
+      },
+      "aboutUs": "About Us",
+      "login": "Log In",
+      "notAvailable": "Not Available",
+      "noItemsAvailable": "No items available"
+    }
+  },
+  "megaMenu": {
+    "categories": "Categories",
+    "preview": "Preview",
+    "seeMore": "See more",
+    "category": "Category"
   }
-    
-
-
+}
