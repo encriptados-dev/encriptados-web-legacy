@@ -19,6 +19,7 @@ import IconDataSvg from "/public/images/encrypted-sim/icons/icon-data.svg";
 import IcomSimSvg from "/public/images/encrypted-sim/icons/icon-sim.svg";
 import { useTranslations } from "next-intl";
 
+
 const SimProductsPage: React.FC = () => {
   const t = useTranslations("EncryptedSimPage");
 
@@ -222,24 +223,24 @@ const SimProductsPage: React.FC = () => {
     <div className="flex flex-col gap-5">
       {cardData.map((card, index) => (
         <div
-          key={index}
+          key={index}          
           className="
-                      bg-custom-linear 
-                      sm:!bg-transparent 
-                      shadow-lg 
-                      sm:shadow-none 
-                      gap-6 
-                      flex flex-col 
-                      sm:flex-row                       
-                      my-0 
-                      rounded-3xl 
-                      sm:p-0
-                      ls:p-0
-                      p-4
-                      py-10
-                      sm:py-0
-                      ls:py-0
-                    "
+            bg-custom-linear 
+            sm:!bg-transparent 
+            shadow-lg 
+            sm:shadow-none 
+            gap-6 
+            flex flex-col 
+            sm:flex-row                       
+            my-0 
+            rounded-3xl 
+            sm:p-0
+            ls:p-0
+            p-4
+            py-10
+            sm:py-0
+            ls:py-0
+          "
         >
           <CardDescription
             logoSrc={card.logoSrc}
@@ -258,6 +259,5 @@ const SimProductsPage: React.FC = () => {
       ))}
     </div>
   );
-};
-
+}
 export default SimProductsPage;

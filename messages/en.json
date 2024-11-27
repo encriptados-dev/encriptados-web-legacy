@@ -561,8 +561,7 @@
     },
     "ourProducts": {
       "title": "Our products",
-
-      "subtitle": "Discover our Encrypted Products",
+      "subtitle": "Discover our products",      
       "seeProducts": "See products",
       "cards": {
         "card1": "Encrypted SIMs",
@@ -570,7 +569,7 @@
         "card3": "Security systems"
       }
     },
-    "bannerJoinUs": "Join us now as an ally and generate income with our products",
+    "bannerJoinUs": "Join us now as an ally and generate income with our products",    
     "modal": {
       "becomeDistributor": "Become a distributor",
       "descriptionDistributor": "Sell the best encrypted communication products",
@@ -591,13 +590,13 @@
       "securityTestTitle": "Security Test",
       "securityTestDescription": "Discover your security level with these tools"
     },
-    "initTest": "Start test",
+    "initTest": "Start Test",
     "tryOurPhoneSecure": {
-      "title": "Test how secure your phone is",
+      "title": "Test How Secure Your Phone Is",
       "description": "Strengthen your digital security like never before."
     },
     "tryPassowordSecure": {
-      "title": "Test how secure your password is",
+      "title": "Test How Secure Your Password Is",
       "description": "Enter a password and discover its security level"
     }
   },
@@ -790,5 +789,72 @@
     "talkWithSupport": "Chat now with an Encriptados advisor directly on Telegram",
     "goTelegram": "Go to Telegram",
     "articleTitle": "Related Articles"
-  }
+  },
+  "productsCategories": {
+      "sims": {
+        "title": "SIMS",
+        "description": "Conoce nuestras eSIM/SIM",
+        "items": {
+          "encryptedSim": {
+            "title": "SIM Encriptada",
+            "description": "Conoce cómo funciona la SIM Encriptada"
+          },
+          "iraSim": {
+            "title": "SIM IRA",
+            "description": "Conoce cómo funciona la SIM IRA"
+          },
+          "timSim": {
+            "title": "SIM TIM",
+            "description": "Conoce cómo funciona la SIM TIM"
+          }
+        }
+      },
+      "apps": {
+        "title": "Aplicaciones",
+        "description": "Productos increíbles, aplicaciones y sistemas con encriptación de inicio a fin",
+        "items": {
+          "silentCircle": {
+            "title": "Silent Circle",
+            "description": "Silent Circle es una aplicación de mensajería segura que permite a los usuarios enviar mensajes de texto, imágenes, videos y archivos de forma segura."
+          },
+          "armadillo": {
+            "title": "Armadillo",
+            "description": "Armadillo es una aplicación de mensajería segura que permite a los usuarios enviar mensajes de texto, imágenes, videos y archivos de forma segura."
+          }
+        }
+      },
+      "systems": {
+        "title": "Sistemas",
+        "description": "Sistemas de encriptación de datos",
+        "items": {
+          "secureMdmIphone": {
+            "title": "Secure MDM iPhone",
+            "description": "Secure MDM iPhone es una aplicación de gestión segura para iPhone."
+          },
+          "secureMdmAndroid": {
+            "title": "Secure MDM Android",
+            "description": "Secure MDM Android es una aplicación de gestión segura para Android."
+          }
+        }
+      }
+    },
+    "othersCategories": {
+      "distributors": {
+        "title": "Distribuidores",
+        "description": "Conviértete en distribuidor de nuestros productos"
+      },
+      "blog": {
+        "title": "Blog",
+        "description": "Últimas noticias y actualizaciones"
+      },
+      "securityTest": {
+        "title": "Test de seguridad",
+        "description": "¿Qué tan seguros son tus dispositivos?"
+      },
+      "offers": {
+        "title": "Ofertas",
+        "description": "Descubre nuestras ofertas"
+      }
+    } 
+  
 }
