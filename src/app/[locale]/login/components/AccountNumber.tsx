@@ -23,26 +23,18 @@ const AccountNumber = () => {
   const Mans = "/images/login/mans.png";
 
   const { setValue, getValues } = useFormContext();
-
   const [generatedNumber, setGeneratedNumber] = useState("");
   const [isGenerating, setIsGenerating] = useState(false);
   const [currentDownloadLinkNumber, setCurrentDownloadLinkNumber] =
     useState("");
-
-  console.log(currentDownloadLinkNumber);
-
   const { success, error: errorToast } = useToast();
 
   const { registerToken, isPending } = useRegisterToken({
     onSuccess: (data) => {
       const responseData = data as RegisterTokenResponse;
-
       animateToken(responseData.data.token_separated);
-
       setValue("currentGeneratedNumber", responseData.data.token);
-
       setCurrentDownloadLinkNumber(responseData.data.download_url);
-
       success(
         t("LoginPage.generatedSection.accountNumber.succesfulyGenerateAccount")
       );
@@ -53,20 +45,18 @@ const AccountNumber = () => {
       );
     },
   });
+
   const { login, isPending: isPendingLoading } = useAuthLogin({
     onSuccess: async (data) => {
       try {
         const responseData = data as LoginWithTokenResponse;
-
         success(t("LoginPage.generatedSection.accountNumber.loginSuccesfuly"));
-
         Cookies.set("authToken", responseData.data.token, {
           expires: 7,
           path: "/",
           secure: true,
           sameSite: "None",
         });
-
         router.push("/dashboard/data-usage");
       } catch (error) {
         console.log(error);
@@ -78,7 +68,6 @@ const AccountNumber = () => {
   const animateToken = (token: string) => {
     setIsGenerating(true);
     setGeneratedNumber("");
-
     const finalNumber = Array.from(token);
     finalNumber.forEach((digit, index) => {
       setTimeout(() => {
@@ -112,16 +101,15 @@ const AccountNumber = () => {
 
   return (
     <>
-      <div className="flex flex-col justify-center w-full md:w-5/12 lg:w-4/12 mb-6 md:mb-0 md:mr-6">
-        <h2 className="text-white mt-2 text-base md:text-xl lg:text-xl font-light">
+      <div className="hidden md:flex md:flex-col justify-center w-full md:w-5/12 lg:w-4/12 mb-6 md:mb-0 md:mr-6">
+        <h2 className="text-white mt-2 text-base md:text-2xl lg:text-2xl font-light">
           {t("LoginPage.generatedSection.accountNumber.title")}
         </h2>
         <div className="w-8/12 mt-6 md:mt-8">
           <Image
             className="object-contain w-full"
-            width={500}
-            quality={100}
-            height={500}
+            width={800}
+            height={800}
             src={Mans}
             alt="Login illustration"
           />
@@ -129,19 +117,20 @@ const AccountNumber = () => {
       </div>
 
       <div className="w-full md:w-[500px] bg-[#0E0E0E] h-auto md:h-[500px] rounded-2xl flex flex-col py-14 px-10 items-center gap-y-4 md:px-10 relative">
-        <OnlyKeyLoginIconSvg height={55} width={55} color="white" />
+        <OnlyKeyLoginIconSvg height={85} width={85} color="white" />
         <h1 className="text-white text-center text-lg md:text-xl">
           {t("LoginPage.generatedSection.accountNumber.generateAccountNumber")}
         </h1>
 
         <div className="w-full space-y-4 text-center">
-          <div className="text-white text-2xl font-mono mb-4 select-none">
+          <div className="bg-[#191919] py-4 rounded-xl border-0.5 border-[#414141] border-solid text-white text-2xl font-mono mb-4 select-none">
             {generatedNumber || "—— —— —— —— —— —— —— "}
           </div>
+
           <Button
             type="button"
             onClick={handleRegisterToken}
-            customStyles="font-light w-full flex justify-center"
+            customStyles="w-full h-14 bg-[#2BACEF] hover:bg-[#2bb8e7] text-xl text-white font-medium rounded-xl h-14 items-center justify-center"
             rounded="full"
             intent="primary"
             disabled={isPending || isGenerating}
@@ -150,22 +139,20 @@ const AccountNumber = () => {
               ? t("LoginPage.generatedSection.accountNumber.generating")
               : generatedNumber
               ? t("LoginPage.generatedSection.accountNumber.login")
-              : t(
-                  "LoginPage.generatedSection.accountNumber.generateAccountNumber"
-                )}
+              : t("LoginPage.generatedSection.accountNumber.generateAccountNumber")}
           </Button>
+
         </div>
 
         {getValues("generatedCurrentNumberSeparated") && (
           <div className="w-full mt-4">
-            <hr className="w-full border-[#7E7E7E] my-4" />
-
+            <hr className="w-full border-[#373737] my-2 mb-10" />
             <div className="flex w-full gap-x-3">
               <CircleTitle
                 icon={<CopyPaste />}
                 iconPosition="right"
                 intent="white"
-                customStyles="w-6/12 justify-center cursor-pointer"
+                customStyles="w-6/12 h-14 justify-center cursor-pointer rounded-xl"
                 onClick={copyToClipboard}
               >
                 {t("LoginPage.generatedSection.accountNumber.copy")}
@@ -175,7 +162,7 @@ const AccountNumber = () => {
                 icon={<Download color="#2AABEE" />}
                 iconPosition="right"
                 intent="primary"
-                customStyles="w-6/12 justify-center cursor-pointer font-light"
+                customStyles="w-6/12 justify-center cursor-pointer font-light rounded-xl"
               >
                 {t("LoginPage.generatedSection.accountNumber.download")}
               </CircleTitle>
@@ -193,7 +180,7 @@ const AccountNumber = () => {
         </h1>
       </div>
       {isPendingLoading || isPending ? (
-        <div className="absolute top-0 left-0 right-0 bottom-0 flex justify-center items-center z-10 ">
+        <div className="absolute top-0 left-0 right-0 bottom-0 flex justify-center items-center z-10">
           <Loader />
         </div>
       ) : null}

@@ -9,10 +9,11 @@ interface InputProps<T extends FieldValues> {
   type?: string;
   placeholder?: string;
   icon?: React.ReactNode;
-  iconPosition?: "left" | "right"; // Nueva prop para la posición del ícono
-  light?: boolean; // Nueva prop para el fondo claro
-  dark?: boolean; // Nueva prop para el fondo oscuro
-  rounded?: "xs" | "sm" | "lg" | "xl" | "full"; // Agregar 'full' para bordes redondeados completos
+  iconPosition?: "left" | "right";
+  light?: boolean;
+  dark?: boolean;
+  rounded?: "xs" | "sm" | "lg" | "xl" | "full";
+  customClassName?: string; // Nueva propiedad opcional
 }
 
 const inputStyles = cva("block w-full px-4 py-2 transition-all", {
@@ -21,20 +22,20 @@ const inputStyles = cva("block w-full px-4 py-2 transition-all", {
       primary: "bg-[#191919] border-[#6A6A6A] text-[#6A6A6A]",
       error:
         "bg-[#191919] border-red-500 text-[#6A6A6A] focus:border-red-500 focus:ring-2 focus:ring-red-300",
-      light: "bg-[#F5F5F5] border-[#6A6A6A] text-[#191919]", // Estilo para el fondo claro
-      dark: "bg-[#121212] border-[#6A6A6A] text-[#ffffff]", // Estilo para el fondo oscuro con bordes grises más oscuros
+      light: "bg-[#F5F5F5] border-[#6A6A6A] text-[#191919]",
+      dark: "bg-[#121212] border-[#6A6A6A] text-[#ffffff]",
     },
     rounded: {
-      xs: "rounded-sm", // Pequeño
-      sm: "rounded-md", // Mediano
-      lg: "rounded-lg", // Grande
-      xl: "rounded-xl", // Extra grande
-      full: "rounded-full", // Bordes completamente redondeados
+      xs: "rounded-sm",
+      sm: "rounded-md",
+      lg: "rounded-lg",
+      xl: "rounded-xl",
+      full: "rounded-full",
     },
   },
   defaultVariants: {
     intent: "primary",
-    rounded: "lg", // Valor predeterminado para los bordes redondeados
+    rounded: "lg",
   },
 });
 
@@ -44,10 +45,11 @@ export const InputFormContext = <T extends FieldValues>({
   type = "text",
   placeholder,
   icon,
-  iconPosition = "left", // Prop predeterminada para la posición del ícono
-  light = false, // Prop predeterminada en false
-  dark = false, // Prop predeterminada en false
-  rounded = "lg", // Prop predeterminada para los bordes redondeados
+  iconPosition = "left",
+  light = false,
+  dark = false,
+  rounded = "full",
+  customClassName = "", // Valor predeterminado vacío
 }: InputProps<T>) => {
   const {
     register,
@@ -82,23 +84,23 @@ export const InputFormContext = <T extends FieldValues>({
           id={name}
           type={inputType}
           placeholder={placeholder}
-          className={inputStyles({
+          className={`${inputStyles({
             intent: error
               ? "error"
               : dark
               ? "dark"
               : light
               ? "light"
-              : "primary", // Asignar el estilo oscuro si la prop `dark` es verdadera
-            rounded, // Aplicar la clase de bordes redondeados
-          })}
+              : "primary",
+            rounded,
+          })} ${customClassName}`} // Combinar estilos predeterminados con customClassName
           aria-invalid={!!errorMessage}
           aria-describedby={errorMessage ? `${name}-error` : undefined}
           {...register(name)}
           style={{
             paddingLeft: icon && iconPosition === "left" ? "3rem" : "1rem",
             paddingRight: icon && iconPosition === "right" ? "3rem" : "1rem",
-          }} // Aumentar el padding solo si hay ícono
+          }}
         />
         {isPassword && (
           <button

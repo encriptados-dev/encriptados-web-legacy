@@ -38,6 +38,9 @@ const config: Config = {
         "custom-gradient-secure-black-y-grey":
           "linear-gradient(270deg, #000000 50%, #272727 100%)",   
       },
+      borderWidth: {
+        '0.5': '0.5px',
+      },
     },
   },
   plugins: [    
