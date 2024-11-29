@@ -2,6 +2,9 @@ import React from "react";
 import MenuDropdownProductBar from "./MenuDropdownProductBar";
 import { useTranslations } from "next-intl";
 import { useFormContext } from "react-hook-form";
+import EncryptedSimIcon from "./simicons/EncryptedSimIcon";
+import IraSimIcon from "./simicons/IraSimIcon";
+import TimSimIcon from "./simicons/TimSimIcon";
 
 const FilterAppWithLicense = () => {
   type ProviderType = "encriptados" | "ira" | "tim" | undefined;
@@ -92,9 +95,13 @@ const FilterAppWithLicense = () => {
         <MenuDropdownProductBar
           name="provider"
           options={[
-            { label: "Sim Encriptados", value: "encriptados" },
-            { label: "Sim IRA", value: "ira" },
-            { label: "Sim Tim", value: "tim" },
+            {
+              label: " ",
+              value: "encriptados",
+              icon: <EncryptedSimIcon />,
+            },
+            { label: " ", value: "ira", icon: <IraSimIcon /> },
+            { label: " ", value: "tim", icon: <TimSimIcon /> },
           ]}
         />
       </div>
