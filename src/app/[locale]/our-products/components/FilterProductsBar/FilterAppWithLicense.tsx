@@ -35,11 +35,11 @@ const FilterAppWithLicense = () => {
             },
             {
               label: "9 meses",
-              value: "6month",
+              value: "9month",
             },
             {
               label: "12 meses",
-              value: "6month",
+              value: "12month",
             },
           ]}
         />

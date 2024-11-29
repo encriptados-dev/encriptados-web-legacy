@@ -18,10 +18,14 @@ import IcomMinutesSvg from "/public/images/encrypted-sim/icons/icon-minutes.svg"
 import IconDataSvg from "/public/images/encrypted-sim/icons/icon-data.svg";
 import IcomSimSvg from "/public/images/encrypted-sim/icons/icon-sim.svg";
 import { useTranslations } from "next-intl";
-
+import { useGetProducts } from "@/features/products/queries/useGetProducts";
 
 const SimProductsPage: React.FC = () => {
   const t = useTranslations("EncryptedSimPage");
+
+  const { data } = useGetProducts("sim");
+
+  console.log(data?.data);
 
   const commonFeatures = [
     {
@@ -221,9 +225,9 @@ const SimProductsPage: React.FC = () => {
 
   return (
     <div className="flex flex-col gap-5">
-      {cardData.map((card, index) => (
+      {data?.data.map((card, index) => (
         <div
-          key={index}          
+          key={index}
           className="
             bg-custom-linear 
             sm:!bg-transparent 
@@ -243,21 +247,21 @@ const SimProductsPage: React.FC = () => {
           "
         >
           <CardDescription
-            logoSrc={card.logoSrc}
-            title={card.title}
-            description={card.description}
-            features={card.features}
+            logoSrc={LogoSvg1}
+            title={card?.title}
+            description={card?.description}
+            features={card?.features}
           />
           <CardSim
-            productImage={card.productImage}
-            features={card.featuresCardSim}
-            priceRange={card.priceRange}
-            headerIcon={card.headerIcon}
-            headerTitle={card.headerTitle}
+            productImage={card?.image}
+            advantages={card.advantages}
+            priceRange={card.price}
+            headerIcon={""}
+            headerTitle={card.title}
           />
         </div>
       ))}
     </div>
   );
-}
+};
 export default SimProductsPage;
