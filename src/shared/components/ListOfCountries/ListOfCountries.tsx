@@ -19,7 +19,9 @@ const CountryList: React.FC = () => {
   const [countries, setCountries] = useState<Country[]>([]);
   const [loading, setLoading] = useState<boolean>(true);
 
-  const { getValues } = useFormContext();
+  const { getValues, watch } = useFormContext();
+
+  console.log(watch());
 
   useEffect(() => {
     const fetchCountries = async () => {
@@ -44,13 +46,18 @@ const CountryList: React.FC = () => {
     return <div className="text-center text-lg">Cargando...</div>;
   }
 
+  const currentRedirect: Record<string, string> = {
+    maya: "maya-data/payment-service#buy-section",
+    bne: "bne-sim/payment-service#buy-section",
+  };
+
   return (
     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-1 lg:grid-cols-3 xl:grid-cols-6 w-full gap-2">
       {countries.map((country, index) => (
         <div
           key={index}
           onClick={() => {
-            router.push("maya-data/payment-service#buy-section");
+            router.push(currentRedirect[watch("optionType")]);
           }}
         >
           <CountryCard key={country.cca3} country={country} />
