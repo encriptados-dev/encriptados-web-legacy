@@ -5,7 +5,7 @@ import PhySim from "@/shared/svgs/PhySimSvg";
 import RechargeBuy from "@/shared/svgs/RechargeBuySvg";
 import DotsSvg from "@/shared/svgs/DotsSvg";
 import SimData from "./SimData";
-import RechargeSim from "./RechargeSim";
+import RechargeSim from "../RechargeSim/RechargeSim";
 
 const StepperBuy = ({
   optionType,

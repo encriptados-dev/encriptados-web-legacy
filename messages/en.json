@@ -106,7 +106,7 @@
     },
     "generatedSection": {
       "accountNumber": {
-        "yourNewAccountNumber": "Your new account number",         
+        "yourNewAccountNumber": "Your new account number",
         "title": "Manage everything without involving your personal data.",
         "getNumberAccountTitle": "Get an account number",
         "generateAccountNumber": "Generate new account number",
@@ -966,5 +966,8 @@
     "preview": "Preview",
     "seeMore": "See more",
     "category": "Category"
+  },
+  "RechargeSim": {
+    "errorInput": "Must be a valid phone number with at least 6 digits."
   }
 }

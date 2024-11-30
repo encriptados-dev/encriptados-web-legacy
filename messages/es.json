@@ -944,5 +944,8 @@
     "preview": "Vista previa",
     "seeMore": "Ver más",
     "category": "Categoría"
+  },
+  "RechargeSim": {
+    "errorInput": "Debe ser un número de teléfono válido con al menos 6 dígitos."
   }
 }
