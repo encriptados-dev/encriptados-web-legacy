@@ -1,7 +1,6 @@
 import Image from "next/image";
 import Button from "@/shared/components/Button";
-import TravelSvg from "/public/images/encrypted-sim/icons/travel_explore.svg";
-import WifiSvg from "/public/images/encrypted-sim/icons/wifi_tethering.svg";
+
 import CheckSvg from "/public/images/encrypted-sim/icons/check.svg";
 import StarSvg from "/public/images/encrypted-sim/icons/star_half2.svg";
 import LocalMallSvg from "/public/images/encrypted-sim/icons/local_mall.svg";
@@ -20,7 +19,7 @@ const CardProduct: React.FC<CardSimProps> = ({
   features,
   priceDiscount,
   priceRange,
-  headerIcon,
+
   headerTitle,
 }) => {
   return (

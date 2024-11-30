@@ -6,11 +6,10 @@ import SimProductsBarIcon from "./icons/SimProductsBarIcon";
 import AplicationsProductsBarIcon from "./icons/AplicationsProductsBarIcon";
 import PhoneProductsBarIcon from "./icons/PhoneProductsBarIcon";
 import { useFormContext } from "react-hook-form";
-import MenuDropdownProductBar from "./MenuDropdownProductBar";
+
 import SearchProduct from "./SearchProduct";
 import { useTranslations } from "next-intl";
-import { useGetProducts } from "@/features/products/queries/useGetProducts";
-import CardSim from "@/app/[locale]/encrypted-sim/components/CardSim";
+
 import FilterAppWithLicense from "./FilterAppWithLicense";
 import FilterProviderServices from "./FilterProviderServices";
 
@@ -30,7 +29,7 @@ const icons: Record<IconKeys, React.FC<IconProps>> = {
 
 export default function FilterProductsBar() {
   const t = useTranslations("OurProductsPage");
-  const { getValues, watch } = useFormContext();
+  const { getValues } = useFormContext();
   const selected = getValues("selectedOption") as IconKeys;
 
   const ICON_COLOR_SELECTED = "#0AAEE1";

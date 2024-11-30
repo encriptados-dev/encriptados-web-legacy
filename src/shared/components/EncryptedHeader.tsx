@@ -8,7 +8,10 @@ import MobileMenu from "./HeaderComponents/MobileMenu";
 import LanguageDropdown from "./HeaderComponents/LanguageSelector";
 import EncryptedLogo from "./HeaderComponents/EncryptedLogo";
 import Link from "next/link";
-import { useTranslatedProductsCategories, useTranslatedOthersCategories } from "./HeaderComponents/data/CategoryMenu";
+import {
+  useTranslatedProductsCategories,
+  useTranslatedOthersCategories,
+} from "./HeaderComponents/data/CategoryMenu";
 import WorldIcon from "../svgs/WorldIcon";
 import { useTranslations } from "next-intl";
 
@@ -20,7 +23,9 @@ export default function EncryptedHeader() {
 
   const [isMobile, setIsMobile] = useState(false);
   const [isDesktopMenuOpen, setIsDesktopMenuOpen] = useState(false);
-  const [currentMenu, setCurrentMenu] = useState<"products" | "others">("products");
+  const [currentMenu, setCurrentMenu] = useState<"products" | "others">(
+    "products"
+  );
   const [activeCategory, setActiveCategory] = useState(0);
   const [hoveredItem, setHoveredItem] = useState(
     productsCategories[0]?.items[0] || {
@@ -62,13 +67,7 @@ export default function EncryptedHeader() {
 
   // Renderizado para dispositivos móviles
   if (isMobile) {
-    return (
-      <MobileMenu
-        categories={currentCategories}
-        activeCategory={activeCategory}
-        setActiveCategory={setActiveCategory}
-      />
-    );
+    return <MobileMenu />;
   }
 
   // Renderizado para dispositivos de escritorio

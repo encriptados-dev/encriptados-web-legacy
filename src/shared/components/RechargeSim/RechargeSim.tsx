@@ -5,7 +5,6 @@ import RechargeNumberInput from "../RechargeNumberInput";
 import PayButton from "../PayButtonRecharge";
 import { schemaRecharge } from "./schema/schemaRecharge";
 import { useTranslations } from "next-intl";
-import { useRechargeNumber } from "@/features/recharge/mutations/useRechargeNumber";
 
 const RechargeSim = () => {
   const points = [

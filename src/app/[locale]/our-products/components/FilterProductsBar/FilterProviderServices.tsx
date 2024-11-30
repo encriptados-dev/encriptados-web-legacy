@@ -1,6 +1,6 @@
 import React from "react";
 import MenuDropdownProductBar from "./MenuDropdownProductBar";
-import { useTranslations } from "next-intl";
+
 import { useFormContext } from "react-hook-form";
 import EncryptedSimIcon from "./simicons/EncryptedSimIcon";
 import IraSimIcon from "./simicons/IraSimIcon";
@@ -8,8 +8,6 @@ import TimSimIcon from "./simicons/TimSimIcon";
 
 const FilterAppWithLicense = () => {
   type ProviderType = "encriptados" | "ira" | "tim" | undefined;
-
-  const t = useTranslations("OurProductsPage");
 
   const { watch } = useFormContext();
 

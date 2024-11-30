@@ -1,4 +1,4 @@
-import Image, { StaticImageData } from "next/image";
+import Image from "next/image";
 import Button from "@/shared/components/Button";
 import TravelSvg from "/public/images/encrypted-sim/icons/travel_explore.svg";
 import WifiSvg from "/public/images/encrypted-sim/icons/wifi_tethering.svg";
@@ -8,7 +8,7 @@ import LocalMallSvg from "/public/images/encrypted-sim/icons/local_mall.svg";
 import { Advantage } from "@/features/products/types/AllProductesResponse";
 
 interface CardSimProps {
-  productImage: StaticImageData;
+  productImage: any;
   advantages: Advantage[];
   priceRange: string;
   headerIcon: string;
@@ -19,7 +19,6 @@ const CardSim: React.FC<CardSimProps> = ({
   productImage,
   advantages,
   priceRange,
-  headerIcon,
   headerTitle,
 }) => {
   return (

@@ -1,6 +1,14 @@
 "use client";
 
-import { BarChart3, Activity, ShoppingBag, Tag, Monitor, Settings, MessageCircle, LogOut } from 'lucide-react';
+import {
+  BarChart3,
+  Activity,
+  ShoppingBag,
+  Tag,
+  Monitor,
+  Settings,
+  MessageCircle,
+} from "lucide-react";
 import ProfileSvg from "@/shared/svgs/ProfileSvg";
 import { ReactNode, useEffect, useRef } from "react";
 import Link from "next/link";
@@ -127,13 +135,15 @@ export default function Layout({ children }: LayoutProps) {
           } md:relative md:w-80 md:translate-x-0 z-50`}
         >
           {/* Account header */}
-          <div className="pl-14 pr-8 py-10">            
+          <div className="pl-14 pr-8 py-10">
             <div className="flex items-center gap-3">
               <div className="bg-[#BCEFFF] rounded-full p-2">
                 <ProfileSvg width={24} height={24} color="#0F587E" />
               </div>
               <div>
-                <p className="text-xs text-gray-400">CUENTA DE TIEMPO ILIMITADO</p>
+                <p className="text-xs text-gray-400">
+                  CUENTA DE TIEMPO ILIMITADO
+                </p>
                 <p className="text-sm font-medium">4291 - 4118 - **** - ****</p>
               </div>
             </div>
@@ -149,8 +159,8 @@ export default function Layout({ children }: LayoutProps) {
                     href={item.link[language]}
                     onClick={() => closeMenu()}
                     className={`flex items-center px-14 py-5 hover:bg-[#353535] ${
-                      pathFormat === item.link[language] 
-                        ? "bg-[#353535] [&>span]:text-[#ffffff] [&_svg]:text-[#16C9FF]" 
+                      pathFormat === item.link[language]
+                        ? "bg-[#353535] [&>span]:text-[#ffffff] [&_svg]:text-[#16C9FF]"
                         : "[&>span:first-child]:text-gray-400"
                     }`}
                   >
@@ -161,7 +171,6 @@ export default function Layout({ children }: LayoutProps) {
                         {item.badge}
                       </span>
                     )}
-
                   </Link>
                 </li>
               ))}
@@ -170,9 +179,11 @@ export default function Layout({ children }: LayoutProps) {
 
           {/* Support button */}
           <div className="absolute bottom-8 left-0 right-0 px-14">
-            <button 
+            <button
               className="w-full flex items-center justify-center gap-2 px-4 py-3 h-14 text-[#35CDFB] border border-[#35CDFB] rounded-md bg-[#00222D] hover:bg-[#00222D] hover:bg-opacity-10"
-              onClick={() => {/* Handle support click */}}
+              onClick={() => {
+                /* Handle support click */
+              }}
             >
               <MessageCircle size={20} />
               <span className="text-sm">Hablar con soporte</span>
@@ -215,4 +226,3 @@ function Menu(props: React.ComponentProps<"svg">) {
     </svg>
   );
 }
-

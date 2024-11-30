@@ -72,7 +72,12 @@ export default function MegaMenu({
                 onClick={closeMegaMenu}
                 onMouseEnter={() => {
                   setActiveCategory(index);
-                  setHoveredItem(null); // Asegúrate de resetear el hoveredItem
+                  setHoveredItem({
+                    title: "",
+                    link: "",
+                    description: "",
+                    image: "",
+                  }); // Asegúrate de resetear el hoveredItem
                 }}
               >
                 <h3 className="text-white font-medium flex items-center">

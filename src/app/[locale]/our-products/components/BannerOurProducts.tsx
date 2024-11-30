@@ -1,10 +1,9 @@
 import Image from "next/image";
-import { useTranslations } from "next-intl";
+
 import React from "react";
 
 const BannerOurProducts = () => {
   const BannerBackground = "/images/home/banner-home.jpg";
-  const t = useTranslations("OurProductsPage.banner");
 
   return (
     <div className="relative h-[500px] md:h-[500px] xl:h-[530px] 2xl:h-[650px] w-full overflow-hidden">

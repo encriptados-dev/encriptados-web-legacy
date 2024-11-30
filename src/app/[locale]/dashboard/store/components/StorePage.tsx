@@ -124,10 +124,10 @@ const StorePage = () => {
           <CardSim
             key={index}
             productImage={card.productImage}
-            features={card.featuresCardSim}
             priceRange={card.priceRange}
             headerIcon={card.headerIcon}
             headerTitle={card.headerTitle}
+            advantages={[]}
           />
         ))}
       </div>
