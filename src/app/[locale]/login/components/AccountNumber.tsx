@@ -24,6 +24,7 @@ const AccountNumber = () => {
 
   const { setValue, getValues } = useFormContext();
   const [generatedNumber, setGeneratedNumber] = useState("");
+
   const [isGenerating, setIsGenerating] = useState(false);
 
   const { success, error: errorToast } = useToast();
@@ -31,7 +32,7 @@ const AccountNumber = () => {
   const { registerToken, isPending } = useRegisterToken({
     onSuccess: (data) => {
       const responseData = data as RegisterTokenResponse;
-      animateToken(responseData.data.token_separated);
+      animateToken(responseData.data.token);
       setValue("currentGeneratedNumber", responseData.data.token);
 
       success(
