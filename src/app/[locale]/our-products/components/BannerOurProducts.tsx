@@ -33,18 +33,19 @@ const BannerOurProducts = () => {
           >
             <div className="text-white space-y-6 max-w-2xl">
               <h1 className="text-xl sm:text-4xl md:text-5xl leading-tight">
-                <span>{t("banner.titleNewConnectWith")}</span>{" "}
+                <span>{t("banner.titleNewConnectWith")}</span> <br></br>
                 <span className="text-[#7CD0F9] font-extrabold">
                   {t("banner.titleNewTotalSecurity")}
-                  <br />
                 </span>{" "}
                 <span className="font-extrabold">
-                  {" "}
                   {t("banner.titleNewInComunication")}
                 </span>
               </h1>
-              <div className="w-10/12">
-                <p className="text-base sm:text-lg md:text-xl">
+              <div className="w-[500px] text-justify">
+                <p
+                  className="flex flex-col h-full w-full justify-center items-center 
+              text-center lg:items-start lg:text-left"
+                >
                   {t("banner.descriptionNew")}
                 </p>
               </div>
