@@ -90,7 +90,7 @@ export default function MobileMenu() {
               <div className="flex-1 overflow-y-auto">
                 {/* Store with New badge */}
                 <button
-                  onClick={() => handleLinkClick("/tienda")}
+                  onClick={() => handleLinkClick("/")}
                   className="flex items-center justify-start gap-4 w-full px-4 py-3 border-b border-[#1A1A1A] text-left text-[#ffffff80] hover:text-white"
                 >
                   <span className=" text-xl font-extralight">

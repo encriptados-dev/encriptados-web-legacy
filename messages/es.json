@@ -732,6 +732,32 @@
       "answer2": "No"
     }
   },
+  "BlogPage": {
+    "ourBlogTitleBanner": "Nuestro Blog",
+    "ourBlogDescriptionBanner": "Aprende sobre seguridad cifrada",
+    "menu": {
+      "techTitle": "Tecnología",
+      "ventureTitle": "Emprendimiento",
+      "eCommerceTitle": "Comercio Electrónico",
+      "marketingTitle": "Marketing",
+      "toolsTitle": "Herramientas",
+      "publicityTitle": "Publicidad"
+    },
+    "downloadAppTitle": "Descarga la app para iOS y Android",
+    "downloadAppSubtitle": "O escanea el código QR con tu cámara",
+    "saveTitle": "Ahorra hasta un 50% en tarifas móviles",
+    "saveDescription": "Registra tu correo electrónico y recibe un descuento de bienvenida",
+    "saveInputPlaceholder": "Ingresa tu correo electrónico",
+    "subscribe": "Suscribirse",
+    "optimizeBanner": {
+      "title": "Optimiza la experiencia del cliente en tu tienda en línea con tecnología avanzada"
+    },
+    "writeBy": "Escrito por:",
+    "share": "Compartir:",
+    "talkWithSupport": "Chatea ahora con un asesor de Encriptados directamente en Telegram",
+    "goTelegram": "Ir a Telegram",
+    "articleTitle": "Artículos Relacionados"
+  },
   "OffersPage": {
     "exclusiveOffersTitle": "Ofertas Exclusivas",
     "menu": {

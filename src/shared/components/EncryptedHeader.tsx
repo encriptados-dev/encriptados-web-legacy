@@ -86,7 +86,7 @@ export default function EncryptedHeader() {
             <div className="hidden md:flex items-center gap-0">
               {/* Tienda */}
               <Link
-                href="/tienda"
+                href="/"
                 prefetch
                 className="px-4 py-2 text-sm text-white hover:bg-[#054d6121] rounded-full transition-colors"
               >

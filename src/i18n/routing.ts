@@ -103,8 +103,8 @@ export const routing = defineRouting({
       pt: "/sim-encriptada",
     },
 
-    "/security-test": {
-      en: "/security-test",
+    "/encrypted-test": {
+      en: "/encrypted-test",
       es: "/test-de-seguridad",
       fr: "/test-de-securite",
       it: "/test-di-sicurezza",

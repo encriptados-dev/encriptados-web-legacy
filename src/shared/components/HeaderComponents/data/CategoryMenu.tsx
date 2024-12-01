@@ -300,7 +300,7 @@ export function useTranslatedOthersCategories(): any[] {
       description: t2("securityTest.description", {
         defaultValue: "¿Qué tan seguro son tus dispositivos?",
       }),
-      link: "/security-test",
+      link: "/encrypted-test",
       image: "/images/mega-menu/seguridad.jpeg",
       items: [],
     },
