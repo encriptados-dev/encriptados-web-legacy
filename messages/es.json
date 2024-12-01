@@ -510,7 +510,13 @@
   "OurProductsPage": {
     "banner": {
       "title": "Administra múltiples SIMs con nuestra",
-      "subtitle": "App Encriptados"
+      "subtitle": "App Encriptada",
+      "titleNewConnectWith": "Conéctate en todo el mundo con",
+      "titleNewTotalSecurity": "total seguridad",
+      "titleNewInComunication": "en tus comunicaciones",
+      "descriptionNew": "Protégete de los ciber-delincuentes y mantén tu información personal segura",
+      "newButtonBuy": "Comprar eSim",
+      "buttonAppEncriptados": "Apps Encriptados"
     },
 
     "filterProducts": {

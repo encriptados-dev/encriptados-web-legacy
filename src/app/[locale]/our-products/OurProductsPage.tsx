@@ -12,13 +12,15 @@ import FormOurProducts from "./components/FormOurProducts";
 
 import { BasicFormProvider } from "@/shared/components/BasicFormProvider";
 import ListOfProducts from "./components/ListOfProducts";
+import { useTranslations } from "next-intl";
 
 const OurProductsPage = () => {
+  const t = useTranslations("OurProductsPage");
   return (
     <>
       <div className="p-8">
         <h1 className="bg-gradient-to-r text-3xl justify-center font-bold  flex items-center from-[#000000] to-[#35CDFB] bg-clip-text text-transparent mb-4 text-center">
-          Nuestros productos
+          {t("filterProducts.title")}
         </h1>
         <BasicFormProvider defaultValue={{ selectedOption: "sim" }}>
           <FilterProductsBar />
