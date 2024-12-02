@@ -68,13 +68,15 @@ const AccountNumber = () => {
   const animateToken = (token: string) => {
     setIsGenerating(true);
     setGeneratedNumber("");
-    const finalNumber = Array.from(token);
+    const formattedToken = token.replace(/(.{4})/g, "$1 ").trim(); // Añade un espacio cada 4 caracteres
+    const finalNumber = Array.from(formattedToken);
+  
     finalNumber.forEach((digit, index) => {
       setTimeout(() => {
         setGeneratedNumber((prev) => prev + digit);
         if (index === finalNumber.length - 1) {
           setIsGenerating(false);
-          setValue("generatedCurrentNumberSeparated", finalNumber.join(""));
+          setValue("generatedCurrentNumberSeparated", formattedToken);
         }
       }, index * 100);
     });
