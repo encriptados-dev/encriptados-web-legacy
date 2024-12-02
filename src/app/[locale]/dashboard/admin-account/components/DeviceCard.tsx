@@ -23,7 +23,7 @@ export default function DeviceCard({
           {icon}
         </div>
         <div className="flex-grow sm:flex sm:flex-col sm:items-center">
-          <h2 className="text-base sm:text-lg sm:text-xl font-medium sm:font-bold text-black mb-1 sm:mb-2 sm:text-center">
+          <h2 className="text-base sm:text-xl font-medium sm:font-bold text-black mb-1 sm:mb-2 sm:text-center">
             {deviceName}
           </h2>
           <p className="text-xs sm:text-sm text-gray-500 mb-0.5 sm:mb-1 sm:text-center">
