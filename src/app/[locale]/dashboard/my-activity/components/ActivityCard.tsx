@@ -24,8 +24,9 @@ export default function ActivityCard({
   return (
     <div className="w-full md:w-8/12 border rounded-2xl overflow-hidden bg-white shadow-sm hover:shadow-lg transition-shadow duration-200 group cursor-pointer">
       <div className="flex flex-col md:flex-row">
-        <div className="w-full md:w-1/4 bg-gray-100 p-10 flex flex-col items-center justify-between relative">
-          <div className="w-[100px] h-[100px] flex items-center justify-center">
+        {/* Image Section - Now at top for mobile */}
+        <div className="w-full md:w-1/4 bg-gray-100 p-6 flex flex-col items-center justify-center relative order-1 md:order-1">
+          <div className="w-[120px] h-[120px] md:w-[120px] md:h-[120px] flex items-center justify-center">
             <Image
               src={productImageUrl}
               alt={productName}
@@ -34,32 +35,34 @@ export default function ActivityCard({
               className="object-contain"
             />
           </div>
-          {/* Botón de Eliminar visible solo cuando se hace hover en la tarjeta */}
-          <button className="absolute bottom-4 bg-red-500 text-white px-3 py-1 rounded text-sm hover:bg-red-600 opacity-0 group-hover:opacity-100 transition-opacity duration-200">
+          <button className="absolute bottom-4 bg-red-500 text-white px-3 py-1 rounded text-sm hover:bg-red-600 opacity-0 group-hover:opacity-100 transition-opacity duration-200 ">
             Eliminar
           </button>
         </div>
-        <div className="w-full md:w-3/4 p-4">
-          <div className="flex flex-col md:flex-row justify-between items-start mb-2">
+
+        {/* Content Section */}
+        <div className="w-full md:w-3/4 p-4 order-2 md:order-2">
+          <div className="md:flex md:flex-row md:justify-between md:items-start mb-2">
             <div className="flex-1">
-              <h2 className="text-2xl font-bold flex items-center">
+              <h2 className="text-2xl font-bold flex items-center gap-2 mb-2 md:mb-0">
                 <SimIconSvg color="#35CDFB" />
                 <span className="font-bold text-black text-base">
                   {productName}
                 </span>
               </h2>
-              <p className="flex items-center text-green-600">
-                <span className="w-3 h-3 bg-green-600 rounded-full mr-2"></span>
+              <p className="flex items-center text-green-600 mb-2 md:mb-0">
+                <span className="w-2 h-2 md:w-3 md:h-3 bg-green-600 rounded-full mr-2"></span>
                 Licencia de {licenseDuration}
               </p>
             </div>
-            <div className="w-full md:w-[150px] mt-2 md:mt-0">
+            <div className="w-full md:w-[150px] mt-2 md:mt-0 hidden md:block">
               <Button rounded="full" intent="black">
                 QR de activación
               </Button>
             </div>
           </div>
-          <div className="space-y-1 mb-4 text-sm text-black">
+
+          <div className="space-y-2 mb-4 text-sm text-black">
             <p>
               Fecha de vencimiento:{" "}
               <span className="font-bold">{expirationDate}</span>
@@ -72,8 +75,17 @@ export default function ActivityCard({
               <span className="font-bold">{activationKey}</span>
             </p>
           </div>
-          <div className="flex justify-between items-center text-sm">
-            <p className="text-black flex items-center hover:underline cursor-pointer">
+
+          <div className="border-t border-gray-200 my-4 md:hidden"></div>
+
+          <div className="md:hidden mb-4 w-[180px]">
+            <Button rounded="full" intent="black" >
+              QR de activación
+            </Button>
+          </div>
+
+          <div className="flex flex-col md:flex-row justify-between items-start md:items-center text-sm">
+            <p className="text-black flex items-center hover:underline cursor-pointer mb-2 md:mb-0">
               ¿Cómo activar este producto?
               <svg
                 className="ml-1 h-4 w-4"
@@ -91,15 +103,15 @@ export default function ActivityCard({
               </svg>
             </p>
             <div className="flex items-center">
-              <span className="mr-2 text-black">
+              <span className="text-black">
                 Tienes{" "}
-                <span className="text-[#23A137] font-bold mr-1">
+                <span className="text-[#23A137] font-bold">
                   {timeRemaining}
                 </span>
-                para activar este producto
+                {" "}para activar este producto
               </span>
               <svg
-                className="h-4 w-4 text-gray-400"
+                className="h-4 w-4 text-gray-400 ml-1"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
@@ -119,3 +131,8 @@ export default function ActivityCard({
     </div>
   );
 }
+
+
+
+
+

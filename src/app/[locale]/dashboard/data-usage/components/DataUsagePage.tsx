@@ -98,13 +98,13 @@ const DataUsagePage: React.FC = () => {
             </div>
 
             {/* Ajuste de imagen para pantallas grandes */}
-            <div className="relative h-[413px] w-full overflow-hidden">
+            <div className="relative h-[513px] w-full overflow-hidden md:h-[413px]">
               <Image
                 alt="Image"
                 src={Man}
                 layout="fill"
                 objectFit="cover"
-                className="rounded-b-2xl absolute bottom-0 left-0 translate-y-20" // Asegura que la imagen esté alineada en la parte inferior
+                className="rounded-b-2xl absolute bottom-0 left-0 translate-y-0 md:translate-y-20" // Asegura que la imagen esté alineada en la parte inferior
               />
             </div>
           </div>

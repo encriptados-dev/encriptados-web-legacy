@@ -6,10 +6,10 @@ import React from "react";
 
 const Email = () => {
   return (
-    <div className="mb-4 w-full mt-4 p-4 flex flex-col justify-between h-full">
+    <div className="mb-4 w-full mt-4 p-6 flex flex-col justify-between h-full">
       <div>
         <div className="flex justify-between items-center ">
-          <div className="w-[200px]">
+          <div className="w-[250px] ">
             <Button size="small" intent="primary">
               Correo Electrónico (Activo)
             </Button>
@@ -17,7 +17,7 @@ const Email = () => {
           <p className="text-[#2372E9] cursor-pointer">Desactivar</p>
         </div>
 
-        <p className="text-[#5D5D5D] mb-4 bg-[#FAFAFA] p-4 rounded-2xl text-center mt-4">
+        <p className="text-[#5D5D5D] mb-4 bg-[#FAFAFA] p-4 rounded-2xl text-left mt-4">
           Puedes habilitar la opción de recibir códigos de acceso, sim’s y demás
           datos de tu SIM. Puedes desactivarla y no conservaremos ninguno de tus
           datos.

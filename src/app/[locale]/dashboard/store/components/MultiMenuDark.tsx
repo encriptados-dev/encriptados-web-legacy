@@ -29,7 +29,7 @@ const MultiMenuDark: React.FC<SelectCardProps> = ({
       control={control}
       defaultValue=""
       render={({ field: { onChange } }) => (
-        <div className="flex flex-col md:flex-row gap-y-2 md:gap-x-2 w-3/12  ">
+        <div className="flex flex-row gap-y-2 md:gap-x-2 w-12/12 gap-2 md:w-3/12 ">
           {options.map((option, index) => (
             <motion.div
               key={index}

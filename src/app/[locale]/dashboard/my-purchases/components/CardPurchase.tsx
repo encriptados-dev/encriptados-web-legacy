@@ -31,13 +31,13 @@ export default function CardPurchase({
             <Image
               src={productImageUrl}
               alt={productName}
-              width={200}
-              height={200}
-              className="object-contain w-full h-full max-w-[200px]"
+              width={300}
+              height={300}
+              className="object-contain w-full h-full max-w-[250px]"
             />
           </div>
           {/* Botón de Eliminar visible solo cuando se hace hover en la tarjeta */}
-          <button className="absolute bottom-4 bg-red-500 text-white px-3 py-1 rounded text-sm hover:bg-red-600 opacity-0 group-hover:opacity-100 transition-opacity duration-200">
+          <button className="absolute bottom-2 right-2 lg:bottom-4 lg:right-auto bg-red-500 text-white px-2 py-1 rounded text-xs lg:text-sm hover:bg-red-600 opacity-0 group-hover:opacity-100 transition-opacity duration-200">
             Eliminar
           </button>
         </div>

@@ -12,7 +12,7 @@ const Credentials = () => {
       </div>
 
       <div className="flex flex-col w-full max-w-md">
-        <div className="flex flex-col px-4">
+        <div className="flex flex-col px-6">
           <p className="text-[#888888] text-base">ID DE ACCESO</p>
           <InputFormContext
             rounded="lg"
@@ -22,7 +22,7 @@ const Credentials = () => {
           />
         </div>
 
-        <div className="flex flex-col px-4">
+        <div className="flex flex-col px-6">
           <p className="text-[#888888] text-base">ÚLTIMA FECHA DE ACCESO</p>
           <InputFormContext
             rounded="lg"

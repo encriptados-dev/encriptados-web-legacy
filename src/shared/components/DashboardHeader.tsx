@@ -44,15 +44,17 @@ const DashboardHeader = () => {
         className="md:hidden p-2  rounded hover:bg-gray-800"
         onClick={toggleMenu}
       >
-        <Menu color={"white"} size={24} />
+        <Menu color={"white"} size={25} />
       </button>
 
-      <div className="hidden md:block w-48 md:w-64 ">
-        <EncryptedLogoSvg width={220} />
+      <div className="hidden md:block w-64 md:w-64 ">
+        <EncryptedLogoSvg width={250} />
       </div>
 
       <div className="flex gap-x-2">
-        <SupportChat />
+        <div className="hidden md:block">
+          <SupportChat />
+        </div>
         <Button iconPosition="right" icon={<ProfileSvg />} intent="profile">
           {t("menuDashboard.header.myAccount")}
         </Button>
