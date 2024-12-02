@@ -1,4 +1,91 @@
 {
+  "WhereToFindUs": {
+    "banner": {
+      "titleEasyToBuyLicense": "Nunca ha sido tan fácil comprar tu licencia cifrada.",
+      "moreThanTitle": "Más de",
+      "pointsOfPay": "puntos de pago",
+      "forYou": "para ti"
+    },
+    "whereCards": {
+      "title": "Donde sea que estés, habrá un cajero cripto listo para comprar productos de",
+      "titleEncrypted": "Encriptados",
+      "paymentPoint": {
+        "title": "Puntos de Pago",
+        "description": "Lugares donde puedes comprar rápidamente tus licencias cripto"
+      },
+      "countriesAvailable": {
+        "title": "Países Disponibles",
+        "description": "La mayor cobertura disponible para ti"
+      }
+    },
+    "findATM": {
+      "title": "Encuentra un cajero cripto cerca de ti",
+      "results": "Resultados",
+      "showPoints": "Ver ubicaciones"
+    },
+    "howToBuy": {
+      "howToBuyTitle": "Cómo comprar",
+      "orderTitle": "Realiza tu pedido",
+      "depositATMTitle": "Deposita en un cajero",
+      "reciveYourPurchase": "Recibe tu compra"
+    }
+  },
+  "AmbassadorsPage": {
+    "banner": {
+      "joinUsTitle": "Únete a nuestro",
+      "programTitle": "programa",
+      "ofTitle": "de",
+      "ambassadorsTitle": "embajadores",
+      "showBenefits": "Ver beneficios"
+    },
+    "partnerCards": {
+      "title": "¿Qué tipo de socio te gustaría ser?",
+      "promotor": {
+        "promotorTitle": "Promotor",
+        "encryptedTag": "Encriptados",
+        "description": "¿Eres blogger, YouTuber, influencer o tienes voz en el mundo de la ciberseguridad y las comunicaciones seguras? ¡Conviértete en aliado de Encriptados y obtén grandes recompensas por promover nuestros productos y servicios!",
+        "benefits": "Beneficios:",
+        "benefit1": "Comisiones atractivas en efectivo o productos",
+        "benefit2": "Relación directa con Encriptados",
+        "benefit3": "Acceso exclusivo a lanzamientos, noticias y contenido de Encriptados",
+        "sendRequest": "Enviar solicitud de Promotor"
+      },
+      "distributor": {
+        "distributorTitle": "Distribuidor",
+        "encryptedTag": "Encriptados",
+        "description": "Si tienes una tienda o negocio, o si tienes contactos que necesiten teléfonos, apps, tarjetas SIM o equipos cifrados, ¡contáctanos! Puedes convertirte en distribuidor de nuestros productos.",
+        "benefits": "Beneficios:",
+        "benefit1": "Precios especiales en todos nuestros productos",
+        "benefit2": "Acceso directo a soporte y capacitación",
+        "benefit3": "Material promocional, publicidad y contenido digital",
+        "sendRequest": "Enviar solicitud de Distribuidor"
+      }
+    }
+  },
+  "AboutUsPage": {
+    "banner": {
+      "title": "Sobre Nosotros",
+      "description": "Protegiendo tu privacidad en cada conexión."
+    },
+    "aboutUs": {
+      "title": "Quiénes somos",
+      "description": "Somos especialistas en equipos y software de comunicación segura, como teléfonos, aplicaciones y tarjetas SIM. Nuestro objetivo es acercar la seguridad digital a cualquier persona o empresa que desee proteger su información y privacidad. Trabajamos con los sistemas más seguros y reconocidos del mundo, los cuales han sido probados durante años y demostraron ser impenetrables."
+    },
+    "cards": {
+      "communicationCard": {
+        "title": "Comunicación segura sin fronteras",
+        "description": "Contamos con una extensa red de revendedores y distribuidores en Norteamérica, Sudamérica y Europa que llevan las soluciones de Encriptados a quienes las necesitan, para que más personas puedan beneficiarse de las ventajas de las comunicaciones seguras."
+      },
+      "privacyCard": {
+        "title": "Nos tomamos tu privacidad en serio",
+        "description": "Siempre estamos a la vanguardia de las nuevas tecnologías para ofrecerte comunicaciones cifradas completamente impenetrables y fáciles de usar. Ayudamos a corporaciones, negocios, instituciones gubernamentales, celebridades, abogados, viajeros y personas que desean mejorar su ciberseguridad."
+      },
+      "informationCard": {
+        "title": "Tu información personal nunca llegará a terceros",
+        "description": "Con Encriptados, tendrás un proveedor de red privada que garantiza tu seguridad y asegura mayor privacidad, evitando que tu información sea manipulada, compartida o vendida."
+      }
+    }
+  },
   "HeaderMenu": {
     "languages": {
       "es": "Español",
@@ -111,7 +198,7 @@
     },
     "generatedSection": {
       "accountNumber": {
-        "yourNewAccountNumber": "Tu nuevo número de cuenta", 
+        "yourNewAccountNumber": "Tu nuevo número de cuenta",
         "title": "Administra todo sin involucrar tus datos personales.",
         "getNumberAccountTitle": "Obtener un número de cuenta",
         "generateAccountNumber": "Generar un nuevo número de cuenta",
@@ -423,7 +510,13 @@
   "OurProductsPage": {
     "banner": {
       "title": "Administra múltiples SIMs con nuestra",
-      "subtitle": "App Encriptados"
+      "subtitle": "App Encriptada",
+      "titleNewConnectWith": "Conéctate en todo el mundo con",
+      "titleNewTotalSecurity": "total seguridad",
+      "titleNewInComunication": "en tus comunicaciones",
+      "descriptionNew": "Protégete de los ciber-delincuentes y mantén tu información personal segura",
+      "newButtonBuy": "Comprar eSim",
+      "buttonAppEncriptados": "Apps Encriptados"
     },
 
     "filterProducts": {
@@ -645,6 +738,32 @@
       "answer2": "No"
     }
   },
+  "BlogPage": {
+    "ourBlogTitleBanner": "Nuestro Blog",
+    "ourBlogDescriptionBanner": "Aprende sobre seguridad cifrada",
+    "menu": {
+      "techTitle": "Tecnología",
+      "ventureTitle": "Emprendimiento",
+      "eCommerceTitle": "Comercio Electrónico",
+      "marketingTitle": "Marketing",
+      "toolsTitle": "Herramientas",
+      "publicityTitle": "Publicidad"
+    },
+    "downloadAppTitle": "Descarga la app para iOS y Android",
+    "downloadAppSubtitle": "O escanea el código QR con tu cámara",
+    "saveTitle": "Ahorra hasta un 50% en tarifas móviles",
+    "saveDescription": "Registra tu correo electrónico y recibe un descuento de bienvenida",
+    "saveInputPlaceholder": "Ingresa tu correo electrónico",
+    "subscribe": "Suscribirse",
+    "optimizeBanner": {
+      "title": "Optimiza la experiencia del cliente en tu tienda en línea con tecnología avanzada"
+    },
+    "writeBy": "Escrito por:",
+    "share": "Compartir:",
+    "talkWithSupport": "Chatea ahora con un asesor de Encriptados directamente en Telegram",
+    "goTelegram": "Ir a Telegram",
+    "articleTitle": "Artículos Relacionados"
+  },
   "OffersPage": {
     "exclusiveOffersTitle": "Ofertas Exclusivas",
     "menu": {
@@ -857,5 +976,8 @@
     "preview": "Vista previa",
     "seeMore": "Ver más",
     "category": "Categoría"
+  },
+  "RechargeSim": {
+    "errorInput": "Debe ser un número de teléfono válido con al menos 6 dígitos."
   }
 }

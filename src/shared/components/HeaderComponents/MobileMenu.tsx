@@ -7,7 +7,10 @@ import { useRouter } from "next/navigation";
 import EncryptedLogoMobile from "./EncrytedLogoMovbile";
 import LanguageDropdown from "./LanguageSelector";
 import WorldIcon from "@/shared/svgs/WorldIcon";
-import { useTranslatedProductsCategories, useTranslatedOthersCategories } from "@/shared/components/HeaderComponents/data/CategoryMenu";
+import {
+  useTranslatedProductsCategories,
+  useTranslatedOthersCategories,
+} from "@/shared/components/HeaderComponents/data/CategoryMenu";
 import { useTranslations } from "next-intl";
 
 export default function MobileMenu() {
@@ -64,7 +67,11 @@ export default function MobileMenu() {
             <WorldIcon color="#1C1B1F" />
             {t("login")}
           </a>
-          <button onClick={toggleMenu} className="text-white " aria-label={t("openMenu")}>
+          <button
+            onClick={toggleMenu}
+            className="text-white "
+            aria-label={t("openMenu")}
+          >
             <Menu className="w-6 h-6 b-red " />
           </button>
         </div>
@@ -83,10 +90,12 @@ export default function MobileMenu() {
               <div className="flex-1 overflow-y-auto">
                 {/* Store with New badge */}
                 <button
-                  onClick={() => handleLinkClick("/tienda")}
+                  onClick={() => handleLinkClick("/")}
                   className="flex items-center justify-start gap-4 w-full px-4 py-3 border-b border-[#1A1A1A] text-left text-[#ffffff80] hover:text-white"
                 >
-                  <span className=" text-xl font-extralight">{t("store.label")}</span>
+                  <span className=" text-xl font-extralight">
+                    {t("store.label")}
+                  </span>
                   <span className="px-2 py-0.5 text-xs text-[#44D3FF] bg-[#06546C] rounded-full">
                     {t("store.new")}
                   </span>
@@ -95,13 +104,22 @@ export default function MobileMenu() {
                 {/* Products Section */}
                 <div className="border-b border-[#1A1A1A]">
                   <button
-                    onClick={() => setActiveCategory(activeCategory === 0 ? -1 : 0)}
+                    onClick={() =>
+                      setActiveCategory(activeCategory === 0 ? -1 : 0)
+                    }
                     className={`flex items-center justify-between w-full px-4 py-3 transition-colors text-xl font-extralight
-                      ${activeCategory === 0 ? "text-[#ffffff] bg-[#0A0A0A]" : "text-[#ffffff80]"}`}
+                      ${
+                        activeCategory === 0
+                          ? "text-[#ffffff] bg-[#0A0A0A]"
+                          : "text-[#ffffff80]"
+                      }`}
                     aria-expanded={activeCategory === 0}
                   >
                     <span>{t("categories.products")}</span>
-                    <motion.div animate={{ rotate: activeCategory === 0 ? 180 : 0 }} transition={{ duration: 0.2 }}>
+                    <motion.div
+                      animate={{ rotate: activeCategory === 0 ? 180 : 0 }}
+                      transition={{ duration: 0.2 }}
+                    >
                       <ChevronDown className="w-5 h-5" />
                     </motion.div>
                   </button>
@@ -114,11 +132,13 @@ export default function MobileMenu() {
                         exit={{ height: 0 }}
                         className="bg-[#0A0A0A] overflow-hidden"
                       >
-                        {productsCategories.map((category, index) => (
+                        {productsCategories.map((category: any, index: any) => (
                           <div key={category.title}>
                             <button
                               onClick={() =>
-                                setActiveSubCategory(activeSubCategory === index ? -1 : index)
+                                setActiveSubCategory(
+                                  activeSubCategory === index ? -1 : index
+                                )
                               }
                               className="flex items-center justify-between w-full px-6 py-2 text-[#FFFFFF] relative text-ls"
                             >
@@ -126,7 +146,9 @@ export default function MobileMenu() {
                               <span className="ml-4">{category.title}</span>
                               <ChevronDown
                                 className={`w-5 h-5 transition-transform ${
-                                  activeSubCategory === index ? "rotate-180" : ""
+                                  activeSubCategory === index
+                                    ? "rotate-180"
+                                    : ""
                                 }`}
                               />
                             </button>
@@ -138,7 +160,7 @@ export default function MobileMenu() {
                                   exit={{ height: 0 }}
                                   className="overflow-hidden"
                                 >
-                                  {category.items.map((item) => (
+                                  {category.items.map((item: any) => (
                                     <button
                                       key={item.title}
                                       onClick={() => handleLinkClick(item.link)}
@@ -160,13 +182,22 @@ export default function MobileMenu() {
                 {/* Others Section */}
                 <div className="border-b border-[#1A1A1A]">
                   <button
-                    onClick={() => setActiveCategory(activeCategory === 1 ? -1 : 1)}
+                    onClick={() =>
+                      setActiveCategory(activeCategory === 1 ? -1 : 1)
+                    }
                     className={`flex items-center justify-between w-full px-4 py-3 transition-colors text-xl font-extralight
-                      ${activeCategory === 1 ? "text-[#FFFFFF] bg-[#0A0A0A]" : "text-[#FFFFFF80]"}`}
+                      ${
+                        activeCategory === 1
+                          ? "text-[#FFFFFF] bg-[#0A0A0A]"
+                          : "text-[#FFFFFF80]"
+                      }`}
                     aria-expanded={activeCategory === 1}
                   >
                     <span>{t("categories.others")}</span>
-                    <motion.div animate={{ rotate: activeCategory === 1 ? 180 : 0 }} transition={{ duration: 0.2 }}>
+                    <motion.div
+                      animate={{ rotate: activeCategory === 1 ? 180 : 0 }}
+                      transition={{ duration: 0.2 }}
+                    >
                       <ChevronDown className="w-5 h-5" />
                     </motion.div>
                   </button>
@@ -212,7 +243,9 @@ export default function MobileMenu() {
                   {t("login")}
                 </button>
                 <div className="text-center text-sm">
-                  <span className="text-gray-400">{t("suggestions.question")} </span>
+                  <span className="text-gray-400">
+                    {t("suggestions.question")}{" "}
+                  </span>
                   <button
                     onClick={() => handleLinkClick("/sugerencia")}
                     className="text-white underline hover:text-gray-200 transition-colors"

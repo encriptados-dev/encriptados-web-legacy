@@ -1,18 +1,24 @@
-import React from "react";
+import React, { useEffect } from "react";
 import SelectCard from "./SelectCard";
 import { useFormContext } from "react-hook-form";
 import PhySim from "@/shared/svgs/PhySimSvg";
 import RechargeBuy from "@/shared/svgs/RechargeBuySvg";
 import DotsSvg from "@/shared/svgs/DotsSvg";
 import SimData from "./SimData";
-import RechargeSim from "./RechargeSim";
+import RechargeSim from "../RechargeSim/RechargeSim";
 
 const StepperBuy = ({
   optionType,
 }: {
-  optionType?: "maya" | "bme" | "encriptados-sim";
+  optionType?: "maya" | "bne" | "encriptados-sim";
 }) => {
-  const { watch } = useFormContext();
+  const { watch, setValue } = useFormContext();
+
+  //change context of render payment url in case optionType "bme" will redirect to payments of bme for example
+  useEffect(() => {
+    setValue("optionType", optionType);
+  }, [optionType]);
+
   const selectedValue = watch("selectedcardvalue");
 
   const ICON_SIZE = 50;

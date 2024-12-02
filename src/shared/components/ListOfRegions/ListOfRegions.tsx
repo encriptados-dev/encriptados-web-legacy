@@ -9,6 +9,7 @@ import LatinAmericSvg from "./svgs/LatinAmericSvg";
 import MidOrientAmericSvg from "./svgs/MidOrientAmericSvg";
 import NorthAmericSvg from "./svgs/NorthAmericSvg";
 import { useRouter } from "next/navigation";
+import { useFormContext } from "react-hook-form";
 
 const ListOfRegions = () => {
   const regions = [
@@ -33,13 +34,20 @@ const ListOfRegions = () => {
 
   const router = useRouter();
 
+  const currentRedirect: Record<string, string> = {
+    maya: "maya-data/payment-service#buy-section",
+    bne: "bne-sim/payment-service#buy-section",
+  };
+
+  const { watch } = useFormContext();
+
   return (
     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-6  w-full">
       {regions.map((region, index) => (
         <div
           key={index}
           onClick={() => {
-            router.push("maya-data/payment-service#buy-section");
+            router.push(currentRedirect[watch("optionType")]);
           }}
         >
           <CardOfRegion key={index} region={region.name} icon={region.icon} />

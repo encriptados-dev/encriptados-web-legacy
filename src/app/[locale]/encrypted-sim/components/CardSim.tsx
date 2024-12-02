@@ -1,14 +1,15 @@
-import Image, { StaticImageData } from "next/image";
+import Image from "next/image";
 import Button from "@/shared/components/Button";
 import TravelSvg from "/public/images/encrypted-sim/icons/travel_explore.svg";
 import WifiSvg from "/public/images/encrypted-sim/icons/wifi_tethering.svg";
 import CheckSvg from "/public/images/encrypted-sim/icons/check.svg";
 import StarSvg from "/public/images/encrypted-sim/icons/star_half2.svg";
 import LocalMallSvg from "/public/images/encrypted-sim/icons/local_mall.svg";
+import { Advantage } from "@/features/products/types/AllProductesResponse";
 
 interface CardSimProps {
-  productImage: StaticImageData;
-  features: string[];
+  productImage: any;
+  advantages: Advantage[];
   priceRange: string;
   headerIcon: string;
   headerTitle: string;
@@ -16,9 +17,8 @@ interface CardSimProps {
 
 const CardSim: React.FC<CardSimProps> = ({
   productImage,
-  features,
+  advantages,
   priceRange,
-  headerIcon,
   headerTitle,
 }) => {
   return (
@@ -26,6 +26,8 @@ const CardSim: React.FC<CardSimProps> = ({
       <div className="p-2 bg-[#5D5D5D] ">
         <Image
           src={productImage}
+          width={200}
+          height={200}
           alt="Sim Card"
           className=" w-full h-48 object-contain"
         />
@@ -46,21 +48,21 @@ const CardSim: React.FC<CardSimProps> = ({
 
       <div className="p-6">
         <div className="text-black rounded-full text-xs font-semibold flex gap-1">
-          <Image
+          {/* <Image
             src={headerIcon}
             alt="Icon"
             width={24}
             height={24}
             className="w-6 h-6"
-          />
+          /> */}
           <h2 className="text-lg font-bold mb-2">{headerTitle}</h2>
         </div>
 
         <ul className="space-y-0">
-          {features.map((item, index) => (
+          {advantages?.map((item, index) => (
             <li key={index} className="flex items-center text-sm gap-1">
               <Image src={CheckSvg} alt="Icon" className="w-4 h-4" />
-              {item}
+              {item?.title}
             </li>
           ))}
         </ul>
@@ -68,7 +70,7 @@ const CardSim: React.FC<CardSimProps> = ({
         <div className="p-0">
           <div className="w-full">
             <div className="flex justify-between items-center mb-2">
-              <span className="text-lg font-bold">{priceRange}</span>
+              <span className="text-lg font-bold">{priceRange}$</span>
               <div className="flex items-center bg-[#EDF4F6] px-2 rounded-full">
                 <Image
                   src={StarSvg}

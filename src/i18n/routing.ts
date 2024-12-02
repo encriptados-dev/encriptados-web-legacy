@@ -39,6 +39,22 @@ export const routing = defineRouting({
       pt: "/dados-maya/servico-de-pagamento",
     },
 
+    "/bne-sim": {
+      en: "/bne-sim",
+      es: "/bne-sim",
+      fr: "/bne-sim",
+      it: "/bne-sim",
+      pt: "/bne-sim",
+    },
+
+    "/bne-sim/payment-service": {
+      en: "/bne-sim/payment-service",
+      es: "/bne-sim/servicio-de-pago",
+      fr: "/bne-sim/service-de-paiement",
+      it: "/bne-sim/servizio-di-pagamento",
+      pt: "/bne-sim/servico-de-pagamento",
+    },
+
     "/where-to-find-encrypted": {
       en: "/where-to-find-encrypted",
       es: "/donde-encontrar-encriptados",
@@ -85,14 +101,6 @@ export const routing = defineRouting({
       fr: "/sim-cryptee",
       it: "/sim-crittografata",
       pt: "/sim-encriptada",
-    },
-
-    "/security-test": {
-      en: "/security-test",
-      es: "/test-de-seguridad",
-      fr: "/test-de-securite",
-      it: "/test-di-sicurezza",
-      pt: "/teste-de-seguranca",
     },
 
     "/identity-verification": {

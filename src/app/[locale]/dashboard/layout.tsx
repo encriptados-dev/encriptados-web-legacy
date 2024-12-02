@@ -1,15 +1,6 @@
 "use client";
 
-import {
-  BarChart3,
-  Activity,
-  ShoppingBag,
-  Tag,
-  Monitor,
-  Settings,
-  MessageCircle,
-  LogOut,
-} from "lucide-react";
+import { BarChart3, Activity, ShoppingBag, Tag, Monitor, Settings, MessageCircle, LogOut } from 'lucide-react';
 import ProfileSvg from "@/shared/svgs/ProfileSvg";
 import { ReactNode, useEffect, useRef } from "react";
 import Link from "next/link";

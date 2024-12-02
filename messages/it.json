@@ -507,7 +507,13 @@
   "OurProductsPage": {
     "banner": {
       "title": "Gestisci più SIM con la nostra",
-      "subtitle": "App Cifrata"
+      "subtitle": "App Criptata",
+      "titleNewConnectWith": "Connettiti in tutto il mondo con",
+      "titleNewTotalSecurity": "sicurezza totale",
+      "titleNewInComunication": "nelle tue comunicazioni",
+      "descriptionNew": "Proteggiti dai cybercriminali e mantieni le tue informazioni personali al sicuro",
+      "newButtonBuy": "Acquista eSim",
+      "buttonAppEncriptados": "App Criptate"
     },
     "filterProducts": {
       "title": "I nostri prodotti",
@@ -962,5 +968,8 @@
     "preview": "Anteprima",
     "seeMore": "Vedi di più",
     "category": "Categoria"
+  },
+  "RechargeSim": {
+    "errorInput": "Deve essere un numero di telefono valido con almeno 6 cifre."
   }
 }

@@ -125,10 +125,17 @@ const ListOfOffers = () => {
             <CardSim
               key={index}
               productImage={card.productImage}
-              features={card.featuresCardSim}
               priceRange={card.priceRange}
               headerIcon={card.headerIcon}
               headerTitle={card.headerTitle}
+              advantages={[
+                {
+                  content: "Prueba ventajas",
+                  title: "Prueba ventajas",
+                  image: "",
+                  id: 2,
+                },
+              ]}
             />
           ))}
         </div>

@@ -24,17 +24,17 @@ const AccountNumber = () => {
 
   const { setValue, getValues } = useFormContext();
   const [generatedNumber, setGeneratedNumber] = useState("");
+
   const [isGenerating, setIsGenerating] = useState(false);
-  const [currentDownloadLinkNumber, setCurrentDownloadLinkNumber] =
-    useState("");
+
   const { success, error: errorToast } = useToast();
 
   const { registerToken, isPending } = useRegisterToken({
     onSuccess: (data) => {
       const responseData = data as RegisterTokenResponse;
-      animateToken(responseData.data.token_separated);
+      animateToken(responseData.data.token);
       setValue("currentGeneratedNumber", responseData.data.token);
-      setCurrentDownloadLinkNumber(responseData.data.download_url);
+
       success(
         t("LoginPage.generatedSection.accountNumber.succesfulyGenerateAccount")
       );
@@ -139,9 +139,10 @@ const AccountNumber = () => {
               ? t("LoginPage.generatedSection.accountNumber.generating")
               : generatedNumber
               ? t("LoginPage.generatedSection.accountNumber.login")
-              : t("LoginPage.generatedSection.accountNumber.generateAccountNumber")}
+              : t(
+                  "LoginPage.generatedSection.accountNumber.generateAccountNumber"
+                )}
           </Button>
-
         </div>
 
         {getValues("generatedCurrentNumberSeparated") && (

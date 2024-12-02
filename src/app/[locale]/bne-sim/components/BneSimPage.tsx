@@ -1,3 +1,4 @@
+"use client";
 import BannerConnectBne from "./BannerConnectBne";
 import OurSim from "./OurSim";
 import PromoBanner from "./PromoBanner";
@@ -6,6 +7,8 @@ import CustomShapeDivider from "./CustomShapeDivider";
 import OurBne from "./OurBne";
 import FaqsBne from "./FaqsBne";
 import QRBanner from "../../fast-delivery/components/QRBanner";
+import { BasicFormProvider } from "@/shared/components/BasicFormProvider";
+import StepperBuy from "@/shared/components/StepperBuy/StepperBuy";
 
 const BneSimPage = () => {
   return (
@@ -14,10 +17,24 @@ const BneSimPage = () => {
         <div>
           <BannerConnectBne />
         </div>
+
+        <div id="use-your-sim" className="mb-36">
+          <BasicFormProvider
+            defaultValue={{
+              selectedcardvalue: "esim_recharge",
+              selectedregion: "region",
+            }}
+            submit={(data) => {
+              console.log(data);
+            }}
+          >
+            <StepperBuy optionType="bne" />
+          </BasicFormProvider>
+        </div>
         <div className="mb-20 px-6">
           <OurSim />
         </div>
-        <div className="bg-custom-gradient-plans py-20 p-4" >
+        <div className="bg-custom-gradient-plans py-20 p-4">
           <PromoBanner />
         </div>
         <div className="relative py-20 z-10">
