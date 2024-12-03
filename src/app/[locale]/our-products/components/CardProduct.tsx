@@ -5,6 +5,7 @@ import CheckSvg from "/public/images/encrypted-sim/icons/check.svg";
 import StarSvg from "/public/images/encrypted-sim/icons/star_half2.svg";
 import LocalMallSvg from "/public/images/encrypted-sim/icons/local_mall.svg";
 import LocalMallSvgNew from "./svgs/LocalMallSvgNew";
+import { useRouter } from "next/navigation";
 
 interface CardSimProps {
   productImage: string; // Ahora es una URL de tipo string
@@ -24,6 +25,8 @@ const CardProduct: React.FC<CardSimProps> = ({
   id,
   headerTitle,
 }) => {
+  const router = useRouter();
+
   return (
     <div className="w-full max-w-sm mx-auto bg-white shadow-lg rounded-2xl overflow-hidden">
       <div className="p-2 bg-[#D4F2FC] ">
@@ -87,7 +90,7 @@ const CardProduct: React.FC<CardSimProps> = ({
 
               <h1
                 onClick={() => {
-                  console.log(id);
+                  router.push(`our-products/${id}`);
                 }}
                 className="cursor-pointer"
               >
