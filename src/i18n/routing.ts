@@ -23,20 +23,20 @@ export const routing = defineRouting({
       pt: "/distribuidores-de-telefones-encriptados",
     },
 
-    "/maya-data": {
-      en: "/maya-data",
-      es: "/datos-maya",
-      fr: "/donnees-maya",
-      it: "/dati-maya",
-      pt: "/dados-maya",
+    "/ira-sim": {
+      en: "/ira-sim",
+      es: "/ira-sim",
+      fr: "/ira-sim",
+      it: "/ira-sim",
+      pt: "/ira-sim",
     },
 
-    "/maya-data/payment-service": {
-      en: "/maya-data/payment-service",
-      es: "/datos-maya/servicio-de-pago",
-      fr: "/donnees-maya/service-de-paiement",
-      it: "/dati-maya/servizio-di-pagamento",
-      pt: "/dados-maya/servico-de-pagamento",
+    "/ira-sim/payment-service": {
+      en: "/ira-sim/payment-service",
+      es: "/ira-sim/servicio-de-pago",
+      fr: "/ira-sim/service-de-paiement",
+      it: "/ira-sim/servizio-di-pagamento",
+      pt: "/ira-sim/servico-de-pagamento",
     },
 
     "/bne-sim": {

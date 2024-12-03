@@ -41,7 +41,7 @@ export default function FooterEncrypted() {
         t("simEsims.physicSim"),
         t("simEsims.globalSim"),
         "BNE SIM",
-        "MAYA SIM",
+        "IRA SIM",
       ],
     },
     {

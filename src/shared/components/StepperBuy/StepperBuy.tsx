@@ -10,7 +10,7 @@ import RechargeSim from "../RechargeSim/RechargeSim";
 const StepperBuy = ({
   optionType,
 }: {
-  optionType?: "maya" | "bne" | "encriptados-sim";
+  optionType?: "irasim" | "bne" | "encriptados-sim";
 }) => {
   const { watch, setValue } = useFormContext();
 
@@ -90,7 +90,7 @@ const StepperBuy = ({
             ),
           },
         ]
-      : optionType === "maya"
+      : optionType === "irasim"
       ? allOptions.filter(
           (option) =>
             option.value === "esim_recharge" || option.value === "recharge_esim"

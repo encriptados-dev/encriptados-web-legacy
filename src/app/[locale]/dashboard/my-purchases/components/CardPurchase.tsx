@@ -1,4 +1,4 @@
-import SpiralSvg from "@/app/[locale]/maya-data/svgs/SpiralSvg";
+import SpiralSvg from "@/app/[locale]/ira-sim/svgs/SpiralSvg";
 import Button from "@/shared/components/Button";
 
 import SimIconSvg from "@/shared/svgs/SimIconSvg";

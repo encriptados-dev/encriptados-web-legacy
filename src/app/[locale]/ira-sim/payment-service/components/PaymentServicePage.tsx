@@ -42,7 +42,7 @@ const PaymentServicePage = () => {
       <div className="w-full p-4">
         <div
           onClick={() => {
-            router.push("/maya-data#use-your-sim");
+            router.push("/ira-sim#use-your-sim");
           }}
           className="flex items-center mb-4 cursor-pointer"
         >

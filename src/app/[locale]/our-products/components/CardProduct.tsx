@@ -24,7 +24,7 @@ const CardProduct: React.FC<CardSimProps> = ({
 }) => {
   return (
     <div className="w-full max-w-sm mx-auto bg-white shadow-lg rounded-2xl overflow-hidden">
-      <div className="p-2 bg-[#5D5D5D] ">
+      <div className="p-2 bg-[#D4F2FC] ">
         <Image
           src={productImage}
           alt="Sim Card"

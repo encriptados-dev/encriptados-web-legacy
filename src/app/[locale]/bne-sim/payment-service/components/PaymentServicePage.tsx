@@ -10,7 +10,7 @@ import PhySimSvg from "@/shared/svgs/PhySimSvg";
 import ListOfGBSMonths from "../../../../../shared/components/ListOfGBSMonths";
 
 import { useRouter } from "next/navigation";
-import ThreeCountries from "@/app/[locale]/maya-data/svgs/ThreeCountries";
+import ThreeCountries from "@/app/[locale]/ira-sim/svgs/ThreeCountries";
 import { useFormContext } from "react-hook-form";
 
 const PaymentServicePage = () => {

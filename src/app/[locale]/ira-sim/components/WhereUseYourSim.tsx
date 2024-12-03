@@ -25,7 +25,7 @@ const WhereUseYourSim = () => {
           console.log(data);
         }}
       >
-        <StepperBuy optionType="maya" />
+        <StepperBuy optionType="irasim" />
       </BasicFormProvider>
     </>
   );
