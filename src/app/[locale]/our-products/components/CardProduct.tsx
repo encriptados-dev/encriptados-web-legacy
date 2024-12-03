@@ -4,6 +4,7 @@ import Button from "@/shared/components/Button";
 import CheckSvg from "/public/images/encrypted-sim/icons/check.svg";
 import StarSvg from "/public/images/encrypted-sim/icons/star_half2.svg";
 import LocalMallSvg from "/public/images/encrypted-sim/icons/local_mall.svg";
+import LocalMallSvgNew from "./svgs/LocalMallSvgNew";
 
 interface CardSimProps {
   productImage: string; // Ahora es una URL de tipo string
@@ -12,6 +13,7 @@ interface CardSimProps {
   headerIcon: string;
   headerTitle: string;
   priceDiscount: string;
+  id: number;
 }
 
 const CardProduct: React.FC<CardSimProps> = ({
@@ -19,7 +21,7 @@ const CardProduct: React.FC<CardSimProps> = ({
   features,
   priceDiscount,
   priceRange,
-
+  id,
   headerTitle,
 }) => {
   return (
@@ -75,21 +77,23 @@ const CardProduct: React.FC<CardSimProps> = ({
                 </span>
               </div>
             </div>
-            <Button
-              size="medium"
-              rounded="full"
-              intent="black"
-              icon={
-                <Image
-                  src={LocalMallSvg}
-                  alt="Icon"
-                  className="w-6 h-6 fill-current text-yellow-400 font-bold"
-                />
-              }
-              iconPosition="right"
-            >
-              Comprar Ahora
-            </Button>
+            <div className="flex items-center justify-between gap-x-2 ">
+              <button className="bg-black rounded-full text-white px-3 py-2">
+                <div className="flex items-center justify-center gap-x-2">
+                  Comprar
+                  <LocalMallSvgNew />
+                </div>
+              </button>
+
+              <h1
+                onClick={() => {
+                  console.log(id);
+                }}
+                className="cursor-pointer"
+              >
+                Más información
+              </h1>
+            </div>
           </div>
         </div>
       </div>

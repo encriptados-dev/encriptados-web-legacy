@@ -85,6 +85,18 @@ const PaymentServicePage = () => {
         </div>
         <div className="mb-4">
           <p className="text-sm text-black mb-2 font-semibold">
+            Elige tu tiempo de plan{" "}
+            <Info className="inline w-4 h-4 text-[#35CDFB]" />
+          </p>
+          <div className="flex">
+            <ListOfGBSMonths
+              name="currentmonthselected"
+              options={planOptions}
+            />
+          </div>
+        </div>
+        <div className="mb-4">
+          <p className="text-sm text-black mb-2 font-semibold">
             Elige tus Gigabytes{" "}
             <Info className="inline w-4 h-4 text-[#35CDFB]" />
           </p>
@@ -96,18 +108,6 @@ const PaymentServicePage = () => {
           </div>
         </div>
 
-        <div className="mb-4">
-          <p className="text-sm text-black mb-2 font-semibold">
-            Elige tu tiempo de plan{" "}
-            <Info className="inline w-4 h-4 text-[#35CDFB]" />
-          </p>
-          <div className="flex">
-            <ListOfGBSMonths
-              name="currentmonthselected"
-              options={planOptions}
-            />
-          </div>
-        </div>
         <div className="text-2xl font-bold mb-4 text-black">$50.000 COP</div>
         <div className="flex items-center justify-between">
           <div className="">

@@ -91,11 +91,8 @@ const StepperBuy = ({
           },
         ]
       : optionType === "irasim"
-      ? allOptions.filter(
-          (option) =>
-            option.value === "esim_recharge" || option.value === "recharge_esim"
-        )
-      : allOptions;
+      ? allOptions
+      : null;
 
   const renderOptions: { [key: string]: JSX.Element } = {
     esim_recharge: <SimData />,

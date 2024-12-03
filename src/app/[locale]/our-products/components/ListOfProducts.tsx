@@ -34,6 +34,7 @@ const ListOfProducts = () => {
           {data?.data.map((product) => (
             <CardProduct
               key={product.id}
+              id={product?.id}
               priceDiscount={product.sale_price}
               productImage={product.image}
               features={product.advantages.map((item) => item.title)}
