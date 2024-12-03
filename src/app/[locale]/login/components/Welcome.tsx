@@ -44,13 +44,13 @@ const Welcome = () => {
   return (
     <>
       <div className="hidden md:flex md:flex-col justify-center w-full md:w-5/12 lg:w-4/12 mb-6 md:mb-0 md:mr-6">
-        <h1 className="text-white text-2xl md:text-4xl lg:text-5xl font-bold mb-2">
+        <h1 className="text-white text-xl md:text-2xl lg:text-3xl font-bold mb-2">
           {t("LoginPage.welcomeSection.titleGenerate")}{" "}
           <span className="text-[#35CDFB]">
             {t("LoginPage.welcomeSection.withAccesCode")}
           </span>
         </h1>
-        <h2 className="text-white mt-2 text-base md:text-xl lg:text-xl font-light">
+        <h2 className="text-white mt-2 text-sm md:text-base lg:text-lg font-light">
           {t("LoginPage.welcomeSection.subtitleGenerate")}
         </h2>
         <div className="w-8/12 mt-6 md:mt-8">
@@ -67,30 +67,32 @@ const Welcome = () => {
 
       <div className="w-full h-screen md:h-auto md:w-[500px] bg-[#0E0E0E] md:rounded-2xl flex flex-col justify-center items-center gap-y-6 p-6 md:p-10">
         <PassKeyLoginIconSvg height={60} width={60} color="white" />
-        <h1 className="text-white text-center text-3xl font-medium">
+        <h1 className="text-white text-center text-xl md:text-2xl lg:text-3xl font-medium">
           {t("LoginPage.welcomeSection.welcome")}
         </h1>
 
         <div className="w-full space-y-0 ">
           <InputFormContext
-            placeholder={t("LoginPage.welcomeSection.writeYourAccountPlaceholder")}
+            placeholder={t(
+              "LoginPage.welcomeSection.writeYourAccountPlaceholder"
+            )}
             type="password"
             name="accountNumber"
-            customClassName="w-full bg-[#191919] h-14 border-none rounded-full  text-xl text-white placeholder:text-[#6A6A6A] "
+            customClassName="w-full bg-[#191919] h-14 border-none rounded-full text-base md:text-lg text-white placeholder:text-[#6A6A6A] "
           />
           <button
             type="submit"
             onClick={handleSubmit((data) => {
               login({ token: data.accountNumber });
             })}
-            className="w-full h-14 bg-[#2BACEF] hover:bg-[#2bb8e7] text-xl text-white font-medium rounded-full transition-colors"
+            className="w-full h-14 bg-[#2BACEF] hover:bg-[#2bb8e7] text-base md:text-lg text-white font-medium rounded-full transition-colors"
           >
             {t("LoginPage.welcomeSection.login")}
           </button>
         </div>
 
         <div className="w-full flex justify-center cursor-pointer">
-          <h1 className="text-[#7E7E7E] text-xl my-4">
+          <h1 className="text-[#7E7E7E] text-sm md:text-base my-4">
             {t("LoginPage.welcomeSection.forgotPassword")}
           </h1>
         </div>
@@ -102,12 +104,12 @@ const Welcome = () => {
             <Loader />
           </div>
         ) : null}
-        
+
         <button
           onClick={() => {
             setValue("currentStep", "accountnumber");
           }}
-          className="mt-8 w-full h-14 bg-transparent border border-[#7E7E7E] hover:border-[#2BACEF] text-xl text-white font-medium rounded-full transition-colors"
+          className="mt-8 w-full h-14 bg-transparent border border-[#7E7E7E] hover:border-[#2BACEF] text-base md:text-lg text-white font-medium rounded-full transition-colors"
         >
           {t("LoginPage.welcomeSection.generateAccountNumber")}
         </button>
@@ -117,4 +119,3 @@ const Welcome = () => {
 };
 
 export default Welcome;
-

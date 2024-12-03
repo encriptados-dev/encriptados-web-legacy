@@ -70,7 +70,7 @@ const AccountNumber = () => {
     setGeneratedNumber("");
     const formattedToken = token.replace(/(.{4})/g, "$1 ").trim(); // Añade un espacio cada 4 caracteres
     const finalNumber = Array.from(formattedToken);
-  
+
     finalNumber.forEach((digit, index) => {
       setTimeout(() => {
         setGeneratedNumber((prev) => prev + digit);
@@ -104,7 +104,7 @@ const AccountNumber = () => {
   return (
     <>
       <div className="hidden md:flex md:flex-col justify-center w-full md:w-5/12 lg:w-4/12 mb-6 md:mb-0 md:mr-6">
-        <h2 className="text-white mt-2 text-base md:text-2xl lg:text-2xl font-light">
+        <h2 className="text-white mt-2 text-sm md:text-base lg:text-lg font-light">
           {t("LoginPage.generatedSection.accountNumber.title")}
         </h2>
         <div className="w-8/12 mt-6 md:mt-8">
@@ -118,21 +118,21 @@ const AccountNumber = () => {
         </div>
       </div>
 
-      <div className="w-full md:w-[500px] bg-[#0E0E0E] h-auto md:h-[500px] rounded-2xl flex flex-col py-14 px-10 items-center gap-y-4 md:px-10 relative">
-        <OnlyKeyLoginIconSvg height={85} width={85} color="white" />
-        <h1 className="text-white text-center text-lg md:text-xl">
+      <div className="w-full md:w-[500px] bg-[#0E0E0E] h-auto md:h-[500px] rounded-2xl flex flex-col py-10 px-8 items-center gap-y-4 md:px-10 relative">
+        <OnlyKeyLoginIconSvg height={70} width={70} color="white" />
+        <h1 className="text-white text-center text-sm md:text-base">
           {t("LoginPage.generatedSection.accountNumber.generateAccountNumber")}
         </h1>
 
-        <div className="w-full space-y-4 text-center">
-          <div className="bg-[#191919] py-4 rounded-xl border-0.5 border-[#414141] border-solid text-white text-2xl font-mono mb-4 select-none">
+        <div className="w-full space-y-3 text-center">
+          <div className="bg-[#191919] py-3 rounded-xl border-0.5 border-[#414141] text-white text-lg font-mono mb-3 select-none">
             {generatedNumber || "—— —— —— —— —— —— —— "}
           </div>
 
           <Button
             type="button"
             onClick={handleRegisterToken}
-            customStyles="w-full h-14 bg-[#2BACEF] hover:bg-[#2bb8e7] text-xl text-white font-medium rounded-xl h-14 items-center justify-center"
+            customStyles="w-full h-12 bg-[#2BACEF] hover:bg-[#2bb8e7] text-base text-white font-medium rounded-xl items-center justify-center"
             rounded="full"
             intent="primary"
             disabled={isPending || isGenerating}
@@ -148,14 +148,14 @@ const AccountNumber = () => {
         </div>
 
         {getValues("generatedCurrentNumberSeparated") && (
-          <div className="w-full mt-4">
-            <hr className="w-full border-[#373737] my-2 mb-10" />
-            <div className="flex w-full gap-x-3">
+          <div className="w-full mt-3">
+            <hr className="w-full border-[#373737] my-2 mb-6" />
+            <div className="flex w-full gap-x-2">
               <CircleTitle
                 icon={<CopyPaste />}
                 iconPosition="right"
                 intent="white"
-                customStyles="w-6/12 h-14 justify-center cursor-pointer rounded-xl"
+                customStyles="w-6/12 h-12 justify-center cursor-pointer rounded-xl"
                 onClick={copyToClipboard}
               >
                 {t("LoginPage.generatedSection.accountNumber.copy")}
@@ -177,7 +177,7 @@ const AccountNumber = () => {
           onClick={() => {
             setValue("currentStep", "welcome");
           }}
-          className="text-white cursor-pointer mt-4"
+          className="text-white text-sm cursor-pointer mt-4"
         >
           {t("LoginPage.generatedSection.accountNumber.goBack")}
         </h1>
