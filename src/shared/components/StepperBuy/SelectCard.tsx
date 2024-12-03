@@ -9,7 +9,7 @@ export interface Option {
 
 interface SelectCardProps {
   name: string;
-  options: Option[];
+  options: Option[] | null;
 }
 
 const SelectCard: React.FC<SelectCardProps> = ({ name, options }) => {
@@ -24,7 +24,7 @@ const SelectCard: React.FC<SelectCardProps> = ({ name, options }) => {
       defaultValue=""
       render={({ field: { onChange } }) => (
         <div className="flex flex-wrap justify-center items-center gap-4 p-4 ">
-          {options.map((option, index) => (
+          {options?.map((option, index) => (
             <div
               key={index}
               onClick={() => {

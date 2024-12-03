@@ -4,20 +4,22 @@ import CheckProductIcon from "./icon/CheckProductIcon";
 import Button from "@/shared/components/Button";
 import SupportContact from "@/shared/svgs/SupportContact";
 import ShoppingCart from "@/shared/svgs/ShoppingCart";
+import { useProductById } from "../context/ProductByIdContext";
 
 export default function CardProduct() {
   const [selectedPlan, setSelectedPlan] = useState("3");
+
+  const { currentProduct } = useProductById();
+
+  console.log(currentProduct);
 
   return (
     <div className="w-full bg-white rounded-lg overflow-hidden flex flex-col justify-between">
       <div className="p-6 space-y-4 flex-grow">
         <h2 className="text-xl md:text-2xl font-bold text-gray-800">
-          Silent Phone
+          {currentProduct?.title}
         </h2>
-        <p className="text-sm text-gray-600">
-          Es una app diseñada por las mejores mentes en tecnología móvil,
-          centrado en mantener tus datos seguros en todo momento
-        </p>
+        <p className="text-sm text-gray-600">{currentProduct?.description}</p>
         <div className="space-y-3">
           {[
             "Llamadas cifradas",

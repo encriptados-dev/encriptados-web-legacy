@@ -1,4 +1,4 @@
-import { Feature } from "@/features/products/types/AllProductesResponse";
+import { Feature } from "@/features/products/types/AllProductsResponse";
 import Image from "next/image";
 
 interface CardDescriptionProps {

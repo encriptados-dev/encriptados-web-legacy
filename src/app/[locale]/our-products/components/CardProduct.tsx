@@ -1,9 +1,8 @@
 import Image from "next/image";
-import Button from "@/shared/components/Button";
 
 import CheckSvg from "/public/images/encrypted-sim/icons/check.svg";
 import StarSvg from "/public/images/encrypted-sim/icons/star_half2.svg";
-import LocalMallSvg from "/public/images/encrypted-sim/icons/local_mall.svg";
+
 import LocalMallSvgNew from "./svgs/LocalMallSvgNew";
 import { useRouter } from "next/navigation";
 

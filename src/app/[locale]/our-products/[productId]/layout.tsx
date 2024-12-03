@@ -1,4 +1,6 @@
+"use client";
 import BannerProduct from "./components/BannerProduct";
+import { ProductByIdProvider } from "./context/ProductByIdContext";
 
 export default function ProductByIdLayout({
   children, // will be a page or nested layout
@@ -8,9 +10,11 @@ export default function ProductByIdLayout({
   const Man = "/images/our-products/silent-circle-banner.png";
 
   return (
-    <section>
-      <BannerProduct backgroundImage={Man} />
-      {children}
-    </section>
+    <ProductByIdProvider>
+      <section>
+        <BannerProduct backgroundImage={Man} />
+        {children}
+      </section>
+    </ProductByIdProvider>
   );
 }

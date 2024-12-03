@@ -5,7 +5,7 @@ import WifiSvg from "/public/images/encrypted-sim/icons/wifi_tethering.svg";
 import CheckSvg from "/public/images/encrypted-sim/icons/check.svg";
 import StarSvg from "/public/images/encrypted-sim/icons/star_half2.svg";
 import LocalMallSvg from "/public/images/encrypted-sim/icons/local_mall.svg";
-import { Advantage } from "@/features/products/types/AllProductesResponse";
+import { Advantage } from "@/features/products/types/AllProductsResponse";
 
 interface CardSimProps {
   productImage: any;

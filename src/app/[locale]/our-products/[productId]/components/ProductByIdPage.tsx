@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import CardProduct from "./CardProduct";
 import CardProductBanner from "./CardProductBanner";
@@ -8,7 +9,15 @@ import BannerCoverage from "@/shared/BannerCoverage";
 import Accordion from "@/shared/components/Accordion";
 import { useTranslations } from "next-intl";
 
+import { useGetProductById } from "@/features/products/queries/useGetProductById";
+import { useParams, usePathname } from "next/navigation";
+
 const ProductByIdPage = () => {
+  const params = useParams();
+
+  const { productId } = params;
+  const { data } = useGetProductById(productId as string);
+
   const t = useTranslations("DeliveryPage");
   const items = [
     {
@@ -24,6 +33,7 @@ const ProductByIdPage = () => {
       content: t("faqs.costDelivery.content"),
     },
   ];
+
   return (
     <>
       <div className="flex flex-col md:flex-row justify-center w-10/12 mx-auto gap-x-12 mt-24 mb-24">

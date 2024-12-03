@@ -1,6 +1,13 @@
 "use client";
 
-import { BarChart3, Activity, ShoppingBag, Tag, Monitor, Settings, MessageCircle, LogOut } from 'lucide-react';
+import {
+  BarChart3,
+  Activity,
+  ShoppingBag,
+  Tag,
+  Monitor,
+  Settings,
+} from "lucide-react";
 import ProfileSvg from "@/shared/svgs/ProfileSvg";
 import { ReactNode, useEffect, useRef } from "react";
 import Link from "next/link";
@@ -172,7 +179,7 @@ export default function Layout({ children }: LayoutProps) {
 
           {/* Support button */}
           <div className="absolute bottom-8 left-0 right-0 px-14 block md:hidden">
-            <SupportChat />          
+            <SupportChat />
           </div>
         </aside>
 
