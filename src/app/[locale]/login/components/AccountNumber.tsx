@@ -132,7 +132,7 @@ const AccountNumber = () => {
           <Button
             type="button"
             onClick={handleRegisterToken}
-            customStyles="w-full h-12 bg-[#2BACEF] hover:bg-[#2bb8e7] text-base text-white font-medium rounded-xl items-center justify-center"
+            customStyles="w-full h-12 bg-[#2BACEF] hover:bg-[#2bb8e7] text-base text-white font-medium items-center justify-center"
             rounded="full"
             intent="primary"
             disabled={isPending || isGenerating}

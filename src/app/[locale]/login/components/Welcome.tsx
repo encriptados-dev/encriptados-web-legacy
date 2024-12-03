@@ -10,6 +10,7 @@ import Cookies from "js-cookie";
 import { useRouter } from "next/navigation";
 import Loader from "@/shared/components/Loader";
 import { useTranslations } from "next-intl";
+import Button from "@/shared/components/Button";
 
 const Welcome = () => {
   const t = useTranslations();
@@ -80,15 +81,15 @@ const Welcome = () => {
             name="accountNumber"
             customClassName="w-full bg-[#191919] h-14 border-none rounded-full text-base md:text-lg text-white placeholder:text-[#6A6A6A] "
           />
-          <button
-            type="submit"
+          <Button
             onClick={handleSubmit((data) => {
               login({ token: data.accountNumber });
             })}
-            className="w-full h-14 bg-[#2BACEF] hover:bg-[#2bb8e7] text-base md:text-lg text-white font-medium rounded-full transition-colors"
+            customStyles="w-full h-12 bg-[#2BACEF] hover:bg-[#2bb8e7] text-base text-white font-medium  items-center justify-center"
+            rounded="full"
           >
             {t("LoginPage.welcomeSection.login")}
-          </button>
+          </Button>
         </div>
 
         <div className="w-full flex justify-center cursor-pointer">
