@@ -27,7 +27,7 @@ const OurProductsPage = () => {
 
           <ListOfProducts />
         </BasicFormProvider>
-        <div className=" rounded-xl w-full max-w-7xl mx-auto mt-20 ">
+        <div className=" rounded-xl w-full max-w-7xl mx-auto mt-16 ">
           <div className="flex flex-col  justify-between">
             <CardOurProducts />
           </div>
@@ -40,10 +40,10 @@ const OurProductsPage = () => {
       <div className="py-28 bg-white">
         <BannerCards />
       </div>
-      <div className="py-20">
+      <div className=" bg-[#EBF5FA] py-11">
         <AnonymousBanner />
       </div>
-      <div className="mt-16">
+      <div className="">
         <BannerCoverage />
       </div>
       <div className="">
