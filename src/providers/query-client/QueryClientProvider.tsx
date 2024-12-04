@@ -9,8 +9,6 @@ import {
   QueryClientProvider as QueryClientProviderBase,
 } from "@tanstack/react-query";
 
-let browserQueryClient: QueryClient | undefined = undefined;
-
 export const makeQueryClient = () => {
   return new QueryClient({
     defaultOptions: {
@@ -23,20 +21,6 @@ export const makeQueryClient = () => {
     },
   });
 };
-
-function getQueryClient() {
-  if (typeof window === "undefined") {
-    // Server: always make a new query client
-    return makeQueryClient();
-  } else {
-    // Browser: make a new query client if we don't already have one
-    // This is very important so we don't re-make a new client if React
-    // suspends during the initial render. This may not be needed if we
-    // have a suspense boundary BELOW the creation of the query client
-    if (!browserQueryClient) browserQueryClient = makeQueryClient();
-    return browserQueryClient;
-  }
-}
 
 export const QueryClientProvider: React.FC<React.PropsWithChildren> = ({
   children,

@@ -1,13 +1,9 @@
 import React from "react";
 import Image from "next/image";
-import AppStoreFooter from "@/shared/FooterEncrypted/icon/AppStoreFooter";
-import DownloadApkSvg from "@/shared/svgs/DownloadApkSvg";
-import PlayStoreSvg from "@/shared/svgs/PlayStoreSvg";
+
 import { useProductById } from "../context/ProductByIdContext";
 
 const CardProductBanner = () => {
-  const BannerCircle = "/images/our-products/banner-circle.png";
-
   const { currentProduct } = useProductById();
 
   return (

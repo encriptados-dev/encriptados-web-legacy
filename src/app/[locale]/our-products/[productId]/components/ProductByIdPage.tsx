@@ -10,8 +10,6 @@ import { useQuery } from "@tanstack/react-query";
 import Accordion from "@/shared/components/Accordion";
 import { useTranslations } from "next-intl";
 
-import { useGetProductById } from "@/features/products/queries/useGetProductById";
-import { useParams, usePathname } from "next/navigation";
 import { PRODUCT_BY_ID_QUERY_KEY } from "@/features/products/constants/queryProductsKeys";
 import Loader from "@/shared/components/Loader";
 import BannerProduct from "./BannerProduct";

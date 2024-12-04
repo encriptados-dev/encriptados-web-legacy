@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import CategoryPreview from "./CategoryPreview";
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowRight } from 'lucide-react';
+import { ArrowRight } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { AnimatePresence } from "framer-motion";
 
@@ -23,6 +23,7 @@ type Category = {
 
 type Props = {
   categories: Category[];
+  isOpen?: boolean;
   activeCategory: number;
   setActiveCategory: (index: number) => void;
   hoveredItem: MenuItem | null;
@@ -179,7 +180,3 @@ export default function MegaMenu({
     </AnimatePresence>
   );
 }
-
-
-
-

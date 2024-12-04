@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { ChevronDown, Menu, X } from 'lucide-react';
+import { ChevronDown, Menu, X } from "lucide-react";
 import { useRouter } from "next/navigation";
 import EncryptedLogoMobile from "./EncrytedLogoMovbile";
 import LanguageDropdown from "./LanguageSelector";
@@ -94,7 +94,6 @@ export default function MobileMenu() {
                   <button
                     onClick={toggleMenu}
                     className="absolute top-4 right-4 text-white"
-                    aria-label={t("closeMenu")}
                   >
                     <X className="w-6 h-6" />
                   </button>
@@ -143,48 +142,54 @@ export default function MobileMenu() {
                             exit={{ height: 0 }}
                             className="bg-[#0A0A0A] overflow-hidden"
                           >
-                            {productsCategories.map((category: any, index: any) => (
-                              <div key={category.title}>
-                                <button
-                                  onClick={() =>
-                                    setActiveSubCategory(
-                                      activeSubCategory === index ? -1 : index
-                                    )
-                                  }
-                                  className="flex items-center justify-between w-full px-6 py-2 text-[#FFFFFF] relative text-ls"
-                                >
-                                  <span className="absolute left-4 top-1/2 -translate-y-1/2 w-1 h-1 rounded-full bg-[#35CDFB]"></span>
-                                  <span className="ml-4">{category.title}</span>
-                                  <ChevronDown
-                                    className={`w-5 h-5 transition-transform ${
-                                      activeSubCategory === index
-                                        ? "rotate-180"
-                                        : ""
-                                    }`}
-                                  />
-                                </button>
-                                <AnimatePresence>
-                                  {activeSubCategory === index && (
-                                    <motion.div
-                                      initial={{ height: 0 }}
-                                      animate={{ height: "auto" }}
-                                      exit={{ height: 0 }}
-                                      className="overflow-hidden"
-                                    >
-                                      {category.items.map((item: any) => (
-                                        <button
-                                          key={item.title}
-                                          onClick={() => handleLinkClick(item.link)}
-                                          className="w-full px-12 py-2 text-left text-[#FFFFFF] hover:text-white/90 text-sm"
-                                        >
-                                          {item.title}
-                                        </button>
-                                      ))}
-                                    </motion.div>
-                                  )}
-                                </AnimatePresence>
-                              </div>
-                            ))}
+                            {productsCategories.map(
+                              (category: any, index: any) => (
+                                <div key={category.title}>
+                                  <button
+                                    onClick={() =>
+                                      setActiveSubCategory(
+                                        activeSubCategory === index ? -1 : index
+                                      )
+                                    }
+                                    className="flex items-center justify-between w-full px-6 py-2 text-[#FFFFFF] relative text-ls"
+                                  >
+                                    <span className="absolute left-4 top-1/2 -translate-y-1/2 w-1 h-1 rounded-full bg-[#35CDFB]"></span>
+                                    <span className="ml-4">
+                                      {category.title}
+                                    </span>
+                                    <ChevronDown
+                                      className={`w-5 h-5 transition-transform ${
+                                        activeSubCategory === index
+                                          ? "rotate-180"
+                                          : ""
+                                      }`}
+                                    />
+                                  </button>
+                                  <AnimatePresence>
+                                    {activeSubCategory === index && (
+                                      <motion.div
+                                        initial={{ height: 0 }}
+                                        animate={{ height: "auto" }}
+                                        exit={{ height: 0 }}
+                                        className="overflow-hidden"
+                                      >
+                                        {category.items.map((item: any) => (
+                                          <button
+                                            key={item.title}
+                                            onClick={() =>
+                                              handleLinkClick(item.link)
+                                            }
+                                            className="w-full px-12 py-2 text-left text-[#FFFFFF] hover:text-white/90 text-sm"
+                                          >
+                                            {item.title}
+                                          </button>
+                                        ))}
+                                      </motion.div>
+                                    )}
+                                  </AnimatePresence>
+                                </div>
+                              )
+                            )}
                           </motion.div>
                         )}
                       </AnimatePresence>
@@ -273,4 +278,3 @@ export default function MobileMenu() {
     </div>
   );
 }
-

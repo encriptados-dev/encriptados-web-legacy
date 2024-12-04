@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import { useState } from "react";
 import MegaMenu from "./MegaMenu";
@@ -45,4 +45,3 @@ export default function MegaMenuWrapper({ categories }: Props) {
     </div>
   );
 }
-

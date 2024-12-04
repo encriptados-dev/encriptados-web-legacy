@@ -19,7 +19,7 @@ interface CardSimProps {
 const CardProduct: React.FC<CardSimProps> = ({
   productImage,
   features,
-  priceDiscount,
+
   priceRange,
   id,
   headerTitle,

@@ -7,7 +7,7 @@ export default function HomePage() {
   return (
     <>
       {/* Banner para dispositivos móviles */}
-      <div className="block lg:hidden">
+      <div className="block md:hidden">
         <BannerOurProductsMobile />
       </div>
 

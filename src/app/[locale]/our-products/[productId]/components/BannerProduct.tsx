@@ -1,7 +1,5 @@
 import Image from "next/image";
-import ProductByIdContext, {
-  useProductById,
-} from "../context/ProductByIdContext";
+import { useProductById } from "../context/ProductByIdContext";
 
 export default function BannerProduct() {
   const { currentProduct } = useProductById();
