@@ -4,14 +4,14 @@ import BannerOur from "/public/images/our-products/banner-our.png";
 import { useFormContext } from "react-hook-form";
 
 const FormOurProducts: React.FC = () => {
-  const { register, } = useFormContext();
+  const { register } = useFormContext();
 
   return (
     <div className="relative w-full bg-[#000] text-white overflow-hidden py-8 ">
       <div className="container mx-auto px-4 py-12 relative z-10">
         {/* Header Section */}
         <div className="max-w-3xl mx-auto text-center space-y-6 mb-12">
-          <h1 className="text-4xl md:text-4xl font-bold tracking-tight max-w-[400px] m-auto">
+          <h1 className="text-3xl md:text-4xl font-bold tracking-tight max-w-[400px] m-auto">
             Recibe noticias de productos en tu email
           </h1>
           <p className="text-lg text-gray-400">
@@ -33,7 +33,7 @@ const FormOurProducts: React.FC = () => {
                 className="h-12 rounded-full bg-[#35CDFB] hover:bg-[#2eb0d8]/90 text-[#085D77] px-6 font-semibold"
               >
                 Suscribirme
-              </button>              
+              </button>
             </div>
           </div>
         </div>
@@ -52,7 +52,7 @@ const FormOurProducts: React.FC = () => {
         </div>
       </div>
 
-      {/* Decorative Elements */}      
+      {/* Decorative Elements */}
       <div className="absolute top-2/3 md:top-1/2 left-40 md:w-[700px] md:h-[500px] w-[200px] h-[150px] bg-[#01FFC2]/20 rounded-full blur-3xl" />
       <div className="absolute top-2/3 md:top-1/2right-40 md:w-[700px] md:h-[500px] w-[200px] h-[150px] bg-[#10B4E7]/20 rounded-full blur-3xl" />
     </div>
