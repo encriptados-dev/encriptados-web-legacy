@@ -57,7 +57,7 @@ export default function FilterProductsBar() {
   };
 
   return (
-    <div className="bg-white rounded-xl p-5 md:p-7 w-full max-w-7xl mx-auto">
+    <div className="bg-white rounded-xl p-5 md:p-7 w-full max-w-7xl mx-auto ">
       <div className="flex flex-col space-y-4 lg:space-y-0 lg:flex-row lg:items-end lg:space-x-4 justify-between">
         <div className="flex-1 space-y-2">
           <div className="flex flex-col lg:flex-row space-y-4 lg:space-y-0">

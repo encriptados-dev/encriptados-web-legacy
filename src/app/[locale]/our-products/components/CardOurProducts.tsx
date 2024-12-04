@@ -5,7 +5,7 @@ import CardSimEsim from "./svgs/CardSimEsim";
 
 const CardOurProducts: React.FC = () => {
   return (
-    <div className=" flex flex-col md:flex-row gap-0 justify-center">
+    <div className=" flex flex-col md:flex-row gap-x-4 gap-0 justify-center gap-y-4">
       <CardSimEsim
         title="SIM Card encriptada"
         description="Protegete de los ciberdelincuentes y mantén tu información personal segura"
