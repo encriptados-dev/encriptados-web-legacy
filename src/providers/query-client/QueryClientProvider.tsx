@@ -41,11 +41,15 @@ function getQueryClient() {
 export const QueryClientProvider: React.FC<React.PropsWithChildren> = ({
   children,
 }) => {
-  // NOTE: Avoid useState when initializing the query client if you don't
-  //       have a suspense boundary between this and the code that may
-  //       suspend because React will throw away the client on the initial
-  //       render if it suspends and there is no boundary
-  const queryClient = getQueryClient();
+  const queryClient = new QueryClient({
+    defaultOptions: {
+      queries: {
+        gcTime: 0,
+        staleTime: 0, // Siempre fuerza la refetch
+        refetchOnWindowFocus: false, // Opcional: fuerza el refetch al enfocar la ventana
+      },
+    },
+  });
 
   return (
     <QueryClientProviderBase client={queryClient}>

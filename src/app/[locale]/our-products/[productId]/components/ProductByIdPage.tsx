@@ -5,19 +5,18 @@ import CardProductBanner from "./CardProductBanner";
 import Features from "./Features";
 import Advantages from "./Advantages";
 import BannerCoverage from "@/shared/BannerCoverage";
+import { useQuery } from "@tanstack/react-query";
 
 import Accordion from "@/shared/components/Accordion";
 import { useTranslations } from "next-intl";
 
 import { useGetProductById } from "@/features/products/queries/useGetProductById";
 import { useParams, usePathname } from "next/navigation";
+import { PRODUCT_BY_ID_QUERY_KEY } from "@/features/products/constants/queryProductsKeys";
+import Loader from "@/shared/components/Loader";
+import BannerProduct from "./BannerProduct";
 
 const ProductByIdPage = () => {
-  const params = useParams();
-
-  const { productId } = params;
-  const { data } = useGetProductById(productId as string);
-
   const t = useTranslations("DeliveryPage");
   const items = [
     {
@@ -34,13 +33,26 @@ const ProductByIdPage = () => {
     },
   ];
 
+  const { isPending } = useQuery({
+    queryKey: PRODUCT_BY_ID_QUERY_KEY,
+  });
+
+  if (isPending) {
+    return (
+      <div className="flex items-center justify-center w-screen h-screen bg-gray-100">
+        <Loader />
+      </div>
+    );
+  }
+
   return (
     <>
-      <div className="flex flex-col md:flex-row justify-center w-10/12 mx-auto gap-x-12 mt-24 mb-24">
-        <div className="w-full md:w-5/12 mb-4 md:mb-0">
+      <BannerProduct />
+      <div className="flex flex-col-reverse md:flex-row justify-center w-10/12 mx-auto gap-x-12 mt-24">
+        <div className="w-full md:w-5/12 mt-4">
           <CardProduct />
         </div>
-        <div className="w-full md:w-5/12">
+        <div className="w-full md:w-5/12 ">
           <CardProductBanner />
         </div>
       </div>

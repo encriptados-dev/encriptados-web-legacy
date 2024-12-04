@@ -11,10 +11,7 @@ export default function ProductByIdLayout({
 
   return (
     <ProductByIdProvider>
-      <section>
-        <BannerProduct backgroundImage={Man} />
-        {children}
-      </section>
+      <section>{children}</section>
     </ProductByIdProvider>
   );
 }

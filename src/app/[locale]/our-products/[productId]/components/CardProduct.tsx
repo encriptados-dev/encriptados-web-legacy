@@ -11,25 +11,18 @@ export default function CardProduct() {
 
   const { currentProduct } = useProductById();
 
-  console.log(currentProduct);
-
   return (
-    <div className="w-full bg-white rounded-lg overflow-hidden flex flex-col justify-between">
-      <div className="p-6 space-y-4 flex-grow">
+    <div className="w-full  rounded-lg overflow-hidden flex flex-col  ">
+      <div className=" space-y-4">
         <h2 className="text-xl md:text-2xl font-bold text-gray-800">
           {currentProduct?.title}
         </h2>
         <p className="text-sm text-gray-600">{currentProduct?.description}</p>
         <div className="space-y-3">
-          {[
-            "Llamadas cifradas",
-            "Administración de usuarios",
-            "Privacidad de grado militar",
-            "Chat encriptado",
-          ].map((feature) => (
-            <div key={feature} className="flex items-center gap-2">
+          {currentProduct?.advantages.map((feature, key) => (
+            <div key={key} className="flex items-center gap-2">
               <CheckProductIcon />
-              <span className="text-sm text-gray-700">{feature}</span>
+              <span className="text-sm text-gray-700">{feature.title}</span>
             </div>
           ))}
         </div>
@@ -69,14 +62,16 @@ export default function CardProduct() {
           ))}
         </div>
 
-        <div className="space-y-1">
+        <div className="space-y-2 flex-col flex ">
           <hr className="border-t border-1 border-[#D9D9D9]" />
           <p className="text-sm text-gray-500">Desde</p>
-          <p className="text-xl md:text-2xl font-bold text-gray-800">99$ USD</p>
+          <p className="text-xl md:text-2xl font-bold text-gray-800">
+            {currentProduct?.price}$ USD
+          </p>
         </div>
       </div>
 
-      <div className="flex flex-col sm:flex-row gap-3 mb-7">
+      <div className="flex flex-col sm:flex-row gap-3 ">
         <Button
           icon={<ShoppingCart color="white" />}
           iconPosition="right"
