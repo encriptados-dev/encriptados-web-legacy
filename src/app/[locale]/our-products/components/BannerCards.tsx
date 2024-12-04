@@ -27,14 +27,15 @@ const BannerCards: React.FC = () => {
   };
 
   return (
-    <div className="flex flex-col md:flex-row items-center gap-10 max-w-[600px] sm:max-w-[1100px]  mx-auto">
+    <div className="md:w-11/12 flex lg:w-full xl:w-[1272px]  w-full  mx-auto mt-4 mb-4 font-bold ">
       {/* Texto de encabezado */}
-      <div className="lg:w-1/3 space-y-4 p-4">
+      <div className="w-5/12 pr-7 space-y-4 flex flex-col justify-center items-center">
         <h2 className="text-3xl font-bold text-black">
           Tu SIM o E-SIM tienen estos superpoderes
         </h2>
         <p className="text-xl font-light text-black">
-          Conectate con todo el mundo en todo el mundo, cuando lo necesites y oculta tu información
+          Conectate con todo el mundo en todo el mundo, cuando lo necesites y
+          oculta tu información
         </p>
       </div>
 

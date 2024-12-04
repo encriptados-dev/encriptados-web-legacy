@@ -1,7 +1,7 @@
 "use client";
 
 import { ReactNode } from "react";
-import BannerOurSims from "./components/BannerOurProducts";
+import BannerOurSims from "./components/BannerOurProductsMobile";
 import { useParams, usePathname } from "next/navigation";
 
 interface LayoutProps {
