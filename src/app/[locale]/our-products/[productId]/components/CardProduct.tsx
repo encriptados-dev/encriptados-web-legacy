@@ -65,7 +65,7 @@ export default function CardProduct() {
         <div className="space-y-2 flex-col flex ">
           <hr className="border-t border-1 border-[#D9D9D9]" />
           <p className="text-sm text-gray-500">Desde</p>
-          <p className="text-xl md:text-2xl font-bold text-gray-800">
+          <p className="text-xl md:text-2xl font-bold text-gray-800 pb-2">
             {currentProduct?.price}$ USD
           </p>
         </div>
