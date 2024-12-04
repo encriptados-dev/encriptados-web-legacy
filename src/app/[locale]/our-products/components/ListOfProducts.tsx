@@ -19,18 +19,13 @@ const ListOfProducts = () => {
   const productCount = data?.data.length || 0;
 
   return (
-    <div className="">
-      <div className="flex items-center justify-center">
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4 gap-5 w-full md:w-11/12 lg:w-full xl:w-[1220px] 2xl:w-8/12">
-          <h2 className="text-lg font-semibold  mb-6">
-            {productCount} producto{productCount !== 1 ? "s" : ""} encontrado
-            {productCount !== 1 ? "s" : ""}
-          </h2>
-        </div>
+    <>
+      <div className="md:w-11/12 lg:w-full xl:w-[1272px]  w-full  mx-auto mt-4 mb-4 font-bold">
+        {productCount} producto{productCount !== 1 ? "s" : ""} encontrado
+        {productCount !== 1 ? "s" : ""}
       </div>
-
-      <div className="flex items-center justify-center">
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5 w-full md:w-11/12 lg:w-full xl:w-[1220px] 2xl:w-8/12">
+      <div className="flex items-center justify-between">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5 w-full max-w-7xl mx-auto ">
           {data?.data.map((product) => (
             <CardProduct
               key={product.id}
@@ -45,7 +40,7 @@ const ListOfProducts = () => {
           ))}
         </div>
       </div>
-    </div>
+    </>
   );
 };
 

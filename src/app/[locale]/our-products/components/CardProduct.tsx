@@ -27,7 +27,7 @@ const CardProduct: React.FC<CardSimProps> = ({
   const router = useRouter();
 
   return (
-    <div className="w-full max-w-sm mx-auto bg-white shadow-lg rounded-2xl overflow-hidden">
+    <div className="w-full bg-white shadow-lg rounded-2xl overflow-hidden">
       <div className="p-2 bg-[#D4F2FC] ">
         <Image
           src={productImage}
@@ -63,9 +63,6 @@ const CardProduct: React.FC<CardSimProps> = ({
             <div className="flex justify-between items-center mb-2">
               <div className="flex gap-x-5 items-center justify-center">
                 <span className="text-lg font-bold">{priceRange}</span>
-                <span className="text-[11px] text-red-500 ">
-                  Ahorra hasta {priceDiscount} USD
-                </span>
               </div>
 
               <div className="flex items-center bg-[#EDF4F6] px-2 rounded-full">

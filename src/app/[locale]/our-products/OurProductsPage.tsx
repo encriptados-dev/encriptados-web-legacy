@@ -18,8 +18,8 @@ const OurProductsPage = () => {
   const t = useTranslations("OurProductsPage");
   return (
     <>
-      <div className="p-8">
-        <h1 className="bg-gradient-to-r text-3xl justify-center font-bold  flex items-center from-[#000000] to-[#35CDFB] bg-clip-text text-transparent mb-4 text-center">
+      <div className="p-8 bg-[#F4F8FA]">
+        <h1 className="bg-gradient-to-r text-3xl justify-center font-bold mt-[75px]  flex items-center from-[#000000] to-[#35CDFB] bg-clip-text text-transparent mb-7 text-center">
           {t("filterProducts.title")}
         </h1>
         <BasicFormProvider defaultValue={{ selectedOption: "sim" }}>
