@@ -32,6 +32,7 @@ const MenuDropdownProductBar: React.FC<MenuDropdownProductBarProps> = ({
       defaultValue={selectedItem || ""} // Usa el valor de selectedItem como defaultValue
       render={({ field: { onChange } }) => (
         <Menu
+          gap={10}
           menuButton={
             <MenuButton
               className={`flex items-center justify-between border rounded-2xl shadow-md p-4 w-full transition duration-150 ease-in-out ${
