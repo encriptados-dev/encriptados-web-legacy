@@ -27,9 +27,9 @@ const BannerCards: React.FC = () => {
   };
 
   return (
-    <div className="flex flex-col md:flex-row items-center gap-10 max-w-[600px] sm:max-w-[1100px]  mx-auto">
+    <div className="flex flex-col  md:flex-row items-center gap-10  w-full  mx-auto p-8">
       {/* Texto de encabezado */}
-      <div className="lg:w-1/3 space-y-4 p-4">
+      <div className="lg:w-1/3 space-y-4 ">
         <h2 className="text-3xl font-bold text-black">
           Tu SIM o E-SIM tienen estos superpoderes
         </h2>

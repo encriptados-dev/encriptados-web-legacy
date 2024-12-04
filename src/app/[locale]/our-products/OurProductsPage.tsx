@@ -37,7 +37,7 @@ const OurProductsPage = () => {
       <div className="w-full m-0 p-0">
         <BannerActivate />
       </div>
-      <div className="py-28 bg-white">
+      <div className=" rounded-xl w-full max-w-7xl mx-auto py-20   ">
         <BannerCards />
       </div>
       <div className=" bg-[#EBF5FA] py-11">
