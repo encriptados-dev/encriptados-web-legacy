@@ -81,7 +81,7 @@ const CardProduct: React.FC<CardSimProps> = ({
             </div>
             <div className="flex items-center justify-between gap-x-2 ">
               <button className="bg-black rounded-full text-white px-3 py-2">
-                <div className="flex items-center justify-center gap-x-2">
+                <div className="flex items-center justify-center gap-x-2 px-2">
                   Comprar
                   <LocalMallSvgNew />
                 </div>
@@ -91,7 +91,7 @@ const CardProduct: React.FC<CardSimProps> = ({
                 onClick={() => {
                   router.push(`our-products/${id}`);
                 }}
-                className="cursor-pointer"
+                className="cursor-pointer text-[14px]"
               >
                 Más información
               </h1>
