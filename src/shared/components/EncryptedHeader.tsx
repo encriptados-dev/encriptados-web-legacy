@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect, useMemo } from "react";
+import { useState, useEffect, useMemo, useRef } from "react";
 import { AnimatePresence } from "framer-motion";
 import Navigation from "./HeaderComponents/Navigation";
 import MegaMenu from "./HeaderComponents/MegaMenu";
@@ -36,15 +36,30 @@ export default function EncryptedHeader() {
     }
   );
 
+  const headerRef = useRef<HTMLDivElement>(null);
+
   // Cierra el menú de escritorio
   const closeMegaMenu = () => setIsDesktopMenuOpen(false);
 
   // Detecta si el viewport es móvil
   useEffect(() => {
-    const handleResize = () => setIsMobile(window.innerWidth <= 768);
+    const handleResize = () => setIsMobile(window.innerWidth < 1024);
     handleResize();
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  useEffect(() => {
+    function handleClickOutside(event: MouseEvent) {
+      if (headerRef.current && !headerRef.current.contains(event.target as Node)) {
+        setIsDesktopMenuOpen(false);
+      }
+    }
+
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
   }, []);
 
   // Maneja el cambio de menú (productos u otros)
@@ -72,7 +87,7 @@ export default function EncryptedHeader() {
 
   // Renderizado para dispositivos de escritorio
   return (
-    <header className="relative z-50">
+    <header className="relative z-50" ref={headerRef}>
       <div className="bg-[#151515] border-b border-[#1A1A1A]">
         <div className="max-w-[1400px] mx-auto px-4 py-4">
           <nav className="flex items-center justify-between">
@@ -83,7 +98,7 @@ export default function EncryptedHeader() {
             </div>
 
             {/* Menú de navegación */}
-            <div className="hidden md:flex items-center gap-0">
+            <div className="hidden lg:flex items-center gap-0">
               {/* Tienda */}
               <Link
                 href="/"
