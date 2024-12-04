@@ -7,9 +7,9 @@ const BannerOurProductsMobile = () => {
   const t = useTranslations("OurProductsPage");
 
   return (
-    <div className="relative w-full overflow-hidden bg-black py-5">
+    <div className="relative w-full overflow-hidden bg-black py-5 items-center justify-center flex">
       {/* Contenedor principal */}
-      <div className="flex flex-col h-full w-full">
+      <div className="flex flex-col h-full w-[450px] md:w-full">
         {/* Contenido superior */}
         <div className="flex-1 flex flex-col justify-center items-center text-center px-4 pt-12 z-10">
           <div className="max-w-[500px] space-y-6">
@@ -43,7 +43,7 @@ const BannerOurProductsMobile = () => {
             objectFit="cover"
             className="translate-y-5"
             objectPosition="top"
-            width={250}
+            width={375}
             height={350}
             quality={100}
             priority
