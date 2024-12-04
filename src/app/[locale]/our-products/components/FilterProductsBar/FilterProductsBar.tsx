@@ -72,7 +72,7 @@ export default function FilterProductsBar() {
           </div>
         </div>
 
-        <div className="flex  w-full lg:w-auto ">
+        <div className="flex  w-full sm:w-auto ">
           <SearchProduct
             name="searchinputproduct"
             placeholder={t("filterProducts.searchPlaceholder")}

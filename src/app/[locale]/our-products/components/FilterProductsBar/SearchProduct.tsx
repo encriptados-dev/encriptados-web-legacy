@@ -20,7 +20,7 @@ const SearchProduct = ({
   const { register } = useFormContext();
 
   return (
-    <div className={`relative flex items-center ${containerClassName}`}>
+    <div className={`relative flex w-full ${containerClassName}`}>
       {iconPosition === "left" && (
         <div
           className={`absolute left-3 top-1/2 transform -translate-y-1/2 ${iconClassName}`}
@@ -33,7 +33,7 @@ const SearchProduct = ({
         type="text"
         placeholder={placeholder}
         {...register(name)}
-        className={`py-4 text-[#085D77] border rounded-full border-[#085D77]  flex-grow ${
+        className={`py-4 text-[#085D77] border rounded-2xl border-[#085D77]  flex-grow ${
           iconPosition === "left" ? "pl-10 pr-3" : "pl-3 pr-10"
         } ${inputClassName} placeholder-[#085D77] outline-none`} // Eliminado el estilo de foco
         style={{ boxShadow: "none" }} // Opcional: Elimina el sombreado de enfoque

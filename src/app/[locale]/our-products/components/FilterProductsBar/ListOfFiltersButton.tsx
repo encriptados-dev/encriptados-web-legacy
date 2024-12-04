@@ -21,7 +21,7 @@ const ListOfFiltersButton: React.FC<ListOfFiltersButtonProps> = ({
   const selectedItem = watch(name);
 
   return (
-    <div className="flex gap-x-4">
+    <div className="flex gap-x-4 justify-between  ">
       {items.map((item, index) => (
         <Controller
           key={index}
@@ -32,7 +32,7 @@ const ListOfFiltersButton: React.FC<ListOfFiltersButtonProps> = ({
             <button
               type="button"
               onClick={() => onChange(item.value)}
-              className={`flex flex-col items-center justify-center  rounded-lg shadow-md transition-transform transform p-1  w-[112px] ${
+              className={`flex flex-col items-center justify-center  rounded-lg shadow-md transition-transform transform p-1 w-full ${
                 selectedItem === item.value
                   ? "bg-[#E3F8FF] border-[#0AAEE1] border"
                   : "bg-white border border-gray-300"
