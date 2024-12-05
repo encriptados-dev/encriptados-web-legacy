@@ -5,6 +5,7 @@ import StarSvg from "/public/images/encrypted-sim/icons/star_half2.svg";
 
 import LocalMallSvgNew from "./svgs/LocalMallSvgNew";
 import { useRouter } from "next/navigation";
+import { useFormContext } from "react-hook-form";
 
 interface CardSimProps {
   productImage: string; // Ahora es una URL de tipo string
@@ -19,7 +20,6 @@ interface CardSimProps {
 const CardProduct: React.FC<CardSimProps> = ({
   productImage,
   features,
-
   priceRange,
   id,
   headerTitle,
@@ -28,15 +28,19 @@ const CardProduct: React.FC<CardSimProps> = ({
 
   return (
     <div className="w-full bg-white shadow-lg rounded-2xl overflow-hidden">
-      <div className="p-2 bg-[#D4F2FC] ">
-        <Image
-          src={productImage}
-          alt="Sim Card"
-          width={300}
-          height={192}
-          className="w-full h-48 object-contain"
-        />
-        <div className="p-2">
+      <div className="p-2 bg-[#D4F2FC]">
+        {/* Contenedor de la imagen centrada */}
+        <div className="relative w-full h-32 flex items-center justify-center ">
+          <Image
+            src={productImage}
+            alt="Sim Card"
+            width={100} // Ancho máximo deseado
+            height={100} // Alto máximo deseado
+            objectFit="contain" // Ajusta la imagen sin distorsión
+            className="rounded-t-lg "
+          />
+        </div>
+        <div className="">
           <div className="flex justify-end gap-2 mb-1 text-sm text-gray-600"></div>
         </div>
       </div>
@@ -69,7 +73,7 @@ const CardProduct: React.FC<CardSimProps> = ({
                 <Image
                   src={StarSvg}
                   alt="Icon"
-                  className="w-6 h-6 fill-current text-yellow-400 font-bold"
+                  className="w-6 h-6 fill-ct text-yellow-400 font-bold"
                 />
                 <span className="ml-1 text-sm text-gray-600 font-semibold">
                   5/5

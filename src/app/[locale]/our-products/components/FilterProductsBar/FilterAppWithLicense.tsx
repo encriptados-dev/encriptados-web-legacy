@@ -13,6 +13,7 @@ const FilterAppWithLicense = () => {
         <MenuDropdownProductBar
           name="os"
           options={[
+            { label: "TODO", value: "all" },
             { label: "Secure Cryptra", value: "Secure Crypt" },
             { label: "Other Option", value: "Other Option" },
           ]}
@@ -25,6 +26,7 @@ const FilterAppWithLicense = () => {
         <MenuDropdownProductBar
           name="license"
           options={[
+            { label: "TODO", value: "all" },
             {
               label: "1 mes",
               value: "1month",

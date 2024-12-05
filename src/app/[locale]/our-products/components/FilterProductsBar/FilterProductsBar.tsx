@@ -34,7 +34,6 @@ export default function FilterProductsBar() {
 
   const ICON_COLOR_SELECTED = "#0AAEE1";
   const ICON_COLOR_UNSELECTED = "#7E7E7E";
-
   const items = Object.keys(icons).map((key) => {
     const iconKey = key as IconKeys;
     return {
@@ -42,6 +41,8 @@ export default function FilterProductsBar() {
       label:
         iconKey === "app"
           ? t("filterProducts.apps")
+          : iconKey === "mobile"
+          ? "Sistemas"
           : key.charAt(0).toUpperCase() + key.slice(1),
       icon: React.createElement(icons[iconKey], {
         color:

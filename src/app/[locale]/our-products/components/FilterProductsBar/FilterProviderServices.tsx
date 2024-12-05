@@ -19,6 +19,7 @@ const FilterAppWithLicense = () => {
         <MenuDropdownProductBar
           name="encriptadosprovider"
           options={[
+            { label: "TODO", value: "all" },
             { label: "Sim Física", value: "physicsim" },
             { label: "eSim", value: "esim" },
             { label: "Recarga Datos", value: "datarecharge" },
@@ -93,6 +94,11 @@ const FilterAppWithLicense = () => {
         <MenuDropdownProductBar
           name="provider"
           options={[
+            {
+              label: "TODO",
+              value: "all",
+              icon: "",
+            },
             {
               label: " ",
               value: "encriptados",

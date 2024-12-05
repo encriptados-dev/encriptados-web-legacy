@@ -113,7 +113,7 @@
     }
   },
   "FooterMenu": {
-    "downloadApp": "Download the app for your mobile device here:",
+    "downloadApp": "Descarga la aplicación para tu dispositivo móvil aquí:",
     "simEsims": {
       "encryptedSim": "SIM Encriptada",
       "physicSim": "SIM Fisica",
@@ -123,7 +123,7 @@
       "title": "Apps Encriptadas"
     },
     "phoneEncrypted": {
-      "title": "Teléfonos Encriptados"
+      "title": "Sistemas"
     },
     "securePay": {
       "title": "Pago seguro"

@@ -36,46 +36,62 @@ export default function FooterEncrypted() {
   const sections = [
     {
       title: "SIM - eSIMs",
-      items: [
-        t("simEsims.encryptedSim"),
-        t("simEsims.physicSim"),
-        t("simEsims.globalSim"),
-        "BNE SIM",
-        "IRA SIM",
-      ],
+      items: [t("simEsims.encryptedSim"), "SIM IRA", "SIM TIM"],
     },
     {
       title: t("encryptedSims.title"),
       items: [
-        "Silent Circle",
-        "Vnclagoon",
+        "Silent phone",
+        "VncLagon",
         "Threema",
-        "Threema Work",
-        "NordVPN",
+        "Threema Works",
         "Salt",
         "VaultChat",
         "Armadillo",
+        "SecureCrypt",
+        "Elon",
       ],
     },
     {
       title: t("phoneEncrypted.title"),
       items: [
-        "Secure Crypt",
+        "SecureCrypt",
         "Armadillo",
         "UltraX",
-        "Tribu",
         "Intact",
-        "DEC Securet",
-        "TotalSec",
+        "DecSecure",
+        "Renati",
+        "Chatmail",
+        "Cryptcom",
+        "Secure MDM iphone",
+        "Secure MDM Android",
+        "VaultChat",
+        "T2 Comunicador",
       ],
     },
   ];
 
   const socialMedia = [
-    { name: "LinkedIn", icon: <LinkedinFooter />, link: "#" },
-    { name: "YouTube", icon: <YoutubeFooter />, link: "#" },
-    { name: "Instagram", icon: <InstagramFooter />, link: "#" },
-    { name: "Facebook", icon: <FacebookFooter />, link: "#" },
+    {
+      name: "LinkedIn",
+      icon: <LinkedinFooter />,
+      link: "https://www.linkedin.com/company/encriptados-français/",
+    },
+    {
+      name: "YouTube",
+      icon: <YoutubeFooter />,
+      link: "https://www.youtube.com/@encriptados_io",
+    },
+    {
+      name: "Instagram",
+      icon: <InstagramFooter />,
+      link: "https://instagram.com/encriptados.io",
+    },
+    {
+      name: "Facebook",
+      icon: <FacebookFooter />,
+      link: "https://facebook.com/Encriptados.io",
+    },
   ];
 
   const countries = [
@@ -158,14 +174,16 @@ export default function FooterEncrypted() {
 
         <div className="flex justify-center items-center space-x-6 mt-8 flex-wrap">
           {socialMedia.map((social) => (
-            <Link
+            <a
               key={social.name}
               href={social.link}
               className="text-gray-400 hover:text-white"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               <span className="sr-only">{social.name}</span>
               {social.icon}
-            </Link>
+            </a>
           ))}
         </div>
 
