@@ -28,16 +28,15 @@ const CardProduct: React.FC<CardSimProps> = ({
   return (
     <div className="w-full bg-white shadow-lg rounded-2xl overflow-hidden">
       <div className="p-2 bg-[#D4F2FC]">
-        {/* Contenedor de la imagen centrada */}
         <div className="relative w-full h-32 flex items-center justify-center ">
-          <Image
-            src={productImage}
-            alt="Sim Card"
-            width={100} // Ancho máximo deseado
-            height={100} // Alto máximo deseado
-            objectFit="contain" // Ajusta la imagen sin distorsión
-            className="rounded-t-lg "
-          />
+          <div className="relative w-full h-28 flex items-center justify-center">
+            <Image
+              src={productImage}
+              alt="Sim Card"
+              fill
+              className="w-full h-full object-contain"
+            />
+          </div>
         </div>
         <div className="">
           <div className="flex justify-end gap-2 mb-1 text-sm text-gray-600"></div>
