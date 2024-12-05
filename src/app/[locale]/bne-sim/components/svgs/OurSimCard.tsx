@@ -15,11 +15,13 @@ const OurSimCard: React.FC<OurSimCardProps> = ({
   icon,
   title,
   description,
-  classCard
+  classCard,
 }) => {
   return (
-    <div className={`${bgColor} ${textColor} ${classCard} p-10 rounded-3xl`}>
-      <div className="space-y-2">
+    <div
+      className={`${bgColor} ${textColor} ${classCard} p-10 rounded-3xl h-[300px]`}
+    >
+      <div className="space-y-2 h-full flex flex-col justify-between">
         <Image src={icon} alt="icon" width={50} height={50} className="mb-10" />
         <h2 className="font-bold text-2xl">{title}</h2>
         <p className="text-sm mb-10">{description}</p>

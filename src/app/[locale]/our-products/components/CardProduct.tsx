@@ -64,7 +64,10 @@ const CardProduct: React.FC<CardSimProps> = ({
           <div className="w-full">
             <div className="flex justify-between items-center mb-2">
               <div className="flex gap-x-5 items-center justify-center">
-                <span className="text-lg font-bold">{priceRange}</span>
+                <div className="flex items-center justify-center gap-x-1 text-sm">
+                  <span>Desde</span>
+                  <span className="text-lg font-bold">{priceRange}</span>
+                </div>
               </div>
 
               <div className="flex items-center bg-[#EDF4F6] px-2 rounded-full">

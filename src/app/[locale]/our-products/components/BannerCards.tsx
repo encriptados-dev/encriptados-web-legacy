@@ -6,81 +6,141 @@ import CellTowerSvg from "/public/images/bne-sim/svg/cell_tower.svg";
 import Rotate_rightSvg from "/public/images/bne-sim/svg/rotate_right.svg";
 import SimCardSvg from "/public/images/bne-sim/svg/sim_card.svg";
 import { useTranslations } from "next-intl";
-import { useRef } from "react";
+import Slider from "react-slick";
+import { useEffect, useState } from "react";
 
 const BannerCards: React.FC = () => {
   const t = useTranslations("BneSimPage");
-  const carouselRef = useRef<HTMLDivElement>(null);
-  let isDragging = false;
 
-  const handleMouseDrag = (event: React.MouseEvent) => {
-    if (isDragging && carouselRef.current) {
-      carouselRef.current.scrollLeft += event.movementX * -1;
-    }
+  const [isSmallScreen, setIsSmallScreen] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsSmallScreen(window.innerWidth <= 768);
+    };
+
+    // Establecer el estado inicial
+    handleResize();
+
+    // Agregar listener para manejar cambios de tamaño
+    window.addEventListener("resize", handleResize);
+
+    // Limpiar el listener al desmontar
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
+  const sliderSettings = {
+    dots: true,
+    infinite: false,
+    speed: 500,
+    slidesToShow: 1.2,
+    slidesToScroll: 1,
+    swipe: true,
+    centerMode: true,
+    centerPadding: "0px", // Elimina el padding interno
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          centerMode: true,
+          centerPadding: "0px", // Mantén sin padding en pantallas pequeñas
+          slidesToScroll: 1,
+        },
+      },
+    ],
   };
 
-  const handleTouchDrag = (event: React.TouchEvent) => {
-    if (carouselRef.current) {
-      const touch = event.touches[0];
-      carouselRef.current.scrollLeft += touch.clientX * -0.5; // Ajusta la sensibilidad si es necesario
-    }
-  };
+  const cards = [
+    {
+      bgColor: "bg-custom-gradient-our-sim-black",
+      textColor: "text-white",
+      icon: CellTowerSvg,
+      title: t("OurSimCard.title"),
+      description: t("OurSimCard.description"),
+    },
+    {
+      bgColor: "bg-custom-gradient-our-sim-blue",
+      textColor: "text-black",
+      icon: AdsClickSvg,
+      title: t("OurSimCard.title2"),
+      description: t("OurSimCard.description2"),
+    },
+    {
+      bgColor: "bg-custom-gradient-our-sim-black",
+      textColor: "text-white",
+      icon: CellTowerSvg,
+      title: t("OurSimCard.title4"),
+      description: t("OurSimCard.description4"),
+    },
+    {
+      bgColor: "bg-custom-gradient-our-sim-blue",
+      textColor: "text-black",
+      icon: Rotate_rightSvg,
+      title: t("OurSimCard.title3"),
+      description: t("OurSimCard.description3"),
+    },
+  ];
 
   return (
-    <div className="flex flex-col  md:flex-row items-center gap-10  w-full  mx-auto p-8">
-      {/* Texto de encabezado */}
-      <div className="lg:w-1/3 space-y-4 ">
+    <div className="flex flex-col md:flex-row items-center gap-10 w-full px-8 rounded-xl max-w-7xl mx-auto py-20 ">
+      {/* Encabezado */}
+      <div className="lg:w-1/3 space-y-4">
         <h2 className="text-3xl font-bold text-black">
           Tu SIM o E-SIM tienen estos superpoderes
         </h2>
         <p className="text-xl font-light text-black">
-          Conectate con todo el mundo en todo el mundo, cuando lo necesites y
-          oculta tu información
+          Conéctate con todo el mundo en todo el mundo, cuando lo necesites y
+          oculta tu información.
         </p>
       </div>
 
-      {/* Contenedor de tarjetas en disposición horizontal */}
-      <div
-        className="flex flex-row gap-4 lg:w-2/3 w-5/6 overflow-x-auto cursor-pointer no-scrollbar touch-pan-x"
-        ref={carouselRef}
-        onMouseDown={() => (isDragging = true)}
-        onMouseUp={() => (isDragging = false)}
-        onMouseMove={handleMouseDrag}
-        onTouchMove={handleTouchDrag}
-      >
-        {/* Tarjetas */}
-        <OurSimCard
-          bgColor="bg-custom-gradient-our-sim-black"
-          textColor="text-white"
-          icon={CellTowerSvg}
-          title={t("OurSimCard.title")}
-          description={t("OurSimCard.description")}
-          classCard="flex-shrink-0 w-60 sm:w-60 h-90 rounded-2xl p-6"
-        />
-        <OurSimCard
-          bgColor="bg-custom-gradient-our-sim-blue"
-          textColor="text-black"
-          icon={AdsClickSvg}
-          title={t("OurSimCard.title2")}
-          description={t("OurSimCard.description2")}
-          classCard="flex-shrink-0 w-60 sm:w-60 h-90 rounded-2xl p-6"
-        />
-        <OurSimCard
-          bgColor="bg-custom-gradient-our-sim-black"
-          textColor="text-white"
-          icon={SimCardSvg}
-          title={t("OurSimCard.title4")}
-          description={t("OurSimCard.description4")}
-          classCard="flex-shrink-0 w-60 sm:w-60 h-90 rounded-2xl p-6"
-        />
-        <OurSimCard
-          bgColor="bg-custom-gradient-our-sim-blue"
-          textColor="text-black"
-          icon={Rotate_rightSvg}
-          title={t("OurSimCard.title3")}
-          description={t("OurSimCard.description3")}
-          classCard="flex-shrink-0 w-60 sm:w-60 h-90 rounded-2xl p-6"
-        />
+      {/* Contenedor de tarjetas */}
+      <div className="w-full">
+        {isSmallScreen ? (
+          <Slider {...sliderSettings}>
+            {cards.map((card, index) => (
+              <div
+                key={index}
+                className="p-2"
+                style={{
+                  marginLeft: index === 0 ? "-10px" : undefined, // Ajusta margen inicial
+                  marginRight: index === cards.length - 1 ? "-10px" : undefined, // Ajusta margen final
+                }}
+              >
+                <OurSimCard
+                  bgColor={card.bgColor}
+                  textColor={card.textColor}
+                  icon={card.icon}
+                  title={card.title}
+                  description={card.description}
+                  classCard="w-full h-90 rounded-2xl p-6"
+                />
+              </div>
+            ))}
+          </Slider>
+        ) : (
+          <div
+            className="flex flex-wrap gap-4 justify-center overflow-hidden"
+            style={{
+              overflowX: "hidden", // Ocultar desbordamiento horizontal
+            }}
+          >
+            {cards.map((card, index) => (
+              <OurSimCard
+                key={index}
+                bgColor={card.bgColor}
+                textColor={card.textColor}
+                icon={card.icon}
+                title={card.title}
+                description={card.description}
+                classCard="flex-shrink-0 w-60 sm:w-60 h-90 rounded-2xl p-6"
+              />
+            ))}
+          </div>
+        )}
       </div>
     </div>
   );
