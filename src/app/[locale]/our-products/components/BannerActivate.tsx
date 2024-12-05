@@ -2,7 +2,7 @@ import Image from "next/image";
 import ManMinutos from "/public/images/our-products/man-activate.png";
 import FondoActivate from "/public/images/our-products/Fondo-activate.jpg";
 import IconWhatsappSVG from "/public/images/our-products/svg/icon-whatsapp.svg";
-import IconTelegramSVG from "../../../../../public/images/our-products/svg/icon-telegram.svg";
+import IconTelegramSVG from "/public/images/our-products/svg/icon-telegram.svg";
 import IconSignalSVG from "/public/images/our-products/svg/icon-signal.svg";
 import IconWechatSVG from "/public/images/our-products/svg/icon-wechat.svg";
 import IconLineSVG from "/public/images/our-products/svg/icon-line.svg";
@@ -37,7 +37,10 @@ export default function Component() {
             }}
           />
           {/* Diagonal division for desktop */}
-          <div className="hidden sm:block absolute inset-0 bg-black" style={{ clipPath: "polygon(65% 0, 100% 0, 100% 100%, 45% 100%)" }} />
+          <div
+            className="hidden sm:block absolute inset-0 bg-black"
+            style={{ clipPath: "polygon(65% 0, 100% 0, 100% 100%, 45% 100%)" }}
+          />
         </div>
       </div>
 
@@ -55,8 +58,8 @@ export default function Component() {
 
       {/* Content */}
       <div className="relative mx-auto max-w-6xl px-4 py-12 sm:px-6 lg:px-8">
-        <div className="w-full sm:w-3/4 md:w-1/2 ml-auto space-y-8">
-          <div className="space-y-4">
+        <div className="w-full sm:w-3/4 md:w-1/2 ml-auto space-y-8 flex flex-col items-center sm:items-start">
+          <div className="space-y-4 text-center sm:text-left">
             <h1 className="text-xl font-light text-white sm:text-2xl lg:text-3xl">
               Activa APPs por SMS con{" "}
               <strong className="text-primary font-bold">Encriptados</strong>
@@ -68,7 +71,7 @@ export default function Component() {
           </div>
 
           {/* App icons */}
-          <div className="flex flex-wrap gap-2 sm:gap-4">
+          <div className="flex flex-wrap gap-2 sm:gap-4 justify-center sm:justify-start">
             {appData.map(({ name, icon, bgColor }) => (
               <div
                 key={name}
@@ -86,11 +89,11 @@ export default function Component() {
           </div>
 
           {/* Colombian flag icon and Buy Now Button */}
-          <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4">
-            <button className="rounded-full bg-[#0AAEE1] px-8 sm:px-12 py-2 sm:py-3 text-sm sm:text-base text-white font-bold hover:bg-blue-600 transition-colors">
+          <div className="flex flex-col sm:flex-row items-center gap-4 justify-center sm:justify-start w-full">
+            <button className="rounded-full bg-[#0AAEE1] px-6 sm:px-8 py-2 sm:py-3 text-sm sm:text-base text-white font-bold hover:bg-blue-600 transition-colors w-auto min-w-[150px] sm:w-[200px]">
               Comprar ahora
             </button>
-            <div className="flex items-center gap-2">
+            <div className="flex items-center gap-2 text-center sm:text-left">
               <Image
                 src={IconColombiaSVG}
                 alt="Colombian flag icon"
