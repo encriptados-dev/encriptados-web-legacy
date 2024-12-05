@@ -23,7 +23,7 @@ const BannerOurProductsMobile = () => {
             <p className="text-gray-300 text-sm">
               {t("banner.descriptionNew")}
             </p>
-            <div className="flex flex-col gap-4 w-full max-w-xs mx-auto">
+            <div className="flex gap-2 w-full max-w-xs mx-auto">
               <button className="w-full bg-[#7CD0F9] text-black font-semibold py-3 rounded-full hover:bg-[#6bb8e0] transition-colors">
                 {t("banner.newButtonBuy")}
               </button>
