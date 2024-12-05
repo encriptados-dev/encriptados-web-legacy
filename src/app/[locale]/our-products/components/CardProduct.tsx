@@ -5,7 +5,6 @@ import StarSvg from "/public/images/encrypted-sim/icons/star_half2.svg";
 
 import LocalMallSvgNew from "./svgs/LocalMallSvgNew";
 import { useRouter } from "next/navigation";
-import { useFormContext } from "react-hook-form";
 
 interface CardSimProps {
   productImage: string; // Ahora es una URL de tipo string
