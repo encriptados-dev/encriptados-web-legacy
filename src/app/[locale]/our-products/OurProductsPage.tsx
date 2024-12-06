@@ -20,7 +20,14 @@ const OurProductsPage = () => {
   const t = useTranslations("OurProductsPage");
   return (
     <>
-      <BasicFormProvider defaultValue={{ selectedOption: "sim" }}>
+      <BasicFormProvider
+        defaultValue={{
+          selectedOption: "sim",
+          provider: "all",
+          os: "all",
+          license: "all",
+        }}
+      >
         <div className="block md:hidden">
           <BannerOurProductsMobile />
         </div>

@@ -9,6 +9,8 @@ const BannerOurProductsMobile = () => {
   const BannerBackground = "/images/home/banner-home.png";
   const t = useTranslations("OurProductsPage");
 
+  console.log(watch());
+
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
     if (element) {
