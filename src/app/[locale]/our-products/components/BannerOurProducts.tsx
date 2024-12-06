@@ -2,11 +2,21 @@ import { useTranslations } from "next-intl";
 import Image from "next/image";
 
 import React from "react";
+import { useFormContext } from "react-hook-form";
 
 const BannerOurProducts = () => {
   const BannerBackground = "/images/home/banner-home-desktop.jpg";
 
   const t = useTranslations("OurProductsPage");
+
+  const { watch, setValue } = useFormContext();
+
+  const scrollToSection = (id: string) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
 
   return (
     <div className="relative h-[500px] md:h-[500px] xl:h-[530px] 2xl:h-[650px] w-full overflow-hidden">
@@ -42,10 +52,24 @@ const BannerOurProducts = () => {
                 {t("banner.descriptionNew")}
               </p>
               <div className="flex flex-wrap gap-4 pt-4 justify-start">
-                <button className="bg-[#7CD0F9] text-black font-semibold px-6 sm:px-8 py-2 sm:py-3 rounded-full hover:bg-[#6bb8e0] transition-colors">
+                <button
+                  type="button"
+                  onClick={() => {
+                    scrollToSection("#buysimappsection");
+                    setValue("selectedOption", "sim");
+                  }}
+                  className="bg-[#7CD0F9] text-black font-semibold px-6 sm:px-8 py-2 sm:py-3 rounded-full hover:bg-[#6bb8e0] transition-colors"
+                >
                   {t("banner.newButtonBuy")}
                 </button>
-                <button className="border-2 border-white text-white font-semibold px-6 sm:px-8 py-2 sm:py-3 rounded-full hover:bg-white/10 transition-colors">
+                <button
+                  type="button"
+                  onClick={() => {
+                    scrollToSection("#buysimappsection");
+                    setValue("selectedOption", "app");
+                  }}
+                  className="border-2 border-white text-white font-semibold px-6 sm:px-8 py-2 sm:py-3 rounded-full hover:bg-white/10 transition-colors"
+                >
                   {t("banner.buttonAppEncriptados")}
                 </button>
               </div>

@@ -1,10 +1,20 @@
+import { watch } from "fs";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 import React from "react";
+import { useFormContext } from "react-hook-form";
 
 const BannerOurProductsMobile = () => {
+  const { watch, setValue } = useFormContext();
   const BannerBackground = "/images/home/banner-home.png";
   const t = useTranslations("OurProductsPage");
+
+  const scrollToSection = (id: string) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
 
   return (
     <div className="relative w-full overflow-hidden bg-black py-5 items-center justify-center flex">
@@ -24,10 +34,24 @@ const BannerOurProductsMobile = () => {
               {t("banner.descriptionNew")}
             </p>
             <div className="flex gap-2 w-full max-w-xs mx-auto">
-              <button className="w-full bg-[#7CD0F9] text-black font-semibold py-3 rounded-full hover:bg-[#6bb8e0] transition-colors">
+              <button
+                type="button"
+                onClick={() => {
+                  scrollToSection("#buysimappsection");
+                  setValue("selectedOption", "sim");
+                }}
+                className="w-full bg-[#7CD0F9] text-black font-semibold py-3 rounded-full hover:bg-[#6bb8e0] transition-colors"
+              >
                 {t("banner.newButtonBuy")}
               </button>
-              <button className="w-full border-2 border-white text-white font-semibold py-3 rounded-full hover:bg-white/10 transition-colors">
+              <button
+                type="button"
+                onClick={() => {
+                  scrollToSection("#buysimappsection");
+                  setValue("selectedOption", "app");
+                }}
+                className="w-full border-2 border-white text-white font-semibold py-3 rounded-full hover:bg-white/10 transition-colors"
+              >
                 {t("banner.buttonAppEncriptados")}
               </button>
             </div>

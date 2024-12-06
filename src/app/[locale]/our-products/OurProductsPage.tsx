@@ -13,26 +13,40 @@ import FormOurProducts from "./components/FormOurProducts";
 import { BasicFormProvider } from "@/shared/components/BasicFormProvider";
 import ListOfProducts from "./components/ListOfProducts";
 import { useTranslations } from "next-intl";
+import BannerOurProductsMobile from "./components/BannerOurProductsMobile";
+import BannerOurProducts from "./components/BannerOurProducts";
 
 const OurProductsPage = () => {
   const t = useTranslations("OurProductsPage");
   return (
     <>
-      <div className="p-8 bg-[#F4F8FA]">
-        <h1 className="bg-gradient-to-r text-3xl justify-center font-bold mt-[75px]  flex items-center from-[#000000] to-[#35CDFB] bg-clip-text text-transparent mb-7 text-center">
-          {t("filterProducts.title")}
-        </h1>
-        <BasicFormProvider defaultValue={{ selectedOption: "sim" }}>
-          <FilterProductsBar />
+      <BasicFormProvider defaultValue={{ selectedOption: "sim" }}>
+        <div className="block md:hidden">
+          <BannerOurProductsMobile />
+        </div>
 
-          <ListOfProducts />
-        </BasicFormProvider>
-        <div className="rounded-xl w-full max-w-7xl mx-auto mt-16 ">
-          <div className="flex flex-col  justify-between">
-            <CardOurProducts />
+        {/* Banner para dispositivos mayores que móvil */}
+        <div className="hidden md:block">
+          <BannerOurProducts />
+        </div>
+        <div className="p-8 bg-[#F4F8FA]">
+          <h1 className="bg-gradient-to-r text-3xl justify-center font-bold mt-[75px]  flex items-center from-[#000000] to-[#35CDFB] bg-clip-text text-transparent mb-7 text-center">
+            {t("filterProducts.title")}
+          </h1>
+
+          <div id="#buysimappsection">
+            <FilterProductsBar />
+
+            <ListOfProducts />
+          </div>
+
+          <div className="rounded-xl w-full max-w-7xl mx-auto mt-16 ">
+            <div className="flex flex-col  justify-between">
+              <CardOurProducts />
+            </div>
           </div>
         </div>
-      </div>
+      </BasicFormProvider>
 
       <div className="w-full m-0 p-0">
         <BannerActivate />
