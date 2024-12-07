@@ -25,6 +25,30 @@ export type Product = {
   variants: Variant[];
 };
 
+export type ProductById = {
+  data: {
+    id: number;
+    title: string;
+    price: string;
+    regular_price: string;
+    sale_price: string;
+    category_id: number;
+    category: string;
+    description: string;
+    image: string;
+    image_mobile: string | null;
+    banner: string;
+    banner_mobile: string | null;
+    currency: string;
+    generaltitle: string;
+    generaldescription: string;
+    faqs: FAQ[];
+    advantages: Advantage[];
+    features: Feature[];
+    variants: Variant[];
+  };
+};
+
 export type FAQ = {
   id: number;
   title: string;

@@ -8,10 +8,9 @@ const BannerSecure = () => {
   const t = useTranslations("EncryptedSimPage");
 
   return (
-    <div className="flex flex-col md:flex-row">
-      {" "}
-      {/* Cambia aquí para ser responsive */}
-      <div className="w-full md:w-[518px] h-[500px] relative rounded-3xl overflow-hidden">
+    <div className="flex flex-col lg:flex-row w-full px-4 sm:px-6 lg:px-12 xl:px-20 gap-6 md:gap-10">
+      {/* Imagen */}
+      <div className="w-full lg:w-[518px] h-[300px] sm:h-[400px] lg:h-[500px] relative rounded-3xl overflow-hidden">
         <Image
           quality={100}
           title="Image"
@@ -23,12 +22,21 @@ const BannerSecure = () => {
           objectFit="cover"
         />
       </div>
-      <div className="flex flex-col justify-center gap-y-3 p-5 items-center w-full md:w-[450px]">
-        <div className="bg-[#6ADBFF] w-full md:w-[450px] h-[160px] flex justify-center items-center rounded-2xl md:-translate-x-20">
-          <h2 className="text-3xl font-bold">{t("secureAndEasyToUse")}</h2>
+
+      {/* Texto */}
+      <div className="flex flex-col justify-center gap-y-6 items-center lg:items-start w-full lg:w-[450px]">
+        {/* Título */}
+        <div className="bg-[#6ADBFF] w-full lg:w-[450px] h-auto py-6 px-4 lg:px-6 flex justify-center lg:justify-start items-center rounded-2xl text-center lg:text-left">
+          <h2 className="text-xl sm:text-2xl lg:text-3xl font-bold text-gray-900">
+            {t("secureAndEasyToUse")}
+          </h2>
         </div>
-        <div className="bg-[#DDF7FF] w-full md:w-[450px] p-10 h-[150px] flex justify-center items-center rounded-2xl md:-translate-x-20">
-          <h1 className="text-lg">{t("secureAndEasyToUseDescription")}</h1>
+
+        {/* Descripción */}
+        <div className="bg-[#DDF7FF] w-full lg:w-[450px] p-6 sm:p-8 flex justify-center lg:justify-start items-center rounded-2xl text-center lg:text-left">
+          <h1 className="text-sm sm:text-base lg:text-lg text-gray-700">
+            {t("secureAndEasyToUseDescription")}
+          </h1>
         </div>
       </div>
     </div>

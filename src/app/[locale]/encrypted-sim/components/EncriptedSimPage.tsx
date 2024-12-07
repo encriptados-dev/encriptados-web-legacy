@@ -29,11 +29,11 @@ const EncryptedSim = () => {
           <BannerConnect />
         </div>
 
-        <div className="max-w-[70vh] m-auto flex justify-center items-center">
-          <div className="w-full">
+        <div className="flex justify-center  ">
+          <div className="w-full sm:w-10/12 md:w-9/12 lg:w-8/12 xl:w-6/12 py-9">
             <BasicFormProvider>
-              <div className="max-w-[1100px] mx-auto p-4 ">
-                <h1 className="bg-gradient-to-r text-3xl justify-center font-bold  flex items-center from-[#35CDFB] to-[#000000] bg-clip-text text-transparent mb-4 text-center">
+              <div className=" p-4 ">
+                <h1 className="bg-gradient-to-r text-3xl text-center justify-center font-bold from-[#35CDFB] to-[#000000] bg-clip-text text-transparent mb-4 ">
                   Cobertura en más de 200 países
                 </h1>
                 <div className=" flex justify-center text-center mb-4">
@@ -69,10 +69,12 @@ const EncryptedSim = () => {
         </div>
 
         <div>
-          <div className="max-w-[1100px] justify-center m-auto mt-16 items-center p-4">
-            <h2 className="text-3xl sm:text-4xl font-bold text-center text-[#333333] mt-16 mb-16">
+          <div className="w-4/12 justify-center mx-auto mt-16 items-center p-4 text-center">
+            <h2 className="text-3xl sm:text-4xl font-bold text-[#333333] mt-16 mb-16">
               {t("improveYourSecurity.titleImproveYourSecurity")}
             </h2>
+          </div>
+          <div className="w-9/12 items-center flex justify-center mx-auto">
             <FeaturesList />
           </div>
         </div>
@@ -112,10 +114,6 @@ const EncryptedSim = () => {
             <WhyCallSim />
           </div>
         </div>
-      </div>
-
-      <div className=" flex justify-center">
-        <div className="w-9/12 "></div>
       </div>
 
       <div className="mt-16">

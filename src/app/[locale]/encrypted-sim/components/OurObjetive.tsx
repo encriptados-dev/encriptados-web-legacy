@@ -7,17 +7,27 @@ const OurObjetive = () => {
 
   const t = useTranslations("EncryptedSimPage");
   return (
-    <div className="w-full ">
-      <div className="flex flex-col lg:flex-row justify-between gap-x-5 items-center">
+    <div className="w-full px-4 sm:px-6 lg:px-8">
+      <div className="flex flex-col lg:flex-row justify-center lg:justify-between gap-6 items-center text-center lg:text-left">
+        {/* Texto */}
         <div className="w-full lg:w-5/12">
-          <h1 className="text-3xl font-bold">{t("ourObjetiveTitle")}</h1>
-          <p className="mt-5 text-base sm:text-lg lg:text-xl">
+          <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900">
+            {t("ourObjetiveTitle")}
+          </h1>
+          <p className="mt-4 text-sm sm:text-base lg:text-lg text-gray-700">
             {t("ourObjetiveDescription")}
           </p>
         </div>
 
-        <div className="bg-[#6ADCFF] rounded-3xl p-7 flex justify-center items-center mt-5 lg:mt-0">
-          <Image alt="SimCard" width={400} height={400} src={FloatSimCard} />
+        {/* Imagen */}
+        <div className="bg-[#6ADCFF] rounded-3xl p-6 sm:p-8 flex justify-center items-center mt-6 lg:mt-0">
+          <Image
+            alt="SimCard"
+            width={400}
+            height={400}
+            src={FloatSimCard}
+            className="max-w-full h-auto"
+          />
         </div>
       </div>
     </div>

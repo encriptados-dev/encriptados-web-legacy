@@ -14,7 +14,7 @@ const EncryptedSimBanner = () => {
     <div className="flex flex-col md:flex-row w-full py-0 xl:py-0 bg-white">
       {/* Imagen de la izquierda */}
       <div className=" w-full md:w-1/5 relative overflow-hidden self-end mb-0 object-contain">
-      <Image
+        <Image
           src={Women}
           width={740}
           height={740}
@@ -35,17 +35,17 @@ const EncryptedSimBanner = () => {
           alt="imagen"
           className="h-[35%] object-contain"
         />
-        <h1 className="sm:text-xl md:text-2xl lg:text-2xl xl:text-4xl font-bold text-[#333333]">
+        <h1 className="sm:text-xl md:text-2xl lg:text-2xl xl:text-4xl font-bold text-[#333333] w-11/12">
           {t("encryptedTitle")}
         </h1>
-        <p className="text-black sm:text-xl md:text-base lg:text-lg xl:text-xl 2xl:text-2xl">
+        <p className="text-black sm:text-xl md:text-base lg:text-lg xl:text-xl 2xl:text-2xl  w-11/12">
           {t("encryptedDescription")}
         </p>
       </div>
 
       {/* Imagen de la derecha */}
       <div className=" w-full md:w-1/5 relative overflow-hidden self-end mb-0 object-contain">
-      <Image
+        <Image
           src={Man}
           width={740}
           height={740}

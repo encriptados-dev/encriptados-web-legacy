@@ -1,6 +1,6 @@
 import React from "react";
 
-const CustomShapeDivider: React.FC = () => {
+const CustomShapeProduct: React.FC = () => {
   return (
     <div className="custom-shape-divider-bottom relative ">
       <svg
@@ -11,11 +11,11 @@ const CustomShapeDivider: React.FC = () => {
       >
         <path
           d="M0,0V7.23C0,65.52,268.63,112.77,600,112.77S1200,65.52,1200,7.23V0Z"
-          className="fill-current text-[#f4f8fa]"
+          className="fill-current text-white"
         />
       </svg>
     </div>
   );
 };
 
-export default CustomShapeDivider;
+export default CustomShapeProduct;
