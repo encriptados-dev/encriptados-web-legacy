@@ -27,7 +27,7 @@ const CardProduct: React.FC<CardSimProps> = ({
 
   return (
     <div className="w-full bg-white shadow-lg rounded-2xl overflow-hidden">
-      <div className="p-2 bg-[#D4F2FC]">
+      <div className="p-2 bg-[#B0B0B0]">
         <div className="relative w-full h-32 flex items-center justify-center ">
           <div className="relative w-full h-28 flex items-center justify-center">
             <Image
