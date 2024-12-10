@@ -13,12 +13,9 @@ import { useTranslations } from "next-intl";
 import { PRODUCT_BY_ID_QUERY_KEY } from "@/features/products/constants/queryProductsKeys";
 import Loader from "@/shared/components/Loader";
 import BannerProduct from "./BannerProduct";
-import CustomShapeDivider from "@/app/[locale]/encrypted-sim/components/CustomShapeDivider";
+
 import BannerConnect from "@/app/[locale]/encrypted-sim/components/BannerConnect";
-import {
-  Product,
-  ProductById,
-} from "@/features/products/types/AllProductsResponse";
+import { ProductById } from "@/features/products/types/AllProductsResponse";
 import CustomShapeProduct from "./CustomShapeProduct";
 import SearchInput from "@/shared/components/SearchInput";
 import ListOfPlans from "@/app/[locale]/encrypted-sim/components/ListOfPlans";
@@ -32,22 +29,7 @@ import PayForUse from "@/app/[locale]/encrypted-sim/components/PayForUse";
 import WhyCallSim from "@/app/[locale]/encrypted-sim/components/WhyCallSim/WhyCallSim";
 
 const ProductByIdPage = () => {
-  const t = useTranslations("DeliveryPage");
   const e = useTranslations("EncryptedSimPage");
-  const items = [
-    {
-      title: t("faqs.immediateDelivery.title"),
-      content: t("faqs.immediateDelivery.content"),
-    },
-    {
-      title: t("faqs.whereDelivery.title"),
-      content: t("faqs.whereDelivery.content"),
-    },
-    {
-      title: t("faqs.costDelivery.title"),
-      content: t("faqs.costDelivery.content"),
-    },
-  ];
 
   const { isPending, data } = useQuery({
     queryKey: PRODUCT_BY_ID_QUERY_KEY,

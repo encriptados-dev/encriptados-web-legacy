@@ -4,7 +4,7 @@ import OurSimCard from "../../bne-sim/components/svgs/OurSimCard";
 import AdsClickSvg from "/public/images/bne-sim/svg/ads_click.svg";
 import CellTowerSvg from "/public/images/bne-sim/svg/cell_tower.svg";
 import Rotate_rightSvg from "/public/images/bne-sim/svg/rotate_right.svg";
-import SimCardSvg from "/public/images/bne-sim/svg/sim_card.svg";
+
 import { useTranslations } from "next-intl";
 import Slider from "react-slick";
 import { useEffect, useState } from "react";

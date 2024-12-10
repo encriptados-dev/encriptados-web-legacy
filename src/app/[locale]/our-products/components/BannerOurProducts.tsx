@@ -9,7 +9,7 @@ const BannerOurProducts = () => {
 
   const t = useTranslations("OurProductsPage");
 
-  const { watch, setValue } = useFormContext();
+  const { setValue } = useFormContext();
 
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);

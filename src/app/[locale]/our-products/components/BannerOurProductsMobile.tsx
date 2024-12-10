@@ -1,15 +1,12 @@
-import { watch } from "fs";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 import React from "react";
 import { useFormContext } from "react-hook-form";
 
 const BannerOurProductsMobile = () => {
-  const { watch, setValue } = useFormContext();
+  const { setValue } = useFormContext();
   const BannerBackground = "/images/home/banner-home.png";
   const t = useTranslations("OurProductsPage");
-
-  console.log(watch());
 
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
