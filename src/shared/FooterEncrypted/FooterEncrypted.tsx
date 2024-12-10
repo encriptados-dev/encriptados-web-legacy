@@ -29,6 +29,7 @@ import DFooter from "./payicon/DFooter";
 import LFooter from "./payicon/LFooter";
 import { useTranslations } from "next-intl";
 import Marquee from "react-fast-marquee";
+import DownloadAPKNew from "@/app/[locale]/our-products/components/svgs/DownloadAPKNew";
 
 export default function FooterEncrypted() {
   const t = useTranslations("FooterMenu");
@@ -131,6 +132,7 @@ export default function FooterEncrypted() {
             <div className="flex flex-col space-y-2 items-center md:items-start">
               <AppleSvg />
               <PlayStoreSvg />
+              <DownloadAPKNew width="187" height="55" />
             </div>
 
             <div className="mt-4 flex justify-center md:justify-start">

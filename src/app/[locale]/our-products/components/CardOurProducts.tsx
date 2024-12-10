@@ -24,7 +24,7 @@ const CardOurProducts: React.FC = () => {
       />
 
       <CardSimEsim
-        title="E-SIM Encriptada Planes datos o minutos"
+        title="e-SIM Encriptada Planes datos o minutos"
         description="Subtitle element copy"
         imageSrc={EsimMinutosDatos.src}
         altText="eSim"

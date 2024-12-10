@@ -1,8 +1,8 @@
 import * as React from "react";
 const AppleSvg: React.FC<React.SVGProps<SVGSVGElement>> = (props) => (
   <svg
-    width="183"
-    height="54"
+    width="187"
+    height="55"
     viewBox="0 0 183 54"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"

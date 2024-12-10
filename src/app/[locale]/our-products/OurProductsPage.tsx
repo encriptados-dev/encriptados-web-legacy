@@ -23,9 +23,10 @@ const OurProductsPage = () => {
       <BasicFormProvider
         defaultValue={{
           selectedOption: "sim",
-          provider: "all",
+          provider: "encriptados",
           os: "all",
           license: "all",
+          encriptadosprovider: "all",
         }}
       >
         <div className="block md:hidden">

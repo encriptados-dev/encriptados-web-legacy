@@ -89,7 +89,7 @@ const BannerCards: React.FC = () => {
       {/* Encabezado */}
       <div className="lg:w-1/3 space-y-4">
         <h2 className="text-3xl font-bold text-black">
-          Tu SIM o E-SIM tienen estos superpoderes
+          Tu SIM o e-SIM tienen estos superpoderes
         </h2>
         <p className="text-xl font-light text-black">
           Conéctate con todo el mundo en todo el mundo, cuando lo necesites y

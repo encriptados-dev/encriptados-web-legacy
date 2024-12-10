@@ -2,6 +2,7 @@ import Image from "next/image";
 import AppStore from "/public/images/our-products/svg/app-store.svg";
 import GooglePlay from "/public/images/our-products/svg/google-play.svg";
 import PhoneQr from "/public/images/our-products/phone-qr.png";
+import DownloadAPKNew from "./svgs/DownloadAPKNew";
 
 const Component: React.FC = () => {
   return (
@@ -43,6 +44,14 @@ const Component: React.FC = () => {
                 className="h-[50px] w-auto"
                 priority
               />
+            </a>
+
+            <a
+              href="#"
+              className="inline-block transition-transform hover:scale-105 h-[50px] w-auto"
+              aria-label="Descargar en App Store"
+            >
+              <DownloadAPKNew />
             </a>
           </div>
 
