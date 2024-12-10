@@ -6,34 +6,53 @@ const Features = () => {
   const { currentProduct } = useProductById();
 
   const features = currentProduct?.features;
+
+  // No mostrar el componente si no hay características
+  if (!features || features.length === 0) return null;
+
+  const isSingleFeature = features.length === 1;
+
   return (
     <div className="bg-[#F3F8FA] py-16 px-4 md:px-6 lg:px-8 rounded-2xl">
-      <div className="w-9/12 mx-auto">
-        <h2 className="text-2xl font-bold mb-8 text-gray-800">
+      <div
+        className={`w-full ${
+          !isSingleFeature ? "md:w-9/12" : "md:w-6/12"
+        } mx-auto`}
+      >
+        <h2 className="text-2xl text-center font-bold mb-8 text-gray-800">
           Características principales
         </h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-          {features?.map((feature, index) => (
-            <div key={index} className="flex flex-col">
+        <div
+          className={`grid ${
+            isSingleFeature
+              ? "grid-cols-1"
+              : "grid-cols-1 sm:grid-cols-2 lg:grid-cols-4"
+          } gap-6 justify-center`}
+        >
+          {features.map((feature, index) => (
+            <div
+              key={index}
+              className={`flex flex-col ${
+                isSingleFeature ? "mx-auto max-w-sm" : ""
+              }`}
+            >
               <div className="bg-[#101010] rounded-lg shadow-sm overflow-hidden mb-2 p-4">
-                {/* Contenedor de la imagen con padding */}
                 <div className="flex justify-center items-center h-full">
                   <Image
                     src={feature.image ? feature.image : ""}
                     alt={feature.title}
-                    width={400}
-                    height={400}
+                    width={isSingleFeature ? 100 : 120} // Ajusta el tamaño si es único
+                    height={isSingleFeature ? 100 : 120}
                     quality={100}
-                    className="object-contain" // Para asegurarse que la imagen se ajusta bien
+                    className="object-contain"
                   />
                 </div>
               </div>
               <div className="p-4">
-                {/* Texto separado del contenedor de la imagen */}
-                <h3 className="font-semibold text-black mb-2 text-lg md:text-xl">
+                <h3 className="font-semibold text-black mb-2 text-lg md:text-xl text-center">
                   {feature.title}
                 </h3>
-                <p className="text-sm text-black md:text-base">
+                <p className="text-sm text-[#101010] font-extralight text-center">
                   {feature.content}
                 </p>
               </div>

@@ -29,7 +29,7 @@ const Accordion: FC<AccordionProps> = ({ items, showIcon = true, icon }) => {
 
   return (
     <div className="w-full mx-auto border border-gray-300 text-black rounded-2xl overflow-hidden">
-      {items.map((item, index) => (
+      {items?.map((item, index) => (
         <div key={index} className="border-b border-gray-300">
           <div
             onClick={() => handleToggle(index)}

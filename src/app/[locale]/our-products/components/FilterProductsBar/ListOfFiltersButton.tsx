@@ -22,7 +22,7 @@ const ListOfFiltersButton: React.FC<ListOfFiltersButtonProps> = ({
 
   return (
     <div className="flex gap-x-4 justify-between  ">
-      {items.map((item, index) => (
+      {items?.map((item, index) => (
         <Controller
           key={index}
           name={name}

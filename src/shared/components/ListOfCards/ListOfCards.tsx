@@ -35,7 +35,7 @@ const ListOfCards: React.FC<ListOfFeatureCardsProps> = ({
 
   return (
     <div className={gridClasses}>
-      {items.map((item, index) => (
+      {items?.map((item, index) => (
         <Card
           bgIconCard={bgIconCard}
           key={index}

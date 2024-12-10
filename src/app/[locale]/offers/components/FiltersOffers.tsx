@@ -27,7 +27,7 @@ export default function FiltersOffers({
   return (
     <div className="w-full bg-[#141414] rounded-full p-4">
       <div className="flex gap-x-1">
-        {items.map((item, index) => (
+        {items?.map((item, index) => (
           <Controller
             key={index}
             name={name}

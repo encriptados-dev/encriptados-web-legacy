@@ -11,6 +11,8 @@ export default function CardProduct() {
 
   const { currentProduct } = useProductById();
 
+  console.log(currentProduct?.variants);
+
   return (
     <div className="w-full  rounded-lg overflow-hidden flex flex-col  ">
       <div className=" space-y-4">
