@@ -7,15 +7,15 @@ import ShoppingCart from "@/shared/svgs/ShoppingCart";
 import { useProductById } from "../context/ProductByIdContext";
 
 export default function CardProduct() {
-  const [selectedPlan, setSelectedPlan] = useState("3");
+  const [selectedPlan, setSelectedPlan] = useState<number>(); // Estado inicial sin selección
 
   const { currentProduct } = useProductById();
 
   console.log(currentProduct?.variants);
 
   return (
-    <div className="w-full  rounded-lg overflow-hidden flex flex-col  ">
-      <div className=" space-y-4">
+    <div className="w-full rounded-lg overflow-hidden flex flex-col">
+      <div className="space-y-4">
         <h2 className="text-xl md:text-2xl font-bold text-gray-800">
           {currentProduct?.title}
         </h2>
@@ -30,27 +30,27 @@ export default function CardProduct() {
         </div>
 
         <div className="flex flex-col sm:flex-row gap-4">
-          {["3", "6"].map((months) => (
+          {currentProduct?.variants.map((variant) => (
             <label
-              key={months}
+              key={variant.id}
               className="flex items-center space-x-2 cursor-pointer"
             >
               <div className="relative">
                 <input
                   type="radio"
-                  value={months}
-                  checked={selectedPlan === months}
-                  onChange={() => setSelectedPlan(months)}
+                  value={variant.id}
+                  checked={selectedPlan === variant.id}
+                  onChange={() => setSelectedPlan(variant.id)}
                   className="sr-only"
                 />
                 <div
                   className={`w-4 h-4 border rounded-full ${
-                    selectedPlan === months
+                    selectedPlan === variant.id
                       ? "border-blue-500"
                       : "border-gray-300"
                   }`}
                 >
-                  {selectedPlan === months && (
+                  {selectedPlan === variant.id && (
                     <div className="absolute inset-0 flex items-center justify-center">
                       <div className="w-2 h-2 bg-blue-500 rounded-full"></div>
                     </div>
@@ -58,22 +58,27 @@ export default function CardProduct() {
                 </div>
               </div>
               <span className="text-sm font-medium text-gray-700">
-                {months} Meses
+                {variant.name} ({variant.price}$ {variant.currency})
               </span>
             </label>
           ))}
         </div>
 
-        <div className="space-y-2 flex-col flex ">
+        <div className="space-y-2 flex-col flex">
           <hr className="border-t border-1 border-[#D9D9D9]" />
           <p className="text-sm text-gray-500">Desde</p>
           <p className="text-xl md:text-2xl font-bold text-gray-800 pb-2">
-            {currentProduct?.price}$ USD
+            {selectedPlan
+              ? currentProduct?.variants.find(
+                  (variant) => variant.id === selectedPlan
+                )?.price
+              : currentProduct?.price}
+            $ USD
           </p>
         </div>
       </div>
 
-      <div className="flex flex-col sm:flex-row gap-3 ">
+      <div className="flex flex-col sm:flex-row gap-3">
         <Button
           icon={<ShoppingCart color="white" />}
           iconPosition="right"

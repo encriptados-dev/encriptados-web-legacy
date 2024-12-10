@@ -4,10 +4,7 @@ import EncryptedLogoSvg from "../svgs/EncryptedLogoSvg";
 import AppleSvg from "../svgs/AppleSvg";
 import PlayStoreSvg from "../svgs/PlayStoreSvg";
 import QRFooter from "./icon/QRFooter";
-import LinkedinFooter from "./icon/LinkedinFooter";
 import YoutubeFooter from "./icon/YoutubeFooter";
-import InstagramFooter from "./icon/InstagramFooter";
-import FacebookFooter from "./icon/FacebookFooter";
 import ColombiaFooterFlag from "./icon/ColombiaFooterFlag";
 import ChileFooterFlag from "./icon/ChileFooterFlag";
 import MexicoFooterFlag from "./icon/MexicoFooterFlag";
@@ -74,24 +71,9 @@ export default function FooterEncrypted() {
 
   const socialMedia = [
     {
-      name: "LinkedIn",
-      icon: <LinkedinFooter />,
-      link: "https://www.linkedin.com/company/encriptados-français/",
-    },
-    {
       name: "YouTube",
       icon: <YoutubeFooter />,
       link: "https://www.youtube.com/@encriptados_io",
-    },
-    {
-      name: "Instagram",
-      icon: <InstagramFooter />,
-      link: "https://instagram.com/encriptados.io",
-    },
-    {
-      name: "Facebook",
-      icon: <FacebookFooter />,
-      link: "https://facebook.com/Encriptados.io",
     },
   ];
 
@@ -123,7 +105,7 @@ export default function FooterEncrypted() {
   return (
     <footer className="bg-black text-gray-300 py-8 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto gap-x-6">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-5 lg:grid-cols-5 gap-8">
           <div className="col-span-1 lg:col-span-1 mb-8 flex flex-col items-center md:items-start">
             <EncryptedLogoSvg width={150} height={50} />
             <p className="text-lg mb-4 text-center md:text-left">
@@ -179,21 +161,35 @@ export default function FooterEncrypted() {
             <a
               key={social.name}
               href={social.link}
-              className="text-gray-400 hover:text-white"
+              className="flex items-center space-x-3 text-gray-400 hover:text-white"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <span className="sr-only">{social.name}</span>
               {social.icon}
+              <div>
+                <h1 className="text-sm font-semibold">
+                  Sigue nuestro canal de Youtube
+                </h1>
+                <span className="sr-only">{social.name}</span>
+              </div>
             </a>
           ))}
         </div>
 
-        <div className="text-center mt-8">
-          <p className="text-sm">{t("copyRight")}</p>
-        </div>
         <hr className="w-full border-t border-[#464646] mt-8 mb-4" />
-
+        <div className="flex justify-between items-center text-sm">
+          <div>
+            <Link href="#" className="hover:text-white">
+              Términos y condiciones
+            </Link>
+            {" | "}
+            <Link href="" className="hover:text-white">
+              Política y tratamiento de datos.
+            </Link>
+          </div>
+          <p>{t("copyRight")}</p>
+        </div>
+        <hr className="w-full border-t border-[#464646] mt-4 mb-4" />
         <div>
           <Marquee direction="left" speed={50} gradient={false} delay={0}>
             <div className="flex">
