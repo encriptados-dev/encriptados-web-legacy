@@ -201,7 +201,7 @@ const ProductByIdPage = () => {
             <h1 className="sm:text-xl text-center md:text-base lg:text-lg xl:text-4xl mb-5  font-bold text-[#333333]">
               Preguntas frecuentes
             </h1>
-            <Accordion items={items} />
+            <Accordion items={productData?.data?.faqs} />
           </div>
         </>
       )}
