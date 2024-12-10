@@ -32,20 +32,22 @@ const FilterAppWithLicense = () => {
     ira: (
       <>
         <div className="flex items-center justify-center gap-4">
-          <div>
+          <div className="w-full ">
             <h1 className="text-[rgb(8,93,119)] font-semibold mb-2">
               Servicios
             </h1>
-            <MenuDropdownProductBar
-              name="iraprovider"
-              options={[
-                { label: "Sim Física", value: "physicsimira" },
-                { label: "eSim + Datos", value: "esimplusdataira" },
-                { label: "Recarga Datos", value: "datarechargeira" },
-              ]}
-            />
+            <div className="w-full">
+              <MenuDropdownProductBar
+                name="iraprovider"
+                options={[
+                  { label: "Sim Física", value: "physicsimira" },
+                  { label: "eSim + Datos", value: "esimplusdataira" },
+                  { label: "Recarga Datos", value: "datarechargeira" },
+                ]}
+              />
+            </div>
           </div>
-          <div>
+          <div className="w-full ">
             <h1 className="text-[rgb(8,93,119)] font-semibold mb-2">
               Región y país
             </h1>
@@ -60,7 +62,7 @@ const FilterAppWithLicense = () => {
     tim: (
       <>
         <div className="flex items-center justify-center gap-4">
-          <div>
+          <div className="w-full ">
             <h1 className="text-[rgb(8,93,119)] font-semibold mb-2">
               Servicios
             </h1>
@@ -73,7 +75,7 @@ const FilterAppWithLicense = () => {
               ]}
             />
           </div>
-          <div>
+          <div className="w-full ">
             <h1 className="text-[rgb(8,93,119)] font-semibold mb-2">
               Región y país
             </h1>
