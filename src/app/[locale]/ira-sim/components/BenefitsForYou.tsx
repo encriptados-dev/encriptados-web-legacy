@@ -12,12 +12,12 @@ import { useTranslations } from "next-intl";
 export const BenefitsForYou = () => {
   const t = useTranslations("MayaData");
   return (
-    <div className="flex justify-center flex-col items-center">
+    <div className="flex justify-center flex-col items-center mt-9">
       <h1 className="text-base text-center pt-14 font-bold md:text-3xl xl:text-4xl mb-10">
         {t("allBenefits.title")}
       </h1>
 
-      <div className="w-7/12">
+      <div className="w-full sm:w-8/12 px-4 sm:px-6 md:px-8 lg:px-10 xl:px-12">
         <ListOfCards
           bgIconCard="#E6F4F9"
           centered
@@ -36,7 +36,7 @@ export const BenefitsForYou = () => {
             {
               title: t("allBenefits.connectInstanlyTitle"),
               description: t("allBenefits.connectInstanlyDescription"),
-              icon: <ConnectInstanlySvg />,
+              icon: <ConnectInstanlySvg height={50} width={50} />,
             },
             {
               title: t("allBenefits.globalReachTitle"),

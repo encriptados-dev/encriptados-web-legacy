@@ -30,6 +30,8 @@ const Card: React.FC<CardProps> = ({
       <div
         className="icon"
         style={{
+          padding: 10,
+          borderRadius: 20,
           backgroundColor: bgIconCard,
           display: "inline-flex",
           justifyContent: "center",

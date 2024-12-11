@@ -8,14 +8,15 @@ const WhereUseYourSim = () => {
   const t = useTranslations("MayaData");
   return (
     <>
-      <div className="flex justify-center flex-col items-center ">
-        <h1 className="text-base text-center pt-14 font-bold md:text-3xl xl:text-4xl">
+      <div className="flex items-center flex-col px-4">
+        <h1 className="text-center font-bold text-2xl sm:text-3xl md:text-4xl lg:text-5xl  mb-4 mt-7">
           {t("whereUseSim")}
         </h1>
-        <p className="text-base text-center mt-4   md:text-3xl w-6/12 xl:text-2xl">
+        <p className="text-center text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl w-full sm:w-[350px] md:w-[400px] lg:w-[700px]">
           {t("connectInternet")}
         </p>
       </div>
+
       <BasicFormProvider
         defaultValue={{
           selectedcardvalue: "esim_recharge",
