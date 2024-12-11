@@ -1,5 +1,4 @@
 import React from "react";
-import Image from "next/image";
 import { useProductById } from "../context/ProductByIdContext";
 
 const Features = () => {
@@ -7,7 +6,6 @@ const Features = () => {
 
   const features = currentProduct?.features;
 
-  // No mostrar el componente si no hay características
   if (!features || features.length === 0) return null;
 
   const isSingleFeature = features.length === 1;
@@ -36,15 +34,17 @@ const Features = () => {
                 isSingleFeature ? "mx-auto max-w-sm" : ""
               }`}
             >
-              <div className="bg-[#101010] rounded-lg shadow-sm overflow-hidden mb-2 p-4">
-                <div className="flex justify-center items-center h-full">
-                  <Image
+              <div className="bg-[#101010] rounded-lg shadow-sm overflow-hidden mb-2">
+                <div
+                  className="relative w-full"
+                  style={{
+                    paddingTop: "100%", // Mantiene la proporción 1:1
+                  }}
+                >
+                  <img
                     src={feature.image ? feature.image : ""}
                     alt={feature.title}
-                    width={isSingleFeature ? 100 : 120} // Ajusta el tamaño si es único
-                    height={isSingleFeature ? 100 : 120}
-                    quality={100}
-                    className="object-contain"
+                    className="absolute top-0 left-0 w-full h-full object-contain p-4"
                   />
                 </div>
               </div>
