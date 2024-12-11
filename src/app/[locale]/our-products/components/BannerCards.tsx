@@ -1,6 +1,6 @@
 "use client";
 
-import OurSimCard from "../../bne-sim/components/svgs/OurSimCard";
+import OurSimCard from "../../tim-sim/components/svgs/OurSimCard";
 import AdsClickSvg from "/public/images/bne-sim/svg/ads_click.svg";
 import CellTowerSvg from "/public/images/bne-sim/svg/cell_tower.svg";
 import Rotate_rightSvg from "/public/images/bne-sim/svg/rotate_right.svg";

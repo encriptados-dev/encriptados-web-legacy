@@ -4,7 +4,7 @@ import FilterProductsBar from "./components/FilterProductsBar/FilterProductsBar"
 import CardOurProducts from "./components/CardOurProducts";
 import BannerActivate from "./components/BannerActivate";
 import BannerCards from "./components/BannerCards";
-import AnonymousBanner from "../bne-sim/components/BannerAnonymous";
+import AnonymousBanner from "../tim-sim/components/BannerAnonymous";
 import BannerCoverage from "@/shared/BannerCoverage";
 import BannerSecureMdm from "./components/BannerSecureMdm";
 import DownloadAppBanner from "./components/DownloadAppBanner";

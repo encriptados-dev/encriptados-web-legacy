@@ -28,7 +28,7 @@ const BneSimPage = () => {
               console.log(data);
             }}
           >
-            <StepperBuy optionType="bne" />
+            <StepperBuy optionType="timsim" />
           </BasicFormProvider>
         </div>
         <div className="mb-20 px-6">

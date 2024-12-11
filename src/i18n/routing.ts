@@ -39,20 +39,20 @@ export const routing = defineRouting({
       pt: "/ira-sim/servico-de-pagamento",
     },
 
-    "/bne-sim": {
-      en: "/bne-sim",
-      es: "/bne-sim",
-      fr: "/bne-sim",
-      it: "/bne-sim",
-      pt: "/bne-sim",
+    "/tim-sim": {
+      en: "/tim-sim",
+      es: "/tim-sim",
+      fr: "/tim-sim",
+      it: "/tim-sim",
+      pt: "/tim-sim",
     },
 
-    "/bne-sim/payment-service": {
-      en: "/bne-sim/payment-service",
-      es: "/bne-sim/servicio-de-pago",
-      fr: "/bne-sim/service-de-paiement",
-      it: "/bne-sim/servizio-di-pagamento",
-      pt: "/bne-sim/servico-de-pagamento",
+    "/tim-sim/payment-service": {
+      en: "/tim-sim/payment-service",
+      es: "/tim-sim/servicio-de-pago",
+      fr: "/tim-sim/service-de-paiement",
+      it: "/tim-sim/servizio-di-pagamento",
+      pt: "/tim-sim/servico-de-pagamento",
     },
 
     "/where-to-find-encrypted": {

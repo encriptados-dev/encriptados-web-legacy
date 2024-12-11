@@ -10,7 +10,7 @@ import RechargeSim from "../RechargeSim/RechargeSim";
 const StepperBuy = ({
   optionType,
 }: {
-  optionType?: "irasim" | "bne" | "encriptados-sim";
+  optionType?: "irasim" | "timsim" | "encriptados-sim";
 }) => {
   const { watch, setValue } = useFormContext();
 
@@ -90,10 +90,9 @@ const StepperBuy = ({
             ),
           },
         ]
-      : optionType === "irasim"
+      : optionType === "irasim" || optionType === "timsim"
       ? allOptions
       : null;
-
   const renderOptions: { [key: string]: JSX.Element } = {
     esim_recharge: <SimData />,
     recharge_esim: <RechargeSim />,
