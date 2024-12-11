@@ -13,8 +13,7 @@ interface SelectCardProps {
 
 const Region: React.FC<SelectCardProps> = ({ name, options }) => {
   const { control, watch, setValue } = useFormContext<FieldValues>();
-
-  console.log(watch());
+  const selectedValue = watch(name);
 
   return (
     <Controller
@@ -22,9 +21,7 @@ const Region: React.FC<SelectCardProps> = ({ name, options }) => {
       control={control}
       defaultValue=""
       render={({ field: { onChange } }) => (
-        <div
-          className={"flex gap-x-4"} // Una columna en móviles y 3 en pantallas medianas y grandes
-        >
+        <div className="w-full flex gap-4">
           {options.map((option, index) => (
             <div
               key={index}
@@ -32,16 +29,18 @@ const Region: React.FC<SelectCardProps> = ({ name, options }) => {
                 setValue(name, option.value);
                 onChange(option.value);
               }}
-              className={`flex  w-[100px] items-center justify-center py-4 cursor-pointer shadow-md rounded-full text-center  transition duration-200 ease-in-out ${
-                watch(name) === option.value
+              className={`flex w-full sm:w-[calc(33.33%-8px)] items-center justify-center py-4 cursor-pointer shadow-md rounded-full text-center transition duration-200 ease-in-out ${
+                selectedValue === option.value
                   ? "bg-white font-bold"
                   : "bg-gray-300"
               }`} // Cambia el fondo según la selección
             >
               <span
                 className={`${
-                  watch(name) === option.value ? "text-black" : "text-gray-600"
-                }`}
+                  selectedValue === option.value
+                    ? "text-black"
+                    : "text-gray-600"
+                } text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl`}
               >
                 {option.label}
               </span>

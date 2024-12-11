@@ -33,7 +33,7 @@ const SearchInput = ({
         type="text"
         placeholder={placeholder}
         {...register(name)}
-        className={`py-4 border rounded-full border-gray-400 flex-grow ${
+        className={`py-4 border rounded-full border-gray-400  flex-grow ${
           iconPosition === "left" ? "pl-10 pr-3" : "pl-3 pr-10"
         } ${inputClassName}`}
       />

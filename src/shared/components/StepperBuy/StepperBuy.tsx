@@ -100,7 +100,7 @@ const StepperBuy = ({
 
   return (
     <>
-      <div className="w-full flex justify-center items-center">
+      <div className="w-full">
         <SelectCard options={filteredOptions} name="selectedcardvalue" />
       </div>
 
