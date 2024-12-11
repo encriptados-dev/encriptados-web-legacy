@@ -46,11 +46,10 @@ const ProductByIdPage = () => {
   }
 
   const titlesOfSims = [
-    "Plan de minutos para SIM Encriptada",
-    "eSIM - SIM Electrónica Encriptada",
-    "Cambio IMSI para SIM Encriptada",
-    "Plan de datos para SIM Encriptada",
-    "Encriptados SIM Card Encriptada",
+    "eSIM Virtual",
+    "SIM Física",
+    "Recarga de cambio de IMSI",
+    "Recarga de Datos",
   ];
 
   return (
