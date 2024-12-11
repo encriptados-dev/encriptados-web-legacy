@@ -19,6 +19,15 @@ const BneSimPage = () => {
         </div>
 
         <div id="use-your-sim" className="mb-36">
+          <div className="flex items-center flex-col px-4">
+            <h1 className="text-center font-bold text-2xl sm:text-3xl md:text-4xl lg:text-5xl  mb-4 mt-4">
+              ¿Donde vas a usar tu SIM?
+            </h1>
+            <p className="text-center text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl w-full sm:w-[350px] md:w-[400px] lg:w-[700px]">
+              Conéctate a Internet con tu SIM o eSIM en más de 200 países.
+              Disfruta de internet seguro y con total anonimato.
+            </p>
+          </div>
           <BasicFormProvider
             defaultValue={{
               selectedcardvalue: "esim_recharge",
