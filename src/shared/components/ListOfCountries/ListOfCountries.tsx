@@ -48,7 +48,7 @@ const CountryList: React.FC = () => {
 
   const currentRedirect: Record<string, string> = {
     irasim: "ira-sim/payment-service#buy-section",
-    bne: "bne-sim/payment-service#buy-section",
+    timsim: "tim-sim/payment-service#buy-section",
   };
 
   return (
