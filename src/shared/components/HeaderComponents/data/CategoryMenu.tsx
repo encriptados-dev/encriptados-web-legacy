@@ -25,7 +25,7 @@ export function useTranslatedProductsCategories(): any {
         },
         {
           title: t("sims.items.iraSim.title", { defaultValue: "SIM IRA" }),
-          link: "/bne-sim",
+          link: "/ira-sim",
           image:
             "/images/mega-menu/sims/ira_sim_encriptados_preview_menu_web.jpg",
           description: t("sims.items.iraSim.description", {
@@ -34,7 +34,7 @@ export function useTranslatedProductsCategories(): any {
         },
         {
           title: t("sims.items.timSim.title", { defaultValue: "SIM TIM" }),
-          link: "/ira-sim",
+          link: "/tim-sim",
           image:
             "/images/mega-menu/sims/tim_sim_encriptados_preview_menu_web.jpg",
           description: t("sims.items.timSim.description", {
