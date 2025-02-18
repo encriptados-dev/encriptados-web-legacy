@@ -8,12 +8,12 @@ const BannerConnectBne: React.FC = () => {
   return (
     <>
     <div
-    style={{
-      background:
-        'radial-gradient(circle at -15% 37%, rgba(0, 157, 255,0.8) 0%, rgba(0, 157, 255,0.9) 3%, rgba(25,25,25,1) 20%, rgba(25,25,25,1) 60%)',
-    }}
-    className="relative w-full h-[80vh] flex items-end"
-    >
+  style={{
+    background:
+      'radial-gradient(circle at -15% 37%, rgba(0,157,255,0.8) 0%, rgba(0,157,255,0.9) 3%, rgba(25,25,25,1) 20%, rgba(25,25,25,1) 60%)',
+  }}
+  className="relative w-full h-[80vh] flex flex-col md:flex-row items-end"
+>
       {/* Contenedor principal */}
       <div className="container mx-auto px-4 py-4 max-w-[1200px] relative h-full flex justify-between items-start">
         
@@ -23,7 +23,7 @@ const BannerConnectBne: React.FC = () => {
           <Image
             src="/images/bne-sim/Frame 480956513.png"
             alt="SIM TIM Logo"
-            width={130}
+            width={150}
             height={30}
             priority
             className="mb-4"
