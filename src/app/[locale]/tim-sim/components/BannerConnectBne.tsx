@@ -7,60 +7,52 @@ const BannerConnectBne: React.FC = () => {
 
   return (
     <>
-    <div
-  style={{
-    background:
-      'radial-gradient(circle at -15% 37%, rgba(0,157,255,0.8) 0%, rgba(0,157,255,0.9) 3%, rgba(25,25,25,1) 20%, rgba(25,25,25,1) 60%)',
-  }}
-  className="relative w-full h-[80vh] flex flex-col md:flex-row items-end"
->
-      {/* Contenedor principal */}
-      <div className="container mx-auto px-4 py-4 max-w-[1200px] relative h-full flex justify-between items-start">
-        
-        {/* 📌 Contenedor de texto */}
-        <div className="w-[50%] flex flex-col justify-center items-start text-white h-full transform -translate-y-20 -translate-x-40">
-        {/* Sim TIM Logo */}
-          <Image
-            src="/images/bne-sim/Frame 480956513.png"
-            alt="SIM TIM Logo"
-            width={150}
-            height={30}
-            priority
-            className="mb-4"
-          />
+      <div
+        style={{
+          background:
+            'radial-gradient(circle at -15% 37%, rgba(0,157,255,0.8) 0%, rgba(0,157,255,0.9) 3%, rgba(25,25,25,1) 20%, rgba(25,25,25,1) 60%)',
+        }}
+        className="relative w-full h-[80vh] flex flex-col md:flex-row items-end"
+      >
+        {/* 📌 Contenedor principal */}
+        <div className="container mx-auto px-4 py-4 max-w-[1200px] relative h-full flex justify-between items-start">
+          
+          {/* 📌 Contenedor de texto */}
+          <div className="w-full md:w-[50%] flex flex-col justify-center items-center md:items-start text-white h-full mt-[-80px] sm:mt-[-30px] md:mt-0">
+            
+            {/* 📌 Imagen ajustada en móvil */}
+            <Image
+              src="/images/bne-sim/Frame 480956513.png"
+              alt="SIM TIM Logo"
+              width={120} 
+              height={25} 
+              priority
+              className="mb-4 md:w-[150px] md:h-[30px] md:mx-0 mx-auto"
+            />
 
-          <h2 className="text-4xl md:text-5xl font-bold mb-4 leading-tight">
-            {t('headline')} <br />
-            <span className="text-[#10b4e7]">{t('headline1')}</span>
-            <span className="text-[#10b4e7]">{t('headline2')}</span>
-          </h2>
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 leading-tight md:text-left text-center">
+              {t('headline')} <br />
+              <span className="text-[#10b4e7]">{t('headline1')}</span>
+              <span className="text-[#10b4e7]">{t('headline2')}</span>
+            </h2>
 
-          <p className="text-2xl">
-            {t('subheadline')} <br />
-            {t('subheadline2')}
-          </p>
+            <p className="text-lg sm:text-xl md:text-2xl md:text-left text-center">
+              {t('subheadline')} <br /> {t('subheadline2')}
+            </p>
+          </div>
         </div>
-      </div>
 
          {/* 📌 Contenedor de imagen (Derecha) */}
          <div className="absolute bottom-0 right-0 w-[60%] h-full flex items-end justify-center">
             {/* Imagen del logo grande (Fondo) */}
             <Image
-              src="/images/bne-sim/tim_logo_600px_positivo 1.png"
-              alt="TIM Logo"
-              width={900}
-              height={600}
-              priority
-              className="
-                absolute 
-                bottom-10 
-                right-20 
-                -z-9 
-                transform 
-                scale-75 
-                translate-x-4
-              "
-            />
+            src="/images/bne-sim/tim_logo_600px_positivo 1.png"
+            alt="TIM Logo"
+            width={900}
+            height={600}
+            priority
+            className="absolute -bottom-10 -z-9 transform scale-75 translate-x-4 hidden md:block"
+          />
 
             {/* Imagen de la persona */}
             <Image
@@ -69,10 +61,17 @@ const BannerConnectBne: React.FC = () => {
               width={500}
               height={600}
               priority
-              className="h-auto object-cover z-10 scale-60"
+              className="
+                h-auto object-cover 
+                absolute bottom-[-20px] sm:bottom-0 
+                left-[10%] sm:left-1/2 transform -translate-x-[10%] sm:-translate-x-1/2
+                z-0 sm:z-10 
+                scale-90 sm:scale-100
+                opacity-100
+              "
             />
 
-          {/* Contenedor principal (ocupa todo el ancho, se ubica en la parte inferior) */}
+          {/* Contenedor principal */}
           <div
             className="
               absolute 
@@ -91,7 +90,7 @@ const BannerConnectBne: React.FC = () => {
   {/* Contenedor principal (relative) */}
         <div className="relative w-full h-full z-20">
           {/* Etiqueta 1 */}
-          <div className="absolute" style={{ top: '80px', left: '220px' }}>
+          <div className="absolute" style={{ top: '80px', left: '160px' }}>
             <Image
               src="/images/bne-sim/Frame 480955929.png"
               alt="Total anonimato"
@@ -100,7 +99,7 @@ const BannerConnectBne: React.FC = () => {
             />
           </div>
           {/* Etiqueta 2 */}
-          <div className="absolute" style={{ top: '180px', left: '150px' }}>
+          <div className="absolute" style={{ top: '180px', left: '80px' }}>
             <Image
               src="/images/bne-sim/Frame 480955935.png"
               alt="Sin recargos Roaming"
@@ -109,7 +108,7 @@ const BannerConnectBne: React.FC = () => {
             />
           </div>
           {/* Etiqueta 3 */}
-          <div className="absolute" style={{ top: '320px', left: '170px' }}>
+          <div className="absolute" style={{ top: '300px', left: '120px' }}>
             <Image
               src="/images/bne-sim/Frame 480955934.png"
               alt="Compatible iOS y Android"
@@ -131,7 +130,7 @@ const BannerConnectBne: React.FC = () => {
             />
           </div>
           {/* Etiqueta 2 */}
-          <div className="absolute" style={{ top: '180px', left: '130px' }}>
+          <div className="absolute" style={{ top: '180px', left: '140px' }}>
             <Image
               src="/images/bne-sim/Frame 480955936.png"
               alt="Sin recargos Roaming"
@@ -140,7 +139,7 @@ const BannerConnectBne: React.FC = () => {
             />
           </div>
           {/* Etiqueta 3 */}
-          <div className="absolute" style={{ top: '320px', left: '170px' }}>
+          <div className="absolute" style={{ top: '300px', left: '90px' }}>
             <Image
               src="/images/bne-sim/Frame 480956514.png"
               alt="Compatible iOS y Android"
