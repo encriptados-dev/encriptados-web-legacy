@@ -348,3 +348,39 @@ export function useTranslatedOthersCategories(): any[] {
     },
   ];
 }
+
+// Hook para obtener las categorías de "Nosotros" traducidas
+export function useTranslatedUsCategories(): any[] {
+  const t2 = useTranslations("usCategories");
+
+  return [
+    {
+      title: t2("aboutUs.title", { defaultValue: "Nosotros" }),
+      description: t2("aboutUs.description", {
+        defaultValue: "Conoce más sobre nuestra misión y valores.",
+      }),
+      image: "/images/mega-menu/nosotros.jpeg",
+      link: "/nosotros",
+      items: [],
+    },
+    {
+      title: t2("ambassador.title", { defaultValue: "Sé Embajador" }),
+      description: t2("ambassador.description", {
+        defaultValue: "Únete a nuestro programa de embajadores.",
+      }),
+      image: "/images/mega-menu/embajador.jpeg",
+      link: "/nosotros/embajador",
+      items: [],
+    },
+    {
+      title: t2("locations.title", { defaultValue: "Donde Estamos" }),
+      description: t2("locations.description", {
+        defaultValue: "Descubre nuestras ubicaciones en todo el mundo.",
+      }),
+      image: "/images/mega-menu/lugares.jpeg",
+      link: "/nosotros/lugares",
+      items: [],
+    },
+  ];
+}
+

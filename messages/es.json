@@ -944,7 +944,20 @@
       "description": "Descubre nuestras ofertas"
     }
   },
-
+  "usCategories": {
+    "aboutUs": {
+      "title": "Nosotros",
+      "description": "Conoce más sobre nuestra misión y valores."
+    },
+    "ambassador": {
+      "title": "Sé Embajador",
+      "description": "Únete a nuestro programa de embajadores."
+    },
+    "locations": {
+      "title": "Dónde Estamos",
+      "description": "Descubre nuestras ubicaciones en todo el mundo."
+    }
+  },
   "menuMobile": {
     "openMenu": "Abrir menú",
     "login": "Ingresar",
@@ -966,6 +979,7 @@
     "menu": {
       "products": "Productos",
       "others": "Otros",
+      "us": "Nosotros",
       "store": {
         "label": "Tienda",
         "new": "Nuevo"

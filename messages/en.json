@@ -146,7 +146,12 @@
         "securityTest": "Security Test",
         "offers": "Offers"
       },
-      "aboutUs": "About Us"
+      "us": {
+      "title": "Us",
+      "aboutUs": "About Us",
+      "ambassador": "Be an Ambassador",
+      "locations": "Where We Are"
+    }
     }
   },
   "FooterMenu": {
@@ -941,6 +946,20 @@
       "description": "Discover our offers"
     }
   },
+    "usCategories": {
+    "aboutUs": {
+      "title": "About Us",
+      "description": "Learn more about our mission and values."
+    },
+    "ambassador": {
+      "title": "Be an Ambassador",
+      "description": "Join our ambassador program."
+    },
+    "locations": {
+      "title": "Where We Are",
+      "description": "Discover our locations around the world."
+    }
+  },
   "menuMobile": {
     "openMenu": "Open menu",
     "login": "Log in",
@@ -950,7 +969,8 @@
     },
     "categories": {
       "products": "Products",
-      "others": "Others"
+      "others": "Others",
+      "us": "Us"
     },
     "aboutUs": "About us",
     "suggestions": {
@@ -962,6 +982,7 @@
     "menu": {
       "products": "Products",
       "others": "Others",
+      "us": "Us",
       "store": {
         "label": "Store",
         "new": "New"

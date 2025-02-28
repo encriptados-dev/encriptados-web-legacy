@@ -11,6 +11,7 @@ import Link from "next/link";
 import {
   useTranslatedProductsCategories,
   useTranslatedOthersCategories,
+  useTranslatedUsCategories
 } from "./HeaderComponents/data/CategoryMenu";
 import WorldIcon from "../svgs/WorldIcon";
 import { useTranslations } from "next-intl";
@@ -20,10 +21,11 @@ export default function EncryptedHeader() {
 
   const productsCategories = useTranslatedProductsCategories(); // Obtén las categorías traducidas
   const othersCategories = useTranslatedOthersCategories(); // Obtén las otras categorías traducidas
+  const usCategories = useTranslatedUsCategories(); // Obtén Nosotros traducidos
 
   const [isMobile, setIsMobile] = useState(false);
   const [isDesktopMenuOpen, setIsDesktopMenuOpen] = useState(false);
-  const [currentMenu, setCurrentMenu] = useState<"products" | "others">(
+  const [currentMenu, setCurrentMenu] = useState<"products" | "others" | "us">(
     "products"
   );
   const [activeCategory, setActiveCategory] = useState(0);
@@ -63,22 +65,26 @@ export default function EncryptedHeader() {
   }, []);
 
   // Maneja el cambio de menú (productos u otros)
-  const handleMenuChange = (menu: "products" | "others") => {
+  const handleMenuChange = (menu: "products" | "others" | "us") => {
     setCurrentMenu(menu);
     setActiveCategory(0);
     setHoveredItem(
       menu === "products"
         ? productsCategories[0]?.items[0]
-        : othersCategories[0]?.items[0]
+        : menu === "others"
+        ? othersCategories[0]?.items[0]
+        : usCategories[0]?.items[0]
     );
     setIsDesktopMenuOpen(true);
   };
 
   // Memoriza las categorías actuales para optimizar renders
-  const currentCategories = useMemo(
-    () => (currentMenu === "products" ? productsCategories : othersCategories),
-    [currentMenu]
-  );
+  const currentCategories = useMemo(() => {
+    if (currentMenu === "products") return productsCategories;
+    if (currentMenu === "others") return othersCategories;
+    if (currentMenu == "us") return usCategories;
+    return usCategories;
+  }, [currentMenu]);
 
   // Renderizado para dispositivos móviles
   if (isMobile) {
@@ -128,13 +134,13 @@ export default function EncryptedHeader() {
               />
 
               {/* Nosotros */}
-              <Link
-                href="/nosotros"
-                prefetch
-                className="text-sm ml-4 text-gray-300 hover:text-white transition-colors"
-              >
-                {t("menu.aboutUs")}
-              </Link>
+              <Navigation
+                isOpen={isDesktopMenuOpen && currentMenu == "us"}
+                setIsOpen={() => handleMenuChange("us")}
+                label={t("menu.us")}
+                buttonClassName="px-4 py-2"
+              />
+               
 
               {/* Ingresar */}
               <Link
