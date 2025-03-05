@@ -149,7 +149,7 @@
       "us": {
       "title": "Us",
       "aboutUs": "About Us",
-      "ambassador": "Be an Ambassador",
+      "ambassadors": "Be an Ambassador",
       "locations": "Where We Are"
     }
     }
@@ -951,7 +951,7 @@
       "title": "About Us",
       "description": "Learn more about our mission and values."
     },
-    "ambassador": {
+    "ambassadors": {
       "title": "Be an Ambassador",
       "description": "Join our ambassador program."
     },

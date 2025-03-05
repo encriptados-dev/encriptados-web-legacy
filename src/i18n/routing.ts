@@ -79,6 +79,14 @@ export const routing = defineRouting({
       pt: "/sobre-nos",
     },
 
+    "/ambassadors": {
+      en: "/ambassadors",
+      es: "/embajadores",
+      fr: "/ambassadeurs",
+      it: "/ambasciatori",
+      pt: "/embaixadores",
+    },
+
     "/news": {
       en: "/news",
       es: "/noticias",
