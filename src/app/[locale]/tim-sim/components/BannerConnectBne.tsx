@@ -1,5 +1,4 @@
 import Image from 'next/image';
-import BannerBne from '/public/images/bne-sim/image-banner-bne.png';
 import { useTranslations } from 'next-intl';
 
 const BannerConnectBne: React.FC = () => {
