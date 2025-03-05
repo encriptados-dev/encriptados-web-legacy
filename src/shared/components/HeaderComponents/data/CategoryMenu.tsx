@@ -325,7 +325,7 @@ export function useTranslatedOthersCategories(): any[] {
         defaultValue: "Últimas noticias y actualizaciones",
       }),
       link: "/blog",
-      image: "/images/mega-menu/blog.jpeg",
+      image: "/images/mega-menu/Blog.jpeg",
       items: [],
     },
     {
