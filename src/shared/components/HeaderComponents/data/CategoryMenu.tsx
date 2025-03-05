@@ -315,7 +315,7 @@ export function useTranslatedOthersCategories(): any[] {
       description: t2("distributors.description", {
         defaultValue: "Conviértete en distribuidor de nuestros productos",
       }),
-      image: "/images/mega-menu/distribuidores.jpeg",
+      image: "/images/mega-menu/Distribuidores.jpeg",
       link: "/distributors",
       items: [],
     },
