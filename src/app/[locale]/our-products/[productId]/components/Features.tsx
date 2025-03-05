@@ -41,7 +41,7 @@ const Features = () => {
                     paddingTop: "100%", // Mantiene la proporción 1:1
                   }}
                 >
-                  <img
+                  <image
                     src={feature.image ? feature.image : ""}
                     alt={feature.title}
                     className="absolute top-0 left-0 w-full h-full object-contain p-4"
