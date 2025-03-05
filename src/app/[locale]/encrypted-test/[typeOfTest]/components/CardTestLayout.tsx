@@ -16,7 +16,7 @@ export default function CardTestLayout({
 
           <div className="hidden lg:block relative">
             <div className="absolute inset-0 bg-gradient-to-br rounded-2xl" />
-            <img
+            <image
               src={ManCoffe}
               alt="Security illustration"
               className="w-full h-full object-cover rounded-2xl"

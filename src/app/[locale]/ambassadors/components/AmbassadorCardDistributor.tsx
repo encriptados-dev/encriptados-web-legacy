@@ -29,7 +29,7 @@ export default function AmbassadorCardDistributor({
   return (
     <div className="w-full max-w-md  text-white rounded-2xl overflow-hidden shadow-lg">
       <div className="relative h-[300px] overflow-hidden">
-        <img src={image} alt="" className="w-full h-full object-cover" />
+        <image src={image} alt="" className="w-full h-full object-cover" />
       </div>
       <div className="p-6 space-y-6 bg-[#151515]">
         <div className="flex items-center gap-2">
