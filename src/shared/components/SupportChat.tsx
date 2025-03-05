@@ -73,7 +73,7 @@ export default function SupportChat() {
       >
         <div className="p-4">
           <div className="flex items-center space-x-4">
-            <image
+            <img
               src={SupportGirl}
               alt="Soporte"
               className="w-9 h-9 rounded-full object-cover"
