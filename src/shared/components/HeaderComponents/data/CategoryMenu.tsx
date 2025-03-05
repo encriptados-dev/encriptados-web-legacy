@@ -364,14 +364,14 @@ export function useTranslatedUsCategories(): any[] {
       items: [],
     },
     {
-      title: t2("ambassador.title", { defaultValue: "Sé Embajador" }),
-      description: t2("ambassador.description", {
+      title: t2("ambassadors.title", { defaultValue: "Embajadores" }),
+      description: t2("ambassadors.description", {
         defaultValue: "Únete a nuestro programa de embajadores.",
       }),
       image: "/images/mega-menu/embajador.jpeg",
-      link: "/nosotros/embajador",
+      link: "/ambassadors",
       items: [],
-    },
+    },    
     {
       title: t2("locations.title", { defaultValue: "Donde Estamos" }),
       description: t2("locations.description", {
