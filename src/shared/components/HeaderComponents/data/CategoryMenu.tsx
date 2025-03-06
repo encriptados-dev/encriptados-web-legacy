@@ -378,7 +378,7 @@ export function useTranslatedUsCategories(): any[] {
         defaultValue: "Descubre nuestras ubicaciones en todo el mundo.",
       }),
       image: "/images/mega-menu/lugares.jpeg",
-      link: "/nosotros/lugares",
+      link: "/where-to-find-us",
       items: [],
     },
   ];
