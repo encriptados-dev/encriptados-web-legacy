@@ -6,16 +6,6 @@ const ModalJoinUsDeliveries = () => {
 
   return (
     <>
-      {/* Botón para abrir el modal */}
-      <div className="flex justify-center my-6">
-        <button
-          onClick={() => setIsOpen(true)}
-          className="bg-blue-500 text-white px-6 py-3 rounded-lg font-semibold shadow-lg hover:bg-blue-600 transition"
-        >
-          Regístrate Ahora
-        </button>
-      </div>
-
       {/* Modal */}
       {isOpen && (
         <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center">

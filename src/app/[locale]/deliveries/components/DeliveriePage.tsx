@@ -4,11 +4,12 @@ import BannerDeliveries from "./BannerDeliveries";
 import DeliveriesMap from "./DeliveriesMap";
 import HowItWorksDeliveries from "./HowItWorksDeliveries";
 import FeaturedProductsDeliveries from "./FeaturedProductsDeliveries";
-import JoinUsDeliveries from "./JoinUsDeliveries";
 import ModalJoinUsDeliveries from "./ModalJoinUsDeliveries";
 import FAQDeliveries from "./FAQDeliveries";
 import { JoinUsModalProvider } from "../context/JoinUsModalContext";
 import { BasicFormProvider } from "@/shared/components/BasicFormProvider";
+import LogoCarousel from "./LogoCarousel";
+import RenatiEncryptedCellphone from "./RenatiEncryptedCellphone";
 
 const DeliveriesPage = () => {
   return (
@@ -19,8 +20,9 @@ const DeliveriesPage = () => {
           <BannerDeliveries />
           <DeliveriesMap />
           <HowItWorksDeliveries />
+          <RenatiEncryptedCellphone />
           <FeaturedProductsDeliveries />
-          <JoinUsDeliveries />
+          <LogoCarousel />
           <FAQDeliveries />
         </JoinUsModalProvider>
       </BasicFormProvider>
