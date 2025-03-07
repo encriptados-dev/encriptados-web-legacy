@@ -959,6 +959,9 @@
       "label": "Boutique",
       "new": "Nouveau"
     },
+    "deliveries":{
+      "label": "Livraisons"
+    },
     "categories": {
       "products": "Produits",
       "others": "Autres"
@@ -978,6 +981,7 @@
         "label": "Boutique",
         "new": "Nouveau"
       },
+      "deliveries":"livraisons",
       "aboutUs": "À propos de nous",
       "login": "Se connecter",
       "notAvailable": "Non disponible",

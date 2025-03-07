@@ -967,6 +967,9 @@
       "label": "Store",
       "new": "New"
     },
+    "deliveries":{
+      "label": "Deliveries"
+    },
     "categories": {
       "products": "Products",
       "others": "Others",
@@ -987,6 +990,7 @@
         "label": "Store",
         "new": "New"
       },
+      "deliveries":"Deliveries",
       "aboutUs": "About Us",
       "login": "Log In",
       "notAvailable": "Not Available",

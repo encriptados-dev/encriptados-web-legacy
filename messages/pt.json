@@ -958,6 +958,9 @@
       "label": "Loja",
       "new": "Novo"
     },
+    "deliveries":{
+      "label": "Entregas"
+    },
     "categories": {
       "products": "Produtos",
       "others": "Outros"
@@ -977,6 +980,7 @@
         "label": "Loja",
         "new": "Novo"
       },
+      "deliveries":"entregas",
       "aboutUs": "Sobre nós",
       "login": "Entrar",
       "notAvailable": "Não disponível",

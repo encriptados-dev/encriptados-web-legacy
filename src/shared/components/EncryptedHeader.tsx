@@ -117,6 +117,14 @@ export default function EncryptedHeader() {
                 </span>
               </Link>
 
+              <Link
+                href="/deliveries"
+                prefetch
+                className="px-4 py-2 text-sm text-white hover:bg-[#054d6121] rounded-full transition-colors"
+              >
+                {t("menu.deliveries", { defaultValue: "Entregas" })}
+              </Link>
+              
               {/* Navegación de Productos */}
               <Navigation
                 isOpen={isDesktopMenuOpen && currentMenu === "products"}

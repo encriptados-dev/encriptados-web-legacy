@@ -40,16 +40,7 @@ export function useTranslatedProductsCategories(): any {
           description: t("sims.items.timSim.description", {
             defaultValue: "Conoce cómo funciona la SIM TIM",
           }),
-        },
-        {
-          title: t("test.title", { defaultValue: "Test" }),
-          description: t("test.description", {
-            defaultValue: "Últimas noticias y actualizaciones",
-          }),
-          link: "/test", // la ruta base
-          image: "/images/mega-menu/blog.jpeg",
-          items: [],
-        },    
+        }   
       ],
     },
     {
