@@ -3,7 +3,7 @@ import React from "react";
 const FeaturedProductCard = () => {
   return (
     <section className="py-10 bg-[#EAF2F6] flex justify-center">
-      <div className="relative w-full max-w-4xl rounded-2xl p-6 flex items-center overflow-hidden"
+      <div className="relative w-full max-w-6xl rounded-2xl p-6 flex items-center overflow-hidden"
         style={{
           background: "linear-gradient(160deg, black 40%, #740000 80%, red 100%)"
         }}

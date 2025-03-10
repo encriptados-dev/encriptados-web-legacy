@@ -28,7 +28,7 @@ const HowItWorksDeliveries = () => {
   return (
     <section className="py-16 bg-[#EAF2F6] flex flex-col items-center relative">
       {/* Contenedor del título con fondo degradado */}
-      <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-[90%] h-[50%] bg-gradient-to-r from-black via-black to-[#35CDFB] rounded-[50px] z-0"></div>
+      <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-[80%] h-[50%] bg-gradient-to-r from-black via-black to-[#35CDFB] rounded-[50px] z-0"></div>
 
       {/* Contenedor del título */}
       <div className="relative z-10 text-center w-full max-w-5xl px-8 py-6 mb-8">

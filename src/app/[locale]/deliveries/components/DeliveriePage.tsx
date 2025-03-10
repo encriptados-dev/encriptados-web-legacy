@@ -10,6 +10,7 @@ import { JoinUsModalProvider } from "../context/JoinUsModalContext";
 import { BasicFormProvider } from "@/shared/components/BasicFormProvider";
 import LogoCarousel from "./LogoCarousel";
 import RenatiEncryptedCellphone from "./RenatiEncryptedCellphone";
+import DownloadAppBanner from "./DownloadAppBanner";
 
 const DeliveriesPage = () => {
   return (
@@ -23,6 +24,7 @@ const DeliveriesPage = () => {
           <RenatiEncryptedCellphone />
           <FeaturedProductsDeliveries />
           <LogoCarousel />
+          <DownloadAppBanner/>
           <FAQDeliveries />
         </JoinUsModalProvider>
       </BasicFormProvider>

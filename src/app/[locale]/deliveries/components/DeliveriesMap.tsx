@@ -8,10 +8,10 @@ import L from "leaflet";
 
 // Definir icono personalizado
 const customIcon = L.icon({
-  iconUrl: "/images/deliveries/home_pin.png", // Ruta de la imagen
-  iconSize: [30, 30], // Tamaño del icono
-  iconAnchor: [20, 40], // Ancla del icono (para que la punta quede en la ubicación exacta)
-  popupAnchor: [0, -40], // Ajuste para que el popup no salga encima del icono
+  iconUrl: "/images/deliveries/home_pin.png",
+  iconSize: [30, 30],
+  iconAnchor: [20, 40],
+  popupAnchor: [0, -40],
 });
 
 const deliveryPoints: { id: number; name: string; position: [number, number] }[] = [
@@ -39,7 +39,7 @@ const DeliveriesMap = () => {
 
       {/* Buscador */}
       <div className="relative w-full max-w-lg mb-10">
-        <div className="flex items-center bg-white border border-[#000]-300 rounded-full px-4 py-3 shadow-md">
+        <div className="flex items-center bg-white border border-[#000]-300 rounded-[50px] px-4 py-3 shadow-md">
           {/* Icono de búsqueda */}
           <FontAwesomeIcon icon={faSearch} className="text-black-500 text-lg" />
           
