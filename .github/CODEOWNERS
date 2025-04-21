@@ -1,0 +1,6 @@
+# CODEOWNERS para ramas protegidas
+
+# Solo saorsu13 puede aprobar PRs que afecten las ramas principales
+
+/develop @saorsu13
+/main @saorsu13

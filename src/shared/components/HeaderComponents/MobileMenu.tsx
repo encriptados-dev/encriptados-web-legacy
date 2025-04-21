@@ -10,6 +10,7 @@ import WorldIcon from "@/shared/svgs/WorldIcon";
 import {
   useTranslatedProductsCategories,
   useTranslatedOthersCategories,
+  useTranslatedUsCategories
 } from "@/shared/components/HeaderComponents/data/CategoryMenu";
 import { useTranslations } from "next-intl";
 
@@ -18,6 +19,7 @@ export default function MobileMenu() {
 
   const productsCategories = useTranslatedProductsCategories();
   const othersCategories = useTranslatedOthersCategories();
+  const usCategories = useTranslatedUsCategories();
 
   const [isOpen, setIsOpen] = useState(false);
   const [activeCategory, setActiveCategory] = useState(-1);
@@ -133,6 +135,14 @@ export default function MobileMenu() {
                           <ChevronDown className="w-5 h-5" />
                         </motion.div>
                       </button>
+                      <button
+                        onClick={() => handleLinkClick("/deliveries")}
+                        className="flex items-center justify-start gap-4 w-full px-4 py-3 border-b border-[#1A1A1A] text-left text-[#ffffff80] hover:text-white"
+                      >
+                        <span className="text-xl font-extralight">
+                          {t("deliveries.label")}
+                        </span>
+                      </button>
 
                       <AnimatePresence>
                         {activeCategory === 0 && (
@@ -242,12 +252,48 @@ export default function MobileMenu() {
                     </div>
 
                     {/* About Us */}
-                    <button
-                      onClick={() => handleLinkClick("/nosotros")}
-                      className="flex items-center justify-between w-full px-4 py-3 text-[#FFFFFF80] hover:text-white/90 text-xl font-extralight"
-                    >
-                      <span>{t("aboutUs")}</span>
-                    </button>
+                    <div className="border-b border-[#1A1A1A]">
+                      <button
+                        onClick={() => setActiveCategory(activeCategory === 2 ? -1 : 2)}
+                        className={`flex items-center justify-between w-full px-4 py-3 transition-colors text-xl font-extralight
+                          ${
+                            activeCategory === 2
+                              ? "text-[#FFFFFF] bg-[#0A0A0A]"
+                              : "text-[#FFFFFF80]"
+                          }`}
+                        aria-expanded={activeCategory === 2}
+                      >
+                        <span>{t("categories.us")}</span>
+                        <motion.div
+                          animate={{ rotate: activeCategory === 2 ? 180 : 0 }}
+                          transition={{ duration: 0.2 }}
+                        >
+                          <ChevronDown className="w-5 h-5" />
+                        </motion.div>
+                      </button>
+
+                      <AnimatePresence>
+                        {activeCategory === 2 && (
+                          <motion.div
+                            initial={{ height: 0 }}
+                            animate={{ height: "auto" }}
+                            exit={{ height: 0 }}
+                            className="bg-[#0A0A0A] overflow-hidden"
+                          >
+                            {usCategories.map((item) => (
+                              <button
+                                key={item.title}
+                                onClick={() => handleLinkClick(item.link)}
+                                className="flex w-full px-6 py-2 text-left text-[#FFFFFF] hover:text-white/90 relative text-ls"
+                              >
+                                <span className="absolute left-4 top-1/2 -translate-y-1/2 w-1 h-1 rounded-full bg-[#35CDFB]"></span>
+                                <span className="ml-4">{item.title}</span>
+                              </button>
+                            ))}
+                          </motion.div>
+                        )}
+                      </AnimatePresence>
+                    </div>
                   </div>
                 </div>
               </div>
