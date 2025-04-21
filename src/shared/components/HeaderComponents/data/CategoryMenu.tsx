@@ -40,16 +40,7 @@ export function useTranslatedProductsCategories(): any {
           description: t("sims.items.timSim.description", {
             defaultValue: "Conoce cómo funciona la SIM TIM",
           }),
-        },
-        {
-          title: t("test.title", { defaultValue: "Test" }),
-          description: t("test.description", {
-            defaultValue: "Últimas noticias y actualizaciones",
-          }),
-          link: "/test", // la ruta base
-          image: "/images/mega-menu/blog.jpeg",
-          items: [],
-        },    
+        }   
       ],
     },
     {
@@ -315,7 +306,7 @@ export function useTranslatedOthersCategories(): any[] {
       description: t2("distributors.description", {
         defaultValue: "Conviértete en distribuidor de nuestros productos",
       }),
-      image: "/images/mega-menu/distribuidores.jpeg",
+      image: "/images/mega-menu/Distribuidores.jpeg",
       link: "/distributors",
       items: [],
     },
@@ -325,7 +316,7 @@ export function useTranslatedOthersCategories(): any[] {
         defaultValue: "Últimas noticias y actualizaciones",
       }),
       link: "/blog",
-      image: "/images/mega-menu/blog.jpeg",
+      image: "/images/mega-menu/Blog.jpeg",
       items: [],
     },
     {
@@ -378,7 +369,7 @@ export function useTranslatedUsCategories(): any[] {
         defaultValue: "Descubre nuestras ubicaciones en todo el mundo.",
       }),
       image: "/images/mega-menu/lugares.jpeg",
-      link: "/nosotros/lugares",
+      link: "/where-to-find-us",
       items: [],
     },
   ];

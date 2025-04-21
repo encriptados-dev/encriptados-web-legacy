@@ -135,6 +135,14 @@ export default function MobileMenu() {
                           <ChevronDown className="w-5 h-5" />
                         </motion.div>
                       </button>
+                      <button
+                        onClick={() => handleLinkClick("/deliveries")}
+                        className="flex items-center justify-start gap-4 w-full px-4 py-3 border-b border-[#1A1A1A] text-left text-[#ffffff80] hover:text-white"
+                      >
+                        <span className="text-xl font-extralight">
+                          {t("deliveries.label")}
+                        </span>
+                      </button>
 
                       <AnimatePresence>
                         {activeCategory === 0 && (

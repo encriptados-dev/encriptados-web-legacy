@@ -95,7 +95,7 @@ const SimSelection = () => {
                 <li>Cobertura global en más de 200 países</li>
               </ul>
             </div>
-            <image src="/placeholder.svg" alt="Phone" width={200} height={200} className="rounded-lg" />
+            <img src="/placeholder.svg" alt="Phone" width={200} height={200} className="rounded-lg" />
           </div>
           <div className="mt-6">
             <span className="font-semibold">$10 USD</span>

@@ -7,12 +7,13 @@ export const routing = defineRouting({
   pathnames: {
     "/": "/",
 
-    "/test": {
-      en: "/test",
-      es: "/test",
-      fr: "/test-fr", 
-      it: "/test",
-      pt: "/test",
+    
+    "/deliveries": {
+      en: "/deliveries",
+      es: "/entregas",
+      fr: "/livraisons", 
+      it: "/consegne",
+      pt: "/entregas",
     },
 
     "/fast-delivery": {
@@ -85,6 +86,14 @@ export const routing = defineRouting({
       fr: "/ambassadeurs",
       it: "/ambasciatori",
       pt: "/embaixadores",
+    },
+
+    "/where-to-find-us": {
+      en: "/where-to-find-us",
+      es: "/donde-encontrarnos",
+      fr: "/ou-nous-trouver",
+      it: "/dove-trovarci",
+      pt: "/onde-nos-encontrar"
     },
 
     "/news": {
