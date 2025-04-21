@@ -814,6 +814,11 @@
         }
       }
     },
+    "test":{
+      "title": "test",
+      "description":"Esta es una pagina de prueba"
+
+    },
     "apps": {
       "title": "Applications",
       "description": "Produits incroyables, applications et systèmes avec cryptage de bout en bout",
@@ -933,13 +938,29 @@
       "description": "Découvrez nos offres"
     }
   },
-
+  "usCategories": {
+    "aboutUs": {
+      "title": "À Propos de Nous",
+      "description": "En savoir plus sur notre mission et nos valeurs."
+    },
+    "ambassadors": {
+      "title": "Devenir Ambassadeur",
+      "description": "Rejoignez notre programme d'ambassadeurs."
+    },
+    "locations": {
+      "title": "Où Nous Sommes",
+      "description": "Découvrez nos emplacements dans le monde entier."
+    }
+  },
   "menuMobile": {
     "openMenu": "Ouvrir le menu",
     "login": "Se connecter",
     "store": {
       "label": "Boutique",
       "new": "Nouveau"
+    },
+    "deliveries":{
+      "label": "Livraisons"
     },
     "categories": {
       "products": "Produits",
@@ -955,10 +976,12 @@
     "menu": {
       "products": "Produits",
       "others": "Autres",
+      "us":"Nous",
       "store": {
         "label": "Boutique",
         "new": "Nouveau"
       },
+      "deliveries":"livraisons",
       "aboutUs": "À propos de nous",
       "login": "Se connecter",
       "notAvailable": "Non disponible",

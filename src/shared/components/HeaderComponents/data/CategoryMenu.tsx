@@ -25,7 +25,7 @@ export function useTranslatedProductsCategories(): any {
         },
         {
           title: t("sims.items.iraSim.title", { defaultValue: "SIM IRA" }),
-          link: "/bne-sim",
+          link: "/ira-sim",
           image:
             "/images/mega-menu/sims/ira_sim_encriptados_preview_menu_web.jpg",
           description: t("sims.items.iraSim.description", {
@@ -34,13 +34,13 @@ export function useTranslatedProductsCategories(): any {
         },
         {
           title: t("sims.items.timSim.title", { defaultValue: "SIM TIM" }),
-          link: "/ira-sim",
+          link: "/tim-sim",
           image:
             "/images/mega-menu/sims/tim_sim_encriptados_preview_menu_web.jpg",
           description: t("sims.items.timSim.description", {
             defaultValue: "Conoce cómo funciona la SIM TIM",
           }),
-        },
+        }   
       ],
     },
     {
@@ -306,7 +306,7 @@ export function useTranslatedOthersCategories(): any[] {
       description: t2("distributors.description", {
         defaultValue: "Conviértete en distribuidor de nuestros productos",
       }),
-      image: "/images/mega-menu/distribuidores.jpeg",
+      image: "/images/mega-menu/Distribuidores.jpeg",
       link: "/distributors",
       items: [],
     },
@@ -316,7 +316,7 @@ export function useTranslatedOthersCategories(): any[] {
         defaultValue: "Últimas noticias y actualizaciones",
       }),
       link: "/blog",
-      image: "/images/mega-menu/blog.jpeg",
+      image: "/images/mega-menu/Blog.jpeg",
       items: [],
     },
     {
@@ -339,3 +339,39 @@ export function useTranslatedOthersCategories(): any[] {
     },
   ];
 }
+
+// Hook para obtener las categorías de "Nosotros" traducidas
+export function useTranslatedUsCategories(): any[] {
+  const t2 = useTranslations("usCategories");
+
+  return [
+    {
+      title: t2("aboutUs.title", { defaultValue: "Nosotros" }),
+      description: t2("aboutUs.description", {
+        defaultValue: "Conoce más sobre nuestra misión y valores.",
+      }),
+      image: "/images/mega-menu/nosotros.jpeg",
+      link: "/nosotros",
+      items: [],
+    },
+    {
+      title: t2("ambassadors.title", { defaultValue: "Embajadores" }),
+      description: t2("ambassadors.description", {
+        defaultValue: "Únete a nuestro programa de embajadores.",
+      }),
+      image: "/images/mega-menu/embajador.jpeg",
+      link: "/ambassadors",
+      items: [],
+    },    
+    {
+      title: t2("locations.title", { defaultValue: "Donde Estamos" }),
+      description: t2("locations.description", {
+        defaultValue: "Descubre nuestras ubicaciones en todo el mundo.",
+      }),
+      image: "/images/mega-menu/lugares.jpeg",
+      link: "/where-to-find-us",
+      items: [],
+    },
+  ];
+}
+

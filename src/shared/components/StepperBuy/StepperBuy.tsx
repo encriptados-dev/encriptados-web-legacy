@@ -40,20 +40,20 @@ const StepperBuy = ({
         />
       ),
     },
-    {
-      label: "SIM Física",
-      value: "physical_sim",
-      icon: (
-        <PhySim
-          color={
-            selectedValue === "physical_sim" ? SELECTED_COLOR : DEFAULT_COLOR
-          }
-          height={ICON_SIZE}
-          width={ICON_SIZE}
-          aria-label="SIM Física"
-        />
-      ),
-    },
+    // {
+    //   label: "SIM Física",
+    //   value: "physical_sim",
+    //   icon: (
+    //     <PhySim
+    //       color={
+    //         selectedValue === "physical_sim" ? SELECTED_COLOR : DEFAULT_COLOR
+    //       }
+    //       height={ICON_SIZE}
+    //       width={ICON_SIZE}
+    //       aria-label="SIM Física"
+    //     />
+    //   ),
+    // },
     {
       label: "Recargar eSIM",
       value: "recharge_esim",
