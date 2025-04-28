@@ -2,7 +2,7 @@ import { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { ChevronDown } from "lucide-react";
 import WorldIcon from "@/shared/svgs/WorldIcon";
-import  useLanguageSwitcher  from "@/shared/hooks/useLanguageSwitcher"; // Ajusta el path según tu estructura
+import useLanguageSwitcher from "@/shared/hooks/useLanguageSwitcher"; // Ajusta el path según tu estructura
 
 type LocaleLanguages = "es" | "en" | "fr" | "it" | "pt"; // Define los idiomas permitidos
 
@@ -16,19 +16,21 @@ export default function LanguageDropdown() {
     { code: "fr", name: "Français" },
     { code: "it", name: "Italiano" },
     { code: "pt", name: "Portugues" },
-  ]
+  ];
 
   return (
     <div className="relative">
       <button
         onClick={() => setLanguageDropdownOpen(!languageDropdownOpen)}
-        className="flex items-center text-sm text-white px-3 py-2 rounded-xl"
+        className="flex items-center text-sm text-white px-3 py-3 rounded-xl"
         aria-haspopup="true"
         aria-expanded={languageDropdownOpen}
       >
         <WorldIcon height={16} width={16} />
         <span className="ml-2 uppercase">
-          {languages.find((lang) => lang.code === currentLocale)?.name.slice(0, 2)}
+          {languages
+            .find((lang) => lang.code === currentLocale)
+            ?.name.slice(0, 2)}
         </span>
         <ChevronDown className="ml-1" />
       </button>
@@ -61,4 +63,3 @@ export default function LanguageDropdown() {
     </div>
   );
 }
-

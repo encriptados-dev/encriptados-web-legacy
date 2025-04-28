@@ -1,9 +1,9 @@
 "use client";
 import SimMinutosDatos from "../../../../../public/images/our-products/sim-minutos-datos.png";
 import EsimMinutosDatos from "../../../../../public/images/our-products/esim-minutos-datos.png";
-import CardSimEsim from "./svgs/CardSimEsim";
+import CardSimEsim from "./CardSimEsim";
 
-const CardOurProducts: React.FC = () => {
+const CardProducts: React.FC = () => {
   return (
     <div className="mt-5 mb-12 flex flex-col md:flex-row gap-x-4 gap-0 justify-center gap-y-4">
       <CardSimEsim
@@ -43,4 +43,4 @@ const CardOurProducts: React.FC = () => {
   );
 };
 
-export default CardOurProducts;
+export default CardProducts;

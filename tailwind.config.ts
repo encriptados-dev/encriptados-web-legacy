@@ -1,6 +1,5 @@
 import type { Config } from "tailwindcss";
 
-
 const config: Config = {
   content: [
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
@@ -14,8 +13,9 @@ const config: Config = {
         "lg-custom": "1358px", // Nuevo breakpoint personalizado
       },
       fontFamily: {
-        sans: ["Roboto", "Helvetica", "Arial", "sans-serif"], // Fuente personalizada Roboto
-      },     
+        sans: ["Inter", "sans-serif"],
+        // "Roboto", "Helvetica", "Arial", "sans-serif" // Fuente personalizada Roboto
+      },
       backgroundImage: {
         "cyan-gradient":
           "linear-gradient(360deg, rgba(211,245,255,1) 0%, rgba(244,248,250,1) 29%)",
@@ -34,17 +34,16 @@ const config: Config = {
         "custom-gradient-our-products-black":
           "linear-gradient(135deg, rgba(0,0,0,1) 40%, rgba(0,74,96,1) 100%)",
         "custom-gradient-qr-black-y-grey":
-          "linear-gradient(90deg, #000000 40%, #272727 100%)",  
+          "linear-gradient(90deg, #000000 40%, #272727 100%)",
         "custom-gradient-secure-black-y-grey":
-          "linear-gradient(270deg, #000000 50%, #272727 100%)",   
+          "linear-gradient(270deg, #000000 50%, #272727 100%)",
       },
       borderWidth: {
-        '0.5': '0.5px',
+        "0.5": "0.5px",
       },
     },
   },
-  plugins: [    
-  ],
+  plugins: [],
 };
 
 export default config;

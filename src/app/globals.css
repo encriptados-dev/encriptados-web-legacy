@@ -4,7 +4,8 @@
 
 @import "~slick-carousel/slick/slick.css";
 @import "~slick-carousel/slick/slick-theme.css";
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"); */
 
 @layer base {
   body {
@@ -60,13 +61,11 @@
     );
   }
 }
-
 .custom-shape-divider-bottom-1728419371 {
   position: relative;
   bottom: 0;
   left: 0;
   width: 100%;
-
   overflow: hidden;
   line-height: 0;
 }
@@ -93,4 +92,43 @@ html {
 .no-scrollbar {
   -ms-overflow-style: none; /* Internet Explorer 10+ */
   scrollbar-width: none; /* Firefox */
+}
+
+.heading-line {
+  line-height: 50px !important;
+}
+.bg-gradient {
+  position: absolute;
+  right: -10%;
+  top: 0;
+  background-image: url("../../public/images/new/ellipse.png");
+  background-size: 100% 100%;
+  background-position: right;
+  background-repeat: repeat;
+  height: 100%;
+  width: 80%;
+}
+.bg-gradient-img {
+  position: absolute;
+  right: 0;
+  top: -14%;
+  background-image: url("../../public/images/new/ellipse-mob.png");
+  background-size: 100% 100%;
+  background-position: right;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .bg-gradient-img {
+    display: none;
+  }
+}
+@media screen and (max-width: 767px) {
+  .bg-gradient {
+    background-image: none;
+  }
+  .heading-line {
+    line-height: 30px !important;
+  }
 }
