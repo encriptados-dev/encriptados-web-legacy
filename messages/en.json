@@ -1005,5 +1005,96 @@
   },
   "RechargeSim": {
     "errorInput": "Must be a valid phone number with at least 6 digits."
+  },
+  "ThreemaPage": {
+    "product": {
+      "title": "Threema App",
+      "description": "Communicate securely with one of the world’s most secure messaging applications",
+      "features": {
+        "endToEndEncryption": "End-to-end encryption",
+        "chatHiding": "Chat hiding with PIN",
+        "privateCalls": "Private calls"
+      },
+      "license": {
+        "twelveMonths": "12-month license"
+      },
+      "pricePrefix": "From",
+      "price": "180$ USD",
+      "buttons": {
+        "buyNow": "Buy now",
+        "chatSupport": "Chat support"
+      }
+    },
+    "features": {
+      "sectionTitle": "Main Features",
+      "chat": {
+        "title": "Chat",
+        "description": "Our chat complies with all privacy laws; providing your team with an easy-to-use alternative, separating personal and professional communication."
+      },
+      "confidentiality": {
+        "title": "Confidentiality",
+        "description": "Confidential chats can be hidden and protected by creating passwords using a PIN or fingerprint."
+      },
+      "groupChat": {
+        "title": "Group Chat",
+        "description": "Send any file format to your chat partners. Access hardware features like mobile camera, microphone, data, network status, GPS sensors, and more."
+      },
+      "agreementFeatures": {
+        "title": "Agreement Features",
+        "description": "VNCmeet, as part of VNCtalk, allows you to start video calls with external guest users who do not need a VNCtalk subscription."
+      }
+    },
+    "securityStandards": {
+      "cards": [
+        {
+          "title": "We comply with established regulations",
+          "description": "Threema Work complies with the European General Data Protection Regulation (GDPR); we also comply with the Swiss Federal Data Protection Act (DSG)."
+        },
+        {
+          "title": "We are certified",
+          "description": "Threema operates its own servers in ISO 27001 certified data centers."
+        },
+        {
+          "title": "App with greater user reach",
+          "description": "In app stores, Threema receives excellent reviews and ratings. On Google Play Store, it holds 4.5 / 5 stars, approximately 45,000 votes."
+        }
+      ]
+    },
+    "videoSection": {
+      "title": "Threema, the world’s best-selling encrypted application"
+    },
+    "simOptions": {
+      "cards": [
+        {
+          "title": "Encrypted SIM Card",
+          "description": "Protect yourself from cybercriminals and keep your personal information secure",
+          "buttonText": "Buy",
+          "secondButtonText": "More information"
+        },
+        {
+          "title": "Encrypted E-SIM Data or Minutes Plans",
+          "description": "Subtitle element copy",
+          "buttonText": "Learn more"
+        }
+      ]
+    },
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "questions": [
+        {
+          "question": "What is the Threema application for?",
+          "answer": "Threema is a secure messaging app that protects your privacy and allows you to send encrypted messages, make voice calls, and share files."
+        },
+        {
+          "question": "How does the Threema application work?",
+          "answer": "Threema uses end-to-end encryption to ensure that only the sender and receiver can read the messages. It does not require a phone number or email for registration."
+        },
+        {
+          "question": "How good is the security and privacy of the Threema application?",
+          "answer": "Threema is recognized for its high level of security and data protection. It does not collect personal information and its servers are located in Switzerland."
+        }
+      ]
+    }
   }
+
 }

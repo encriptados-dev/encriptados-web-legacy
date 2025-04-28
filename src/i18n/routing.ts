@@ -202,6 +202,20 @@ export const routing = defineRouting({
       it: "/test-crittografato/[typeOfTest]",
       pt: "/teste-encriptado/[typeOfTest]",
     },
+    "/threema": {
+      en: "/threema",
+      es: "/threema",
+      fr: "/threema",
+      it: "/threema",
+      pt: "/threema"
+    },
+    "/elyon": {
+      en: "/elyon",
+      es: "/elyon",
+      fr: "/elyon",
+      it: "/elyon",
+      pt: "/elyon"
+    },
   },
 });
 
