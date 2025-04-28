@@ -995,5 +995,96 @@
   },
   "RechargeSim": {
     "errorInput": "Deve ser um número de telefone válido com pelo menos 6 dígitos."
+  },
+  "ThreemaPage": {
+    "product": {
+      "title": "Aplicativo Threema",
+      "description": "Comunique-se com tranquilidade usando um dos aplicativos de mensagens mais seguros do mundo",
+      "features": {
+        "endToEndEncryption": "Criptografia de ponta a ponta",
+        "chatHiding": "Ocultação de chats com PIN",
+        "privateCalls": "Chamadas privadas"
+      },
+      "license": {
+        "twelveMonths": "Licença de 12 meses"
+      },
+      "pricePrefix": "A partir de",
+      "price": "180$ USD",
+      "buttons": {
+        "buyNow": "Comprar agora",
+        "chatSupport": "Suporte por chat"
+      }
+    },
+    "features": {
+      "sectionTitle": "Principais características",
+      "chat": {
+        "title": "Chat",
+        "description": "Nosso chat cumpre todas as leis de privacidade; oferece à sua equipe uma alternativa fácil de usar, separando comunicação pessoal e profissional."
+      },
+      "confidentiality": {
+        "title": "Confidencialidade",
+        "description": "Os chats confidenciais podem ser ocultados e protegidos com senhas por PIN ou impressão digital."
+      },
+      "groupChat": {
+        "title": "Chat em grupo",
+        "description": "Envie qualquer formato de arquivo para seus parceiros de chat. Acesso a recursos do hardware como câmera móvel, microfone, dados, estado da rede, sensores GPS, etc."
+      },
+      "agreementFeatures": {
+        "title": "Funcionalidades de acordo",
+        "description": "O VNCmeet, como parte do VNCtalk, permite iniciar chamadas de vídeo com usuários convidados externos, sem necessidade de assinatura no VNCtalk."
+      }
+    },
+    "securityStandards": {
+      "cards": [
+        {
+          "title": "Estamos em conformidade com os regulamentos estabelecidos",
+          "description": "O Threema Work está em conformidade com o Regulamento Geral de Proteção de Dados (GDPR) da Europa; também cumpre a Lei Federal Suíça de Proteção de Dados (DSG)."
+        },
+        {
+          "title": "Somos certificados",
+          "description": "O Threema administra seus próprios servidores em data centers certificados pela ISO 27001."
+        },
+        {
+          "title": "Aplicativo com maior alcance de usuários",
+          "description": "Nas lojas de aplicativos, o Threema recebe excelentes avaliações. No Google Play Store, possui 4,5 / 5 estrelas com aproximadamente 45.000 votos."
+        }
+      ]
+    },
+    "videoSection": {
+      "title": "Threema, o aplicativo criptografado mais vendido do mundo"
+    },
+    "simOptions": {
+      "cards": [
+        {
+          "title": "Cartão SIM criptografado",
+          "description": "Proteja-se contra cibercriminosos e mantenha suas informações pessoais seguras",
+          "buttonText": "Comprar",
+          "secondButtonText": "Mais informações"
+        },
+        {
+          "title": "E-SIM Criptografada Planos de dados ou minutos",
+          "description": "Exemplo de texto de subtítulo",
+          "buttonText": "Ver mais"
+        }
+      ]
+    },
+    "faq": {
+      "title": "Perguntas frequentes",
+      "questions": [
+        {
+          "question": "Para que serve o aplicativo Threema?",
+          "answer": "O Threema é um aplicativo de mensagens seguras que protege sua privacidade, permitindo o envio de mensagens criptografadas, chamadas de voz e compartilhamento de arquivos."
+        },
+        {
+          "question": "Como funciona o aplicativo Threema?",
+          "answer": "O Threema utiliza criptografia de ponta a ponta para garantir que apenas o remetente e o destinatário possam ler as mensagens. Não é necessário número de telefone ou e-mail para se registrar."
+        },
+        {
+          "question": "Como é a segurança e a privacidade do aplicativo Threema?",
+          "answer": "O Threema é reconhecido por seu alto nível de segurança e proteção de dados. Ele não coleta informações pessoais e seus servidores estão localizados na Suíça."
+        }
+      ]
+    }
   }
+
 }

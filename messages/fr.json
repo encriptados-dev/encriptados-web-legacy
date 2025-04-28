@@ -996,5 +996,96 @@
   },
   "RechargeSim": {
     "errorInput": "Doit être un numéro de téléphone valide avec au moins 6 chiffres."
+  },
+  "ThreemaPage": {
+    "product": {
+      "title": "Application Threema",
+      "description": "Communiquez sereinement avec l'une des applications de messagerie les plus sûres au monde",
+      "features": {
+        "endToEndEncryption": "Chiffrement de bout en bout",
+        "chatHiding": "Masquage des chats avec code PIN",
+        "privateCalls": "Appels privés"
+      },
+      "license": {
+        "twelveMonths": "Licence de 12 mois"
+      },
+      "pricePrefix": "À partir de",
+      "price": "180$ USD",
+      "buttons": {
+        "buyNow": "Acheter maintenant",
+        "chatSupport": "Support chat"
+      }
+    },
+    "features": {
+      "sectionTitle": "Fonctionnalités principales",
+      "chat": {
+        "title": "Chat",
+        "description": "Notre chat est conforme à toutes les lois sur la confidentialité ; il offre à votre équipe une alternative facile à utiliser, séparant communication personnelle et professionnelle."
+      },
+      "confidentiality": {
+        "title": "Confidentialité",
+        "description": "Les chats confidentiels peuvent être cachés et protégés par un mot de passe via un code PIN ou une empreinte digitale."
+      },
+      "groupChat": {
+        "title": "Chat de groupe",
+        "description": "Envoyez n'importe quel type de fichier à vos partenaires de chat. Accédez aux fonctionnalités matérielles telles que la caméra mobile, le microphone, les données, l’état du réseau, les capteurs GPS, etc."
+      },
+      "agreementFeatures": {
+        "title": "Fonctionnalités d'accord",
+        "description": "VNCmeet, en tant que partie de VNCtalk, vous permet d’initier des appels vidéo avec des utilisateurs invités externes, sans abonnement nécessaire à VNCtalk."
+      }
+    },
+    "securityStandards": {
+      "cards": [
+        {
+          "title": "Nous respectons les réglementations établies",
+          "description": "Threema Work respecte le Règlement Général sur la Protection des Données (RGPD) européen ; nous respectons également la Loi fédérale suisse sur la protection des données (LPD)."
+        },
+        {
+          "title": "Nous sommes certifiés",
+          "description": "Threema gère ses propres serveurs dans des centres de données certifiés ISO 27001."
+        },
+        {
+          "title": "Application avec une large portée utilisateur",
+          "description": "Dans les magasins d'applications, Threema reçoit d'excellentes critiques et évaluations. Sur Google Play Store, elle obtient 4,5 / 5 étoiles avec environ 45 000 avis."
+        }
+      ]
+    },
+    "videoSection": {
+      "title": "Threema, l'application chiffrée la plus vendue au monde"
+    },
+    "simOptions": {
+      "cards": [
+        {
+          "title": "Carte SIM chiffrée",
+          "description": "Protégez-vous des cybercriminels et sécurisez vos informations personnelles",
+          "buttonText": "Acheter",
+          "secondButtonText": "Plus d’informations"
+        },
+        {
+          "title": "E-SIM Chiffrée Forfaits données ou minutes",
+          "description": "Texte de sous-titre exemple",
+          "buttonText": "En savoir plus"
+        }
+      ]
+    },
+    "faq": {
+      "title": "Questions fréquentes",
+      "questions": [
+        {
+          "question": "À quoi sert l'application Threema ?",
+          "answer": "Threema est une application de messagerie sécurisée qui protège votre vie privée et permet d'envoyer des messages chiffrés, de passer des appels vocaux et de partager des fichiers."
+        },
+        {
+          "question": "Comment fonctionne l'application Threema ?",
+          "answer": "Threema utilise un chiffrement de bout en bout pour garantir que seuls l'expéditeur et le destinataire puissent lire les messages. Aucune inscription avec numéro de téléphone ou email n'est requise."
+        },
+        {
+          "question": "Quel est le niveau de sécurité et de confidentialité de l'application Threema ?",
+          "answer": "Threema est reconnue pour son haut niveau de sécurité et de protection des données. Elle ne collecte pas d'informations personnelles et ses serveurs sont situés en Suisse."
+        }
+      ]
+    }
   }
+
 }
