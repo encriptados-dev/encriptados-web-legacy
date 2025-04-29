@@ -820,10 +820,9 @@
         }
       }
     },
-    "test":{
+    "test": {
       "title": "test",
-      "description":"Esta es una pagina de prueba"
-
+      "description": "Esta es una pagina de prueba"
     },
     "apps": {
       "title": "Aplicaciones",
@@ -965,7 +964,7 @@
       "label": "Tienda",
       "new": "Nuevo"
     },
-    "deliveries":{
+    "deliveries": {
       "label": "Entregas"
     },
     "categories": {
@@ -1002,5 +1001,255 @@
   },
   "RechargeSim": {
     "errorInput": "Debe ser un número de teléfono válido con al menos 6 dígitos."
+  },
+  "appsShared": {
+    "encryptedSim": {
+      "title": "SIM Card encriptada",
+      "description": "Protégete de los ciberdelincuentes y mantén tu información personal segura",
+      "button": "Comprar",
+      "link": "Más información"
+    },
+    "simDataPlans": {
+      "title": "E-SIM Encriptada Planes datos o minutos",
+      "description": "Lorem Ipsum Dolor met",
+      "button": "Ver más"
+    }
+  },
+  "silentCircle": {
+    "description": "Es una app diseñada por las mejores mentes en tecnología móvil, centrado en mantener tus datos seguros en todo momento",
+    "details": [
+      "Llamadas cifradas",
+      "Sin permisos de ubicación",
+      "Mensajes temporizados"
+    ],
+    "buttons": {
+      "buyNow": "Comprar ahora",
+      "supportChat": "Chat soporte"
+    },
+    "characteristics": {
+      "title": "Características principales",
+      "elements": [
+        {
+          "title": "Mensajes con autodestrucción",
+          "description": "Los mensajes se eliminan de los dispositivos automaticamente de envío y recepción después de un «tiempo de grabación». Tú puedes elegir este tiempo: De un minuto a 90 días."
+        },
+        {
+          "title": "Notas de voz encriptadas",
+          "description": "Notas de voz con la capacidad de grabar y proporcionar una alternativa segura al correo de voz. "
+        },
+        {
+          "title": "Mensajes seguros",
+          "description": "El cifrado asegura que solo el dispositivo receptor pueda interpretar las comunicaciones desde el momento de presionar \"ENVIAR\". El remitente puede verificar si el mensaje fue recibido y leído."
+        },
+        {
+          "title": "Archivos y documentos",
+          "description": "Uso compartido de archivos cifrados… envía hasta 100 MB de forma segura. \nMensajería grupal… Envía archivos y mensajes a grupos de usuarios sin problemas"
+        }
+      ]
+    },
+    "benefits": [
+      "Construido sobre un protocolo fundamentalmente diferente",
+      "Sin política de puerta trasera",
+      "Diseño Privado",
+      "Administración de usuarios",
+      "Todos tus datos protegidos",
+      "Tecnología patentada de grado militar"
+    ],
+    "coverage": {
+      "title": "Cobertura en más de 200 paises",
+      "description": "Comunicación segura y sin fronteras"
+    },
+    "faq": [
+      "¿Qué tan segura es la aplicación Silent Phone - Silent Circle?",
+      "¿En qué celular puedo instalar la aplicación Silent Phone de Silent Circle?",
+      "¿En qué celular puedo instalar la aplicación Silent Circle?"
+    ]
+  },
+  "armadillo": {
+    "description": "Aplicación de mensajería instantánea de alta seguridad que respeta tu privacidad",
+    "details": [
+      "Borrado remoto y automatizado",
+      "Alertas de posibles impostores",
+      "Llamadas encriptadas"
+    ],
+    "buttons": {
+      "buyNow": "Comprar ahora",
+      "supportChat": "Chat soporte"
+    },
+    "characteristics": {
+      "title": "Características principales",
+      "elements": [
+        {
+          "title": "Chats Encriptados",
+          "description": "Armadillo Chat utiliza cifrado de extremo a extremo, por lo que sus mensajes son ilegibles incluso si el servidor está comprometido."
+        },
+        {
+          "title": "Borrado Remoto y Automatizado",
+          "description": "Configure automáticamente temporizadores de autodestrucción, borre de forma remota mensajes individuales o conversaciones completas"
+        },
+        {
+          "title": "Comunicaciones Cifradas",
+          "description": "Puede comunicarse con mensajes de texto, imágenes, archivos, chats grupales o videollamadas de forma segura."
+        },
+        {
+          "title": "Verifica la identidad de tus contactos",
+          "description": "Puede utilizar varios métodos para verificar las identidades de sus amigos: escanear un código QR, hacer una pregunta, verificación de Wi-Fi o verificación de texto."
+        }
+      ]
+    },
+    "benefits": [
+      {
+        "title": "Acceso sencillo a la cuenta",
+        "description": "Active o renueve su cuenta de Armadillo Chat para asegurarse de tener el software, las comunicaciones y el soporte más seguros."
+      },
+      {
+        "title": "Soporte 24/7",
+        "description": "También puede hablar directamente con nuestros expertos en seguridad móvil a través de Armadillo Chat sobre sus preocupaciones de seguridad."
+      },
+      {
+        "title": "Interfaz sencilla",
+        "description": "Armadillo Chat no solo es una aplicación completamente segura, también es muy fácil de usar."
+      },
+      {
+        "title": "Privacidad y seguridad",
+        "description": "Armadillo Chat es una aplicación de mensajería instantánea de alta seguridad. Con actualizaciones constantes nos aseguramos que todas tus comunicaciones sean privadas y que estén fuera del alcance de cualquier tercero malintencionado."
+      },
+      {
+        "title": "Alertas sobre posibles impostores",
+        "description": "Armadillo Chat le advierte automáticamente sobre posibles impostores en su lista de contactos y otros dispositivos conectados a su cuenta. En el modo de alta seguridad, también le advertirá sobre cualquier amigo que no haya verificado."
+      },
+      {
+        "title": "Notificaciones Push",
+        "description": "Armadillo Chat no solo es una aplicación completamente segura, también es muy fácil de usar."
+      }
+    ],
+    "information": "Armadillo Chat. Aplicación de mensajería instantánea de alta seguridad",
+    "faq": [
+      "¿Cómo funciona Armadillo Chat?",
+      "¿En qué celular puedo instalar Armadillo Chat?",
+      "¿Por qué usar Armadillo Chat?"
+    ]
+  },
+  "valutChat": {
+    "description": "Plataforma de comunicación cifrada optimizada con cifrado multicapa de alta gama.",
+    "details": [
+      "Verificaciones de usuario",
+      "Mensajes autodestructivos",
+      "Chats encriptados",
+      "Chat encriptado"
+    ],
+    "buttons": {
+      "buyNow": "Comprar ahora",
+      "supportChat": "Chat soporte"
+    },
+    "characteristics": {
+      "title": "Características principales",
+      "elements": [
+        {
+          "title": "Chats Encriptados",
+          "description": "Comunicación rápida y encriptada internamente con otros usuarios de VaultChat. Envía y recibe imágenes y notas de voz y realiza chats grupales."
+        },
+        {
+          "title": "Chat Cifrado",
+          "description": "Hemos implementado OMEMO / ECC / AES256 en nuestro popular sistema de chat. ¡Ningún mensaje puede ser leído en nuestro servidor por nadie en ningún momento! Tenemos la mejor encriptación y no almacenamos datos. ¡Todas las imágenes y notas de voz también están encriptadas!"
+        },
+        {
+          "title": "Mensajes Autodestructivos",
+          "description": "Los mensajes que se autodestruyen tienen prioridad sobre todo. Configura tu temporizador para destruir todos los mensajes cuando se acabe el tiempo"
+        },
+        {
+          "title": "Listas de difusión",
+          "description": "Con la función de lista de difusión, puedes enviar un mensaje cifrado a varios de tus contactos a la vez. Las listas de difusión son listas guardadas de destinatarios de mensajes a los que puede enviar mensajes de difusión repetidamente sin tener que seleccionarlos cada vez."
+        }
+      ]
+    },
+    "benefits": [
+      {
+        "title": "Notificaciones privadas",
+        "description": "Mantén la confidencialidad de los tiempos y recuentos de llegada de los mensajes eligiendo que las notificaciones push se originen en nuestros servidores"
+      },
+      {
+        "title": "Características de última generación",
+        "description": "VaultChat está repleto de funciones y seguridad. Ofrecemos productos de última generación para su uso."
+      },
+      {
+        "title": "Monitoreo 24/7",
+        "description": "El monitoreo de seguridad de la infraestructura brinda protección a la red con medidas preventivas para denegar el acceso no autorizado y la actividad maliciosa."
+      },
+      {
+        "title": "Datos Cifrados en Reposo",
+        "description": "Todos los datos almacenados en VaultChat se cifran mediante una base de datos cifrada personalizada con AES-256."
+      },
+      {
+        "title": "Protección de Contraseña",
+        "description": "Nuestra protección con contraseña requerida mantiene tus datos en VaultChat cifrados y protegidos, incluso si tu dispositivo está desbloqueado. Varios intentos incorrectos borrarán todos los datos."
+      },
+      {
+        "title": "Cifrado Multicapa",
+        "description": "Las comunicaciones entrantes y salientes se cifran de extremo a extremo y se transmiten a través de una red cifrada. Todos los datos almacenados en el dispositivo están protegidos y encriptados."
+      }
+    ],
+    "information": "Vault Chat, aplicación para comunicaciones encriptadas y privadas",
+    "faq": [
+      "¿Qué es VaultChat?",
+      "¿Cuál es la diferencia de VaultChat con VaultSecure?",
+      "¿Qué ventajas se obtienen al usar VaultChat?"
+    ]
+  },
+
+  "nordVpn": {
+    "description": "Accédez à distance de manière simple et sécurisée avec la marque VPN la plus fiable au monde.",
+    "details": [
+      "Connexion sécurisée en un clic",
+      "Kill Switch (interrupteur d'arrêt d'urgence)",
+      "Passerelles privées"
+    ],
+    "buttons": {
+      "buyNow": "Acheter maintenant",
+      "supportChat": "Chat support"
+    },
+    "characteristics": {
+      "title": "Caractéristiques principales",
+      "elements": [
+        "Connexions sécurisées",
+        "Passerelles privées",
+        "Passerelles partagées",
+        "Connexion automatique",
+        "Gestion d'équipe",
+        "Connexion chiffrée"
+      ]
+    },
+    "benefits": [
+      {
+        "title": "Authentification tierce",
+        "description": "Connectez-vous aux équipes de NordVPN Teams avec vos identifiants professionnels existants. Nos solutions VPN pour petites entreprises et grandes organisations prennent en charge l'authentification tierce via Azure AD, Google et Okta."
+      },
+      {
+        "title": "Un clic pour protéger n'importe quel appareil",
+        "description": "Il suffit d’un seul clic pour chiffrer tout le trafic de données de votre appareil. Cliquez sur n’importe quelle passerelle pour vous connecter ou activez la fonction de connexion automatique."
+      },
+      {
+        "title": "interrupteur d'arrêt d'urgence",
+        "description": "Ne prenez aucun risque avec vos données. Activez la fonction Kill Switch pour couper automatiquement tout le trafic Internet si la connexion au serveur est interrompue, même brièvement."
+      },
+      {
+        "title": "Données chiffrées au repos",
+        "description": "Toutes les données stockées dans VaultChat sont chiffrées à l'aide d'une base de données sécurisée personnalisée utilisant l'AES-256."
+      },
+      {
+        "title": "Protection par mot de passe",
+        "description": "Notre protection par mot de passe obligatoire garantit que vos données sur VaultChat restent chiffrées et sécurisées, même si votre appareil est déverrouillé. Plusieurs tentatives incorrectes entraîneront l'effacement complet des données."
+      },
+      {
+        "title": "Chiffrement multicouche",
+        "description": "Les communications entrantes et sortantes sont chiffrées de bout en bout et transmises via un réseau sécurisé. Toutes les données stockées sur l'appareil sont protégées et chiffrées."
+      }
+    ],
+    "information": "NordVPN est l’un des meilleurs choix sur le marché",
+    "faq": [
+      "Qu'est-ce qu'un VPN ?",
+      "Pourquoi est-il important d'avoir un VPN ?",
+      "Comment fonctionne NordVPN ?"
+    ]
   }
 }

@@ -814,10 +814,9 @@
         }
       }
     },
-    "test":{
+    "test": {
       "title": "test",
-      "description":"Esta es una pagina de prueba"
-
+      "description": "Esta es una pagina de prueba"
     },
     "apps": {
       "title": "Applications",
@@ -959,7 +958,7 @@
       "label": "Boutique",
       "new": "Nouveau"
     },
-    "deliveries":{
+    "deliveries": {
       "label": "Livraisons"
     },
     "categories": {
@@ -976,12 +975,12 @@
     "menu": {
       "products": "Produits",
       "others": "Autres",
-      "us":"Nous",
+      "us": "Nous",
       "store": {
         "label": "Boutique",
         "new": "Nouveau"
       },
-      "deliveries":"livraisons",
+      "deliveries": "livraisons",
       "aboutUs": "À propos de nous",
       "login": "Se connecter",
       "notAvailable": "Non disponible",
@@ -996,5 +995,250 @@
   },
   "RechargeSim": {
     "errorInput": "Doit être un numéro de téléphone valide avec au moins 6 chiffres."
+  },
+  "appsShared": {
+    "encryptedSim": {
+      "title": "Carte SIM cryptée",
+      "description": "Protégez-vous des cybercriminels et sécurisez vos informations personnelles",
+      "button": "Acheter",
+      "link": "Plus d'informations"
+    },
+    "simDataPlans": {
+      "title": "Forfaits de données ou de minutes E-SIM cryptée",
+      "description": "Lorem Ipsum Dolor met",
+      "button": "Voir plus"
+    }
+  },
+  "silentCircle": {
+    "description": "C'est une application conçue par les meilleurs esprits de la technologie mobile, axée sur la protection de vos données à tout moment.",
+    "details": [
+      "Appels chiffrés",
+      "Aucune autorisation de localisation",
+      "Messages temporisés"
+    ],
+    "buttons": {
+      "buyNow": "Acheter maintenant",
+      "supportChat": "Chat de support"
+    },
+    "characteristics": {
+      "title": "Caractéristiques principales",
+      "elements": [
+        {
+          "title": "Messages à autodestruction",
+          "description": "Les messages sont automatiquement supprimés des appareils d'envoi et de réception après un «temps d'enregistrement». Vous pouvez choisir ce temps: d'une minute à 90 jours."
+        },
+        {
+          "title": "Notes vocales cryptées",
+          "description": "Notes vocales avec la possibilité d'enregistrer et de fournir une alternative sécurisée à la messagerie vocale."
+        },
+        {
+          "title": "Messages sécurisés",
+          "description": "Le cryptage garantit que seul l'appareil destinataire peut interpréter les communications à partir du moment où vous appuyez sur «ENVOYER». L'expéditeur peut vérifier si le message a été reçu et lu."
+        },
+        {
+          "title": "Fichiers et documents",
+          "description": "Partage de fichiers cryptés… envoyez jusqu'à 100 Mo en toute sécurité. \nMessagerie de groupe… Envoyez des fichiers et des messages à des groupes d'utilisateurs de manière transparente."
+        }
+      ]
+    },
+    "benefits": [
+      "Construit sur un protocole fondamentalement différent",
+      "Pas de politique de porte dérobée",
+      "Conception privée",
+      "Administration des utilisateurs",
+      "Toutes vos données protégées",
+      "Technologie brevetée de qualité militaire"
+    ],
+    "coverage": {
+      "title": "Couverture dans plus de 200 pays",
+      "description": "Communication sécurisée et sans frontières"
+    },
+    "faq": [
+      "Quelle est la sécurité de l'application Silent Phone - Silent Circle ?",
+      "Sur quels téléphones portables puis-je installer l'application Silent Phone de Silent Circle ?",
+      "Sur quel téléphone portable puis-je installer l'application Silent Circle ?"
+    ]
+  },
+  "armadillo": {
+    "description": "Application de messagerie instantanée hautement sécurisée qui respecte votre vie privée",
+    "details": [
+      "Suppression à distance et automatisée",
+      "Alertes d'imposteurs potentiels",
+      "Appels cryptés"
+    ],
+    "buttons": {
+      "buyNow": "Acheter maintenant",
+      "supportChat": "Chat de support"
+    },
+    "characteristics": {
+      "title": "Caractéristiques principales",
+      "elements": [
+        {
+          "title": "Chats Cryptés",
+          "description": "Armadillo Chat utilise le cryptage de bout en bout, vos messages sont donc illisibles même si le serveur est compromis."
+        },
+        {
+          "title": "Suppression à Distance et Automatisée",
+          "description": "Configurez automatiquement des minuteurs d'autodestruction, supprimez à distance des messages individuels ou des conversations entières."
+        },
+        {
+          "title": "Communications Cryptées",
+          "description": "Vous pouvez communiquer par messages texte, images, fichiers, chats de groupe ou appels vidéo en toute sécurité."
+        },
+        {
+          "title": "Vérifiez l'identité de vos contacts",
+          "description": "Vous pouvez utiliser différentes méthodes pour vérifier l'identité de vos amis : scanner un code QR, poser une question, vérification Wi-Fi ou vérification par SMS."
+        }
+      ]
+    },
+    "benefits": [
+      {
+        "title": "Accès facile au compte",
+        "description": "Activez ou renouvelez votre compte Armadillo Chat pour vous assurer d'avoir les logiciels, les communications et l'assistance les plus sécurisés."
+      },
+      {
+        "title": "Assistance 24h/24 et 7j/7",
+        "description": "Vous pouvez également parler directement à nos experts en sécurité mobile via Armadillo Chat de vos préoccupations en matière de sécurité."
+      },
+      {
+        "title": "Interface simple",
+        "description": "Armadillo Chat n'est pas seulement une application entièrement sécurisée, elle est également très facile à utiliser."
+      },
+      {
+        "title": "Confidentialité et sécurité",
+        "description": "Armadillo Chat est une application de messagerie instantanée hautement sécurisée. Grâce à des mises à jour constantes, nous garantissons que toutes vos communications sont privées et hors de portée de tout tiers malveillant."
+      },
+      {
+        "title": "Alertes concernant les imposteurs potentiels",
+        "description": "Armadillo Chat vous avertit automatiquement des imposteurs potentiels dans votre liste de contacts et des autres appareils connectés à votre compte. En mode haute sécurité, il vous avertira également de tout ami non vérifié."
+      },
+      {
+        "title": "Notifications Push",
+        "description": "Armadillo Chat n'est pas seulement une application entièrement sécurisée, elle est également très facile à utiliser."
+      }
+    ],
+    "information": "Armadillo Chat. Application de messagerie instantanée hautement sécurisée",
+    "faq": [
+      "Comment fonctionne Armadillo Chat ?",
+      "Sur quels téléphones portables puis-je installer Armadillo Chat ?",
+      "Pourquoi utiliser Armadillo Chat ?"
+    ]
+  },
+  "valutChat": {
+    "description": "Plateforme de communication cryptée optimisée avec un cryptage multicouche haut de gamme.",
+    "details": [
+      "Vérifications d'utilisateur",
+      "Messages autodestructeurs",
+      "Chats cryptés",
+      "Chat crypté"
+    ],
+    "buttons": {
+      "buyNow": "Acheter maintenant",
+      "supportChat": "Chat de support"
+    },
+    "characteristics": {
+      "title": "Caractéristiques principales",
+      "elements": [
+        {
+          "title": "Chats Cryptés",
+          "description": "Communiquez rapidement et de manière cryptée en interne avec d'autres utilisateurs de VaultChat. Envoyez et recevez des images et des notes vocales et menez des chats de groupe."
+        },
+        {
+          "title": "Chat Crypté",
+          "description": "Nous avons implémenté OMEMO / ECC / AES256 dans notre système de chat populaire. Aucun message ne peut être lu sur notre serveur par qui que ce soit et à aucun moment ! Nous avons le meilleur cryptage et ne stockons pas de données. Toutes les images et notes vocales sont également cryptées !"
+        },
+        {
+          "title": "Messages Autodestructeurs",
+          "description": "Les messages autodestructeurs ont la priorité sur tout. Réglez votre minuterie pour détruire tous les messages lorsque le temps est écoulé."
+        },
+        {
+          "title": "Listes de diffusion",
+          "description": "Avec la fonction de liste de diffusion, vous pouvez envoyer un message crypté à plusieurs de vos contacts à la fois. Les listes de diffusion sont des listes enregistrées de destinataires de messages auxquels vous pouvez envoyer des messages de diffusion de manière répétée sans avoir à les sélectionner à chaque fois."
+        }
+      ]
+    },
+    "benefits": [
+      {
+        "title": "Notifications privées",
+        "description": "Maintenez la confidentialité des heures et des nombres d'arrivée des messages en choisissant que les notifications push proviennent de nos serveurs."
+      },
+      {
+        "title": "Fonctionnalités de pointe",
+        "description": "VaultChat regorge de fonctionnalités et de sécurité. Nous proposons des produits de pointe pour votre usage."
+      },
+      {
+        "title": "Surveillance 24h/24 et 7j/7",
+        "description": "La surveillance de la sécurité de l'infrastructure assure la protection du réseau grâce à des mesures préventives visant à refuser l'accès non autorisé et les activités malveillantes."
+      },
+      {
+        "title": "Données cryptées au repos",
+        "description": "Toutes les données stockées dans VaultChat sont cryptées à l'aide d'une base de données cryptée personnalisée avec AES-256."
+      },
+      {
+        "title": "Protection par mot de passe",
+        "description": "Notre protection par mot de passe requise maintient vos données dans VaultChat cryptées et protégées, même si votre appareil est déverrouillé. Plusieurs tentatives incorrectes effaceront toutes les données."
+      },
+      {
+        "title": "Cryptage multicouche",
+        "description": "Les communications entrantes et sortantes sont cryptées de bout en bout et transmises via un réseau crypté. Toutes les données stockées sur l'appareil sont protégées et cryptées."
+      }
+    ],
+    "information": "Vault Chat, application pour les communications cryptées et privées",
+    "faq": [
+      "Qu'est-ce que VaultChat ?",
+      "Quelle est la différence entre VaultChat et VaultSecure ?",
+      "Quels sont les avantages de l'utilisation de VaultChat ?"
+    ]
+  },
+  "nordVpn": {
+    "description": "Bénéficiez d'un accès à distance simple et sécurisé de la marque VPN la plus fiable au monde.",
+    "details": [
+      "Connexion sécurisée en un clic",
+      "Coupe-circuit",
+      "Passerelles privées"
+    ],
+    "buttons": {
+      "buyNow": "Acheter maintenant",
+      "supportChat": "Chat de support"
+    },
+    "characteristics": {
+      "title": "Caractéristiques principales",
+      "elements": [
+        "Connexions sécurisées",
+        "Passerelles privées",
+        "Passerelles partagées",
+        "Connexion automatique",
+        "Gestion d'équipe",
+        "Connexion cryptée"
+      ]
+    },
+    "benefits": [
+      {
+        "title": "Authentification tierce",
+        "description": "Connectez-vous à NordVPN Teams avec vos identifiants d'entreprise existants. Nos solutions VPN pour les petites et grandes entreprises offrent une authentification tierce avec Azure AD, Google et Okta."
+      },
+      {
+        "title": "Un clic pour sécuriser n'importe quel appareil",
+        "description": "Un seul clic suffit pour crypter tout le trafic de données sur votre appareil. Cliquez sur n'importe quelle passerelle pour vous connecter ou activez la fonction de connexion automatique."
+      },
+      {
+        "title": "Coupe-circuit",
+        "description": "Ne risquez pas d'exposer vos données en activant la fonction Kill Switch. Il coupe automatiquement tout le trafic Internet Données cryptées au repos"
+      },
+      {
+        "title": "Protection par mot de passe",
+        "description": "Notre protection par mot de passe requise maintient vos données dans VaultChat cryptées et protégées, même si votre appareil est déverrouillé. Plusieurs tentatives incorrectes effaceront toutes les données."
+      },
+      {
+        "title": "Cryptage multicouche",
+        "description": "Les communications entrantes et sortantes sont cryptées de bout en bout et transmises via un réseau crypté. Toutes les données stockées sur l'appareil sont protégées et cryptées."
+      }
+    ],
+    "information": "NordVPN l'une des meilleures options du marché",
+    "faq": [
+      "Qu'est-ce qu'un VPN ?",
+      "Pourquoi est-il important d'avoir un VPN ?",
+      "Comment fonctionne NordVPN ?"
+    ]
   }
 }

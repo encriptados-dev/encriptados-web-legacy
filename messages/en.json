@@ -147,11 +147,11 @@
         "offers": "Offers"
       },
       "us": {
-      "title": "Us",
-      "aboutUs": "About Us",
-      "ambassadors": "Be an Ambassador",
-      "locations": "Where We Are"
-    }
+        "title": "Us",
+        "aboutUs": "About Us",
+        "ambassadors": "Be an Ambassador",
+        "locations": "Where We Are"
+      }
     }
   },
   "FooterMenu": {
@@ -822,10 +822,9 @@
         }
       }
     },
-    "test":{
+    "test": {
       "title": "test",
-      "description":"Esta es una pagina de prueba"
-
+      "description": "Esta es una pagina de prueba"
     },
     "apps": {
       "title": "Applications",
@@ -946,7 +945,7 @@
       "description": "Discover our offers"
     }
   },
-    "usCategories": {
+  "usCategories": {
     "aboutUs": {
       "title": "About Us",
       "description": "Learn more about our mission and values."
@@ -967,7 +966,7 @@
       "label": "Store",
       "new": "New"
     },
-    "deliveries":{
+    "deliveries": {
       "label": "Deliveries"
     },
     "categories": {
@@ -990,7 +989,7 @@
         "label": "Store",
         "new": "New"
       },
-      "deliveries":"Deliveries",
+      "deliveries": "Deliveries",
       "aboutUs": "About Us",
       "login": "Log In",
       "notAvailable": "Not Available",
@@ -1005,5 +1004,250 @@
   },
   "RechargeSim": {
     "errorInput": "Must be a valid phone number with at least 6 digits."
+  },
+  "appsShared": {
+    "encryptedSim": {
+      "title": "Encrypted SIM Card",
+      "description": "Protect yourself from cybercriminals and keep your personal information secure",
+      "button": "Buy",
+      "link": "More information"
+    },
+    "simDataPlans": {
+      "title": "Encrypted E-SIM Data or Minute Plans",
+      "description": "Lorem Ipsum Dolor met",
+      "button": "See more"
+    }
+  },
+  "silentCircle": {
+    "description": "It is an app designed by the best minds in mobile technology, focused on keeping your data secure at all times.",
+    "details": ["Encrypted calls", "No location permissions", "Timed messages"],
+    "buttons": {
+      "buyNow": "Buy now",
+      "supportChat": "Support chat"
+    },
+    "characteristics": {
+      "title": "Main features",
+      "elements": [
+        {
+          "title": "Self-destructing messages",
+          "description": "Messages are automatically deleted from sending and receiving devices after a «recording time». You can choose this time: From one minute to 90 days."
+        },
+        {
+          "title": "Encrypted voice notes",
+          "description": "Voice notes with the ability to record and provide a secure alternative to voicemail."
+        },
+        {
+          "title": "Secure messages",
+          "description": "Encryption ensures that only the receiving device can interpret communications from the moment you press \"SEND\". The sender can verify if the message was received and read."
+        },
+        {
+          "title": "Files and documents",
+          "description": "Encrypted file sharing… securely send up to 100 MB. \nGroup messaging… Seamlessly send files and messages to groups of users"
+        }
+      ]
+    },
+    "benefits": [
+      "Built on a fundamentally different protocol",
+      "No backdoor policy",
+      "Private Design",
+      "User administration",
+      "All your data protected",
+      "Military-grade patented technology"
+    ],
+    "coverage": {
+      "title": "Coverage in more than 200 countries",
+      "description": "Secure and borderless communication"
+    },
+    "faq": [
+      "How secure is the Silent Phone - Silent Circle application?",
+      "On which cell phones can I install the Silent Phone application from Silent Circle?",
+      "On which cell phone can I install the Silent Circle application?"
+    ]
+  },
+  "armadillo": {
+    "description": "Highly secure instant messaging application that respects your privacy",
+    "details": [
+      "Remote and automated deletion",
+      "Alerts of potential imposters",
+      "Encrypted calls"
+    ],
+    "buttons": {
+      "buyNow": "Buy now",
+      "supportChat": "Support chat"
+    },
+    "characteristics": {
+      "title": "Main features",
+      "elements": [
+        {
+          "title": "Encrypted Chats",
+          "description": "Armadillo Chat uses end-to-end encryption, so your messages are unreadable even if the server is compromised."
+        },
+        {
+          "title": "Remote and Automated Deletion",
+          "description": "Automatically configure self-destruct timers, remotely delete individual messages or entire conversations"
+        },
+        {
+          "title": "Encrypted Communications",
+          "description": "You can communicate with text messages, images, files, group chats or video calls securely."
+        },
+        {
+          "title": "Verify the identity of your contacts",
+          "description": "You can use various methods to verify your friends' identities: scan a QR code, ask a question, Wi-Fi verification, or text verification."
+        }
+      ]
+    },
+    "benefits": [
+      {
+        "title": "Easy account access",
+        "description": "Activate or renew your Armadillo Chat account to ensure you have the most secure software, communications, and support."
+      },
+      {
+        "title": "24/7 Support",
+        "description": "You can also speak directly with our mobile security experts via Armadillo Chat about your security concerns."
+      },
+      {
+        "title": "Simple interface",
+        "description": "Armadillo Chat is not only a completely secure application, it is also very easy to use."
+      },
+      {
+        "title": "Privacy and security",
+        "description": "Armadillo Chat is a highly secure instant messaging application. With constant updates, we ensure that all your communications are private and out of reach of any malicious third parties."
+      },
+      {
+        "title": "Alerts about potential imposters",
+        "description": "Armadillo Chat automatically warns you about potential imposters in your contact list and other devices connected to your account. In high-security mode, it will also warn you about any unverified friends."
+      },
+      {
+        "title": "Push Notifications",
+        "description": "Armadillo Chat is not only a completely secure application, it is also very easy to use."
+      }
+    ],
+    "information": "Armadillo Chat. Highly secure instant messaging application",
+    "faq": [
+      "How does Armadillo Chat work?",
+      "On which cell phones can I install Armadillo Chat?",
+      "Why use Armadillo Chat?"
+    ]
+  },
+  "valutChat": {
+    "description": "Optimized encrypted communication platform with high-end multi-layer encryption.",
+    "details": [
+      "User verifications",
+      "Self-destructing messages",
+      "Encrypted chats",
+      "Encrypted chat"
+    ],
+    "buttons": {
+      "buyNow": "Buy now",
+      "supportChat": "Support chat"
+    },
+    "characteristics": {
+      "title": "Main features",
+      "elements": [
+        {
+          "title": "Encrypted Chats",
+          "description": "Communicate quickly and internally encrypted with other VaultChat users. Send and receive images and voice notes and conduct group chats."
+        },
+        {
+          "title": "Encrypted Chat",
+          "description": "We have implemented OMEMO / ECC / AES256 in our popular chat system. No message can be read on our server by anyone at any time! We have the best encryption and do not store data. All images and voice notes are also encrypted!"
+        },
+        {
+          "title": "Self-Destructing Messages",
+          "description": "Self-destructing messages take precedence over everything. Set your timer to destroy all messages when the time runs out."
+        },
+        {
+          "title": "Broadcast Lists",
+          "description": "With the broadcast list feature, you can send an encrypted message to multiple of your contacts at once. Broadcast lists are saved lists of message recipients to whom you can repeatedly send broadcast messages without having to select them each time."
+        }
+      ]
+    },
+    "benefits": [
+      {
+        "title": "Private Notifications",
+        "description": "Maintain the confidentiality of message arrival times and counts by choosing push notifications to originate from our servers."
+      },
+      {
+        "title": "State-of-the-art features",
+        "description": "VaultChat is packed with features and security. We offer state-of-the-art products for your use."
+      },
+      {
+        "title": "24/7 Monitoring",
+        "description": "Infrastructure security monitoring provides network protection with preventative measures to deny unauthorized access and malicious activity."
+      },
+      {
+        "title": "Encrypted Data at Rest",
+        "description": "All data stored in VaultChat is encrypted using a custom encrypted database with AES-256."
+      },
+      {
+        "title": "Password Protection",
+        "description": "Our required password protection keeps your data in VaultChat encrypted and protected, even if your device is unlocked. Multiple incorrect attempts will erase all data."
+      },
+      {
+        "title": "Multi-Layer Encryption",
+        "description": "Incoming and outgoing communications are end-to-end encrypted and transmitted over an encrypted network. All data stored on the device is protected and encrypted."
+      }
+    ],
+    "information": "Vault Chat, application for encrypted and private communications",
+    "faq": [
+      "What is VaultChat?",
+      "What is the difference between VaultChat and VaultSecure?",
+      "What are the advantages of using VaultChat?"
+    ]
+  },
+  "nordVpn": {
+    "description": "Get simple and secure remote access from the world's most trusted VPN brand.",
+    "details": [
+      "Secure one-click connection",
+      "Kill Switch",
+      "Private gateways"
+    ],
+    "buttons": {
+      "buyNow": "Buy now",
+      "supportChat": "Support chat"
+    },
+    "characteristics": {
+      "title": "Main features",
+      "elements": [
+        "Secure connections",
+        "Private gateways",
+        "Shared gateways",
+        "Automatic connection",
+        "Team management",
+        "Encrypted connection"
+      ]
+    },
+    "benefits": [
+      {
+        "title": "Third-party authentication",
+        "description": "Connect to NordVPN Teams with your existing business credentials. Our VPN solutions for small businesses and large corporations offer third-party authentication with Azure AD, Google, and Okta."
+      },
+      {
+        "title": "One click to secure any device",
+        "description": "It takes just one click to encrypt all data traffic on your device. Click on any gateway to connect or enable the auto-connect feature."
+      },
+      {
+        "title": "Kill Switch",
+        "description": "Don't risk exposing any of your data by enabling the Kill Switch feature. It automatically cuts off all internet traffic on your device if the connection to the server drops even for a second."
+      },
+      {
+        "title": "Encrypted Data at Rest",
+        "description": "All data stored in VaultChat is encrypted using a custom encrypted database with AES-256."
+      },
+      {
+        "title": "Password Protection",
+        "description": "Our required password protection keeps your data in VaultChat encrypted and protected, even if your device is unlocked. Multiple incorrect attempts will erase all data."
+      },
+      {
+        "title": "Multi-Layer Encryption",
+        "description": "Incoming and outgoing communications are end-to-end encrypted and transmitted over an encrypted network. All data stored on the device is protected and encrypted."
+      }
+    ],
+    "information": "NordVPN one of the best options on the market",
+    "faq": [
+      "What is a VPN?",
+      "Why is it important to have a VPN?",
+      "How does NordVPN work?"
+    ]
   }
 }
