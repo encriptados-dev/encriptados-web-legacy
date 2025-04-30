@@ -147,11 +147,11 @@
         "offers": "Offers"
       },
       "us": {
-      "title": "Us",
-      "aboutUs": "About Us",
-      "ambassadors": "Be an Ambassador",
-      "locations": "Where We Are"
-    }
+        "title": "Us",
+        "aboutUs": "About Us",
+        "ambassadors": "Be an Ambassador",
+        "locations": "Where We Are"
+      }
     }
   },
   "FooterMenu": {
@@ -822,10 +822,9 @@
         }
       }
     },
-    "test":{
+    "test": {
       "title": "test",
-      "description":"Esta es una pagina de prueba"
-
+      "description": "Esta es una pagina de prueba"
     },
     "apps": {
       "title": "Applications",
@@ -946,7 +945,7 @@
       "description": "Discover our offers"
     }
   },
-    "usCategories": {
+  "usCategories": {
     "aboutUs": {
       "title": "About Us",
       "description": "Learn more about our mission and values."
@@ -967,7 +966,7 @@
       "label": "Store",
       "new": "New"
     },
-    "deliveries":{
+    "deliveries": {
       "label": "Deliveries"
     },
     "categories": {
@@ -990,7 +989,7 @@
         "label": "Store",
         "new": "New"
       },
-      "deliveries":"Deliveries",
+      "deliveries": "Deliveries",
       "aboutUs": "About Us",
       "login": "Log In",
       "notAvailable": "Not Available",
@@ -1005,6 +1004,456 @@
   },
   "RechargeSim": {
     "errorInput": "Must be a valid phone number with at least 6 digits."
+  },
+  "appsShared": {
+    "encryptedSim": {
+      "title": "Encrypted SIM Card",
+      "description": "Protect yourself from cybercriminals and keep your personal information secure",
+      "button": "Buy",
+      "link": "More information"
+    },
+    "simDataPlans": {
+      "title": "Encrypted E-SIM Data or Minute Plans",
+      "description": "Lorem Ipsum Dolor met",
+      "button": "See more"
+    }
+  },
+  "silentCircle": {
+    "description": "It is an app designed by the best minds in mobile technology, focused on keeping your data secure at all times.",
+    "details": ["Encrypted calls", "No location permissions", "Timed messages"],
+    "buttons": {
+      "buyNow": "Buy now",
+      "supportChat": "Support chat"
+    },
+    "characteristics": {
+      "title": "Main features",
+      "elements": [
+        {
+          "title": "Self-destructing messages",
+          "description": "Messages are automatically deleted from sending and receiving devices after a «recording time». You can choose this time: From one minute to 90 days."
+        },
+        {
+          "title": "Encrypted voice notes",
+          "description": "Voice notes with the ability to record and provide a secure alternative to voicemail."
+        },
+        {
+          "title": "Secure messages",
+          "description": "Encryption ensures that only the receiving device can interpret communications from the moment you press \"SEND\". The sender can verify if the message was received and read."
+        },
+        {
+          "title": "Files and documents",
+          "description": "Encrypted file sharing… securely send up to 100 MB. \nGroup messaging… Seamlessly send files and messages to groups of users"
+        }
+      ]
+    },
+    "benefits": [
+      "Built on a fundamentally different protocol",
+      "No backdoor policy",
+      "Private Design",
+      "User administration",
+      "All your data protected",
+      "Military-grade patented technology"
+    ],
+    "coverage": {
+      "title": "Coverage in more than 200 countries",
+      "description": "Secure and borderless communication"
+    },
+    "faq": [
+      "How secure is the Silent Phone - Silent Circle application?",
+      "On which cell phones can I install the Silent Phone application from Silent Circle?",
+      "On which cell phone can I install the Silent Circle application?"
+    ]
+  },
+  "armadillo": {
+    "description": "Highly secure instant messaging application that respects your privacy",
+    "details": [
+      "Remote and automated deletion",
+      "Alerts of potential imposters",
+      "Encrypted calls"
+    ],
+    "buttons": {
+      "buyNow": "Buy now",
+      "supportChat": "Support chat"
+    },
+    "characteristics": {
+      "title": "Main features",
+      "elements": [
+        {
+          "title": "Encrypted Chats",
+          "description": "Armadillo Chat uses end-to-end encryption, so your messages are unreadable even if the server is compromised."
+        },
+        {
+          "title": "Remote and Automated Deletion",
+          "description": "Automatically configure self-destruct timers, remotely delete individual messages or entire conversations"
+        },
+        {
+          "title": "Encrypted Communications",
+          "description": "You can communicate with text messages, images, files, group chats or video calls securely."
+        },
+        {
+          "title": "Verify the identity of your contacts",
+          "description": "You can use various methods to verify your friends' identities: scan a QR code, ask a question, Wi-Fi verification, or text verification."
+        }
+      ]
+    },
+    "benefits": [
+      {
+        "title": "Easy account access",
+        "description": "Activate or renew your Armadillo Chat account to ensure you have the most secure software, communications, and support."
+      },
+      {
+        "title": "24/7 Support",
+        "description": "You can also speak directly with our mobile security experts via Armadillo Chat about your security concerns."
+      },
+      {
+        "title": "Simple interface",
+        "description": "Armadillo Chat is not only a completely secure application, it is also very easy to use."
+      },
+      {
+        "title": "Privacy and security",
+        "description": "Armadillo Chat is a highly secure instant messaging application. With constant updates, we ensure that all your communications are private and out of reach of any malicious third parties."
+      },
+      {
+        "title": "Alerts about potential imposters",
+        "description": "Armadillo Chat automatically warns you about potential imposters in your contact list and other devices connected to your account. In high-security mode, it will also warn you about any unverified friends."
+      },
+      {
+        "title": "Push Notifications",
+        "description": "Armadillo Chat is not only a completely secure application, it is also very easy to use."
+      }
+    ],
+    "information": "Armadillo Chat. Highly secure instant messaging application",
+    "faq": [
+      "How does Armadillo Chat work?",
+      "On which cell phones can I install Armadillo Chat?",
+      "Why use Armadillo Chat?"
+    ]
+  },
+  "valutChat": {
+    "description": "Optimized encrypted communication platform with high-end multi-layer encryption.",
+    "details": [
+      "User verifications",
+      "Self-destructing messages",
+      "Encrypted chats",
+      "Encrypted chat"
+    ],
+    "buttons": {
+      "buyNow": "Buy now",
+      "supportChat": "Support chat"
+    },
+    "characteristics": {
+      "title": "Main features",
+      "elements": [
+        {
+          "title": "Encrypted Chats",
+          "description": "Communicate quickly and internally encrypted with other VaultChat users. Send and receive images and voice notes and conduct group chats."
+        },
+        {
+          "title": "Encrypted Chat",
+          "description": "We have implemented OMEMO / ECC / AES256 in our popular chat system. No message can be read on our server by anyone at any time! We have the best encryption and do not store data. All images and voice notes are also encrypted!"
+        },
+        {
+          "title": "Self-Destructing Messages",
+          "description": "Self-destructing messages take precedence over everything. Set your timer to destroy all messages when the time runs out."
+        },
+        {
+          "title": "Broadcast Lists",
+          "description": "With the broadcast list feature, you can send an encrypted message to multiple of your contacts at once. Broadcast lists are saved lists of message recipients to whom you can repeatedly send broadcast messages without having to select them each time."
+        }
+      ]
+    },
+    "benefits": [
+      {
+        "title": "Private Notifications",
+        "description": "Maintain the confidentiality of message arrival times and counts by choosing push notifications to originate from our servers."
+      },
+      {
+        "title": "State-of-the-art features",
+        "description": "VaultChat is packed with features and security. We offer state-of-the-art products for your use."
+      },
+      {
+        "title": "24/7 Monitoring",
+        "description": "Infrastructure security monitoring provides network protection with preventative measures to deny unauthorized access and malicious activity."
+      },
+      {
+        "title": "Encrypted Data at Rest",
+        "description": "All data stored in VaultChat is encrypted using a custom encrypted database with AES-256."
+      },
+      {
+        "title": "Password Protection",
+        "description": "Our required password protection keeps your data in VaultChat encrypted and protected, even if your device is unlocked. Multiple incorrect attempts will erase all data."
+      },
+      {
+        "title": "Multi-Layer Encryption",
+        "description": "Incoming and outgoing communications are end-to-end encrypted and transmitted over an encrypted network. All data stored on the device is protected and encrypted."
+      }
+    ],
+    "information": "Vault Chat, application for encrypted and private communications",
+    "faq": [
+      "What is VaultChat?",
+      "What is the difference between VaultChat and VaultSecure?",
+      "What are the advantages of using VaultChat?"
+    ]
+  },
+  "nordVpn": {
+    "description": "Get simple and secure remote access from the world's most trusted VPN brand.",
+    "details": [
+      "Secure one-click connection",
+      "Kill Switch",
+      "Private gateways"
+    ],
+    "buttons": {
+      "buyNow": "Buy now",
+      "supportChat": "Support chat"
+    },
+    "characteristics": {
+      "title": "Main features",
+      "elements": [
+        "Secure connections",
+        "Private gateways",
+        "Shared gateways",
+        "Automatic connection",
+        "Team management",
+        "Encrypted connection"
+      ]
+    },
+    "benefits": [
+      {
+        "title": "Third-party authentication",
+        "description": "Connect to NordVPN Teams with your existing business credentials. Our VPN solutions for small businesses and large corporations offer third-party authentication with Azure AD, Google, and Okta."
+      },
+      {
+        "title": "One click to secure any device",
+        "description": "It takes just one click to encrypt all data traffic on your device. Click on any gateway to connect or enable the auto-connect feature."
+      },
+      {
+        "title": "Kill Switch",
+        "description": "Don't risk exposing any of your data by enabling the Kill Switch feature. It automatically cuts off all internet traffic on your device if the connection to the server drops even for a second."
+      },
+      {
+        "title": "Encrypted Data at Rest",
+        "description": "All data stored in VaultChat is encrypted using a custom encrypted database with AES-256."
+      },
+      {
+        "title": "Password Protection",
+        "description": "Our required password protection keeps your data in VaultChat encrypted and protected, even if your device is unlocked. Multiple incorrect attempts will erase all data."
+      },
+      {
+        "title": "Multi-Layer Encryption",
+        "description": "Incoming and outgoing communications are end-to-end encrypted and transmitted over an encrypted network. All data stored on the device is protected and encrypted."
+      }
+    ],
+    "information": "NordVPN one of the best options on the market",
+    "faq": [
+      "What is a VPN?",
+      "Why is it important to have a VPN?",
+      "How does NordVPN work?"
+    ]
+  },
+  "salt": {
+    "description": "Keep your most sensitive communications secure with the best shielding",
+    "details": [
+      "Secure messaging",
+      "Screenshot protection",
+      "Secure voice calls"
+    ],
+    "buttons": {
+      "buyNow": "Buy now",
+      "supportChat": "Support chat"
+    },
+    "characteristics": {
+      "title": "Main features",
+      "elements": [
+        {
+          "title": "Chat",
+          "description": "Our tailored solution offers users private and secure real-time messaging and group chat functionality to their Salt contacts."
+        },
+        {
+          "title": "Message self-destruction",
+          "description": "Our self-destruct functionality allows users to erase information from their device and all recipients' devices, either manually or via a timer setting."
+        },
+        {
+          "title": "Message broadcasting",
+          "description": "Efficiently send live alerts or share messages, images, and documents with large groups of users within an organization"
+        },
+        {
+          "title": "Screenshot protection",
+          "description": "For added internal security, administrators can restrict users' ability to take screenshots. If screenshots are taken, users will receive a notification."
+        }
+      ]
+    },
+    "benefits": [
+      {
+        "title": "Secure remote work enablement",
+        "description": "Many high-profile organizations worldwide have implemented Salt to ensure the highest level of security in communications while working remotely."
+      },
+      {
+        "title": "Agnostic encryption",
+        "description": "Salt uses the latest and best encryption protocols to ensure we offer customers the highest level of encryption within our platform."
+      },
+      {
+        "title": "Security testing transparency",
+        "description": "Salt is an open and trusted technology that is rigorously and routinely verified by independent parties."
+      },
+      {
+        "title": "Privacy and security",
+        "description": "Armadillo Chat is a highly secure instant messaging application. With constant updates, we ensure that all your communications are private and out of reach of any malicious third parties."
+      },
+      {
+        "title": "Alerts about potential imposters",
+        "description": "Armadillo Chat automatically warns you about potential imposters in your contact list and other devices connected to your account. In high-security mode, it will also warn you about any unverified friends."
+      },
+      {
+        "title": "Push Notifications",
+        "description": "Armadillo Chat is not only a completely secure application, it is also very easy to use."
+      }
+    ],
+    "information": "Differences between an Encrypted Application and Whatsapp",
+    "faq": [
+      "How does Salt work?",
+      "How secure is the Salt application?",
+      "Why should my company have an application like Salt?"
+    ]
+  },
+  "vnc": {
+    "description": "End-to-end encryption for maximum privacy and secrecy in your communications.",
+    "details": [
+      "Secure video conferencing",
+      "Collaborative document editing",
+      "Secure messaging"
+    ],
+    "buttons": {
+      "buyNow": "Buy now",
+      "supportChat": "Support chat"
+    },
+    "characteristics": {
+      "title": "Main characteristics",
+      "elements": [
+        {
+          "title": "Text chat",
+          "description": "Individual or group chat, all you need is a browser."
+        },
+        {
+          "title": "Audio and Video Conference",
+          "description": "Perfect audio and image quality. You will be surprised by this type of virtual reality! Save travel expenses and contact your team with a single click."
+        },
+        {
+          "title": "File transfer between users",
+          "description": "Send any file format to your chat partners. Access to hardware features such as mobile camera, microphone, data, network status, sensors such as GPS, etc."
+        },
+        {
+          "title": "Calls and video calls",
+          "description": "VNCmeet, as part of VNCtalk, allows you to initiate video calls with external invited users, who do not need a VNCtalk subscription."
+        }
+      ]
+    },
+    "benefits": [
+      {
+        "title": "Encryption",
+        "description": "End-to-end encryption for maximum privacy and secrecy in your communications."
+      },
+      {
+        "title": "Works on mobile devices",
+        "description": "No need to use a portable or desktop laptop. VNCtalk runs on any browser and as an application."
+      },
+      {
+        "title": "Whiteboards",
+        "description": "Collaborate on whiteboards with images, shapes, and text."
+      },
+      {
+        "title": "VNCtalk is also an OEM product.",
+        "description": "That means partners can add their logo, CD / CI and at the same time modify the interface from a UX (user experience) perspective."
+      },
+      {
+        "title": "VNCtalk has no advertising",
+        "description": "and is equipped with a number of interesting features such as: screen sharing, document collaboration in VNCpads and many more."
+      },
+      {
+        "title": "VNCtalk is scalable",
+        "description": "up to a large number of users. Simply improve the bandwidth, add more instances and you're done."
+      }
+    ],
+    "functionalities": [
+      {
+        "title": "VNC Talk Web Application",
+        "description": "VNCtalk Web Client allows you to access all VNCtalk professional communication features, such as chat, audio and video conferencing, in the same standard browser as VNCmail or VNCproject. Therefore, you enter your entire workspace with your browser, without having to launch separate applications for each activity you would like to perform. VNCtalk Web Client runs on any standard browser on Windows, MacOS and Linux."
+      },
+      {
+        "title": "VNC Talk Desktop Application",
+        "description": "VNCtalk Desktop Client allows you to run VNCtalk as a separate application on your desktop PC, on Windows, Mac and Linux. Especially when working with many open browser tabs, it is useful to have separate access points for your chats, video conferences and VNCpads. And, of course, you have all VNCtalk features available in any of our frontend clients."
+      }
+    ],
+    "information": "What is the ideal system for you? Do you want to continue using your personal cell phone?",
+    "faq": [
+      "What is VNC?",
+      "How does VNC Lagoon work?",
+      "What compatibility does VNC Lagoon have?"
+    ]
+  },
+  "threema": {
+    "description": "Threema.Work offers all the features expected of a professional business messenger",
+    "details": [
+      "Group chats with up to 100 people",
+      "Encrypted calls",
+      "Private polls in the chat"
+    ],
+    "buttons": {
+      "buyNow": "Buy now",
+      "supportChat": "Support chat"
+    },
+    "characteristics": {
+      "title": "Main features",
+      "elements": [
+        {
+          "title": "Chat",
+          "description": "Our chat complies with all privacy laws; it provides your team with an easy-to-use alternative, separating personal and professional communication."
+        },
+        {
+          "title": "Audio and Video Conferencing",
+          "description": "Perfect audio and image quality. You will be surprised by this type of virtual reality! Save travel expenses and contact your team with a single click."
+        },
+        {
+          "title": "File transfer between users",
+          "description": "Send any file format to your chat partners. Access to hardware functions such as mobile camera, microphone, data, network status, sensors like GPS, etc."
+        },
+        {
+          "title": "Calls and video calls",
+          "description": "VNCmeet, as part of VNCtalk, allows you to initiate video calls with external guest users, who do not need a VNCtalk subscription."
+        }
+      ]
+    },
+    "benefits": [
+      {
+        "title": "We comply with established regulations",
+        "description": "Threema Work complies with the European General Data Protection Regulation (GDPR); we also comply with the Federal Data Protection Act."
+      },
+      {
+        "title": "We are certified",
+        "description": "Threema manages its own servers in ISO 27001 certified data centers."
+      },
+      {
+        "title": "Top ratings and reviews",
+        "description": "Application with the widest reach in terms of number of users."
+      },
+      {
+        "title": "App of the year",
+        "description": "Threema Work can be used without providing personally identifiable information (such as a phone number or email address) and without granting access to the address book."
+      },
+      {
+        "title": "Best-selling iOS app",
+        "description": "In 2015, Google Play recognized Threema by placing it on the prestigious list of the best Android apps."
+      },
+      {
+        "title": "Best-selling iOS app",
+        "description": "For two consecutive years (2014 and 2015), Threema was the best-selling iOS app in Germany."
+      }
+    ],
+    "information": "Threema.Work the most secure and easy-to-use messaging app for organizations",
+    "faq": [
+      "What is VNC?",
+      "How does VNC Lagoon work?",
+      "What compatibility does VNC Lagoon have?"
+    ]
   },
   "ThreemaPage": {
     "product": {

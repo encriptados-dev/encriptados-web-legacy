@@ -813,10 +813,9 @@
         }
       }
     },
-    "test":{
+    "test": {
       "title": "test",
-      "description":"Esta es una pagina de prueba"
-
+      "description": "Esta es una pagina de prueba"
     },
     "apps": {
       "title": "Aplicativos",
@@ -958,7 +957,7 @@
       "label": "Loja",
       "new": "Novo"
     },
-    "deliveries":{
+    "deliveries": {
       "label": "Entregas"
     },
     "categories": {
@@ -975,12 +974,12 @@
     "menu": {
       "products": "Produtos",
       "others": "Outros",
-      "us":"Nós",
+      "us": "Nós",
       "store": {
         "label": "Loja",
         "new": "Novo"
       },
-      "deliveries":"entregas",
+      "deliveries": "entregas",
       "aboutUs": "Sobre nós",
       "login": "Entrar",
       "notAvailable": "Não disponível",
@@ -995,6 +994,460 @@
   },
   "RechargeSim": {
     "errorInput": "Deve ser um número de telefone válido com pelo menos 6 dígitos."
+  },
+  "appsShared": {
+    "encryptedSim": {
+      "title": "Cartão SIM criptografado",
+      "description": "Proteja-se de cibercriminosos e mantenha suas informações pessoais seguras",
+      "button": "Comprar",
+      "link": "Mais informações"
+    },
+    "simDataPlans": {
+      "title": "Planos de dados ou minutos E-SIM criptografados",
+      "description": "Lorem Ipsum Dolor met",
+      "button": "Ver mais"
+    }
+  },
+  "silentCircle": {
+    "description": "É um aplicativo projetado pelas melhores mentes em tecnologia móvel, focado em manter seus dados seguros em todos os momentos.",
+    "details": [
+      "Chamadas criptografadas",
+      "Sem permissões de localização",
+      "Mensagens temporizadas"
+    ],
+    "buttons": {
+      "buyNow": "Comprar agora",
+      "supportChat": "Chat de suporte"
+    },
+    "characteristics": {
+      "title": "Características principais",
+      "elements": [
+        {
+          "title": "Mensagens autodestrutivas",
+          "description": "As mensagens são excluídas automaticamente dos dispositivos de envio e recebimento após um «tempo de gravação». Você pode escolher este tempo: de um minuto a 90 dias."
+        },
+        {
+          "title": "Notas de voz criptografadas",
+          "description": "Notas de voz com a capacidade de gravar e fornecer uma alternativa segura ao correio de voz."
+        },
+        {
+          "title": "Mensagens seguras",
+          "description": "A criptografia garante que apenas o dispositivo receptor possa interpretar as comunicações a partir do momento em que você pressiona \"ENVIAR\". O remetente pode verificar se a mensagem foi recebida e lida."
+        },
+        {
+          "title": "Arquivos e documentos",
+          "description": "Compartilhamento de arquivos criptografados… envie até 100 MB com segurança. \nMensagens em grupo… Envie arquivos e mensagens para grupos de usuários sem problemas."
+        }
+      ]
+    },
+    "benefits": [
+      "Construído sobre um protocolo fundamentalmente diferente",
+      "Sem política de backdoor",
+      "Design Privado",
+      "Administração de usuários",
+      "Todos os seus dados protegidos",
+      "Tecnologia patenteada de nível militar"
+    ],
+    "coverage": {
+      "title": "Cobertura em mais de 200 países",
+      "description": "Comunicação segura e sem fronteiras"
+    },
+    "faq": [
+      "Quão seguro é o aplicativo Silent Phone - Silent Circle?",
+      "Em quais celulares posso instalar o aplicativo Silent Phone da Silent Circle?",
+      "Em qual celular posso instalar o aplicativo Silent Circle?"
+    ]
+  },
+  "armadillo": {
+    "description": "Aplicativo de mensagens instantâneas de alta segurança que respeita sua privacidade",
+    "details": [
+      "Apagamento remoto e automatizado",
+      "Alertas de possíveis impostores",
+      "Chamadas criptografadas"
+    ],
+    "buttons": {
+      "buyNow": "Comprar agora",
+      "supportChat": "Chat de suporte"
+    },
+    "characteristics": {
+      "title": "Características principais",
+      "elements": [
+        {
+          "title": "Chats Criptografados",
+          "description": "O Armadillo Chat usa criptografia de ponta a ponta, então suas mensagens são ilegíveis mesmo que o servidor seja comprometido."
+        },
+        {
+          "title": "Apagamento Remoto e Automatizado",
+          "description": "Configure automaticamente temporizadores de autodestruição, apague remotamente mensagens individuais ou conversas inteiras."
+        },
+        {
+          "title": "Comunicações Criptografadas",
+          "description": "Você pode se comunicar com mensagens de texto, imagens, arquivos, chats em grupo ou videochamadas de forma segura."
+        },
+        {
+          "title": "Verifique a identidade de seus contatos",
+          "description": "Você pode usar vários métodos para verificar as identidades de seus amigos: digitalizar um código QR, fazer uma pergunta, verificação de Wi-Fi ou verificação de texto."
+        }
+      ]
+    },
+    "benefits": [
+      {
+        "title": "Acesso fácil à conta",
+        "description": "Ative ou renove sua conta Armadillo Chat para garantir que você tenha o software, as comunicações e o suporte mais seguros."
+      },
+      {
+        "title": "Suporte 24/7",
+        "description": "Você também pode falar diretamente com nossos especialistas em segurança móvel através do Armadillo Chat sobre suas preocupações de segurança."
+      },
+      {
+        "title": "Interface simples",
+        "description": "O Armadillo Chat não é apenas um aplicativo completamente seguro, também é muito fácil de usar."
+      },
+      {
+        "title": "Privacidade e segurança",
+        "description": "O Armadillo Chat é um aplicativo de mensagens instantâneas de alta segurança. Com atualizações constantes, garantimos que todas as suas comunicações sejam privadas e fora do alcance de terceiros mal-intencionados."
+      },
+      {
+        "title": "Alertas sobre possíveis impostores",
+        "description": "O Armadillo Chat avisa automaticamente sobre possíveis impostores em sua lista de contatos e outros dispositivos conectados à sua conta. No modo de alta segurança, ele também o avisará sobre quaisquer amigos não verificados."
+      },
+      {
+        "title": "Notificações Push",
+        "description": "O Armadillo Chat não é apenas um aplicativo completamente seguro, também é muito fácil de usar."
+      }
+    ],
+    "information": "Armadillo Chat. Aplicativo de mensagens instantâneas de alta segurança",
+    "faq": [
+      "Como funciona o Armadillo Chat?",
+      "Em quais celulares posso instalar o Armadillo Chat?",
+      "Por que usar o Armadillo Chat?"
+    ]
+  },
+  "valutChat": {
+    "description": "Plataforma de comunicação criptografada otimizada com criptografia multicamadas de ponta.",
+    "details": [
+      "Verificações de usuário",
+      "Mensagens autodestrutivas",
+      "Chats criptografados",
+      "Chat criptografado"
+    ],
+    "buttons": {
+      "buyNow": "Comprar agora",
+      "supportChat": "Chat de suporte"
+    },
+    "characteristics": {
+      "title": "Características principais",
+      "elements": [
+        {
+          "title": "Chats Criptografados",
+          "description": "Comunique-se de forma rápida e internamente criptografada com outros usuários do VaultChat. Envie e receba imagens e notas de voz e realize chats em grupo."
+        },
+        {
+          "title": "Chat Criptografado",
+          "description": "Implementamos OMEMO / ECC / AES256 em nosso popular sistema de chat. Nenhuma mensagem pode ser lida em nosso servidor por ninguém e a qualquer momento! Temos a melhor criptografia e não armazenamos dados. Todas as imagens e notas de voz também são criptografadas!"
+        },
+        {
+          "title": "Mensagens Autodestrutivas",
+          "description": "Mensagens autodestrutivas têm precedência sobre tudo. Defina seu cronômetro para destruir todas as mensagens quando o tempo acabar."
+        },
+        {
+          "title": "Listas de transmissão",
+          "description": "Com o recurso de lista de transmissão, você pode enviar uma mensagem criptografada para vários de seus contatos de uma vez. Listas de transmissão são listas salvas de destinatários de mensagens para os quais você pode enviar repetidamente mensagens de transmissão sem ter que selecioná-los a cada vez."
+        }
+      ]
+    },
+    "benefits": [
+      {
+        "title": "Notificações privadas",
+        "description": "Mantenha a confidencialidade dos horários e contagens de chegada das mensagens, escolhendo que as notificações push se originem de nossos servidores."
+      },
+      {
+        "title": "Recursos de última geração",
+        "description": "O VaultChat está repleto de recursos e segurança. Oferecemos produtos de última geração para seu uso."
+      },
+      {
+        "title": "Monitoramento 24/7",
+        "description": "O monitoramento de segurança da infraestrutura fornece proteção à rede com medidas preventivas para negar acesso não autorizado e atividades maliciosas."
+      },
+      {
+        "title": "Dados criptografados em repouso",
+        "description": "Todos os dados armazenados no VaultChat são criptografados usando um banco de dados criptografado personalizado com AES-256."
+      },
+      {
+        "title": "Proteção de senha",
+        "description": "Nossa proteção de senha obrigatória mantém seus dados no VaultChat criptografados e protegidos, mesmo que seu dispositivo esteja desbloqueado. Várias tentativas incorretas apagarão todos os dados."
+      },
+      {
+        "title": "Criptografia multicamadas",
+        "description": "As comunicações de entrada e saída são criptografadas de ponta a ponta e transmitidas por uma rede criptografada. Todos os dados armazenados no dispositivo são protegidos e criptografados."
+      }
+    ],
+    "information": "Vault Chat, aplicativo para comunicações criptografadas e privadas",
+    "faq": [
+      "O que é o VaultChat?",
+      "Qual é a diferença entre o VaultChat e o VaultSecure?",
+      "Quais são as vantagens de usar o VaultChat?"
+    ]
+  },
+  "nordVpn": {
+    "description": "Obtenha acesso remoto simples e seguro da marca VPN mais confiável do mundo.",
+    "details": [
+      "Conexão segura com um clique",
+      "Kill Switch",
+      "Gateways privadas"
+    ],
+    "buttons": {
+      "buyNow": "Comprar agora",
+      "supportChat": "Chat de suporte"
+    },
+    "characteristics": {
+      "title": "Características principais",
+      "elements": [
+        "Conexões seguras",
+        "Gateways privadas",
+        "Gateways compartilhadas",
+        "Conexão automática",
+        "Gerenciamento de equipe",
+        "Conexão criptografada"
+      ]
+    },
+    "benefits": [
+      {
+        "title": "Autenticação de terceiros",
+        "description": "Conecte-se ao NordVPN Teams com suas credenciais comerciais existentes. Nossas soluções VPN para pequenas e grandes empresas oferecem autenticação de terceiros com Azure AD, Google e Okta."
+      },
+      {
+        "title": "Um clique para proteger qualquer dispositivo",
+        "description": "Leva apenas um clique para criptografar todo o tráfego de dados em seu dispositivo. Clique em qualquer gateway para se conectar ou ative o recurso de conexão automática."
+      },
+      {
+        "title": "Kill Switch",
+        "description": "Não arrisque expor nenhum de seus dados ativando o recurso Kill Switch. Ele corta automaticamente todo o tráfego da Internet em seu dispositivo se a conexão com o servidor cair, mesmo por um segundo."
+      },
+      {
+        "title": "Dados criptografados em repouso",
+        "description": "Todos os dados armazenados no VaultChat são criptografados usando um banco de dados criptografado personalizado com AES-256."
+      },
+      {
+        "title": "Proteção de senha",
+        "description": "Nossa proteção de senha obrigatória mantém seus dados no VaultChat criptografados e protegidos, mesmo que seu dispositivo esteja desbloqueado. Várias tentativas incorretas apagarão todos os dados."
+      },
+      {
+        "title": "Criptografia multicamadas",
+        "description": "As comunicações de entrada e saída são criptografadas de ponta a ponta e transmitidas por uma rede criptografada. Todos os dados armazenados no dispositivo são protegidos e criptografados."
+      }
+    ],
+    "information": "NordVPN uma das melhores opções do mercado",
+    "faq": [
+      "O que é uma VPN?",
+      "Por que é importante ter uma VPN?",
+      "Como funciona o NordVPN?"
+    ]
+  },
+  "salt": {
+    "description": "Mantenha as suas comunicações mais sensíveis seguras com a melhor proteção",
+    "details": [
+      "Mensagens seguras",
+      "Proteção contra capturas de ecrã",
+      "Chamadas de voz seguras"
+    ],
+    "buttons": {
+      "buyNow": "Comprar agora",
+      "supportChat": "Chat de suporte"
+    },
+    "characteristics": {
+      "title": "Características principais",
+      "elements": [
+        {
+          "title": "Chat",
+          "description": "A nossa solução personalizada oferece aos utilizadores mensagens privadas e seguras em tempo real e funcionalidade de chat em grupo com os seus contactos Salt."
+        },
+        {
+          "title": "Autodestruição de mensagens",
+          "description": "A nossa funcionalidade de autodestruição permite aos utilizadores apagar informações do seu dispositivo e de todos os dispositivos dos destinatários, seja manualmente ou através de uma configuração de temporizador."
+        },
+        {
+          "title": "Transmissão de mensagens",
+          "description": "Envie eficientemente alertas em direto ou partilhe mensagens, imagens e documentos com grandes grupos de utilizadores dentro de uma organização"
+        },
+        {
+          "title": "Proteção contra capturas de ecrã",
+          "description": "Para maior segurança interna, os administradores podem restringir a capacidade dos utilizadores de fazer capturas de ecrã. Se forem feitas capturas de ecrã, os utilizadores receberão uma notificação."
+        }
+      ]
+    },
+    "benefits": [
+      {
+        "title": "Habilitação do trabalho remoto seguro",
+        "description": "Muitas organizações de alto perfil em todo o mundo implementaram o Salt para garantir o mais alto nível de segurança nas comunicações enquanto trabalham remotamente."
+      },
+      {
+        "title": "Encriptação agnóstica",
+        "description": "O Salt utiliza os protocolos de encriptação mais recentes e melhores para garantir que oferecemos aos clientes o mais alto nível de encriptação dentro da nossa plataforma."
+      },
+      {
+        "title": "Transparência dos testes de segurança",
+        "description": "O Salt é uma tecnologia aberta e confiável que é rigorosa e rotineiramente verificada por entidades independentes."
+      },
+      {
+        "title": "Privacidade e segurança",
+        "description": "O Armadillo Chat é uma aplicação de mensagens instantâneas altamente segura. Com atualizações constantes, garantimos que todas as suas comunicações são privadas e estão fora do alcance de terceiros maliciosos."
+      },
+      {
+        "title": "Alertas sobre potenciais impostores",
+        "description": "O Armadillo Chat avisa-o automaticamente sobre potenciais impostores na sua lista de contactos e outros dispositivos ligados à sua conta. No modo de alta segurança, também o avisará sobre quaisquer amigos não verificados."
+      },
+      {
+        "title": "Notificações Push",
+        "description": "O Armadillo Chat não é apenas uma aplicação completamente segura, também é muito fácil de usar."
+      }
+    ],
+    "information": "Diferenças entre uma Aplicação Encriptada e o Whatsapp",
+    "faq": [
+      "Como funciona o Salt?",
+      "Quão segura é a aplicação Salt?",
+      "Por que a minha empresa deveria ter uma aplicação como o Salt?"
+    ]
+  },
+  "vnc": {
+    "description": "Criptografia de ponta a ponta para máxima privacidade e sigilo em suas comunicações.",
+    "details": [
+      "Videoconferências seguras",
+      "Edição colaborativa de documentos",
+      "Mensagens seguras"
+    ],
+    "buttons": {
+      "buyNow": "Comprar agora",
+      "supportChat": "Chat de suporte"
+    },
+    "characteristics": {
+      "title": "Principais características",
+      "elements": [
+        {
+          "title": "Chat de texto",
+          "description": "Chat individual ou em grupo, tudo o que você precisa é de um navegador."
+        },
+        {
+          "title": "Áudio e Videoconferência",
+          "description": "Qualidade de áudio e imagem perfeitas. Você ficará surpreso com este tipo de realidade virtual! Economize despesas de viagem e entre em contato com sua equipe com um único clique."
+        },
+        {
+          "title": "Transferência de arquivos entre usuários",
+          "description": "Envie qualquer formato de arquivo para seus parceiros de chat. Acesso a recursos de hardware, como câmera móvel, microfone, dados, status da rede, sensores como GPS, etc."
+        },
+        {
+          "title": "Chamadas e videochamadas",
+          "description": "O VNCmeet, como parte do VNCtalk, permite iniciar chamadas de vídeo com usuários externos convidados, que não precisam de uma assinatura do VNCtalk."
+        }
+      ]
+    },
+    "benefits": [
+      {
+        "title": "Criptografia",
+        "description": "Criptografia de ponta a ponta para máxima privacidade e sigilo em suas comunicações."
+      },
+      {
+        "title": "Funciona em dispositivos móveis",
+        "description": "Não há necessidade de usar um laptop portátil ou desktop. O VNCtalk funciona em qualquer navegador e como um aplicativo."
+      },
+      {
+        "title": "Quadros brancos",
+        "description": "Colabore em quadros brancos com imagens, formas e texto."
+      },
+      {
+        "title": "O VNCtalk também é um produto OEM.",
+        "description": "Isso significa que os parceiros podem adicionar seu logotipo, CD / CI e, ao mesmo tempo, modificar a interface de uma perspectiva de UX (experiência do usuário)."
+      },
+      {
+        "title": "O VNCtalk não tem publicidade",
+        "description": "e está equipado com uma série de recursos interessantes, como: compartilhamento de tela, colaboração de documentos em VNCpads e muito mais."
+      },
+      {
+        "title": "O VNCtalk é escalável",
+        "description": "até um grande número de usuários. Basta melhorar a largura de banda, adicionar mais instâncias e pronto."
+      }
+    ],
+    "functionalities": [
+      {
+        "title": "Aplicativo Web VNC Talk",
+        "description": "O VNCtalk Web Client permite que você acesse todos os recursos de comunicação profissional do VNCtalk, como chat, conferências de áudio e vídeo, no mesmo navegador padrão do VNCmail ou VNCproject. Portanto, você acessa todo o seu espaço de trabalho com seu navegador, sem ter que iniciar aplicativos separados para cada atividade que gostaria de realizar. O VNCtalk Web Client funciona em qualquer navegador padrão no Windows, MacOS e Linux."
+      },
+      {
+        "title": "Aplicativo Desktop VNC Talk",
+        "description": "O VNCtalk Desktop Client permite que você execute o VNCtalk como um aplicativo separado em seu PC desktop, no Windows, Mac e Linux. Especialmente ao trabalhar com muitas guias do navegador abertas, é útil ter pontos de acesso separados para seus chats, videoconferências e VNCpads. E, claro, todos os recursos do VNCtalk estão disponíveis em qualquer um de nossos clientes frontend."
+      }
+    ],
+    "information": "Qual é o sistema ideal para você? Você quer continuar usando seu celular pessoal?",
+    "faq": [
+      "O que é VNC?",
+      "Como funciona o VNC Lagoon?",
+      "Qual a compatibilidade do VNC Lagoon?"
+    ]
+  },
+  "threema": {
+    "description": "Threema.Work oferece todos os recursos esperados de um mensageiro profissional para empresas",
+    "details": [
+      "Chats em grupo de até 100 pessoas",
+      "Chamadas criptografadas",
+      "Enquetes privadas no chat"
+    ],
+    "buttons": {
+      "buyNow": "Comprar agora",
+      "supportChat": "Chat de suporte"
+    },
+    "characteristics": {
+      "title": "Principais características",
+      "elements": [
+        {
+          "title": "Chat",
+          "description": "Nosso chat cumpre todas as leis de privacidade; oferece à sua equipe uma alternativa fácil de usar, separando a comunicação pessoal e profissional."
+        },
+        {
+          "title": "Áudio e Videoconferência",
+          "description": "Qualidade de áudio e imagem perfeita. Você ficará surpreso com este tipo de realidade virtual! Economize despesas de viagem e entre em contato com sua equipe com um único clique."
+        },
+        {
+          "title": "Transferência de arquivos entre usuários",
+          "description": "Envie qualquer formato de arquivo para seus parceiros de chat. Acesso a funções de hardware como câmera móvel, microfone, dados, status da rede, sensores como GPS, etc."
+        },
+        {
+          "title": "Chamadas e videochamadas",
+          "description": "VNCmeet, como parte do VNCtalk, permite iniciar videochamadas com usuários convidados externos, que não precisam de uma assinatura VNCtalk."
+        }
+      ]
+    },
+    "benefits": [
+      {
+        "title": "Cumprimos os regulamentos estabelecidos",
+        "description": "O Threema Work está em conformidade com o Regulamento Geral Europeu de Proteção de Dados (GDPR); também cumprimos a Lei Federal de Proteção de Dados."
+      },
+      {
+        "title": "Somos certificados",
+        "description": "A Threema administra seus próprios servidores em data centers com certificação ISO 27001."
+      },
+      {
+        "title": "Melhores avaliações e comentários",
+        "description": "Aplicativo com o maior alcance em número de usuários."
+      },
+      {
+        "title": "Aplicativo do ano",
+        "description": "O Threema Work pode ser usado sem fornecer informações de identificação pessoal (como um número de telefone ou endereço de e-mail) e sem conceder acesso ao catálogo de endereços."
+      },
+      {
+        "title": "Aplicativo iOS mais vendido",
+        "description": "Em 2015, o Google Play reconheceu o Threema, colocando-o na prestigiosa lista dos melhores aplicativos Android."
+      },
+      {
+        "title": "Aplicativo iOS mais vendido",
+        "description": "Por dois anos consecutivos (2014 e 2015), o Threema foi o aplicativo iOS mais vendido na Alemanha."
+      }
+    ],
+    "information": "Threema.Work o aplicativo de mensagens para organizações mais seguro e fácil de usar",
+    "faq": [
+      "O que é VNC?",
+      "Como funciona o VNC Lagoon?",
+      "Qual a compatibilidade do VNC Lagoon?"
+    ]
   },
   "ThreemaPage": {
     "product": {
