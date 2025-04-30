@@ -20,7 +20,7 @@ export default function Navigation({
       <button
         onClick={() => setIsOpen(!isOpen)}
         aria-expanded={isOpen} // Mejora de accesibilidad
-        className={`text-white text-sm hover:text-gray-300 flex items-center ${buttonClassName}`}
+        className={`text-white text-base font-semibold hover:text-gray-300 flex items-center ${buttonClassName}`}
       >
         {label}
         <ChevronRight
@@ -32,4 +32,3 @@ export default function Navigation({
     </nav>
   );
 }
-

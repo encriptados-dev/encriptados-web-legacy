@@ -24,7 +24,7 @@ const Card: React.FC<CardProps> = ({
 }) => {
   return (
     <div
-      className={`p-4 rounded-2xl shadow ${centered ? "text-center" : ""}`}
+      className={`p-6 rounded-2xl shadow ${centered ? "text-center" : ""}`}
       style={{ backgroundColor: bgColorCard }} // Aplicando el color de fondo
     >
       <div
