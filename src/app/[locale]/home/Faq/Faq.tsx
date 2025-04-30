@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import { FaChevronDown, FaChevronUp } from "react-icons/fa";
 import ArrowDown from "../svg/ArrowDown";
+import { useTranslations } from "next-intl";
 
 const faqs = [
   {
@@ -23,15 +24,22 @@ const faqs = [
 
 const Faq = () => {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
+  const t = useTranslations("faqData")
 
   const toggleFAQ = (index: number) => {
     setOpenIndex(openIndex === index ? null : index);
   };
 
+  const faqIds = [1, 2, 3] as const;
+  const faqs = faqIds.map((id) => ({
+    question: t(`faqs.${id}.question` as const),
+    answer: t(`faqs.${id}.answer` as const),
+  }));
+
   return (
     <section className="py-8 bg-white text-center">
       <h2 className="text-2xl lg:text-[34px] font-bold mb-6">
-        Preguntas Frecuentes
+        {t("title")}
       </h2>
       <div className="max-w-6xl mx-auto px-4">
         {faqs.map((faq, index) => (

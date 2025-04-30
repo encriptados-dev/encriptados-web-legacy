@@ -3,16 +3,18 @@ import AppStore from "/public/images/our-products/svg/app-store.svg";
 import GooglePlay from "/public/images/our-products/svg/google-play.svg";
 import PhoneQr from "/public/images/our-products/phone-qr.png";
 import DownloadAPKNew from "@/app/[locale]/our-products/components/svgs/DownloadAPKNew";
+import { useTranslations } from "next-intl";
 
 const Component: React.FC = () => {
+  const t = useTranslations("dowloadData")
   return (
     <div className="bg-custom-gradient-qr-black-y-grey md:max-h-[581px] flex items-center justify-center py-10 overflow-y-hidden">
       <div className="container max-w-7xl mx-auto grid md:grid-cols-2 gap-8 items-center">
         <div className="space-y-6 p-6">
           <h2 className="text-[28px] lg:text-4xl md:text-4xl font-bold text-white leading-tight text-center sm:text-left">
-            Descarga la App
+            {t("title-text1")}
             <br />
-            para iOS & Android
+            {t("title-text2")}
           </h2>
 
           <div className="flex flex-row justify-center sm:justify-start gap-4">
@@ -56,7 +58,7 @@ const Component: React.FC = () => {
           </div>
 
           <p className="text-white font-normal text-lg text-center sm:text-left">
-            O Escanea el código QR con tu cámara
+            {t("qrInstruction")}
           </p>
         </div>
 

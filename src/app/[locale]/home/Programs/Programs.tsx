@@ -24,8 +24,7 @@ const Programs = () => {
                   <div className="bg-gradient-img"></div>
                   <div className="flex items-center justify-center px-6">
                     <h1 className="text-white text-2xl lg:text-[32px] text-center lg:text-left mb-6 sm:mb-7 font-bold">
-                      Nuestros dispositivos cuentan con programas y aplicaciones
-                      exclusivos
+                      {t("title")}
                     </h1>
                   </div>
 

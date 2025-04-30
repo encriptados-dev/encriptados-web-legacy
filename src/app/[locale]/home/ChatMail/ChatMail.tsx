@@ -9,7 +9,7 @@ import HeadPhoneGray from "../svg/HeadPhoneGray";
 const ChatMail = () => {
   //   const FloatSimCard = "/images/encrypted-sim/Encrypted_float_image.png";
 
-  const t = useTranslations("EncryptedSimPage");
+  const t = useTranslations("chatMailContent");
   return (
     <div className="container max-w-6xl mx-auto my-4 lg:my-0 xl:my-10 xl:mb-14 px-8">
       <div className="flex flex-col lg:flex-row justify-center lg:justify-between gap-6 items-center">
@@ -26,23 +26,23 @@ const ChatMail = () => {
         {/* Texto */}
         <div className="w-full lg:w-5/12">
           <h1 className="text-[28px] sm:text-3xl lg:text-[44px] font-bold text-[#131313]">
-            CHATMAIL
+            {t("title")}
           </h1>
           <p className="font-normal text-sm text-black lg:py-4 mb-4 lg:mb-0">
-            Comunicaciones cifradas con una interfaz fácil de usar
+            {t("subtitle")}
           </p>
           <ul>
             <li className="flex gap-2 items-center font-normal text-base text-black">
               <CheckBlackArrow />
-              Mensajes cifrados con imágenes y voz
+              {t("features.0")}
             </li>
             <li className="flex gap-2 items-center font-normal text-base text-black">
               <CheckBlackArrow />
-              Interfaz unificada
+              {t("features.1")}
             </li>
             <li className="flex gap-2 items-center font-normal text-base text-black">
               <CheckBlackArrow />
-              Chats grupales cifrados
+              {t("features.2")}
             </li>
           </ul>
 
@@ -66,7 +66,7 @@ const ChatMail = () => {
                   className="ml-3 text-black cursor-pointer text-base font-medium"
                   htmlFor="html-custom"
                 >
-                  Licencia 3 Meses
+                  {t("licenseOptions.0.label")}
                 </label>
               </div>
 
@@ -87,7 +87,8 @@ const ChatMail = () => {
                   className="ml-3 text-black cursor-pointer text-base font-medium"
                   htmlFor="react-custom"
                 >
-                  Licencia 6 Meses
+                  {/* Licencia 6 Meses */}
+                  {t("licenseOptions.1.label")}
                 </label>
               </div>
             </div>
@@ -95,15 +96,15 @@ const ChatMail = () => {
           <div className="border-b border-[#D9D9D9]"></div>
 
           <div className="pt-4">
-            <h4 className="font-normal text-xs text-black">Desde</h4>
-            <h2 className="font-bold text-2xl text-black">649$ USD</h2>
+            <h4 className="font-normal text-xs text-black">{t("pricing.label")}</h4>
+            <h2 className="font-bold text-2xl text-black">{t("pricing.amount")}</h2>
             <div className="mt-4 flex flex-row gap-4">
               <button className="w-60 h-14 bg-black rounded-full text-base font-medium text-white flex justify-center items-center gap-2">
-                Comprar ahora <CartWhite />
+                {t("buttons.buyNow")}<CartWhite />
               </button>
 
               <button className="w-52 h-14 bg-[#EDF4F6] rounded-full text-base font-medium text-[#00516B] flex justify-center items-center gap-2">
-                Chat soporte
+              {t("buttons.support")} 
                 <HeadPhoneGray />
               </button>
             </div>

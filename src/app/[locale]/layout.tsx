@@ -1,14 +1,10 @@
 import localFont from "next/font/local";
 import "../globals.css";
 import { getMessages } from "next-intl/server";
-
 import { NextIntlClientProvider } from "next-intl";
-
-import FooterEncrypted from "@/shared/FooterEncrypted/FooterEncrypted";
-
-import CurrentHeader from "@/shared/CurrentHeader";
 import { QueryClientProvider } from "@/providers/query-client/QueryClientProvider";
 import { ToastProvider } from "@/shared/context/ToastContext";
+import GlobalHeaderFooter from "./globalHeaderFooter";
 
 const geistSans = localFont({
   src: "../fonts/GeistVF.woff",
@@ -36,9 +32,7 @@ export default async function RootLayout({
         <ToastProvider>
           <QueryClientProvider>
             <NextIntlClientProvider messages={messages}>
-              <CurrentHeader />
-              {children}
-              <FooterEncrypted />
+              <GlobalHeaderFooter>{children}</GlobalHeaderFooter>
             </NextIntlClientProvider>
           </QueryClientProvider>
         </ToastProvider>

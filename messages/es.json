@@ -216,6 +216,7 @@
     }
   },
   "EncryptedSimPage": {
+    "title": "Chatmail. Blinda tu celular, evita hackeos y protege tus comunicaciones",
     "connectAllWorldTitle": "Conéctate en todo el mundo",
     "totalSecurityTitle": "con total seguridad en tus comunicaciones",
     "addYourSimSubtitle": "Adquiere tu SIM/eSIM con datos móviles y disfruta de total anonimato en llamadas, filtros, cambios IMSI y más",
@@ -532,6 +533,7 @@
     }
   },
   "DistributorsPage": {
+    "title": "Nuestros dispositivos cuentan con programas y aplicaciones exclusivos",
     "banner": {
       "becomeOurAllyBannerTitle": "Conviértete en nuestro aliado comercial y vende nuestros productos",
       "becomeOurAllyBannerDescription": "Sé distribuidor de nuestros productos: eSIMs, Apps y celulares encriptados y obtén ganancias",
@@ -1002,5 +1004,79 @@
   },
   "RechargeSim": {
     "errorInput": "Debe ser un número de teléfono válido con al menos 6 dígitos."
-  }
+  },
+  
+    "chatMailContent": {
+      "title": "CHATMAIL",
+      "subtitle": "Comunicaciones cifradas con una interfaz fácil de usar",
+      "features": [
+        "Mensajes cifrados con imágenes y voz",
+        "Interfaz unificada",
+        "Chats grupales cifrados"
+      ],
+      "licenseOptions": [
+        { "id": "license-3m", "label": "Licencia 3 Meses", "defaultChecked": true },
+        { "id": "license-6m", "label": "Licencia 6 Meses", "defaultChecked": false }
+      ],
+      "pricing": {
+        "label": "Desde",
+        "amount": "649$ USD"
+      },
+      "buttons": {
+        "buyNow": "Comprar ahora",
+        "support": "Chat soporte"
+      }
+    },
+    "characteristicsData": {
+      "title": "Características principales",
+      "steps": {
+        "1": {
+          "title": "Chat",
+          "description": "Puedes mantener seguras las comunicaciones profesionales e incorporar aplicaciones estándar para hablar con tu familia."
+        },
+        "2": {
+          "title": "Chat",
+          "description": "Control absoluto de nuevas tecnologías. La tecnología a tu servicio y no al revés, para obtener el mayor control en protección y privacidad."
+        },
+        "3": {
+          "title": "Protection",
+          "description": "Habla por teléfono con total tranquilidad, guarda y custodia la información confidencial y las bases de datos con total confianza."
+        },
+        "4": {
+          "title": "ChatMail",
+          "description": "Es una solución patentada que bloquea cualquier intrusión y cualquier intercambio de información no autorizado."
+        }
+      }
+    },
+    "simCardDetails": {
+      "title": "SIM Card encriptada",
+      "title2": "e-SIM Encriptada Planes datos o minutos",
+      "description": "Protégete de los ciberdelincuentes y mantén tu información personal segura",
+      "description2": "Copia del subtítulo del elemento",
+      "buyText": "Comprar",
+      "seeMoreText": "Ver Más",
+      "moreInfoText": "Descubre más"
+    },
+    "faqData": {
+      "title": "Preguntas Frecuentes",
+      "faqs": {
+        "1": {
+          "question": "¿Cómo encuentro un distribuidor?",
+          "answer": "Puedes usar nuestro mapa interactivo para localizar el distribuidor más cercano."
+        },
+        "2": {
+          "question": "¿Cuánto tarda la entrega?",
+          "answer": "El tiempo de entrega depende de tu ubicación y del distribuidor seleccionado."
+        },
+        "3": {
+          "question": "¿Puedo cambiar mi pedido después de confirmarlo?",
+          "answer": "Depende del distribuidor. Te recomendamos contactarlo directamente."
+        }
+      }
+    },
+    "dowloadData": {
+      "title-text1": "Descarga la App",
+      "title-text2": "para iOS & Android",
+      "qrInstruction": "O Escanea el código QR con tu cámara"
+    }
 }

@@ -16,8 +16,7 @@ const ChatmailVideo = () => {
             className="text-2xl sm:text-3xl lg:text-[44px] font-bold text-black heading-line
 "
           >
-            Chatmail. Blinda tu celular, evita hackeos y protege tus
-            comunicaciones
+            {t("title")}
           </h1>
         </div>
 

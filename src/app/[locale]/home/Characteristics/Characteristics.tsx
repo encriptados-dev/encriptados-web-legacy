@@ -1,41 +1,20 @@
+import { useTranslations } from "next-intl";
 import React from "react";
 
-const steps = [
-  {
-    id: 1,
-    title: "Chat",
-    description:
-      "Puedes mantener seguras las comunicaciones profesionales e incorporar aplicaciones estándar para hablar con tu familia.",
-    image: "/images/new/mobile1.png",
-  },
-  {
-    id: 2,
-    title: "Chat",
-    description:
-      "Control absoluto de nuevas tecnologías. La tecnología a tu servicio y no al revés, para obtener el mayor control en protección y privacidad.",
-    image: "/images/new/mobile1.png",
-  },
-  {
-    id: 3,
-    title: "Protección",
-    description:
-      "Habla por teléfono con total tranquilidad, guarda y custodia la información confidencial y las bases de datos con total confianza.",
-    image: "/images/new/mobile1.png",
-  },
-  {
-    id: 4,
-    title: "ChatMail",
-    description:
-      "Es una solución patentada que bloquea cualquier intrusión y cualquier intercambio de información no autorizado.",
-    image: "/images/new/mobile1.png",
-  },
-];
-
 const Characteristics = () => {
+  const t = useTranslations("characteristicsData");
+  const stepIds = [1, 2, 3, 4] as const;
+
+  const steps = stepIds.map((id) => ({
+    id,
+    title: t(`steps.${id}.title` as const),
+    description: t(`steps.${id}.description` as const),
+    image: "/images/new/mobile1.png",
+  }));
   return (
     <>
       <h2 className="text-black text-2xl font-bold whitespace-nowrap my-4 pb-4 text-center lg:text-left">
-        Características principales
+        {t("title")}
       </h2>
 
       <div className="relative z-10 grid grid-cols-1 md:grid-cols-4 gap-8 mb-10">
