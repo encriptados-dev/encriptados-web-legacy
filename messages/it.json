@@ -1243,5 +1243,210 @@
       "Perché è importante avere una VPN?",
       "Come funziona NordVPN?"
     ]
+  },
+  "salt": {
+    "description": "Mantieni sicure le tue comunicazioni più sensibili con la migliore protezione",
+    "details": [
+      "Messaggistica sicura",
+      "Protezione da screenshot",
+      "Chiamate vocali sicure"
+    ],
+    "buttons": {
+      "buyNow": "Compra ora",
+      "supportChat": "Chat di supporto"
+    },
+    "characteristics": {
+      "title": "Caratteristiche principali",
+      "elements": [
+        {
+          "title": "Chat",
+          "description": "La nostra soluzione su misura offre agli utenti messaggi privati e sicuri in tempo reale e funzionalità di chat di gruppo con i loro contatti Salt."
+        },
+        {
+          "title": "Autodistruzione dei messaggi",
+          "description": "La nostra funzionalità di autodistruzione consente agli utenti di cancellare informazioni dal proprio dispositivo e da tutti i dispositivi dei destinatari, manualmente o tramite un'impostazione del timer."
+        },
+        {
+          "title": "Trasmissione di messaggi",
+          "description": "Invia in modo efficiente avvisi in tempo reale o condividi messaggi, immagini e documenti con grandi gruppi di utenti all'interno di un'organizzazione"
+        },
+        {
+          "title": "Protezione da screenshot",
+          "description": "Per una maggiore sicurezza interna, gli amministratori possono limitare la capacità degli utenti di effettuare screenshot. Se vengono effettuati screenshot, gli utenti riceveranno una notifica."
+        }
+      ]
+    },
+    "benefits": [
+      {
+        "title": "Abilitazione del lavoro remoto sicuro",
+        "description": "Molte organizzazioni di alto profilo in tutto il mondo hanno implementato Salt per garantire il massimo livello di sicurezza nelle comunicazioni durante il lavoro da remoto."
+      },
+      {
+        "title": "Crittografia agnostica",
+        "description": "Salt utilizza i protocolli di crittografia più recenti e migliori per garantire che offriamo ai clienti il massimo livello di crittografia all'interno della nostra piattaforma."
+      },
+      {
+        "title": "Trasparenza dei test di sicurezza",
+        "description": "Salt è una tecnologia aperta e affidabile che viene rigorosamente e regolarmente verificata da terze parti indipendenti."
+      },
+      {
+        "title": "Privacy e sicurezza",
+        "description": "Armadillo Chat è un'applicazione di messaggistica istantanea altamente sicura. Con aggiornamenti costanti, ci assicuriamo che tutte le tue comunicazioni siano private e fuori dalla portata di terzi malintenzionati."
+      },
+      {
+        "title": "Avvisi sui potenziali impostori",
+        "description": "Armadillo Chat ti avvisa automaticamente sui potenziali impostori nella tua lista di contatti e su altri dispositivi collegati al tuo account. In modalità ad alta sicurezza, ti avviserà anche di eventuali amici non verificati."
+      },
+      {
+        "title": "Notifiche Push",
+        "description": "Armadillo Chat non è solo un'applicazione completamente sicura, ma è anche molto facile da usare."
+      }
+    ],
+    "information": "Differenze tra un'applicazione crittografata e Whatsapp",
+    "faq": [
+      "Come funziona Salt?",
+      "Quanto è sicura l'applicazione Salt?",
+      "Perché la mia azienda dovrebbe avere un'applicazione come Salt?"
+    ]
+  },
+  "vnc": {
+    "description": "Crittografia end-to-end per la massima privacy e segretezza nelle tue comunicazioni.",
+    "details": [
+      "Videoconferenze sicure",
+      "Modifica collaborativa di documenti",
+      "Messaggistica sicura"
+    ],
+    "buttons": {
+      "buyNow": "Acquista ora",
+      "supportChat": "Chat di supporto"
+    },
+    "characteristics": {
+      "title": "Caratteristiche principali",
+      "elements": [
+        {
+          "title": "Chat testuale",
+          "description": "Chat individuale o di gruppo, tutto ciò di cui hai bisogno è un browser."
+        },
+        {
+          "title": "Audio e Video Conferenza",
+          "description": "Qualità audio e immagine perfetta. Rimarrai sorpreso da questo tipo di realtà virtuale! Risparmia sulle spese di viaggio e contatta il tuo team con un solo clic."
+        },
+        {
+          "title": "Trasferimento file tra utenti",
+          "description": "Invia qualsiasi formato di file ai tuoi partner di chat. Accesso alle funzionalità hardware come fotocamera mobile, microfono, dati, stato della rete, sensori come GPS, ecc."
+        },
+        {
+          "title": "Chiamate e videochiamate",
+          "description": "VNCmeet, come parte di VNCtalk, ti consente di avviare videochiamate con utenti esterni invitati, che non necessitano di un abbonamento VNCtalk."
+        }
+      ]
+    },
+    "benefits": [
+      {
+        "title": "Crittografia",
+        "description": "Crittografia end-to-end per la massima privacy e segretezza nelle tue comunicazioni."
+      },
+      {
+        "title": "Funziona su dispositivi mobili",
+        "description": "Non è necessario utilizzare un laptop portatile o desktop. VNCtalk funziona su qualsiasi browser e come applicazione."
+      },
+      {
+        "title": "Lavagne bianche",
+        "description": "Collabora su lavagne bianche con immagini, forme e testo."
+      },
+      {
+        "title": "VNCtalk è anche un prodotto OEM.",
+        "description": "Ciò significa che i partner possono aggiungere il proprio logo, CD / CI e allo stesso tempo modificare l'interfaccia da una prospettiva UX (esperienza utente)."
+      },
+      {
+        "title": "VNCtalk non ha pubblicità",
+        "description": "ed è dotato di una serie di interessanti funzionalità come: condivisione dello schermo, collaborazione di documenti in VNCpads e molte altre."
+      },
+      {
+        "title": "VNCtalk è scalabile",
+        "description": "fino a un gran numero di utenti. Basta migliorare la larghezza di banda, aggiungere più istanze e il gioco è fatto."
+      }
+    ],
+    "functionalities": [
+      {
+        "title": "Applicazione Web VNC Talk",
+        "description": "VNCtalk Web Client ti consente di accedere a tutte le funzionalità di comunicazione professionale di VNCtalk, come chat, conferenze audio e video, nello stesso browser standard di VNCmail o VNCproject. Pertanto, accedi al tuo intero spazio di lavoro con il tuo browser, senza dover avviare applicazioni separate per ogni attività che desideri svolgere. VNCtalk Web Client funziona su qualsiasi browser standard su Windows, MacOS e Linux."
+      },
+      {
+        "title": "Applicazione Desktop VNC Talk",
+        "description": "VNCtalk Desktop Client ti consente di eseguire VNCtalk come un'applicazione separata sul tuo PC desktop, su Windows, Mac e Linux. Soprattutto quando si lavora con molte schede del browser aperte, è utile avere punti di accesso separati per chat, videoconferenze e VNCpad. E, naturalmente, tutte le funzionalità di VNCtalk sono disponibili in uno qualsiasi dei nostri client frontend."
+      }
+    ],
+    "information": "Qual è il sistema ideale per te? Vuoi continuare a usare il tuo cellulare personale?",
+    "faq": [
+      "Cos'è VNC?",
+      "Come funziona VNC Lagoon?",
+      "Quale compatibilità ha VNC Lagoon?"
+    ]
+  },
+  "threema": {
+    "description": "Threema.Work offre tutte le funzionalità previste da un messenger professionale per aziende",
+    "details": [
+      "Chat di gruppo fino a 100 persone",
+      "Chiamate crittografate",
+      "Sondaggi privati nella chat"
+    ],
+    "buttons": {
+      "buyNow": "Acquista ora",
+      "supportChat": "Chat di supporto"
+    },
+    "characteristics": {
+      "title": "Caratteristiche principali",
+      "elements": [
+        {
+          "title": "Chat",
+          "description": "La nostra chat è conforme a tutte le leggi sulla privacy; offre al tuo team un'alternativa facile da usare, separando la comunicazione personale e professionale."
+        },
+        {
+          "title": "Audio e Videoconferenza",
+          "description": "Qualità audio e immagine perfetta. Rimarrai sorpreso da questo tipo di realtà virtuale! Risparmia sulle spese di viaggio e contatta il tuo team con un solo clic."
+        },
+        {
+          "title": "Trasferimento file tra utenti",
+          "description": "Invia qualsiasi formato di file ai tuoi partner di chat. Accesso a funzioni hardware come fotocamera mobile, microfono, dati, stato della rete, sensori come il GPS, ecc."
+        },
+        {
+          "title": "Chiamate e videochiamate",
+          "description": "VNCmeet, come parte di VNCtalk, ti consente di avviare videochiamate con utenti ospiti esterni, che non necessitano di un abbonamento VNCtalk."
+        }
+      ]
+    },
+    "benefits": [
+      {
+        "title": "Rispettiamo le normative stabilite",
+        "description": "Threema Work è conforme al Regolamento Generale Europeo sulla Protezione dei Dati (GDPR); rispettiamo anche la legge federale sulla protezione dei dati."
+      },
+      {
+        "title": "Siamo certificati",
+        "description": "Threema gestisce i propri server in data center certificati ISO 27001."
+      },
+      {
+        "title": "Migliori valutazioni e recensioni",
+        "description": "Applicazione con la più ampia portata in termini di numero di utenti."
+      },
+      {
+        "title": "App dell'anno",
+        "description": "Threema Work può essere utilizzato senza fornire informazioni di identificazione personale (come un numero di telefono o un indirizzo e-mail) e senza concedere l'accesso alla rubrica."
+      },
+      {
+        "title": "App iOS più venduta",
+        "description": "Nel 2015, Google Play ha riconosciuto Threema inserendola nella prestigiosa lista delle migliori app Android."
+      },
+      {
+        "title": "App iOS più venduta",
+        "description": "Per due anni consecutivi (2014 e 2015), Threema è stata l'app iOS più venduta in Germania."
+      }
+    ],
+    "information": "Threema.Work l'app di messaggistica per organizzazioni più sicura e facile da usare",
+    "faq": [
+      "Cos'è VNC?",
+      "Come funziona VNC Lagoon?",
+      "Qual è la compatibilità di VNC Lagoon?"
+    ]
   }
 }
