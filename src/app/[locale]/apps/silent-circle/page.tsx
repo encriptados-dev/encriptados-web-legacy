@@ -24,8 +24,8 @@ const Page = () => {
           <Image
             src='/images/apps/silent-circle/banner.png'
             alt='silent circle'
-            width={320}
-            height={251}
+            width={813}
+            height={601}
             priority
             className='w-full'
           />
