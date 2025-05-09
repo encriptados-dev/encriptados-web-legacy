@@ -24,8 +24,8 @@ const Page = () => {
           <Image
             src='/images/apps/nord-vpn/banner.png'
             alt='nord vpn banner'
-            width={320}
-            height={237}
+            width={813}
+            height={601}
             priority
             className='w-full'
           />
