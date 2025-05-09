@@ -48,6 +48,7 @@ const Card = ({
       )}
     </div>
     <Image
+    className='w-1/2'
       src={imageSrc}
       alt={imageAlt}
       width={imageWidth}

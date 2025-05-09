@@ -25,8 +25,8 @@ const Page = () => {
           <Image
             src='/images/apps/armadillo/banner.png'
             alt='armadillo banner'
-            width={320}
-            height={251}
+            width={813}
+            height={601}
             priority
             className='w-full'
           />
@@ -117,11 +117,11 @@ const Page = () => {
             seguridad
           </b>
           <Image
-            src='/images/apps/armadillo/youtube.webp'
+            src='/images/apps/armadillo/youtube.png'
             alt='armadillo chat'
-            width={373}
-            height={206}
-            className='w-full lg:max-w-[55%]'
+            width={1070}
+            height={604}
+            className='w-full lg:max-w-[55%] rounded-xl'
           />
         </div>
         <SimCardGroup />

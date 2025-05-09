@@ -25,8 +25,8 @@ const Page = () => {
           <Image
             src='/images/apps/vault-chat/banner.png'
             alt='vault chat banner'
-            width={320}
-            height={251}
+            width={813}
+            height={601}
             priority
             className='w-full'
           />

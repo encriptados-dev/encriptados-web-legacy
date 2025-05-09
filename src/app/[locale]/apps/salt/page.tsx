@@ -23,10 +23,10 @@ const Page = () => {
       <main className='p-5 bg-[#F4F8FA] tracking-wide md:flex md:flex-row-reverse md:justify-center md:items-center md:gap-20 md:py-16 md:bg-white'>
         <div className='w-[85.5%] mx-auto mb-[50px] md:mt-9 md:w-2/4 lg:w-2/5 md:mx-0 xl:w-1/3'>
           <Image
-            src='/images/apps/salt/banner.webp'
+            src='/images/apps/salt/banner.png'
             alt='salt banner'
-            width={320}
-            height={237}
+            width={813}
+            height={601}
             priority
             className='w-full'
           />
